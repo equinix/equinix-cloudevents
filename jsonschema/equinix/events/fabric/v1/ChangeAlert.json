@@ -1,0 +1,98 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/ChangeAlert.json",
+    "name": "ChangeAlert",
+    "examples": [],
+    "package": "equinix.events.fabric.v1",
+    "datatype": "equinix.events.fabric.v1.ChangeAlert",
+    "cloudeventTypes": [
+        "equinix.fabric.connection.status.up",
+        "equinix.fabric.connection.status.down",
+        "equinix.fabric.connection.bgp_ipv4_status.up",
+        "equinix.fabric.connection.bgp_ipv4_status.down",
+        "equinix.fabric.connection.bgp_ipv6_status.up",
+        "equinix.fabric.connection.bgp_ipv6_status.down",
+        "equinix.fabric.port.status.up",
+        "equinix.fabric.port.status.down"
+    ],
+    "product": "Equinix Fabric ChangeAlert",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/ChangeAlert",
+    "definitions": {
+        "ChangeAlert": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "Optional. The Backup event payload. Unset for deletion events."
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                },
+                "changeLog": {
+                    "$ref": "#/definitions/ChangeLog",
+                    "additionalProperties": true,
+                    "description": "ChangLog information for the resource that fired the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ChangeAlert Event Data",
+            "description": "The data within all ChangeAlert events."
+        },
+        "Resource": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                },
+                "state": {
+                    "type": "string",
+                    "description": "State of the resource generating the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        },
+        "ChangeLog": {
+            "properties": {
+                "createdBy": {
+                    "type": "string",
+                    "description": "User account that created the resource that fired the event"
+                },
+                "createdDateTime": {
+                    "type": "string",
+                    "description": "The time that the resource that fired the event was created",
+                    "format": "date-time"
+                },
+                "updatedBy": {
+                    "type": "string",
+                    "description": "User account that updated the resource that fired the event"
+                },
+                "updatedDateTime": {
+                    "type": "string",
+                    "description": "The time that the resource that fired the event was updated",
+                    "format": "date-time"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ChangeLog",
+            "description": "ChangeLog attribute schema"
+        }
+    }
+}

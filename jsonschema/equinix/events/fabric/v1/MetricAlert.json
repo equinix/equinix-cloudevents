@@ -1,0 +1,107 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/MetricAlert.json",
+    "name": "MetricAlert",
+    "examples": [],
+    "package": "equinix.events.fabric.v1",
+    "datatype": "equinix.events.fabric.v1.MetricAlert",
+    "cloudeventTypes": [
+        "equinix.fabric.router.routes_ipv4_installed.utilization",
+        "equinix.fabric.router.routes_ipv6_installed.utilization"
+    ],
+    "product": "Equinix Fabric MetricAlert",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/MetricAlert",
+    "definitions": {
+        "MetricAlert": {
+            "properties": {
+                "metrics": {
+                    "$ref": "#/definitions/Metrics",
+                    "additionalProperties": true,
+                    "description": "Specific details of the metric event"
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                },
+                "changeLog": {
+                    "$ref": "#/definitions/ChangeLog",
+                    "additionalProperties": true,
+                    "description": "ChangLog information for the resource that fired the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "MetricAlert Event Data",
+            "description": "The data within all MetricAlert events."
+        },
+        "Metrics": {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "The type of the metric event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The name of the metric event"
+                },
+                "unit": {
+                    "type": "string",
+                    "description": "Unified Code for Units of Measure"
+                },
+                "dataPoints": {
+                    "type": "array",
+                    "description": "Metric data values and end times",
+                    "items": {
+                        "$ref": "#/definitions/DataPoints"
+                    }
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Metrics",
+            "description": "Schema definition of Metrics data"
+        },
+        "DataPoints": {
+            "properties": {
+                "endDateTime": {
+                    "type": "string",
+                    "description": "The end time of the metric data point value given",
+                    "format": "date-time"
+                },
+                "value": {
+                    "type": "number",
+                    "description": "The value of the metric data point"
+                }
+            },
+            "type": "object",
+            "title": "DataPoints",
+            "additionalProperties": true
+        },
+        "ChangeLog": {
+            "properties": {
+                "createdBy": {
+                    "type": "string",
+                    "description": "User account that created the resource that fired the event"
+                },
+                "createdDateTime": {
+                    "type": "string",
+                    "description": "The time that the resource that fired the event was created",
+                    "format": "date-time"
+                },
+                "updatedBy": {
+                    "type": "string",
+                    "description": "User account that updated the resource that fired the event"
+                },
+                "updatedDateTime": {
+                    "type": "string",
+                    "description": "The time that the resource that fired the event was updated",
+                    "format": "date-time"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ChangeLog",
+            "description": "ChangeLog attribute schema"
+        }
+    }
+}

@@ -1,0 +1,177 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/Metric.json",
+    "name": "Metric",
+    "examples": [],
+    "package": "equinix.events.fabric.v1",
+    "datatype": "equinix.events.fabric.v1.Metric",
+    "cloudeventTypes": [
+        "equinix.fabric.connection.bandwidth_rx.usage",
+        "equinix.fabric.connection.bandwidth_tx.usage",
+        "equinix.fabric.port.bandwidth_rx.usage",
+        "equinix.fabric.port.bandwidth_tx.usage",
+        "equinix.fabric.port.frames_erred_rx.count",
+        "equinix.fabric.port.frames_erred_tx.count",
+        "equinix.fabric.port.frames_dropped_rx.count",
+        "equinix.fabric.port.frames_dropped_tx.count",
+        "equinix.fabric.router.routes_ipv4_installed.utilization",
+        "equinix.fabric.router.routes_ipv6_installed.utilization",
+        "equinix.fabric.metro.at_{:metroCode}.latency",
+        "equinix.fabric.metro.bg_{:metroCode}.latency",
+        "equinix.fabric.metro.bo_{:metroCode}.latency",
+        "equinix.fabric.metro.ch_{:metroCode}.latency",
+        "equinix.fabric.metro.cl_{:metroCode}.latency",
+        "equinix.fabric.metro.cu_{:metroCode}.latency",
+        "equinix.fabric.metro.da_{:metroCode}.latency",
+        "equinix.fabric.metro.dc_{:metroCode}.latency",
+        "equinix.fabric.metro.de_{:metroCode}.latency",
+        "equinix.fabric.metro.ho_{:metroCode}.latency",
+        "equinix.fabric.metro.ka_{:metroCode}.latency",
+        "equinix.fabric.metro.la_{:metroCode}.latency",
+        "equinix.fabric.metro.lm_{:metroCode}.latency",
+        "equinix.fabric.metro.mi_{:metroCode}.latency",
+        "equinix.fabric.metro.mo_{:metroCode}.latency",
+        "equinix.fabric.metro.mt_{:metroCode}.latency",
+        "equinix.fabric.metro.mx_{:metroCode}.latency",
+        "equinix.fabric.metro.ny_{:metroCode}.latency",
+        "equinix.fabric.metro.ot_{:metroCode}.latency",
+        "equinix.fabric.metro.ph_{:metroCode}.latency",
+        "equinix.fabric.metro.rj_{:metroCode}.latency",
+        "equinix.fabric.metro.se_{:metroCode}.latency",
+        "equinix.fabric.metro.sp_{:metroCode}.latency",
+        "equinix.fabric.metro.st_{:metroCode}.latency",
+        "equinix.fabric.metro.sv_{:metroCode}.latency",
+        "equinix.fabric.metro.tr_{:metroCode}.latency",
+        "equinix.fabric.metro.va_{:metroCode}.latency",
+        "equinix.fabric.metro.wi_{:metroCode}.latency",
+        "equinix.fabric.metro.ca_{:metroCode}.latency",
+        "equinix.fabric.metro.hk_{:metroCode}.latency",
+        "equinix.fabric.metro.jh_{:metroCode}.latency",
+        "equinix.fabric.metro.kl_{:metroCode}.latency",
+        "equinix.fabric.metro.mb_{:metroCode}.latency",
+        "equinix.fabric.metro.me_{:metroCode}.latency",
+        "equinix.fabric.metro.os_{:metroCode}.latency",
+        "equinix.fabric.metro.pe_{:metroCode}.latency",
+        "equinix.fabric.metro.sg_{:metroCode}.latency",
+        "equinix.fabric.metro.sl_{:metroCode}.latency",
+        "equinix.fabric.metro.sy_{:metroCode}.latency",
+        "equinix.fabric.metro.ty_{:metroCode}.latency",
+        "equinix.fabric.metro.am_{:metroCode}.latency",
+        "equinix.fabric.metro.ba_{:metroCode}.latency",
+        "equinix.fabric.metro.bl_{:metroCode}.latency",
+        "equinix.fabric.metro.bx_{:metroCode}.latency",
+        "equinix.fabric.metro.db_{:metroCode}.latency",
+        "equinix.fabric.metro.dx_{:metroCode}.latency",
+        "equinix.fabric.metro.fr_{:metroCode}.latency",
+        "equinix.fabric.metro.gv_{:metroCode}.latency",
+        "equinix.fabric.metro.he_{:metroCode}.latency",
+        "equinix.fabric.metro.hh_{:metroCode}.latency",
+        "equinix.fabric.metro.il_{:metroCode}.latency",
+        "equinix.fabric.metro.ld_{:metroCode}.latency",
+        "equinix.fabric.metro.ls_{:metroCode}.latency",
+        "equinix.fabric.metro.ma_{:metroCode}.latency",
+        "equinix.fabric.metro.md_{:metroCode}.latency",
+        "equinix.fabric.metro.ml_{:metroCode}.latency",
+        "equinix.fabric.metro.mu_{:metroCode}.latency",
+        "equinix.fabric.metro.pa_{:metroCode}.latency",
+        "equinix.fabric.metro.sk_{:metroCode}.latency",
+        "equinix.fabric.metro.so_{:metroCode}.latency",
+        "equinix.fabric.metro.wa_{:metroCode}.latency",
+        "equinix.fabric.metro.zu_{:metroCode}.latency"
+    ],
+    "product": "Equinix Fabric Metric",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Metric",
+    "definitions": {
+        "Metric": {
+            "properties": {
+                "metrics": {
+                    "$ref": "#/definitions/Metrics",
+                    "additionalProperties": true,
+                    "description": "Specific details of the metric event"
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                },
+                "changeLog": {
+                    "$ref": "#/definitions/ChangeLog",
+                    "additionalProperties": true,
+                    "description": "ChangLog information for the resource that fired the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Metric Event Data",
+            "description": "The data within all Metric events."
+        },
+        "Metrics": {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "The type of the metric event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The name of the metric event"
+                },
+                "unit": {
+                    "type": "string",
+                    "description": "Unified Code for Units of Measure"
+                },
+                "dataPoints": {
+                    "type": "array",
+                    "description": "Metric data values and end times",
+                    "items": {
+                        "$ref": "#/definitions/DataPoints"
+                    }
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Metrics",
+            "description": "Schema definition of Metrics data"
+        },
+        "DataPoints": {
+            "properties": {
+                "endDateTime": {
+                    "type": "string",
+                    "description": "The end time of the metric data point value given",
+                    "format": "date-time"
+                },
+                "value": {
+                    "type": "number",
+                    "description": "The value of the metric data point"
+                }
+            },
+            "type": "object",
+            "title": "DataPoints",
+            "additionalProperties": true
+        },
+        "ChangeLog": {
+            "properties": {
+                "createdBy": {
+                    "type": "string",
+                    "description": "User account that created the resource that fired the event"
+                },
+                "createdDateTime": {
+                    "type": "string",
+                    "description": "The time that the resource that fired the event was created",
+                    "format": "date-time"
+                },
+                "updatedBy": {
+                    "type": "string",
+                    "description": "User account that updated the resource that fired the event"
+                },
+                "updatedDateTime": {
+                    "type": "string",
+                    "description": "The time that the resource that fired the event was updated",
+                    "format": "date-time"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ChangeLog",
+            "description": "ChangeLog attribute schema"
+        }
+    }
+}
