@@ -27,6 +27,11 @@
                 "message": {
                     "type": "string",
                     "description": "Supporting message describing the event"
+                },
+                "changeLog": {
+                    "$ref": "#/definitions/ChangeLog",
+                    "additionalProperties": true,
+                    "description": "ChangLog information for the resource that fired the event"
                 }
             },
             "additionalProperties": true,
@@ -104,6 +109,32 @@
             "type": "object",
             "title": "DataPoints",
             "additionalProperties": true
+        },
+        "ChangeLog": {
+            "properties": {
+                "createdBy": {
+                    "type": "string",
+                    "description": "User account that created the resource that fired the event"
+                },
+                "createdDateTime": {
+                    "type": "string",
+                    "description": "The time that the resource that fired the event was created",
+                    "format": "date-time"
+                },
+                "updatedBy": {
+                    "type": "string",
+                    "description": "User account that updated the resource that fired the event"
+                },
+                "updatedDateTime": {
+                    "type": "string",
+                    "description": "The time that the resource that fired the event was updated",
+                    "format": "date-time"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ChangeLog",
+            "description": "ChangeLog attribute schema"
         }
     }
 }
