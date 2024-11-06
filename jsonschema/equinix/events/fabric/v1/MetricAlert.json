@@ -14,6 +14,11 @@
     "definitions": {
         "MetricAlert": {
             "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "Optional. The Backup event payload. Unset for deletion events."
+                },
                 "metrics": {
                     "$ref": "#/definitions/Metrics",
                     "additionalProperties": true,
@@ -22,17 +27,40 @@
                 "message": {
                     "type": "string",
                     "description": "Supporting message describing the event"
-                },
-                "changeLog": {
-                    "$ref": "#/definitions/ChangeLog",
-                    "additionalProperties": true,
-                    "description": "ChangLog information for the resource that fired the event"
                 }
             },
             "additionalProperties": true,
             "type": "object",
             "title": "MetricAlert Event Data",
             "description": "The data within all MetricAlert events."
+        },
+        "Resource": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                },
+                "state": {
+                    "type": "string",
+                    "description": "State of the resource generating the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
         },
         "Metrics": {
             "properties": {
@@ -76,32 +104,6 @@
             "type": "object",
             "title": "DataPoints",
             "additionalProperties": true
-        },
-        "ChangeLog": {
-            "properties": {
-                "createdBy": {
-                    "type": "string",
-                    "description": "User account that created the resource that fired the event"
-                },
-                "createdDateTime": {
-                    "type": "string",
-                    "description": "The time that the resource that fired the event was created",
-                    "format": "date-time"
-                },
-                "updatedBy": {
-                    "type": "string",
-                    "description": "User account that updated the resource that fired the event"
-                },
-                "updatedDateTime": {
-                    "type": "string",
-                    "description": "The time that the resource that fired the event was updated",
-                    "format": "date-time"
-                }
-            },
-            "additionalProperties": true,
-            "type": "object",
-            "title": "ChangeLog",
-            "description": "ChangeLog attribute schema"
         }
     }
 }
