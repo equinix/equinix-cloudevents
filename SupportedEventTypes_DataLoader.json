@@ -47,6 +47,7 @@
     "equinix.fabric.connection.state.reprovisioning",
     "equinix.fabric.connection.status.down",
     "equinix.fabric.connection.status.up",
+    "equinix.fabric.metric",
     "equinix.fabric.metro.{:asideMetroCode}_{:zsideMetroCode}.latency",
     "equinix.fabric.network.state.active",
     "equinix.fabric.network.state.deleted",

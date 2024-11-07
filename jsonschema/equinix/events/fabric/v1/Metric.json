@@ -15,7 +15,8 @@
         "equinix.fabric.port.frames_dropped_tx.count",
         "equinix.fabric.router.routes_ipv4_installed.utilization",
         "equinix.fabric.router.routes_ipv6_installed.utilization",
-        "equinix.fabric.metro.{:asideMetroCode}_{:zsideMetroCode}.latency"
+        "equinix.fabric.metro.{:asideMetroCode}_{:zsideMetroCode}.latency",
+        "equinix.fabric.metric"
     ],
     "product": "Equinix Fabric Metric",
     "$schema": "http://json-schema.org/draft-04/schema#",
