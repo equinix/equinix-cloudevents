@@ -27,13 +27,8 @@ def writeSupportedEventsToDataLoaderFile(supportedEvents):
 
 
 if __name__ == "__main__":
-    # Example usage
-
     directory_to_search = sys.argv[1]
     json_files = find_json_files(directory_to_search)
-
-    for file in json_files:
-        print(file)
 
     supportedEvents = retrieve_supported_events(json_files)
     writeSupportedEventsToDataLoaderFile(supportedEvents)
