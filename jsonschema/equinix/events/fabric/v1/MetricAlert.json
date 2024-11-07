@@ -20,18 +20,16 @@
                     "description": "Optional. The Backup event payload. Unset for deletion events."
                 },
                 "metrics": {
-                    "$ref": "#/definitions/Metrics",
-                    "additionalProperties": true,
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Metrics",
+                        "additionalProperties": true
+                    },
                     "description": "Specific details of the metric event"
                 },
                 "message": {
                     "type": "string",
                     "description": "Supporting message describing the event"
-                },
-                "changeLog": {
-                    "$ref": "#/definitions/ChangeLog",
-                    "additionalProperties": true,
-                    "description": "ChangLog information for the resource that fired the event"
                 }
             },
             "additionalProperties": true,
@@ -60,6 +58,11 @@
                 "state": {
                     "type": "string",
                     "description": "State of the resource generating the event"
+                },
+                "change": {
+                    "$ref": "#/definitions/ResourceChange",
+                    "additionalProperties": true,
+                    "description": "Chang information for the resource that fired the event"
                 }
             },
             "additionalProperties": true,
@@ -81,6 +84,10 @@
                     "type": "string",
                     "description": "Unified Code for Units of Measure"
                 },
+                "interval": {
+                    "type": "string",
+                    "description": "The time interval that the metric datapoints refer to"
+                },
                 "dataPoints": {
                     "type": "array",
                     "description": "Metric data values and end times",
@@ -96,6 +103,11 @@
         },
         "DataPoints": {
             "properties": {
+                "startDateTime": {
+                    "type": "string",
+                    "description": "The start time of the metric data point value given",
+                    "format": "date-time"
+                },
                 "endDateTime": {
                     "type": "string",
                     "description": "The end time of the metric data point value given",
@@ -110,7 +122,7 @@
             "title": "DataPoints",
             "additionalProperties": true
         },
-        "ChangeLog": {
+        "ResourceChange": {
             "properties": {
                 "createdBy": {
                     "type": "string",
@@ -133,8 +145,8 @@
             },
             "additionalProperties": true,
             "type": "object",
-            "title": "ChangeLog",
-            "description": "ChangeLog attribute schema"
+            "title": "Change",
+            "description": "Change attribute schema"
         }
     }
 }

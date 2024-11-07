@@ -28,11 +28,6 @@
                 "message": {
                     "type": "string",
                     "description": "Supporting message describing the event"
-                },
-                "changeLog": {
-                    "$ref": "#/definitions/ChangeLog",
-                    "additionalProperties": true,
-                    "description": "ChangLog information for the resource that fired the event"
                 }
             },
             "additionalProperties": true,
@@ -61,6 +56,11 @@
                 "state": {
                     "type": "string",
                     "description": "State of the resource generating the event"
+                },
+                "change": {
+                    "$ref": "#/definitions/ResourceChange",
+                    "additionalProperties": true,
+                    "description": "Chang information for the resource that fired the event"
                 }
             },
             "additionalProperties": true,
@@ -68,7 +68,7 @@
             "title": "Resource",
             "description": "Schema of the resource that fired the event"
         },
-        "ChangeLog": {
+        "ResourceChange": {
             "properties": {
                 "createdBy": {
                     "type": "string",
@@ -91,8 +91,8 @@
             },
             "additionalProperties": true,
             "type": "object",
-            "title": "ChangeLog",
-            "description": "ChangeLog attribute schema"
+            "title": "Change",
+            "description": "Change attribute schema"
         }
     }
 }

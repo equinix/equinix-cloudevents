@@ -139,35 +139,7 @@
         "equinix.fabric.stream_subscription.state.provisioned",
         "equinix.fabric.stream_subscription.state.deprovisioning",
         "equinix.fabric.stream_subscription.state.deprovisioned",
-        "equinix.fabric.stream_subscription.state.failed",
-        "equinix.network_edge.device.state.provisioned",
-        "equinix.network_edge.device.state.deprovisioned",
-        "equinix.network_edge.device.state.pending_configuration",
-        "equinix.network_edge.device.state.rebooted",
-        "equinix.network_edge.device.acl.removed",
-        "equinix.network_edge.device.attribute.changed",
-        "equinix.resource_manager.organization.state.created",
-        "equinix.resource_manager.organization.state.updated",
-        "equinix.resource_manager.organization.state.deleted",
-        "equinix.resource_manager.project.state.created",
-        "equinix.resource_manager.project.state.updated",
-        "equinix.resource_manager.project.state.deleted",
-        "equinix.identity.user.state.created",
-        "equinix.identity.user.state.updated",
-        "equinix.identity.user.state.deactivated",
-        "equinix.identity.user.state.deleted",
-        "equinix.identity.user.activity.logged_in",
-        "equinix.identity.user.activity.logged_out",
-        "equinix.identity.service_account.state.created",
-        "equinix.identity.service_account.state.updated",
-        "equinix.identity.service_account.state.deleted",
-        "equinix.access_manager.user.role.added",
-        "equinix.access_manager.user.role.removed",
-        "equinix.access_manager.user.critical_resource_access.unauthorized",
-        "equinix.access_manager.service_account.action.authenticated ",
-        "equinix.access_manager.service_account.role.added ",
-        "equinix.access_manager.service_account.role.removed ",
-        "equinix.access_manager.service_account.critical_resource_access.unauthorized "
+        "equinix.fabric.stream_subscription.state.failed"
     ],
     "product": "Equinix Fabric Change",
     "$schema": "http://json-schema.org/draft-04/schema#",
@@ -183,11 +155,6 @@
                 "message": {
                     "type": "string",
                     "description": "Supporting message describing the event"
-                },
-                "changeLog": {
-                    "$ref": "#/definitions/ChangeLog",
-                    "additionalProperties": true,
-                    "description": "ChangLog information for the resource that fired the event"
                 }
             },
             "additionalProperties": true,
@@ -216,6 +183,11 @@
                 "state": {
                     "type": "string",
                     "description": "State of the resource generating the event"
+                },
+                "change": {
+                    "$ref": "#/definitions/ResourceChange",
+                    "additionalProperties": true,
+                    "description": "Chang information for the resource that fired the event"
                 }
             },
             "additionalProperties": true,
@@ -223,7 +195,7 @@
             "title": "Resource",
             "description": "Schema of the resource that fired the event"
         },
-        "ChangeLog": {
+        "ResourceChange": {
             "properties": {
                 "createdBy": {
                     "type": "string",
@@ -246,8 +218,8 @@
             },
             "additionalProperties": true,
             "type": "object",
-            "title": "ChangeLog",
-            "description": "ChangeLog attribute schema"
+            "title": "Change",
+            "description": "Change attribute schema"
         }
     }
 }
