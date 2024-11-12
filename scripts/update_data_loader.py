@@ -5,7 +5,6 @@ def retrieve_supported_events():
     directory = os.path.dirname(os.path.abspath(__file__)) + '/../jsonschema'
     events = set()
     for root, dirs, files in os.walk(directory):
-        print(root)
         for file in files:
             if file.endswith('.json') and file != "catalog.json":
                 with open(root + "/" + file, "r") as eventFile:
