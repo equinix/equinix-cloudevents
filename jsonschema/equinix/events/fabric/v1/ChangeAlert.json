@@ -16,9 +16,9 @@
     ],
     "product": "Equinix Fabric ChangeAlert",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$ref": "#/definitions/ChangeAlert",
+    "$ref": "#/definitions/Data",
     "definitions": {
-        "ChangeAlert": {
+        "Data": {
             "properties": {
                 "resource": {
                     "$ref": "#/definitions/Resource",
@@ -70,7 +70,7 @@
                     "description": "Description of the resource generating the event"
                 },
                 "change": {
-                    "$ref": "#/definitions/ResourceChange",
+                    "$ref": "#/definitions/Change",
                     "additionalProperties": true,
                     "description": "Change information for the resource that fired the event"
                 }
@@ -104,7 +104,7 @@
             "title": "AlertRule",
             "description": "Schema definition of AlertRule data"
         },
-        "ResourceChange": {
+        "Change": {
             "properties": {
                 "uuid": {
                     "type": "string",
@@ -118,22 +118,9 @@
                     "type": "string",
                     "description": "Status of the change event on the resource target"
                 },
-                "createdBy": {
-                    "type": "string",
-                    "description": "User account that created the resource that fired the event"
-                },
                 "createdDateTime": {
                     "type": "string",
                     "description": "The time that the resource that fired the event was created",
-                    "format": "date-time"
-                },
-                "updatedBy": {
-                    "type": "string",
-                    "description": "User account that updated the resource that fired the event"
-                },
-                "updatedDateTime": {
-                    "type": "string",
-                    "description": "The time that the resource that fired the event was updated",
                     "format": "date-time"
                 },
                 "data": {

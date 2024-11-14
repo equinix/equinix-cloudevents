@@ -20,9 +20,9 @@
     ],
     "product": "Equinix Fabric MetricEvent",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$ref": "#/definitions/MetricEvent",
+    "$ref": "#/definitions/Data",
     "definitions": {
-        "MetricEvent": {
+        "Data": {
             "properties": {
                 "resource": {
                     "$ref": "#/definitions/Resource",
@@ -32,10 +32,10 @@
                 "metrics": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/Metrics",
+                        "$ref": "#/definitions/Metric",
                         "additionalProperties": true
                     },
-                    "description": "Specific details of the metric event"
+                    "description": "Specific details of the metric"
                 },
                 "message": {
                     "type": "string",
@@ -74,7 +74,7 @@
                     "description": "Description of the resource generating the event"
                 },
                 "change": {
-                    "$ref": "#/definitions/ResourceChange",
+                    "$ref": "#/definitions/Change",
                     "additionalProperties": true,
                     "description": "Change information for the resource that fired the event"
                 }
@@ -84,15 +84,15 @@
             "title": "Resource",
             "description": "Schema of the resource that fired the event"
         },
-        "Metrics": {
+        "Metric": {
             "properties": {
                 "type": {
                     "type": "string",
-                    "description": "The type of the metric event"
+                    "description": "The type of the metric"
                 },
                 "name": {
                     "type": "string",
-                    "description": "The name of the metric event"
+                    "description": "The name of the metric"
                 },
                 "unit": {
                     "type": "string",
@@ -102,11 +102,11 @@
                     "type": "string",
                     "description": "The time interval that the metric datapoints refer to"
                 },
-                "dataPoints": {
+                "dataPoint": {
                     "type": "array",
                     "description": "Metric data values and end times",
                     "items": {
-                        "$ref": "#/definitions/DataPoints"
+                        "$ref": "#/definitions/DataPoint"
                     }
                 }
             },
@@ -115,7 +115,7 @@
             "title": "Metrics",
             "description": "Schema definition of Metrics data"
         },
-        "DataPoints": {
+        "DataPoint": {
             "properties": {
                 "startDateTime": {
                     "type": "string",
@@ -136,7 +136,7 @@
             "title": "DataPoints",
             "additionalProperties": true
         },
-        "ResourceChange": {
+        "Change": {
             "properties": {
                 "uuid": {
                     "type": "string",
@@ -150,22 +150,9 @@
                     "type": "string",
                     "description": "Status of the change event on the resource target"
                 },
-                "createdBy": {
-                    "type": "string",
-                    "description": "User account that created the resource that fired the event"
-                },
                 "createdDateTime": {
                     "type": "string",
                     "description": "The time that the resource that fired the event was created",
-                    "format": "date-time"
-                },
-                "updatedBy": {
-                    "type": "string",
-                    "description": "User account that updated the resource that fired the event"
-                },
-                "updatedDateTime": {
-                    "type": "string",
-                    "description": "The time that the resource that fired the event was updated",
                     "format": "date-time"
                 },
                 "data": {
