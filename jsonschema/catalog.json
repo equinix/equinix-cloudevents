@@ -3,11 +3,28 @@
     "version": 1,
     "schemas": [
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/Change.json",
-            "product": "Equinix Fabric Change",
-            "name": "Change",
-            "description": "The data within all Change events.",
-            "datatype": "equinix.events.fabric.v1.Change",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/ChangeAlert.json",
+            "product": "Equinix Fabric ChangeAlert",
+            "name": "ChangeAlert",
+            "description": "The data within all ChangeAlert events.",
+            "datatype": "equinix.events.fabric.v1.ChangeAlert",
+            "cloudeventTypes": [
+                "equinix.fabric.connection.status.up",
+                "equinix.fabric.connection.status.down",
+                "equinix.fabric.connection.bgp_ipv4_status.up",
+                "equinix.fabric.connection.bgp_ipv4_status.down",
+                "equinix.fabric.connection.bgp_ipv6_status.up",
+                "equinix.fabric.connection.bgp_ipv6_status.down",
+                "equinix.fabric.port.status.up",
+                "equinix.fabric.port.status.down"
+            ]
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/ChangeEvent.json",
+            "product": "Equinix Fabric ChangeEvent",
+            "name": "ChangeEvent",
+            "description": "The data within all ChangeEvent events.",
+            "datatype": "equinix.events.fabric.v1.ChangeEvent",
             "cloudeventTypes": [
                 "equinix.fabric.connection.status.up",
                 "equinix.fabric.connection.status.down",
@@ -147,28 +164,22 @@
             ]
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/ChangeAlert.json",
-            "product": "Equinix Fabric ChangeAlert",
-            "name": "ChangeAlert",
-            "description": "The data within all ChangeAlert events.",
-            "datatype": "equinix.events.fabric.v1.ChangeAlert",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/MetricAlert.json",
+            "product": "Equinix Fabric MetricAlert",
+            "name": "MetricAlert",
+            "description": "The data within all MetricAlert events.",
+            "datatype": "equinix.events.fabric.v1.MetricAlert",
             "cloudeventTypes": [
-                "equinix.fabric.connection.status.up",
-                "equinix.fabric.connection.status.down",
-                "equinix.fabric.connection.bgp_ipv4_status.up",
-                "equinix.fabric.connection.bgp_ipv4_status.down",
-                "equinix.fabric.connection.bgp_ipv6_status.up",
-                "equinix.fabric.connection.bgp_ipv6_status.down",
-                "equinix.fabric.port.status.up",
-                "equinix.fabric.port.status.down"
+                "equinix.fabric.router.routes_ipv4_installed.utilization",
+                "equinix.fabric.router.routes_ipv6_installed.utilization"
             ]
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/Metric.json",
-            "product": "Equinix Fabric Metric",
-            "name": "Metric",
-            "description": "The data within all Metric events.",
-            "datatype": "equinix.events.fabric.v1.Metric",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/MetricEvent.json",
+            "product": "Equinix Fabric MetricEvent",
+            "name": "MetricEvent",
+            "description": "The data within all MetricEvent events.",
+            "datatype": "equinix.events.fabric.v1.MetricEvent",
             "cloudeventTypes": [
                 "equinix.fabric.connection.bandwidth_rx.usage",
                 "equinix.fabric.connection.bandwidth_tx.usage",
@@ -182,17 +193,6 @@
                 "equinix.fabric.router.routes_ipv6_installed.utilization",
                 "equinix.fabric.metro.{:asideMetroCode}_{:zsideMetroCode}.latency",
                 "equinix.fabric.metric"
-            ]
-        },
-        {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/MetricAlert.json",
-            "product": "Equinix Fabric MetricAlert",
-            "name": "MetricAlert",
-            "description": "The data within all MetricAlert events.",
-            "datatype": "equinix.events.fabric.v1.MetricAlert",
-            "cloudeventTypes": [
-                "equinix.fabric.router.routes_ipv4_installed.utilization",
-                "equinix.fabric.router.routes_ipv6_installed.utilization"
             ]
         }
     ]
