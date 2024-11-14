@@ -4,16 +4,7 @@
     "examples": [],
     "package": "equinix.events.fabric.v1",
     "datatype": "equinix.events.fabric.v1.ChangeAlert",
-    "cloudeventTypes": [
-        "equinix.fabric.connection.status.up",
-        "equinix.fabric.connection.status.down",
-        "equinix.fabric.connection.bgp_ipv4_status.up",
-        "equinix.fabric.connection.bgp_ipv4_status.down",
-        "equinix.fabric.connection.bgp_ipv6_status.up",
-        "equinix.fabric.connection.bgp_ipv6_status.down",
-        "equinix.fabric.port.status.up",
-        "equinix.fabric.port.status.down"
-    ],
+    "cloudeventTypes": [],
     "product": "Equinix Fabric ChangeAlert",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",
