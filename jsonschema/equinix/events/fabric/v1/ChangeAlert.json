@@ -25,6 +25,14 @@
                     "additionalProperties": true,
                     "description": "Optional. The Backup event payload. Unset for deletion events."
                 },
+                "alertRule": {
+                    "type": "object",
+                    "items": {
+                        "$ref": "#/definitions/AlertRule",
+                        "additionalProperties": true
+                    },
+                    "description": "Metadata about the AlertRule triggering the Alert"
+                },
                 "message": {
                     "type": "string",
                     "description": "Supporting message describing the event"
@@ -57,10 +65,14 @@
                     "type": "string",
                     "description": "State of the resource generating the event"
                 },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the resource generating the event"
+                },
                 "change": {
                     "$ref": "#/definitions/ResourceChange",
                     "additionalProperties": true,
-                    "description": "Chang information for the resource that fired the event"
+                    "description": "Change information for the resource that fired the event"
                 }
             },
             "additionalProperties": true,
@@ -68,8 +80,44 @@
             "title": "Resource",
             "description": "Schema of the resource that fired the event"
         },
+        "AlertRule": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the alert"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the alert"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the alert"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "AlertRule",
+            "description": "Schema definition of AlertRule data"
+        },
         "ResourceChange": {
             "properties": {
+                "uuid": {
+                    "type": "string",
+                    "description": "Uuid of the of change for the resource target of the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the change happening on the resource for the target of the event"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the change event on the resource target"
+                },
                 "createdBy": {
                     "type": "string",
                     "description": "User account that created the resource that fired the event"
@@ -87,12 +135,43 @@
                     "type": "string",
                     "description": "The time that the resource that fired the event was updated",
                     "format": "date-time"
+                },
+                "data": {
+                    "type": "array",
+                    "description": "Data of the change event",
+                    "items": {
+                        "$ref": "#/definitions/ChangeData"
+                    }
                 }
             },
             "additionalProperties": true,
             "type": "object",
             "title": "Change",
             "description": "Change attribute schema"
+        },
+        "ChangeData": {
+            "properties": {
+                "op": {
+                    "type": "string",
+                    "description": "The operation performed on the resource under change"
+                },
+                "path": {
+                    "type": "string",
+                    "description": "The attribute on the resource being changed"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "The current value of the attribute under change"
+                },
+                "previousValue": {
+                    "type": "string",
+                    "description": "The previous value of the attribute under change"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ChangeData",
+            "description": "ChangeData attribute schema"
         }
     }
 }

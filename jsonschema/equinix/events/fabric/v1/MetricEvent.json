@@ -1,9 +1,9 @@
 {
-    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/Metric.json",
-    "name": "Metric",
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/MetricEvent.json",
+    "name": "MetricEvent",
     "examples": [],
     "package": "equinix.events.fabric.v1",
-    "datatype": "equinix.events.fabric.v1.Metric",
+    "datatype": "equinix.events.fabric.v1.MetricEvent",
     "cloudeventTypes": [
         "equinix.fabric.connection.bandwidth_rx.usage",
         "equinix.fabric.connection.bandwidth_tx.usage",
@@ -18,11 +18,11 @@
         "equinix.fabric.metro.{:asideMetroCode}_{:zsideMetroCode}.latency",
         "equinix.fabric.metric"
     ],
-    "product": "Equinix Fabric Metric",
+    "product": "Equinix Fabric MetricEvent",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$ref": "#/definitions/Metric",
+    "$ref": "#/definitions/MetricEvent",
     "definitions": {
-        "Metric": {
+        "MetricEvent": {
             "properties": {
                 "resource": {
                     "$ref": "#/definitions/Resource",
@@ -44,8 +44,8 @@
             },
             "additionalProperties": true,
             "type": "object",
-            "title": "Metric Event Data",
-            "description": "The data within all Metric events."
+            "title": "MetricEvent Event Data",
+            "description": "The data within all MetricEvent events."
         },
         "Resource": {
             "properties": {
@@ -69,10 +69,14 @@
                     "type": "string",
                     "description": "State of the resource generating the event"
                 },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the resource generating the event"
+                },
                 "change": {
                     "$ref": "#/definitions/ResourceChange",
                     "additionalProperties": true,
-                    "description": "Chang information for the resource that fired the event"
+                    "description": "Change information for the resource that fired the event"
                 }
             },
             "additionalProperties": true,
@@ -134,6 +138,18 @@
         },
         "ResourceChange": {
             "properties": {
+                "uuid": {
+                    "type": "string",
+                    "description": "Uuid of the of change for the resource target of the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the change happening on the resource for the target of the event"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the change event on the resource target"
+                },
                 "createdBy": {
                     "type": "string",
                     "description": "User account that created the resource that fired the event"
@@ -151,12 +167,43 @@
                     "type": "string",
                     "description": "The time that the resource that fired the event was updated",
                     "format": "date-time"
+                },
+                "data": {
+                    "type": "array",
+                    "description": "Data of the change event",
+                    "items": {
+                        "$ref": "#/definitions/ChangeData"
+                    }
                 }
             },
             "additionalProperties": true,
             "type": "object",
             "title": "Change",
             "description": "Change attribute schema"
+        },
+        "ChangeData": {
+            "properties": {
+                "op": {
+                    "type": "string",
+                    "description": "The operation performed on the resource under change"
+                },
+                "path": {
+                    "type": "string",
+                    "description": "The attribute on the resource being changed"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "The current value of the attribute under change"
+                },
+                "previousValue": {
+                    "type": "string",
+                    "description": "The previous value of the attribute under change"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ChangeData",
+            "description": "ChangeData attribute schema"
         }
     }
 }
