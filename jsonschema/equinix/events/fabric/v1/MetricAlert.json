@@ -70,11 +70,6 @@
                 "description": {
                     "type": "string",
                     "description": "Description of the resource generating the event"
-                },
-                "change": {
-                    "$ref": "#/definitions/Change",
-                    "additionalProperties": true,
-                    "description": "Change information for the resource that fired the event"
                 }
             },
             "additionalProperties": true,
@@ -100,7 +95,7 @@
                     "type": "string",
                     "description": "The time interval that the metric datapoints refer to"
                 },
-                "dataPoint": {
+                "dataPoints": {
                     "type": "array",
                     "description": "Metric data values and end times",
                     "items": {
@@ -157,62 +152,6 @@
             "type": "object",
             "title": "AlertRule",
             "description": "Schema definition of AlertRule data"
-        },
-        "Change": {
-            "properties": {
-                "uuid": {
-                    "type": "string",
-                    "description": "Uuid of the of change for the resource target of the event"
-                },
-                "type": {
-                    "type": "string",
-                    "description": "Type of the change happening on the resource for the target of the event"
-                },
-                "status": {
-                    "type": "string",
-                    "description": "Status of the change event on the resource target"
-                },
-                "createdDateTime": {
-                    "type": "string",
-                    "description": "The time that the resource that fired the event was created",
-                    "format": "date-time"
-                },
-                "data": {
-                    "type": "array",
-                    "description": "Data of the change event",
-                    "items": {
-                        "$ref": "#/definitions/ChangeData"
-                    }
-                }
-            },
-            "additionalProperties": true,
-            "type": "object",
-            "title": "Change",
-            "description": "Change attribute schema"
-        },
-        "ChangeData": {
-            "properties": {
-                "op": {
-                    "type": "string",
-                    "description": "The operation performed on the resource under change"
-                },
-                "path": {
-                    "type": "string",
-                    "description": "The attribute on the resource being changed"
-                },
-                "value": {
-                    "type": "string",
-                    "description": "The current value of the attribute under change"
-                },
-                "previousValue": {
-                    "type": "string",
-                    "description": "The previous value of the attribute under change"
-                }
-            },
-            "additionalProperties": true,
-            "type": "object",
-            "title": "ChangeData",
-            "description": "ChangeData attribute schema"
         }
     }
 }
