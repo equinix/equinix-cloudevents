@@ -10,7 +10,7 @@
     "product": "Equinix Fabric MetricEvent",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",
-    "metricTypes": [
+    "metricNames": [
         "equinix.fabric.port.packets_erred_rx.count",
         "equinix.fabric.port.packets_erred_tx.count",
         "equinix.fabric.port.packets_dropped_rx.count",
