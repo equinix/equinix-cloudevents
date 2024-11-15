@@ -11,7 +11,7 @@ def retrieve_json_schemas():
                     data = json.load(eventFile)
                     newItem = {
                         "url": data["$id"],
-                        "product": data["product"],
+                        "domain": data["domain"],
                         "name": data["name"],
                         "description": data["definitions"]["Data"]["description"],
                         "datatype": data["datatype"],

@@ -1,5 +1,5 @@
 {
-    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/ChangeEvent.json",
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeEvent.json",
     "name": "ChangeEvent",
     "examples": [],
     "package": "equinix.events.fabric.v1",
@@ -42,7 +42,7 @@
         "equinix.fabric.network.state.deprovisioning",
         "equinix.fabric.network.state.deprovisioned"
     ],
-    "product": "Equinix Fabric ChangeEvent",
+    "domain": "Equinix Fabric ChangeEvent",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",
     "definitions": {

@@ -1,5 +1,5 @@
 {
-    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/MetricEvent.json",
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricEvent.json",
     "name": "MetricEvent",
     "examples": [],
     "package": "equinix.events.fabric.v1",
@@ -7,7 +7,7 @@
     "cloudeventTypes": [
         "equinix.fabric.metric"
     ],
-    "product": "Equinix Fabric MetricEvent",
+    "domain": "Equinix Fabric MetricEvent",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",
     "metricNames": [
