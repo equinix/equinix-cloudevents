@@ -3,16 +3,16 @@
     "version": 1,
     "schemas": [
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/ChangeAlert.json",
-            "product": "Equinix Fabric ChangeAlert",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeAlert.json",
+            "domain": "Equinix Fabric ChangeAlert",
             "name": "ChangeAlert",
             "description": "The data within all ChangeAlert events.",
             "datatype": "equinix.events.fabric.v1.ChangeAlert",
             "cloudeventTypes": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/ChangeEvent.json",
-            "product": "Equinix Fabric ChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeEvent.json",
+            "domain": "Equinix Fabric ChangeEvent",
             "name": "ChangeEvent",
             "description": "The data within all ChangeEvent events.",
             "datatype": "equinix.events.fabric.v1.ChangeEvent",
@@ -56,16 +56,16 @@
             ]
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/MetricAlert.json",
-            "product": "Equinix Fabric MetricAlert",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricAlert.json",
+            "domain": "Equinix Fabric MetricAlert",
             "name": "MetricAlert",
             "description": "The data within all MetricAlert events.",
             "datatype": "equinix.events.fabric.v1.MetricAlert",
             "cloudeventTypes": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/MetricEvent.json",
-            "product": "Equinix Fabric MetricEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricEvent.json",
+            "domain": "Equinix Fabric MetricEvent",
             "name": "MetricEvent",
             "description": "The data within all MetricEvent events.",
             "datatype": "equinix.events.fabric.v1.MetricEvent",

@@ -2,12 +2,18 @@ import os
 import json
 
 def table_row(schema):
-    cloudEventTypes = "<br>".join(map(lambda x: f"`{x}`", schema["cloudeventTypes"]))
+    cloudEventTypes = "<br>\n".join(map(lambda x: f"`{x}`", schema["cloudeventTypes"]))
     metrics = ""
     if "metricNames" in schema:
-        metricNames = "<br>".join(map(lambda x: f"`{x}`", schema["metricNames"]))
-        metrics = f"<br>Metric Type(s):<br>{metricNames}"
-    return f"|{schema["product"]}|[JSON]({schema["url"]})|<br>Data Type:<br>`{schema["datatype"]}`<br>CloudEvent Type(s):<br>{cloudEventTypes}<br>{metrics}|"
+        metricNames = "<br>\n".join(map(lambda x: f"`{x}`", schema["metricNames"]))
+        metrics = f"#### Metric Type(s)\n{metricNames}"
+    return f"""### {schema["domain"]}
+#### DataSchema [JSON]({schema["url"]})
+#### Data Type
+`{schema["datatype"]}`
+#### CloudEvent Type(s)
+{cloudEventTypes}
+{metrics}"""
 
 def replace_readme_catalog():
     readme_path = os.path.dirname(os.path.abspath(__file__)) + "/../README.md"
@@ -16,11 +22,6 @@ def replace_readme_catalog():
         catalog = json.load(catalog_file)
         schemas = "\n".join(map(table_row, catalog["schemas"]))
 
-    replacement_readme_catalog = f"""
-|Product|Schemas|Types|
-{schemas}
-"""
-    
     with open(readme_path, "r+") as readme_file:
         content = readme_file.read()
         readme_file.seek(0)
@@ -29,7 +30,7 @@ def replace_readme_catalog():
         header = content[:content.index(generation_start)+len(generation_start)]
         footer = content[content.index(generation_end):]
         readme_file.write(f"""{header}
-{replacement_readme_catalog}
+{schemas}
 {footer}""")
         readme_file.truncate()
 
