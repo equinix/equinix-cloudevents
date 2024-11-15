@@ -18,6 +18,7 @@ def replace_readme_catalog():
 
     replacement_readme_catalog = f"""|Product|Schemas|Types|
 |-|-|-|
+
 {schemas}
 """
     
