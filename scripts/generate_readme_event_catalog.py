@@ -17,7 +17,7 @@ def replace_readme_catalog():
         schemas = "\n".join(map(table_row, catalog["schemas"]))
 
     replacement_readme_catalog = f"""
-|Product|Schemas|Types|
+|Domain|Schemas|Types|
 {schemas}
 """
     

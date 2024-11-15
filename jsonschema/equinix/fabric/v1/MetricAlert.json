@@ -1,11 +1,11 @@
 {
-    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/MetricAlert.json",
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricAlert.json",
     "name": "MetricAlert",
     "examples": [],
     "package": "equinix.events.fabric.v1",
     "datatype": "equinix.events.fabric.v1.MetricAlert",
     "cloudeventTypes": [],
-    "product": "Equinix Fabric MetricAlert",
+    "domain": "Equinix Fabric MetricAlert",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",
     "definitions": {

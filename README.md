@@ -2,11 +2,11 @@
 
 Equinix published [CloudEvent](https://cloudevents.io/) Types
 
-Definitive "source of truth" for the Equinix Observability event data formats
+Definitive "source of truth" for the Equinix Interconnection Observability event data formats
 
 ## CloudEvents in this repository
 
-The following data payloads are the supported events and formats for Equinix Observability
+The following data payloads are the supported events and formats for Equinix Interconnectionß Observability
 
 <!-- CATALOG_GENERATION_START -->
 
