@@ -9,14 +9,17 @@ def retrieve_json_schemas():
             if file.endswith('.json') and file != "catalog.json":
                 with open(root + "/" + file, "r") as eventFile:
                     data = json.load(eventFile)
-                    json_schemas.append({
+                    newItem = {
                         "url": data["$id"],
                         "product": data["product"],
                         "name": data["name"],
-                        "description": data["definitions"][data["name"]]["description"],
+                        "description": data["definitions"]["Data"]["description"],
                         "datatype": data["datatype"],
                         "cloudeventTypes": data["cloudeventTypes"]
-                    })
+                    }
+                    if "metricNames" in data:
+                        newItem["metricNames"] = data["metricNames"]
+                    json_schemas.append(newItem)
     json_schemas.sort(key=lambda x: x["url"])
     return json_schemas
 
