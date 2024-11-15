@@ -39,6 +39,16 @@
             "equinix.fabric.service_token.state.deleted",
             "equinix.fabric.service_token.state.inactive"
         ],
-        "metricTypes": []
+        "metricNames": [
+            "equinix.fabric.connection.bandwidth_rx.usage",
+            "equinix.fabric.connection.bandwidth_tx.usage",
+            "equinix.fabric.metro.{:asideMetroCode}_{:zsideMetroCode}.latency",
+            "equinix.fabric.port.bandwidth_rx.usage",
+            "equinix.fabric.port.bandwidth_tx.usage",
+            "equinix.fabric.port.packets_dropped_rx.count",
+            "equinix.fabric.port.packets_dropped_tx.count",
+            "equinix.fabric.port.packets_erred_rx.count",
+            "equinix.fabric.port.packets_erred_tx.count"
+        ]
     }
 }

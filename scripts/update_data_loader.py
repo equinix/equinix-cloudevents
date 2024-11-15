@@ -14,13 +14,13 @@ def retrieve_supported_events():
                     if product not in dataLoaderStructure:
                         dataLoaderStructure[product] = {
                             "eventTypes": [],
-                            "metricTypes": [],
+                            "metricNames": [],
                         }
                     dataLoaderStructure[product]["eventTypes"].extend(data["cloudeventTypes"])
-                    if "metricTypes" in data:
-                        dataLoaderStructure[product]["metricTypes"].extend(data["metricTypes"])
+                    if "metricNames" in data:
+                        dataLoaderStructure[product]["metricNames"].extend(data["metricNames"])
                     dataLoaderStructure[product]["eventTypes"] = sorted(set(dataLoaderStructure[product]["eventTypes"]))
-                    dataLoaderStructure[product]["metricTypes"] = sorted(set(dataLoaderStructure[product]["metricTypes"]))
+                    dataLoaderStructure[product]["metricNames"] = sorted(set(dataLoaderStructure[product]["metricNames"]))
 
     return dict(sorted(dataLoaderStructure.items()))
 
