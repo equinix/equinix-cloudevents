@@ -1,0 +1,160 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/ChangeEvent.json",
+    "name": "ChangeEvent",
+    "examples": [],
+    "package": "equinix.events.fabric.v1",
+    "datatype": "equinix.events.fabric.v1.ChangeEvent",
+    "cloudeventTypes": [
+        "equinix.fabric.router.state.provisioning",
+        "equinix.fabric.router.state.provisioned",
+        "equinix.fabric.router.state.reprovisioning",
+        "equinix.fabric.router.state.deprovisioning",
+        "equinix.fabric.router.state.deprovisioned",
+        "equinix.fabric.router.state.failed",
+        "equinix.fabric.router.state.not_provisioned",
+        "equinix.fabric.router.state.not_deprovisioned",
+        "equinix.fabric.port.state.provisioned",
+        "equinix.fabric.port.state.deprovisioned",
+        "equinix.fabric.port.state.failed",
+        "equinix.fabric.port.status.up",
+        "equinix.fabric.port.status.down",
+        "equinix.fabric.service_token.state.inactive",
+        "equinix.fabric.service_token.state.deleted",
+        "equinix.fabric.service_token.attribute.changed",
+        "equinix.fabric.connection.state.pending",
+        "equinix.fabric.connection.state.pending_interface_configuration",
+        "equinix.fabric.connection.state.provisioning",
+        "equinix.fabric.connection.state.provisioned",
+        "equinix.fabric.connection.state.deprovisioning",
+        "equinix.fabric.connection.state.deprovisioned",
+        "equinix.fabric.connection.state.pending_approval",
+        "equinix.fabric.connection.attribute.changed",
+        "equinix.fabric.connection.status.up",
+        "equinix.fabric.connection.status.down",
+        "equinix.fabric.connection.bgpipv4_session_status.established",
+        "equinix.fabric.connection.bgpipv4_session_status.idle",
+        "equinix.fabric.connection.bgpipv4_session_status.connect",
+        "equinix.fabric.connection.bgpipv6_session_status.established",
+        "equinix.fabric.connection.bgpipv6_session_status.idle",
+        "equinix.fabric.connection.bgpipv6_session_status.connect",
+        "equinix.fabric.network.state.provisioning",
+        "equinix.fabric.network.state.provisioned",
+        "equinix.fabric.network.state.deprovisioning",
+        "equinix.fabric.network.state.deprovisioned"
+    ],
+    "product": "Equinix Fabric ChangeEvent",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "Optional. The Backup event payload. Unset for deletion events."
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ChangeEvent Event Data",
+            "description": "The data within all ChangeEvent events."
+        },
+        "Resource": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                },
+                "state": {
+                    "type": "string",
+                    "description": "State of the resource generating the event"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the resource generating the event"
+                },
+                "change": {
+                    "$ref": "#/definitions/Change",
+                    "additionalProperties": true,
+                    "description": "Change information for the resource that fired the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        },
+        "Change": {
+            "properties": {
+                "uuid": {
+                    "type": "string",
+                    "description": "Uuid of the of change for the resource target of the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the change happening on the resource for the target of the event"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the change event on the resource target"
+                },
+                "createdDateTime": {
+                    "type": "string",
+                    "description": "The time that the resource that fired the event was created",
+                    "format": "date-time"
+                },
+                "data": {
+                    "type": "array",
+                    "description": "Data of the change event",
+                    "items": {
+                        "$ref": "#/definitions/ChangeData"
+                    }
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Change",
+            "description": "Change attribute schema"
+        },
+        "ChangeData": {
+            "properties": {
+                "op": {
+                    "type": "string",
+                    "description": "The operation performed on the resource under change"
+                },
+                "path": {
+                    "type": "string",
+                    "description": "The attribute on the resource being changed"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "The current value of the attribute under change"
+                },
+                "previousValue": {
+                    "type": "string",
+                    "description": "The previous value of the attribute under change"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ChangeData",
+            "description": "ChangeData attribute schema"
+        }
+    }
+}

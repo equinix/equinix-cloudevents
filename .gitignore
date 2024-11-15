@@ -1,0 +1,5 @@
+# OS X Finder Files
+.DS_Store
+
+# Local Setup Scripts for Repo
+local_helper_scripts/*

@@ -1,0 +1,135 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/events/fabric/v1/MetricEvent.json",
+    "name": "MetricEvent",
+    "examples": [],
+    "package": "equinix.events.fabric.v1",
+    "datatype": "equinix.events.fabric.v1.MetricEvent",
+    "cloudeventTypes": [
+        "equinix.fabric.metric"
+    ],
+    "product": "Equinix Fabric MetricEvent",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "metricNames": [
+        "equinix.fabric.port.packets_erred_rx.count",
+        "equinix.fabric.port.packets_erred_tx.count",
+        "equinix.fabric.port.packets_dropped_rx.count",
+        "equinix.fabric.port.packets_dropped_tx.count",
+        "equinix.fabric.metro.{:asideMetroCode}_{:zsideMetroCode}.latency",
+        "equinix.fabric.connection.bandwidth_rx.usage",
+        "equinix.fabric.connection.bandwidth_tx.usage",
+        "equinix.fabric.port.bandwidth_rx.usage",
+        "equinix.fabric.port.bandwidth_tx.usage"
+    ],
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "Optional. The Backup event payload. Unset for deletion events."
+                },
+                "metrics": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Metric",
+                        "additionalProperties": true
+                    },
+                    "description": "Specific details of the metric"
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "MetricEvent Event Data",
+            "description": "The data within all MetricEvent events."
+        },
+        "Resource": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                },
+                "state": {
+                    "type": "string",
+                    "description": "State of the resource generating the event"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the resource generating the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        },
+        "Metric": {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "The type of the metric"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The name of the metric"
+                },
+                "unit": {
+                    "type": "string",
+                    "description": "Unified Code for Units of Measure"
+                },
+                "interval": {
+                    "type": "string",
+                    "description": "The time interval that the metric datapoints refer to"
+                },
+                "dataPoints": {
+                    "type": "array",
+                    "description": "Metric data values and end times",
+                    "items": {
+                        "$ref": "#/definitions/DataPoint"
+                    }
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Metrics",
+            "description": "Schema definition of Metrics data"
+        },
+        "DataPoint": {
+            "properties": {
+                "startDateTime": {
+                    "type": "string",
+                    "description": "The start time of the metric data point value given",
+                    "format": "date-time"
+                },
+                "endDateTime": {
+                    "type": "string",
+                    "description": "The end time of the metric data point value given",
+                    "format": "date-time"
+                },
+                "value": {
+                    "type": "number",
+                    "description": "The value of the metric data point"
+                }
+            },
+            "type": "object",
+            "title": "DataPoints",
+            "additionalProperties": true
+        }
+    }
+}
