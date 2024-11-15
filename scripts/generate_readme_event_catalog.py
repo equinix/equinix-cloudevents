@@ -2,12 +2,12 @@ import os
 import json
 
 def table_row(schema):
-    cloudEventTypes = "</br>".join(map(lambda x: f"`{x}`", schema["cloudeventTypes"]))
+    cloudEventTypes = "<br>".join(map(lambda x: f"`{x}`", schema["cloudeventTypes"]))
     metrics = ""
     if "metricNames" in schema:
-        metricNames = "</br>".join(map(lambda x: f"`{x}`", schema["metricNames"]))
-        metrics = f"<br>Metric Type(s):<br>{metricNames}</br>"
-    return f"|{schema["product"]}|[JSON]({schema["url"]})|<br>Data Type:<br>`{schema["datatype"]}`<br>CloudEvent Type(s):<br>{cloudEventTypes}</br>{metrics}|"
+        metricNames = "<br>".join(map(lambda x: f"`{x}`", schema["metricNames"]))
+        metrics = f"<br>Metric Type(s):</br>{metricNames}</br>"
+    return f"|{schema["product"]}|[JSON]({schema["url"]})|<br>Data Type:</br><br>`{schema["datatype"]}`<br>CloudEvent Type(s):</br>{cloudEventTypes}<br>{metrics}|"
 
 def replace_readme_catalog():
     readme_path = os.path.dirname(os.path.abspath(__file__)) + "/../README.md"
@@ -17,7 +17,6 @@ def replace_readme_catalog():
         schemas = "\n".join(map(table_row, catalog["schemas"]))
 
     replacement_readme_catalog = f"""|Product|Schemas|Types|
-|-|-|-|
 
 {schemas}
 """
