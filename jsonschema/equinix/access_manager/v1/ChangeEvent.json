@@ -5,7 +5,6 @@
     "package": "equinix.events.access_manager.v1",
     "datatype": "equinix.events.access_manager.v1.ChangeEvent",
     "cloudeventTypes": [
-        "equinix.access_manager.user.activity.log_in"
     ],
     "domain": "Equinix Access Manager ChangeEvent",
     "$schema": "http://json-schema.org/draft-04/schema#",
