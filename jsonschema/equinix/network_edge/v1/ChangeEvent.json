@@ -1,0 +1,37 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/ChangeEvent.json",
+    "name": "ChangeEvent",
+    "examples": [],
+    "package": "equinix.events.network_edge.v1",
+    "datatype": "equinix.events.network_edge.v1.ChangeEvent",
+    "cloudeventTypes": [
+    ],
+    "domain": "Equinix Network Edge ChangeEvent",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "Optional. The Backup event payload. Unset for deletion events."
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ChangeEvent Event Data",
+            "description": "The data within all ChangeEvent events."
+        },
+        "Resource": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        }
+    }
+}
