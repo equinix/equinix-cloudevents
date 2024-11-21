@@ -6,7 +6,7 @@ def table_row(schema):
     metrics = ""
     if "metricNames" in schema:
         metricNames = "<br>\n".join(map(lambda x: f"`{x}`", schema["metricNames"]))
-        metrics = f"#### Metric Type(s)\n{metricNames}"
+        metrics = f"#### Metric Name(s)\n{metricNames}"
     return f"""### {schema["domain"]}
 #### DataSchema [JSON]({schema["url"]})
 #### Data Type
