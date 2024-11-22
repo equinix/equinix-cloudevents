@@ -8,7 +8,9 @@
             "name": "ChangeAlert",
             "description": "The data within all ChangeAlert events.",
             "datatype": "equinix.events.fabric.v1.ChangeAlert",
-            "cloudeventTypes": []
+            "cloudeventTypes": [],
+            "metricNames": [],
+            "alertNames": []
         },
         {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeEvent.json",
@@ -17,43 +19,45 @@
             "description": "The data within all ChangeEvent events.",
             "datatype": "equinix.events.fabric.v1.ChangeEvent",
             "cloudeventTypes": [
-                "equinix.fabric.router.state.provisioning",
-                "equinix.fabric.router.state.provisioned",
-                "equinix.fabric.router.state.reprovisioning",
-                "equinix.fabric.router.state.deprovisioning",
-                "equinix.fabric.router.state.deprovisioned",
-                "equinix.fabric.router.state.failed",
-                "equinix.fabric.router.state.not_provisioned",
-                "equinix.fabric.router.state.not_deprovisioned",
-                "equinix.fabric.port.state.provisioned",
-                "equinix.fabric.port.state.deprovisioned",
-                "equinix.fabric.port.state.failed",
-                "equinix.fabric.port.status.up",
-                "equinix.fabric.port.status.down",
-                "equinix.fabric.service_token.state.inactive",
-                "equinix.fabric.service_token.state.deleted",
-                "equinix.fabric.service_token.attribute.changed",
-                "equinix.fabric.connection.state.pending",
-                "equinix.fabric.connection.state.pending_interface_configuration",
-                "equinix.fabric.connection.state.provisioning",
-                "equinix.fabric.connection.state.provisioned",
-                "equinix.fabric.connection.state.deprovisioning",
-                "equinix.fabric.connection.state.deprovisioned",
-                "equinix.fabric.connection.state.pending_approval",
                 "equinix.fabric.connection.attribute.changed",
-                "equinix.fabric.connection.status.up",
-                "equinix.fabric.connection.status.down",
+                "equinix.fabric.connection.bgpipv4_session_status.connect",
                 "equinix.fabric.connection.bgpipv4_session_status.established",
                 "equinix.fabric.connection.bgpipv4_session_status.idle",
-                "equinix.fabric.connection.bgpipv4_session_status.connect",
+                "equinix.fabric.connection.bgpipv6_session_status.connect",
                 "equinix.fabric.connection.bgpipv6_session_status.established",
                 "equinix.fabric.connection.bgpipv6_session_status.idle",
-                "equinix.fabric.connection.bgpipv6_session_status.connect",
-                "equinix.fabric.network.state.provisioning",
-                "equinix.fabric.network.state.provisioned",
+                "equinix.fabric.connection.state.deprovisioned",
+                "equinix.fabric.connection.state.deprovisioning",
+                "equinix.fabric.connection.state.pending",
+                "equinix.fabric.connection.state.pending_approval",
+                "equinix.fabric.connection.state.pending_interface_configuration",
+                "equinix.fabric.connection.state.provisioned",
+                "equinix.fabric.connection.state.provisioning",
+                "equinix.fabric.connection.status.down",
+                "equinix.fabric.connection.status.up",
+                "equinix.fabric.network.state.deprovisioned",
                 "equinix.fabric.network.state.deprovisioning",
-                "equinix.fabric.network.state.deprovisioned"
-            ]
+                "equinix.fabric.network.state.provisioned",
+                "equinix.fabric.network.state.provisioning",
+                "equinix.fabric.port.state.deprovisioned",
+                "equinix.fabric.port.state.failed",
+                "equinix.fabric.port.state.provisioned",
+                "equinix.fabric.port.status.down",
+                "equinix.fabric.port.status.up",
+                "equinix.fabric.router.state.deprovisioned",
+                "equinix.fabric.router.state.deprovisioning",
+                "equinix.fabric.router.state.failed",
+                "equinix.fabric.router.state.not_deprovisioned",
+                "equinix.fabric.router.state.not_provisioned",
+                "equinix.fabric.router.state.provisioned",
+                "equinix.fabric.router.state.provisioning",
+                "equinix.fabric.router.state.reprovisioning",
+                "equinix.fabric.service_token.attribute.changed",
+                "equinix.fabric.service_token.state.deleted",
+                "equinix.fabric.service_token.state.inactive"
+            ],
+            "metricNames": [],
+            "alertNames": []
         },
         {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricAlert.json",
@@ -61,7 +65,9 @@
             "name": "MetricAlert",
             "description": "The data within all MetricAlert events.",
             "datatype": "equinix.events.fabric.v1.MetricAlert",
-            "cloudeventTypes": []
+            "cloudeventTypes": [],
+            "metricNames": [],
+            "alertNames": []
         },
         {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricEvent.json",
@@ -73,16 +79,17 @@
                 "equinix.fabric.metric"
             ],
             "metricNames": [
-                "equinix.fabric.port.packets_erred_rx.count",
-                "equinix.fabric.port.packets_erred_tx.count",
-                "equinix.fabric.port.packets_dropped_rx.count",
-                "equinix.fabric.port.packets_dropped_tx.count",
-                "equinix.fabric.metro.{:asideMetroCode}_{:zsideMetroCode}.latency",
                 "equinix.fabric.connection.bandwidth_rx.usage",
                 "equinix.fabric.connection.bandwidth_tx.usage",
+                "equinix.fabric.metro.{:asideMetroCode}_{:zsideMetroCode}.latency",
                 "equinix.fabric.port.bandwidth_rx.usage",
-                "equinix.fabric.port.bandwidth_tx.usage"
-            ]
+                "equinix.fabric.port.bandwidth_tx.usage",
+                "equinix.fabric.port.packets_dropped_rx.count",
+                "equinix.fabric.port.packets_dropped_tx.count",
+                "equinix.fabric.port.packets_erred_rx.count",
+                "equinix.fabric.port.packets_erred_tx.count"
+            ],
+            "alertNames": []
         }
     ]
 }

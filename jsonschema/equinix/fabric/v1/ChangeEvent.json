@@ -44,6 +44,8 @@
         "equinix.fabric.service_token.state.deleted",
         "equinix.fabric.service_token.attribute.changed"
     ],
+    "metricNames": [],
+    "alertNames": [],
     "domain": "Equinix Fabric ChangeEvent",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",

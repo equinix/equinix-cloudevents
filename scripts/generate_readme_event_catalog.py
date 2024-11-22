@@ -4,16 +4,21 @@ import json
 def table_row(schema):
     cloudEventTypes = "<br>\n".join(map(lambda x: f"`{x}`", schema["cloudeventTypes"]))
     metrics = ""
-    if "metricNames" in schema:
+    alerts = ""
+    if "metricNames" in schema and len(schema["metricNames"]) > 0:
         metricNames = "<br>\n".join(map(lambda x: f"`{x}`", schema["metricNames"]))
-        metrics = f"#### Metric Name(s)\n{metricNames}"
+        metrics = f"#### Metric Type(s)\n{metricNames}"
+    if "alertNames" in schema and len(schema["alertNames"]) > 0:
+        alertNames = "<br>\n".join(map(lambda x: f"`{x}`", schema["alertNames"]))
+        alerts = f"#### Alert Type(s)\n{alertNames}"
     return f"""### {schema["domain"]}
 #### DataSchema [JSON]({schema["url"]})
 #### Data Type
 `{schema["datatype"]}`
 #### CloudEvent Type(s)
 {cloudEventTypes}
-{metrics}"""
+{metrics}
+{alerts}"""
 
 def replace_readme_catalog():
     readme_path = os.path.dirname(os.path.abspath(__file__)) + "/../README.md"

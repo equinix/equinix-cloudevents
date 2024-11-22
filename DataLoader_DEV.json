@@ -49,6 +49,7 @@
             "equinix.fabric.port.packets_dropped_tx.count",
             "equinix.fabric.port.packets_erred_rx.count",
             "equinix.fabric.port.packets_erred_tx.count"
-        ]
+        ],
+        "alertNames": []
     }
 }

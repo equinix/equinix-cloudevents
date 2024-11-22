@@ -10,6 +10,8 @@
         "equinix.fabric.router.ipv4_installed_routes.utilization",
         "equinix.fabric.router.ipv6_installed_routes.utilization"
     ],
+    "metricNames": [],
+    "alertNames": [],
     "domain": "Equinix Fabric MetricAlert",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",

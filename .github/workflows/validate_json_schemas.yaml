@@ -1,0 +1,29 @@
+name: Validate JSON Schemas Syntax
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - 'jsonschema/**'
+      - 'scripts/**'
+      - '.github/workflows/validate_jsonschemas.yaml'
+
+
+jobs:
+  validate:
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13' 
+
+    - name: Install Python requirements.txt Dependencies
+      run: python3 -m pip install -r ./scripts/requirements.txt
+
+    - name: Download schema specifications
+      run: curl -o ./scripts/jsonschema-org-schema.json https://json-schema.org/draft-04/schema
+
+    - name: Validate JSON Schema
+      run: python3 ./scripts/validate_json_schema.py

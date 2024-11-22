@@ -82,6 +82,7 @@
         "equinix.fabric.port.packets_dropped_rx.count",
         "equinix.fabric.port.packets_dropped_tx.count"
     ],
+    "alertNames": [],
     "definitions": {
         "Data": {
             "properties": {

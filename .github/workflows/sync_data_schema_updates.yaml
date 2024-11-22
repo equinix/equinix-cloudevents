@@ -1,0 +1,41 @@
+name: Synchronize Repo with Data Schemas
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - 'jsonschema/**'
+      - 'scripts/**'
+      - '.github/workflows/sync_data_schema_updates.yaml'
+
+
+jobs:
+  validate:
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+
+    - name: Update Data Loaders
+      run: python3 ./scripts/update_data_loaders.py
+
+    - name: Update JSON Catalog
+      run: python3 ./scripts/generate_json_catalog.py
+
+    - name: Update README.md 
+      run: python3 ./scripts/generate_readme_event_catalog.py
+
+    - name: Auto Commit Updates
+      run: |
+        git add .
+        echo -e "\nGit status:"
+        echo `git status`
+        cdate=`date`
+        cmsg="Auto commit generated client synchronization changes for Data Schema Updates - $cdate"
+        echo -e "\nCommit message created : $cmsg"
+        echo -e "\nCommitting if there are files to update in client dir:"
+        echo `git commit -m "$cmsg"`
+        echo `git push`
