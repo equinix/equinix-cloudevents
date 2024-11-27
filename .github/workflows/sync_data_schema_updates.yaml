@@ -26,8 +26,8 @@ jobs:
         git config --global user.email 'bot@equinix.noreply.github.com'
         git config advice.addIgnoredFile false
         git fetch
-        echo -e "\nThis is executing for branch: ${GITHUB_REF##*/}."
-        git checkout ${GITHUB_REF##*/}
+        echo -e "\nThis is executing for branch: ${GITHUB_HEAD_REF##*/}."
+        git checkout ${GITHUB_HEAD_REF##*/}
 
     - name: Update Data Loaders
       run: python3 ./scripts/update_data_loader.py
