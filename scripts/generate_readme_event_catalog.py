@@ -5,13 +5,13 @@ import script_constants as sc
 def dropdowns(type, supported):
     dropdowns = "#### " + type
     if len(supported[sc.PREVIEW]) > 0:
-        dropdowns += "<details><summary>In Preview</summary>"
+        dropdowns += "\n\n<details>\n<summary>In Preview</summary>\n\n"
         dropdowns += "<br>".join(map(lambda x: f"`{x}`", supported[sc.PREVIEW]))
-        dropdowns += "</details>"
+        dropdowns += "\n\n</details>\n\n"
     if len(supported[sc.RELEASED]) > 0:
-        dropdowns += "<details><summary>Released</summary>"
+        dropdowns += "\n\n<details>\n<summary>Released</summary>\n\n"
         dropdowns += "<br>".join(map(lambda x: f"`{x}`", supported[sc.RELEASED]))
-        dropdowns += "</details>"
+        dropdowns += "\n\n</details>\n"""
     return dropdowns if len(dropdowns) > 20 else ""
 
 def schema_entry(schema):
