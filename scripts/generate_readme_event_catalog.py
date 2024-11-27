@@ -1,21 +1,35 @@
 import os
 import json
+import script_constants as sc
 
-def table_row(schema):
-    cloudEventTypes = "<br>\n".join(map(lambda x: f"`{x}`", schema["cloudeventTypes"]))
+def dropdowns(type, supported):
+    dropdowns = "#### " + type
+    if len(supported[sc.PREVIEW]) > 0:
+        dropdowns += "<details><summary>In Preview</summary>"
+        dropdowns += "<br>".join(map(lambda x: f"`{x}`", supported[sc.PREVIEW]))
+        dropdowns += "</details>"
+    if len(supported[sc.RELEASED]) > 0:
+        dropdowns += "<details><summary>Released</summary>"
+        dropdowns += "<br>".join(map(lambda x: f"`{x}`", supported[sc.RELEASED]))
+        dropdowns += "</details>"
+    return dropdowns if len(dropdowns) > 20 else ""
+
+def schema_entry(schema):
+    cloudEventTypes = ""
     metrics = ""
     alerts = ""
-    if "metricNames" in schema and len(schema["metricNames"]) > 0:
-        metricNames = "<br>\n".join(map(lambda x: f"`{x}`", schema["metricNames"]))
-        metrics = f"#### Metric Type(s)\n{metricNames}"
-    if "alertNames" in schema and len(schema["alertNames"]) > 0:
-        alertNames = "<br>\n".join(map(lambda x: f"`{x}`", schema["alertNames"]))
-        alerts = f"#### Alert Type(s)\n{alertNames}"
-    return f"""### {schema["domain"]}
+    if sc.EVENTS in schema:
+        cloudEventTypes = dropdowns(sc.README_EVENTS, schema[sc.EVENTS])
+    if sc.METRICS in schema:
+        metrics = dropdowns(sc.README_METRICS, schema[sc.METRICS])
+    if sc.ALERTS in schema:
+        alerts = dropdowns(sc.README_ALERTS, schema[sc.ALERTS])
+    return f"""---
+### {schema["domain"]}
 #### DataSchema [JSON]({schema["url"]})
 #### Data Type
 `{schema["datatype"]}`
-#### CloudEvent Type(s)
+#### Supported Events, Metrics, and Alerts
 {cloudEventTypes}
 {metrics}
 {alerts}"""
@@ -25,7 +39,7 @@ def replace_readme_catalog():
     catalog_path = os.path.dirname(os.path.abspath(__file__)) + "/../jsonschema/catalog.json"
     with open(catalog_path, "r") as catalog_file:
         catalog = json.load(catalog_file)
-        schemas = "\n".join(map(table_row, catalog["schemas"]))
+        schemas = "\n".join(map(schema_entry, catalog["schemas"]))
 
     with open(readme_path, "r+") as readme_file:
         content = readme_file.read()

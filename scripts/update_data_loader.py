@@ -1,18 +1,7 @@
 import os
 import json
 from collections import defaultdict
-
-
-# Constant declarations
-RELEASED = "released"
-PREVIEW = "preview"
-
-EVENTS = "cloudeventTypes"
-METRICS = "metricNames"
-ALERTS = "alertNames"
-
-
-
+import script_constants as sc
 
 def retrieve_supported_events():
     directory = os.path.dirname(os.path.abspath(__file__)) + '/../jsonschema'
@@ -25,33 +14,33 @@ def retrieve_supported_events():
                     data = json.load(eventFile)
                     if domain not in dataLoaderStructure:
                         dataLoaderStructure[domain] = {
-                            EVENTS: {
-                                RELEASED: [],
-                                PREVIEW: []
+                            sc.EVENTS: {
+                                sc.RELEASED: [],
+                                sc.PREVIEW: []
                             },
-                            METRICS: {
-                                RELEASED: [],
-                                PREVIEW: []
+                            sc.METRICS: {
+                                sc.RELEASED: [],
+                                sc.PREVIEW: []
                             },
-                            ALERTS: {
-                                RELEASED: [],
-                                PREVIEW: []
+                            sc.ALERTS: {
+                                sc.RELEASED: [],
+                                sc.PREVIEW: []
                             }
                         }
-                    data[EVENTS][RELEASED]
-                    dataLoaderStructure[domain][EVENTS][RELEASED].extend(data[EVENTS][RELEASED])
-                    dataLoaderStructure[domain][EVENTS][PREVIEW].extend(data[EVENTS][PREVIEW])
-                    dataLoaderStructure[domain][METRICS][RELEASED].extend(data[METRICS][RELEASED])
-                    dataLoaderStructure[domain][METRICS][PREVIEW].extend(data[METRICS][PREVIEW])
-                    dataLoaderStructure[domain][ALERTS][RELEASED].extend(data[ALERTS][RELEASED])
-                    dataLoaderStructure[domain][ALERTS][PREVIEW].extend(data[ALERTS][PREVIEW])
+                    data[sc.EVENTS][sc.RELEASED]
+                    dataLoaderStructure[domain][sc.EVENTS][sc.RELEASED].extend(data[sc.EVENTS][sc.RELEASED])
+                    dataLoaderStructure[domain][sc.EVENTS][sc.PREVIEW].extend(data[sc.EVENTS][sc.PREVIEW])
+                    dataLoaderStructure[domain][sc.METRICS][sc.RELEASED].extend(data[sc.METRICS][sc.RELEASED])
+                    dataLoaderStructure[domain][sc.METRICS][sc.PREVIEW].extend(data[sc.METRICS][sc.PREVIEW])
+                    dataLoaderStructure[domain][sc.ALERTS][sc.RELEASED].extend(data[sc.ALERTS][sc.RELEASED])
+                    dataLoaderStructure[domain][sc.ALERTS][sc.PREVIEW].extend(data[sc.ALERTS][sc.PREVIEW])
 
-                    dataLoaderStructure[domain][EVENTS][RELEASED] = sorted(set(dataLoaderStructure[domain][EVENTS][RELEASED]))
-                    dataLoaderStructure[domain][EVENTS][PREVIEW] = sorted(set(dataLoaderStructure[domain][EVENTS][PREVIEW]))
-                    dataLoaderStructure[domain][METRICS][RELEASED] = sorted(set(dataLoaderStructure[domain][METRICS][RELEASED]))
-                    dataLoaderStructure[domain][METRICS][PREVIEW] = sorted(set(dataLoaderStructure[domain][METRICS][PREVIEW]))
-                    dataLoaderStructure[domain][ALERTS][RELEASED] = sorted(set(dataLoaderStructure[domain][ALERTS][RELEASED]))
-                    dataLoaderStructure[domain][ALERTS][PREVIEW] = sorted(set(dataLoaderStructure[domain][ALERTS][PREVIEW]))
+                    dataLoaderStructure[domain][sc.EVENTS][sc.RELEASED] = sorted(set(dataLoaderStructure[domain][sc.EVENTS][sc.RELEASED]))
+                    dataLoaderStructure[domain][sc.EVENTS][sc.PREVIEW] = sorted(set(dataLoaderStructure[domain][sc.EVENTS][sc.PREVIEW]))
+                    dataLoaderStructure[domain][sc.METRICS][sc.RELEASED] = sorted(set(dataLoaderStructure[domain][sc.METRICS][sc.RELEASED]))
+                    dataLoaderStructure[domain][sc.METRICS][sc.PREVIEW] = sorted(set(dataLoaderStructure[domain][sc.METRICS][sc.PREVIEW]))
+                    dataLoaderStructure[domain][sc.ALERTS][sc.RELEASED] = sorted(set(dataLoaderStructure[domain][sc.ALERTS][sc.RELEASED]))
+                    dataLoaderStructure[domain][sc.ALERTS][sc.PREVIEW] = sorted(set(dataLoaderStructure[domain][sc.ALERTS][sc.PREVIEW]))
 
     dataLoaderStructure = dict(sorted(dataLoaderStructure.items()))
 
