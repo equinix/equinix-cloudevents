@@ -9,7 +9,7 @@ on:
 
 
 jobs:
-  validate:
+  sync:
     runs-on: ubuntu-latest
     steps:
     - name: Check out repo
@@ -21,7 +21,7 @@ jobs:
         python-version: '3.13'
 
     - name: Update Data Loaders
-      run: python3 ./scripts/update_data_loaders.py
+      run: python3 ./scripts/update_data_loader.py
 
     - name: Update JSON Catalog
       run: python3 ./scripts/generate_json_catalog.py
