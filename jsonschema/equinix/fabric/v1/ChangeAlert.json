@@ -4,9 +4,6 @@
     "examples": [],
     "package": "equinix.fabric.v1",
     "datatype": "equinix.fabric.v1.ChangeAlert",
-    "cloudeventTypes": [],
-    "metricNames": [],
-    "alertNames": [],
     "domain": "Equinix Fabric ChangeAlert",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",
@@ -153,5 +150,17 @@
             "title": "ChangeData",
             "description": "ChangeData attribute schema"
         }
+    },
+    "cloudeventTypes": {
+        "released": [],
+        "preview": []
+    },
+    "metricNames": {
+        "released": [],
+        "preview": []
+    },
+    "alertNames": {
+        "released": [],
+        "preview": []
     }
 }
