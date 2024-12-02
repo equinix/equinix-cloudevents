@@ -1,5 +1,6 @@
 import os
 import json
+import script_constants as sc
 
 def retrieve_json_schemas():
     directory = os.path.dirname(os.path.abspath(__file__)) + '/../jsonschema'
@@ -9,16 +10,28 @@ def retrieve_json_schemas():
             if file.endswith('.json') and file != "catalog.json":
                 with open(root + "/" + file, "r") as eventFile:
                     data = json.load(eventFile)
+                    events = {
+                        sc.RELEASED: sorted(data[sc.EVENTS][sc.RELEASED]),
+                        sc.PREVIEW: sorted(data[sc.EVENTS][sc.PREVIEW])
+                    }
+                    metrics = {
+                        sc.RELEASED: sorted(data[sc.METRICS][sc.RELEASED]),
+                        sc.PREVIEW: sorted(data[sc.METRICS][sc.PREVIEW])
+                    }
+                    alerts = {
+                        sc.RELEASED: sorted(data[sc.ALERTS][sc.RELEASED]),
+                        sc.PREVIEW: sorted(data[sc.ALERTS][sc.PREVIEW])
+                    }
                     newItem = {
                         "url": data["$id"],
                         "domain": data["domain"],
                         "name": data["name"],
                         "description": data["definitions"]["Data"]["description"],
                         "datatype": data["datatype"],
-                        "cloudeventTypes": data["cloudeventTypes"]
+                        "cloudeventTypes": events,
+                        "metricNames": metrics,
+                        "alertNames": alerts
                     }
-                    if "metricNames" in data:
-                        newItem["metricNames"] = data["metricNames"]
                     json_schemas.append(newItem)
     json_schemas.sort(key=lambda x: x["url"])
     return json_schemas

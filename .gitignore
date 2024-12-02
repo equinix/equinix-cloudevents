@@ -6,3 +6,6 @@
 
 # Local Setup Scripts for Repo
 local_helper_scripts/*
+
+# Python Generated Files
+__pycache__

@@ -1,6 +1,7 @@
 import os
 import json
 from collections import defaultdict
+import script_constants as sc
 
 def retrieve_supported_events():
     directory = os.path.dirname(os.path.abspath(__file__)) + '/../jsonschema'
@@ -9,20 +10,41 @@ def retrieve_supported_events():
         for file in files:
             if file.endswith('.json') and file != "catalog.json":
                 with open(root + "/" + file, "r") as eventFile:
-                    product = root.split("/")[-2]
+                    domain = root.split("/")[-2]
                     data = json.load(eventFile)
-                    if product not in dataLoaderStructure:
-                        dataLoaderStructure[product] = {
-                            "eventTypes": [],
-                            "metricNames": [],
+                    if domain not in dataLoaderStructure:
+                        dataLoaderStructure[domain] = {
+                            sc.EVENTS: {
+                                sc.RELEASED: [],
+                                sc.PREVIEW: []
+                            },
+                            sc.METRICS: {
+                                sc.RELEASED: [],
+                                sc.PREVIEW: []
+                            },
+                            sc.ALERTS: {
+                                sc.RELEASED: [],
+                                sc.PREVIEW: []
+                            }
                         }
-                    dataLoaderStructure[product]["eventTypes"].extend(data["cloudeventTypes"])
-                    if "metricNames" in data:
-                        dataLoaderStructure[product]["metricNames"].extend(data["metricNames"])
-                    dataLoaderStructure[product]["eventTypes"] = sorted(set(dataLoaderStructure[product]["eventTypes"]))
-                    dataLoaderStructure[product]["metricNames"] = sorted(set(dataLoaderStructure[product]["metricNames"]))
+                    data[sc.EVENTS][sc.RELEASED]
+                    dataLoaderStructure[domain][sc.EVENTS][sc.RELEASED].extend(data[sc.EVENTS][sc.RELEASED])
+                    dataLoaderStructure[domain][sc.EVENTS][sc.PREVIEW].extend(data[sc.EVENTS][sc.PREVIEW])
+                    dataLoaderStructure[domain][sc.METRICS][sc.RELEASED].extend(data[sc.METRICS][sc.RELEASED])
+                    dataLoaderStructure[domain][sc.METRICS][sc.PREVIEW].extend(data[sc.METRICS][sc.PREVIEW])
+                    dataLoaderStructure[domain][sc.ALERTS][sc.RELEASED].extend(data[sc.ALERTS][sc.RELEASED])
+                    dataLoaderStructure[domain][sc.ALERTS][sc.PREVIEW].extend(data[sc.ALERTS][sc.PREVIEW])
 
-    return dict(sorted(dataLoaderStructure.items()))
+                    dataLoaderStructure[domain][sc.EVENTS][sc.RELEASED] = sorted(set(dataLoaderStructure[domain][sc.EVENTS][sc.RELEASED]))
+                    dataLoaderStructure[domain][sc.EVENTS][sc.PREVIEW] = sorted(set(dataLoaderStructure[domain][sc.EVENTS][sc.PREVIEW]))
+                    dataLoaderStructure[domain][sc.METRICS][sc.RELEASED] = sorted(set(dataLoaderStructure[domain][sc.METRICS][sc.RELEASED]))
+                    dataLoaderStructure[domain][sc.METRICS][sc.PREVIEW] = sorted(set(dataLoaderStructure[domain][sc.METRICS][sc.PREVIEW]))
+                    dataLoaderStructure[domain][sc.ALERTS][sc.RELEASED] = sorted(set(dataLoaderStructure[domain][sc.ALERTS][sc.RELEASED]))
+                    dataLoaderStructure[domain][sc.ALERTS][sc.PREVIEW] = sorted(set(dataLoaderStructure[domain][sc.ALERTS][sc.PREVIEW]))
+
+    dataLoaderStructure = dict(sorted(dataLoaderStructure.items()))
+
+    return dataLoaderStructure
 
 def writeSupportedEventsToDataLoaderFile(supportedEvents):
     with open(os.path.dirname(os.path.abspath(__file__)) + "/../DataLoader.json", "w") as eventsFile:

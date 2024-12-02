@@ -1,26 +1,45 @@
 import os
 import json
+import script_constants as sc
 
-def table_row(schema):
-    cloudEventTypes = "<br>\n".join(map(lambda x: f"`{x}`", schema["cloudeventTypes"]))
+def dropdowns(type, supported):
+    dropdowns = "#### " + type
+    if len(supported[sc.PREVIEW]) > 0:
+        dropdowns += "\n\n<details>\n<summary>In Preview</summary>\n\n"
+        dropdowns += " <br>\n".join(map(lambda x: f"`{x}`", supported[sc.PREVIEW]))
+        dropdowns += "\n\n</details>\n\n"
+    if len(supported[sc.RELEASED]) > 0:
+        dropdowns += "\n\n<details>\n<summary>Released</summary>\n\n"
+        dropdowns += " <br>\n".join(map(lambda x: f"`{x}`", supported[sc.RELEASED]))
+        dropdowns += "\n\n</details>\n"""
+    return dropdowns if len(dropdowns) > 20 else ""
+
+def schema_entry(schema):
+    cloudEventTypes = ""
     metrics = ""
-    if "metricNames" in schema:
-        metricNames = "<br>\n".join(map(lambda x: f"`{x}`", schema["metricNames"]))
-        metrics = f"#### Metric Name(s)\n{metricNames}"
-    return f"""### {schema["domain"]}
+    alerts = ""
+    if sc.EVENTS in schema:
+        cloudEventTypes = dropdowns(sc.README_EVENTS, schema[sc.EVENTS])
+    if sc.METRICS in schema:
+        metrics = dropdowns(sc.README_METRICS, schema[sc.METRICS])
+    if sc.ALERTS in schema:
+        alerts = dropdowns(sc.README_ALERTS, schema[sc.ALERTS])
+    return f"""---
+### {schema["domain"]}
 #### DataSchema [JSON]({schema["url"]})
 #### Data Type
 `{schema["datatype"]}`
-#### CloudEvent Type(s)
+#### Supported Events, Metrics, and Alerts
 {cloudEventTypes}
-{metrics}"""
+{metrics}
+{alerts}"""
 
 def replace_readme_catalog():
     readme_path = os.path.dirname(os.path.abspath(__file__)) + "/../README.md"
     catalog_path = os.path.dirname(os.path.abspath(__file__)) + "/../jsonschema/catalog.json"
     with open(catalog_path, "r") as catalog_file:
         catalog = json.load(catalog_file)
-        schemas = "\n".join(map(table_row, catalog["schemas"]))
+        schemas = "\n".join(map(schema_entry, catalog["schemas"]))
 
     with open(readme_path, "r+") as readme_file:
         content = readme_file.read()
