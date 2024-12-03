@@ -160,7 +160,11 @@
             "equinix.fabric.service_token.state.deleted",
             "equinix.fabric.service_token.attribute.changed"
         ],
-        "preview": []
+        "preview": [
+            "equinix.fabric.registration",
+            "equinix.fabric.service_token.state.inactive",
+            "equinix.fabric.service_token.state.deleted"
+        ]
     },
     "metricNames": {
         "released": [],
