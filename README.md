@@ -36,6 +36,17 @@ The following data payloads are the supported events and formats for Equinix Int
 #### Events
 
 <details>
+<summary>In Preview</summary>
+
+`equinix.fabric.registration` <br>
+`equinix.fabric.service_token.state.deleted` <br>
+`equinix.fabric.service_token.state.inactive`
+
+</details>
+
+
+
+<details>
 <summary>Released</summary>
 
 `equinix.fabric.connection.attribute.changed` <br>
