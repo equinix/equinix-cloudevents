@@ -38,8 +38,24 @@ The following data payloads are the supported events and formats for Equinix Int
 <details>
 <summary>In Preview</summary>
 
+`equinix.fabric.port.state.deprovisioned` <br>
+`equinix.fabric.port.state.failed` <br>
+`equinix.fabric.port.state.provisioned` <br>
+`equinix.fabric.port.status.down` <br>
+`equinix.fabric.port.status.up` <br>
 `equinix.fabric.registration` <br>
+`equinix.fabric.router.state.deprovisioned` <br>
+`equinix.fabric.router.state.deprovisioning` <br>
+`equinix.fabric.router.state.failed` <br>
+`equinix.fabric.router.state.not_deprovisioned` <br>
+`equinix.fabric.router.state.not_provisioned` <br>
+`equinix.fabric.router.state.provisioned` <br>
+`equinix.fabric.router.state.provisioning` <br>
+`equinix.fabric.router.state.reprovisioning` <br>
+`equinix.fabric.service_token.attribute.changed` <br>
 `equinix.fabric.service_token.state.deleted` <br>
+`equinix.fabric.service_token.state.deleted` <br>
+`equinix.fabric.service_token.state.inactive` <br>
 `equinix.fabric.service_token.state.inactive`
 
 </details>
@@ -70,23 +86,7 @@ The following data payloads are the supported events and formats for Equinix Int
 `equinix.fabric.network.state.deprovisioned` <br>
 `equinix.fabric.network.state.deprovisioning` <br>
 `equinix.fabric.network.state.provisioned` <br>
-`equinix.fabric.network.state.provisioning` <br>
-`equinix.fabric.port.state.deprovisioned` <br>
-`equinix.fabric.port.state.failed` <br>
-`equinix.fabric.port.state.provisioned` <br>
-`equinix.fabric.port.status.down` <br>
-`equinix.fabric.port.status.up` <br>
-`equinix.fabric.router.state.deprovisioned` <br>
-`equinix.fabric.router.state.deprovisioning` <br>
-`equinix.fabric.router.state.failed` <br>
-`equinix.fabric.router.state.not_deprovisioned` <br>
-`equinix.fabric.router.state.not_provisioned` <br>
-`equinix.fabric.router.state.provisioned` <br>
-`equinix.fabric.router.state.provisioning` <br>
-`equinix.fabric.router.state.reprovisioning` <br>
-`equinix.fabric.service_token.attribute.changed` <br>
-`equinix.fabric.service_token.state.deleted` <br>
-`equinix.fabric.service_token.state.inactive`
+`equinix.fabric.network.state.provisioning`
 
 </details>
 

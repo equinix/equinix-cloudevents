@@ -69,12 +69,15 @@
                     "equinix.fabric.network.state.deprovisioned",
                     "equinix.fabric.network.state.deprovisioning",
                     "equinix.fabric.network.state.provisioned",
-                    "equinix.fabric.network.state.provisioning",
+                    "equinix.fabric.network.state.provisioning"
+                ],
+                "preview": [
                     "equinix.fabric.port.state.deprovisioned",
                     "equinix.fabric.port.state.failed",
                     "equinix.fabric.port.state.provisioned",
                     "equinix.fabric.port.status.down",
                     "equinix.fabric.port.status.up",
+                    "equinix.fabric.registration",
                     "equinix.fabric.router.state.deprovisioned",
                     "equinix.fabric.router.state.deprovisioning",
                     "equinix.fabric.router.state.failed",
@@ -85,11 +88,8 @@
                     "equinix.fabric.router.state.reprovisioning",
                     "equinix.fabric.service_token.attribute.changed",
                     "equinix.fabric.service_token.state.deleted",
-                    "equinix.fabric.service_token.state.inactive"
-                ],
-                "preview": [
-                    "equinix.fabric.registration",
                     "equinix.fabric.service_token.state.deleted",
+                    "equinix.fabric.service_token.state.inactive",
                     "equinix.fabric.service_token.state.inactive"
                 ]
             },
