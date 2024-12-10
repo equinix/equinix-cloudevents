@@ -152,10 +152,10 @@
     },
     "cloudeventTypes": {
         "released": [
-            "equinix.fabric.connection.ipv4_installed_routes.utilization",
-            "equinix.fabric.connection.ipv6_installed_routes.utilization",
-            "equinix.fabric.router.ipv4_installed_routes.utilization",
-            "equinix.fabric.router.ipv6_installed_routes.utilization"
+            "equinix.fabric.connection.installed_routes_ipv4.utilization",
+            "equinix.fabric.connection.installed_routes_ipv6.utilization",
+            "equinix.fabric.router.installed_routes_ipv4.utilization",
+            "equinix.fabric.router.installed_routes_ipv6.utilization"
         ],
         "preview": []
     },
