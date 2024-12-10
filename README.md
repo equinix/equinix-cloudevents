@@ -43,12 +43,12 @@ The following data payloads are the supported events and formats for Equinix Int
 `equinix.fabric.connection.bgpipv4_session_status.established` <br>
 `equinix.fabric.connection.bgpipv4_session_status.idle` <br>
 `equinix.fabric.connection.bgpipv4_session_status.open_confirm` <br>
-`equinix.fabric.connection.bgpipv4_session_status.open_confirm` <br>
-`equinix.fabric.connection.bgpipv4_session_status.open_sent` <br>
 `equinix.fabric.connection.bgpipv4_session_status.open_sent` <br>
 `equinix.fabric.connection.bgpipv6_session_status.connect` <br>
 `equinix.fabric.connection.bgpipv6_session_status.established` <br>
 `equinix.fabric.connection.bgpipv6_session_status.idle` <br>
+`equinix.fabric.connection.bgpipv6_session_status.open_confirm` <br>
+`equinix.fabric.connection.bgpipv6_session_status.open_sent` <br>
 `equinix.fabric.connection.state.deprovisioned` <br>
 `equinix.fabric.connection.state.deprovisioning` <br>
 `equinix.fabric.connection.state.pending` <br>
@@ -92,10 +92,10 @@ The following data payloads are the supported events and formats for Equinix Int
 <details>
 <summary>Released</summary>
 
-`equinix.fabric.connection.ipv4_installed_routes.utilization` <br>
-`equinix.fabric.connection.ipv6_installed_routes.utilization` <br>
-`equinix.fabric.router.ipv4_installed_routes.utilization` <br>
-`equinix.fabric.router.ipv6_installed_routes.utilization`
+`equinix.fabric.connection.installed_routes_ipv4.utilization` <br>
+`equinix.fabric.connection.installed_routes_ipv6.utilization` <br>
+`equinix.fabric.router.installed_routes_ipv4.utilization` <br>
+`equinix.fabric.router.installed_routes_ipv6.utilization`
 
 </details>
 

@@ -53,12 +53,12 @@
                     "equinix.fabric.connection.bgpipv4_session_status.established",
                     "equinix.fabric.connection.bgpipv4_session_status.idle",
                     "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
-                    "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
-                    "equinix.fabric.connection.bgpipv4_session_status.open_sent",
                     "equinix.fabric.connection.bgpipv4_session_status.open_sent",
                     "equinix.fabric.connection.bgpipv6_session_status.connect",
                     "equinix.fabric.connection.bgpipv6_session_status.established",
                     "equinix.fabric.connection.bgpipv6_session_status.idle",
+                    "equinix.fabric.connection.bgpipv6_session_status.open_confirm",
+                    "equinix.fabric.connection.bgpipv6_session_status.open_sent",
                     "equinix.fabric.connection.state.deprovisioned",
                     "equinix.fabric.connection.state.deprovisioning",
                     "equinix.fabric.connection.state.pending",
@@ -106,10 +106,10 @@
             "datatype": "equinix.fabric.v1.MetricAlert",
             "cloudeventTypes": {
                 "released": [
-                    "equinix.fabric.connection.ipv4_installed_routes.utilization",
-                    "equinix.fabric.connection.ipv6_installed_routes.utilization",
-                    "equinix.fabric.router.ipv4_installed_routes.utilization",
-                    "equinix.fabric.router.ipv6_installed_routes.utilization"
+                    "equinix.fabric.connection.installed_routes_ipv4.utilization",
+                    "equinix.fabric.connection.installed_routes_ipv6.utilization",
+                    "equinix.fabric.router.installed_routes_ipv4.utilization",
+                    "equinix.fabric.router.installed_routes_ipv6.utilization"
                 ],
                 "preview": []
             },
