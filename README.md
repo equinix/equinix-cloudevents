@@ -210,6 +210,23 @@ The following data payloads are the supported events and formats for Equinix Int
 #### Data Type
 `equinix.network_edge.v1.ChangeEvent`
 #### Supported Events, Metrics, and Alerts
+#### Events
+
+<details>
+<summary>Released</summary>
+
+`equinix.network_edge.acl.state.created` <br>
+`equinix.network_edge.acl.state.deleted` <br>
+`equinix.network_edge.device.acl.updated` <br>
+`equinix.network_edge.device.reboot.completed` <br>
+`equinix.network_edge.device.reboot.started` <br>
+`equinix.network_edge.device.state.cancelled` <br>
+`equinix.network_edge.device.state.created` <br>
+`equinix.network_edge.device.state.deleted` <br>
+`equinix.network_edge.device.state.provisioned` <br>
+`equinix.network_edge.device.state.provisioning`
+
+</details>
 
 
 
