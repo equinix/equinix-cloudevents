@@ -240,7 +240,18 @@
             "description": "The data within all ChangeEvent events.",
             "datatype": "equinix.network_edge.v1.ChangeEvent",
             "cloudeventTypes": {
-                "released": [],
+                "released": [
+                    "equinix.network_edge.acl.state.created",
+                    "equinix.network_edge.acl.state.deleted",
+                    "equinix.network_edge.device.acl.updated",
+                    "equinix.network_edge.device.reboot.completed",
+                    "equinix.network_edge.device.reboot.started",
+                    "equinix.network_edge.device.state.cancelled",
+                    "equinix.network_edge.device.state.created",
+                    "equinix.network_edge.device.state.deleted",
+                    "equinix.network_edge.device.state.provisioned",
+                    "equinix.network_edge.device.state.provisioning"
+                ],
                 "preview": []
             },
             "metricNames": {
