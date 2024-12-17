@@ -69,7 +69,7 @@
             "equinix.network_edge.acl.state.deleted",
             "equinix.network_edge.device.acl.updated",
             "equinix.network_edge.device.reboot.started",
-            "equinix.network_edge.device.reboot.completed";
+            "equinix.network_edge.device.reboot.completed"
         ],
         "preview": []
     },
