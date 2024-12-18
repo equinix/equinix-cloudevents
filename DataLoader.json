@@ -2,7 +2,10 @@
     "access_manager": {
         "cloudeventTypes": {
             "released": [],
-            "preview": []
+            "preview": [
+                "equinix.access_manager.user.role.added",
+                "equinix.access_manager.user.role.removed"
+            ]
         },
         "metricNames": {
             "released": [],
