@@ -1,0 +1,127 @@
+{
+   "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/access_manager/v1/RoleAssignmentEvent.json",
+   "name": "RoleAssignmentEvent",
+   "examples": [],
+   "package": "equinix.access_manager.v1",
+   "datatype": "equinix.access_manager.v1.RoleAssignmentEvent",
+   "domain": "Equinix Access Manager RoleAssignmentEvent",
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "$ref": "#/definitions/Data",
+   "definitions": {
+     "Data": {
+       "properties": {
+         "resource": {
+           "$ref": "#/definitions/Resource",
+           "additionalProperties": true,
+           "description": "Optional. The Backup event payload. Unset for deletion events."
+         },
+         "message": {
+           "type": "string",
+           "description": "Supporting message describing the event"
+         }
+       },
+       "additionalProperties": true,
+       "type": "object",
+       "title": "RoleAssignmentEvent Event Data",
+       "description": "The data within all RoleAssignmentEvent events."
+     },
+     "Resource": {
+       "properties": {
+         "id": {
+           "type": "string",
+           "description": "Uuid to the resource that has generated the event"
+         },
+         "user": {
+           "$ref": "#/definitions/user",
+           "additionalProperties": true,
+           "description": "Equinix user of the resource generating the event"
+         },
+         "role": {
+           "$ref": "#/definitions/role",
+           "additionalProperties": true,
+           "description": "Equinix role of the resource generating the event"
+         },
+         "resource": {
+           "$ref": "#/definitions/resource",
+           "additionalProperties": true,
+           "description": "Equinix resource of the resource generating the event"
+         }
+       },
+       "additionalProperties": true,
+       "type": "object",
+       "title": "Resource",
+       "description": "Schema of the resource that fired the event"
+     }
+   },
+   "user": {
+     "properties": {
+       "refId": {
+         "type": "string",
+         "description": "Equinix user id"
+       },
+       "userName": {
+         "type": "string",
+         "description": "Equinix user name"
+       },
+       "email": {
+         "type": "string",
+         "description": "Equinix user email"
+       }
+     },
+     "additionalProperties": true,
+     "type": "object",
+     "title": "user",
+     "description": "User attribute schema"
+   },
+   "role": {
+     "properties": {
+       "id": {
+         "type": "string",
+         "description": "Equinix role uuid"
+       },
+       "name": {
+         "type": "string",
+         "description": "Equinix role name"
+       }
+     },
+     "additionalProperties": true,
+     "type": "object",
+     "title": "role",
+     "description": "Role attribute schema"
+   },
+   "resource": {
+     "properties": {
+       "id": {
+         "type": "string",
+         "description": "Equinix resource uuid"
+       },
+       "type": {
+         "type": "string",
+         "description": "Equinix resource type"
+       },
+       "name": {
+         "type": "string",
+         "description": "Equinix resource name"
+       }
+     },
+     "additionalProperties": true,
+     "type": "object",
+     "title": "resource",
+     "description": "Resource attribute schema"
+   },
+   "cloudeventTypes": {
+     "released": [],
+     "preview": [
+       "equinix.access_manager.user.role.added",
+       "equinix.access_manager.user.role.removed"
+     ]
+   },
+   "metricNames": {
+     "released": [],
+     "preview": []
+   },
+   "alertNames": {
+     "released": [],
+     "preview": []
+   }
+ }
