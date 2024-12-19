@@ -11,16 +11,16 @@ def retrieve_json_schemas():
                 with open(root + "/" + file, "r") as eventFile:
                     data = json.load(eventFile)
                     events = {
-                        sc.RELEASED: sorted(data[sc.EVENTS][sc.RELEASED]),
-                        sc.PREVIEW: sorted(data[sc.EVENTS][sc.PREVIEW])
+                        sc.RELEASED: sorted(set(data[sc.EVENTS][sc.RELEASED])),
+                        sc.PREVIEW: sorted(set(data[sc.EVENTS][sc.PREVIEW]))
                     }
                     metrics = {
-                        sc.RELEASED: sorted(data[sc.METRICS][sc.RELEASED]),
-                        sc.PREVIEW: sorted(data[sc.METRICS][sc.PREVIEW])
+                        sc.RELEASED: sorted(set(data[sc.METRICS][sc.RELEASED])),
+                        sc.PREVIEW: sorted(set(data[sc.METRICS][sc.PREVIEW]))
                     }
                     alerts = {
-                        sc.RELEASED: sorted(data[sc.ALERTS][sc.RELEASED]),
-                        sc.PREVIEW: sorted(data[sc.ALERTS][sc.PREVIEW])
+                        sc.RELEASED: sorted(set(data[sc.ALERTS][sc.RELEASED])),
+                        sc.PREVIEW: sorted(set(data[sc.ALERTS][sc.PREVIEW]))
                     }
                     newItem = {
                         "url": data["$id"],

@@ -76,6 +76,34 @@ Each contributed data schema requires the following attributes:
 * "metricNames" - - Object with list attributes `released` and `preview` that mark which environment the data schema is ready to suppport the given metric in. Only place types in the `released` list if it is fully tested and ready for production. Place it into the `preview` list if it is under development and should only be available in UAT.
 * "alertNames" - Object with list attributes `released` and `preview` that mark which environment the data schema is ready to suppport the given event type in. Only place types in the `released` list if it is fully tested and ready for production. Place it into the `preview` list if it is under development and should only be available in UAT.
 
+## Process for Upgrading Event/Metric/Alert from Development to Production
+
+When adding a new event/metric/alert to a data schema always start by 
+entering it into the `preview` list. This list identifies *in development*
+items and is the starting point for new events/metrics/alerts being added 
+into the repo.
+
+Once an event/metric/alert has been thoroughly tested in lower environments
+you will remove that item from the `preview` list and move it to the 
+`released` list. This indicates that your item is not ready to be consumed
+in production and the production Equinix Event Manager will pass these items 
+through to the consumers.
+
+It is imperative that you understand the responsibility involved for managing
+your team's domain with regards to the `preview` and `released` lists in your
+data schema files. The [CODEOWNERS](#codeowners) section describes how
+responsibility is managed within the repo. Please review it thoroughly.
+
+## CODEOWNERS
+
+CODEOWNERS file will be in place to establish a Github team (Synced with Equinix IAM) responsible for the files along the domain path they are contributing to. This ensures that 1 member from each domain team and 1 architect will always be necessary to approve a Pull Request before it can be merged.
+
+This is critical because the responsibility of maintaining the `released` and `preview` lists outlined in the [Gating](#data-schema-gating-through-equinix-event-manager) section lies with the Domain owners and not the architects. Should any production defect be found the Domain owner is responsible for resolution
+
+When adding a new domain to the `jsonschema/equinix` directory, add an entry 
+to the CODEOWNERS file signifying which Github Team is responsible for 
+reviewing/approving PRs that modify the domain directory being added
+
 ## Data Schema Versioning
 
 Versioning for data schemas is only based on major versions; there are no minor or patch versions. The major versions
@@ -91,9 +119,3 @@ Not all data_schemas need to be moved to v2. Just the ones that have breaking ch
 
 The self service contribution model is setup to ensure the repo is always in a stable state that can be released to either UAT or production. Each time a Pull Request is merged into main a new version tag will be created based on SemVar for the commit names
 present in the change. This tag will always be available to the Equinix Event Manager for releases. This setup is possible because of our CODEOWNERSHIP model.
-
-## CODEOWNERS
-
-CODEOWNERS file will be in place to establish a Github team (Synced with Equinix IAM) responsible for the files along the domain path they are contributing to. This ensures that 1 member from each domain team and 1 architect will always be necessary to approve a Pull Request before it can be merged.
-
-This is critical because the responsibility of maintaining the `released` and `preview` lists outlined in the [Gating](#data-schema-gating-through-equinix-event-manager) section lies with the Domain owners and not the architects. Should any production defect be found the Domain owner is responsible for resolution
