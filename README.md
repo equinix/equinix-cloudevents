@@ -43,8 +43,6 @@ The following data payloads are the supported events and formats for Equinix Int
 `equinix.fabric.connection.bgpipv4_session_status.established` <br>
 `equinix.fabric.connection.bgpipv4_session_status.idle` <br>
 `equinix.fabric.connection.bgpipv4_session_status.open_confirm` <br>
-`equinix.fabric.connection.bgpipv4_session_status.open_confirm` <br>
-`equinix.fabric.connection.bgpipv4_session_status.open_sent` <br>
 `equinix.fabric.connection.bgpipv4_session_status.open_sent` <br>
 `equinix.fabric.connection.bgpipv6_session_status.connect` <br>
 `equinix.fabric.connection.bgpipv6_session_status.established` <br>
