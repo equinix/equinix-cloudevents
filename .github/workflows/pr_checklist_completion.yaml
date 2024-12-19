@@ -1,7 +1,7 @@
 name: 'PR Tasks Completed Check'
 on: 
   pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
+    types: [opened, edited]
 
 jobs:
   task-check:
