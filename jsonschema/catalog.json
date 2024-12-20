@@ -53,8 +53,6 @@
                     "equinix.fabric.connection.bgpipv4_session_status.established",
                     "equinix.fabric.connection.bgpipv4_session_status.idle",
                     "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
-                    "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
-                    "equinix.fabric.connection.bgpipv4_session_status.open_sent",
                     "equinix.fabric.connection.bgpipv4_session_status.open_sent",
                     "equinix.fabric.connection.bgpipv6_session_status.connect",
                     "equinix.fabric.connection.bgpipv6_session_status.established",
