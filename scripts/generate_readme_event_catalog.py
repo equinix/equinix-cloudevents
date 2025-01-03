@@ -10,7 +10,8 @@ def dropdowns(type, supported):
         dropdowns += "\n\n</details>\n\n"
     if len(supported[sc.RELEASED]) > 0:
         dropdowns += "\n\n<details>\n<summary>Released</summary>\n\n"
-        dropdowns += " <br>\n".join(map(lambda x: f"`{x}`", supported[sc.RELEASED]))
+        dropdowns += "| Name | Description |\n\n"
+        dropdowns += "\n".join(map(lambda x: f"|{x["name"]}|{x["description"]}|", supported[sc.RELEASED]))
         dropdowns += "\n\n</details>\n"""
     return dropdowns if len(dropdowns) > 20 else ""
 

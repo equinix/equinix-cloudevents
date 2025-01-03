@@ -121,44 +121,158 @@
     },
     "cloudeventTypes": {
         "released": [
-            "equinix.fabric.connection.state.pending",
-            "equinix.fabric.connection.state.provisioning",
-            "equinix.fabric.connection.state.provisioned",
-            "equinix.fabric.connection.state.deprovisioning",
-            "equinix.fabric.connection.state.deprovisioned",
-            "equinix.fabric.connection.attribute.changed",
-            "equinix.fabric.connection.status.up",
-            "equinix.fabric.connection.status.down",
-            "equinix.fabric.connection.bgpipv4_session_status.established",
-            "equinix.fabric.connection.bgpipv4_session_status.idle",
-            "equinix.fabric.connection.bgpipv4_session_status.connect",
-            "equinix.fabric.connection.bgpipv4_session_status.open_sent",
-            "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
-            "equinix.fabric.connection.bgpipv6_session_status.established",
-            "equinix.fabric.connection.bgpipv6_session_status.idle",
-            "equinix.fabric.connection.bgpipv6_session_status.connect",
-            "equinix.fabric.connection.bgpipv4_session_status.open_sent",
-            "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
-            "equinix.fabric.network.state.provisioning",
-            "equinix.fabric.network.state.provisioned",
-            "equinix.fabric.network.state.deprovisioning",
-            "equinix.fabric.network.state.deprovisioned",
-            "equinix.fabric.port.state.provisioned",
-            "equinix.fabric.port.state.deprovisioned",
-            "equinix.fabric.port.state.failed",
-            "equinix.fabric.port.status.up",
-            "equinix.fabric.port.status.down",
-            "equinix.fabric.router.state.provisioning",
-            "equinix.fabric.router.state.provisioned",
-            "equinix.fabric.router.state.reprovisioning",
-            "equinix.fabric.router.state.deprovisioning",
-            "equinix.fabric.router.state.deprovisioned",
-            "equinix.fabric.router.state.failed",
-            "equinix.fabric.router.state.not_provisioned",
-            "equinix.fabric.router.state.not_deprovisioned",
-            "equinix.fabric.service_token.state.inactive",
-            "equinix.fabric.service_token.state.deleted",
-            "equinix.fabric.service_token.attribute.changed"
+            {
+                "name": "equinix.fabric.connection.state.pending",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.state.provisioning",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.state.provisioned",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.state.deprovisioning",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.state.deprovisioned",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.attribute.changed",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.status.up",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.status.down",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.bgpipv4_session_status.established",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.bgpipv4_session_status.idle",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.bgpipv4_session_status.connect",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.bgpipv4_session_status.open_sent",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.bgpipv6_session_status.established",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.bgpipv6_session_status.idle",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.bgpipv6_session_status.connect",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.bgpipv4_session_status.open_sent",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.network.state.provisioning",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.network.state.provisioned",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.network.state.deprovisioning",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.network.state.deprovisioned",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.port.state.provisioned",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.port.state.deprovisioned",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.port.state.failed",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.port.status.up",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.port.status.down",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.router.state.provisioning",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.router.state.provisioned",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.router.state.reprovisioning",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.router.state.deprovisioning",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.router.state.deprovisioned",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.router.state.failed",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.router.state.not_provisioned",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.router.state.not_deprovisioned",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.service_token.state.inactive",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.service_token.state.deleted",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.service_token.attribute.changed",
+                "description": ""
+            }
         ],
         "preview": []
     },
