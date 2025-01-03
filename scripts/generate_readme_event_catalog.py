@@ -6,12 +6,15 @@ def dropdowns(type, supported):
     dropdowns = "#### " + type
     if len(supported[sc.PREVIEW]) > 0:
         dropdowns += "\n\n<details>\n<summary>In Preview</summary>\n\n"
-        dropdowns += " <br>\n".join(map(lambda x: f"`{x}`", supported[sc.PREVIEW]))
+        dropdowns += "<table>\n\t<tr>\n\t\t<th>Name</th>\n\t\t<th>Description</th>\n\t</tr>\n"
+        dropdowns += "\n".join(map(lambda x: f"\t<tr>\n\t\t<td>{x["name"]}</td>\n\t\t<td>{x["description"]}</td>\n\t</tr>", supported[sc.PREVIEW]))
+        dropdowns += "\n</table>"
         dropdowns += "\n\n</details>\n\n"
     if len(supported[sc.RELEASED]) > 0:
         dropdowns += "\n\n<details>\n<summary>Released</summary>\n\n"
-        dropdowns += "| Name | Description |\n\n"
-        dropdowns += "\n".join(map(lambda x: f"|{x["name"]}|{x["description"]}|", supported[sc.RELEASED]))
+        dropdowns += "<table>\n\t<tr>\n\t\t<th>Name</th>\n\t\t<th>Description</th>\n\t</tr>\n"
+        dropdowns += "\n".join(map(lambda x: f"\t<tr>\n\t\t<td>{x["name"]}</td>\n\t\t<td>{x["description"]}</td>\n\t</tr>", supported[sc.RELEASED]))
+        dropdowns += "\n</table>"
         dropdowns += "\n\n</details>\n"""
     return dropdowns if len(dropdowns) > 20 else ""
 
