@@ -4,15 +4,14 @@
     "examples": [],
     "package": "equinix.resource_manager.v1",
     "datatype": "equinix.resource_manager.v1.ChangeEvent",
-    "cloudeventTypes": [
-    ],
     "domain": "Equinix Resource Manager ChangeEvent",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",
     "definitions": {
         "SpecVersion": {
             "type": "string",
-            "description": "Version of the CloudEvent specification."},
+            "description": "Version of the CloudEvent specification."
+        },
         "Source": {
             "type": "string",
             "description": "The source of the event."
@@ -62,7 +61,6 @@
             "properties": {
                 "resource": {
                     "$ref": "#/definitions/Resource",
-                    "additionalProperties": true,
                     "description": "Optional. The Backup event payload. Unset for deletion events."
                 },
                 "message": {
@@ -70,16 +68,75 @@
                     "description": "Supporting message describing the event"
                 }
             },
-            "additionalProperties": true,
             "type": "object",
             "title": "ChangeEvent Event Data",
             "description": "The data within all ChangeEvent events."
         },
         "Resource": {
-            "additionalProperties": true,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                }
+            },
             "type": "object",
             "title": "Resource",
             "description": "Schema of the resource that fired the event"
+        },
+        "Change": {
+            "properties": {
+                "EquinixOrganization": {
+                    "type": "string",
+                    "description": "Hierarchy of organization can change if moved."
+                },
+                "data": {
+                    "type": "array",
+                    "description": "Data of the change event",
+                    "items": {
+                        "$ref": "#/definitions/ChangeData"
+                    }
+                }
+            },
+            "type": "object",
+            "title": "Change",
+            "description": "Change attribute schema"
+        },
+        "ChangeData": {
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The resource name on the resource being changed"
+                }
+            },
+            "type": "object",
+            "title": "ChangeData",
+            "description": "ChangeData attribute schema"
         }
+    },
+    "cloudeventTypes": {
+        "released": [
+            "equinix.resource_manager.event.created",
+            "equinix.resource_manager.event.updated",
+            "equinix.resource_manager.event.deleted",
+            "equinix.resource_manager.event.moved",
+            "equinix.resource_manager.event.merged"
+        ],
+        "preview": []
+    },
+    "metricNames": {
+        "released": [],
+        "preview": []
+    },
+    "alertNames": {
+        "released": [],
+        "preview": []
     }
 }
