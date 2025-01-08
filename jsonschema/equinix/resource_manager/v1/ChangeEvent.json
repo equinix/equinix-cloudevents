@@ -125,9 +125,7 @@
         "released": [
             "equinix.resource_manager.event.created",
             "equinix.resource_manager.event.updated",
-            "equinix.resource_manager.event.deleted",
-            "equinix.resource_manager.event.moved",
-            "equinix.resource_manager.event.merged"
+            "equinix.resource_manager.event.deleted"
         ],
         "preview": []
     },
