@@ -3,14 +3,8 @@
         "cloudeventTypes": {
             "released": [],
             "preview": [
-                {
-                    "name": "equinix.access_manager.user.role.added",
-                    "description": "Role assignment event"
-                },
-                {
-                    "name": "equinix.access_manager.user.role.removed",
-                    "description": "Role unassignment event"
-                }
+                "equinix.access_manager.user.role.added",
+                "equinix.access_manager.user.role.removed"
             ]
         },
         "metricNames": {
