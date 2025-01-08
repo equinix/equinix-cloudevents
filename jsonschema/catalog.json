@@ -259,7 +259,11 @@
             "description": "The data within all ChangeEvent events.",
             "datatype": "equinix.resource_manager.v1.ChangeEvent",
             "cloudeventTypes": {
-                "released": [],
+                "released": [
+                    "equinix.resource_manager.event.created",
+                    "equinix.resource_manager.event.deleted",
+                    "equinix.resource_manager.event.updated"
+                ],
                 "preview": []
             },
             "metricNames": {
