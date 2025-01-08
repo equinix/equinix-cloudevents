@@ -152,10 +152,22 @@
     },
     "cloudeventTypes": {
         "released": [
-            "equinix.fabric.connection.ipv4_installed_routes.utilization",
-            "equinix.fabric.connection.ipv6_installed_routes.utilization",
-            "equinix.fabric.router.ipv4_installed_routes.utilization",
-            "equinix.fabric.router.ipv6_installed_routes.utilization"
+            {
+                "name": "equinix.fabric.connection.ipv4_installed_routes.utilization",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.connection.ipv6_installed_routes.utilization",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.router.ipv4_installed_routes.utilization",
+                "description": ""
+            },
+            {
+                "name": "equinix.fabric.router.ipv6_installed_routes.utilization",
+                "description": ""
+            }
         ],
         "preview": []
     },

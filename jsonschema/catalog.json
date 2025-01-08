@@ -48,44 +48,150 @@
             "datatype": "equinix.fabric.v1.ChangeEvent",
             "cloudeventTypes": {
                 "released": [
-                    "equinix.fabric.connection.attribute.changed",
-                    "equinix.fabric.connection.bgpipv4_session_status.connect",
-                    "equinix.fabric.connection.bgpipv4_session_status.established",
-                    "equinix.fabric.connection.bgpipv4_session_status.idle",
-                    "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
-                    "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
-                    "equinix.fabric.connection.bgpipv4_session_status.open_sent",
-                    "equinix.fabric.connection.bgpipv4_session_status.open_sent",
-                    "equinix.fabric.connection.bgpipv6_session_status.connect",
-                    "equinix.fabric.connection.bgpipv6_session_status.established",
-                    "equinix.fabric.connection.bgpipv6_session_status.idle",
-                    "equinix.fabric.connection.state.deprovisioned",
-                    "equinix.fabric.connection.state.deprovisioning",
-                    "equinix.fabric.connection.state.pending",
-                    "equinix.fabric.connection.state.provisioned",
-                    "equinix.fabric.connection.state.provisioning",
-                    "equinix.fabric.connection.status.down",
-                    "equinix.fabric.connection.status.up",
-                    "equinix.fabric.network.state.deprovisioned",
-                    "equinix.fabric.network.state.deprovisioning",
-                    "equinix.fabric.network.state.provisioned",
-                    "equinix.fabric.network.state.provisioning",
-                    "equinix.fabric.port.state.deprovisioned",
-                    "equinix.fabric.port.state.failed",
-                    "equinix.fabric.port.state.provisioned",
-                    "equinix.fabric.port.status.down",
-                    "equinix.fabric.port.status.up",
-                    "equinix.fabric.router.state.deprovisioned",
-                    "equinix.fabric.router.state.deprovisioning",
-                    "equinix.fabric.router.state.failed",
-                    "equinix.fabric.router.state.not_deprovisioned",
-                    "equinix.fabric.router.state.not_provisioned",
-                    "equinix.fabric.router.state.provisioned",
-                    "equinix.fabric.router.state.provisioning",
-                    "equinix.fabric.router.state.reprovisioning",
-                    "equinix.fabric.service_token.attribute.changed",
-                    "equinix.fabric.service_token.state.deleted",
-                    "equinix.fabric.service_token.state.inactive"
+                    {
+                        "name": "equinix.fabric.connection.attribute.changed",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv4_session_status.connect",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv4_session_status.established",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv4_session_status.idle",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv4_session_status.open_sent",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv6_session_status.connect",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv6_session_status.established",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv6_session_status.idle",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.state.deprovisioned",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.state.deprovisioning",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.state.pending",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.state.provisioned",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.state.provisioning",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.status.down",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.status.up",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.network.state.deprovisioned",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.network.state.deprovisioning",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.network.state.provisioned",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.network.state.provisioning",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.port.state.deprovisioned",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.port.state.failed",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.port.state.provisioned",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.port.status.down",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.port.status.up",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.deprovisioned",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.deprovisioning",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.failed",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.not_deprovisioned",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.not_provisioned",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.provisioned",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.provisioning",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.reprovisioning",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.service_token.attribute.changed",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.service_token.state.deleted",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.service_token.state.inactive",
+                        "description": ""
+                    }
                 ],
                 "preview": []
             },
@@ -106,10 +212,22 @@
             "datatype": "equinix.fabric.v1.MetricAlert",
             "cloudeventTypes": {
                 "released": [
-                    "equinix.fabric.connection.ipv4_installed_routes.utilization",
-                    "equinix.fabric.connection.ipv6_installed_routes.utilization",
-                    "equinix.fabric.router.ipv4_installed_routes.utilization",
-                    "equinix.fabric.router.ipv6_installed_routes.utilization"
+                    {
+                        "name": "equinix.fabric.connection.ipv4_installed_routes.utilization",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.ipv6_installed_routes.utilization",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.router.ipv4_installed_routes.utilization",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.router.ipv6_installed_routes.utilization",
+                        "description": ""
+                    }
                 ],
                 "preview": []
             },
@@ -130,82 +248,295 @@
             "datatype": "equinix.fabric.v1.MetricEvent",
             "cloudeventTypes": {
                 "released": [
-                    "equinix.fabric.metric"
+                    {
+                        "name": "equinix.fabric.metric",
+                        "description": ""
+                    }
                 ],
                 "preview": []
             },
             "metricNames": {
                 "released": [
-                    "equinix.fabric.connection.bandwidth_rx.usage",
-                    "equinix.fabric.connection.bandwidth_tx.usage",
-                    "equinix.fabric.metro.am_{:metroCode}.latency",
-                    "equinix.fabric.metro.at_{:metroCode}.latency",
-                    "equinix.fabric.metro.ba_{:metroCode}.latency",
-                    "equinix.fabric.metro.bg_{:metroCode}.latency",
-                    "equinix.fabric.metro.bl_{:metroCode}.latency",
-                    "equinix.fabric.metro.bo_{:metroCode}.latency",
-                    "equinix.fabric.metro.bx_{:metroCode}.latency",
-                    "equinix.fabric.metro.ca_{:metroCode}.latency",
-                    "equinix.fabric.metro.ch_{:metroCode}.latency",
-                    "equinix.fabric.metro.cl_{:metroCode}.latency",
-                    "equinix.fabric.metro.cu_{:metroCode}.latency",
-                    "equinix.fabric.metro.da_{:metroCode}.latency",
-                    "equinix.fabric.metro.db_{:metroCode}.latency",
-                    "equinix.fabric.metro.dc_{:metroCode}.latency",
-                    "equinix.fabric.metro.de_{:metroCode}.latency",
-                    "equinix.fabric.metro.dx_{:metroCode}.latency",
-                    "equinix.fabric.metro.fr_{:metroCode}.latency",
-                    "equinix.fabric.metro.gv_{:metroCode}.latency",
-                    "equinix.fabric.metro.he_{:metroCode}.latency",
-                    "equinix.fabric.metro.hh_{:metroCode}.latency",
-                    "equinix.fabric.metro.hk_{:metroCode}.latency",
-                    "equinix.fabric.metro.ho_{:metroCode}.latency",
-                    "equinix.fabric.metro.il_{:metroCode}.latency",
-                    "equinix.fabric.metro.jh_{:metroCode}.latency",
-                    "equinix.fabric.metro.ka_{:metroCode}.latency",
-                    "equinix.fabric.metro.kl_{:metroCode}.latency",
-                    "equinix.fabric.metro.la_{:metroCode}.latency",
-                    "equinix.fabric.metro.ld_{:metroCode}.latency",
-                    "equinix.fabric.metro.lm_{:metroCode}.latency",
-                    "equinix.fabric.metro.ls_{:metroCode}.latency",
-                    "equinix.fabric.metro.ma_{:metroCode}.latency",
-                    "equinix.fabric.metro.mb_{:metroCode}.latency",
-                    "equinix.fabric.metro.md_{:metroCode}.latency",
-                    "equinix.fabric.metro.me_{:metroCode}.latency",
-                    "equinix.fabric.metro.mi_{:metroCode}.latency",
-                    "equinix.fabric.metro.ml_{:metroCode}.latency",
-                    "equinix.fabric.metro.mo_{:metroCode}.latency",
-                    "equinix.fabric.metro.mt_{:metroCode}.latency",
-                    "equinix.fabric.metro.mu_{:metroCode}.latency",
-                    "equinix.fabric.metro.mx_{:metroCode}.latency",
-                    "equinix.fabric.metro.ny_{:metroCode}.latency",
-                    "equinix.fabric.metro.os_{:metroCode}.latency",
-                    "equinix.fabric.metro.ot_{:metroCode}.latency",
-                    "equinix.fabric.metro.pa_{:metroCode}.latency",
-                    "equinix.fabric.metro.pe_{:metroCode}.latency",
-                    "equinix.fabric.metro.ph_{:metroCode}.latency",
-                    "equinix.fabric.metro.rj_{:metroCode}.latency",
-                    "equinix.fabric.metro.se_{:metroCode}.latency",
-                    "equinix.fabric.metro.sg_{:metroCode}.latency",
-                    "equinix.fabric.metro.sk_{:metroCode}.latency",
-                    "equinix.fabric.metro.sl_{:metroCode}.latency",
-                    "equinix.fabric.metro.so_{:metroCode}.latency",
-                    "equinix.fabric.metro.sp_{:metroCode}.latency",
-                    "equinix.fabric.metro.st_{:metroCode}.latency",
-                    "equinix.fabric.metro.sv_{:metroCode}.latency",
-                    "equinix.fabric.metro.sy_{:metroCode}.latency",
-                    "equinix.fabric.metro.tr_{:metroCode}.latency",
-                    "equinix.fabric.metro.ty_{:metroCode}.latency",
-                    "equinix.fabric.metro.va_{:metroCode}.latency",
-                    "equinix.fabric.metro.wa_{:metroCode}.latency",
-                    "equinix.fabric.metro.wi_{:metroCode}.latency",
-                    "equinix.fabric.metro.zh_{:metroCode}.latency",
-                    "equinix.fabric.port.bandwidth_rx.usage",
-                    "equinix.fabric.port.bandwidth_tx.usage",
-                    "equinix.fabric.port.packets_dropped_rx.count",
-                    "equinix.fabric.port.packets_dropped_tx.count",
-                    "equinix.fabric.port.packets_erred_rx.count",
-                    "equinix.fabric.port.packets_erred_tx.count"
+                    {
+                        "name": "equinix.fabric.connection.bandwidth_rx.usage",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bandwidth_tx.usage",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.am_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.at_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ba_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.bg_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.bl_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.bo_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.bx_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ca_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ch_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.cl_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.cu_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.da_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.db_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.dc_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.de_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.dx_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.fr_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.gv_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.he_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.hh_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.hk_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ho_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.il_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.jh_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ka_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.kl_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.la_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ld_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.lm_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ls_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ma_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mb_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.md_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.me_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mi_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ml_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mo_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mt_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mu_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mx_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ny_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.os_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ot_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.pa_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.pe_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ph_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.rj_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.se_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sg_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sk_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sl_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.so_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sp_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.st_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sv_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sy_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.tr_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ty_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.va_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.wa_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.wi_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.metro.zh_{:metroCode}.latency",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.port.bandwidth_rx.usage",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.port.bandwidth_tx.usage",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_dropped_rx.count",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_dropped_tx.count",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_erred_rx.count",
+                        "description": ""
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_erred_tx.count",
+                        "description": ""
+                    }
                 ],
                 "preview": []
             },
