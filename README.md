@@ -20,8 +20,20 @@ The following data payloads are the supported events and formats for Equinix Int
 <details>
 <summary>In Preview</summary>
 
-`equinix.access_manager.user.role.added` <br>
-`equinix.access_manager.user.role.removed`
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>equinix.access_manager.user.role.added</td>
+		<td>Role assignment event</td>
+	</tr>
+	<tr>
+		<td>equinix.access_manager.user.role.removed</td>
+		<td>Role unassignment event</td>
+	</tr>
+</table>
 
 </details>
 
