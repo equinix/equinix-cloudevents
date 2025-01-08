@@ -60,16 +60,47 @@
     },
     "cloudeventTypes": {
         "released": [
-            "equinix.network_edge.device.state.created",
-            "equinix.network_edge.device.state.cancelled",
-            "equinix.network_edge.device.state.deleted",
-            "equinix.network_edge.device.state.provisioning",
-            "equinix.network_edge.device.state.provisioned",
-            "equinix.network_edge.acl.state.created",
-            "equinix.network_edge.acl.state.deleted",
-            "equinix.network_edge.device.acl.updated",
-            "equinix.network_edge.device.reboot.started",
-            "equinix.network_edge.device.reboot.completed"
+            {
+                "name": "equinix.network_edge.device.state.created",
+                "description": ""
+            },
+             {
+                "name": "equinix.network_edge.device.state.cancelled",
+                "description": ""
+            },
+             {
+                "name":  "equinix.network_edge.device.state.deleted",
+                "description": ""
+            },
+             {
+                "name":  "equinix.network_edge.device.state.provisioning",
+                "description": ""
+            },
+             {
+                "name":  "equinix.network_edge.device.state.provisioned",
+                "description": ""
+            },
+             {
+                "name":  "equinix.network_edge.acl.state.created",
+                "description": ""
+            },
+             {
+                "name":   "equinix.network_edge.acl.state.deleted",
+                "description": ""
+            },
+             {
+                "name":  "equinix.network_edge.device.acl.updated",
+                "description": ""
+            },
+             {
+                "name":  "equinix.network_edge.device.reboot.started",
+                "description": ""
+            },
+             {
+                "name":  "equinix.network_edge.device.reboot.completed"
+                "description": ""
+            }
+            
         ],
         "preview": []
     },
