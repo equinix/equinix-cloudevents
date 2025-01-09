@@ -570,16 +570,52 @@ The following data payloads are the supported events and formats for Equinix Int
 <details>
 <summary>Released</summary>
 
-`equinix.network_edge.acl.state.created` <br>
-`equinix.network_edge.acl.state.deleted` <br>
-`equinix.network_edge.device.acl.updated` <br>
-`equinix.network_edge.device.reboot.completed` <br>
-`equinix.network_edge.device.reboot.started` <br>
-`equinix.network_edge.device.state.cancelled` <br>
-`equinix.network_edge.device.state.created` <br>
-`equinix.network_edge.device.state.deleted` <br>
-`equinix.network_edge.device.state.provisioned` <br>
-`equinix.network_edge.device.state.provisioning`
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.acl.state.created</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.acl.state.deleted</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.acl.updated</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.reboot.completed</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.reboot.started</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.state.cancelled</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.state.created</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.state.deleted</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.state.provisioned</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.state.provisioning</td>
+		<td></td>
+	</tr>
+</table>
 
 </details>
 
