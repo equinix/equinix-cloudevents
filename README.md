@@ -577,43 +577,43 @@ The following data payloads are the supported events and formats for Equinix Int
 	</tr>
 	<tr>
 		<td>equinix.network_edge.acl.state.created</td>
-		<td></td>
+		<td>Network edge acl is created</td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.acl.state.deleted</td>
-		<td></td>
+		<td>Network edge acl is deleted</td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.acl.updated</td>
-		<td></td>
+		<td>Network edge acl is updated</td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.reboot.completed</td>
-		<td></td>
+		<td>Network edge device reboot completed</td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.reboot.started</td>
-		<td></td>
+		<td>Network edge device reboot started</td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.state.cancelled</td>
-		<td></td>
+		<td>Network edge device order cancelled</td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.state.created</td>
-		<td></td>
+		<td>Network edge device created</td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.state.deleted</td>
-		<td></td>
+		<td>Network edge device deleted</td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.state.provisioned</td>
-		<td></td>
+		<td>Network edge device is provisioned</td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.state.provisioning</td>
-		<td></td>
+		<td>Network edge device is provisioning</td>
 	</tr>
 </table>
 

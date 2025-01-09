@@ -574,43 +574,43 @@
                 "released": [
                     {
                         "name": "equinix.network_edge.acl.state.created",
-                        "description": ""
+                        "description": "Network edge acl is created"
                     },
                     {
                         "name": "equinix.network_edge.acl.state.deleted",
-                        "description": ""
+                        "description": "Network edge acl is deleted"
                     },
                     {
                         "name": "equinix.network_edge.device.acl.updated",
-                        "description": ""
+                        "description": "Network edge acl is updated"
                     },
                     {
                         "name": "equinix.network_edge.device.reboot.completed",
-                        "description": ""
+                        "description": "Network edge device reboot completed"
                     },
                     {
                         "name": "equinix.network_edge.device.reboot.started",
-                        "description": ""
+                        "description": "Network edge device reboot started"
                     },
                     {
                         "name": "equinix.network_edge.device.state.cancelled",
-                        "description": ""
+                        "description": "Network edge device order cancelled"
                     },
                     {
                         "name": "equinix.network_edge.device.state.created",
-                        "description": ""
+                        "description": "Network edge device created"
                     },
                     {
                         "name": "equinix.network_edge.device.state.deleted",
-                        "description": ""
+                        "description": "Network edge device deleted"
                     },
                     {
                         "name": "equinix.network_edge.device.state.provisioned",
-                        "description": ""
+                        "description": "Network edge device is provisioned"
                     },
                     {
                         "name": "equinix.network_edge.device.state.provisioning",
-                        "description": ""
+                        "description": "Network edge device is provisioning"
                     }
                 ],
                 "preview": []
