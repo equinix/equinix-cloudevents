@@ -97,7 +97,7 @@
                 "description": ""
             },
              {
-                "name":  "equinix.network_edge.device.reboot.completed"
+                "name":  "equinix.network_edge.device.reboot.completed",
                 "description": ""
             }
             
