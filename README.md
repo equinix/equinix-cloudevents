@@ -565,6 +565,59 @@ The following data payloads are the supported events and formats for Equinix Int
 #### Data Type
 `equinix.network_edge.v1.ChangeEvent`
 #### Supported Events, Metrics, and Alerts
+#### Events
+
+<details>
+<summary>Released</summary>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.acl.state.created</td>
+		<td>Network edge acl is created</td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.acl.state.deleted</td>
+		<td>Network edge acl is deleted</td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.acl.updated</td>
+		<td>Network edge acl is updated</td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.reboot.completed</td>
+		<td>Network edge device reboot completed</td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.reboot.started</td>
+		<td>Network edge device reboot started</td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.state.cancelled</td>
+		<td>Network edge device order cancelled</td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.state.created</td>
+		<td>Network edge device created</td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.state.deleted</td>
+		<td>Network edge device deleted</td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.state.provisioned</td>
+		<td>Network edge device is provisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device.state.provisioning</td>
+		<td>Network edge device is provisioning</td>
+	</tr>
+</table>
+
+</details>
 
 
 
