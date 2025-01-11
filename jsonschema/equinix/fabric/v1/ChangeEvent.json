@@ -123,155 +123,171 @@
         "released": [
             {
                 "name": "equinix.fabric.connection.state.pending",
-                "description": ""
+                "description": "Connection named ${connection_name} state changed to pending"
             },
             {
                 "name": "equinix.fabric.connection.state.provisioning",
-                "description": ""
+                "description": "Connection named ${connection_name} state changed to provisioning"
             },
             {
                 "name": "equinix.fabric.connection.state.provisioned",
-                "description": ""
+                "description": "Connection named ${connection_name} state changed to provisioned"
             },
             {
                 "name": "equinix.fabric.connection.state.deprovisioning",
-                "description": ""
+                "description": "Connection named ${connection_name} state changed to deprovisioning"
             },
             {
                 "name": "equinix.fabric.connection.state.deprovisioned",
-                "description": ""
+                "description": "Connection named ${connection_name} state changed to deprovisioned"
             },
             {
                 "name": "equinix.fabric.connection.attribute.changed",
-                "description": ""
+                "description": "Connection named ${connection_name} attributes are changed"
             },
             {
                 "name": "equinix.fabric.connection.status.up",
-                "description": ""
+                "description": "Connection '${connection_name}' status changed to UP"
             },
             {
                 "name": "equinix.fabric.connection.status.down",
-                "description": ""
-            },
-            {
-                "name": "equinix.fabric.connection.bgpipv4_session_status.established",
-                "description": ""
+                "description": "Connection '${connection_name}' status changed to DOWN"
             },
             {
                 "name": "equinix.fabric.connection.bgpipv4_session_status.idle",
-                "description": ""
+                "description": "Neighbor ${IP} address session state changed to Idle"
             },
             {
                 "name": "equinix.fabric.connection.bgpipv4_session_status.connect",
-                "description": ""
+                "description": "Neighbor ${IP} address session state changed to Connect"
+            },
+            {
+                "name": "equinix.fabric.connection.bgpipv4_session_status.active",
+                "description": "Neighbor ${IP} address session state changed to Active"
             },
             {
                 "name": "equinix.fabric.connection.bgpipv4_session_status.open_sent",
-                "description": ""
+                "description": "Neighbor ${IP} address session state changed to Open_sent"
             },
             {
                 "name": "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
-                "description": ""
+                "description": "Neighbor ${IP} address session state changed to Open_confirm"
             },
             {
-                "name": "equinix.fabric.connection.bgpipv6_session_status.established",
-                "description": ""
+                "name": "equinix.fabric.connection.bgpipv4_session_status.established",
+                "description": "Neighbor ${IP} address session state changed to Established"
             },
             {
                 "name": "equinix.fabric.connection.bgpipv6_session_status.idle",
-                "description": ""
+                "description": "Neighbor ${IP} address session state changed to Idle"
             },
             {
                 "name": "equinix.fabric.connection.bgpipv6_session_status.connect",
-                "description": ""
+                "description": "Neighbor ${IP} address session state changed to Connect"
             },
             {
-                "name": "equinix.fabric.connection.bgpipv4_session_status.open_sent",
-                "description": ""
+                "name": "equinix.fabric.connection.bgpipv6_session_status.active",
+                "description": "Neighbor ${IP} address session state changed to Active"
             },
             {
-                "name": "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
-                "description": ""
+                "name": "equinix.fabric.connection.bgpipv6_session_status.open_sent",
+                "description": "Neighbor ${IP} address session state changed to open_sent"
+            },
+            {
+                "name": "equinix.fabric.connection.bgpipv6_session_status.open_confirm",
+                "description": "Neighbor ${IP} address session state changed to Open_confirm"
+            },
+            {
+                "name": "equinix.fabric.connection.bgpipv6_session_status.established",
+                "description": "Neighbor ${IP} address session state changed to Established"
             },
             {
                 "name": "equinix.fabric.network.state.provisioning",
-                "description": ""
+                "description": "Network named ${network_name} state changed to provisioning"
             },
             {
                 "name": "equinix.fabric.network.state.provisioned",
-                "description": ""
+                "description": "Network named ${network_name} state changed to provisioned"
             },
             {
                 "name": "equinix.fabric.network.state.deprovisioning",
-                "description": ""
+                "description": "Network named ${network_name} state changed to deprovisioning"
             },
             {
                 "name": "equinix.fabric.network.state.deprovisioned",
-                "description": ""
+                "description": "Network named ${network_name} state changed to deprovisioned"
             },
             {
                 "name": "equinix.fabric.port.state.provisioned",
-                "description": ""
+                "description": "Virtual port named ${port_name} state changed to provisioned"
             },
             {
                 "name": "equinix.fabric.port.state.deprovisioned",
-                "description": ""
+                "description": "Virtual port named ${port_name} state changed to deprovisioned"
             },
             {
                 "name": "equinix.fabric.port.state.failed",
-                "description": ""
+                "description": "Virtual port named ${port_name} state changed to failed"
             },
             {
                 "name": "equinix.fabric.port.status.up",
-                "description": ""
+                "description": "Virtual|Physical port '${port_name}' status changed to UP"
             },
             {
                 "name": "equinix.fabric.port.status.down",
-                "description": ""
+                "description": "Virtual|Physical port '${port_name}' status changed to DOWN"
             },
             {
                 "name": "equinix.fabric.router.state.provisioning",
-                "description": ""
+                "description": "Router named ${router_name} state changed to provisioning"
             },
             {
                 "name": "equinix.fabric.router.state.provisioned",
-                "description": ""
+                "description": "Router named ${router_name} successfully provisioned"
             },
             {
                 "name": "equinix.fabric.router.state.reprovisioning",
-                "description": ""
+                "description": "Router named ${router_name} state changed to reprovisioning"
             },
             {
                 "name": "equinix.fabric.router.state.deprovisioning",
-                "description": ""
+                "description": "Router named ${router_name} state changed to deprovisioning"
             },
             {
                 "name": "equinix.fabric.router.state.deprovisioned",
-                "description": ""
+                "description": "Router named ${router_name} successfully deprovisioned"
             },
             {
                 "name": "equinix.fabric.router.state.failed",
-                "description": ""
+                "description": "Router named ${router_name} state changed to failed"
             },
             {
                 "name": "equinix.fabric.router.state.not_provisioned",
-                "description": ""
+                "description": "Router named ${router_name} state changed to not_provisioned"
             },
             {
                 "name": "equinix.fabric.router.state.not_deprovisioned",
-                "description": ""
+                "description": "Router named ${router_name} state changed to not_deprovisioned"
             },
             {
                 "name": "equinix.fabric.service_token.state.inactive",
-                "description": ""
+                "description": "Token successfully created"
             },
             {
                 "name": "equinix.fabric.service_token.state.deleted",
-                "description": ""
+                "description": "Token successfully deleted"
             },
             {
                 "name": "equinix.fabric.service_token.attribute.changed",
-                "description": ""
+                "description": "Token successfully updated"
+            },
+            {
+                "name": "equinix.fabric.service_token.resend_email_notification.succeeded",
+                "description": "Token resend email notification succeeded"
+            },
+            {
+                "name": "equinix.fabric.service_token.resend_email_notification.failed",
+                "description": "Token resend email notification failed"
             }
         ],
         "preview": []
