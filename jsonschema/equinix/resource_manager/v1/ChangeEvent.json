@@ -8,55 +8,6 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",
     "definitions": {
-        "SpecVersion": {
-            "type": "string",
-            "description": "Version of the CloudEvent specification."
-        },
-        "Source": {
-            "type": "string",
-            "description": "The source of the event."
-        },
-        "Id": {
-            "type": "string",
-            "description": "Unique identifier for the event."
-        },
-        "Type": {
-            "type": "string",
-            "description": "Type of the resource event."
-        },
-        "Time": {
-            "type": "string",
-            "format": "date-time",
-            "description": "Timestamp when the event occurred."
-        },
-        "Subject": {
-            "type": "string",
-            "description": "Subject of the event."
-        },
-        "DataContentType": {
-            "type": "string",
-            "description": "The content type of the data."
-        },
-        "DataSchema": {
-            "type": "string",
-            "description": "The schema of the data."
-        },
-        "SeverityNumber": {
-            "type": "integer",
-            "description": "Numeric severity level of the event."
-        },
-        "SeverityText": {
-            "type": "string",
-            "description": "Text representation of the severity."
-        },
-        "EquinixProject": {
-            "type": "string",
-            "description": "The Equinix project associated with the event."
-        },
-        "EquinixOrganization": {
-            "type": "string",
-            "description": "The Equinix organization associated with the event."
-        },
         "Data": {
             "properties": {
                 "resource": {
@@ -90,42 +41,22 @@
             "type": "object",
             "title": "Resource",
             "description": "Schema of the resource that fired the event"
-        },
-        "Change": {
-            "properties": {
-                "EquinixOrganization": {
-                    "type": "string",
-                    "description": "Hierarchy of organization can change if moved."
-                },
-                "data": {
-                    "type": "array",
-                    "description": "Data of the change event",
-                    "items": {
-                        "$ref": "#/definitions/ChangeData"
-                    }
-                }
-            },
-            "type": "object",
-            "title": "Change",
-            "description": "Change attribute schema"
-        },
-        "ChangeData": {
-            "properties": {
-                "name": {
-                    "type": "string",
-                    "description": "The resource name on the resource being changed"
-                }
-            },
-            "type": "object",
-            "title": "ChangeData",
-            "description": "ChangeData attribute schema"
         }
     },
     "cloudeventTypes": {
         "released": [
-            "equinix.resource_manager.event.created",
-            "equinix.resource_manager.event.updated",
-            "equinix.resource_manager.event.deleted"
+            {
+                "name": "equinix.resource_manager.event.created",
+                "description": "Org / Project created event."
+            },
+            {
+                "name": "equinix.resource_manager.event.updated",
+                "description": "Org / Project updated event."
+            },
+            {
+                "name": "equinix.resource_manager.event.deleted",
+                "description": "Org / Project deleted event."
+            }
         ],
         "preview": []
     },

@@ -260,7 +260,20 @@
             "datatype": "equinix.resource_manager.v1.ChangeEvent",
             "cloudeventTypes": {
                 "released": [],
-                "preview": []
+                "preview": [
+                    {
+                        "name": "equinix.resource_manager.event.created",
+                        "description": "Org / Project created event."
+                    },
+                    {
+                        "name": "equinix.resource_manager.event.updated",
+                        "description": "Org / Project updated event."
+                    },
+                    {
+                        "name": "equinix.resource_manager.event.deleted",
+                        "description": "Org / Project deleted event."
+                    }
+                ]
             },
             "metricNames": {
                 "released": [],
