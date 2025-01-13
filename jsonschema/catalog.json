@@ -9,8 +9,7 @@
             "description": "The data within all RoleAssignmentEvent events.",
             "datatype": "equinix.access_manager.v1.RoleAssignmentEvent",
             "cloudeventTypes": {
-                "released": [],
-                "preview": [
+                "released": [
                     {
                         "name": "equinix.access_manager.user.role.added",
                         "description": "Role assignment event"
@@ -19,7 +18,8 @@
                         "name": "equinix.access_manager.user.role.removed",
                         "description": "Role unassignment event"
                     }
-                ]
+                ],
+                "preview": []
             },
             "metricNames": {
                 "released": [],

@@ -18,7 +18,7 @@ The following data payloads are the supported events and formats for Equinix Int
 #### Events
 
 <details>
-<summary>In Preview</summary>
+<summary>Released</summary>
 
 <table>
 	<tr>
@@ -36,7 +36,6 @@ The following data payloads are the supported events and formats for Equinix Int
 </table>
 
 </details>
-
 
 
 
