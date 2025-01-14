@@ -32,17 +32,17 @@
            "description": "Uuid to the resource that has generated the event"
          },
          "user": {
-           "$ref": "#/definitions/user",
+           "$ref": "#/definitions/User",
            "additionalProperties": true,
            "description": "Equinix user of the resource generating the event"
          },
          "role": {
-           "$ref": "#/definitions/role",
+           "$ref": "#/definitions/Role",
            "additionalProperties": true,
            "description": "Equinix role of the resource generating the event"
          },
          "resource": {
-           "$ref": "#/definitions/resource",
+           "$ref": "#/definitions/ResourceScope",
            "additionalProperties": true,
            "description": "Equinix resource of the resource generating the event"
          }
@@ -53,7 +53,7 @@
        "description": "Schema of the resource that fired the event"
      }
    },
-   "user": {
+   "User": {
      "properties": {
        "refId": {
          "type": "string",
@@ -73,7 +73,7 @@
      "title": "user",
      "description": "User attribute schema"
    },
-   "role": {
+   "Role": {
      "properties": {
        "id": {
          "type": "string",
@@ -89,7 +89,7 @@
      "title": "role",
      "description": "Role attribute schema"
    },
-   "resource": {
+   "ResourceScope": {
      "properties": {
        "id": {
          "type": "string",
