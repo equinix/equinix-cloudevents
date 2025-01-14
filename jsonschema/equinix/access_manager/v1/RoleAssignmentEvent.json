@@ -70,7 +70,7 @@
      },
      "additionalProperties": true,
      "type": "object",
-     "title": "user",
+     "title": "User",
      "description": "User attribute schema"
    },
    "Role": {
@@ -86,7 +86,7 @@
      },
      "additionalProperties": true,
      "type": "object",
-     "title": "role",
+     "title": "Role",
      "description": "Role attribute schema"
    },
    "ResourceScope": {
@@ -106,7 +106,7 @@
      },
      "additionalProperties": true,
      "type": "object",
-     "title": "resource",
+     "title": "ResourceScope",
      "description": "Resource attribute schema"
    },
    "cloudeventTypes": {
