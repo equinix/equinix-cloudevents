@@ -224,9 +224,12 @@ The following data payloads are the supported events and formats for Equinix Int
 <details>
 <summary>Released</summary>
 
-`equinix.resource_manager.event.created` <br>
-`equinix.resource_manager.event.deleted` <br>
-`equinix.resource_manager.event.updated`
+`equinix.resource_manager.org.state.created` <br>
+`equinix.resource_manager.org.state.updated` <br>
+`equinix.resource_manager.org.state.deleted` <br>
+`equinix.resource_manager.project.state.created` <br>
+`equinix.resource_manager.project.state.updated` <br>
+`equinix.resource_manager.project.state.deleted` <br>
 
 </details>
 
