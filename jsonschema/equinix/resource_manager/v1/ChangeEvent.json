@@ -12,6 +12,7 @@
             "properties": {
                 "resource": {
                     "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
                     "description": "Optional. The Backup event payload. Unset for deletion events."
                 },
                 "message": {
@@ -19,6 +20,7 @@
                     "description": "Supporting message describing the event"
                 }
             },
+            "additionalProperties": true,
             "type": "object",
             "title": "ChangeEvent Event Data",
             "description": "The data within all ChangeEvent events."
