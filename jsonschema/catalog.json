@@ -3,13 +3,22 @@
     "version": 1,
     "schemas": [
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/access_manager/v1/ChangeEvent.json",
-            "domain": "Equinix Access Manager ChangeEvent",
-            "name": "ChangeEvent",
-            "description": "The data within all ChangeEvent events.",
-            "datatype": "equinix.access_manager.v1.ChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/access_manager/v1/RoleAssignmentEvent.json",
+            "domain": "Equinix Access Manager RoleAssignmentEvent",
+            "name": "RoleAssignmentEvent",
+            "description": "The data within all RoleAssignmentEvent events.",
+            "datatype": "equinix.access_manager.v1.RoleAssignmentEvent",
             "cloudeventTypes": {
-                "released": [],
+                "released": [
+                    {
+                        "name": "equinix.access_manager.user.role.added",
+                        "description": "Role assignment event"
+                    },
+                    {
+                        "name": "equinix.access_manager.user.role.removed",
+                        "description": "Role unassignment event"
+                    }
+                ],
                 "preview": []
             },
             "metricNames": {

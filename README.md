@@ -10,11 +10,32 @@ The following data payloads are the supported events and formats for Equinix Int
 
 <!-- CATALOG_GENERATION_START -->
 ---
-### Equinix Access Manager ChangeEvent
-#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/access_manager/v1/ChangeEvent.json)
+### Equinix Access Manager RoleAssignmentEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/access_manager/v1/RoleAssignmentEvent.json)
 #### Data Type
-`equinix.access_manager.v1.ChangeEvent`
+`equinix.access_manager.v1.RoleAssignmentEvent`
 #### Supported Events, Metrics, and Alerts
+#### Events
+
+<details>
+<summary>Released</summary>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>equinix.access_manager.user.role.added</td>
+		<td>Role assignment event</td>
+	</tr>
+	<tr>
+		<td>equinix.access_manager.user.role.removed</td>
+		<td>Role unassignment event</td>
+	</tr>
+</table>
+
+</details>
 
 
 
