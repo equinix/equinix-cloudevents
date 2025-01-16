@@ -1,9 +1,9 @@
 {
     "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetroLatencyAlert.json",
-    "name": "MetricAlert",
+    "name": "MetroLatencyAlert",
     "examples": [],
     "package": "equinix.fabric.v1",
-    "datatype": "equinix.fabric.v1.MetricAlert",
+    "datatype": "equinix.fabric.v1.MetroLatencyAlert",
     "domain": "Equinix Fabric Metro Latency Alert",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",
