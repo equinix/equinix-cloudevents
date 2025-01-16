@@ -1,0 +1,53 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserAuthenticationEvent.json",
+    "name": "UserAuthenticationEvent",
+    "examples": [],
+    "package": "equinix.identity.v1",
+    "datatype": "equinix.identity.v1.UserAuthenticationEvent",
+    "domain": "Equinix Identity UserAuthenticationEvent",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "type": "string",
+                    "description": "The user UUID"
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Contains the authentication e-mail address or username of the user"
+                },
+                "timestamp": {
+                    "type": "string",
+                    "description": "The date time, in UTC, when user authentication activity happened"
+                }
+            },
+            "additionalProperties": false,
+            "type": "object",
+            "title": "User Authentication Log",
+            "description": "User Authentication Event details"
+        }
+    },
+    "cloudeventTypes": {
+        "released": [
+            {
+                "name": "equinix.identity.user.activity.logged_in",
+                "description": "User loggedIn event"
+            },
+            {
+                "name": "equinix.identity.user.activity.logged_out",
+                "description": "User loggedOut event"
+            }
+        ],
+        "preview": []
+    },
+    "metricNames": {
+        "released": [],
+        "preview": []
+    },
+    "alertNames": {
+        "released": [],
+        "preview": []
+    }
+}

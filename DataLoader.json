@@ -222,7 +222,10 @@
     },
     "identity": {
         "cloudeventTypes": {
-            "released": [],
+            "released": [
+                "equinix.identity.user.activity.logged_in",
+                "equinix.identity.user.activity.logged_out"
+            ],
             "preview": []
         },
         "metricNames": {
