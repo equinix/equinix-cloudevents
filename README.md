@@ -254,6 +254,153 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Connection outbound bandwidth usage above ${threshold}</td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.port.bandwidth_rx.usage</td>
+		<td>Port inbound bandwidth usage above ${threshold}</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.bandwidth_tx.usage</td>
+		<td>Port outbound bandwidth usage above ${threshold}</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.packets_dropped_rx.count</td>
+		<td>Port inbound dropped packets count above ${threshold}</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.packets_dropped_tx.count</td>
+		<td>Port outbound dropped packets count above ${threshold}</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.packets_erred_rx.count</td>
+		<td>Port inbound erred packets count above ${threshold}</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.packets_erred_tx.count</td>
+		<td>Port outbound erred packets count above ${threshold}</td>
+	</tr>
+</table>
+
+</details>
+
+
+
+<details>
+<summary>Released</summary>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.installed_routes_ipv4.utilization</td>
+		<td>Utilization of connection '${connection_name}' active IPv4 routes reached ${threshold}</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.installed_routes_ipv6.utilization</td>
+		<td>Utilization of connection '${connection_name}' active IPv6 routes reached ${threshold}</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.router.installed_routes_ipv4.utilization</td>
+		<td>Utilization of router '${router_name}' total IPv4 routes reached ${threshold}</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.router.installed_routes_ipv6.utilization</td>
+		<td>Utilization of router '${router_name}' total IPv6 routes reached ${threshold}</td>
+	</tr>
+</table>
+
+</details>
+
+
+
+---
+### Equinix Fabric MetricEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricEvent.json)
+#### Data Type
+`equinix.fabric.v1.MetricEvent`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<details>
+<summary>Released</summary>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metric</td>
+		<td></td>
+	</tr>
+</table>
+
+</details>
+
+#### Metrics
+
+<details>
+<summary>Released</summary>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.bandwidth_rx.usage</td>
+		<td>Connection inbound bandwidth usage in bit/sec</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.bandwidth_tx.usage</td>
+		<td>Connection outbound bandwidth usage in bit/sec</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.bandwidth_rx.usage</td>
+		<td>Port inbound bandwidth usage in bit/sec</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.bandwidth_tx.usage</td>
+		<td>Port outbound bandwidth usage in bit/sec</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.packets_dropped_rx.count</td>
+		<td>Port inbound dropped packets count</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.packets_dropped_tx.count</td>
+		<td>Port outbound dropped packets count</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.packets_erred_rx.count</td>
+		<td>Port inbound erred packets count</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.packets_erred_tx.count</td>
+		<td>Port outbound erred packets count</td>
+	</tr>
+</table>
+
+</details>
+
+
+---
+### Equinix Fabric Metro Latency Alert
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetroLatencyAlert.json)
+#### Data Type
+`equinix.fabric.v1.MetroLatencyAlert`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<details>
+<summary>In Preview</summary>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
 		<td>equinix.fabric.metro.am_{metroCode}.latency</td>
 		<td>Metro latency from AM to ${metroCode} above ${threshold}</td>
 	</tr>
@@ -501,71 +648,18 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>equinix.fabric.metro.zh_{metroCode}.latency</td>
 		<td>Metro latency from ZH to ${metroCode} above ${threshold}</td>
 	</tr>
-	<tr>
-		<td>equinix.fabric.port.bandwidth_rx.usage</td>
-		<td>Port inbound bandwidth usage above ${threshold}</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.bandwidth_tx.usage</td>
-		<td>Port outbound bandwidth usage above ${threshold}</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.packets_dropped_rx.count</td>
-		<td>Port inbound dropped packets count above ${threshold}</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.packets_dropped_tx.count</td>
-		<td>Port outbound dropped packets count above ${threshold}</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.packets_erred_rx.count</td>
-		<td>Port inbound erred packets count above ${threshold}</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.packets_erred_tx.count</td>
-		<td>Port outbound erred packets count above ${threshold}</td>
-	</tr>
 </table>
 
 </details>
 
-
-
-<details>
-<summary>Released</summary>
-
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.installed_routes_ipv4.utilization</td>
-		<td>Utilization of connection '${connection_name}' active IPv4 routes reached ${threshold}</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.installed_routes_ipv6.utilization</td>
-		<td>Utilization of connection '${connection_name}' active IPv6 routes reached ${threshold}</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.router.installed_routes_ipv4.utilization</td>
-		<td>Utilization of router '${router_name}' total IPv4 routes reached ${threshold}</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.router.installed_routes_ipv6.utilization</td>
-		<td>Utilization of router '${router_name}' total IPv6 routes reached ${threshold}</td>
-	</tr>
-</table>
-
-</details>
 
 
 
 ---
-### Equinix Fabric MetricEvent
-#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricEvent.json)
+### Equinix Fabric Metro Latency Metric
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetroLatencyMetric.json)
 #### Data Type
-`equinix.fabric.v1.MetricEvent`
+`equinix.fabric.v1.MetroLatencyMetric`
 #### Supported Events, Metrics, and Alerts
 #### Events
 
@@ -594,14 +688,6 @@ The following data payloads are the supported events and formats for Equinix Int
 	<tr>
 		<th>Name</th>
 		<th>Description</th>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bandwidth_rx.usage</td>
-		<td>Connection inbound bandwidth usage in bit/sec</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bandwidth_tx.usage</td>
-		<td>Connection outbound bandwidth usage in bit/sec</td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.am_{metroCode}.latency</td>
@@ -850,30 +936,6 @@ The following data payloads are the supported events and formats for Equinix Int
 	<tr>
 		<td>equinix.fabric.metro.zh_{metroCode}.latency</td>
 		<td>Metro latency from ZH to ${metroCode} in ms</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.bandwidth_rx.usage</td>
-		<td>Port inbound bandwidth usage in bit/sec</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.bandwidth_tx.usage</td>
-		<td>Port outbound bandwidth usage in bit/sec</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.packets_dropped_rx.count</td>
-		<td>Port inbound dropped packets count</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.packets_dropped_tx.count</td>
-		<td>Port outbound dropped packets count</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.packets_erred_rx.count</td>
-		<td>Port inbound erred packets count</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.packets_erred_tx.count</td>
-		<td>Port outbound erred packets count</td>
 	</tr>
 </table>
 
