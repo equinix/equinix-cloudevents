@@ -253,6 +253,107 @@
                         "description": "Connection outbound bandwidth usage above ${threshold}"
                     },
                     {
+                        "name": "equinix.fabric.port.bandwidth_rx.usage",
+                        "description": "Port inbound bandwidth usage above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.port.bandwidth_tx.usage",
+                        "description": "Port outbound bandwidth usage above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_dropped_rx.count",
+                        "description": "Port inbound dropped packets count above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_dropped_tx.count",
+                        "description": "Port outbound dropped packets count above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_erred_rx.count",
+                        "description": "Port inbound erred packets count above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_erred_tx.count",
+                        "description": "Port outbound erred packets count above ${threshold}"
+                    }
+                ]
+            },
+            "metricNames": {
+                "released": [],
+                "preview": []
+            },
+            "alertNames": {
+                "released": [],
+                "preview": []
+            }
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricEvent.json",
+            "domain": "Equinix Fabric MetricEvent",
+            "name": "MetricEvent",
+            "description": "The data within all MetricEvent events.",
+            "datatype": "equinix.fabric.v1.MetricEvent",
+            "cloudeventTypes": {
+                "released": [
+                    {
+                        "name": "equinix.fabric.metric",
+                        "description": ""
+                    }
+                ],
+                "preview": []
+            },
+            "metricNames": {
+                "released": [
+                    {
+                        "name": "equinix.fabric.connection.bandwidth_rx.usage",
+                        "description": "Connection inbound bandwidth usage in bit/sec"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bandwidth_tx.usage",
+                        "description": "Connection outbound bandwidth usage in bit/sec"
+                    },
+                    {
+                        "name": "equinix.fabric.port.bandwidth_rx.usage",
+                        "description": "Port inbound bandwidth usage in bit/sec"
+                    },
+                    {
+                        "name": "equinix.fabric.port.bandwidth_tx.usage",
+                        "description": "Port outbound bandwidth usage in bit/sec"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_dropped_rx.count",
+                        "description": "Port inbound dropped packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_dropped_tx.count",
+                        "description": "Port outbound dropped packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_erred_rx.count",
+                        "description": "Port inbound erred packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_erred_tx.count",
+                        "description": "Port outbound erred packets count"
+                    }
+                ],
+                "preview": []
+            },
+            "alertNames": {
+                "released": [],
+                "preview": []
+            }
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetroLatencyAlert.json",
+            "domain": "Equinix Fabric Metro Latency Alert",
+            "name": "MetroLatencyAlert",
+            "description": "The data within all MetricAlert events.",
+            "datatype": "equinix.fabric.v1.MetroLatencyAlert",
+            "cloudeventTypes": {
+                "released": [],
+                "preview": [
+                    {
                         "name": "equinix.fabric.metro.am_{metroCode}.latency",
                         "description": "Metro latency from AM to ${metroCode} above ${threshold}"
                     },
@@ -499,30 +600,6 @@
                     {
                         "name": "equinix.fabric.metro.zh_{metroCode}.latency",
                         "description": "Metro latency from ZH to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.port.bandwidth_rx.usage",
-                        "description": "Port inbound bandwidth usage above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.port.bandwidth_tx.usage",
-                        "description": "Port outbound bandwidth usage above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_dropped_rx.count",
-                        "description": "Port inbound dropped packets count above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_dropped_tx.count",
-                        "description": "Port outbound dropped packets count above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_erred_rx.count",
-                        "description": "Port inbound erred packets count above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_erred_tx.count",
-                        "description": "Port outbound erred packets count above ${threshold}"
                     }
                 ]
             },
@@ -536,11 +613,11 @@
             }
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricEvent.json",
-            "domain": "Equinix Fabric MetricEvent",
-            "name": "MetricEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetroLatencyMetric.json",
+            "domain": "Equinix Fabric Metro Latency Metric",
+            "name": "MetroLatencyMetric",
             "description": "The data within all MetricEvent events.",
-            "datatype": "equinix.fabric.v1.MetricEvent",
+            "datatype": "equinix.fabric.v1.MetroLatencyMetric",
             "cloudeventTypes": {
                 "released": [
                     {
@@ -552,14 +629,6 @@
             },
             "metricNames": {
                 "released": [
-                    {
-                        "name": "equinix.fabric.connection.bandwidth_rx.usage",
-                        "description": "Connection inbound bandwidth usage in bit/sec"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.bandwidth_tx.usage",
-                        "description": "Connection outbound bandwidth usage in bit/sec"
-                    },
                     {
                         "name": "equinix.fabric.metro.am_{metroCode}.latency",
                         "description": "Metro latency from AM to ${metroCode} in ms"
@@ -807,30 +876,6 @@
                     {
                         "name": "equinix.fabric.metro.zh_{metroCode}.latency",
                         "description": "Metro latency from ZH to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.port.bandwidth_rx.usage",
-                        "description": "Port inbound bandwidth usage in bit/sec"
-                    },
-                    {
-                        "name": "equinix.fabric.port.bandwidth_tx.usage",
-                        "description": "Port outbound bandwidth usage in bit/sec"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_dropped_rx.count",
-                        "description": "Port inbound dropped packets count"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_dropped_tx.count",
-                        "description": "Port outbound dropped packets count"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_erred_rx.count",
-                        "description": "Port inbound erred packets count"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_erred_tx.count",
-                        "description": "Port outbound erred packets count"
                     }
                 ],
                 "preview": []
