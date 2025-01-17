@@ -10,17 +10,9 @@
     "definitions": {
         "Data": {
             "properties": {
-                "resource": {
-                    "type": "string",
-                    "description": "The user UUID"
-                },
                 "message": {
                     "type": "string",
                     "description": "Contains the authentication e-mail address or username of the user"
-                },
-                "timestamp": {
-                    "type": "string",
-                    "description": "The date time, in UTC, when user authentication activity happened"
                 }
             },
             "additionalProperties": false,
