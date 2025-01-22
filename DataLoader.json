@@ -223,8 +223,7 @@
     "identity": {
         "cloudeventTypes": {
             "released": [
-                "equinix.identity.user.activity.logged_in",
-                "equinix.identity.user.activity.logged_out"
+                "equinix.identity.user.activity.logged_in"
             ],
             "preview": []
         },
