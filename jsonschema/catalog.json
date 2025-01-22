@@ -889,7 +889,7 @@
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserAuthenticationEvent.json",
             "domain": "Equinix Identity UserAuthenticationEvent",
             "name": "UserAuthenticationEvent",
-            "description": "The data within all UserAuthenticationEvent events.",
+            "description": "User Authentication Event details",
             "datatype": "equinix.identity.v1.UserAuthenticationEvent",
             "cloudeventTypes": {
                 "released": [

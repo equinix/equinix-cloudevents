@@ -948,6 +948,7 @@ The following data payloads are the supported events and formats for Equinix Int
 #### Data Type
 `equinix.identity.v1.UserAuthenticationEvent`
 #### Supported Events, Metrics, and Alerts
+#### Events
 
 <details>
 <summary>Released</summary>
@@ -959,11 +960,12 @@ The following data payloads are the supported events and formats for Equinix Int
 	</tr>
 	<tr>
 		<td>equinix.identity.user.activity.logged_in</td>
-		<td>User loggedin event</td>
+		<td>User loggedIn event</td>
 	</tr>
 </table>
 
 </details>
+
 
 
 ---
