@@ -1,0 +1,403 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetroLatencyAlert.json",
+    "name": "MetroLatencyAlert",
+    "examples": [],
+    "package": "equinix.fabric.v1",
+    "datatype": "equinix.fabric.v1.MetroLatencyAlert",
+    "domain": "Equinix Fabric Metro Latency Alert",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "The source metro payload"
+                },
+                "metrics": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Metric",
+                        "additionalProperties": true
+                    },
+                    "description": "Specific details of the metric"
+                },
+                "alertRule": {
+                    "type": "object",
+                    "items": {
+                        "$ref": "#/definitions/AlertRule",
+                        "additionalProperties": true
+                    },
+                    "description": "Metadata about the AlertRule triggering the Alert"
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "MetricAlert Event Data",
+            "description": "The data within all MetricAlert events."
+        },
+        "Resource": {
+            "properties": {
+                "metroHref": {
+                    "type": "string",
+                    "description": "Link to the source metro that has generated the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "metroCode": {
+                    "type": "string",
+                    "description": "Metro code of the source metro generating the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        },
+        "Metric": {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "The type of the metric"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The name of the metric"
+                },
+                "unit": {
+                    "type": "string",
+                    "description": "Unified Code for Units of Measure"
+                },
+                "interval": {
+                    "type": "string",
+                    "description": "The time interval that the metric datapoints refer to"
+                },
+                "dataPoints": {
+                    "type": "array",
+                    "description": "Metric data values and end times",
+                    "items": {
+                        "$ref": "#/definitions/DataPoint"
+                    }
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Metrics",
+            "description": "Schema definition of Metrics data"
+        },
+        "DataPoint": {
+            "properties": {
+                "startDateTime": {
+                    "type": "string",
+                    "description": "The start time of the metric data point value given",
+                    "format": "date-time"
+                },
+                "endDateTime": {
+                    "type": "string",
+                    "description": "The end time of the metric data point value given",
+                    "format": "date-time"
+                },
+                "value": {
+                    "type": "number",
+                    "description": "The value of the metric data point"
+                }
+            },
+            "type": "object",
+            "title": "DataPoints",
+            "additionalProperties": true
+        },
+        "AlertRule": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the alert"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the alert"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the alert"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "AlertRule",
+            "description": "Schema definition of AlertRule data"
+        }
+    },
+    "cloudeventTypes": {
+        "released": [
+        ],
+        "preview": [
+            {
+                "name": "equinix.fabric.metro.am_{metroCode}.latency",
+                "description": "Metro latency from AM to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.at_{metroCode}.latency",
+                "description": "Metro latency from AT to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.ba_{metroCode}.latency",
+                "description": "Metro latency from BA to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.bg_{metroCode}.latency",
+                "description": "Metro latency from BG to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.bl_{metroCode}.latency",
+                "description": "Metro latency from BL to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.bo_{metroCode}.latency",
+                "description": "Metro latency from BO to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.bx_{metroCode}.latency",
+                "description": "Metro latency from BX to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.ca_{metroCode}.latency",
+                "description": "Metro latency from CA to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.ch_{metroCode}.latency",
+                "description": "Metro latency from CH to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.cl_{metroCode}.latency",
+                "description": "Metro latency from CL to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.cu_{metroCode}.latency",
+                "description": "Metro latency from CU to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.da_{metroCode}.latency",
+                "description": "Metro latency from DA to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.db_{metroCode}.latency",
+                "description": "Metro latency from DB to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.dc_{metroCode}.latency",
+                "description": "Metro latency from DC to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.de_{metroCode}.latency",
+                "description": "Metro latency from DE to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.dx_{metroCode}.latency",
+                "description": "Metro latency from DX to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.fr_{metroCode}.latency",
+                "description": "Metro latency from FR to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.gv_{metroCode}.latency",
+                "description": "Metro latency from GV to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.he_{metroCode}.latency",
+                "description": "Metro latency from HE to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.hh_{metroCode}.latency",
+                "description": "Metro latency from HH to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.hk_{metroCode}.latency",
+                "description": "Metro latency from HK to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.ho_{metroCode}.latency",
+                "description": "Metro latency from HO to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.il_{metroCode}.latency",
+                "description": "Metro latency from IL to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.jh_{metroCode}.latency",
+                "description": "Metro latency from JH to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.ka_{metroCode}.latency",
+                "description": "Metro latency from KA to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.kl_{metroCode}.latency",
+                "description": "Metro latency from KL to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.la_{metroCode}.latency",
+                "description": "Metro latency from LA to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.ld_{metroCode}.latency",
+                "description": "Metro latency from LD to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.lm_{metroCode}.latency",
+                "description": "Metro latency from LM to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.ls_{metroCode}.latency",
+                "description": "Metro latency from LS to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.ma_{metroCode}.latency",
+                "description": "Metro latency from MA to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.mb_{metroCode}.latency",
+                "description": "Metro latency from MB to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.md_{metroCode}.latency",
+                "description": "Metro latency from MD to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.me_{metroCode}.latency",
+                "description": "Metro latency from ME to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.mi_{metroCode}.latency",
+                "description": "Metro latency from MI to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.ml_{metroCode}.latency",
+                "description": "Metro latency from ML to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.mo_{metroCode}.latency",
+                "description": "Metro latency from MO to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.mt_{metroCode}.latency",
+                "description": "Metro latency from MT to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.mu_{metroCode}.latency",
+                "description": "Metro latency from MU to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.mx_{metroCode}.latency",
+                "description": "Metro latency from MX to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.ny_{metroCode}.latency",
+                "description": "Metro latency from NY to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.os_{metroCode}.latency",
+                "description": "Metro latency from OS to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.ot_{metroCode}.latency",
+                "description": "Metro latency from OT to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.pa_{metroCode}.latency",
+                "description": "Metro latency from PA to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.pe_{metroCode}.latency",
+                "description": "Metro latency from PE to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.ph_{metroCode}.latency",
+                "description": "Metro latency from PH to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.rj_{metroCode}.latency",
+                "description": "Metro latency from RJ to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.se_{metroCode}.latency",
+                "description": "Metro latency from SE to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.sg_{metroCode}.latency",
+                "description": "Metro latency from SG to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.sk_{metroCode}.latency",
+                "description": "Metro latency from SK to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.sl_{metroCode}.latency",
+                "description": "Metro latency from SL to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.so_{metroCode}.latency",
+                "description": "Metro latency from SO to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.sp_{metroCode}.latency",
+                "description": "Metro latency from SP to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.st_{metroCode}.latency",
+                "description": "Metro latency from ST to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.sv_{metroCode}.latency",
+                "description": "Metro latency from SV to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.sy_{metroCode}.latency",
+                "description": "Metro latency from SY to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.tr_{metroCode}.latency",
+                "description": "Metro latency from TR to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.ty_{metroCode}.latency",
+                "description": "Metro latency from TY to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.va_{metroCode}.latency",
+                "description": "Metro latency from VA to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.wa_{metroCode}.latency",
+                "description": "Metro latency from WA to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.wi_{metroCode}.latency",
+                "description": "Metro latency from WI to ${metroCode} above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.metro.zh_{metroCode}.latency",
+                "description": "Metro latency from ZH to ${metroCode} above ${threshold}"
+            }
+        ]
+    },
+    "metricNames": {
+        "released": [],
+        "preview": []
+    },
+    "alertNames": {
+        "released": [],
+        "preview": []
+    }
+}
