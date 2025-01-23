@@ -12,7 +12,7 @@
             "properties": {
                 "message": {
                     "type": "string",
-                    "description": "Contains the authentication e-mail address or username of the user"
+                    "description": "Supporting message describing the event"
                 }
             },
             "additionalProperties": false,
