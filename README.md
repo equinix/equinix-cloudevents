@@ -943,11 +943,28 @@ The following data payloads are the supported events and formats for Equinix Int
 
 
 ---
-### Equinix Identity ChangeEvent
-#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/ChangeEvent.json)
+### Equinix Identity UserAuthenticationEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserAuthenticationEvent.json)
 #### Data Type
-`equinix.identity.v1.ChangeEvent`
+`equinix.identity.v1.UserAuthenticationEvent`
 #### Supported Events, Metrics, and Alerts
+#### Events
+
+<details>
+<summary>Released</summary>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>equinix.identity.user.activity.logged_in</td>
+		<td>User loggedIn event</td>
+	</tr>
+</table>
+
+</details>
 
 
 

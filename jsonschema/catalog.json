@@ -886,13 +886,18 @@
             }
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/ChangeEvent.json",
-            "domain": "Equinix Identity ChangeEvent",
-            "name": "ChangeEvent",
-            "description": "The data within all ChangeEvent events.",
-            "datatype": "equinix.identity.v1.ChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserAuthenticationEvent.json",
+            "domain": "Equinix Identity UserAuthenticationEvent",
+            "name": "UserAuthenticationEvent",
+            "description": "User Authentication Event details",
+            "datatype": "equinix.identity.v1.UserAuthenticationEvent",
             "cloudeventTypes": {
-                "released": [],
+                "released": [
+                    {
+                        "name": "equinix.identity.user.activity.logged_in",
+                        "description": "User loggedIn event"
+                    }
+                ],
                 "preview": []
             },
             "metricNames": {
