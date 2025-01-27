@@ -263,11 +263,7 @@
     },
     "resource_manager": {
         "cloudeventTypes": {
-            "released": [
-                "equinix.resource_manager.event.created",
-                "equinix.resource_manager.event.deleted",
-                "equinix.resource_manager.event.updated"
-            ],
+            "released": [],
             "preview": []
         },
         "metricNames": {

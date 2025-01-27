@@ -977,32 +977,7 @@
             "datatype": "equinix.resource_manager.v1.ChangeEvent",
             "cloudeventTypes": {
                 "released": [],
-                "preview": [
-                    {
-                        "name": "equinix.resource_manager.organization.state.created",
-                        "description": "Organization created event."
-                    },
-                    {
-                        "name": "equinix.resource_manager.organization.state.updated",
-                        "description": "Organization updated event."
-                    },
-                    {
-                        "name": "equinix.resource_manager.organization.state.deleted",
-                        "description": "Organization deleted event."
-                    },
-                    {
-                        "name": "equinix.resource_manager.project.state.created",
-                        "description": "Project created event."
-                    },
-                    {
-                        "name": "equinix.resource_manager.project.state.updated",
-                        "description": "Project updated event."
-                    },
-                    {
-                        "name": "equinix.resource_manager.project.state.deleted",
-                        "description": "Project deleted event."
-                    }
-                ]
+                "preview": []
             },
             "metricNames": {
                 "released": [],
