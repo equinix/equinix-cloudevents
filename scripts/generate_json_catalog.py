@@ -2,6 +2,13 @@ import os
 import json
 import script_constants as sc
 
+def main():
+    json_schemas = retrieve_json_schemas()
+    write_json_schemas_to_catalog_file(json_schemas)
+
+def sortedRemoveDuplicates(listOfDict):
+    return sorted({d["name"]: d for d in listOfDict}.values(), key=lambda x: x["name"])
+
 def retrieve_json_schemas():
     directory = os.path.dirname(os.path.abspath(__file__)) + '/../jsonschema'
     json_schemas = []
@@ -11,16 +18,16 @@ def retrieve_json_schemas():
                 with open(root + "/" + file, "r") as eventFile:
                     data = json.load(eventFile)
                     events = {
-                        sc.RELEASED: sorted(data[sc.EVENTS][sc.RELEASED]),
-                        sc.PREVIEW: sorted(data[sc.EVENTS][sc.PREVIEW])
+                        sc.RELEASED: sortedRemoveDuplicates(data[sc.EVENTS][sc.RELEASED]),
+                        sc.PREVIEW: sortedRemoveDuplicates(data[sc.EVENTS][sc.PREVIEW])
                     }
                     metrics = {
-                        sc.RELEASED: sorted(data[sc.METRICS][sc.RELEASED]),
-                        sc.PREVIEW: sorted(data[sc.METRICS][sc.PREVIEW])
+                        sc.RELEASED: sortedRemoveDuplicates(data[sc.METRICS][sc.RELEASED]),
+                        sc.PREVIEW: sortedRemoveDuplicates(data[sc.METRICS][sc.PREVIEW])
                     }
                     alerts = {
-                        sc.RELEASED: sorted(data[sc.ALERTS][sc.RELEASED]),
-                        sc.PREVIEW: sorted(data[sc.ALERTS][sc.PREVIEW])
+                        sc.RELEASED: sortedRemoveDuplicates(data[sc.ALERTS][sc.RELEASED]),
+                        sc.PREVIEW: sortedRemoveDuplicates(data[sc.ALERTS][sc.PREVIEW])
                     }
                     newItem = {
                         "url": data["$id"],
@@ -48,5 +55,4 @@ def write_json_schemas_to_catalog_file(json_schemas):
 
 
 if __name__ == "__main__":
-    json_schemas = retrieve_json_schemas()
-    write_json_schemas_to_catalog_file(json_schemas)
+    main()

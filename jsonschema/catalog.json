@@ -3,32 +3,22 @@
     "version": 1,
     "schemas": [
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/access_manager/v1/ChangeEvent.json",
-            "domain": "Equinix Access Manager ChangeEvent",
-            "name": "ChangeEvent",
-            "description": "The data within all ChangeEvent events.",
-            "datatype": "equinix.access_manager.v1.ChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/access_manager/v1/RoleAssignmentEvent.json",
+            "domain": "Equinix Access Manager RoleAssignmentEvent",
+            "name": "RoleAssignmentEvent",
+            "description": "The data within all RoleAssignmentEvent events.",
+            "datatype": "equinix.access_manager.v1.RoleAssignmentEvent",
             "cloudeventTypes": {
-                "released": [],
-                "preview": []
-            },
-            "metricNames": {
-                "released": [],
-                "preview": []
-            },
-            "alertNames": {
-                "released": [],
-                "preview": []
-            }
-        },
-        {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeAlert.json",
-            "domain": "Equinix Fabric ChangeAlert",
-            "name": "ChangeAlert",
-            "description": "The data within all ChangeAlert events.",
-            "datatype": "equinix.fabric.v1.ChangeAlert",
-            "cloudeventTypes": {
-                "released": [],
+                "released": [
+                    {
+                        "name": "equinix.access_manager.user.role.added",
+                        "description": "Role assignment event"
+                    },
+                    {
+                        "name": "equinix.access_manager.user.role.removed",
+                        "description": "Role unassignment event"
+                    }
+                ],
                 "preview": []
             },
             "metricNames": {
@@ -48,44 +38,174 @@
             "datatype": "equinix.fabric.v1.ChangeEvent",
             "cloudeventTypes": {
                 "released": [
-                    "equinix.fabric.connection.attribute.changed",
-                    "equinix.fabric.connection.bgpipv4_session_status.connect",
-                    "equinix.fabric.connection.bgpipv4_session_status.established",
-                    "equinix.fabric.connection.bgpipv4_session_status.idle",
-                    "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
-                    "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
-                    "equinix.fabric.connection.bgpipv4_session_status.open_sent",
-                    "equinix.fabric.connection.bgpipv4_session_status.open_sent",
-                    "equinix.fabric.connection.bgpipv6_session_status.connect",
-                    "equinix.fabric.connection.bgpipv6_session_status.established",
-                    "equinix.fabric.connection.bgpipv6_session_status.idle",
-                    "equinix.fabric.connection.state.deprovisioned",
-                    "equinix.fabric.connection.state.deprovisioning",
-                    "equinix.fabric.connection.state.pending",
-                    "equinix.fabric.connection.state.provisioned",
-                    "equinix.fabric.connection.state.provisioning",
-                    "equinix.fabric.connection.status.down",
-                    "equinix.fabric.connection.status.up",
-                    "equinix.fabric.network.state.deprovisioned",
-                    "equinix.fabric.network.state.deprovisioning",
-                    "equinix.fabric.network.state.provisioned",
-                    "equinix.fabric.network.state.provisioning",
-                    "equinix.fabric.port.state.deprovisioned",
-                    "equinix.fabric.port.state.failed",
-                    "equinix.fabric.port.state.provisioned",
-                    "equinix.fabric.port.status.down",
-                    "equinix.fabric.port.status.up",
-                    "equinix.fabric.router.state.deprovisioned",
-                    "equinix.fabric.router.state.deprovisioning",
-                    "equinix.fabric.router.state.failed",
-                    "equinix.fabric.router.state.not_deprovisioned",
-                    "equinix.fabric.router.state.not_provisioned",
-                    "equinix.fabric.router.state.provisioned",
-                    "equinix.fabric.router.state.provisioning",
-                    "equinix.fabric.router.state.reprovisioning",
-                    "equinix.fabric.service_token.attribute.changed",
-                    "equinix.fabric.service_token.state.deleted",
-                    "equinix.fabric.service_token.state.inactive"
+                    {
+                        "name": "equinix.fabric.connection.attribute.changed",
+                        "description": "Connection named ${connection_name} attributes are changed"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv4_session_status.active",
+                        "description": "Neighbor ${IP} address session state changed to Active"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv4_session_status.connect",
+                        "description": "Neighbor ${IP} address session state changed to Connect"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv4_session_status.established",
+                        "description": "Neighbor ${IP} address session state changed to Established"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv4_session_status.idle",
+                        "description": "Neighbor ${IP} address session state changed to Idle"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
+                        "description": "Neighbor ${IP} address session state changed to Open_confirm"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv4_session_status.open_sent",
+                        "description": "Neighbor ${IP} address session state changed to Open_sent"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv6_session_status.active",
+                        "description": "Neighbor ${IP} address session state changed to Active"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv6_session_status.connect",
+                        "description": "Neighbor ${IP} address session state changed to Connect"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv6_session_status.established",
+                        "description": "Neighbor ${IP} address session state changed to Established"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv6_session_status.idle",
+                        "description": "Neighbor ${IP} address session state changed to Idle"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv6_session_status.open_confirm",
+                        "description": "Neighbor ${IP} address session state changed to Open_confirm"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bgpipv6_session_status.open_sent",
+                        "description": "Neighbor ${IP} address session state changed to open_sent"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.state.deprovisioned",
+                        "description": "Connection named ${connection_name} state changed to deprovisioned"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.state.deprovisioning",
+                        "description": "Connection named ${connection_name} state changed to deprovisioning"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.state.pending",
+                        "description": "Connection named ${connection_name} state changed to pending"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.state.provisioned",
+                        "description": "Connection named ${connection_name} state changed to provisioned"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.state.provisioning",
+                        "description": "Connection named ${connection_name} state changed to provisioning"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.status.down",
+                        "description": "Connection '${connection_name}' status changed to DOWN"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.status.up",
+                        "description": "Connection '${connection_name}' status changed to UP"
+                    },
+                    {
+                        "name": "equinix.fabric.network.state.deprovisioned",
+                        "description": "Network named ${network_name} state changed to deprovisioned"
+                    },
+                    {
+                        "name": "equinix.fabric.network.state.deprovisioning",
+                        "description": "Network named ${network_name} state changed to deprovisioning"
+                    },
+                    {
+                        "name": "equinix.fabric.network.state.provisioned",
+                        "description": "Network named ${network_name} state changed to provisioned"
+                    },
+                    {
+                        "name": "equinix.fabric.network.state.provisioning",
+                        "description": "Network named ${network_name} state changed to provisioning"
+                    },
+                    {
+                        "name": "equinix.fabric.port.state.deprovisioned",
+                        "description": "Virtual port named ${port_name} state changed to deprovisioned"
+                    },
+                    {
+                        "name": "equinix.fabric.port.state.failed",
+                        "description": "Virtual port named ${port_name} state changed to failed"
+                    },
+                    {
+                        "name": "equinix.fabric.port.state.provisioned",
+                        "description": "Virtual port named ${port_name} state changed to provisioned"
+                    },
+                    {
+                        "name": "equinix.fabric.port.status.down",
+                        "description": "Virtual|Physical port '${port_name}' status changed to DOWN"
+                    },
+                    {
+                        "name": "equinix.fabric.port.status.up",
+                        "description": "Virtual|Physical port '${port_name}' status changed to UP"
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.deprovisioned",
+                        "description": "Router named ${router_name} successfully deprovisioned"
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.deprovisioning",
+                        "description": "Router named ${router_name} state changed to deprovisioning"
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.failed",
+                        "description": "Router named ${router_name} state changed to failed"
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.not_deprovisioned",
+                        "description": "Router named ${router_name} state changed to not_deprovisioned"
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.not_provisioned",
+                        "description": "Router named ${router_name} state changed to not_provisioned"
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.provisioned",
+                        "description": "Router named ${router_name} successfully provisioned"
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.provisioning",
+                        "description": "Router named ${router_name} state changed to provisioning"
+                    },
+                    {
+                        "name": "equinix.fabric.router.state.reprovisioning",
+                        "description": "Router named ${router_name} state changed to reprovisioning"
+                    },
+                    {
+                        "name": "equinix.fabric.service_token.attribute.changed",
+                        "description": "Token successfully updated"
+                    },
+                    {
+                        "name": "equinix.fabric.service_token.resend_email_notification.failed",
+                        "description": "Token resend email notification failed"
+                    },
+                    {
+                        "name": "equinix.fabric.service_token.resend_email_notification.succeeded",
+                        "description": "Token resend email notification succeeded"
+                    },
+                    {
+                        "name": "equinix.fabric.service_token.state.deleted",
+                        "description": "Token successfully deleted"
+                    },
+                    {
+                        "name": "equinix.fabric.service_token.state.inactive",
+                        "description": "Token successfully created"
+                    }
                 ],
                 "preview": []
             },
@@ -106,12 +226,57 @@
             "datatype": "equinix.fabric.v1.MetricAlert",
             "cloudeventTypes": {
                 "released": [
-                    "equinix.fabric.connection.ipv4_installed_routes.utilization",
-                    "equinix.fabric.connection.ipv6_installed_routes.utilization",
-                    "equinix.fabric.router.ipv4_installed_routes.utilization",
-                    "equinix.fabric.router.ipv6_installed_routes.utilization"
+                    {
+                        "name": "equinix.fabric.connection.installed_routes_ipv4.utilization",
+                        "description": "Utilization of connection '${connection_name}' active IPv4 routes reached ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.installed_routes_ipv6.utilization",
+                        "description": "Utilization of connection '${connection_name}' active IPv6 routes reached ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.router.installed_routes_ipv4.utilization",
+                        "description": "Utilization of router '${router_name}' total IPv4 routes reached ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.router.installed_routes_ipv6.utilization",
+                        "description": "Utilization of router '${router_name}' total IPv6 routes reached ${threshold}"
+                    }
                 ],
-                "preview": []
+                "preview": [
+                    {
+                        "name": "equinix.fabric.connection.bandwidth_rx.usage",
+                        "description": "Connection inbound bandwidth usage above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bandwidth_tx.usage",
+                        "description": "Connection outbound bandwidth usage above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.port.bandwidth_rx.usage",
+                        "description": "Port inbound bandwidth usage above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.port.bandwidth_tx.usage",
+                        "description": "Port outbound bandwidth usage above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_dropped_rx.count",
+                        "description": "Port inbound dropped packets count above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_dropped_tx.count",
+                        "description": "Port outbound dropped packets count above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_erred_rx.count",
+                        "description": "Port inbound erred packets count above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_erred_tx.count",
+                        "description": "Port outbound erred packets count above ${threshold}"
+                    }
+                ]
             },
             "metricNames": {
                 "released": [],
@@ -130,82 +295,47 @@
             "datatype": "equinix.fabric.v1.MetricEvent",
             "cloudeventTypes": {
                 "released": [
-                    "equinix.fabric.metric"
+                    {
+                        "name": "equinix.fabric.metric",
+                        "description": ""
+                    }
                 ],
                 "preview": []
             },
             "metricNames": {
                 "released": [
-                    "equinix.fabric.connection.bandwidth_rx.usage",
-                    "equinix.fabric.connection.bandwidth_tx.usage",
-                    "equinix.fabric.metro.am_{:metroCode}.latency",
-                    "equinix.fabric.metro.at_{:metroCode}.latency",
-                    "equinix.fabric.metro.ba_{:metroCode}.latency",
-                    "equinix.fabric.metro.bg_{:metroCode}.latency",
-                    "equinix.fabric.metro.bl_{:metroCode}.latency",
-                    "equinix.fabric.metro.bo_{:metroCode}.latency",
-                    "equinix.fabric.metro.bx_{:metroCode}.latency",
-                    "equinix.fabric.metro.ca_{:metroCode}.latency",
-                    "equinix.fabric.metro.ch_{:metroCode}.latency",
-                    "equinix.fabric.metro.cl_{:metroCode}.latency",
-                    "equinix.fabric.metro.cu_{:metroCode}.latency",
-                    "equinix.fabric.metro.da_{:metroCode}.latency",
-                    "equinix.fabric.metro.db_{:metroCode}.latency",
-                    "equinix.fabric.metro.dc_{:metroCode}.latency",
-                    "equinix.fabric.metro.de_{:metroCode}.latency",
-                    "equinix.fabric.metro.dx_{:metroCode}.latency",
-                    "equinix.fabric.metro.fr_{:metroCode}.latency",
-                    "equinix.fabric.metro.gv_{:metroCode}.latency",
-                    "equinix.fabric.metro.he_{:metroCode}.latency",
-                    "equinix.fabric.metro.hh_{:metroCode}.latency",
-                    "equinix.fabric.metro.hk_{:metroCode}.latency",
-                    "equinix.fabric.metro.ho_{:metroCode}.latency",
-                    "equinix.fabric.metro.il_{:metroCode}.latency",
-                    "equinix.fabric.metro.jh_{:metroCode}.latency",
-                    "equinix.fabric.metro.ka_{:metroCode}.latency",
-                    "equinix.fabric.metro.kl_{:metroCode}.latency",
-                    "equinix.fabric.metro.la_{:metroCode}.latency",
-                    "equinix.fabric.metro.ld_{:metroCode}.latency",
-                    "equinix.fabric.metro.lm_{:metroCode}.latency",
-                    "equinix.fabric.metro.ls_{:metroCode}.latency",
-                    "equinix.fabric.metro.ma_{:metroCode}.latency",
-                    "equinix.fabric.metro.mb_{:metroCode}.latency",
-                    "equinix.fabric.metro.md_{:metroCode}.latency",
-                    "equinix.fabric.metro.me_{:metroCode}.latency",
-                    "equinix.fabric.metro.mi_{:metroCode}.latency",
-                    "equinix.fabric.metro.ml_{:metroCode}.latency",
-                    "equinix.fabric.metro.mo_{:metroCode}.latency",
-                    "equinix.fabric.metro.mt_{:metroCode}.latency",
-                    "equinix.fabric.metro.mu_{:metroCode}.latency",
-                    "equinix.fabric.metro.mx_{:metroCode}.latency",
-                    "equinix.fabric.metro.ny_{:metroCode}.latency",
-                    "equinix.fabric.metro.os_{:metroCode}.latency",
-                    "equinix.fabric.metro.ot_{:metroCode}.latency",
-                    "equinix.fabric.metro.pa_{:metroCode}.latency",
-                    "equinix.fabric.metro.pe_{:metroCode}.latency",
-                    "equinix.fabric.metro.ph_{:metroCode}.latency",
-                    "equinix.fabric.metro.rj_{:metroCode}.latency",
-                    "equinix.fabric.metro.se_{:metroCode}.latency",
-                    "equinix.fabric.metro.sg_{:metroCode}.latency",
-                    "equinix.fabric.metro.sk_{:metroCode}.latency",
-                    "equinix.fabric.metro.sl_{:metroCode}.latency",
-                    "equinix.fabric.metro.so_{:metroCode}.latency",
-                    "equinix.fabric.metro.sp_{:metroCode}.latency",
-                    "equinix.fabric.metro.st_{:metroCode}.latency",
-                    "equinix.fabric.metro.sv_{:metroCode}.latency",
-                    "equinix.fabric.metro.sy_{:metroCode}.latency",
-                    "equinix.fabric.metro.tr_{:metroCode}.latency",
-                    "equinix.fabric.metro.ty_{:metroCode}.latency",
-                    "equinix.fabric.metro.va_{:metroCode}.latency",
-                    "equinix.fabric.metro.wa_{:metroCode}.latency",
-                    "equinix.fabric.metro.wi_{:metroCode}.latency",
-                    "equinix.fabric.metro.zh_{:metroCode}.latency",
-                    "equinix.fabric.port.bandwidth_rx.usage",
-                    "equinix.fabric.port.bandwidth_tx.usage",
-                    "equinix.fabric.port.packets_dropped_rx.count",
-                    "equinix.fabric.port.packets_dropped_tx.count",
-                    "equinix.fabric.port.packets_erred_rx.count",
-                    "equinix.fabric.port.packets_erred_tx.count"
+                    {
+                        "name": "equinix.fabric.connection.bandwidth_rx.usage",
+                        "description": "Connection inbound bandwidth usage in bit/sec"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.bandwidth_tx.usage",
+                        "description": "Connection outbound bandwidth usage in bit/sec"
+                    },
+                    {
+                        "name": "equinix.fabric.port.bandwidth_rx.usage",
+                        "description": "Port inbound bandwidth usage in bit/sec"
+                    },
+                    {
+                        "name": "equinix.fabric.port.bandwidth_tx.usage",
+                        "description": "Port outbound bandwidth usage in bit/sec"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_dropped_rx.count",
+                        "description": "Port inbound dropped packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_dropped_tx.count",
+                        "description": "Port outbound dropped packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_erred_rx.count",
+                        "description": "Port inbound erred packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_erred_tx.count",
+                        "description": "Port outbound erred packets count"
+                    }
                 ],
                 "preview": []
             },
@@ -215,13 +345,559 @@
             }
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/ChangeEvent.json",
-            "domain": "Equinix Identity ChangeEvent",
-            "name": "ChangeEvent",
-            "description": "The data within all ChangeEvent events.",
-            "datatype": "equinix.identity.v1.ChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetroLatencyAlert.json",
+            "domain": "Equinix Fabric Metro Latency Alert",
+            "name": "MetroLatencyAlert",
+            "description": "The data within all MetricAlert events.",
+            "datatype": "equinix.fabric.v1.MetroLatencyAlert",
             "cloudeventTypes": {
                 "released": [],
+                "preview": [
+                    {
+                        "name": "equinix.fabric.metro.am_{metroCode}.latency",
+                        "description": "Metro latency from AM to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.at_{metroCode}.latency",
+                        "description": "Metro latency from AT to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ba_{metroCode}.latency",
+                        "description": "Metro latency from BA to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.bg_{metroCode}.latency",
+                        "description": "Metro latency from BG to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.bl_{metroCode}.latency",
+                        "description": "Metro latency from BL to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.bo_{metroCode}.latency",
+                        "description": "Metro latency from BO to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.bx_{metroCode}.latency",
+                        "description": "Metro latency from BX to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ca_{metroCode}.latency",
+                        "description": "Metro latency from CA to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ch_{metroCode}.latency",
+                        "description": "Metro latency from CH to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.cl_{metroCode}.latency",
+                        "description": "Metro latency from CL to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.cu_{metroCode}.latency",
+                        "description": "Metro latency from CU to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.da_{metroCode}.latency",
+                        "description": "Metro latency from DA to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.db_{metroCode}.latency",
+                        "description": "Metro latency from DB to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.dc_{metroCode}.latency",
+                        "description": "Metro latency from DC to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.de_{metroCode}.latency",
+                        "description": "Metro latency from DE to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.dx_{metroCode}.latency",
+                        "description": "Metro latency from DX to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.fr_{metroCode}.latency",
+                        "description": "Metro latency from FR to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.gv_{metroCode}.latency",
+                        "description": "Metro latency from GV to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.he_{metroCode}.latency",
+                        "description": "Metro latency from HE to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.hh_{metroCode}.latency",
+                        "description": "Metro latency from HH to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.hk_{metroCode}.latency",
+                        "description": "Metro latency from HK to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ho_{metroCode}.latency",
+                        "description": "Metro latency from HO to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.il_{metroCode}.latency",
+                        "description": "Metro latency from IL to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.jh_{metroCode}.latency",
+                        "description": "Metro latency from JH to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ka_{metroCode}.latency",
+                        "description": "Metro latency from KA to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.kl_{metroCode}.latency",
+                        "description": "Metro latency from KL to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.la_{metroCode}.latency",
+                        "description": "Metro latency from LA to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ld_{metroCode}.latency",
+                        "description": "Metro latency from LD to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.lm_{metroCode}.latency",
+                        "description": "Metro latency from LM to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ls_{metroCode}.latency",
+                        "description": "Metro latency from LS to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ma_{metroCode}.latency",
+                        "description": "Metro latency from MA to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mb_{metroCode}.latency",
+                        "description": "Metro latency from MB to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.md_{metroCode}.latency",
+                        "description": "Metro latency from MD to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.me_{metroCode}.latency",
+                        "description": "Metro latency from ME to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mi_{metroCode}.latency",
+                        "description": "Metro latency from MI to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ml_{metroCode}.latency",
+                        "description": "Metro latency from ML to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mo_{metroCode}.latency",
+                        "description": "Metro latency from MO to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mt_{metroCode}.latency",
+                        "description": "Metro latency from MT to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mu_{metroCode}.latency",
+                        "description": "Metro latency from MU to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mx_{metroCode}.latency",
+                        "description": "Metro latency from MX to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ny_{metroCode}.latency",
+                        "description": "Metro latency from NY to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.os_{metroCode}.latency",
+                        "description": "Metro latency from OS to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ot_{metroCode}.latency",
+                        "description": "Metro latency from OT to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.pa_{metroCode}.latency",
+                        "description": "Metro latency from PA to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.pe_{metroCode}.latency",
+                        "description": "Metro latency from PE to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ph_{metroCode}.latency",
+                        "description": "Metro latency from PH to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.rj_{metroCode}.latency",
+                        "description": "Metro latency from RJ to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.se_{metroCode}.latency",
+                        "description": "Metro latency from SE to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sg_{metroCode}.latency",
+                        "description": "Metro latency from SG to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sk_{metroCode}.latency",
+                        "description": "Metro latency from SK to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sl_{metroCode}.latency",
+                        "description": "Metro latency from SL to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.so_{metroCode}.latency",
+                        "description": "Metro latency from SO to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sp_{metroCode}.latency",
+                        "description": "Metro latency from SP to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.st_{metroCode}.latency",
+                        "description": "Metro latency from ST to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sv_{metroCode}.latency",
+                        "description": "Metro latency from SV to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sy_{metroCode}.latency",
+                        "description": "Metro latency from SY to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.tr_{metroCode}.latency",
+                        "description": "Metro latency from TR to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ty_{metroCode}.latency",
+                        "description": "Metro latency from TY to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.va_{metroCode}.latency",
+                        "description": "Metro latency from VA to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.wa_{metroCode}.latency",
+                        "description": "Metro latency from WA to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.wi_{metroCode}.latency",
+                        "description": "Metro latency from WI to ${metroCode} above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.zh_{metroCode}.latency",
+                        "description": "Metro latency from ZH to ${metroCode} above ${threshold}"
+                    }
+                ]
+            },
+            "metricNames": {
+                "released": [],
+                "preview": []
+            },
+            "alertNames": {
+                "released": [],
+                "preview": []
+            }
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetroLatencyMetric.json",
+            "domain": "Equinix Fabric Metro Latency Metric",
+            "name": "MetroLatencyMetric",
+            "description": "The data within all MetricEvent events.",
+            "datatype": "equinix.fabric.v1.MetroLatencyMetric",
+            "cloudeventTypes": {
+                "released": [
+                    {
+                        "name": "equinix.fabric.metric",
+                        "description": ""
+                    }
+                ],
+                "preview": []
+            },
+            "metricNames": {
+                "released": [
+                    {
+                        "name": "equinix.fabric.metro.am_{metroCode}.latency",
+                        "description": "Metro latency from AM to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.at_{metroCode}.latency",
+                        "description": "Metro latency from AT to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ba_{metroCode}.latency",
+                        "description": "Metro latency from BA to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.bg_{metroCode}.latency",
+                        "description": "Metro latency from BG to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.bl_{metroCode}.latency",
+                        "description": "Metro latency from BL to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.bo_{metroCode}.latency",
+                        "description": "Metro latency from BO to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.bx_{metroCode}.latency",
+                        "description": "Metro latency from BX to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ca_{metroCode}.latency",
+                        "description": "Metro latency from CA to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ch_{metroCode}.latency",
+                        "description": "Metro latency from CH to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.cl_{metroCode}.latency",
+                        "description": "Metro latency from CL to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.cu_{metroCode}.latency",
+                        "description": "Metro latency from CU to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.da_{metroCode}.latency",
+                        "description": "Metro latency from DA to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.db_{metroCode}.latency",
+                        "description": "Metro latency from DB to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.dc_{metroCode}.latency",
+                        "description": "Metro latency from DC to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.de_{metroCode}.latency",
+                        "description": "Metro latency from DE to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.dx_{metroCode}.latency",
+                        "description": "Metro latency from DX to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.fr_{metroCode}.latency",
+                        "description": "Metro latency from FR to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.gv_{metroCode}.latency",
+                        "description": "Metro latency from GV to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.he_{metroCode}.latency",
+                        "description": "Metro latency from HE to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.hh_{metroCode}.latency",
+                        "description": "Metro latency from HH to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.hk_{metroCode}.latency",
+                        "description": "Metro latency from HK to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ho_{metroCode}.latency",
+                        "description": "Metro latency from HO to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.il_{metroCode}.latency",
+                        "description": "Metro latency from IL to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.jh_{metroCode}.latency",
+                        "description": "Metro latency from JH to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ka_{metroCode}.latency",
+                        "description": "Metro latency from KA to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.kl_{metroCode}.latency",
+                        "description": "Metro latency from KL to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.la_{metroCode}.latency",
+                        "description": "Metro latency from LA to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ld_{metroCode}.latency",
+                        "description": "Metro latency from LD to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.lm_{metroCode}.latency",
+                        "description": "Metro latency from LM to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ls_{metroCode}.latency",
+                        "description": "Metro latency from LS to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ma_{metroCode}.latency",
+                        "description": "Metro latency from MA to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mb_{metroCode}.latency",
+                        "description": "Metro latency from MB to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.md_{metroCode}.latency",
+                        "description": "Metro latency from MD to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.me_{metroCode}.latency",
+                        "description": "Metro latency from ME to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mi_{metroCode}.latency",
+                        "description": "Metro latency from MI to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ml_{metroCode}.latency",
+                        "description": "Metro latency from ML to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mo_{metroCode}.latency",
+                        "description": "Metro latency from MO to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mt_{metroCode}.latency",
+                        "description": "Metro latency from MT to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mu_{metroCode}.latency",
+                        "description": "Metro latency from MU to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.mx_{metroCode}.latency",
+                        "description": "Metro latency from MX to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ny_{metroCode}.latency",
+                        "description": "Metro latency from NY to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.os_{metroCode}.latency",
+                        "description": "Metro latency from OS to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ot_{metroCode}.latency",
+                        "description": "Metro latency from OT to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.pa_{metroCode}.latency",
+                        "description": "Metro latency from PA to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.pe_{metroCode}.latency",
+                        "description": "Metro latency from PE to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ph_{metroCode}.latency",
+                        "description": "Metro latency from PH to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.rj_{metroCode}.latency",
+                        "description": "Metro latency from RJ to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.se_{metroCode}.latency",
+                        "description": "Metro latency from SE to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sg_{metroCode}.latency",
+                        "description": "Metro latency from SG to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sk_{metroCode}.latency",
+                        "description": "Metro latency from SK to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sl_{metroCode}.latency",
+                        "description": "Metro latency from SL to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.so_{metroCode}.latency",
+                        "description": "Metro latency from SO to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sp_{metroCode}.latency",
+                        "description": "Metro latency from SP to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.st_{metroCode}.latency",
+                        "description": "Metro latency from ST to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sv_{metroCode}.latency",
+                        "description": "Metro latency from SV to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.sy_{metroCode}.latency",
+                        "description": "Metro latency from SY to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.tr_{metroCode}.latency",
+                        "description": "Metro latency from TR to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.ty_{metroCode}.latency",
+                        "description": "Metro latency from TY to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.va_{metroCode}.latency",
+                        "description": "Metro latency from VA to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.wa_{metroCode}.latency",
+                        "description": "Metro latency from WA to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.wi_{metroCode}.latency",
+                        "description": "Metro latency from WI to ${metroCode} in ms"
+                    },
+                    {
+                        "name": "equinix.fabric.metro.zh_{metroCode}.latency",
+                        "description": "Metro latency from ZH to ${metroCode} in ms"
+                    }
+                ],
+                "preview": []
+            },
+            "alertNames": {
+                "released": [],
+                "preview": []
+            }
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserAuthenticationEvent.json",
+            "domain": "Equinix Identity UserAuthenticationEvent",
+            "name": "UserAuthenticationEvent",
+            "description": "User Authentication Event details",
+            "datatype": "equinix.identity.v1.UserAuthenticationEvent",
+            "cloudeventTypes": {
+                "released": [
+                    {
+                        "name": "equinix.identity.user.activity.logged_in",
+                        "description": "User loggedIn event"
+                    }
+                ],
                 "preview": []
             },
             "metricNames": {
@@ -240,7 +916,48 @@
             "description": "The data within all ChangeEvent events.",
             "datatype": "equinix.network_edge.v1.ChangeEvent",
             "cloudeventTypes": {
-                "released": [],
+                "released": [
+                    {
+                        "name": "equinix.network_edge.acl.state.created",
+                        "description": "Network edge acl is created"
+                    },
+                    {
+                        "name": "equinix.network_edge.acl.state.deleted",
+                        "description": "Network edge acl is deleted"
+                    },
+                    {
+                        "name": "equinix.network_edge.device.acl.updated",
+                        "description": "Network edge acl is updated"
+                    },
+                    {
+                        "name": "equinix.network_edge.device.reboot.completed",
+                        "description": "Network edge device reboot completed"
+                    },
+                    {
+                        "name": "equinix.network_edge.device.reboot.started",
+                        "description": "Network edge device reboot started"
+                    },
+                    {
+                        "name": "equinix.network_edge.device.state.cancelled",
+                        "description": "Network edge device order cancelled"
+                    },
+                    {
+                        "name": "equinix.network_edge.device.state.created",
+                        "description": "Network edge device created"
+                    },
+                    {
+                        "name": "equinix.network_edge.device.state.deleted",
+                        "description": "Network edge device deleted"
+                    },
+                    {
+                        "name": "equinix.network_edge.device.state.provisioned",
+                        "description": "Network edge device is provisioned"
+                    },
+                    {
+                        "name": "equinix.network_edge.device.state.provisioning",
+                        "description": "Network edge device is provisioning"
+                    }
+                ],
                 "preview": []
             },
             "metricNames": {

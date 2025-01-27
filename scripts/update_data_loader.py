@@ -1,7 +1,14 @@
 import os
 import json
-from collections import defaultdict
 import script_constants as sc
+
+def main():
+    supportedEvents = retrieve_supported_events()
+    writeSupportedEventsToDataLoaderFile(supportedEvents)
+
+
+def filterName(listOfDicts):
+    return [d["name"] for d in listOfDicts]
 
 def retrieve_supported_events():
     directory = os.path.dirname(os.path.abspath(__file__)) + '/../jsonschema'
@@ -27,13 +34,12 @@ def retrieve_supported_events():
                                 sc.PREVIEW: []
                             }
                         }
-                    data[sc.EVENTS][sc.RELEASED]
-                    dataLoaderStructure[domain][sc.EVENTS][sc.RELEASED].extend(data[sc.EVENTS][sc.RELEASED])
-                    dataLoaderStructure[domain][sc.EVENTS][sc.PREVIEW].extend(data[sc.EVENTS][sc.PREVIEW])
-                    dataLoaderStructure[domain][sc.METRICS][sc.RELEASED].extend(data[sc.METRICS][sc.RELEASED])
-                    dataLoaderStructure[domain][sc.METRICS][sc.PREVIEW].extend(data[sc.METRICS][sc.PREVIEW])
-                    dataLoaderStructure[domain][sc.ALERTS][sc.RELEASED].extend(data[sc.ALERTS][sc.RELEASED])
-                    dataLoaderStructure[domain][sc.ALERTS][sc.PREVIEW].extend(data[sc.ALERTS][sc.PREVIEW])
+                    dataLoaderStructure[domain][sc.EVENTS][sc.RELEASED].extend(filterName(data[sc.EVENTS][sc.RELEASED]))
+                    dataLoaderStructure[domain][sc.EVENTS][sc.PREVIEW].extend(filterName(data[sc.EVENTS][sc.PREVIEW]))
+                    dataLoaderStructure[domain][sc.METRICS][sc.RELEASED].extend(filterName(data[sc.METRICS][sc.RELEASED]))
+                    dataLoaderStructure[domain][sc.METRICS][sc.PREVIEW].extend(filterName(data[sc.METRICS][sc.PREVIEW]))
+                    dataLoaderStructure[domain][sc.ALERTS][sc.RELEASED].extend(filterName(data[sc.ALERTS][sc.RELEASED]))
+                    dataLoaderStructure[domain][sc.ALERTS][sc.PREVIEW].extend(filterName(data[sc.ALERTS][sc.PREVIEW]))
 
                     dataLoaderStructure[domain][sc.EVENTS][sc.RELEASED] = sorted(set(dataLoaderStructure[domain][sc.EVENTS][sc.RELEASED]))
                     dataLoaderStructure[domain][sc.EVENTS][sc.PREVIEW] = sorted(set(dataLoaderStructure[domain][sc.EVENTS][sc.PREVIEW]))
@@ -53,5 +59,4 @@ def writeSupportedEventsToDataLoaderFile(supportedEvents):
 
 
 if __name__ == "__main__":
-    supportedEvents = retrieve_supported_events()
-    writeSupportedEventsToDataLoaderFile(supportedEvents)
+    main()

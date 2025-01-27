@@ -120,82 +120,47 @@
     },
     "cloudeventTypes": {
         "released": [
-            "equinix.fabric.metric"
+            {
+                "name": "equinix.fabric.metric",
+                "description": ""
+            }
         ],
         "preview": []
     },
     "metricNames": {
         "released": [
-            "equinix.fabric.connection.bandwidth_rx.usage",
-            "equinix.fabric.connection.bandwidth_tx.usage",
-            "equinix.fabric.metro.am_{:metroCode}.latency",
-            "equinix.fabric.metro.at_{:metroCode}.latency",
-            "equinix.fabric.metro.ba_{:metroCode}.latency",
-            "equinix.fabric.metro.bg_{:metroCode}.latency",
-            "equinix.fabric.metro.bl_{:metroCode}.latency",
-            "equinix.fabric.metro.bo_{:metroCode}.latency",
-            "equinix.fabric.metro.bx_{:metroCode}.latency",
-            "equinix.fabric.metro.ca_{:metroCode}.latency",
-            "equinix.fabric.metro.ch_{:metroCode}.latency",
-            "equinix.fabric.metro.cl_{:metroCode}.latency",
-            "equinix.fabric.metro.cu_{:metroCode}.latency",
-            "equinix.fabric.metro.da_{:metroCode}.latency",
-            "equinix.fabric.metro.db_{:metroCode}.latency",
-            "equinix.fabric.metro.dc_{:metroCode}.latency",
-            "equinix.fabric.metro.de_{:metroCode}.latency",
-            "equinix.fabric.metro.dx_{:metroCode}.latency",
-            "equinix.fabric.metro.fr_{:metroCode}.latency",
-            "equinix.fabric.metro.gv_{:metroCode}.latency",
-            "equinix.fabric.metro.he_{:metroCode}.latency",
-            "equinix.fabric.metro.hh_{:metroCode}.latency",
-            "equinix.fabric.metro.hk_{:metroCode}.latency",
-            "equinix.fabric.metro.ho_{:metroCode}.latency",
-            "equinix.fabric.metro.il_{:metroCode}.latency",
-            "equinix.fabric.metro.jh_{:metroCode}.latency",
-            "equinix.fabric.metro.ka_{:metroCode}.latency",
-            "equinix.fabric.metro.kl_{:metroCode}.latency",
-            "equinix.fabric.metro.la_{:metroCode}.latency",
-            "equinix.fabric.metro.ld_{:metroCode}.latency",
-            "equinix.fabric.metro.lm_{:metroCode}.latency",
-            "equinix.fabric.metro.ls_{:metroCode}.latency",
-            "equinix.fabric.metro.ma_{:metroCode}.latency",
-            "equinix.fabric.metro.mb_{:metroCode}.latency",
-            "equinix.fabric.metro.md_{:metroCode}.latency",
-            "equinix.fabric.metro.me_{:metroCode}.latency",
-            "equinix.fabric.metro.mi_{:metroCode}.latency",
-            "equinix.fabric.metro.ml_{:metroCode}.latency",
-            "equinix.fabric.metro.mo_{:metroCode}.latency",
-            "equinix.fabric.metro.mt_{:metroCode}.latency",
-            "equinix.fabric.metro.mu_{:metroCode}.latency",
-            "equinix.fabric.metro.mx_{:metroCode}.latency",
-            "equinix.fabric.metro.ny_{:metroCode}.latency",
-            "equinix.fabric.metro.os_{:metroCode}.latency",
-            "equinix.fabric.metro.ot_{:metroCode}.latency",
-            "equinix.fabric.metro.pa_{:metroCode}.latency",
-            "equinix.fabric.metro.pe_{:metroCode}.latency",
-            "equinix.fabric.metro.ph_{:metroCode}.latency",
-            "equinix.fabric.metro.rj_{:metroCode}.latency",
-            "equinix.fabric.metro.se_{:metroCode}.latency",
-            "equinix.fabric.metro.sg_{:metroCode}.latency",
-            "equinix.fabric.metro.sk_{:metroCode}.latency",
-            "equinix.fabric.metro.sl_{:metroCode}.latency",
-            "equinix.fabric.metro.so_{:metroCode}.latency",
-            "equinix.fabric.metro.sp_{:metroCode}.latency",
-            "equinix.fabric.metro.st_{:metroCode}.latency",
-            "equinix.fabric.metro.sv_{:metroCode}.latency",
-            "equinix.fabric.metro.sy_{:metroCode}.latency",
-            "equinix.fabric.metro.tr_{:metroCode}.latency",
-            "equinix.fabric.metro.ty_{:metroCode}.latency",
-            "equinix.fabric.metro.va_{:metroCode}.latency",
-            "equinix.fabric.metro.wa_{:metroCode}.latency",
-            "equinix.fabric.metro.wi_{:metroCode}.latency",
-            "equinix.fabric.metro.zh_{:metroCode}.latency",
-            "equinix.fabric.port.bandwidth_rx.usage",
-            "equinix.fabric.port.bandwidth_tx.usage",
-            "equinix.fabric.port.packets_erred_rx.count",
-            "equinix.fabric.port.packets_erred_tx.count",
-            "equinix.fabric.port.packets_dropped_rx.count",
-            "equinix.fabric.port.packets_dropped_tx.count"
+            {
+                "name": "equinix.fabric.connection.bandwidth_rx.usage",
+                "description": "Connection inbound bandwidth usage in bit/sec"
+            },
+            {
+                "name": "equinix.fabric.connection.bandwidth_tx.usage",
+                "description": "Connection outbound bandwidth usage in bit/sec"
+            },
+            {
+                "name": "equinix.fabric.port.bandwidth_rx.usage",
+                "description": "Port inbound bandwidth usage in bit/sec"
+            },
+            {
+                "name": "equinix.fabric.port.bandwidth_tx.usage",
+                "description": "Port outbound bandwidth usage in bit/sec"
+            },
+            {
+                "name": "equinix.fabric.port.packets_erred_rx.count",
+                "description": "Port inbound erred packets count"
+            },
+            {
+                "name": "equinix.fabric.port.packets_erred_tx.count",
+                "description": "Port outbound erred packets count"
+            },
+            {
+                "name": "equinix.fabric.port.packets_dropped_rx.count",
+                "description": "Port inbound dropped packets count"
+            },
+            {
+                "name": "equinix.fabric.port.packets_dropped_tx.count",
+                "description": "Port outbound dropped packets count"
+            }
         ],
         "preview": []
     },
