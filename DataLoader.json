@@ -263,7 +263,14 @@
     },
     "resource_manager": {
         "cloudeventTypes": {
-            "released": [],
+            "released": [
+                "equinix.resource_manager.organization.state.created",
+                "equinix.resource_manager.organization.state.deleted",
+                "equinix.resource_manager.organization.state.updated",
+                "equinix.resource_manager.project.state.created",
+                "equinix.resource_manager.project.state.deleted",
+                "equinix.resource_manager.project.state.updated"
+            ],
             "preview": []
         },
         "metricNames": {

@@ -1036,6 +1036,43 @@ The following data payloads are the supported events and formats for Equinix Int
 #### Data Type
 `equinix.resource_manager.v1.ChangeEvent`
 #### Supported Events, Metrics, and Alerts
+#### Events
+
+<details>
+<summary>Released</summary>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>equinix.resource_manager.organization.state.created</td>
+		<td>Organization created event.</td>
+	</tr>
+	<tr>
+		<td>equinix.resource_manager.organization.state.deleted</td>
+		<td>Organization deleted event.</td>
+	</tr>
+	<tr>
+		<td>equinix.resource_manager.organization.state.updated</td>
+		<td>Organization updated event.</td>
+	</tr>
+	<tr>
+		<td>equinix.resource_manager.project.state.created</td>
+		<td>Project created event.</td>
+	</tr>
+	<tr>
+		<td>equinix.resource_manager.project.state.deleted</td>
+		<td>Project deleted event.</td>
+	</tr>
+	<tr>
+		<td>equinix.resource_manager.project.state.updated</td>
+		<td>Project updated event.</td>
+	</tr>
+</table>
+
+</details>
 
 
 
