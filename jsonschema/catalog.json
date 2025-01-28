@@ -275,6 +275,38 @@
                     {
                         "name": "equinix.fabric.port.packets_erred_tx.count",
                         "description": "Port outbound erred packets count above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_erred_rx_aside.count",
+                        "description": "Connection A side inbound erred packets count above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_erred_tx_aside.count",
+                        "description": "Connection A side outbound erred packets count above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_erred_rx_zside.count",
+                        "description": "Connection Z side inbound erred packets count above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_erred_tx_zside.count",
+                        "description": "Connection Z side outbound erred packets count above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_dropped_rx_aside.count",
+                        "description": "Connection A side inbound dropped packets count above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_dropped_tx_aside.count",
+                        "description": "Connection A side outbound dropped packets count above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_dropped_rx_zside.count",
+                        "description": "Connection Z side inbound dropped packets count above ${threshold}"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_dropped_tx_zside.count",
+                        "description": "Connection Z side outbound dropped packets count above ${threshold}"
                     }
                 ]
             },
@@ -335,6 +367,38 @@
                     {
                         "name": "equinix.fabric.port.packets_erred_tx.count",
                         "description": "Port outbound erred packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_erred_rx_aside.count",
+                        "description": "Connection A side inbound erred packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_erred_tx_aside.count",
+                        "description": "Connection A side outbound erred packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_erred_rx_zside.count",
+                        "description": "Connection Z side inbound erred packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_erred_tx_zside.count",
+                        "description": "Connection Z side outbound erred packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_dropped_rx_aside.count",
+                        "description": "Connection A side inbound dropped packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_dropped_tx_aside.count",
+                        "description": "Connection A side outbound dropped packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_dropped_rx_zside.count",
+                        "description": "Connection Z side inbound dropped packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.packets_dropped_tx_zside.count",
+                        "description": "Connection Z side outbound dropped packets count"
                     }
                 ],
                 "preview": []

@@ -137,7 +137,15 @@
                 "equinix.fabric.port.packets_dropped_rx.count",
                 "equinix.fabric.port.packets_dropped_tx.count",
                 "equinix.fabric.port.packets_erred_rx.count",
-                "equinix.fabric.port.packets_erred_tx.count"
+                "equinix.fabric.port.packets_erred_tx.count",
+                "equinix.fabric.connection.packets_erred_rx_aside.count",
+                "equinix.fabric.connection.packets_erred_tx_aside.count",
+                "equinix.fabric.connection.packets_erred_rx_zside.count",
+                "equinix.fabric.connection.packets_erred_tx_zside.count",
+                "equinix.fabric.connection.packets_dropped_rx_aside.count",
+                "equinix.fabric.connection.packets_dropped_tx_aside.count",
+                "equinix.fabric.connection.packets_dropped_rx_zside.count",
+                "equinix.fabric.connection.packets_dropped_tx_zside.count"
             ]
         },
         "metricNames": {
