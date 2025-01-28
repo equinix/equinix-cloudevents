@@ -372,20 +372,12 @@ The following data payloads are the supported events and formats for Equinix Int
 #### Metrics
 
 <details>
-<summary>Released</summary>
+<summary>In Preview</summary>
 
 <table>
 	<tr>
 		<th>Name</th>
 		<th>Description</th>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bandwidth_rx.usage</td>
-		<td>Connection inbound bandwidth usage in bit/sec</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bandwidth_tx.usage</td>
-		<td>Connection outbound bandwidth usage in bit/sec</td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.packets_dropped_rx_aside.count</td>
@@ -418,6 +410,28 @@ The following data payloads are the supported events and formats for Equinix Int
 	<tr>
 		<td>equinix.fabric.connection.packets_erred_tx_zside.count</td>
 		<td>Connection Z side outbound erred packets count</td>
+	</tr>
+</table>
+
+</details>
+
+
+
+<details>
+<summary>Released</summary>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.bandwidth_rx.usage</td>
+		<td>Connection inbound bandwidth usage in bit/sec</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.bandwidth_tx.usage</td>
+		<td>Connection outbound bandwidth usage in bit/sec</td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.bandwidth_rx.usage</td>
