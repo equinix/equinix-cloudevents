@@ -345,6 +345,32 @@
                         "description": "Connection outbound bandwidth usage in bit/sec"
                     },
                     {
+                        "name": "equinix.fabric.port.bandwidth_rx.usage",
+                        "description": "Port inbound bandwidth usage in bit/sec"
+                    },
+                    {
+                        "name": "equinix.fabric.port.bandwidth_tx.usage",
+                        "description": "Port outbound bandwidth usage in bit/sec"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_dropped_rx.count",
+                        "description": "Port inbound dropped packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_dropped_tx.count",
+                        "description": "Port outbound dropped packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_erred_rx.count",
+                        "description": "Port inbound erred packets count"
+                    },
+                    {
+                        "name": "equinix.fabric.port.packets_erred_tx.count",
+                        "description": "Port outbound erred packets count"
+                    }
+                ],
+                "preview": [
+                    {
                         "name": "equinix.fabric.connection.packets_dropped_rx_aside.count",
                         "description": "Connection A side inbound dropped packets count"
                     },
@@ -375,33 +401,8 @@
                     {
                         "name": "equinix.fabric.connection.packets_erred_tx_zside.count",
                         "description": "Connection Z side outbound erred packets count"
-                    },
-                    {
-                        "name": "equinix.fabric.port.bandwidth_rx.usage",
-                        "description": "Port inbound bandwidth usage in bit/sec"
-                    },
-                    {
-                        "name": "equinix.fabric.port.bandwidth_tx.usage",
-                        "description": "Port outbound bandwidth usage in bit/sec"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_dropped_rx.count",
-                        "description": "Port inbound dropped packets count"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_dropped_tx.count",
-                        "description": "Port outbound dropped packets count"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_erred_rx.count",
-                        "description": "Port inbound erred packets count"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_erred_tx.count",
-                        "description": "Port outbound erred packets count"
                     }
-                ],
-                "preview": []
+                ]
             },
             "alertNames": {
                 "released": [],
