@@ -254,36 +254,20 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Connection outbound bandwidth usage above ${threshold}</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.connection.packets_dropped_rx_aside.count</td>
+		<td>equinix.fabric.connection.packets_dropped_bandwidth_exceeded_rx_aside.count</td>
 		<td>Connection A side inbound dropped packets count above ${threshold}</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.connection.packets_dropped_rx_zside.count</td>
+		<td>equinix.fabric.connection.packets_dropped_bandwidth_exceeded_rx_zside.count</td>
 		<td>Connection Z side inbound dropped packets count above ${threshold}</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.connection.packets_dropped_tx_aside.count</td>
+		<td>equinix.fabric.connection.packets_dropped_bandwidth_exceeded_tx_aside.count</td>
 		<td>Connection A side outbound dropped packets count above ${threshold}</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.connection.packets_dropped_tx_zside.count</td>
+		<td>equinix.fabric.connection.packets_dropped_bandwidth_exceeded_tx_zside.count</td>
 		<td>Connection Z side outbound dropped packets count above ${threshold}</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.packets_erred_rx_aside.count</td>
-		<td>Connection A side inbound erred packets count above ${threshold}</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.packets_erred_rx_zside.count</td>
-		<td>Connection Z side inbound erred packets count above ${threshold}</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.packets_erred_tx_aside.count</td>
-		<td>Connection A side outbound erred packets count above ${threshold}</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.packets_erred_tx_zside.count</td>
-		<td>Connection Z side outbound erred packets count above ${threshold}</td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.bandwidth_rx.usage</td>
@@ -380,36 +364,20 @@ The following data payloads are the supported events and formats for Equinix Int
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>equinix.fabric.connection.packets_dropped_rx_aside.count</td>
+		<td>equinix.fabric.connection.packets_dropped_bandwidth_exceeded_rx_aside.count</td>
 		<td>Connection A side inbound dropped packets count</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.connection.packets_dropped_rx_zside.count</td>
+		<td>equinix.fabric.connection.packets_dropped_bandwidth_exceeded_rx_zside.count</td>
 		<td>Connection Z side inbound dropped packets count</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.connection.packets_dropped_tx_aside.count</td>
+		<td>equinix.fabric.connection.packets_dropped_bandwidth_exceeded_tx_aside.count</td>
 		<td>Connection A side outbound dropped packets count</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.connection.packets_dropped_tx_zside.count</td>
+		<td>equinix.fabric.connection.packets_dropped_bandwidth_exceeded_tx_zside.count</td>
 		<td>Connection Z side outbound dropped packets count</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.packets_erred_rx_aside.count</td>
-		<td>Connection A side inbound erred packets count</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.packets_erred_rx_zside.count</td>
-		<td>Connection Z side inbound erred packets count</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.packets_erred_tx_aside.count</td>
-		<td>Connection A side outbound erred packets count</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.packets_erred_tx_zside.count</td>
-		<td>Connection Z side outbound erred packets count</td>
 	</tr>
 </table>
 
