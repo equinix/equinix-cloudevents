@@ -26,14 +26,52 @@
             "description": "The data within all ChangeEvent events."
         },
         "Resource": {
-            "additionalProperties": true,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                }
+            },
             "type": "object",
             "title": "Resource",
             "description": "Schema of the resource that fired the event"
         }
     },
     "cloudeventTypes": {
-        "released": [],
+        "released": [
+            {
+                "name": "equinix.resource_manager.organization.state.created",
+                "description": "Organization created event."
+            },
+            {
+                "name": "equinix.resource_manager.organization.state.updated",
+                "description": "Organization updated event."
+            },
+            {
+                "name": "equinix.resource_manager.organization.state.deleted",
+                "description": "Organization deleted event."
+            },
+            {
+                "name": "equinix.resource_manager.project.state.created",
+                "description": "Project created event."
+            },
+            {
+                "name": "equinix.resource_manager.project.state.updated",
+                "description": "Project updated event."
+            },
+            {
+                "name": "equinix.resource_manager.project.state.deleted",
+                "description": "Project deleted event."
+            }
+        ],
         "preview": []
     },
     "metricNames": {
