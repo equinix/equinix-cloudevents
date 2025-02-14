@@ -70,10 +70,10 @@
             "preview": [
                 "equinix.fabric.connection.bandwidth_rx.usage",
                 "equinix.fabric.connection.bandwidth_tx.usage",
-                "equinix.fabric.connection.packets_dropped_bandwidth_exceeded_rx_aside.count",
-                "equinix.fabric.connection.packets_dropped_bandwidth_exceeded_rx_zside.count",
-                "equinix.fabric.connection.packets_dropped_bandwidth_exceeded_tx_aside.count",
-                "equinix.fabric.connection.packets_dropped_bandwidth_exceeded_tx_zside.count",
+                "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
+                "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
+                "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
+                "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
                 "equinix.fabric.metro.am_{metroCode}.latency",
                 "equinix.fabric.metro.at_{metroCode}.latency",
                 "equinix.fabric.metro.ba_{metroCode}.latency",
@@ -218,10 +218,10 @@
                 "equinix.fabric.port.packets_erred_tx.count"
             ],
             "preview": [
-                "equinix.fabric.connection.packets_dropped_bandwidth_exceeded_rx_aside.count",
-                "equinix.fabric.connection.packets_dropped_bandwidth_exceeded_rx_zside.count",
-                "equinix.fabric.connection.packets_dropped_bandwidth_exceeded_tx_aside.count",
-                "equinix.fabric.connection.packets_dropped_bandwidth_exceeded_tx_zside.count"
+                "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
+                "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
+                "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
+                "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count"
             ]
         },
         "alertNames": {
