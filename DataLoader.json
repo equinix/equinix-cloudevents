@@ -251,13 +251,17 @@
                 "equinix.network_edge.acl.state.created",
                 "equinix.network_edge.acl.state.deleted",
                 "equinix.network_edge.device.acl.updated",
+                "equinix.network_edge.device.attribute.changed",
                 "equinix.network_edge.device.reboot.completed",
                 "equinix.network_edge.device.reboot.started",
                 "equinix.network_edge.device.state.cancelled",
                 "equinix.network_edge.device.state.created",
                 "equinix.network_edge.device.state.deleted",
                 "equinix.network_edge.device.state.provisioned",
-                "equinix.network_edge.device.state.provisioning"
+                "equinix.network_edge.device.state.provisioning",
+                "equinix.network_edge.devicelinkgroup.state.created",
+                "equinix.network_edge.devicelinkgroup.state.deleted",
+                "equinix.network_edge.devicelinkgroup.state.updated"
             ],
             "preview": []
         },
