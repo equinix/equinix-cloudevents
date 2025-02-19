@@ -164,19 +164,19 @@
         ],
         "preview": [
             {
-                "name": "equinix.fabric.connection.packets_dropped_bandwidth_exceeded_rx_aside.count",
+                "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
                 "description": "Connection A side inbound dropped packets count"
             },
             {
-                "name": "equinix.fabric.connection.packets_dropped_bandwidth_exceeded_tx_aside.count",
+                "name": "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
                 "description": "Connection A side outbound dropped packets count"
             },
             {
-                "name": "equinix.fabric.connection.packets_dropped_bandwidth_exceeded_rx_zside.count",
+                "name": "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
                 "description": "Connection Z side inbound dropped packets count"
             },
             {
-                "name": "equinix.fabric.connection.packets_dropped_bandwidth_exceeded_tx_zside.count",
+                "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
                 "description": "Connection Z side outbound dropped packets count"
             }
         ]
