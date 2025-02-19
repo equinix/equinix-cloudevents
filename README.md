@@ -1007,6 +1007,10 @@ The following data payloads are the supported events and formats for Equinix Int
 	<tr>
 		<td>equinix.identity.user.activity.logged_in</td>
 		<td>User loggedIn event</td>
+    </tr>
+    <tr>
+        <td>equinix.identity.user.activity.logged_out</td>
+		<td>User loggedOut event</td>
 	</tr>
 </table>
 
