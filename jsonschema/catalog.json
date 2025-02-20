@@ -929,6 +929,10 @@
                     {
                         "name": "equinix.identity.user.activity.logged_in",
                         "description": "User loggedIn event"
+                    },
+                    {
+                        "name": "equinix.identity.user.activity.logged_out",
+                        "description": "User loggedOut event"
                     }
                 ],
                 "preview": []
