@@ -494,7 +494,7 @@
             {
                 "name": "equinix.fabric.routing_protocol_action.state.failed",
                 "description": "Routing Protocol Action state changed to failed"
-            },
+            }
         ]
     },
     "metricNames": {
