@@ -141,7 +141,15 @@
                 "equinix.fabric.port.packets_dropped_rx.count",
                 "equinix.fabric.port.packets_dropped_tx.count",
                 "equinix.fabric.port.packets_erred_rx.count",
-                "equinix.fabric.port.packets_erred_tx.count"
+                "equinix.fabric.port.packets_erred_tx.count",
+                "equinix.fabric.internet_access.service.state.provisioning",
+                "equinix.fabric.internet_access.service.state.provisioned",
+                "equinix.fabric.internet_access.service.state.deprovisioning",
+                "equinix.fabric.internet_access.service.state.deprovisioned",
+                "equinix.fabric.internet_access.service.state.failed",
+                "equinix.fabric.internet_access.service.attribute.changed",
+                "equinix.fabric.internet_access.service.attribute.changing",
+                "equinix.fabric.internet_access.service.attribute.failed"
             ]
         },
         "metricNames": {
@@ -221,7 +229,15 @@
                 "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
                 "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
                 "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
-                "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count"
+                "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
+                "equinix.fabric.internet_access.service.state.provisioning",
+                "equinix.fabric.internet_access.service.state.provisioned",
+                "equinix.fabric.internet_access.service.state.deprovisioning",
+                "equinix.fabric.internet_access.service.state.deprovisioned",
+                "equinix.fabric.internet_access.service.state.failed",
+                "equinix.fabric.internet_access.service.attribute.changed",
+                "equinix.fabric.internet_access.service.attribute.changing",
+                "equinix.fabric.internet_access.service.attribute.failed"
             ]
         },
         "alertNames": {
