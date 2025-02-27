@@ -48,6 +48,224 @@ The following data payloads are the supported events and formats for Equinix Int
 #### Events
 
 <details>
+<summary>In Preview</summary>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_aggregation.attached</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attached</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_aggregation.attaching</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attaching</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_aggregation.detached</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detached</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_aggregation.detaching</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detaching</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_aggregation.failed</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to failed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_aggregation.pending_bgp_configuration</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to pending_bgp_configuration</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_filter.attached</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to attached</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_filter.attaching</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to attaching</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_filter.detached</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to detached</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_filter.detaching</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to detaching</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_filter.failed</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to failed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_filter.pending_bgp_configuration</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to pending_bgp_configuration</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_routing_protocol.state.deprovisioned</td>
+		<td>Routing Protocol named ${routing_protocol_name} state changed to deprovisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_routing_protocol.state.deprovisioning</td>
+		<td>Routing Protocol named ${routing_protocol_name} state changed to deprovisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_routing_protocol.state.failed</td>
+		<td>Routing Protocol named ${routing_protocol_name} state changed to failed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_routing_protocol.state.provisioned</td>
+		<td>Routing Protocol named ${routing_protocol_name} state changed to provisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_routing_protocol.state.provisioning</td>
+		<td>Routing Protocol named ${routing_protocol_name} state changed to provisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_routing_protocol.state.reprovisioning</td>
+		<td>Routing Protocol named ${routing_protocol_name} state changed to reprovisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation.attribute.changed</td>
+		<td>Route Aggregation named ${route_aggregation_name} attribute changed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation.state.deprovisioned</td>
+		<td>Route Aggregation named ${route_aggregation_name} state changed to deprovisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation.state.deprovisioning</td>
+		<td>Route Aggregation named ${route_aggregation_name} state changed to deprovisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation.state.not_deprovisioned</td>
+		<td>Route Aggregation named ${route_aggregation_name} state changed to not_deprovisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation.state.not_provisioned</td>
+		<td>Route Aggregation named ${route_aggregation_name} state changed to not_provisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation.state.provisioned</td>
+		<td>Route Aggregation named ${route_aggregation_name} state changed to provisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation.state.provisioning</td>
+		<td>Route Aggregation named ${route_aggregation_name} state changed to provisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation.state.reprovisioning</td>
+		<td>Route Aggregation named ${route_aggregation_name} state changed to reprovisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation_rule.attribute.changed</td>
+		<td>Route Aggregation Rule named ${route_aggregation_rule_name} attribute changed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation_rule.state.deprovisioned</td>
+		<td>Route Aggregation Rule named ${route_aggregation_rule_name} state changed to deprovisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation_rule.state.deprovisioning</td>
+		<td>Route Aggregation Rule named ${route_aggregation_rule_name} state changed to deprovisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation_rule.state.failed</td>
+		<td>Route Aggregation Rule named ${route_aggregation_rule_name} state changed to failed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation_rule.state.provisioned</td>
+		<td>Route Aggregation Rule named ${route_aggregation_rule_name} state changed to provisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation_rule.state.provisioning</td>
+		<td>Route Aggregation Rule named ${route_aggregation_rule_name} state changed to provisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation_rule.state.reprovisioning</td>
+		<td>Route Aggregation Rule named ${route_aggregation_rule_name} state changed to reprovisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter.attribute.changed</td>
+		<td>Route Filter named ${route_filter_name} attribute changed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter.state.deprovisioned</td>
+		<td>Route Filter named ${route_filter_name} state changed to deprovisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter.state.deprovisioning</td>
+		<td>Route Filter named ${route_filter_name} state changed to deprovisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter.state.not_deprovisioned</td>
+		<td>Route Filter named ${route_filter_name} state changed to not_deprovisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter.state.not_provisioned</td>
+		<td>Route Filter named ${route_filter_name} state changed to not_provisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter.state.provisioned</td>
+		<td>Route Filter named ${route_filter_name} state changed to provisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter.state.provisioning</td>
+		<td>Route Filter named ${route_filter_name} state changed to provisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter.state.reprovisioning</td>
+		<td>Route Filter named ${route_filter_name} state changed to reprovisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter_rule.attribute.changed</td>
+		<td>Route Filter Rule named ${route_filter_rule_name} attribute changed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter_rule.state.deprovisioned</td>
+		<td>Route Filter Rule named ${route_filter_rule_name} state changed to deprovisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter_rule.state.deprovisioning</td>
+		<td>Route Filter Rule named ${route_filter_rule_name} state changed to deprovisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter_rule.state.failed</td>
+		<td>Route Filter Rule named ${route_filter_rule_name} state changed to failed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter_rule.state.provisioned</td>
+		<td>Route Filter Rule named ${route_filter_rule_name} state changed to provisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter_rule.state.provisioning</td>
+		<td>Route Filter Rule named ${route_filter_rule_name} state changed to provisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter_rule.state.reprovisioning</td>
+		<td>Route Filter Rule named ${route_filter_rule_name} state changed to reprovisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.routing_protocol_action.state.failed</td>
+		<td>Routing Protocol Action state changed to failed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.routing_protocol_action.state.pending</td>
+		<td>Routing Protocol Action state changed to pending</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.routing_protocol_action.state.succeeded</td>
+		<td>Routing Protocol Action state changed to succeeded</td>
+	</tr>
+</table>
+
+</details>
+
+
+
+<details>
 <summary>Released</summary>
 
 <table>
