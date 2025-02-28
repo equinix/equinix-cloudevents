@@ -290,7 +290,40 @@
                 "description": "Token resend email notification failed"
             }
         ],
-        "preview": []
+        "preview": [
+            {
+                "name": "equinix.fabric.internet_access.state.provisioning",
+                "description": "Internet access service provisioning started"
+            },
+            {
+                "name": "equinix.fabric.internet_access.state.provisioned",
+                "description": "Internet access service provisioned"
+            },
+            {
+                "name": "equinix.fabric.internet_access.state.deprovisioning",
+                "description": "Internet access service de-provisioning started"
+            },
+            {
+                "name": "equinix.fabric.internet_access.state.deprovisioned",
+                "description": "Internet access service de-provisioned"
+            },
+            {
+                "name": "equinix.fabric.internet_access.state.failed",
+                "description": "Internet access service provisioning or de-provisioning failed"
+            },
+            {
+                "name": "equinix.fabric.internet_access.attribute.changed",
+                "description": "Internet access service changed"
+            },
+            {
+                "name": "equinix.fabric.internet_access.attribute.changing",
+                "description": "Internet access service changing"
+            },
+            {
+                "name": "equinix.fabric.internet_access.attribute.failed",
+                "description": "Internet access service changed failed"
+            }
+        ]
     },
     "metricNames": {
         "released": [],
