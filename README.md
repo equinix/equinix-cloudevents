@@ -386,6 +386,10 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Connection '${connection_name}' status changed to UP</td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.network.attribute.changed</td>
+		<td>network named ${network_name} attribute changed</td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.network.state.deprovisioned</td>
 		<td>Network named ${network_name} state changed to deprovisioned</td>
 	</tr>
@@ -432,6 +436,10 @@ The following data payloads are the supported events and formats for Equinix Int
 	<tr>
 		<td>equinix.fabric.port.status.up</td>
 		<td>Virtual|Physical port '${port_name}' status changed to UP</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.router.attribute.changed</td>
+		<td>Router named ${router_name} attribute changed</td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.router.state.deprovisioned</td>
