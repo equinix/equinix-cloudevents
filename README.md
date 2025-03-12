@@ -406,6 +406,10 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Virtual port named ${port_name} state changed to deprovisioned</td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.port.state.deprovisioning</td>
+		<td>Virtual port named ${port_name} state changed to deprovisioning</td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.port.state.failed</td>
 		<td>Virtual port named ${port_name} state changed to failed</td>
 	</tr>
@@ -414,8 +418,16 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Virtual port named ${port_name} state changed to provisioned</td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.port.state.provisioning</td>
+		<td>Virtual port named ${port_name} state changed to provisioning</td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.port.status.down</td>
 		<td>Virtual|Physical port '${port_name}' status changed to DOWN</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.status.inactive</td>
+		<td>Virtual|Physical port '${port_name}' status changed to INACTIVE</td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.status.up</td>
@@ -466,12 +478,20 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Token resend email notification succeeded</td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.service_token.state.active</td>
+		<td>Token successfully activated</td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.service_token.state.deleted</td>
 		<td>Token successfully deleted</td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.service_token.state.expired</td>
+		<td>Token expired</td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.service_token.state.inactive</td>
-		<td>Token successfully created</td>
+		<td>Token successfully deactivated</td>
 	</tr>
 </table>
 

@@ -46,14 +46,14 @@
                 "equinix.fabric.network.state.deprovisioning",
                 "equinix.fabric.network.state.provisioned",
                 "equinix.fabric.network.state.provisioning",
-                "equinix.fabric.port.state.deprovisioning",
                 "equinix.fabric.port.state.deprovisioned",
+                "equinix.fabric.port.state.deprovisioning",
                 "equinix.fabric.port.state.failed",
                 "equinix.fabric.port.state.provisioned",
                 "equinix.fabric.port.state.provisioning",
                 "equinix.fabric.port.status.down",
-                "equinix.fabric.port.status.up",
                 "equinix.fabric.port.status.inactive",
+                "equinix.fabric.port.status.up",
                 "equinix.fabric.router.installed_routes_ipv4.utilization",
                 "equinix.fabric.router.installed_routes_ipv6.utilization",
                 "equinix.fabric.router.state.deprovisioned",
@@ -69,8 +69,8 @@
                 "equinix.fabric.service_token.resend_email_notification.succeeded",
                 "equinix.fabric.service_token.state.active",
                 "equinix.fabric.service_token.state.deleted",
-                "equinix.fabric.service_token.state.inactive",
-                "equinix.fabric.service_token.state.expired"
+                "equinix.fabric.service_token.state.expired",
+                "equinix.fabric.service_token.state.inactive"
             ],
             "preview": [
                 "equinix.fabric.connection.bandwidth_rx.usage",
