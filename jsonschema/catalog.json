@@ -139,6 +139,10 @@
                         "description": "Virtual port named ${port_name} state changed to deprovisioned"
                     },
                     {
+                        "name": "equinix.fabric.port.state.deprovisioning",
+                        "description": "Virtual port named ${port_name} state changed to deprovisioning"
+                    },
+                    {
                         "name": "equinix.fabric.port.state.failed",
                         "description": "Virtual port named ${port_name} state changed to failed"
                     },
@@ -147,8 +151,16 @@
                         "description": "Virtual port named ${port_name} state changed to provisioned"
                     },
                     {
+                        "name": "equinix.fabric.port.state.provisioning",
+                        "description": "Virtual port named ${port_name} state changed to provisioning"
+                    },
+                    {
                         "name": "equinix.fabric.port.status.down",
                         "description": "Virtual|Physical port '${port_name}' status changed to DOWN"
+                    },
+                    {
+                        "name": "equinix.fabric.port.status.inactive",
+                        "description": "Virtual|Physical port '${port_name}' status changed to INACTIVE"
                     },
                     {
                         "name": "equinix.fabric.port.status.up",
@@ -199,12 +211,20 @@
                         "description": "Token resend email notification succeeded"
                     },
                     {
+                        "name": "equinix.fabric.service_token.state.active",
+                        "description": "Token successfully activated"
+                    },
+                    {
                         "name": "equinix.fabric.service_token.state.deleted",
                         "description": "Token successfully deleted"
                     },
                     {
+                        "name": "equinix.fabric.service_token.state.expired",
+                        "description": "Token expired"
+                    },
+                    {
                         "name": "equinix.fabric.service_token.state.inactive",
-                        "description": "Token successfully created"
+                        "description": "Token successfully deactivated"
                     }
                 ],
                 "preview": [
