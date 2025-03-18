@@ -99,6 +99,10 @@
                         "description": "Connection named ${connection_name} state changed to deprovisioning"
                     },
                     {
+                        "name": "equinix.fabric.connection.state.failed",
+                        "description": "Connection named ${connection_name} state changed to failed"
+                    },
+                    {
                         "name": "equinix.fabric.connection.state.pending",
                         "description": "Connection named ${connection_name} state changed to pending"
                     },
@@ -109,10 +113,6 @@
                     {
                         "name": "equinix.fabric.connection.state.provisioning",
                         "description": "Connection named ${connection_name} state changed to provisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.state.failed",
-                        "description": "Connection named ${connection_name} state changed to failed"
                     },
                     {
                         "name": "equinix.fabric.connection.status.down",
