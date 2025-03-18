@@ -1270,7 +1270,8 @@
             "description": "The data within all ChangeEvent events.",
             "datatype": "equinix.timeService.v1.ChangeEvent",
             "cloudeventTypes": {
-                "released": [
+                "released": [],
+                "preview": [
                     {
                         "name": "equinix.fabric.timeService.state.provisioning",
                         "description": "Time Service is provisioning"
@@ -1295,8 +1296,7 @@
                         "name": "equinix.fabric.timeService.state.failed",
                         "description": "Time Service is provisioning failed"
                     }
-                ],
-                "preview": []
+                ]
             },
             "metricNames": {
                 "released": [],

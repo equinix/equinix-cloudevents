@@ -1357,7 +1357,7 @@ The following data payloads are the supported events and formats for Equinix Int
 #### Events
 
 <details>
-<summary>Released</summary>
+<summary>In Preview</summary>
 
 <table>
 	<tr>

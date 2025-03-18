@@ -337,15 +337,15 @@
     },
     "timeService": {
         "cloudeventTypes": {
-            "released": [
+            "released": [],
+            "preview": [
                 "equinix.fabric.timeService.state.provisioning",
                 "equinix.fabric.timeService.state.provisioned",
                 "equinix.fabric.timeService.state.reprovisioning",
                 "equinix.fabric.timeService.state.deprovisioning",
                 "equinix.fabric.timeService.state.deprovisioned",
                 "equinix.fabric.timeService.state.failed"
-            ],
-            "preview": []
+            ]
         },
         "metricNames": {
             "released": [],
