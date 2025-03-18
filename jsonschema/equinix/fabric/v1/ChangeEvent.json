@@ -34,15 +34,15 @@
             "properties": {
                 "id": {
                     "type": "string",
-                    "description": "The unique identifier of the user generating the event"
+                    "description": "The unique identifier of the entity generating the event"
                 },
                 "type": {
                     "type": "string",
-                    "description": "End user of an application or a System that generated the event"
+                    "description": "The type of the entity generating the event"
                 },
                 "name": {
                     "type": "string",
-                    "description": "Name of the user generating the event"
+                    "description": "Name of the entity generating the event"
                 },
                 "email": {
                     "type": "string",
@@ -54,7 +54,7 @@
                 },
                 "agent": {
                     "type": "string",
-                    "description": "UserAgent that generated the event"
+                    "description": "The software that made the request"
                 }
             },
             "additionalProperties": true,
