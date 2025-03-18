@@ -142,6 +142,10 @@
                 "description": "Connection named ${connection_name} state changed to deprovisioned"
             },
             {
+                "name": "equinix.fabric.connection.state.failed",
+                "description": "Connection named ${connection_name} state changed to failed"
+            },
+            {
                 "name": "equinix.fabric.connection.attribute.changed",
                 "description": "Connection named ${connection_name} attributes are changed"
             },
@@ -516,23 +520,23 @@
                 "description": "Routing Protocol Action state changed to failed"
             },
             {
-                "name": "equinix.fabric.internet_access.state.provisioning",
+                "name": "equinix.fabric.internet_access.service.state.provisioning",
                 "description": "Internet access service provisioning started"
             },
             {
-                "name": "equinix.fabric.internet_access.state.provisioned",
+                "name": "equinix.fabric.internet_access.service.state.provisioned",
                 "description": "Internet access service provisioned"
             },
             {
-                "name": "equinix.fabric.internet_access.state.deprovisioning",
+                "name": "equinix.fabric.internet_access.service.state.deprovisioning",
                 "description": "Internet access service de-provisioning started"
             },
             {
-                "name": "equinix.fabric.internet_access.state.deprovisioned",
+                "name": "equinix.fabric.internet_access.service.state.deprovisioned",
                 "description": "Internet access service de-provisioned"
             },
             {
-                "name": "equinix.fabric.internet_access.state.failed",
+                "name": "equinix.fabric.internet_access.service.state.failed",
                 "description": "Internet access service provisioning or de-provisioning failed"
             },
             {
