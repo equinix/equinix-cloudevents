@@ -140,23 +140,23 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Internet access service changed failed</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.internet_access.state.deprovisioned</td>
+		<td>equinix.fabric.internet_access.service.state.deprovisioned</td>
 		<td>Internet access service de-provisioned</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.internet_access.state.deprovisioning</td>
+		<td>equinix.fabric.internet_access.service.state.deprovisioning</td>
 		<td>Internet access service de-provisioning started</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.internet_access.state.failed</td>
+		<td>equinix.fabric.internet_access.service.state.failed</td>
 		<td>Internet access service provisioning or de-provisioning failed</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.internet_access.state.provisioned</td>
+		<td>equinix.fabric.internet_access.service.state.provisioned</td>
 		<td>Internet access service provisioned</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.internet_access.state.provisioning</td>
+		<td>equinix.fabric.internet_access.service.state.provisioning</td>
 		<td>Internet access service provisioning started</td>
 	</tr>
 	<tr>
@@ -364,6 +364,10 @@ The following data payloads are the supported events and formats for Equinix Int
 	<tr>
 		<td>equinix.fabric.connection.state.deprovisioning</td>
 		<td>Connection named ${connection_name} state changed to deprovisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.state.failed</td>
+		<td>Connection named ${connection_name} state changed to failed</td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.state.pending</td>
