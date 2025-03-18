@@ -111,6 +111,10 @@
                         "description": "Connection named ${connection_name} state changed to provisioning"
                     },
                     {
+                        "name": "equinix.fabric.connection.state.failed",
+                        "description": "Connection named ${connection_name} state changed to failed"
+                    },
+                    {
                         "name": "equinix.fabric.connection.status.down",
                         "description": "Connection '${connection_name}' status changed to DOWN"
                     },
@@ -313,23 +317,23 @@
                         "description": "Internet access service changed failed"
                     },
                     {
-                        "name": "equinix.fabric.internet_access.state.deprovisioned",
+                        "name": "equinix.fabric.internet_access.service.state.deprovisioned",
                         "description": "Internet access service de-provisioned"
                     },
                     {
-                        "name": "equinix.fabric.internet_access.state.deprovisioning",
+                        "name": "equinix.fabric.internet_access.service.state.deprovisioning",
                         "description": "Internet access service de-provisioning started"
                     },
                     {
-                        "name": "equinix.fabric.internet_access.state.failed",
+                        "name": "equinix.fabric.internet_access.service.state.failed",
                         "description": "Internet access service provisioning or de-provisioning failed"
                     },
                     {
-                        "name": "equinix.fabric.internet_access.state.provisioned",
+                        "name": "equinix.fabric.internet_access.service.state.provisioned",
                         "description": "Internet access service provisioned"
                     },
                     {
-                        "name": "equinix.fabric.internet_access.state.provisioning",
+                        "name": "equinix.fabric.internet_access.service.state.provisioning",
                         "description": "Internet access service provisioning started"
                     },
                     {
