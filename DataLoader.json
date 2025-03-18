@@ -335,27 +335,6 @@
             "preview": []
         }
     },
-    "timeService": {
-        "cloudeventTypes": {
-            "released": [],
-            "preview": [
-                "equinix.fabric.timeService.state.provisioning",
-                "equinix.fabric.timeService.state.provisioned",
-                "equinix.fabric.timeService.state.reprovisioning",
-                "equinix.fabric.timeService.state.deprovisioning",
-                "equinix.fabric.timeService.state.deprovisioned",
-                "equinix.fabric.timeService.state.failed"
-            ]
-        },
-        "metricNames": {
-            "released": [],
-            "preview": []
-        },
-        "alertNames": {
-            "released": [],
-            "preview": []
-        }
-    },
     "resource_manager": {
         "cloudeventTypes": {
             "released": [
@@ -367,6 +346,27 @@
                 "equinix.resource_manager.project.state.updated"
             ],
             "preview": []
+        },
+        "metricNames": {
+            "released": [],
+            "preview": []
+        },
+        "alertNames": {
+            "released": [],
+            "preview": []
+        }
+    },
+    "time_service": {
+        "cloudeventTypes": {
+            "released": [],
+            "preview": [
+                "equinix.fabric.timeService.state.deprovisioned",
+                "equinix.fabric.timeService.state.deprovisioning",
+                "equinix.fabric.timeService.state.failed",
+                "equinix.fabric.timeService.state.provisioned",
+                "equinix.fabric.timeService.state.provisioning",
+                "equinix.fabric.timeService.state.reprovisioning"
+            ]
         },
         "metricNames": {
             "released": [],

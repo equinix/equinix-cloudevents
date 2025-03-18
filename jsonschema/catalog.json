@@ -1264,50 +1264,6 @@
             }
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/timeService/v1/ChangeEvent.json",
-            "domain": "Equinix Time Service ChangeEvent",
-            "name": "ChangeEvent",
-            "description": "The data within all ChangeEvent events.",
-            "datatype": "equinix.timeService.v1.ChangeEvent",
-            "cloudeventTypes": {
-                "released": [],
-                "preview": [
-                    {
-                        "name": "equinix.fabric.timeService.state.provisioning",
-                        "description": "Time Service is provisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.timeService.state.provisioned",
-                        "description": "Time Service is provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.timeService.state.reprovisioning",
-                        "description": "Time Service is reprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.timeService.state.deprovisioning",
-                        "description": "Time Service is deprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.timeService.state.deprovisioned",
-                        "description": "Time Service is deprovisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.timeService.state.failed",
-                        "description": "Time Service is provisioning failed"
-                    }
-                ]
-            },
-            "metricNames": {
-                "released": [],
-                "preview": []
-            },
-            "alertNames": {
-                "released": [],
-                "preview": []
-            }
-        },
-        {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/resource_manager/v1/ChangeEvent.json",
             "domain": "Equinix Resource Manager ChangeEvent",
             "name": "ChangeEvent",
@@ -1341,6 +1297,50 @@
                     }
                 ],
                 "preview": []
+            },
+            "metricNames": {
+                "released": [],
+                "preview": []
+            },
+            "alertNames": {
+                "released": [],
+                "preview": []
+            }
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/timeService/v1/ChangeEvent.json",
+            "domain": "Equinix Time Service ChangeEvent",
+            "name": "ChangeEvent",
+            "description": "The data within all ChangeEvent events.",
+            "datatype": "equinix.timeService.v1.ChangeEvent",
+            "cloudeventTypes": {
+                "released": [],
+                "preview": [
+                    {
+                        "name": "equinix.fabric.timeService.state.deprovisioned",
+                        "description": "Time Service is deprovisioned"
+                    },
+                    {
+                        "name": "equinix.fabric.timeService.state.deprovisioning",
+                        "description": "Time Service is deprovisioning"
+                    },
+                    {
+                        "name": "equinix.fabric.timeService.state.failed",
+                        "description": "Time Service is provisioning failed"
+                    },
+                    {
+                        "name": "equinix.fabric.timeService.state.provisioned",
+                        "description": "Time Service is provisioned"
+                    },
+                    {
+                        "name": "equinix.fabric.timeService.state.provisioning",
+                        "description": "Time Service is provisioning"
+                    },
+                    {
+                        "name": "equinix.fabric.timeService.state.reprovisioning",
+                        "description": "Time Service is reprovisioning"
+                    }
+                ]
             },
             "metricNames": {
                 "released": [],
