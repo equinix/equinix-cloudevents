@@ -360,12 +360,12 @@
         "cloudeventTypes": {
             "released": [],
             "preview": [
-                "equinix.fabric.timeService.state.deprovisioned",
-                "equinix.fabric.timeService.state.deprovisioning",
-                "equinix.fabric.timeService.state.failed",
-                "equinix.fabric.timeService.state.provisioned",
-                "equinix.fabric.timeService.state.provisioning",
-                "equinix.fabric.timeService.state.reprovisioning"
+                "equinix.fabric.time_service.state.deprovisioned",
+                "equinix.fabric.time_service.state.deprovisioning",
+                "equinix.fabric.time_service.state.failed",
+                "equinix.fabric.time_service.state.provisioned",
+                "equinix.fabric.time_service.state.provisioning",
+                "equinix.fabric.time_service.state.reprovisioning"
             ]
         },
         "metricNames": {

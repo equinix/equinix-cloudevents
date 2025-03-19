@@ -1308,36 +1308,36 @@
             }
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/timeService/v1/ChangeEvent.json",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/time_service/v1/ChangeEvent.json",
             "domain": "Equinix Time Service ChangeEvent",
             "name": "ChangeEvent",
             "description": "The data within all ChangeEvent events.",
-            "datatype": "equinix.timeService.v1.ChangeEvent",
+            "datatype": "equinix.time_service.v1.ChangeEvent",
             "cloudeventTypes": {
                 "released": [],
                 "preview": [
                     {
-                        "name": "equinix.fabric.timeService.state.deprovisioned",
+                        "name": "equinix.fabric.time_service.state.deprovisioned",
                         "description": "Time Service is deprovisioned"
                     },
                     {
-                        "name": "equinix.fabric.timeService.state.deprovisioning",
+                        "name": "equinix.fabric.time_service.state.deprovisioning",
                         "description": "Time Service is deprovisioning"
                     },
                     {
-                        "name": "equinix.fabric.timeService.state.failed",
+                        "name": "equinix.fabric.time_service.state.failed",
                         "description": "Time Service is provisioning failed"
                     },
                     {
-                        "name": "equinix.fabric.timeService.state.provisioned",
+                        "name": "equinix.fabric.time_service.state.provisioned",
                         "description": "Time Service is provisioned"
                     },
                     {
-                        "name": "equinix.fabric.timeService.state.provisioning",
+                        "name": "equinix.fabric.time_service.state.provisioning",
                         "description": "Time Service is provisioning"
                     },
                     {
-                        "name": "equinix.fabric.timeService.state.reprovisioning",
+                        "name": "equinix.fabric.time_service.state.reprovisioning",
                         "description": "Time Service is reprovisioning"
                     }
                 ]
