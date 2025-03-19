@@ -208,6 +208,7 @@
                 "equinix.fabric.router_action.state.failed",
                 "equinix.fabric.router_action.state.pending",
                 "equinix.fabric.router_action.state.succeeded",
+                "equinix.fabric.router_command.state.deleted",
                 "equinix.fabric.router_command.state.failed",
                 "equinix.fabric.router_command.state.pending",
                 "equinix.fabric.router_command.state.succeeded",
