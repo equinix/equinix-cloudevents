@@ -128,38 +128,6 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Routing Protocol named ${routing_protocol_name} state changed to reprovisioning</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.internet_access.attribute.changed</td>
-		<td>Internet access service changed</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.internet_access.attribute.changing</td>
-		<td>Internet access service changing</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.internet_access.attribute.failed</td>
-		<td>Internet access service changed failed</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.internet_access.state.deprovisioned</td>
-		<td>Internet access service de-provisioned</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.internet_access.state.deprovisioning</td>
-		<td>Internet access service de-provisioning started</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.internet_access.state.failed</td>
-		<td>Internet access service provisioning or de-provisioning failed</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.internet_access.state.provisioned</td>
-		<td>Internet access service provisioned</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.internet_access.state.provisioning</td>
-		<td>Internet access service provisioning started</td>
-	</tr>
-	<tr>
 		<td>equinix.fabric.route_aggregation.attribute.changed</td>
 		<td>Route Aggregation named ${route_aggregation_name} attribute changed</td>
 	</tr>
@@ -384,6 +352,38 @@ The following data payloads are the supported events and formats for Equinix Int
 	<tr>
 		<td>equinix.fabric.connection.status.up</td>
 		<td>Connection '${connection_name}' status changed to UP</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_access.attribute.changed</td>
+		<td>Internet access service changed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_access.attribute.changing</td>
+		<td>Internet access service changing</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_access.attribute.failed</td>
+		<td>Internet access service changed failed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_access.state.deprovisioned</td>
+		<td>Internet access service de-provisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_access.state.deprovisioning</td>
+		<td>Internet access service de-provisioning started</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_access.state.failed</td>
+		<td>Internet access service provisioning or de-provisioning failed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_access.state.provisioned</td>
+		<td>Internet access service provisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_access.state.provisioning</td>
+		<td>Internet access service provisioning started</td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.network.attribute.changed</td>
