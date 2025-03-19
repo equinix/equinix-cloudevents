@@ -591,6 +591,30 @@
             {
                 "name": "equinix.fabric.internet_access.attribute.failed",
                 "description": "Internet access service changed failed"
+            },
+            {
+                "name": "equinix.fabric.router_action.state.pending",
+                "description": "Router Action state changed to pending"
+            },
+            {
+                "name": "equinix.fabric.router_action.state.succeeded",
+                "description": "Router Action state changed to succeeded"
+            },
+            {
+                "name": "equinix.fabric.router_action.state.failed",
+                "description": "Router Action state changed to failed"
+            },
+            {
+                "name": "equinix.fabric.router_command.state.pending",
+                "description": "Router Command state changed to pending"
+            },
+            {
+                "name": "equinix.fabric.router_command.state.succeeded",
+                "description": "Router Command state changed to succeeded"
+            },
+            {
+                "name": "equinix.fabric.router_command.state.failed",
+                "description": "Router Command state changed to failed"
             }
         ]
     },
