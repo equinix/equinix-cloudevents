@@ -473,6 +473,10 @@
                         "description": "Router Action state changed to succeeded"
                     },
                     {
+                        "name": "equinix.fabric.router_command.state.deleted",
+                        "description": "Router Command state changed to deleted"
+                    },
+                    {
                         "name": "equinix.fabric.router_command.state.failed",
                         "description": "Router Command state changed to failed"
                     },

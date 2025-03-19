@@ -292,6 +292,10 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Router Action state changed to succeeded</td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.router_command.state.deleted</td>
+		<td>Router Command state changed to deleted</td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.router_command.state.failed</td>
 		<td>Router Command state changed to failed</td>
 	</tr>
