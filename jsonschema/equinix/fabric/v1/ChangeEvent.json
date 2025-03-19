@@ -615,6 +615,10 @@
             {
                 "name": "equinix.fabric.router_command.state.failed",
                 "description": "Router Command state changed to failed"
+            },
+            {
+                "name": "equinix.fabric.router_command.state.deleted",
+                "description": "Router Command state changed to deleted"
             }
         ]
     },
