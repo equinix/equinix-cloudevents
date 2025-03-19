@@ -205,6 +205,12 @@
                 "equinix.fabric.route_filter_rule.state.provisioned",
                 "equinix.fabric.route_filter_rule.state.provisioning",
                 "equinix.fabric.route_filter_rule.state.reprovisioning",
+                "equinix.fabric.router_action.state.failed",
+                "equinix.fabric.router_action.state.pending",
+                "equinix.fabric.router_action.state.succeeded",
+                "equinix.fabric.router_command.state.failed",
+                "equinix.fabric.router_command.state.pending",
+                "equinix.fabric.router_command.state.succeeded",
                 "equinix.fabric.routing_protocol_action.state.failed",
                 "equinix.fabric.routing_protocol_action.state.pending",
                 "equinix.fabric.routing_protocol_action.state.succeeded"

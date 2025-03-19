@@ -280,6 +280,30 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Route Filter Rule named ${route_filter_rule_name} state changed to reprovisioning</td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.router_action.state.failed</td>
+		<td>Router Action state changed to failed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.router_action.state.pending</td>
+		<td>Router Action state changed to pending</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.router_action.state.succeeded</td>
+		<td>Router Action state changed to succeeded</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.router_command.state.failed</td>
+		<td>Router Command state changed to failed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.router_command.state.pending</td>
+		<td>Router Command state changed to pending</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.router_command.state.succeeded</td>
+		<td>Router Command state changed to succeeded</td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.routing_protocol_action.state.failed</td>
 		<td>Routing Protocol Action state changed to failed</td>
 	</tr>
