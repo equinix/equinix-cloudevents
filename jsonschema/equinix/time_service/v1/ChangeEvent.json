@@ -18,12 +18,49 @@
                 "message": {
                     "type": "string",
                     "description": "Supporting message describing the event"
+                },
+                "auth": {
+                    "$ref": "#/definitions/Auth",
+                    "additionalProperties": true,
+                    "description": "The auth context within all ChangeEvent events."
                 }
             },
             "additionalProperties": true,
             "type": "object",
             "title": "ChangeEvent Event Data",
             "description": "The data within all ChangeEvent events."
+        },
+        "Auth": {
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "The unique identifier of the entity generating the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "The type of the entity generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the entity generating the event"
+                },
+                "email": {
+                    "type": "string",
+                    "description": "Email of the user generating the event"
+                },
+                "sourceIp": {
+                    "type": "string",
+                    "description": "IP address of the user generating the event"
+                },
+                "agent": {
+                    "type": "string",
+                    "description": "The software that made the request"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Auth",
+            "description": "Auth information of the generated event"
         },
         "Resource": {
             "properties": {
