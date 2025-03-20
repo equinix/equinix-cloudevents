@@ -119,6 +119,10 @@
                         "description": "Connection '${connection_name}' status changed to UP"
                     },
                     {
+                        "name": "equinix.fabric.network.attribute.changed",
+                        "description": "network named ${network_name} attribute changed"
+                    },
+                    {
                         "name": "equinix.fabric.network.state.deprovisioned",
                         "description": "Network named ${network_name} state changed to deprovisioned"
                     },
@@ -165,6 +169,10 @@
                     {
                         "name": "equinix.fabric.port.status.up",
                         "description": "Virtual|Physical port '${port_name}' status changed to UP"
+                    },
+                    {
+                        "name": "equinix.fabric.router.attribute.changed",
+                        "description": "Router named ${router_name} attribute changed"
                     },
                     {
                         "name": "equinix.fabric.router.state.deprovisioned",
