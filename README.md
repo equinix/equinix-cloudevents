@@ -1404,4 +1404,51 @@ The following data payloads are the supported events and formats for Equinix Int
 
 
 
+---
+### Equinix Time Service ChangeEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/time_service/v1/ChangeEvent.json)
+#### Data Type
+`equinix.time_service.v1.ChangeEvent`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<details>
+<summary>In Preview</summary>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>equinix.fabric.time_service.state.deprovisioned</td>
+		<td>Time Service is deprovisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.time_service.state.deprovisioning</td>
+		<td>Time Service is deprovisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.time_service.state.failed</td>
+		<td>Time Service is provisioning failed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.time_service.state.provisioned</td>
+		<td>Time Service is provisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.time_service.state.provisioning</td>
+		<td>Time Service is provisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.time_service.state.reprovisioning</td>
+		<td>Time Service is reprovisioning</td>
+	</tr>
+</table>
+
+</details>
+
+
+
+
 <!-- CATALOG_GENERATION_END -->

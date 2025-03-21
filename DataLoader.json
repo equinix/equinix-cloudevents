@@ -357,5 +357,26 @@
             "released": [],
             "preview": []
         }
+    },
+    "time_service": {
+        "cloudeventTypes": {
+            "released": [],
+            "preview": [
+                "equinix.fabric.time_service.state.deprovisioned",
+                "equinix.fabric.time_service.state.deprovisioning",
+                "equinix.fabric.time_service.state.failed",
+                "equinix.fabric.time_service.state.provisioned",
+                "equinix.fabric.time_service.state.provisioning",
+                "equinix.fabric.time_service.state.reprovisioning"
+            ]
+        },
+        "metricNames": {
+            "released": [],
+            "preview": []
+        },
+        "alertNames": {
+            "released": [],
+            "preview": []
+        }
     }
 }
