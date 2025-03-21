@@ -461,6 +461,34 @@
                         "description": "Route Filter Rule named ${route_filter_rule_name} state changed to reprovisioning"
                     },
                     {
+                        "name": "equinix.fabric.router_action.state.failed",
+                        "description": "Router Action state changed to failed"
+                    },
+                    {
+                        "name": "equinix.fabric.router_action.state.pending",
+                        "description": "Router Action state changed to pending"
+                    },
+                    {
+                        "name": "equinix.fabric.router_action.state.succeeded",
+                        "description": "Router Action state changed to succeeded"
+                    },
+                    {
+                        "name": "equinix.fabric.router_command.state.deleted",
+                        "description": "Router Command state changed to deleted"
+                    },
+                    {
+                        "name": "equinix.fabric.router_command.state.failed",
+                        "description": "Router Command state changed to failed"
+                    },
+                    {
+                        "name": "equinix.fabric.router_command.state.pending",
+                        "description": "Router Command state changed to pending"
+                    },
+                    {
+                        "name": "equinix.fabric.router_command.state.succeeded",
+                        "description": "Router Command state changed to succeeded"
+                    },
+                    {
                         "name": "equinix.fabric.routing_protocol_action.state.failed",
                         "description": "Routing Protocol Action state changed to failed"
                     },
