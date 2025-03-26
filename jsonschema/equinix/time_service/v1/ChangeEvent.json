@@ -95,41 +95,50 @@
             "description": "Schema of the resource that fired the event"
         }
     },
-    "cloudeventTypes": {
-        "released": [],
-        "preview": [
-          {
+    "cloudeventTypes": [
+        {
             "name": "equinix.fabric.time_service.state.provisioning",
-            "description": "Time Service is provisioning"
-          },
-          {
+            "description": "Time Service is provisioning",
+            "slaCategoryCode": "",
+            "inPreview": true,
+            "isReleased": false
+        },
+        {
             "name": "equinix.fabric.time_service.state.provisioned",
-            "description": "Time Service is provisioned"
-          },
-          {
+            "description": "Time Service is provisioned",
+            "slaCategoryCode": "",
+            "inPreview": true,
+            "isReleased": false
+        },
+        {
             "name": "equinix.fabric.time_service.state.reprovisioning",
-            "description": "Time Service is reprovisioning"
-          },
-          {
+            "description": "Time Service is reprovisioning",
+            "slaCategoryCode": "",
+            "inPreview": true,
+            "isReleased": false
+        },
+        {
             "name": "equinix.fabric.time_service.state.deprovisioning",
-            "description": "Time Service is deprovisioning"
-          },
-          {
+            "description": "Time Service is deprovisioning",
+            "slaCategoryCode": "",
+            "inPreview": true,
+            "isReleased": false
+        },
+        {
             "name": "equinix.fabric.time_service.state.deprovisioned",
-            "description": "Time Service is deprovisioned"
-          },
-          {
+            "description": "Time Service is deprovisioned",
+            "slaCategoryCode": "",
+            "inPreview": true,
+            "isReleased": false
+        },
+        {
             "name": "equinix.fabric.time_service.state.failed",
-            "description": "Time Service is provisioning failed"
-          }
-        ]
-    },
-    "metricNames": {
-        "released": [],
-        "preview": []
-    },
-    "alertNames": {
-        "released": [],
-        "preview": []
-    }
+            "description": "Time Service is provisioning failed",
+            "slaCategoryCode": "",
+            "inPreview": true,
+            "isReleased": false
+        }
+    ],
+    "metricNames": [],
+    "alertNames": []
 }

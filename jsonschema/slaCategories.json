@@ -1,0 +1,51 @@
+{
+    "eventsSLA": [
+        {
+            "category": "Resource Lifecycle",
+            "code": "RESOURCE_LIFECYCLE",
+            "collectionInterval": "",
+            "reporting": "1",
+            "streamingLatency": "60",
+            "queryLatency": "2",
+            "retentionPT5M": "90",
+            "retentionPT1H": "365",
+            "retentionPT1D": ""
+        }
+    ],
+    "metricsSLA": [
+        {
+            "category": "Data Path Metrics",
+            "code": "DATA_PATH",
+            "collectionInterval": "5",
+            "reporting": "12",
+            "streamingLatency": "60",
+            "queryLatency": "4",
+            "retentionPT5M": "90",
+            "retentionPT1H": "365",
+            "retentionPT1D": "1095"
+        },
+        {
+            "category": "Metro Latency",
+            "code": "METRO_LATENCY",
+            "collectionInterval": "5",
+            "reporting": "6.5",
+            "streamingLatency": "60",
+            "queryLatency": "2",
+            "retentionPT5M": "90",
+            "retentionPT1H": "365",
+            "retentionPT1D": "1095"
+        },
+        {
+            "category": "Streaming Statistics",
+            "code": "STREAM_STATS",
+            "collectionInterval": "5",
+            "reporting": "1",
+            "streamingLatency": "60",
+            "queryLatency": "2",
+            "retentionPT5M": "90",
+            "retentionPT1H": "365",
+            "retentionPT1D": "1095"
+        }
+    ],
+    "alertsSLA": []
+}
