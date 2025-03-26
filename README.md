@@ -1429,8 +1429,24 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Time Service is deprovisioning</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.time_service.state.failed</td>
+		<td>equinix.fabric.time_service.state.provisioning_failed</td>
 		<td>Time Service is provisioning failed</td>
+	</tr>
+    <tr>
+		<td>equinix.fabric.time_service.state.configuring_failed</td>
+		<td>Time Service is configuring failed</td>
+	</tr>
+    <tr>
+		<td>equinix.fabric.time_service.state.deprovisioning_failed</td>
+		<td>Time Service is deprovisioning failed</td>
+	</tr>
+    <tr>
+		<td>equinix.fabric.time_service.state.configuring</td>
+		<td>Time Service is configuring</td>
+	</tr>
+    <tr>
+		<td>equinix.fabric.time_service.state.draft</td>
+		<td>Time Service is in draft state</td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.provisioned</td>
@@ -1441,8 +1457,8 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Time Service is provisioning</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.time_service.state.reprovisioning</td>
-		<td>Time Service is reprovisioning</td>
+		<td>equinix.fabric.time_service.state.cancelled</td>
+		<td>Time Service is cancelled</td>
 	</tr>
 </table>
 

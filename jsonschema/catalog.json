@@ -1333,8 +1333,24 @@
                         "description": "Time Service is deprovisioning"
                     },
                     {
-                        "name": "equinix.fabric.time_service.state.failed",
+                        "name": "equinix.fabric.time_service.state.provisioning_failed",
                         "description": "Time Service is provisioning failed"
+                    },
+                    {
+                        "name": "equinix.fabric.time_service.state.configuring_failed",
+                        "description": "Time Service is configuring failed"
+                    },
+                    {
+                        "name": "equinix.fabric.time_service.state.deprovisioning_failed",
+                        "description": "Time Service is deprovisioning failed"
+                    },
+                    {
+                        "name": "equinix.fabric.time_service.state.configuring",
+                        "description": "Time Service is configuring"
+                    },
+                    {
+                        "name": "equinix.fabric.time_service.state.draft",
+                        "description": "Time Service is in Draft state"
                     },
                     {
                         "name": "equinix.fabric.time_service.state.provisioned",
@@ -1345,8 +1361,8 @@
                         "description": "Time Service is provisioning"
                     },
                     {
-                        "name": "equinix.fabric.time_service.state.reprovisioning",
-                        "description": "Time Service is reprovisioning"
+                        "name": "equinix.fabric.time_service.state.cancelled",
+                        "description": "Time Service is cancelled"
                     }
                 ]
             },
