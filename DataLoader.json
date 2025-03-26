@@ -362,16 +362,16 @@
         "cloudeventTypes": {
             "released": [],
             "preview": [
+                "equinix.fabric.time_service.state.cancelled",
+                "equinix.fabric.time_service.state.configuring",
+                "equinix.fabric.time_service.state.configuring_failed",
                 "equinix.fabric.time_service.state.deprovisioned",
                 "equinix.fabric.time_service.state.deprovisioning",
-                "equinix.fabric.time_service.state.provisioning_failed",
-                "equinix.fabric.time_service.state.configuring_failed",
                 "equinix.fabric.time_service.state.deprovisioning_failed",
-                "equinix.fabric.time_service.state.configuring",
                 "equinix.fabric.time_service.state.draft",
                 "equinix.fabric.time_service.state.provisioned",
                 "equinix.fabric.time_service.state.provisioning",
-                "equinix.fabric.time_service.state.cancelled"
+                "equinix.fabric.time_service.state.provisioning_failed"
             ]
         },
         "metricNames": {
