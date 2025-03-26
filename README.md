@@ -4,6 +4,24 @@ Equinix published [CloudEvent](https://cloudevents.io/) Types
 
 Definitive "source of truth" for the Equinix Interconnection Observability event data formats
 
+## CloudEvents SLA
+
+<!-- SLA_CATEGORY -->
+<table>
+<tr>
+<th>Category</th><th>Code</th><th>Collection Interval</th><th>Reporting</th><th>Streaming Latency</th><th>Query Latency</th><th>Retention PT5M</th><th>Retention PT1H</th><th>Retention PT1D</th></tr>
+<tr id='data_path'>
+<td>Data Path Metrics</td><td>DATA_PATH</td><td>5</td><td>12</td><td>60</td><td>4</td><td>90</td><td>365</td><td>1095</td></tr>
+<tr id='metro_latency'>
+<td>Metro Latency</td><td>METRO_LATENCY</td><td>5</td><td>6.5</td><td>60</td><td>2</td><td>90</td><td>365</td><td>1095</td></tr>
+<tr id='resource_lifecycle'>
+<td>Resource Lifecycle</td><td>RESOURCE_LIFECYCLE</td><td></td><td>1</td><td>60</td><td>2</td><td>90</td><td>365</td><td></td></tr>
+<tr id='stream_stats'>
+<td>Streaming Statistics</td><td>STREAM_STATS</td><td>5</td><td>1</td><td>60</td><td>2</td><td>90</td><td>365</td><td>1095</td></tr>
+</table>
+
+<!-- SLA_CATEGORY_END -->
+
 ## CloudEvents in this repository
 
 The following data payloads are the supported events and formats for Equinix Interconnection Observability
@@ -14,6 +32,8 @@ The following data payloads are the supported events and formats for Equinix Int
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/access_manager/v1/RoleAssignmentEvent.json)
 #### Data Type
 `equinix.access_manager.v1.RoleAssignmentEvent`
+#### SLA Categories
+ 
 #### Supported Events, Metrics, and Alerts
 #### Events
 
@@ -44,6 +64,8 @@ The following data payloads are the supported events and formats for Equinix Int
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeEvent.json)
 #### Data Type
 `equinix.fabric.v1.ChangeEvent`
+#### SLA Categories
+ 
 #### Supported Events, Metrics, and Alerts
 #### Events
 
@@ -512,6 +534,8 @@ The following data payloads are the supported events and formats for Equinix Int
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricAlert.json)
 #### Data Type
 `equinix.fabric.v1.MetricAlert`
+#### SLA Categories
+ 
 #### Supported Events, Metrics, and Alerts
 #### Events
 
@@ -612,6 +636,8 @@ The following data payloads are the supported events and formats for Equinix Int
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricEvent.json)
 #### Data Type
 `equinix.fabric.v1.MetricEvent`
+#### SLA Categories
+ 
 #### Supported Events, Metrics, and Alerts
 #### Events
 
@@ -713,6 +739,8 @@ The following data payloads are the supported events and formats for Equinix Int
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetroLatencyAlert.json)
 #### Data Type
 `equinix.fabric.v1.MetroLatencyAlert`
+#### SLA Categories
+ 
 #### Supported Events, Metrics, and Alerts
 #### Events
 
@@ -984,6 +1012,8 @@ The following data payloads are the supported events and formats for Equinix Int
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetroLatencyMetric.json)
 #### Data Type
 `equinix.fabric.v1.MetroLatencyMetric`
+#### SLA Categories
+ 
 #### Supported Events, Metrics, and Alerts
 #### Events
 
@@ -1271,6 +1301,8 @@ The following data payloads are the supported events and formats for Equinix Int
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserAuthenticationEvent.json)
 #### Data Type
 `equinix.identity.v1.UserAuthenticationEvent`
+#### SLA Categories
+ 
 #### Supported Events, Metrics, and Alerts
 #### Events
 
@@ -1301,6 +1333,8 @@ The following data payloads are the supported events and formats for Equinix Int
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/ChangeEvent.json)
 #### Data Type
 `equinix.network_edge.v1.ChangeEvent`
+#### SLA Categories
+ 
 #### Supported Events, Metrics, and Alerts
 #### Events
 
@@ -1363,6 +1397,8 @@ The following data payloads are the supported events and formats for Equinix Int
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/resource_manager/v1/ChangeEvent.json)
 #### Data Type
 `equinix.resource_manager.v1.ChangeEvent`
+#### SLA Categories
+ 
 #### Supported Events, Metrics, and Alerts
 #### Events
 
@@ -1409,6 +1445,8 @@ The following data payloads are the supported events and formats for Equinix Int
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/time_service/v1/ChangeEvent.json)
 #### Data Type
 `equinix.time_service.v1.ChangeEvent`
+#### SLA Categories
+ 
 #### Supported Events, Metrics, and Alerts
 #### Events
 
