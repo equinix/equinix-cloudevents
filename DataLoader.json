@@ -221,6 +221,10 @@
             "released": [
                 "equinix.fabric.connection.bandwidth_rx.usage",
                 "equinix.fabric.connection.bandwidth_tx.usage",
+                "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
+                "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
+                "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
+                "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
                 "equinix.fabric.metro.am_{metroCode}.latency",
                 "equinix.fabric.metro.at_{metroCode}.latency",
                 "equinix.fabric.metro.ba_{metroCode}.latency",
@@ -290,12 +294,7 @@
                 "equinix.fabric.port.packets_erred_rx.count",
                 "equinix.fabric.port.packets_erred_tx.count"
             ],
-            "preview": [
-                "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
-                "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
-                "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
-                "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count"
-            ]
+            "preview": []
         },
         "alertNames": {
             "released": [],
