@@ -160,9 +160,7 @@
             {
                 "name": "equinix.fabric.port.packets_dropped_tx.count",
                 "description": "Port outbound dropped packets count"
-            }
-        ],
-        "preview": [
+            },
             {
                 "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
                 "description": "Connection A side inbound dropped packets count"
@@ -179,6 +177,8 @@
                 "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
                 "description": "Connection Z side outbound dropped packets count"
             }
+        ],
+        "preview": [
         ]
     },
     "alertNames": {
