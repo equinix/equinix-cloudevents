@@ -560,22 +560,6 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Connection outbound bandwidth usage above ${threshold}</td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count</td>
-		<td>Connection A side inbound dropped packets count above ${threshold}</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count</td>
-		<td>Connection Z side inbound dropped packets count above ${threshold}</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count</td>
-		<td>Connection A side outbound dropped packets count above ${threshold}</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count</td>
-		<td>Connection Z side outbound dropped packets count above ${threshold}</td>
-	</tr>
-	<tr>
 		<td>equinix.fabric.port.bandwidth_rx.usage</td>
 		<td>Port inbound bandwidth usage above ${threshold}</td>
 	</tr>
@@ -622,6 +606,22 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Utilization of connection '${connection_name}' active IPv6 routes reached ${threshold}</td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count</td>
+		<td>Connection A side inbound dropped packets count above ${threshold}</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count</td>
+		<td>Connection Z side inbound dropped packets count above ${threshold}</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count</td>
+		<td>Connection A side outbound dropped packets count above ${threshold}</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count</td>
+		<td>Connection Z side outbound dropped packets count above ${threshold}</td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.router.installed_routes_ipv4.utilization</td>
 		<td>Utilization of router '${router_name}' total IPv4 routes reached ${threshold}</td>
 	</tr>
@@ -662,12 +662,20 @@ The following data payloads are the supported events and formats for Equinix Int
 #### Metrics
 
 <details>
-<summary>In Preview</summary>
+<summary>Released</summary>
 
 <table>
 	<tr>
 		<th>Name</th>
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.bandwidth_rx.usage</td>
+		<td>Connection inbound bandwidth usage in bit/sec</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.bandwidth_tx.usage</td>
+		<td>Connection outbound bandwidth usage in bit/sec</td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count</td>
@@ -684,28 +692,6 @@ The following data payloads are the supported events and formats for Equinix Int
 	<tr>
 		<td>equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count</td>
 		<td>Connection Z side outbound dropped packets count</td>
-	</tr>
-</table>
-
-</details>
-
-
-
-<details>
-<summary>Released</summary>
-
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bandwidth_rx.usage</td>
-		<td>Connection inbound bandwidth usage in bit/sec</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bandwidth_tx.usage</td>
-		<td>Connection outbound bandwidth usage in bit/sec</td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.bandwidth_rx.usage</td>

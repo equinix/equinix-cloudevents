@@ -167,6 +167,22 @@
             {
                 "name": "equinix.fabric.router.installed_routes_ipv6.utilization",
                 "description": "Utilization of router '${router_name}' total IPv6 routes reached ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
+                "description": "Connection A side inbound dropped packets count above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
+                "description": "Connection A side outbound dropped packets count above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
+                "description": "Connection Z side inbound dropped packets count above ${threshold}"
+            },
+            {
+                "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
+                "description": "Connection Z side outbound dropped packets count above ${threshold}"
             }
         ],
         "preview": [
@@ -201,22 +217,6 @@
             {
                 "name": "equinix.fabric.port.packets_dropped_tx.count",
                 "description": "Port outbound dropped packets count above ${threshold}"
-            },
-            {
-                "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
-                "description": "Connection A side inbound dropped packets count above ${threshold}"
-            },
-            {
-                "name": "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
-                "description": "Connection A side outbound dropped packets count above ${threshold}"
-            },
-            {
-                "name": "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
-                "description": "Connection Z side inbound dropped packets count above ${threshold}"
-            },
-            {
-                "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
-                "description": "Connection Z side outbound dropped packets count above ${threshold}"
             }
         ]
     },
