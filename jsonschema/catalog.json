@@ -1259,6 +1259,10 @@
                         "description": "Network edge acl is updated"
                     },
                     {
+                        "name": "equinix.network_edge.device.attribute.changed",
+                        "description": "Network edge device attributes updated"
+                    },
+                    {
                         "name": "equinix.network_edge.device.reboot.completed",
                         "description": "Network edge device reboot completed"
                     },
@@ -1285,6 +1289,18 @@
                     {
                         "name": "equinix.network_edge.device.state.provisioning",
                         "description": "Network edge device is provisioning"
+                    },
+                    {
+                        "name": "equinix.network_edge.devicelinkgroup.state.created",
+                        "description": "Network edge device link group is created"
+                    },
+                    {
+                        "name": "equinix.network_edge.devicelinkgroup.state.deleted",
+                        "description": "Network edge device link group is deleted"
+                    },
+                    {
+                        "name": "equinix.network_edge.devicelinkgroup.state.updated",
+                        "description": "Network edge device link group is updated"
                     }
                 ],
                 "preview": []

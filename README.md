@@ -1339,6 +1339,10 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Network edge acl is updated</td>
 	</tr>
 	<tr>
+		<td>equinix.network_edge.device.attribute.changed</td>
+		<td>Network edge device attributes updated</td>
+	</tr>
+	<tr>
 		<td>equinix.network_edge.device.reboot.completed</td>
 		<td>Network edge device reboot completed</td>
 	</tr>
@@ -1365,6 +1369,18 @@ The following data payloads are the supported events and formats for Equinix Int
 	<tr>
 		<td>equinix.network_edge.device.state.provisioning</td>
 		<td>Network edge device is provisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.devicelinkgroup.state.created</td>
+		<td>Network edge device link group is created</td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.devicelinkgroup.state.deleted</td>
+		<td>Network edge device link group is deleted</td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.devicelinkgroup.state.updated</td>
+		<td>Network edge device link group is updated</td>
 	</tr>
 </table>
 
