@@ -56,78 +56,6 @@ The following data payloads are the supported events and formats for Equinix Int
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>equinix.fabric.connection.route_aggregation.attached</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attached</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation.attaching</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attaching</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation.detached</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detached</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation.detaching</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detaching</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation.failed</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to failed</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation.pending_bgp_configuration</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to pending_bgp_configuration</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter.attached</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} state changed to attached</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter.attaching</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} state changed to attaching</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter.detached</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} state changed to detached</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter.detaching</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} state changed to detaching</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter.failed</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} state changed to failed</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter.pending_bgp_configuration</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} state changed to pending_bgp_configuration</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection_routing_protocol.state.deprovisioned</td>
-		<td>Routing Protocol named ${routing_protocol_name} state changed to deprovisioned</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection_routing_protocol.state.deprovisioning</td>
-		<td>Routing Protocol named ${routing_protocol_name} state changed to deprovisioning</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection_routing_protocol.state.failed</td>
-		<td>Routing Protocol named ${routing_protocol_name} state changed to failed</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection_routing_protocol.state.provisioned</td>
-		<td>Routing Protocol named ${routing_protocol_name} state changed to provisioned</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection_routing_protocol.state.provisioning</td>
-		<td>Routing Protocol named ${routing_protocol_name} state changed to provisioning</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection_routing_protocol.state.reprovisioning</td>
-		<td>Routing Protocol named ${routing_protocol_name} state changed to reprovisioning</td>
-	</tr>
-	<tr>
 		<td>equinix.fabric.route_aggregation.attribute.changed</td>
 		<td>Route Aggregation named ${route_aggregation_name} attribute changed</td>
 	</tr>
@@ -275,18 +203,6 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>equinix.fabric.router_command.state.succeeded</td>
 		<td>Router Command state changed to succeeded</td>
 	</tr>
-	<tr>
-		<td>equinix.fabric.routing_protocol_action.state.failed</td>
-		<td>Routing Protocol Action state changed to failed</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.routing_protocol_action.state.pending</td>
-		<td>Routing Protocol Action state changed to pending</td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.routing_protocol_action.state.succeeded</td>
-		<td>Routing Protocol Action state changed to succeeded</td>
-	</tr>
 </table>
 
 </details>
@@ -354,6 +270,54 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>Neighbor ${IP} address session state changed to open_sent</td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.connection.route_aggregation.attached</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attached</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_aggregation.attaching</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attaching</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_aggregation.detached</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detached</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_aggregation.detaching</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detaching</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_aggregation.failed</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to failed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_aggregation.pending_bgp_configuration</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to pending_bgp_configuration</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_filter.attached</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to attached</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_filter.attaching</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to attaching</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_filter.detached</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to detached</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_filter.detaching</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to detaching</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_filter.failed</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to failed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.route_filter.pending_bgp_configuration</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to pending_bgp_configuration</td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.connection.state.deprovisioned</td>
 		<td>Connection named ${connection_name} state changed to deprovisioned</td>
 	</tr>
@@ -380,6 +344,30 @@ The following data payloads are the supported events and formats for Equinix Int
 	<tr>
 		<td>equinix.fabric.connection.status.up</td>
 		<td>Connection '${connection_name}' status changed to UP</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_routing_protocol.state.deprovisioned</td>
+		<td>Routing Protocol named ${routing_protocol_name} state changed to deprovisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_routing_protocol.state.deprovisioning</td>
+		<td>Routing Protocol named ${routing_protocol_name} state changed to deprovisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_routing_protocol.state.failed</td>
+		<td>Routing Protocol named ${routing_protocol_name} state changed to failed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_routing_protocol.state.provisioned</td>
+		<td>Routing Protocol named ${routing_protocol_name} state changed to provisioned</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_routing_protocol.state.provisioning</td>
+		<td>Routing Protocol named ${routing_protocol_name} state changed to provisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_routing_protocol.state.reprovisioning</td>
+		<td>Routing Protocol named ${routing_protocol_name} state changed to reprovisioning</td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.internet_access.attribute.changed</td>
@@ -500,6 +488,18 @@ The following data payloads are the supported events and formats for Equinix Int
 	<tr>
 		<td>equinix.fabric.router.state.reprovisioning</td>
 		<td>Router named ${router_name} state changed to reprovisioning</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.routing_protocol_action.state.failed</td>
+		<td>Routing Protocol Action state changed to failed</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.routing_protocol_action.state.pending</td>
+		<td>Routing Protocol Action state changed to pending</td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.routing_protocol_action.state.succeeded</td>
+		<td>Routing Protocol Action state changed to succeeded</td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.service_token.attribute.changed</td>

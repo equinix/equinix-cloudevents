@@ -91,6 +91,54 @@
                         "description": "Neighbor ${IP} address session state changed to open_sent"
                     },
                     {
+                        "name": "equinix.fabric.connection.route_aggregation.attached",
+                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attached"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.route_aggregation.attaching",
+                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attaching"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.route_aggregation.detached",
+                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detached"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.route_aggregation.detaching",
+                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detaching"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.route_aggregation.failed",
+                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to failed"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.route_aggregation.pending_bgp_configuration",
+                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to pending_bgp_configuration"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.route_filter.attached",
+                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to attached"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.route_filter.attaching",
+                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to attaching"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.route_filter.detached",
+                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to detached"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.route_filter.detaching",
+                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to detaching"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.route_filter.failed",
+                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to failed"
+                    },
+                    {
+                        "name": "equinix.fabric.connection.route_filter.pending_bgp_configuration",
+                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to pending_bgp_configuration"
+                    },
+                    {
                         "name": "equinix.fabric.connection.state.deprovisioned",
                         "description": "Connection named ${connection_name} state changed to deprovisioned"
                     },
@@ -117,6 +165,30 @@
                     {
                         "name": "equinix.fabric.connection.status.up",
                         "description": "Connection '${connection_name}' status changed to UP"
+                    },
+                    {
+                        "name": "equinix.fabric.connection_routing_protocol.state.deprovisioned",
+                        "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioned"
+                    },
+                    {
+                        "name": "equinix.fabric.connection_routing_protocol.state.deprovisioning",
+                        "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioning"
+                    },
+                    {
+                        "name": "equinix.fabric.connection_routing_protocol.state.failed",
+                        "description": "Routing Protocol named ${routing_protocol_name} state changed to failed"
+                    },
+                    {
+                        "name": "equinix.fabric.connection_routing_protocol.state.provisioned",
+                        "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioned"
+                    },
+                    {
+                        "name": "equinix.fabric.connection_routing_protocol.state.provisioning",
+                        "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioning"
+                    },
+                    {
+                        "name": "equinix.fabric.connection_routing_protocol.state.reprovisioning",
+                        "description": "Routing Protocol named ${routing_protocol_name} state changed to reprovisioning"
                     },
                     {
                         "name": "equinix.fabric.internet_access.attribute.changed",
@@ -239,6 +311,18 @@
                         "description": "Router named ${router_name} state changed to reprovisioning"
                     },
                     {
+                        "name": "equinix.fabric.routing_protocol_action.state.failed",
+                        "description": "Routing Protocol Action state changed to failed"
+                    },
+                    {
+                        "name": "equinix.fabric.routing_protocol_action.state.pending",
+                        "description": "Routing Protocol Action state changed to pending"
+                    },
+                    {
+                        "name": "equinix.fabric.routing_protocol_action.state.succeeded",
+                        "description": "Routing Protocol Action state changed to succeeded"
+                    },
+                    {
                         "name": "equinix.fabric.service_token.attribute.changed",
                         "description": "Token successfully updated"
                     },
@@ -268,78 +352,6 @@
                     }
                 ],
                 "preview": [
-                    {
-                        "name": "equinix.fabric.connection.route_aggregation.attached",
-                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attached"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_aggregation.attaching",
-                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attaching"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_aggregation.detached",
-                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detached"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_aggregation.detaching",
-                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detaching"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_aggregation.failed",
-                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to failed"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_aggregation.pending_bgp_configuration",
-                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to pending_bgp_configuration"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_filter.attached",
-                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to attached"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_filter.attaching",
-                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to attaching"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_filter.detached",
-                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to detached"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_filter.detaching",
-                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to detaching"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_filter.failed",
-                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to failed"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_filter.pending_bgp_configuration",
-                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to pending_bgp_configuration"
-                    },
-                    {
-                        "name": "equinix.fabric.connection_routing_protocol.state.deprovisioned",
-                        "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.connection_routing_protocol.state.deprovisioning",
-                        "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.connection_routing_protocol.state.failed",
-                        "description": "Routing Protocol named ${routing_protocol_name} state changed to failed"
-                    },
-                    {
-                        "name": "equinix.fabric.connection_routing_protocol.state.provisioned",
-                        "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.connection_routing_protocol.state.provisioning",
-                        "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.connection_routing_protocol.state.reprovisioning",
-                        "description": "Routing Protocol named ${routing_protocol_name} state changed to reprovisioning"
-                    },
                     {
                         "name": "equinix.fabric.route_aggregation.attribute.changed",
                         "description": "Route Aggregation named ${route_aggregation_name} attribute changed"
@@ -487,18 +499,6 @@
                     {
                         "name": "equinix.fabric.router_command.state.succeeded",
                         "description": "Router Command state changed to succeeded"
-                    },
-                    {
-                        "name": "equinix.fabric.routing_protocol_action.state.failed",
-                        "description": "Routing Protocol Action state changed to failed"
-                    },
-                    {
-                        "name": "equinix.fabric.routing_protocol_action.state.pending",
-                        "description": "Routing Protocol Action state changed to pending"
-                    },
-                    {
-                        "name": "equinix.fabric.routing_protocol_action.state.succeeded",
-                        "description": "Routing Protocol Action state changed to succeeded"
                     }
                 ]
             },
