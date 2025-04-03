@@ -49,44 +49,38 @@
         {
             "name": "equinix.resource_manager.organization.state.created",
             "description": "Organization created event.",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.resource_manager.organization.state.updated",
             "description": "Organization updated event.",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.resource_manager.organization.state.deleted",
             "description": "Organization deleted event.",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.resource_manager.project.state.created",
             "description": "Project created event.",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.resource_manager.project.state.updated",
             "description": "Project updated event.",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.resource_manager.project.state.deleted",
             "description": "Project deleted event.",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         }
     ],
     "metricNames": [],

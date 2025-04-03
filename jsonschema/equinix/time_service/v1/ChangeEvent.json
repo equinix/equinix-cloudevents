@@ -99,44 +99,38 @@
         {
             "name": "equinix.fabric.time_service.state.provisioning",
             "description": "Time Service is provisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.time_service.state.provisioned",
             "description": "Time Service is provisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.time_service.state.reprovisioning",
             "description": "Time Service is reprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.time_service.state.deprovisioning",
             "description": "Time Service is deprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.time_service.state.deprovisioned",
             "description": "Time Service is deprovisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.time_service.state.failed",
             "description": "Time Service is provisioning failed",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         }
     ],
     "metricNames": [],

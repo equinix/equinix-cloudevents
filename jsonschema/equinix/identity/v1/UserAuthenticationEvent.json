@@ -25,16 +25,14 @@
         {
             "name": "equinix.identity.user.activity.logged_in",
             "description": "User loggedIn event",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.identity.user.activity.logged_out",
             "description": "User loggedOut event",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         }
     ],
     "metricNames": [],

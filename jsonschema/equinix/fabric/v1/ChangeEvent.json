@@ -160,758 +160,650 @@
         {
             "name": "equinix.fabric.connection.state.pending",
             "description": "Connection named ${connection_name} state changed to pending",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "DATAPATH_METRIC_SLO",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.state.provisioning",
             "description": "Connection named ${connection_name} state changed to provisioning",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "DATAPATH_METRIC_SLO",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.state.provisioned",
             "description": "Connection named ${connection_name} state changed to provisioned",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.state.deprovisioning",
             "description": "Connection named ${connection_name} state changed to deprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.state.deprovisioned",
             "description": "Connection named ${connection_name} state changed to deprovisioned",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.attribute.changed",
             "description": "Connection named ${connection_name} attributes are changed",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.status.up",
             "description": "Connection '${connection_name}' status changed to UP",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.status.down",
             "description": "Connection '${connection_name}' status changed to DOWN",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv4_session_status.idle",
             "description": "Neighbor ${IP} address session state changed to Idle",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv4_session_status.connect",
             "description": "Neighbor ${IP} address session state changed to Connect",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv4_session_status.active",
             "description": "Neighbor ${IP} address session state changed to Active",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv4_session_status.open_sent",
             "description": "Neighbor ${IP} address session state changed to Open_sent",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
             "description": "Neighbor ${IP} address session state changed to Open_confirm",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv4_session_status.established",
             "description": "Neighbor ${IP} address session state changed to Established",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv6_session_status.idle",
             "description": "Neighbor ${IP} address session state changed to Idle",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv6_session_status.connect",
             "description": "Neighbor ${IP} address session state changed to Connect",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv6_session_status.active",
             "description": "Neighbor ${IP} address session state changed to Active",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv6_session_status.open_sent",
             "description": "Neighbor ${IP} address session state changed to open_sent",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv6_session_status.open_confirm",
             "description": "Neighbor ${IP} address session state changed to Open_confirm",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv6_session_status.established",
             "description": "Neighbor ${IP} address session state changed to Established",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.network.state.provisioning",
             "description": "Network named ${network_name} state changed to provisioning",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.network.state.provisioned",
             "description": "Network named ${network_name} state changed to provisioned",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.network.state.deprovisioning",
             "description": "Network named ${network_name} state changed to deprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.network.state.deprovisioned",
             "description": "Network named ${network_name} state changed to deprovisioned",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.network.attribute.changed",
             "description": "network named ${network_name} attribute changed",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.state.provisioning",
             "description": "Virtual port named ${port_name} state changed to provisioning",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.state.provisioned",
             "description": "Virtual port named ${port_name} state changed to provisioned",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.state.deprovisioning",
             "description": "Virtual port named ${port_name} state changed to deprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.state.deprovisioned",
             "description": "Virtual port named ${port_name} state changed to deprovisioned",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.state.failed",
             "description": "Virtual port named ${port_name} state changed to failed",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.status.up",
             "description": "Virtual|Physical port '${port_name}' status changed to UP",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.status.inactive",
             "description": "Virtual|Physical port '${port_name}' status changed to INACTIVE",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.status.down",
             "description": "Virtual|Physical port '${port_name}' status changed to DOWN",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.router.state.provisioning",
             "description": "Router named ${router_name} state changed to provisioning",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.router.state.provisioned",
             "description": "Router named ${router_name} successfully provisioned",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.router.state.reprovisioning",
             "description": "Router named ${router_name} state changed to reprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.router.state.deprovisioning",
             "description": "Router named ${router_name} state changed to deprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.router.state.deprovisioned",
             "description": "Router named ${router_name} successfully deprovisioned",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.router.state.failed",
             "description": "Router named ${router_name} state changed to failed",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.router.state.not_provisioned",
             "description": "Router named ${router_name} state changed to not_provisioned",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.router.state.not_deprovisioned",
             "description": "Router named ${router_name} state changed to not_deprovisioned",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.service_token.state.active",
             "description": "Token successfully activated",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.router.attribute.changed",
             "description": "Router named ${router_name} attribute changed",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.service_token.state.inactive",
             "description": "Token successfully deactivated",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.service_token.state.deleted",
             "description": "Token successfully deleted",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.service_token.state.expired",
-            "slaCategoryCode": "",
+            "sloCategoryCode": "",
             "description": "Token expired",
-            "inPreview": false,
-            "isReleased": true
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.service_token.attribute.changed",
             "description": "Token successfully updated",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.service_token.resend_email_notification.succeeded",
             "description": "Token resend email notification succeeded",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.service_token.resend_email_notification.failed",
             "description": "Token resend email notification failed",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.internet_access.state.provisioning",
             "description": "Internet access service provisioning started",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.internet_access.state.provisioned",
             "description": "Internet access service provisioned",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.internet_access.state.deprovisioning",
             "description": "Internet access service de-provisioning started",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.internet_access.state.deprovisioned",
             "description": "Internet access service de-provisioned",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.internet_access.state.failed",
             "description": "Internet access service provisioning or de-provisioning failed",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.internet_access.attribute.changed",
             "description": "Internet access service changed",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.internet_access.attribute.changing",
             "description": "Internet access service changing",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.internet_access.attribute.failed",
             "description": "Internet access service changed failed",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection_routing_protocol.state.provisioning",
             "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection_routing_protocol.state.reprovisioning",
             "description": "Routing Protocol named ${routing_protocol_name} state changed to reprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection_routing_protocol.state.deprovisioning",
             "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection_routing_protocol.state.provisioned",
             "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection_routing_protocol.state.deprovisioned",
             "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection_routing_protocol.state.failed",
             "description": "Routing Protocol named ${routing_protocol_name} state changed to failed",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_filter.state.provisioning",
             "description": "Route Filter named ${route_filter_name} state changed to provisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_filter.state.reprovisioning",
             "description": "Route Filter named ${route_filter_name} state changed to reprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_filter.state.deprovisioning",
             "description": "Route Filter named ${route_filter_name} state changed to deprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_filter.state.provisioned",
             "description": "Route Filter named ${route_filter_name} state changed to provisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_filter.state.deprovisioned",
             "description": "Route Filter named ${route_filter_name} state changed to deprovisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_filter.state.not_provisioned",
             "description": "Route Filter named ${route_filter_name} state changed to not_provisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_filter.state.not_deprovisioned",
             "description": "Route Filter named ${route_filter_name} state changed to not_deprovisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_filter.attribute.changed",
             "description": "Route Filter named ${route_filter_name} attribute changed",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_filter_rule.state.provisioning",
             "description": "Route Filter Rule named ${route_filter_rule_name} state changed to provisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_filter_rule.state.reprovisioning",
             "description": "Route Filter Rule named ${route_filter_rule_name} state changed to reprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_filter_rule.state.deprovisioning",
             "description": "Route Filter Rule named ${route_filter_rule_name} state changed to deprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_filter_rule.state.provisioned",
             "description": "Route Filter Rule named ${route_filter_rule_name} state changed to provisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_filter_rule.state.deprovisioned",
             "description": "Route Filter Rule named ${route_filter_rule_name} state changed to deprovisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_filter_rule.state.failed",
             "description": "Route Filter Rule named ${route_filter_rule_name} state changed to failed",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_filter_rule.attribute.changed",
             "description": "Route Filter Rule named ${route_filter_rule_name} attribute changed",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection.route_filter.attaching",
             "description": "Connection Route Filter named ${route_filter_rule_name} state changed to attaching",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection.route_filter.detaching",
             "description": "Connection Route Filter named ${route_filter_rule_name} state changed to detaching",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection.route_filter.attached",
             "description": "Connection Route Filter named ${route_filter_rule_name} state changed to attached",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection.route_filter.detached",
             "description": "Connection Route Filter named ${route_filter_rule_name} state changed to detached",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection.route_filter.pending_bgp_configuration",
             "description": "Connection Route Filter named ${route_filter_rule_name} state changed to pending_bgp_configuration",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection.route_filter.failed",
             "description": "Connection Route Filter named ${route_filter_rule_name} state changed to failed",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_aggregation.state.provisioning",
             "description": "Route Aggregation named ${route_aggregation_name} state changed to provisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_aggregation.state.reprovisioning",
             "description": "Route Aggregation named ${route_aggregation_name} state changed to reprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_aggregation.state.deprovisioning",
             "description": "Route Aggregation named ${route_aggregation_name} state changed to deprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_aggregation.state.provisioned",
             "description": "Route Aggregation named ${route_aggregation_name} state changed to provisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_aggregation.state.deprovisioned",
             "description": "Route Aggregation named ${route_aggregation_name} state changed to deprovisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_aggregation.state.not_provisioned",
             "description": "Route Aggregation named ${route_aggregation_name} state changed to not_provisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_aggregation.state.not_deprovisioned",
             "description": "Route Aggregation named ${route_aggregation_name} state changed to not_deprovisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_aggregation.attribute.changed",
             "description": "Route Aggregation named ${route_aggregation_name} attribute changed",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_aggregation_rule.state.provisioning",
             "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to provisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_aggregation_rule.state.reprovisioning",
             "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to reprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_aggregation_rule.state.deprovisioning",
             "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to deprovisioning",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_aggregation_rule.state.provisioned",
             "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to provisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_aggregation_rule.state.deprovisioned",
             "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to deprovisioned",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_aggregation_rule.state.failed",
             "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to failed",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.route_aggregation_rule.attribute.changed",
             "description": "Route Aggregation Rule named ${route_aggregation_rule_name} attribute changed",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection.route_aggregation.attaching",
             "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attaching",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection.route_aggregation.detaching",
             "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detaching",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection.route_aggregation.attached",
             "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attached",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection.route_aggregation.detached",
             "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detached",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection.route_aggregation.pending_bgp_configuration",
             "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to pending_bgp_configuration",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection.route_aggregation.failed",
             "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to failed",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.routing_protocol_action.state.pending",
             "description": "Routing Protocol Action state changed to pending",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.routing_protocol_action.state.succeeded",
             "description": "Routing Protocol Action state changed to succeeded",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.routing_protocol_action.state.failed",
             "description": "Routing Protocol Action state changed to failed",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         }
     ],
     "metricNames": [],

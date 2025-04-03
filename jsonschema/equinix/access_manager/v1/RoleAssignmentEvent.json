@@ -113,16 +113,14 @@
     {
       "name": "equinix.access_manager.user.role.added",
       "description": "Role assignment event",
-      "slaCategoryCode": "",
-      "inPreview": false,
-      "isReleased": true
+      "sloCategoryCode": "",
+      "releaseStatus": "released"
     },
     {
       "name": "equinix.access_manager.user.role.removed",
       "description": "Role unassignment event",
-      "slaCategoryCode": "",
-      "inPreview": false,
-      "isReleased": true
+      "sloCategoryCode": "",
+      "releaseStatus": "released"
     }
   ],
   "metricNames": [],

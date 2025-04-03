@@ -27,12 +27,10 @@ Each attribute contains a list of object with the following attributes:
 
 * `name` - The name of the CloudEvents type, Metric or Alert
 * `description` = A breif description of the event, metric or alert
-* `slaCategoryCode` - This attribute signifies the SLA category associated with the event, metric or alert
-* `isReleased` - Set as True under `cloudeventTypes`, `metricNames` and 
-`alertNames` if the name listed is fully tested and ready to be sent in production
-* `inPreview` - Set as True under `cloudeventTypes`, `metricNames` and 
-`alertNames` if the name listed is under preview; meaning that
- the name is in development and should only be exposed to UAT
+* `sloCategoryCode` - This attribute signifies the SLO category code associated with the event, metric or alert
+* `releaseStatus` - Set as `released` under `cloudeventTypes`,`metricNames` and `alertNames` if the name listed is fully tested and ready to be sent in production
+* `releaseStatus` - Set as `preview` under `cloudeventTypes`, `metricNames` and `alertNames` if the name listed is under preview; meaning that
+the name is in development and should only be exposed to UAT
 
 **Even if the data schema is not using metrics, or alerts, each attribute and 
 sub attribute is required in the data schema. The Github Action will fail if 
@@ -52,45 +50,43 @@ Example of complete use case for the attributes:
     {
         "name": "equinix.fabric.connection.ipv4_installed_routes.utilization",
         "descrption": "Fabric connection ipv4 installed routes utilization",
-        "slaCategoryCode": "DATA_PATH"
-        "inPreview": false,
-        "isReleased": true
+        "sloCategoryCode": "DATA_PATH"
+        "releaseStatus": "released"
     },
     {
         "name": "equinix.fabric.connection.ipv6_installed_routes.utilization",
         "descrption": "Fabric connection ipv4 installed routes utilization",
-        "slaCategoryCode": "METRO_LATENCY"
-        "inPreview": true,
-        "isReleased": false
+        "sloCategoryCode": "METRO_LATENCY"
+        "releaseStatus": "preview",
     },
 ],
 "metricNames": [],
 "alertNames": []
 ...
 ```
-## Process for Updating Cloud Events SLA
-Contributors must update the /jsonschema/slaCategories.json file when adding a new slaCategoryCode to the data schema. This file contaims three lists:
-* eventsSLA
-* metricsSLA
-* alertsSLA
+## Process for Updating Cloud Events SLO
+Contributors must update the /jsonschema/sloCategories.json file when adding a new sloCategoryCode to the data schema. This file contains three lists:
+* eventsSLO
+* metricsSLO
+* alertsSLO
 
-Each SLA category entry should include following attributes:
+Each SLO category entry should include following attributes:
 ```
 ...
 {
-    "category": "Resource Lifecycle",
-    "code": "RESOURCE_LIFECYCLE",
-    "collectionInterval": "",
-    "reporting": "1",
-    "streamingLatency": "60",
-    "queryLatency": "2",
-    "retentionPT5M": "90",
-    "retentionPT1H": "365",
-    "retentionPT1D": ""
+    "category": "Datapath Metric SLO",
+    "code": "DATAPATH_METRIC_SLO",
+    "reportingInterval": "PT300S",
+    "reportingLatencyMax": "PT720S",
+    "streamingLatencyMax": "PT60S",
+    "queryLatencyMax": "PT4S",
+    "orignalDataRetention": "PT90D",
+    "1HAggregationRetention": "PT365D",
+    "1DAggregationRetention": "PT1095D"
 }
 ...
 ```
-Each SLA category and code must be appropriately added to enusre accurate tracking and performance measurement.
+Each SLO category and code must be appropriately added to ensure accurate tracking and performance measurement.
 
 ## Registering a Data Schema
 
@@ -124,36 +120,28 @@ Example: `#/definitions/Data`
 * "definitions" - The JSON Schema definition that describes the contents of the
  data schema for what will be contained in the event, metric, or alert that is 
  supported by this data schema
-* "cloudeventTypes" - List of object with attributes `isReleased` and `inPreview` that
- mark which environment the data schema is ready to suppport the given event 
- type in. Mark `isReleased` as True if it is fully tested and 
- ready for production. Mark `preview` as False if it is under 
+* "cloudeventTypes" - List of object with attribute `releaseStatus` that
+ mark which environment the data schema is ready to suppport the given
+ event type in. Mark `releaseStatus` as `released` if it is fully tested and ready for production. Mark `releaseStatus` as `preview` if it is under 
  development and should only be available in UAT.
-* "metricNames" - - List of object with attributes `isReleased` and `inPreview` that
- mark which environment the data schema is ready to suppport the given event 
- type in. Mark `isReleased` as True if it is fully tested and 
- ready for production. Mark `preview` as False if it is under 
+* "metricNames" - List of object with attributes `releaseStatus` that
+ mark which environment the data schema is ready to suppport the given event type in. Mark `releaseStatus` as `released` if it is fully tested and ready for production. Mark `releaseStatus` as `preview` if it is under 
  development and should only be available in UAT.
-* "alertNames" - List of object with attributes `isReleased` and `inPreview` that
- mark which environment the data schema is ready to suppport the given event 
- type in. Mark `isReleased` as True if it is fully tested and 
- ready for production. Mark `preview` as False if it is under 
+* "alertNames" - List of object with attributes `releaseStatus` that
+ mark which environment the data schema is ready to suppport the given event type in. Mark `releaseStatus` as `released` if it is fully tested and ready for production. Mark `releaseStatus` as `preview` if it is under 
  development and should only be available in UAT.
 
 ## Process for Upgrading Event/Metric/Alert from Development to Production
 
 When adding a new event/metric/alert to a data schema always start by 
-marking `inPreview` as True. This identifies *in development*
+marking `releaseStatus` as `preview`. This identifies *in development*
 items and is the starting point for new events/metrics/alerts being added 
 into the repo.
 
 Once an event/metric/alert has been thoroughly tested in lower environments
-you will mark `inPreview` as False and `isReleased` as True. This indicates that your item is ready to be consumed in production and the production Equinix Event Manager will pass these items through to the consumers.
+you will mark `releaseStatus` as `released`. This indicates that your item is ready to be consumed in production and the production Equinix Event Manager will pass these items through to the consumers.
 
-It is imperative that you understand the responsibility involved for managing
-your team's domain with regards to the  `inPreview` and `isReleased` attributes in your
-data schema files. The [CODEOWNERS](#codeowners) section describes how
-responsibility is managed within the repo. Please review it thoroughly.
+It is imperative that you understand the responsibility involved for managing your team's domain with regards to the `releaseStatus` attribute in your data schema files. The [CODEOWNERS](#codeowners) section describes how responsibility is managed within the repo. Please review it thoroughly.
 
 ## CODEOWNERS
 
@@ -163,8 +151,7 @@ contributing to. This ensures that 1 member from each domain team and 1
 architect will always be necessary to approve a Pull Request before it can
  be merged.
 
-This is critical because the responsibility of maintaining the `isReleased` and
-`inPreview` attributes outlined in the [Gating](#data-schema-gating-through-equinix-event-manager)
+This is critical because the responsibility of maintaining the `releaseStatus` and `sloCategoryCode` attributes outlined in the [Gating](#data-schema-gating-through-equinix-event-manager)
 section lies with the Domain owners and not the architects. Should any 
 production defect be found the Domain owner is responsible for resolution
 

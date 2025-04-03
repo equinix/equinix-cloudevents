@@ -122,7 +122,7 @@
         {
             "name": "equinix.fabric.metric",
             "description": "",
-            "slaCategoryCode": "",
+            "sloCategoryCode": "",
             "inPreview": false,
             "isReleased": true
         }
@@ -131,86 +131,74 @@
         {
             "name": "equinix.fabric.connection.bandwidth_rx.usage",
             "description": "Connection inbound bandwidth usage in bit/sec",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bandwidth_tx.usage",
             "description": "Connection outbound bandwidth usage in bit/sec",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.bandwidth_rx.usage",
             "description": "Port inbound bandwidth usage in bit/sec",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.bandwidth_tx.usage",
             "description": "Port outbound bandwidth usage in bit/sec",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.packets_erred_rx.count",
             "description": "Port inbound erred packets count",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.packets_erred_tx.count",
             "description": "Port outbound erred packets count",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.packets_dropped_rx.count",
             "description": "Port inbound dropped packets count",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.packets_dropped_tx.count",
             "description": "Port outbound dropped packets count",
-            "slaCategoryCode": "",
-            "inPreview": false,
-            "isReleased": true
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
             "description": "Connection A side inbound dropped packets count",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
             "description": "Connection A side outbound dropped packets count",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
             "description": "Connection Z side inbound dropped packets count",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
             "description": "Connection Z side outbound dropped packets count",
-            "slaCategoryCode": "",
-            "inPreview": true,
-            "isReleased": false
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
         }
     ],
     "alertNames": []
