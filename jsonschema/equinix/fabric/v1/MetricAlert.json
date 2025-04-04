@@ -176,6 +176,30 @@
             "releaseStatus": "released"
         },
         {
+            "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
+            "description": "Connection A side inbound dropped packets count above ${threshold}",
+            "sloCategoryCode": "DATAPATH_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
+            "description": "Connection A side outbound dropped packets count above ${threshold}",
+            "sloCategoryCode": "DATAPATH_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
+            "description": "Connection Z side inbound dropped packets count above ${threshold}",
+            "sloCategoryCode": "DATAPATH_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
+            "description": "Connection Z side outbound dropped packets count above ${threshold}",
+            "sloCategoryCode": "DATAPATH_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
             "name": "equinix.fabric.connection.bandwidth_rx.usage",
             "description": "Connection inbound bandwidth usage above ${threshold}",
             "sloCategoryCode": "DATAPATH_METRIC_SLO",
@@ -220,30 +244,6 @@
         {
             "name": "equinix.fabric.port.packets_dropped_tx.count",
             "description": "Port outbound dropped packets count above ${threshold}",
-            "sloCategoryCode": "DATAPATH_METRIC_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
-            "description": "Connection A side inbound dropped packets count above ${threshold}",
-            "sloCategoryCode": "DATAPATH_METRIC_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
-            "description": "Connection A side outbound dropped packets count above ${threshold}",
-            "sloCategoryCode": "DATAPATH_METRIC_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
-            "description": "Connection Z side inbound dropped packets count above ${threshold}",
-            "sloCategoryCode": "DATAPATH_METRIC_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
-            "description": "Connection Z side outbound dropped packets count above ${threshold}",
             "sloCategoryCode": "DATAPATH_METRIC_SLO",
             "releaseStatus": "preview"
         }

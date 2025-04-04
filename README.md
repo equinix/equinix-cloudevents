@@ -664,6 +664,48 @@ The following data payloads are the supported events and formats for Equinix Int
 	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.router_action.state.failed</td>
+		<td>Router Action state changed to failed</td>
+		<td>In Preview</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.router_action.state.pending</td>
+		<td>Router Action state changed to pending</td>
+		<td>In Preview</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.router_action.state.succeeded</td>
+		<td>Router Action state changed to succeeded</td>
+		<td>In Preview</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.router_command.state.deleted</td>
+		<td>Router Command state changed to deleted</td>
+		<td>In Preview</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.router_command.state.failed</td>
+		<td>Router Command state changed to failed</td>
+		<td>In Preview</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.router_command.state.pending</td>
+		<td>Router Command state changed to pending</td>
+		<td>In Preview</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.router_command.state.succeeded</td>
+		<td>Router Command state changed to succeeded</td>
+		<td>In Preview</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.routing_protocol_action.state.failed</td>
 		<td>Routing Protocol Action state changed to failed</td>
 		<td>In Preview</td>

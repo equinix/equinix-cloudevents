@@ -804,7 +804,49 @@
             "description": "Routing Protocol Action state changed to failed",
             "sloCategoryCode": "RESOURCE_CHANGE_EVENT_SLO",
             "releaseStatus": "preview"
-        }
+        },
+        {
+            "name": "equinix.fabric.router_action.state.pending",
+            "description": "Router Action state changed to pending",
+            "sloCategoryCode": "RESOURCE_CHANGE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.router_action.state.succeeded",
+            "description": "Router Action state changed to succeeded",
+            "sloCategoryCode": "RESOURCE_CHANGE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.router_action.state.failed",
+            "description": "Router Action state changed to failed",
+            "sloCategoryCode": "RESOURCE_CHANGE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.router_command.state.pending",
+            "description": "Router Command state changed to pending",
+            "sloCategoryCode": "RESOURCE_CHANGE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.router_command.state.succeeded",
+            "description": "Router Command state changed to succeeded",
+            "sloCategoryCode": "RESOURCE_CHANGE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.router_command.state.failed",
+            "description": "Router Command state changed to failed",
+            "sloCategoryCode": "RESOURCE_CHANGE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.router_command.state.deleted",
+            "description": "Router Command state changed to deleted",
+            "sloCategoryCode": "RESOURCE_CHANGE_EVENT_SLO",
+            "releaseStatus": "preview"
+        }    
     ],
     "metricNames": [],
     "alertNames": []

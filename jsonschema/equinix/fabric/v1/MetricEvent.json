@@ -180,25 +180,25 @@
             "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
             "description": "Connection A side inbound dropped packets count",
             "sloCategoryCode": "DATAPATH_METRIC_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
             "description": "Connection A side outbound dropped packets count",
             "sloCategoryCode": "DATAPATH_METRIC_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
             "description": "Connection Z side inbound dropped packets count",
             "sloCategoryCode": "DATAPATH_METRIC_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
             "description": "Connection Z side outbound dropped packets count",
             "sloCategoryCode": "DATAPATH_METRIC_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         }
     ],
     "alertNames": []
