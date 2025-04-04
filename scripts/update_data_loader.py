@@ -17,50 +17,38 @@ def retrieve_supported_events():
                     data = json.load(eventFile)
                     if domain not in dataLoaderStructure:
                         dataLoaderStructure[domain] = {
-                            sc.EVENTS: {
-                                sc.RELEASED: [],
-                                sc.PREVIEW: []
-                            },
-                            sc.METRICS: {
-                                sc.RELEASED: [],
-                                sc.PREVIEW: []
-                            },
-                            sc.ALERTS: {
-                                sc.RELEASED: [],
-                                sc.PREVIEW: []
-                            }
+                            sc.EVENTS:  [],
+                            sc.METRICS: [],
+                            sc.ALERTS:  []
                         }
                     
                     for event in data.get(sc.EVENTS, []):
-                        if isinstance(event, dict):
-                            status = event.get("releaseStatus")
-                            if status == "released":
-                                dataLoaderStructure[domain][sc.EVENTS][sc.RELEASED].append(event["name"])
-                            elif status == "preview":
-                                dataLoaderStructure[domain][sc.EVENTS][sc.PREVIEW].append(event["name"])
+                        if isinstance(event, dict) and "name" in event and "releaseStatus" in event:
+                            dataLoaderStructure[domain][sc.EVENTS].append({
+                                "name": event["name"],
+                                "releaseStatus": event["releaseStatus"]
+                            })
+                            
 
                     for metric in data.get(sc.METRICS, []):
-                        if isinstance(metric, dict):
-                            status = metric.get("releaseStatus")
-                            if status ==  "released":
-                                dataLoaderStructure[domain][sc.METRICS][sc.RELEASED].append(metric["name"])
-                            elif status == "preview":
-                                dataLoaderStructure[domain][sc.METRICS][sc.PREVIEW].append(metric["name"])
-
+                        if isinstance(metric, dict) and "name" in metric and "releaseStatus" in metric:
+                            dataLoaderStructure[domain][sc.METRICS].append({
+                                "name": metric["name"],
+                                "releaseStatus": metric["releaseStatus"]
+                            })
+                            
                     for alert in data.get(sc.ALERTS, []):
-                        if isinstance(alert, dict):
-                            status = alert.get("releaseStatus")
-                            if status == "released":
-                                dataLoaderStructure[domain][sc.ALERTS][sc.RELEASED].append(alert["name"])
-                            elif status == "preview":
-                                dataLoaderStructure[domain][sc.ALERTS][sc.PREVIEW].append(alert["name"])
-                    
-                    dataLoaderStructure[domain][sc.EVENTS][sc.RELEASED] = sorted(set(dataLoaderStructure[domain][sc.EVENTS][sc.RELEASED]))
-                    dataLoaderStructure[domain][sc.EVENTS][sc.PREVIEW] = sorted(set(dataLoaderStructure[domain][sc.EVENTS][sc.PREVIEW]))
-                    dataLoaderStructure[domain][sc.METRICS][sc.RELEASED] = sorted(set(dataLoaderStructure[domain][sc.METRICS][sc.RELEASED]))
-                    dataLoaderStructure[domain][sc.METRICS][sc.PREVIEW] = sorted(set(dataLoaderStructure[domain][sc.METRICS][sc.PREVIEW]))
-                    dataLoaderStructure[domain][sc.ALERTS][sc.RELEASED] = sorted(set(dataLoaderStructure[domain][sc.ALERTS][sc.RELEASED]))
-                    dataLoaderStructure[domain][sc.ALERTS][sc.PREVIEW] = sorted(set(dataLoaderStructure[domain][sc.ALERTS][sc.PREVIEW]))
+                        if isinstance(alert, dict) and "name" in alert and "releaseStatus" in alert:
+                            dataLoaderStructure[domain][sc.ALERTS].append({
+                                "name": alert["name"],
+                                "releaseStatus": alert["releaseStatus"]
+                            })
+                            
+                    for section in [sc.EVENTS, sc.METRICS, sc.ALERTS]:
+                        dataLoaderStructure[domain][section] = sorted(
+                            dataLoaderStructure[domain][section], 
+                            key=lambda x: (x["releaseStatus"] != "released", x["name"])
+                        )
 
     dataLoaderStructure = dict(sorted(dataLoaderStructure.items()))
 

@@ -9,7 +9,7 @@ def validateJsonSchemas():
     directory = os.path.dirname(os.path.abspath(__file__)) + '/../jsonschema'
     for root, dirs, files in os.walk(directory):
         for file in files:
-            if file.endswith('.json') and file != "catalog.json":
+            if file.endswith('.json') and os.path.basename(root) != "jsonschema":
                 with open(root + "/" + file, "r") as eventFile:
                     data = json.load(eventFile)
                     validate(instance=data, schema=schema)
