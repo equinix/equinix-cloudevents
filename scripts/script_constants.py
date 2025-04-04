@@ -5,6 +5,8 @@ EVENTS = "cloudeventTypes"
 METRICS = "metricNames"
 ALERTS = "alertNames"
 
-README_EVENTS = "Events"
-README_METRICS = "Metrics"
-README_ALERTS = "Alerts"
+README = {
+    EVENTS: "Events",
+    METRICS: "Metrics",
+    ALERTS: "Alerts"    
+}
