@@ -1746,6 +1746,12 @@
                     "releaseStatus": "released"
                 },
                 {
+                    "name": "equinix.network_edge.device.attribute.changed",
+                    "description": "Network edge device attributes updated",
+                    "sloCategoryCode": "",
+                    "releaseStatus": "released"
+                },
+                {
                     "name": "equinix.network_edge.device.reboot.completed",
                     "description": "Network edge device reboot completed",
                     "sloCategoryCode": "",
@@ -1784,6 +1790,24 @@
                 {
                     "name": "equinix.network_edge.device.state.provisioning",
                     "description": "Network edge device is provisioning",
+                    "sloCategoryCode": "",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.devicelinkgroup.state.created",
+                    "description": "Network edge device link group is created",
+                    "sloCategoryCode": "",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.devicelinkgroup.state.deleted",
+                    "description": "Network edge device link group is deleted",
+                    "sloCategoryCode": "",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.devicelinkgroup.state.updated",
+                    "description": "Network edge device link group is updated",
                     "sloCategoryCode": "",
                     "releaseStatus": "released"
                 }
@@ -1846,6 +1870,24 @@
             "datatype": "equinix.time_service.v1.ChangeEvent",
             "cloudeventTypes": [
                 {
+                    "name": "equinix.fabric.time_service.state.cancelled",
+                    "description": "Time Service is cancelled",
+                    "sloCategoryCode": "",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.time_service.state.configuring",
+                    "description": "Time Service is configuring",
+                    "sloCategoryCode": "",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.time_service.state.configuring_failed",
+                    "description": "Time Service is configuring failed",
+                    "sloCategoryCode": "",
+                    "releaseStatus": "preview"
+                },
+                {
                     "name": "equinix.fabric.time_service.state.deprovisioned",
                     "description": "Time Service is deprovisioned",
                     "sloCategoryCode": "",
@@ -1858,8 +1900,14 @@
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.time_service.state.failed",
-                    "description": "Time Service is provisioning failed",
+                    "name": "equinix.fabric.time_service.state.deprovisioning_failed",
+                    "description": "Time Service is deprovisioning failed",
+                    "sloCategoryCode": "",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.time_service.state.draft",
+                    "description": "Time Service is in draft state",
                     "sloCategoryCode": "",
                     "releaseStatus": "preview"
                 },
@@ -1876,8 +1924,8 @@
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.time_service.state.reprovisioning",
-                    "description": "Time Service is reprovisioning",
+                    "name": "equinix.fabric.time_service.state.provisioning_failed",
+                    "description": "Time Service is provisioning failed",
                     "sloCategoryCode": "",
                     "releaseStatus": "preview"
                 }

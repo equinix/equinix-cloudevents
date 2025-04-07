@@ -109,12 +109,6 @@
             "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.time_service.state.reprovisioning",
-            "description": "Time Service is reprovisioning",
-            "sloCategoryCode": "",
-            "releaseStatus": "preview"
-        },
-        {
             "name": "equinix.fabric.time_service.state.deprovisioning",
             "description": "Time Service is deprovisioning",
             "sloCategoryCode": "",
@@ -127,8 +121,38 @@
             "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.time_service.state.failed",
+            "name": "equinix.fabric.time_service.state.cancelled",
+            "description": "Time Service is cancelled",
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.provisioning_failed",
             "description": "Time Service is provisioning failed",
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.configuring_failed",
+            "description": "Time Service is configuring failed",
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.deprovisioning_failed",
+            "description": "Time Service is deprovisioning failed",
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.configuring",
+            "description": "Time Service is configuring",
+            "sloCategoryCode": "",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.draft",
+            "description": "Time Service is in draft state",
             "sloCategoryCode": "",
             "releaseStatus": "preview"
         }

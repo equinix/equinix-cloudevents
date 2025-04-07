@@ -1121,6 +1121,10 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.network_edge.device.attribute.changed",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.network_edge.device.reboot.completed",
                 "releaseStatus": "released"
             },
@@ -1146,6 +1150,18 @@
             },
             {
                 "name": "equinix.network_edge.device.state.provisioning",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network_edge.devicelinkgroup.state.created",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network_edge.devicelinkgroup.state.deleted",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network_edge.devicelinkgroup.state.updated",
                 "releaseStatus": "released"
             }
         ],
@@ -1185,6 +1201,18 @@
     "time_service": {
         "cloudeventTypes": [
             {
+                "name": "equinix.fabric.time_service.state.cancelled",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.time_service.state.configuring",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.time_service.state.configuring_failed",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.time_service.state.deprovisioned",
                 "releaseStatus": "preview"
             },
@@ -1193,7 +1221,11 @@
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.time_service.state.failed",
+                "name": "equinix.fabric.time_service.state.deprovisioning_failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.time_service.state.draft",
                 "releaseStatus": "preview"
             },
             {
@@ -1205,7 +1237,7 @@
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.time_service.state.reprovisioning",
+                "name": "equinix.fabric.time_service.state.provisioning_failed",
                 "releaseStatus": "preview"
             }
         ],
