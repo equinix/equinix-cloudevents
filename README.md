@@ -48,13 +48,13 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>equinix.access_manager.user.role.added</td>
 		<td>Role assignment event</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.access_manager.user.role.removed</td>
 		<td>Role unassignment event</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 </table>
 
@@ -1808,13 +1808,13 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>equinix.identity.user.activity.logged_in</td>
 		<td>User loggedIn event</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.identity.user.activity.logged_out</td>
 		<td>User loggedOut event</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 </table>
 
@@ -1839,85 +1839,85 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>equinix.network_edge.acl.state.created</td>
 		<td>Network edge acl is created</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.acl.state.deleted</td>
 		<td>Network edge acl is deleted</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.acl.updated</td>
 		<td>Network edge acl is updated</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.attribute.changed</td>
 		<td>Network edge device attributes updated</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.reboot.completed</td>
 		<td>Network edge device reboot completed</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.reboot.started</td>
 		<td>Network edge device reboot started</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.state.cancelled</td>
 		<td>Network edge device order cancelled</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.state.created</td>
 		<td>Network edge device created</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.state.deleted</td>
 		<td>Network edge device deleted</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.state.provisioned</td>
 		<td>Network edge device is provisioned</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device.state.provisioning</td>
 		<td>Network edge device is provisioning</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.devicelinkgroup.state.created</td>
 		<td>Network edge device link group is created</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.devicelinkgroup.state.deleted</td>
 		<td>Network edge device link group is deleted</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.devicelinkgroup.state.updated</td>
 		<td>Network edge device link group is updated</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 </table>
 
@@ -1942,37 +1942,37 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>equinix.resource_manager.organization.state.created</td>
 		<td>Organization created event.</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.resource_manager.organization.state.deleted</td>
 		<td>Organization deleted event.</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.resource_manager.organization.state.updated</td>
 		<td>Organization updated event.</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.resource_manager.project.state.created</td>
 		<td>Project created event.</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.resource_manager.project.state.deleted</td>
 		<td>Project deleted event.</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.resource_manager.project.state.updated</td>
 		<td>Project updated event.</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 </table>
 
@@ -1997,61 +1997,61 @@ The following data payloads are the supported events and formats for Equinix Int
 		<td>equinix.fabric.time_service.state.cancelled</td>
 		<td>Time Service is cancelled</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.configuring</td>
 		<td>Time Service is configuring</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.configuring_failed</td>
 		<td>Time Service is configuring failed</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.deprovisioned</td>
 		<td>Time Service is deprovisioned</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.deprovisioning</td>
 		<td>Time Service is deprovisioning</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.deprovisioning_failed</td>
 		<td>Time Service is deprovisioning failed</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.draft</td>
 		<td>Time Service is in draft state</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.provisioned</td>
 		<td>Time Service is provisioned</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.provisioning</td>
 		<td>Time Service is provisioning</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.provisioning_failed</td>
 		<td>Time Service is provisioning failed</td>
 		<td>In Preview</td>
-	<td>-</td>
+	<td><a href='#resource_change_event_slo'> RESOURCE_CHANGE_EVENT_SLO</a></td>
 	</tr>
 </table>
 

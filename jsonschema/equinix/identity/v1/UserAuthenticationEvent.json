@@ -25,13 +25,13 @@
         {
             "name": "equinix.identity.user.activity.logged_in",
             "description": "User loggedIn event",
-            "sloCategoryCode": "",
+            "sloCategoryCode": "RESOURCE_CHANGE_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.identity.user.activity.logged_out",
             "description": "User loggedOut event",
-            "sloCategoryCode": "",
+            "sloCategoryCode": "RESOURCE_CHANGE_EVENT_SLO",
             "releaseStatus": "released"
         }
     ],
