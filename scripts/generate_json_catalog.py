@@ -7,28 +7,21 @@ def main():
     write_json_schemas_to_catalog_file(json_schemas)
 
 def sortedRemoveDuplicates(listOfDict):
-    return sorted({d["name"]: d for d in listOfDict}.values(), key=lambda x: x["name"])
+    filtered_List = [d for d in listOfDict if isinstance(d, dict) and "name" in d]
+    
+    return sorted({d["name"]: d for d in filtered_List}.values(), key=lambda x: x["name"])
 
 def retrieve_json_schemas():
     directory = os.path.dirname(os.path.abspath(__file__)) + '/../jsonschema'
     json_schemas = []
     for root, dirs, files in os.walk(directory):
         for file in files:
-            if file.endswith('.json') and file != "catalog.json":
+            if file.endswith('.json') and os.path.basename(root) != "jsonschema":
                 with open(root + "/" + file, "r") as eventFile:
                     data = json.load(eventFile)
-                    events = {
-                        sc.RELEASED: sortedRemoveDuplicates(data[sc.EVENTS][sc.RELEASED]),
-                        sc.PREVIEW: sortedRemoveDuplicates(data[sc.EVENTS][sc.PREVIEW])
-                    }
-                    metrics = {
-                        sc.RELEASED: sortedRemoveDuplicates(data[sc.METRICS][sc.RELEASED]),
-                        sc.PREVIEW: sortedRemoveDuplicates(data[sc.METRICS][sc.PREVIEW])
-                    }
-                    alerts = {
-                        sc.RELEASED: sortedRemoveDuplicates(data[sc.ALERTS][sc.RELEASED]),
-                        sc.PREVIEW: sortedRemoveDuplicates(data[sc.ALERTS][sc.PREVIEW])
-                    }
+                    events = sortedRemoveDuplicates(data.get(sc.EVENTS, []))
+                    metrics = sortedRemoveDuplicates(data.get(sc.METRICS, []))
+                    alerts = sortedRemoveDuplicates(data.get(sc.ALERTS, []))
                     newItem = {
                         "url": data["$id"],
                         "domain": data["domain"],
