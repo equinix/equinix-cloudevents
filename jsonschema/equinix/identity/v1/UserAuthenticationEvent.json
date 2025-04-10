@@ -25,13 +25,13 @@
         {
             "name": "equinix.identity.user.activity.logged_in",
             "description": "User loggedIn event",
-            "sloCategoryCode": "GREEN_EVENT_SLO",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.identity.user.activity.logged_out",
             "description": "User loggedOut event",
-            "sloCategoryCode": "GREEN_EVENT_SLO",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         }
     ],

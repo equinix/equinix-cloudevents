@@ -4,14 +4,14 @@ import script_constants as sc
 import re
 
 def get_colored_text(text):
-    color = 'black'
-    if 'GREEN' in text:
-        color = 'green'
-    elif 'YELLOW' in text:
-        color = 'orange'  
-    elif 'RED' in text:
-        color = 'red'
-    return f"<span style='color:{color}'>{text}</span>"
+    font_color = 'black'
+    if 'PURPLE' in text:
+        font_color = 'purple'
+    elif 'BROWN' in text:
+        font_color = 'brown'  
+    elif 'BLUE' in text:
+        font_color = 'blue'
+    return f"<span style='color:{font_color}'>{text}</span>"
 def createTable(type, supported):
     if not supported:
         return ""
@@ -98,6 +98,9 @@ def replace_readme_catalog():
         slo_start = "<!-- SLO_CATEGORY -->"
         slo_end = "<!-- SLO_CATEGORY_END -->"
         slo_pattern = rf"{slo_start}.*?{slo_end}"
+
+        # def slo_replacement(match):
+        #     return f"{slo_start}\n{slo_table_content}\n{slo_end}"
         
         if re.search(slo_pattern, content, flags=re.DOTALL):
                 updated_content = re.sub(slo_pattern, f"{slo_start}\n{slo_table_content}\n{slo_end}",

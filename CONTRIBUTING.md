@@ -69,7 +69,7 @@ Each SLO category entry should include following attributes:
 ...
 {
     "category": "Datapath Metric SLO",
-    "code": "RED_METRIC_SLO",
+    "code": "PURPLE_METRIC_SLO",
     "reportingInterval": "PT300S",
     "reportingLatencyMax": "PT720S",
     "streamingLatencyMax": "PT60S",

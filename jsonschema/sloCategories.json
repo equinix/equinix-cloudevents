@@ -1,7 +1,7 @@
 {
     "eventsSLO": [
         {
-            "category_code": "RED_EVENT_SLO",
+            "category_code": "PURPLE_EVENT_SLO",
             "reportingInterval": "",
             "reportingLatencyMax": "PT480S",
             "streamLatencyMax": "PT60S",
@@ -10,7 +10,7 @@
             "1DAggregationRetention": ""
         },
         {
-            "category_code": "YELLOW_EVENT_SLO",
+            "category_code": "BROWN_EVENT_SLO",
             "reportingInterval": "",
             "reportingLatencyMax": "PT3S",
             "streamLatencyMax": "PT60S",
@@ -19,7 +19,7 @@
             "1DAggregationRetention": ""
         },
         {
-            "category_code": "GREEN_EVENT_SLO",
+            "category_code": "BLUE_EVENT_SLO",
             "reportingInterval": "",
             "reportingLatencyMax": "PT1S",
             "streamLatencyMax": "PT60S",
@@ -30,7 +30,7 @@
     ],
     "metricsSLO": [
         {
-            "category_code": "RED_METRIC_SLO",
+            "category_code": "PURPLE_METRIC_SLO",
             "reportingInterval": "PT300S",
             "reportingLatencyMax": "PT720S",
             "streamLatencyMax": "PT60S",
@@ -39,7 +39,7 @@
             "1DAggregationRetention": "PT1095D"
         },
         {
-            "category_code": "YELLOW_METRIC_SLO",
+            "category_code": "BROWN_METRIC_SLO",
             "reportingInterval": "PT300S",
             "reportingLatencyMax": "PT390S",
             "streamLatencyMax": "PT60S",
@@ -48,7 +48,7 @@
             "1DAggregationRetention": "PT1095D"
         },
         {
-            "category_code": "GREEN_METRIC_SLO",
+            "category_code": "BLUE_METRIC_SLO",
             "reportingInterval": "PT300S",
             "reportingLatencyMax": "PT1S",
             "streamLatencyMax": "PT60S",
@@ -59,7 +59,7 @@
     ],
     "alertsSLO": [
         {
-            "category_code": "GREEN_ALERT_SLO",
+            "category_code": "BLUE_ALERT_SLO",
             "reportingInterval": "",
             "reportingLatencyMax": "PT1S",
             "streamLatencyMax": "PT60S",
