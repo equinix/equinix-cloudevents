@@ -8,27 +8,22 @@
             "name": "RoleAssignmentEvent",
             "description": "The data within all RoleAssignmentEvent events.",
             "datatype": "equinix.access_manager.v1.RoleAssignmentEvent",
-            "cloudeventTypes": {
-                "released": [
-                    {
-                        "name": "equinix.access_manager.user.role.added",
-                        "description": "Role assignment event"
-                    },
-                    {
-                        "name": "equinix.access_manager.user.role.removed",
-                        "description": "Role unassignment event"
-                    }
-                ],
-                "preview": []
-            },
-            "metricNames": {
-                "released": [],
-                "preview": []
-            },
-            "alertNames": {
-                "released": [],
-                "preview": []
-            }
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.access_manager.user.role.added",
+                    "description": "Role assignment event",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.access_manager.user.role.removed",
+                    "description": "Role unassignment event",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
         },
         {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeEvent.json",
@@ -36,480 +31,700 @@
             "name": "ChangeEvent",
             "description": "The data within all ChangeEvent events.",
             "datatype": "equinix.fabric.v1.ChangeEvent",
-            "cloudeventTypes": {
-                "released": [
-                    {
-                        "name": "equinix.fabric.connection.attribute.changed",
-                        "description": "Connection named ${connection_name} attributes are changed"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.bgpipv4_session_status.active",
-                        "description": "Neighbor ${IP} address session state changed to Active"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.bgpipv4_session_status.connect",
-                        "description": "Neighbor ${IP} address session state changed to Connect"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.bgpipv4_session_status.established",
-                        "description": "Neighbor ${IP} address session state changed to Established"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.bgpipv4_session_status.idle",
-                        "description": "Neighbor ${IP} address session state changed to Idle"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
-                        "description": "Neighbor ${IP} address session state changed to Open_confirm"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.bgpipv4_session_status.open_sent",
-                        "description": "Neighbor ${IP} address session state changed to Open_sent"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.bgpipv6_session_status.active",
-                        "description": "Neighbor ${IP} address session state changed to Active"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.bgpipv6_session_status.connect",
-                        "description": "Neighbor ${IP} address session state changed to Connect"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.bgpipv6_session_status.established",
-                        "description": "Neighbor ${IP} address session state changed to Established"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.bgpipv6_session_status.idle",
-                        "description": "Neighbor ${IP} address session state changed to Idle"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.bgpipv6_session_status.open_confirm",
-                        "description": "Neighbor ${IP} address session state changed to Open_confirm"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.bgpipv6_session_status.open_sent",
-                        "description": "Neighbor ${IP} address session state changed to open_sent"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.state.deprovisioned",
-                        "description": "Connection named ${connection_name} state changed to deprovisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.state.deprovisioning",
-                        "description": "Connection named ${connection_name} state changed to deprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.state.pending",
-                        "description": "Connection named ${connection_name} state changed to pending"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.state.provisioned",
-                        "description": "Connection named ${connection_name} state changed to provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.state.provisioning",
-                        "description": "Connection named ${connection_name} state changed to provisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.status.down",
-                        "description": "Connection '${connection_name}' status changed to DOWN"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.status.up",
-                        "description": "Connection '${connection_name}' status changed to UP"
-                    },
-                    {
-                        "name": "equinix.fabric.internet_access.attribute.changed",
-                        "description": "Internet access service changed"
-                    },
-                    {
-                        "name": "equinix.fabric.internet_access.attribute.changing",
-                        "description": "Internet access service changing"
-                    },
-                    {
-                        "name": "equinix.fabric.internet_access.attribute.failed",
-                        "description": "Internet access service changed failed"
-                    },
-                    {
-                        "name": "equinix.fabric.internet_access.state.deprovisioned",
-                        "description": "Internet access service de-provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.internet_access.state.deprovisioning",
-                        "description": "Internet access service de-provisioning started"
-                    },
-                    {
-                        "name": "equinix.fabric.internet_access.state.failed",
-                        "description": "Internet access service provisioning or de-provisioning failed"
-                    },
-                    {
-                        "name": "equinix.fabric.internet_access.state.provisioned",
-                        "description": "Internet access service provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.internet_access.state.provisioning",
-                        "description": "Internet access service provisioning started"
-                    },
-                    {
-                        "name": "equinix.fabric.network.attribute.changed",
-                        "description": "network named ${network_name} attribute changed"
-                    },
-                    {
-                        "name": "equinix.fabric.network.state.deprovisioned",
-                        "description": "Network named ${network_name} state changed to deprovisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.network.state.deprovisioning",
-                        "description": "Network named ${network_name} state changed to deprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.network.state.provisioned",
-                        "description": "Network named ${network_name} state changed to provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.network.state.provisioning",
-                        "description": "Network named ${network_name} state changed to provisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.port.state.deprovisioned",
-                        "description": "Virtual port named ${port_name} state changed to deprovisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.port.state.deprovisioning",
-                        "description": "Virtual port named ${port_name} state changed to deprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.port.state.failed",
-                        "description": "Virtual port named ${port_name} state changed to failed"
-                    },
-                    {
-                        "name": "equinix.fabric.port.state.provisioned",
-                        "description": "Virtual port named ${port_name} state changed to provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.port.state.provisioning",
-                        "description": "Virtual port named ${port_name} state changed to provisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.port.status.down",
-                        "description": "Virtual|Physical port '${port_name}' status changed to DOWN"
-                    },
-                    {
-                        "name": "equinix.fabric.port.status.inactive",
-                        "description": "Virtual|Physical port '${port_name}' status changed to INACTIVE"
-                    },
-                    {
-                        "name": "equinix.fabric.port.status.up",
-                        "description": "Virtual|Physical port '${port_name}' status changed to UP"
-                    },
-                    {
-                        "name": "equinix.fabric.router.attribute.changed",
-                        "description": "Router named ${router_name} attribute changed"
-                    },
-                    {
-                        "name": "equinix.fabric.router.state.deprovisioned",
-                        "description": "Router named ${router_name} successfully deprovisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.router.state.deprovisioning",
-                        "description": "Router named ${router_name} state changed to deprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.router.state.failed",
-                        "description": "Router named ${router_name} state changed to failed"
-                    },
-                    {
-                        "name": "equinix.fabric.router.state.not_deprovisioned",
-                        "description": "Router named ${router_name} state changed to not_deprovisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.router.state.not_provisioned",
-                        "description": "Router named ${router_name} state changed to not_provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.router.state.provisioned",
-                        "description": "Router named ${router_name} successfully provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.router.state.provisioning",
-                        "description": "Router named ${router_name} state changed to provisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.router.state.reprovisioning",
-                        "description": "Router named ${router_name} state changed to reprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.service_token.attribute.changed",
-                        "description": "Token successfully updated"
-                    },
-                    {
-                        "name": "equinix.fabric.service_token.resend_email_notification.failed",
-                        "description": "Token resend email notification failed"
-                    },
-                    {
-                        "name": "equinix.fabric.service_token.resend_email_notification.succeeded",
-                        "description": "Token resend email notification succeeded"
-                    },
-                    {
-                        "name": "equinix.fabric.service_token.state.active",
-                        "description": "Token successfully activated"
-                    },
-                    {
-                        "name": "equinix.fabric.service_token.state.deleted",
-                        "description": "Token successfully deleted"
-                    },
-                    {
-                        "name": "equinix.fabric.service_token.state.expired",
-                        "description": "Token expired"
-                    },
-                    {
-                        "name": "equinix.fabric.service_token.state.inactive",
-                        "description": "Token successfully deactivated"
-                    }
-                ],
-                "preview": [
-                    {
-                        "name": "equinix.fabric.connection.route_aggregation.attached",
-                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attached"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_aggregation.attaching",
-                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attaching"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_aggregation.detached",
-                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detached"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_aggregation.detaching",
-                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detaching"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_aggregation.failed",
-                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to failed"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_aggregation.pending_bgp_configuration",
-                        "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to pending_bgp_configuration"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_filter.attached",
-                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to attached"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_filter.attaching",
-                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to attaching"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_filter.detached",
-                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to detached"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_filter.detaching",
-                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to detaching"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_filter.failed",
-                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to failed"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.route_filter.pending_bgp_configuration",
-                        "description": "Connection Route Filter named ${route_filter_rule_name} state changed to pending_bgp_configuration"
-                    },
-                    {
-                        "name": "equinix.fabric.connection_routing_protocol.state.deprovisioned",
-                        "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.connection_routing_protocol.state.deprovisioning",
-                        "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.connection_routing_protocol.state.failed",
-                        "description": "Routing Protocol named ${routing_protocol_name} state changed to failed"
-                    },
-                    {
-                        "name": "equinix.fabric.connection_routing_protocol.state.provisioned",
-                        "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.connection_routing_protocol.state.provisioning",
-                        "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.connection_routing_protocol.state.reprovisioning",
-                        "description": "Routing Protocol named ${routing_protocol_name} state changed to reprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.route_aggregation.attribute.changed",
-                        "description": "Route Aggregation named ${route_aggregation_name} attribute changed"
-                    },
-                    {
-                        "name": "equinix.fabric.route_aggregation.state.deprovisioned",
-                        "description": "Route Aggregation named ${route_aggregation_name} state changed to deprovisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.route_aggregation.state.deprovisioning",
-                        "description": "Route Aggregation named ${route_aggregation_name} state changed to deprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.route_aggregation.state.not_deprovisioned",
-                        "description": "Route Aggregation named ${route_aggregation_name} state changed to not_deprovisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.route_aggregation.state.not_provisioned",
-                        "description": "Route Aggregation named ${route_aggregation_name} state changed to not_provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.route_aggregation.state.provisioned",
-                        "description": "Route Aggregation named ${route_aggregation_name} state changed to provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.route_aggregation.state.provisioning",
-                        "description": "Route Aggregation named ${route_aggregation_name} state changed to provisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.route_aggregation.state.reprovisioning",
-                        "description": "Route Aggregation named ${route_aggregation_name} state changed to reprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.route_aggregation_rule.attribute.changed",
-                        "description": "Route Aggregation Rule named ${route_aggregation_rule_name} attribute changed"
-                    },
-                    {
-                        "name": "equinix.fabric.route_aggregation_rule.state.deprovisioned",
-                        "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to deprovisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.route_aggregation_rule.state.deprovisioning",
-                        "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to deprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.route_aggregation_rule.state.failed",
-                        "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to failed"
-                    },
-                    {
-                        "name": "equinix.fabric.route_aggregation_rule.state.provisioned",
-                        "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.route_aggregation_rule.state.provisioning",
-                        "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to provisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.route_aggregation_rule.state.reprovisioning",
-                        "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to reprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.route_filter.attribute.changed",
-                        "description": "Route Filter named ${route_filter_name} attribute changed"
-                    },
-                    {
-                        "name": "equinix.fabric.route_filter.state.deprovisioned",
-                        "description": "Route Filter named ${route_filter_name} state changed to deprovisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.route_filter.state.deprovisioning",
-                        "description": "Route Filter named ${route_filter_name} state changed to deprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.route_filter.state.not_deprovisioned",
-                        "description": "Route Filter named ${route_filter_name} state changed to not_deprovisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.route_filter.state.not_provisioned",
-                        "description": "Route Filter named ${route_filter_name} state changed to not_provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.route_filter.state.provisioned",
-                        "description": "Route Filter named ${route_filter_name} state changed to provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.route_filter.state.provisioning",
-                        "description": "Route Filter named ${route_filter_name} state changed to provisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.route_filter.state.reprovisioning",
-                        "description": "Route Filter named ${route_filter_name} state changed to reprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.route_filter_rule.attribute.changed",
-                        "description": "Route Filter Rule named ${route_filter_rule_name} attribute changed"
-                    },
-                    {
-                        "name": "equinix.fabric.route_filter_rule.state.deprovisioned",
-                        "description": "Route Filter Rule named ${route_filter_rule_name} state changed to deprovisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.route_filter_rule.state.deprovisioning",
-                        "description": "Route Filter Rule named ${route_filter_rule_name} state changed to deprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.route_filter_rule.state.failed",
-                        "description": "Route Filter Rule named ${route_filter_rule_name} state changed to failed"
-                    },
-                    {
-                        "name": "equinix.fabric.route_filter_rule.state.provisioned",
-                        "description": "Route Filter Rule named ${route_filter_rule_name} state changed to provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.route_filter_rule.state.provisioning",
-                        "description": "Route Filter Rule named ${route_filter_rule_name} state changed to provisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.route_filter_rule.state.reprovisioning",
-                        "description": "Route Filter Rule named ${route_filter_rule_name} state changed to reprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.router_action.state.failed",
-                        "description": "Router Action state changed to failed"
-                    },
-                    {
-                        "name": "equinix.fabric.router_action.state.pending",
-                        "description": "Router Action state changed to pending"
-                    },
-                    {
-                        "name": "equinix.fabric.router_action.state.succeeded",
-                        "description": "Router Action state changed to succeeded"
-                    },
-                    {
-                        "name": "equinix.fabric.router_command.state.deleted",
-                        "description": "Router Command state changed to deleted"
-                    },
-                    {
-                        "name": "equinix.fabric.router_command.state.failed",
-                        "description": "Router Command state changed to failed"
-                    },
-                    {
-                        "name": "equinix.fabric.router_command.state.pending",
-                        "description": "Router Command state changed to pending"
-                    },
-                    {
-                        "name": "equinix.fabric.router_command.state.succeeded",
-                        "description": "Router Command state changed to succeeded"
-                    },
-                    {
-                        "name": "equinix.fabric.routing_protocol_action.state.failed",
-                        "description": "Routing Protocol Action state changed to failed"
-                    },
-                    {
-                        "name": "equinix.fabric.routing_protocol_action.state.pending",
-                        "description": "Routing Protocol Action state changed to pending"
-                    },
-                    {
-                        "name": "equinix.fabric.routing_protocol_action.state.succeeded",
-                        "description": "Routing Protocol Action state changed to succeeded"
-                    }
-                ]
-            },
-            "metricNames": {
-                "released": [],
-                "preview": []
-            },
-            "alertNames": {
-                "released": [],
-                "preview": []
-            }
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.connection.attribute.changed",
+                    "description": "Connection named ${connection_name} attributes are changed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bgpipv4_session_status.active",
+                    "description": "Neighbor ${IP} address session state changed to Active",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bgpipv4_session_status.connect",
+                    "description": "Neighbor ${IP} address session state changed to Connect",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bgpipv4_session_status.established",
+                    "description": "Neighbor ${IP} address session state changed to Established",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bgpipv4_session_status.idle",
+                    "description": "Neighbor ${IP} address session state changed to Idle",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
+                    "description": "Neighbor ${IP} address session state changed to Open_confirm",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bgpipv4_session_status.open_sent",
+                    "description": "Neighbor ${IP} address session state changed to Open_sent",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bgpipv6_session_status.active",
+                    "description": "Neighbor ${IP} address session state changed to Active",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bgpipv6_session_status.connect",
+                    "description": "Neighbor ${IP} address session state changed to Connect",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bgpipv6_session_status.established",
+                    "description": "Neighbor ${IP} address session state changed to Established",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bgpipv6_session_status.idle",
+                    "description": "Neighbor ${IP} address session state changed to Idle",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bgpipv6_session_status.open_confirm",
+                    "description": "Neighbor ${IP} address session state changed to Open_confirm",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bgpipv6_session_status.open_sent",
+                    "description": "Neighbor ${IP} address session state changed to open_sent",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.route_aggregation.attached",
+                    "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attached",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.route_aggregation.attaching",
+                    "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attaching",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.route_aggregation.detached",
+                    "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detached",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.route_aggregation.detaching",
+                    "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detaching",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.route_aggregation.failed",
+                    "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.route_aggregation.pending_bgp_configuration",
+                    "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to pending_bgp_configuration",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.route_filter.attached",
+                    "description": "Connection Route Filter named ${route_filter_rule_name} state changed to attached",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.route_filter.attaching",
+                    "description": "Connection Route Filter named ${route_filter_rule_name} state changed to attaching",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.route_filter.detached",
+                    "description": "Connection Route Filter named ${route_filter_rule_name} state changed to detached",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.route_filter.detaching",
+                    "description": "Connection Route Filter named ${route_filter_rule_name} state changed to detaching",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.route_filter.failed",
+                    "description": "Connection Route Filter named ${route_filter_rule_name} state changed to failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.route_filter.pending_bgp_configuration",
+                    "description": "Connection Route Filter named ${route_filter_rule_name} state changed to pending_bgp_configuration",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.state.deprovisioned",
+                    "description": "Connection named ${connection_name} state changed to deprovisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.state.deprovisioning",
+                    "description": "Connection named ${connection_name} state changed to deprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.state.pending",
+                    "description": "Connection named ${connection_name} state changed to pending",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.state.provisioned",
+                    "description": "Connection named ${connection_name} state changed to provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.state.provisioning",
+                    "description": "Connection named ${connection_name} state changed to provisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.status.down",
+                    "description": "Connection '${connection_name}' status changed to DOWN",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.status.up",
+                    "description": "Connection '${connection_name}' status changed to UP",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection_routing_protocol.state.deprovisioned",
+                    "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection_routing_protocol.state.deprovisioning",
+                    "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection_routing_protocol.state.failed",
+                    "description": "Routing Protocol named ${routing_protocol_name} state changed to failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection_routing_protocol.state.provisioned",
+                    "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection_routing_protocol.state.provisioning",
+                    "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection_routing_protocol.state.reprovisioning",
+                    "description": "Routing Protocol named ${routing_protocol_name} state changed to reprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_access.attribute.changed",
+                    "description": "Internet access service changed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.internet_access.attribute.changing",
+                    "description": "Internet access service changing",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.internet_access.attribute.failed",
+                    "description": "Internet access service changed failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.internet_access.state.deprovisioned",
+                    "description": "Internet access service de-provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.internet_access.state.deprovisioning",
+                    "description": "Internet access service de-provisioning started",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.internet_access.state.failed",
+                    "description": "Internet access service provisioning or de-provisioning failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.internet_access.state.provisioned",
+                    "description": "Internet access service provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.internet_access.state.provisioning",
+                    "description": "Internet access service provisioning started",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.network.attribute.changed",
+                    "description": "network named ${network_name} attribute changed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.network.state.deprovisioned",
+                    "description": "Network named ${network_name} state changed to deprovisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.network.state.deprovisioning",
+                    "description": "Network named ${network_name} state changed to deprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.network.state.provisioned",
+                    "description": "Network named ${network_name} state changed to provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.network.state.provisioning",
+                    "description": "Network named ${network_name} state changed to provisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.state.deprovisioned",
+                    "description": "Virtual port named ${port_name} state changed to deprovisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.state.deprovisioning",
+                    "description": "Virtual port named ${port_name} state changed to deprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.state.failed",
+                    "description": "Virtual port named ${port_name} state changed to failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.state.provisioned",
+                    "description": "Virtual port named ${port_name} state changed to provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.state.provisioning",
+                    "description": "Virtual port named ${port_name} state changed to provisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.status.down",
+                    "description": "Virtual|Physical port '${port_name}' status changed to DOWN",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.status.inactive",
+                    "description": "Virtual|Physical port '${port_name}' status changed to INACTIVE",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.status.up",
+                    "description": "Virtual|Physical port '${port_name}' status changed to UP",
+                    "sloCategoryCode": "RED_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.route_aggregation.attribute.changed",
+                    "description": "Route Aggregation named ${route_aggregation_name} attribute changed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_aggregation.state.deprovisioned",
+                    "description": "Route Aggregation named ${route_aggregation_name} state changed to deprovisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_aggregation.state.deprovisioning",
+                    "description": "Route Aggregation named ${route_aggregation_name} state changed to deprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_aggregation.state.not_deprovisioned",
+                    "description": "Route Aggregation named ${route_aggregation_name} state changed to not_deprovisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_aggregation.state.not_provisioned",
+                    "description": "Route Aggregation named ${route_aggregation_name} state changed to not_provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_aggregation.state.provisioned",
+                    "description": "Route Aggregation named ${route_aggregation_name} state changed to provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_aggregation.state.provisioning",
+                    "description": "Route Aggregation named ${route_aggregation_name} state changed to provisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_aggregation.state.reprovisioning",
+                    "description": "Route Aggregation named ${route_aggregation_name} state changed to reprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_aggregation_rule.attribute.changed",
+                    "description": "Route Aggregation Rule named ${route_aggregation_rule_name} attribute changed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_aggregation_rule.state.deprovisioned",
+                    "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to deprovisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_aggregation_rule.state.deprovisioning",
+                    "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to deprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_aggregation_rule.state.failed",
+                    "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_aggregation_rule.state.provisioned",
+                    "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_aggregation_rule.state.provisioning",
+                    "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to provisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_aggregation_rule.state.reprovisioning",
+                    "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to reprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_filter.attribute.changed",
+                    "description": "Route Filter named ${route_filter_name} attribute changed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_filter.state.deprovisioned",
+                    "description": "Route Filter named ${route_filter_name} state changed to deprovisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_filter.state.deprovisioning",
+                    "description": "Route Filter named ${route_filter_name} state changed to deprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_filter.state.not_deprovisioned",
+                    "description": "Route Filter named ${route_filter_name} state changed to not_deprovisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_filter.state.not_provisioned",
+                    "description": "Route Filter named ${route_filter_name} state changed to not_provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_filter.state.provisioned",
+                    "description": "Route Filter named ${route_filter_name} state changed to provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_filter.state.provisioning",
+                    "description": "Route Filter named ${route_filter_name} state changed to provisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_filter.state.reprovisioning",
+                    "description": "Route Filter named ${route_filter_name} state changed to reprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_filter_rule.attribute.changed",
+                    "description": "Route Filter Rule named ${route_filter_rule_name} attribute changed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_filter_rule.state.deprovisioned",
+                    "description": "Route Filter Rule named ${route_filter_rule_name} state changed to deprovisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_filter_rule.state.deprovisioning",
+                    "description": "Route Filter Rule named ${route_filter_rule_name} state changed to deprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_filter_rule.state.failed",
+                    "description": "Route Filter Rule named ${route_filter_rule_name} state changed to failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_filter_rule.state.provisioned",
+                    "description": "Route Filter Rule named ${route_filter_rule_name} state changed to provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_filter_rule.state.provisioning",
+                    "description": "Route Filter Rule named ${route_filter_rule_name} state changed to provisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.route_filter_rule.state.reprovisioning",
+                    "description": "Route Filter Rule named ${route_filter_rule_name} state changed to reprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.router.attribute.changed",
+                    "description": "Router named ${router_name} attribute changed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.router.state.deprovisioned",
+                    "description": "Router named ${router_name} successfully deprovisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.router.state.deprovisioning",
+                    "description": "Router named ${router_name} state changed to deprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.router.state.failed",
+                    "description": "Router named ${router_name} state changed to failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.router.state.not_deprovisioned",
+                    "description": "Router named ${router_name} state changed to not_deprovisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.router.state.not_provisioned",
+                    "description": "Router named ${router_name} state changed to not_provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.router.state.provisioned",
+                    "description": "Router named ${router_name} successfully provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.router.state.provisioning",
+                    "description": "Router named ${router_name} state changed to provisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.router.state.reprovisioning",
+                    "description": "Router named ${router_name} state changed to reprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.router_action.state.failed",
+                    "description": "Router Action state changed to failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.router_action.state.pending",
+                    "description": "Router Action state changed to pending",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.router_action.state.succeeded",
+                    "description": "Router Action state changed to succeeded",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.router_command.state.deleted",
+                    "description": "Router Command state changed to deleted",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.router_command.state.failed",
+                    "description": "Router Command state changed to failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.router_command.state.pending",
+                    "description": "Router Command state changed to pending",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.router_command.state.succeeded",
+                    "description": "Router Command state changed to succeeded",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.routing_protocol_action.state.failed",
+                    "description": "Routing Protocol Action state changed to failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.routing_protocol_action.state.pending",
+                    "description": "Routing Protocol Action state changed to pending",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.routing_protocol_action.state.succeeded",
+                    "description": "Routing Protocol Action state changed to succeeded",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.service_token.attribute.changed",
+                    "description": "Token successfully updated",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_token.resend_email_notification.failed",
+                    "description": "Token resend email notification failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_token.resend_email_notification.succeeded",
+                    "description": "Token resend email notification succeeded",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_token.state.active",
+                    "description": "Token successfully activated",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_token.state.deleted",
+                    "description": "Token successfully deleted",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_token.state.expired",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "description": "Token expired",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_token.state.inactive",
+                    "description": "Token successfully deactivated",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
         },
         {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricAlert.json",
@@ -517,84 +732,106 @@
             "name": "MetricAlert",
             "description": "The data within all MetricAlert events.",
             "datatype": "equinix.fabric.v1.MetricAlert",
-            "cloudeventTypes": {
-                "released": [
-                    {
-                        "name": "equinix.fabric.connection.installed_routes_ipv4.utilization",
-                        "description": "Utilization of connection '${connection_name}' active IPv4 routes reached ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.installed_routes_ipv6.utilization",
-                        "description": "Utilization of connection '${connection_name}' active IPv6 routes reached ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
-                        "description": "Connection A side inbound dropped packets count above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
-                        "description": "Connection Z side inbound dropped packets count above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
-                        "description": "Connection A side outbound dropped packets count above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
-                        "description": "Connection Z side outbound dropped packets count above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.router.installed_routes_ipv4.utilization",
-                        "description": "Utilization of router '${router_name}' total IPv4 routes reached ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.router.installed_routes_ipv6.utilization",
-                        "description": "Utilization of router '${router_name}' total IPv6 routes reached ${threshold}"
-                    }
-                ],
-                "preview": [
-                    {
-                        "name": "equinix.fabric.connection.bandwidth_rx.usage",
-                        "description": "Connection inbound bandwidth usage above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.bandwidth_tx.usage",
-                        "description": "Connection outbound bandwidth usage above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.port.bandwidth_rx.usage",
-                        "description": "Port inbound bandwidth usage above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.port.bandwidth_tx.usage",
-                        "description": "Port outbound bandwidth usage above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_dropped_rx.count",
-                        "description": "Port inbound dropped packets count above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_dropped_tx.count",
-                        "description": "Port outbound dropped packets count above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_erred_rx.count",
-                        "description": "Port inbound erred packets count above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_erred_tx.count",
-                        "description": "Port outbound erred packets count above ${threshold}"
-                    }
-                ]
-            },
-            "metricNames": {
-                "released": [],
-                "preview": []
-            },
-            "alertNames": {
-                "released": [],
-                "preview": []
-            }
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.connection.bandwidth_rx.usage",
+                    "description": "Connection inbound bandwidth usage above ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.bandwidth_tx.usage",
+                    "description": "Connection outbound bandwidth usage above ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.installed_routes_ipv4.utilization",
+                    "description": "Utilization of connection '${connection_name}' active IPv4 routes reached ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.installed_routes_ipv6.utilization",
+                    "description": "Utilization of connection '${connection_name}' active IPv6 routes reached ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
+                    "description": "Connection A side inbound dropped packets count above ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
+                    "description": "Connection Z side inbound dropped packets count above ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
+                    "description": "Connection A side outbound dropped packets count above ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
+                    "description": "Connection Z side outbound dropped packets count above ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.bandwidth_rx.usage",
+                    "description": "Port inbound bandwidth usage above ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.port.bandwidth_tx.usage",
+                    "description": "Port outbound bandwidth usage above ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.port.packets_dropped_rx.count",
+                    "description": "Port inbound dropped packets count above ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.port.packets_dropped_tx.count",
+                    "description": "Port outbound dropped packets count above ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.port.packets_erred_rx.count",
+                    "description": "Port inbound erred packets count above ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.port.packets_erred_tx.count",
+                    "description": "Port outbound erred packets count above ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.router.installed_routes_ipv4.utilization",
+                    "description": "Utilization of router '${router_name}' total IPv4 routes reached ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.router.installed_routes_ipv6.utilization",
+                    "description": "Utilization of router '${router_name}' total IPv6 routes reached ${threshold}",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
         },
         {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricEvent.json",
@@ -602,72 +839,90 @@
             "name": "MetricEvent",
             "description": "The data within all MetricEvent events.",
             "datatype": "equinix.fabric.v1.MetricEvent",
-            "cloudeventTypes": {
-                "released": [
-                    {
-                        "name": "equinix.fabric.metric",
-                        "description": ""
-                    }
-                ],
-                "preview": []
-            },
-            "metricNames": {
-                "released": [
-                    {
-                        "name": "equinix.fabric.connection.bandwidth_rx.usage",
-                        "description": "Connection inbound bandwidth usage in bit/sec"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.bandwidth_tx.usage",
-                        "description": "Connection outbound bandwidth usage in bit/sec"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
-                        "description": "Connection A side inbound dropped packets count"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
-                        "description": "Connection Z side inbound dropped packets count"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
-                        "description": "Connection A side outbound dropped packets count"
-                    },
-                    {
-                        "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
-                        "description": "Connection Z side outbound dropped packets count"
-                    },
-                    {
-                        "name": "equinix.fabric.port.bandwidth_rx.usage",
-                        "description": "Port inbound bandwidth usage in bit/sec"
-                    },
-                    {
-                        "name": "equinix.fabric.port.bandwidth_tx.usage",
-                        "description": "Port outbound bandwidth usage in bit/sec"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_dropped_rx.count",
-                        "description": "Port inbound dropped packets count"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_dropped_tx.count",
-                        "description": "Port outbound dropped packets count"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_erred_rx.count",
-                        "description": "Port inbound erred packets count"
-                    },
-                    {
-                        "name": "equinix.fabric.port.packets_erred_tx.count",
-                        "description": "Port outbound erred packets count"
-                    }
-                ],
-                "preview": []
-            },
-            "alertNames": {
-                "released": [],
-                "preview": []
-            }
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.metric",
+                    "description": "",
+                    "sloCategoryCode": "",
+                    "inPreview": false,
+                    "isReleased": true
+                }
+            ],
+            "metricNames": [
+                {
+                    "name": "equinix.fabric.connection.bandwidth_rx.usage",
+                    "description": "Connection inbound bandwidth usage in bit/sec",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bandwidth_tx.usage",
+                    "description": "Connection outbound bandwidth usage in bit/sec",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
+                    "description": "Connection A side inbound dropped packets count",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
+                    "description": "Connection Z side inbound dropped packets count",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
+                    "description": "Connection A side outbound dropped packets count",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
+                    "description": "Connection Z side outbound dropped packets count",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.bandwidth_rx.usage",
+                    "description": "Port inbound bandwidth usage in bit/sec",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.bandwidth_tx.usage",
+                    "description": "Port outbound bandwidth usage in bit/sec",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.packets_dropped_rx.count",
+                    "description": "Port inbound dropped packets count",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.packets_dropped_tx.count",
+                    "description": "Port outbound dropped packets count",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.packets_erred_rx.count",
+                    "description": "Port inbound erred packets count",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.packets_erred_tx.count",
+                    "description": "Port outbound erred packets count",
+                    "sloCategoryCode": "RED_METRIC_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
+            "alertNames": []
         },
         {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetroLatencyAlert.json",
@@ -675,267 +930,382 @@
             "name": "MetroLatencyAlert",
             "description": "The data within all MetricAlert events.",
             "datatype": "equinix.fabric.v1.MetroLatencyAlert",
-            "cloudeventTypes": {
-                "released": [],
-                "preview": [
-                    {
-                        "name": "equinix.fabric.metro.am_{metroCode}.latency",
-                        "description": "Metro latency from AM to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.at_{metroCode}.latency",
-                        "description": "Metro latency from AT to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ba_{metroCode}.latency",
-                        "description": "Metro latency from BA to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.bg_{metroCode}.latency",
-                        "description": "Metro latency from BG to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.bl_{metroCode}.latency",
-                        "description": "Metro latency from BL to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.bo_{metroCode}.latency",
-                        "description": "Metro latency from BO to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.bx_{metroCode}.latency",
-                        "description": "Metro latency from BX to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ca_{metroCode}.latency",
-                        "description": "Metro latency from CA to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ch_{metroCode}.latency",
-                        "description": "Metro latency from CH to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.cl_{metroCode}.latency",
-                        "description": "Metro latency from CL to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.cu_{metroCode}.latency",
-                        "description": "Metro latency from CU to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.da_{metroCode}.latency",
-                        "description": "Metro latency from DA to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.db_{metroCode}.latency",
-                        "description": "Metro latency from DB to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.dc_{metroCode}.latency",
-                        "description": "Metro latency from DC to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.de_{metroCode}.latency",
-                        "description": "Metro latency from DE to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.dx_{metroCode}.latency",
-                        "description": "Metro latency from DX to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.fr_{metroCode}.latency",
-                        "description": "Metro latency from FR to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.gv_{metroCode}.latency",
-                        "description": "Metro latency from GV to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.he_{metroCode}.latency",
-                        "description": "Metro latency from HE to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.hh_{metroCode}.latency",
-                        "description": "Metro latency from HH to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.hk_{metroCode}.latency",
-                        "description": "Metro latency from HK to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ho_{metroCode}.latency",
-                        "description": "Metro latency from HO to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.il_{metroCode}.latency",
-                        "description": "Metro latency from IL to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.jh_{metroCode}.latency",
-                        "description": "Metro latency from JH to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ka_{metroCode}.latency",
-                        "description": "Metro latency from KA to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.kl_{metroCode}.latency",
-                        "description": "Metro latency from KL to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.la_{metroCode}.latency",
-                        "description": "Metro latency from LA to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ld_{metroCode}.latency",
-                        "description": "Metro latency from LD to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.lm_{metroCode}.latency",
-                        "description": "Metro latency from LM to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ls_{metroCode}.latency",
-                        "description": "Metro latency from LS to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ma_{metroCode}.latency",
-                        "description": "Metro latency from MA to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.mb_{metroCode}.latency",
-                        "description": "Metro latency from MB to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.md_{metroCode}.latency",
-                        "description": "Metro latency from MD to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.me_{metroCode}.latency",
-                        "description": "Metro latency from ME to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.mi_{metroCode}.latency",
-                        "description": "Metro latency from MI to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ml_{metroCode}.latency",
-                        "description": "Metro latency from ML to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.mo_{metroCode}.latency",
-                        "description": "Metro latency from MO to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.mt_{metroCode}.latency",
-                        "description": "Metro latency from MT to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.mu_{metroCode}.latency",
-                        "description": "Metro latency from MU to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.mx_{metroCode}.latency",
-                        "description": "Metro latency from MX to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ny_{metroCode}.latency",
-                        "description": "Metro latency from NY to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.os_{metroCode}.latency",
-                        "description": "Metro latency from OS to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ot_{metroCode}.latency",
-                        "description": "Metro latency from OT to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.pa_{metroCode}.latency",
-                        "description": "Metro latency from PA to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.pe_{metroCode}.latency",
-                        "description": "Metro latency from PE to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ph_{metroCode}.latency",
-                        "description": "Metro latency from PH to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.rj_{metroCode}.latency",
-                        "description": "Metro latency from RJ to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.se_{metroCode}.latency",
-                        "description": "Metro latency from SE to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.sg_{metroCode}.latency",
-                        "description": "Metro latency from SG to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.sk_{metroCode}.latency",
-                        "description": "Metro latency from SK to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.sl_{metroCode}.latency",
-                        "description": "Metro latency from SL to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.so_{metroCode}.latency",
-                        "description": "Metro latency from SO to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.sp_{metroCode}.latency",
-                        "description": "Metro latency from SP to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.st_{metroCode}.latency",
-                        "description": "Metro latency from ST to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.sv_{metroCode}.latency",
-                        "description": "Metro latency from SV to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.sy_{metroCode}.latency",
-                        "description": "Metro latency from SY to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.tr_{metroCode}.latency",
-                        "description": "Metro latency from TR to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ty_{metroCode}.latency",
-                        "description": "Metro latency from TY to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.va_{metroCode}.latency",
-                        "description": "Metro latency from VA to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.wa_{metroCode}.latency",
-                        "description": "Metro latency from WA to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.wi_{metroCode}.latency",
-                        "description": "Metro latency from WI to ${metroCode} above ${threshold}"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.zh_{metroCode}.latency",
-                        "description": "Metro latency from ZH to ${metroCode} above ${threshold}"
-                    }
-                ]
-            },
-            "metricNames": {
-                "released": [],
-                "preview": []
-            },
-            "alertNames": {
-                "released": [],
-                "preview": []
-            }
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.metro.am_{metroCode}.latency",
+                    "description": "Metro latency from AM to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.at_{metroCode}.latency",
+                    "description": "Metro latency from AT to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.ba_{metroCode}.latency",
+                    "description": "Metro latency from BA to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.bg_{metroCode}.latency",
+                    "description": "Metro latency from BG to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.bl_{metroCode}.latency",
+                    "description": "Metro latency from BL to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.bo_{metroCode}.latency",
+                    "description": "Metro latency from BO to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.bx_{metroCode}.latency",
+                    "description": "Metro latency from BX to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.ca_{metroCode}.latency",
+                    "description": "Metro latency from CA to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.ch_{metroCode}.latency",
+                    "description": "Metro latency from CH to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.cl_{metroCode}.latency",
+                    "description": "Metro latency from CL to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.cu_{metroCode}.latency",
+                    "description": "Metro latency from CU to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.da_{metroCode}.latency",
+                    "description": "Metro latency from DA to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.db_{metroCode}.latency",
+                    "description": "Metro latency from DB to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.dc_{metroCode}.latency",
+                    "description": "Metro latency from DC to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.de_{metroCode}.latency",
+                    "description": "Metro latency from DE to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.dx_{metroCode}.latency",
+                    "description": "Metro latency from DX to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.fr_{metroCode}.latency",
+                    "description": "Metro latency from FR to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.gv_{metroCode}.latency",
+                    "description": "Metro latency from GV to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.he_{metroCode}.latency",
+                    "description": "Metro latency from HE to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.hh_{metroCode}.latency",
+                    "description": "Metro latency from HH to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.hk_{metroCode}.latency",
+                    "description": "Metro latency from HK to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.ho_{metroCode}.latency",
+                    "description": "Metro latency from HO to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.il_{metroCode}.latency",
+                    "description": "Metro latency from IL to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.jh_{metroCode}.latency",
+                    "description": "Metro latency from JH to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.ka_{metroCode}.latency",
+                    "description": "Metro latency from KA to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.kl_{metroCode}.latency",
+                    "description": "Metro latency from KL to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.la_{metroCode}.latency",
+                    "description": "Metro latency from LA to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.ld_{metroCode}.latency",
+                    "description": "Metro latency from LD to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.lm_{metroCode}.latency",
+                    "description": "Metro latency from LM to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.ls_{metroCode}.latency",
+                    "description": "Metro latency from LS to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.ma_{metroCode}.latency",
+                    "description": "Metro latency from MA to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.mb_{metroCode}.latency",
+                    "description": "Metro latency from MB to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.md_{metroCode}.latency",
+                    "description": "Metro latency from MD to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.me_{metroCode}.latency",
+                    "description": "Metro latency from ME to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.mi_{metroCode}.latency",
+                    "description": "Metro latency from MI to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.ml_{metroCode}.latency",
+                    "description": "Metro latency from ML to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.mo_{metroCode}.latency",
+                    "description": "Metro latency from MO to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.mt_{metroCode}.latency",
+                    "description": "Metro latency from MT to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.mu_{metroCode}.latency",
+                    "description": "Metro latency from MU to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.mx_{metroCode}.latency",
+                    "description": "Metro latency from MX to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.ny_{metroCode}.latency",
+                    "description": "Metro latency from NY to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.os_{metroCode}.latency",
+                    "description": "Metro latency from OS to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.ot_{metroCode}.latency",
+                    "description": "Metro latency from OT to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.pa_{metroCode}.latency",
+                    "description": "Metro latency from PA to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.pe_{metroCode}.latency",
+                    "description": "Metro latency from PE to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.ph_{metroCode}.latency",
+                    "description": "Metro latency from PH to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.rj_{metroCode}.latency",
+                    "description": "Metro latency from RJ to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.se_{metroCode}.latency",
+                    "description": "Metro latency from SE to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.sg_{metroCode}.latency",
+                    "description": "Metro latency from SG to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.sk_{metroCode}.latency",
+                    "description": "Metro latency from SK to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.sl_{metroCode}.latency",
+                    "description": "Metro latency from SL to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.so_{metroCode}.latency",
+                    "description": "Metro latency from SO to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.sp_{metroCode}.latency",
+                    "description": "Metro latency from SP to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.st_{metroCode}.latency",
+                    "description": "Metro latency from ST to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.sv_{metroCode}.latency",
+                    "description": "Metro latency from SV to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.sy_{metroCode}.latency",
+                    "description": "Metro latency from SY to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.tr_{metroCode}.latency",
+                    "description": "Metro latency from TR to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.ty_{metroCode}.latency",
+                    "description": "Metro latency from TY to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.va_{metroCode}.latency",
+                    "description": "Metro latency from VA to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.wa_{metroCode}.latency",
+                    "description": "Metro latency from WA to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.wi_{metroCode}.latency",
+                    "description": "Metro latency from WI to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.zh_{metroCode}.latency",
+                    "description": "Metro latency from ZH to ${metroCode} above ${threshold}",
+                    "sloCategoryCode": "GREEN_ALERT_SLO",
+                    "releaseStatus": "preview"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
         },
         {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetroLatencyMetric.json",
@@ -943,272 +1313,389 @@
             "name": "MetroLatencyMetric",
             "description": "The data within all MetricEvent events.",
             "datatype": "equinix.fabric.v1.MetroLatencyMetric",
-            "cloudeventTypes": {
-                "released": [
-                    {
-                        "name": "equinix.fabric.metric",
-                        "description": ""
-                    }
-                ],
-                "preview": []
-            },
-            "metricNames": {
-                "released": [
-                    {
-                        "name": "equinix.fabric.metro.am_{metroCode}.latency",
-                        "description": "Metro latency from AM to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.at_{metroCode}.latency",
-                        "description": "Metro latency from AT to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ba_{metroCode}.latency",
-                        "description": "Metro latency from BA to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.bg_{metroCode}.latency",
-                        "description": "Metro latency from BG to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.bl_{metroCode}.latency",
-                        "description": "Metro latency from BL to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.bo_{metroCode}.latency",
-                        "description": "Metro latency from BO to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.bx_{metroCode}.latency",
-                        "description": "Metro latency from BX to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ca_{metroCode}.latency",
-                        "description": "Metro latency from CA to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ch_{metroCode}.latency",
-                        "description": "Metro latency from CH to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.cl_{metroCode}.latency",
-                        "description": "Metro latency from CL to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.cu_{metroCode}.latency",
-                        "description": "Metro latency from CU to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.da_{metroCode}.latency",
-                        "description": "Metro latency from DA to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.db_{metroCode}.latency",
-                        "description": "Metro latency from DB to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.dc_{metroCode}.latency",
-                        "description": "Metro latency from DC to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.de_{metroCode}.latency",
-                        "description": "Metro latency from DE to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.dx_{metroCode}.latency",
-                        "description": "Metro latency from DX to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.fr_{metroCode}.latency",
-                        "description": "Metro latency from FR to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.gv_{metroCode}.latency",
-                        "description": "Metro latency from GV to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.he_{metroCode}.latency",
-                        "description": "Metro latency from HE to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.hh_{metroCode}.latency",
-                        "description": "Metro latency from HH to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.hk_{metroCode}.latency",
-                        "description": "Metro latency from HK to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ho_{metroCode}.latency",
-                        "description": "Metro latency from HO to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.il_{metroCode}.latency",
-                        "description": "Metro latency from IL to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.jh_{metroCode}.latency",
-                        "description": "Metro latency from JH to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ka_{metroCode}.latency",
-                        "description": "Metro latency from KA to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.kl_{metroCode}.latency",
-                        "description": "Metro latency from KL to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.la_{metroCode}.latency",
-                        "description": "Metro latency from LA to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ld_{metroCode}.latency",
-                        "description": "Metro latency from LD to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.lm_{metroCode}.latency",
-                        "description": "Metro latency from LM to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ls_{metroCode}.latency",
-                        "description": "Metro latency from LS to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ma_{metroCode}.latency",
-                        "description": "Metro latency from MA to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.mb_{metroCode}.latency",
-                        "description": "Metro latency from MB to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.md_{metroCode}.latency",
-                        "description": "Metro latency from MD to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.me_{metroCode}.latency",
-                        "description": "Metro latency from ME to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.mi_{metroCode}.latency",
-                        "description": "Metro latency from MI to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ml_{metroCode}.latency",
-                        "description": "Metro latency from ML to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.mo_{metroCode}.latency",
-                        "description": "Metro latency from MO to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.mt_{metroCode}.latency",
-                        "description": "Metro latency from MT to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.mu_{metroCode}.latency",
-                        "description": "Metro latency from MU to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.mx_{metroCode}.latency",
-                        "description": "Metro latency from MX to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ny_{metroCode}.latency",
-                        "description": "Metro latency from NY to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.os_{metroCode}.latency",
-                        "description": "Metro latency from OS to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ot_{metroCode}.latency",
-                        "description": "Metro latency from OT to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.pa_{metroCode}.latency",
-                        "description": "Metro latency from PA to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.pe_{metroCode}.latency",
-                        "description": "Metro latency from PE to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ph_{metroCode}.latency",
-                        "description": "Metro latency from PH to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.rj_{metroCode}.latency",
-                        "description": "Metro latency from RJ to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.se_{metroCode}.latency",
-                        "description": "Metro latency from SE to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.sg_{metroCode}.latency",
-                        "description": "Metro latency from SG to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.sk_{metroCode}.latency",
-                        "description": "Metro latency from SK to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.sl_{metroCode}.latency",
-                        "description": "Metro latency from SL to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.so_{metroCode}.latency",
-                        "description": "Metro latency from SO to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.sp_{metroCode}.latency",
-                        "description": "Metro latency from SP to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.st_{metroCode}.latency",
-                        "description": "Metro latency from ST to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.sv_{metroCode}.latency",
-                        "description": "Metro latency from SV to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.sy_{metroCode}.latency",
-                        "description": "Metro latency from SY to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.tr_{metroCode}.latency",
-                        "description": "Metro latency from TR to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.ty_{metroCode}.latency",
-                        "description": "Metro latency from TY to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.va_{metroCode}.latency",
-                        "description": "Metro latency from VA to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.wa_{metroCode}.latency",
-                        "description": "Metro latency from WA to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.wi_{metroCode}.latency",
-                        "description": "Metro latency from WI to ${metroCode} in ms"
-                    },
-                    {
-                        "name": "equinix.fabric.metro.zh_{metroCode}.latency",
-                        "description": "Metro latency from ZH to ${metroCode} in ms"
-                    }
-                ],
-                "preview": []
-            },
-            "alertNames": {
-                "released": [],
-                "preview": []
-            }
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.metric",
+                    "description": "",
+                    "sloCategoryCode": "",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [
+                {
+                    "name": "equinix.fabric.metro.am_{metroCode}.latency",
+                    "description": "Metro latency from AM to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.at_{metroCode}.latency",
+                    "description": "Metro latency from AT to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.ba_{metroCode}.latency",
+                    "description": "Metro latency from BA to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.bg_{metroCode}.latency",
+                    "description": "Metro latency from BG to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.bl_{metroCode}.latency",
+                    "description": "Metro latency from BL to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.bo_{metroCode}.latency",
+                    "description": "Metro latency from BO to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.bx_{metroCode}.latency",
+                    "description": "Metro latency from BX to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.ca_{metroCode}.latency",
+                    "description": "Metro latency from CA to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.ch_{metroCode}.latency",
+                    "description": "Metro latency from CH to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.cl_{metroCode}.latency",
+                    "description": "Metro latency from CL to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.cu_{metroCode}.latency",
+                    "description": "Metro latency from CU to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.da_{metroCode}.latency",
+                    "description": "Metro latency from DA to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.db_{metroCode}.latency",
+                    "description": "Metro latency from DB to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.dc_{metroCode}.latency",
+                    "description": "Metro latency from DC to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.de_{metroCode}.latency",
+                    "description": "Metro latency from DE to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.dx_{metroCode}.latency",
+                    "description": "Metro latency from DX to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.fr_{metroCode}.latency",
+                    "description": "Metro latency from FR to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.gv_{metroCode}.latency",
+                    "description": "Metro latency from GV to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.he_{metroCode}.latency",
+                    "description": "Metro latency from HE to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.hh_{metroCode}.latency",
+                    "description": "Metro latency from HH to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.hk_{metroCode}.latency",
+                    "description": "Metro latency from HK to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.ho_{metroCode}.latency",
+                    "description": "Metro latency from HO to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.il_{metroCode}.latency",
+                    "description": "Metro latency from IL to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.jh_{metroCode}.latency",
+                    "description": "Metro latency from JH to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.ka_{metroCode}.latency",
+                    "description": "Metro latency from KA to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.kl_{metroCode}.latency",
+                    "description": "Metro latency from KL to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.la_{metroCode}.latency",
+                    "description": "Metro latency from LA to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.ld_{metroCode}.latency",
+                    "description": "Metro latency from LD to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.lm_{metroCode}.latency",
+                    "description": "Metro latency from LM to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.ls_{metroCode}.latency",
+                    "description": "Metro latency from LS to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.ma_{metroCode}.latency",
+                    "description": "Metro latency from MA to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.mb_{metroCode}.latency",
+                    "description": "Metro latency from MB to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.md_{metroCode}.latency",
+                    "description": "Metro latency from MD to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.me_{metroCode}.latency",
+                    "description": "Metro latency from ME to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.mi_{metroCode}.latency",
+                    "description": "Metro latency from MI to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.ml_{metroCode}.latency",
+                    "description": "Metro latency from ML to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.mo_{metroCode}.latency",
+                    "description": "Metro latency from MO to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.mt_{metroCode}.latency",
+                    "description": "Metro latency from MT to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.mu_{metroCode}.latency",
+                    "description": "Metro latency from MU to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.mx_{metroCode}.latency",
+                    "description": "Metro latency from MX to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.ny_{metroCode}.latency",
+                    "description": "Metro latency from NY to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.os_{metroCode}.latency",
+                    "description": "Metro latency from OS to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.ot_{metroCode}.latency",
+                    "description": "Metro latency from OT to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.pa_{metroCode}.latency",
+                    "description": "Metro latency from PA to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.pe_{metroCode}.latency",
+                    "description": "Metro latency from PE to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.ph_{metroCode}.latency",
+                    "description": "Metro latency from PH to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.rj_{metroCode}.latency",
+                    "description": "Metro latency from RJ to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.se_{metroCode}.latency",
+                    "description": "Metro latency from SE to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.sg_{metroCode}.latency",
+                    "description": "Metro latency from SG to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.sk_{metroCode}.latency",
+                    "description": "Metro latency from SK to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.sl_{metroCode}.latency",
+                    "description": "Metro latency from SL to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.so_{metroCode}.latency",
+                    "description": "Metro latency from SO to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.sp_{metroCode}.latency",
+                    "description": "Metro latency from SP to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.st_{metroCode}.latency",
+                    "description": "Metro latency from ST to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.sv_{metroCode}.latency",
+                    "description": "Metro latency from SV to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.sy_{metroCode}.latency",
+                    "description": "Metro latency from SY to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.tr_{metroCode}.latency",
+                    "description": "Metro latency from TR to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.ty_{metroCode}.latency",
+                    "description": "Metro latency from TY to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.va_{metroCode}.latency",
+                    "description": "Metro latency from VA to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.wa_{metroCode}.latency",
+                    "description": "Metro latency from WA to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.wi_{metroCode}.latency",
+                    "description": "Metro latency from WI to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.zh_{metroCode}.latency",
+                    "description": "Metro latency from ZH to ${metroCode} in ms",
+                    "sloCategoryCode": "YELLOW_METRIC_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
+            "alertNames": []
         },
         {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserAuthenticationEvent.json",
@@ -1216,27 +1703,22 @@
             "name": "UserAuthenticationEvent",
             "description": "User Authentication Event details",
             "datatype": "equinix.identity.v1.UserAuthenticationEvent",
-            "cloudeventTypes": {
-                "released": [
-                    {
-                        "name": "equinix.identity.user.activity.logged_in",
-                        "description": "User loggedIn event"
-                    },
-                    {
-                        "name": "equinix.identity.user.activity.logged_out",
-                        "description": "User loggedOut event"
-                    }
-                ],
-                "preview": []
-            },
-            "metricNames": {
-                "released": [],
-                "preview": []
-            },
-            "alertNames": {
-                "released": [],
-                "preview": []
-            }
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.identity.user.activity.logged_in",
+                    "description": "User loggedIn event",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.identity.user.activity.logged_out",
+                    "description": "User loggedOut event",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
         },
         {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/ChangeEvent.json",
@@ -1244,75 +1726,94 @@
             "name": "ChangeEvent",
             "description": "The data within all ChangeEvent events.",
             "datatype": "equinix.network_edge.v1.ChangeEvent",
-            "cloudeventTypes": {
-                "released": [
-                    {
-                        "name": "equinix.network_edge.acl.state.created",
-                        "description": "Network edge acl is created"
-                    },
-                    {
-                        "name": "equinix.network_edge.acl.state.deleted",
-                        "description": "Network edge acl is deleted"
-                    },
-                    {
-                        "name": "equinix.network_edge.device.acl.updated",
-                        "description": "Network edge acl is updated"
-                    },
-                    {
-                        "name": "equinix.network_edge.device.attribute.changed",
-                        "description": "Network edge device attributes updated"
-                    },
-                    {
-                        "name": "equinix.network_edge.device.reboot.completed",
-                        "description": "Network edge device reboot completed"
-                    },
-                    {
-                        "name": "equinix.network_edge.device.reboot.started",
-                        "description": "Network edge device reboot started"
-                    },
-                    {
-                        "name": "equinix.network_edge.device.state.cancelled",
-                        "description": "Network edge device order cancelled"
-                    },
-                    {
-                        "name": "equinix.network_edge.device.state.created",
-                        "description": "Network edge device created"
-                    },
-                    {
-                        "name": "equinix.network_edge.device.state.deleted",
-                        "description": "Network edge device deleted"
-                    },
-                    {
-                        "name": "equinix.network_edge.device.state.provisioned",
-                        "description": "Network edge device is provisioned"
-                    },
-                    {
-                        "name": "equinix.network_edge.device.state.provisioning",
-                        "description": "Network edge device is provisioning"
-                    },
-                    {
-                        "name": "equinix.network_edge.devicelinkgroup.state.created",
-                        "description": "Network edge device link group is created"
-                    },
-                    {
-                        "name": "equinix.network_edge.devicelinkgroup.state.deleted",
-                        "description": "Network edge device link group is deleted"
-                    },
-                    {
-                        "name": "equinix.network_edge.devicelinkgroup.state.updated",
-                        "description": "Network edge device link group is updated"
-                    }
-                ],
-                "preview": []
-            },
-            "metricNames": {
-                "released": [],
-                "preview": []
-            },
-            "alertNames": {
-                "released": [],
-                "preview": []
-            }
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.network_edge.acl.state.created",
+                    "description": "Network edge acl is created",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.acl.state.deleted",
+                    "description": "Network edge acl is deleted",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device.acl.updated",
+                    "description": "Network edge acl is updated",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device.attribute.changed",
+                    "description": "Network edge device attributes updated",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device.reboot.completed",
+                    "description": "Network edge device reboot completed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device.reboot.started",
+                    "description": "Network edge device reboot started",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device.state.cancelled",
+                    "description": "Network edge device order cancelled",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device.state.created",
+                    "description": "Network edge device created",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device.state.deleted",
+                    "description": "Network edge device deleted",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device.state.provisioned",
+                    "description": "Network edge device is provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device.state.provisioning",
+                    "description": "Network edge device is provisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.devicelinkgroup.state.created",
+                    "description": "Network edge device link group is created",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.devicelinkgroup.state.deleted",
+                    "description": "Network edge device link group is deleted",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.devicelinkgroup.state.updated",
+                    "description": "Network edge device link group is updated",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
         },
         {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/resource_manager/v1/ChangeEvent.json",
@@ -1320,43 +1821,46 @@
             "name": "ChangeEvent",
             "description": "The data within all ChangeEvent events.",
             "datatype": "equinix.resource_manager.v1.ChangeEvent",
-            "cloudeventTypes": {
-                "released": [
-                    {
-                        "name": "equinix.resource_manager.organization.state.created",
-                        "description": "Organization created event."
-                    },
-                    {
-                        "name": "equinix.resource_manager.organization.state.deleted",
-                        "description": "Organization deleted event."
-                    },
-                    {
-                        "name": "equinix.resource_manager.organization.state.updated",
-                        "description": "Organization updated event."
-                    },
-                    {
-                        "name": "equinix.resource_manager.project.state.created",
-                        "description": "Project created event."
-                    },
-                    {
-                        "name": "equinix.resource_manager.project.state.deleted",
-                        "description": "Project deleted event."
-                    },
-                    {
-                        "name": "equinix.resource_manager.project.state.updated",
-                        "description": "Project updated event."
-                    }
-                ],
-                "preview": []
-            },
-            "metricNames": {
-                "released": [],
-                "preview": []
-            },
-            "alertNames": {
-                "released": [],
-                "preview": []
-            }
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.resource_manager.organization.state.created",
+                    "description": "Organization created event.",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.resource_manager.organization.state.deleted",
+                    "description": "Organization deleted event.",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.resource_manager.organization.state.updated",
+                    "description": "Organization updated event.",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.resource_manager.project.state.created",
+                    "description": "Project created event.",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.resource_manager.project.state.deleted",
+                    "description": "Project deleted event.",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.resource_manager.project.state.updated",
+                    "description": "Project updated event.",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
         },
         {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/time_service/v1/ChangeEvent.json",
@@ -1364,59 +1868,70 @@
             "name": "ChangeEvent",
             "description": "The data within all ChangeEvent events.",
             "datatype": "equinix.time_service.v1.ChangeEvent",
-            "cloudeventTypes": {
-                "released": [],
-                "preview": [
-                    {
-                        "name": "equinix.fabric.time_service.state.cancelled",
-                        "description": "Time Service is cancelled"
-                    },
-                    {
-                        "name": "equinix.fabric.time_service.state.configuring",
-                        "description": "Time Service is configuring"
-                    },
-                    {
-                        "name": "equinix.fabric.time_service.state.configuring_failed",
-                        "description": "Time Service is configuring failed"
-                    },
-                    {
-                        "name": "equinix.fabric.time_service.state.deprovisioned",
-                        "description": "Time Service is deprovisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.time_service.state.deprovisioning",
-                        "description": "Time Service is deprovisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.time_service.state.deprovisioning_failed",
-                        "description": "Time Service is deprovisioning failed"
-                    },
-                    {
-                        "name": "equinix.fabric.time_service.state.draft",
-                        "description": "Time Service is in draft state"
-                    },
-                    {
-                        "name": "equinix.fabric.time_service.state.provisioned",
-                        "description": "Time Service is provisioned"
-                    },
-                    {
-                        "name": "equinix.fabric.time_service.state.provisioning",
-                        "description": "Time Service is provisioning"
-                    },
-                    {
-                        "name": "equinix.fabric.time_service.state.provisioning_failed",
-                        "description": "Time Service is provisioning failed"
-                    }
-                ]
-            },
-            "metricNames": {
-                "released": [],
-                "preview": []
-            },
-            "alertNames": {
-                "released": [],
-                "preview": []
-            }
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.time_service.state.cancelled",
+                    "description": "Time Service is cancelled",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.time_service.state.configuring",
+                    "description": "Time Service is configuring",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.time_service.state.configuring_failed",
+                    "description": "Time Service is configuring failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.time_service.state.deprovisioned",
+                    "description": "Time Service is deprovisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.time_service.state.deprovisioning",
+                    "description": "Time Service is deprovisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.time_service.state.deprovisioning_failed",
+                    "description": "Time Service is deprovisioning failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.time_service.state.draft",
+                    "description": "Time Service is in draft state",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.time_service.state.provisioned",
+                    "description": "Time Service is provisioned",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.time_service.state.provisioning",
+                    "description": "Time Service is provisioning",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.time_service.state.provisioning_failed",
+                    "description": "Time Service is provisioning failed",
+                    "sloCategoryCode": "GREEN_EVENT_SLO",
+                    "releaseStatus": "preview"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
         }
     ]
 }

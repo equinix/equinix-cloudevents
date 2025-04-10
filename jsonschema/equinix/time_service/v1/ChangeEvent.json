@@ -95,57 +95,68 @@
             "description": "Schema of the resource that fired the event"
         }
     },
-    "cloudeventTypes": {
-        "released": [],
-        "preview": [
-            {
-                "name": "equinix.fabric.time_service.state.deprovisioned",
-                "description": "Time Service is deprovisioned"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.deprovisioning",
-                "description": "Time Service is deprovisioning"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.provisioning_failed",
-                "description": "Time Service is provisioning failed"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.configuring_failed",
-                "description": "Time Service is configuring failed"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.deprovisioning_failed",
-                "description": "Time Service is deprovisioning failed"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.configuring",
-                "description": "Time Service is configuring"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.draft",
-                "description": "Time Service is in draft state"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.provisioned",
-                "description": "Time Service is provisioned"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.provisioning",
-                "description": "Time Service is provisioning"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.cancelled",
-                "description": "Time Service is cancelled"
-            }
-        ]
-    },
-    "metricNames": {
-        "released": [],
-        "preview": []
-    },
-    "alertNames": {
-        "released": [],
-        "preview": []
-    }
+    "cloudeventTypes": [
+        {
+            "name": "equinix.fabric.time_service.state.provisioning",
+            "description": "Time Service is provisioning",
+            "sloCategoryCode": "GREEN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.provisioned",
+            "description": "Time Service is provisioned",
+            "sloCategoryCode": "GREEN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.deprovisioning",
+            "description": "Time Service is deprovisioning",
+            "sloCategoryCode": "GREEN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.deprovisioned",
+            "description": "Time Service is deprovisioned",
+            "sloCategoryCode": "GREEN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.cancelled",
+            "description": "Time Service is cancelled",
+            "sloCategoryCode": "GREEN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.provisioning_failed",
+            "description": "Time Service is provisioning failed",
+            "sloCategoryCode": "GREEN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.configuring_failed",
+            "description": "Time Service is configuring failed",
+            "sloCategoryCode": "GREEN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.deprovisioning_failed",
+            "description": "Time Service is deprovisioning failed",
+            "sloCategoryCode": "GREEN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.configuring",
+            "description": "Time Service is configuring",
+            "sloCategoryCode": "GREEN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.draft",
+            "description": "Time Service is in draft state",
+            "sloCategoryCode": "GREEN_EVENT_SLO",
+            "releaseStatus": "preview"
+        }
+    ],
+    "metricNames": [],
+    "alertNames": []
 }

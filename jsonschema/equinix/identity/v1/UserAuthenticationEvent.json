@@ -21,25 +21,20 @@
             "description": "User Authentication Event details"
         }
     },
-    "cloudeventTypes": {
-        "released": [
-            {
-                "name": "equinix.identity.user.activity.logged_in",
-                "description": "User loggedIn event"
-            },
-            {
-                "name": "equinix.identity.user.activity.logged_out",
-                "description": "User loggedOut event"
-            }
-        ],
-        "preview": []
-    },
-    "metricNames": {
-        "released": [],
-        "preview": []
-    },
-    "alertNames": {
-        "released": [],
-        "preview": []
-    }
+    "cloudeventTypes": [
+        {
+            "name": "equinix.identity.user.activity.logged_in",
+            "description": "User loggedIn event",
+            "sloCategoryCode": "GREEN_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.identity.user.activity.logged_out",
+            "description": "User loggedOut event",
+            "sloCategoryCode": "GREEN_EVENT_SLO",
+            "releaseStatus": "released"
+        }
+    ],
+    "metricNames": [],
+    "alertNames": []
 }
