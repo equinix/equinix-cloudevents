@@ -469,9 +469,7 @@
             {
                 "name": "equinix.fabric.routing_protocol_action.state.failed",
                 "description": "Routing Protocol Action state changed to failed"
-            }
-        ],
-        "preview": [
+            },
             {
                 "name": "equinix.fabric.route_filter.state.provisioning",
                 "description": "Route Filter named ${route_filter_name} state changed to provisioning"
@@ -501,10 +499,6 @@
                 "description": "Route Filter named ${route_filter_name} state changed to not_deprovisioned"
             },
             {
-                "name": "equinix.fabric.route_filter.attribute.changed",
-                "description": "Route Filter named ${route_filter_name} attribute changed"
-            },
-            {
                 "name": "equinix.fabric.route_filter_rule.state.provisioning",
                 "description": "Route Filter Rule named ${route_filter_rule_name} state changed to provisioning"
             },
@@ -527,10 +521,6 @@
             {
                 "name": "equinix.fabric.route_filter_rule.state.failed",
                 "description": "Route Filter Rule named ${route_filter_rule_name} state changed to failed"
-            },
-            {
-                "name": "equinix.fabric.route_filter_rule.attribute.changed",
-                "description": "Route Filter Rule named ${route_filter_rule_name} attribute changed"
             },
             {
                 "name": "equinix.fabric.route_aggregation.state.provisioning",
@@ -561,10 +551,6 @@
                 "description": "Route Aggregation named ${route_aggregation_name} state changed to not_deprovisioned"
             },
             {
-                "name": "equinix.fabric.route_aggregation.attribute.changed",
-                "description": "Route Aggregation named ${route_aggregation_name} attribute changed"
-            },
-            {
                 "name": "equinix.fabric.route_aggregation_rule.state.provisioning",
                 "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to provisioning"
             },
@@ -587,6 +573,20 @@
             {
                 "name": "equinix.fabric.route_aggregation_rule.state.failed",
                 "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to failed"
+            }
+        ],
+        "preview": [
+            {
+                "name": "equinix.fabric.route_filter.attribute.changed",
+                "description": "Route Filter named ${route_filter_name} attribute changed"
+            },
+            {
+                "name": "equinix.fabric.route_filter_rule.attribute.changed",
+                "description": "Route Filter Rule named ${route_filter_rule_name} attribute changed"
+            },
+            {
+                "name": "equinix.fabric.route_aggregation.attribute.changed",
+                "description": "Route Aggregation named ${route_aggregation_name} attribute changed"
             },
             {
                 "name": "equinix.fabric.route_aggregation_rule.attribute.changed",
