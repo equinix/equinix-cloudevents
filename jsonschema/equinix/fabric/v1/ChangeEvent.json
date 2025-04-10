@@ -846,7 +846,7 @@
             "description": "Router Command state changed to deleted",
             "sloCategoryCode": "RESOURCE_CHANGE_EVENT_SLO",
             "releaseStatus": "preview"
-        }    
+        }
     ],
     "metricNames": [],
     "alertNames": []
