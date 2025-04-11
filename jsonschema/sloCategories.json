@@ -1,23 +1,28 @@
 {
     "eventsSLO": [
         {
-            "category": "Resource Change Event SLO",
-            "code": "RESOURCE_CHANGE_EVENT_SLO",
+            "category_code": "PURPLE_EVENT_SLO",
             "reportingInterval": "",
-            "reportingLatencyMax": "PT1S",
-            "streamingLatencyMax": "PT60S",
-            "queryLatencyMax": "PT2S",
+            "reportingLatencyMax": "PT480S",
+            "streamLatencyMax": "PT60S",
             "orignalDataRetention": "PT90D",
             "1HAggregationRetention": "",
             "1DAggregationRetention": ""
         },
         {
-            "category": "Datapath Event SLO",
-            "code": "DATAPATH_EVENT_SLO",
+            "category_code": "BROWN_EVENT_SLO",
             "reportingInterval": "",
-            "reportingLatencyMax": "PT480S",
-            "streamingLatencyMax": "PT60S",
-            "queryLatencyMax": "PT2S",
+            "reportingLatencyMax": "PT3S",
+            "streamLatencyMax": "PT60S",
+            "orignalDataRetention": "PT90D",
+            "1HAggregationRetention": "",
+            "1DAggregationRetention": ""
+        },
+        {
+            "category_code": "BLUE_EVENT_SLO",
+            "reportingInterval": "",
+            "reportingLatencyMax": "PT1S",
+            "streamLatencyMax": "PT60S",
             "orignalDataRetention": "PT90D",
             "1HAggregationRetention": "",
             "1DAggregationRetention": ""
@@ -25,34 +30,28 @@
     ],
     "metricsSLO": [
         {
-            "category": "Datapath Metric SLO",
-            "code": "DATAPATH_METRIC_SLO",
+            "category_code": "PURPLE_METRIC_SLO",
             "reportingInterval": "PT300S",
             "reportingLatencyMax": "PT720S",
-            "streamingLatencyMax": "PT60S",
-            "queryLatencyMax": "PT4S",
+            "streamLatencyMax": "PT60S",
             "orignalDataRetention": "PT90D",
             "1HAggregationRetention": "PT365D",
             "1DAggregationRetention": "PT1095D"
         },
         {
-            "category": "Metro Metric SLO",
-            "code": "METRO_METRIC_SLO",
+            "category_code": "BROWN_METRIC_SLO",
             "reportingInterval": "PT300S",
             "reportingLatencyMax": "PT390S",
-            "streamingLatencyMax": "PT60S",
-            "queryLatencyMax": "PT2S",
+            "streamLatencyMax": "PT60S",
             "orignalDataRetention": "PT90D",
             "1HAggregationRetention": "PT365D",
             "1DAggregationRetention": "PT1095D"
         },
         {
-            "category": "Streaming Metric SLO",
-            "code": "STREAM_METRIC_SLO",
+            "category_code": "BLUE_METRIC_SLO",
             "reportingInterval": "PT300S",
             "reportingLatencyMax": "PT1S",
-            "streamingLatencyMax": "PT60S",
-            "queryLatencyMax": "PT2S",
+            "streamLatencyMax": "PT60S",
             "orignalDataRetention": "PT90D",
             "1HAggregationRetention": "PT365D",
             "1DAggregationRetention": "PT1095D"
@@ -60,12 +59,10 @@
     ],
     "alertsSLO": [
         {
-            "category": "Metric Alert SLO",
-            "code": "METRIC_ALERT_SLO",
+            "category_code": "BLUE_ALERT_SLO",
             "reportingInterval": "",
             "reportingLatencyMax": "PT1S",
-            "streamingLatencyMax": "PT60S",
-            "queryLatencyMax": "PT2S",
+            "streamLatencyMax": "PT60S",
             "orignalDataRetention": "PT90D",
             "1HAggregationRetention": "",
             "1DAggregationRetention": ""

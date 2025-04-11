@@ -113,13 +113,13 @@
     {
       "name": "equinix.access_manager.user.role.added",
       "description": "Role assignment event",
-      "sloCategoryCode": "RESOURCE_CHANGE_EVENT_SLO",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
       "releaseStatus": "released"
     },
     {
       "name": "equinix.access_manager.user.role.removed",
       "description": "Role unassignment event",
-      "sloCategoryCode": "RESOURCE_CHANGE_EVENT_SLO",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
       "releaseStatus": "released"
     }
   ],
