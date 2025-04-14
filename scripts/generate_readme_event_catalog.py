@@ -98,9 +98,6 @@ def replace_readme_catalog():
         slo_start = "<!-- SLO_CATEGORY -->"
         slo_end = "<!-- SLO_CATEGORY_END -->"
         slo_pattern = rf"{slo_start}.*?{slo_end}"
-
-        # def slo_replacement(match):
-        #     return f"{slo_start}\n{slo_table_content}\n{slo_end}"
         
         if re.search(slo_pattern, content, flags=re.DOTALL):
                 updated_content = re.sub(slo_pattern, f"{slo_start}\n{slo_table_content}\n{slo_end}",

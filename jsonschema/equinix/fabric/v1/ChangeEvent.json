@@ -208,73 +208,73 @@
         {
             "name": "equinix.fabric.connection.bgpipv4_session_status.idle",
             "description": "Neighbor ${IP} address session state changed to Idle",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv4_session_status.connect",
             "description": "Neighbor ${IP} address session state changed to Connect",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv4_session_status.active",
             "description": "Neighbor ${IP} address session state changed to Active",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv4_session_status.open_sent",
             "description": "Neighbor ${IP} address session state changed to Open_sent",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
             "description": "Neighbor ${IP} address session state changed to Open_confirm",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv4_session_status.established",
             "description": "Neighbor ${IP} address session state changed to Established",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv6_session_status.idle",
             "description": "Neighbor ${IP} address session state changed to Idle",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv6_session_status.connect",
             "description": "Neighbor ${IP} address session state changed to Connect",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv6_session_status.active",
             "description": "Neighbor ${IP} address session state changed to Active",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv6_session_status.open_sent",
             "description": "Neighbor ${IP} address session state changed to open_sent",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv6_session_status.open_confirm",
             "description": "Neighbor ${IP} address session state changed to Open_confirm",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.bgpipv6_session_status.established",
             "description": "Neighbor ${IP} address session state changed to Established",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {

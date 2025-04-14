@@ -104,73 +104,73 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.connection.bgpipv4_session_status.active</td>
 		<td>Neighbor ${IP} address session state changed to Active</td>
 		<td>In Preview</td>
-	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bgpipv4_session_status.connect</td>
 		<td>Neighbor ${IP} address session state changed to Connect</td>
 		<td>In Preview</td>
-	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bgpipv4_session_status.established</td>
 		<td>Neighbor ${IP} address session state changed to Established</td>
 		<td>In Preview</td>
-	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bgpipv4_session_status.idle</td>
 		<td>Neighbor ${IP} address session state changed to Idle</td>
 		<td>In Preview</td>
-	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bgpipv4_session_status.open_confirm</td>
 		<td>Neighbor ${IP} address session state changed to Open_confirm</td>
 		<td>In Preview</td>
-	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bgpipv4_session_status.open_sent</td>
 		<td>Neighbor ${IP} address session state changed to Open_sent</td>
 		<td>In Preview</td>
-	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bgpipv6_session_status.active</td>
 		<td>Neighbor ${IP} address session state changed to Active</td>
 		<td>In Preview</td>
-	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bgpipv6_session_status.connect</td>
 		<td>Neighbor ${IP} address session state changed to Connect</td>
 		<td>In Preview</td>
-	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bgpipv6_session_status.established</td>
 		<td>Neighbor ${IP} address session state changed to Established</td>
 		<td>In Preview</td>
-	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bgpipv6_session_status.idle</td>
 		<td>Neighbor ${IP} address session state changed to Idle</td>
 		<td>In Preview</td>
-	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bgpipv6_session_status.open_confirm</td>
 		<td>Neighbor ${IP} address session state changed to Open_confirm</td>
 		<td>In Preview</td>
-	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bgpipv6_session_status.open_sent</td>
 		<td>Neighbor ${IP} address session state changed to open_sent</td>
 		<td>In Preview</td>
-	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.route_aggregation.attached</td>
@@ -807,97 +807,97 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.connection.bandwidth_rx.usage</td>
 		<td>Connection inbound bandwidth usage above ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bandwidth_tx.usage</td>
 		<td>Connection outbound bandwidth usage above ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.installed_routes_ipv4.utilization</td>
 		<td>Utilization of connection '${connection_name}' active IPv4 routes reached ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.installed_routes_ipv6.utilization</td>
 		<td>Utilization of connection '${connection_name}' active IPv6 routes reached ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count</td>
 		<td>Connection A side inbound dropped packets count above ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count</td>
 		<td>Connection Z side inbound dropped packets count above ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count</td>
 		<td>Connection A side outbound dropped packets count above ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count</td>
 		<td>Connection Z side outbound dropped packets count above ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.bandwidth_rx.usage</td>
 		<td>Port inbound bandwidth usage above ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.bandwidth_tx.usage</td>
 		<td>Port outbound bandwidth usage above ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_dropped_rx.count</td>
 		<td>Port inbound dropped packets count above ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_dropped_tx.count</td>
 		<td>Port outbound dropped packets count above ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_erred_rx.count</td>
 		<td>Port inbound erred packets count above ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_erred_tx.count</td>
 		<td>Port outbound erred packets count above ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.router.installed_routes_ipv4.utilization</td>
 		<td>Utilization of router '${router_name}' total IPv4 routes reached ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.router.installed_routes_ipv6.utilization</td>
 		<td>Utilization of router '${router_name}' total IPv6 routes reached ${threshold}</td>
 		<td>In Preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 </table>
 
