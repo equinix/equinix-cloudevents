@@ -20,7 +20,7 @@ def createTable(type, supported):
     list += "<table>\n\t<tr>\n\t\t<th>Name</th>\n\t\t<th>Description</th>\n\t\t<th>Release Status</th>\n\t\t<th>SLO Category</th>\n\t</tr>\n"
 
     list += "\n".join(
-        f"\t<tr>\n\t\t<td>{x['name']}</td>\n\t\t<td>{x['description']}</td>\n\t\t<td>{'Released' if x.get('isReleased') else 'In Preview'}</td>\n"
+        f"\t<tr>\n\t\t<td>{x['name']}</td>\n\t\t<td>{x['description']}</td>\n\t\t<td>{x.get('releaseStatus') if x.get('releaseStatus') else '-'}</td>\n"
         f"\t<td>{f'<a href=\'#{x.get('sloCategoryCode', '').lower().replace(' ', '-')}\'> {get_colored_text(x.get('sloCategoryCode'))}</a>' if x.get('sloCategoryCode') else '-'}</td>\n"
         f"\t</tr>"
         for x in supported
