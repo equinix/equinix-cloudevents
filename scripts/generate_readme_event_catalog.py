@@ -3,6 +3,15 @@ import json
 import script_constants as sc
 import re
 
+def get_colored_text(text):
+    font_color = 'black'
+    if 'PURPLE' in text:
+        font_color = 'purple'
+    elif 'BROWN' in text:
+        font_color = 'brown'  
+    elif 'BLUE' in text:
+        font_color = 'blue'
+    return f"<span style='color:{font_color}'>{text}</span>"
 def createTable(type, supported):
     if not supported:
         return ""
@@ -11,8 +20,8 @@ def createTable(type, supported):
     list += "<table>\n\t<tr>\n\t\t<th>Name</th>\n\t\t<th>Description</th>\n\t\t<th>Release Status</th>\n\t\t<th>SLO Category</th>\n\t</tr>\n"
 
     list += "\n".join(
-        f"\t<tr>\n\t\t<td>{x['name']}</td>\n\t\t<td>{x['description']}</td>\n\t\t<td>{'Released' if x.get('isReleased') else 'In Preview'}</td>\n"
-        f"\t<td>{f'<a href=\'#{x.get('sloCategoryCode', '').lower().replace(' ', '-')}\'> {x.get('sloCategoryCode')}</a>' if x.get('sloCategoryCode') else '-'}</td>\n"
+        f"\t<tr>\n\t\t<td>{x['name']}</td>\n\t\t<td>{x['description']}</td>\n\t\t<td>{x.get('releaseStatus') if x.get('releaseStatus') else '-'}</td>\n"
+        f"\t<td>{f'<a href=\'#{x.get('sloCategoryCode', '').lower().replace(' ', '-')}\'> {get_colored_text(x.get('sloCategoryCode'))}</a>' if x.get('sloCategoryCode') else '-'}</td>\n"
         f"\t</tr>"
         for x in supported
     )
@@ -46,23 +55,21 @@ def slo_table(slo_data):
     table = "<table>\n<tr>\n"
     
     # Extract headers from the first entry
-    headers = ['Category', 'Code', 'Reporting Interval', 'Reporting Latency Max', 'Streaming Latency Max', 'Query Latency Max', 'Original Data Retention', '1 Hour Aggregation Retention', '1 Day Aggregation Retention']
+    headers = ['Category Code', 'Reporting Interval', 'Reporting Latency Max', 'Stream Latency Max', 'Original Data Retention', '1 Hour Aggregation Retention', '1 Day Aggregation Retention']
     table += "".join(f"<th>{header}</th>" for header in headers) + "</tr>\n"
 
     all_slo_entries = sorted(
-        slo_data.get('metricsSLO', []) + slo_data.get('eventsSLO', []),
+        slo_data.get('metricsSLO', []) + slo_data.get('eventsSLO', []) + slo_data.get('alertsSLO', []),
         key=lambda item: (item.get('code', '') or '').lower()
     )
     # Extract values for metrics SLO
     for item in all_slo_entries:
-        category_id = item.get('code', '').lower().replace(' ', '-')
+        category_id = item.get('category_code', '').lower().replace(' ', '-')
         table += f"<tr id='{category_id}'>\n"
-        table += f"<td>{item.get('category', '-')or '-'}</td>"
-        table += f"<td>{item.get('code', '-') or '-'}</td>"
+        table += f"<td>{get_colored_text(item.get('category_code'))}</td>"
         table += f"<td>{item.get('reportingInterval', '-') or '-'}</td>"
         table += f"<td>{item.get('reportingLatencyMax', '-')or '-'}</td>"
-        table += f"<td>{item.get('streamingLatencyMax', '-')or '-'}</td>"
-        table += f"<td>{item.get('queryLatencyMax', '-')or '-'}</td>"
+        table += f"<td>{item.get('streamLatencyMax', '-')or '-'}</td>"
         table += f"<td>{item.get('orignalDataRetention', '-') or '-'}</td>"
         table += f"<td>{item.get('1HAggregationRetention', '-') or '-'}</td>"
         table += f"<td>{item.get('1DAggregationRetention', '-') or '-'}</td>"
