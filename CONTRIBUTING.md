@@ -43,13 +43,13 @@ Example of complete use case for the attributes:
     {
         "name": "equinix.fabric.connection.ipv4_installed_routes.utilization",
         "descrption": "Fabric connection ipv4 installed routes utilization",
-        "sloCategoryCode": "DATA_PATH"
+        "sloCategoryCode": "PURPLE_METRIC_SLO"
         "releaseStatus": "released"
     },
     {
         "name": "equinix.fabric.connection.ipv6_installed_routes.utilization",
         "descrption": "Fabric connection ipv4 installed routes utilization",
-        "sloCategoryCode": "METRO_LATENCY"
+        "sloCategoryCode": "PURPLE_METRIC_SLO"
         "releaseStatus": "preview",
     },
 ],
@@ -69,7 +69,7 @@ Each SLO category entry should include following attributes:
 ...
 {
     "category": "Datapath Metric SLO",
-    "code": "DATAPATH_METRIC_SLO",
+    "code": "PURPLE_METRIC_SLO",
     "reportingInterval": "PT300S",
     "reportingLatencyMax": "PT720S",
     "streamingLatencyMax": "PT60S",
@@ -129,6 +129,10 @@ these items through to the consumers.
 It is imperative that you understand the responsibility involved for managing your team's domain with regards to the
 `releaseStatus` attribute in your data schema files. The [CODEOWNERS](#codeowners) section describes how responsibility
 is managed within the repo. Please review it thoroughly.
+
+## Note on Font Colors for SLO Table and SLO Category Codes
+We’ve introduced font color styling for the SLO table and SLO Category values to improve visual clarity when browsing the published schema pages. Please note that these color styles will only render on the published GitHub Pages site and will not be visible in the raw JSON or preview in the PR.
+When contributing or updating SLO entries, make sure to follow the established formatting and verify the color rendering after the pages are published via Jekyll. This ensures consistency and a better visual experience for all users consuming the documentation.
 
 ## CODEOWNERS
 
