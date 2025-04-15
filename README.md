@@ -173,78 +173,6 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.connection.route_aggregation.attached</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attached</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation.attaching</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attaching</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation.detached</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detached</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation.detaching</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detaching</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation.failed</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to failed</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation.pending_bgp_configuration</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to pending_bgp_configuration</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter.attached</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} state changed to attached</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter.attaching</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} state changed to attaching</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter.detached</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} state changed to detached</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter.detaching</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} state changed to detaching</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter.failed</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} state changed to failed</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter.pending_bgp_configuration</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} state changed to pending_bgp_configuration</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
 		<td>equinix.fabric.connection.state.deprovisioned</td>
 		<td>Connection named ${connection_name} state changed to deprovisioned</td>
 		<td>released</td>
@@ -539,6 +467,42 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.route_aggregation_status.attached</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attached</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation_status.attaching</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation_status.detached</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detached</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation_status.detaching</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation_status.failed</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_aggregation_status.pending_bgp_configuration</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} state changed to pending_bgp_configuration</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.route_filter.attribute.changed</td>
 		<td>Route Filter named ${route_filter_name} attribute changed</td>
 		<td>preview</td>
@@ -625,6 +589,42 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.route_filter_rule.state.reprovisioning</td>
 		<td>Route Filter Rule named ${route_filter_rule_name} state changed to reprovisioning</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter_status.attached</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to attached</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter_status.attaching</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to attaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter_status.detached</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to detached</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter_status.detaching</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to detaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter_status.failed</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.route_filter_status.pending_bgp_configuration</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} state changed to pending_bgp_configuration</td>
 		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
