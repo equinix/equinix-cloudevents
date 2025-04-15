@@ -92,51 +92,51 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection.route_aggregation.attached",
+                "name": "equinix.fabric.connection.route_aggregation_status.attached",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection.route_aggregation.attaching",
+                "name": "equinix.fabric.connection.route_aggregation_status.attaching",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection.route_aggregation.detached",
+                "name": "equinix.fabric.connection.route_aggregation_status.detached",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection.route_aggregation.detaching",
+                "name": "equinix.fabric.connection.route_aggregation_status.detaching",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection.route_aggregation.failed",
+                "name": "equinix.fabric.connection.route_aggregation_status.failed",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection.route_aggregation.pending_bgp_configuration",
+                "name": "equinix.fabric.connection.route_aggregation_status.pending_bgp_configuration",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection.route_filter.attached",
+                "name": "equinix.fabric.connection.route_filter_status.attached",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection.route_filter.attaching",
+                "name": "equinix.fabric.connection.route_filter_status.attaching",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection.route_filter.detached",
+                "name": "equinix.fabric.connection.route_filter_status.detached",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection.route_filter.detaching",
+                "name": "equinix.fabric.connection.route_filter_status.detaching",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection.route_filter.failed",
+                "name": "equinix.fabric.connection.route_filter_status.failed",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection.route_filter.pending_bgp_configuration",
+                "name": "equinix.fabric.connection.route_filter_status.pending_bgp_configuration",
                 "releaseStatus": "released"
             },
             {
