@@ -626,37 +626,37 @@
             "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.connection.route_filter.attaching",
+            "name": "equinix.fabric.route_filter_status.attaching",
             "description": "Connection Route Filter named ${route_filter_rule_name} state changed to attaching",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
-            "name": "equinix.fabric.connection.route_filter.detaching",
+            "name": "equinix.fabric.route_filter_status.detaching",
             "description": "Connection Route Filter named ${route_filter_rule_name} state changed to detaching",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
-            "name": "equinix.fabric.connection.route_filter.attached",
+            "name": "equinix.fabric.route_filter_status.attached",
             "description": "Connection Route Filter named ${route_filter_rule_name} state changed to attached",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
-            "name": "equinix.fabric.connection.route_filter.detached",
+            "name": "equinix.fabric.route_filter_status.detached",
             "description": "Connection Route Filter named ${route_filter_rule_name} state changed to detached",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
-            "name": "equinix.fabric.connection.route_filter.pending_bgp_configuration",
+            "name": "equinix.fabric.route_filter_status.pending_bgp_configuration",
             "description": "Connection Route Filter named ${route_filter_rule_name} state changed to pending_bgp_configuration",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
-            "name": "equinix.fabric.connection.route_filter.failed",
+            "name": "equinix.fabric.route_filter_status.failed",
             "description": "Connection Route Filter named ${route_filter_rule_name} state changed to failed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
@@ -752,37 +752,37 @@
             "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.connection.route_aggregation.attaching",
+            "name": "equinix.fabric.route_aggregation_status.attaching",
             "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attaching",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
-            "name": "equinix.fabric.connection.route_aggregation.detaching",
+            "name": "equinix.fabric.route_aggregation_status.detaching",
             "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detaching",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
-            "name": "equinix.fabric.connection.route_aggregation.attached",
+            "name": "equinix.fabric.route_aggregation_status.attached",
             "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to attached",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
-            "name": "equinix.fabric.connection.route_aggregation.detached",
+            "name": "equinix.fabric.route_aggregation_status.detached",
             "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to detached",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
-            "name": "equinix.fabric.connection.route_aggregation.pending_bgp_configuration",
+            "name": "equinix.fabric.route_aggregation_status.pending_bgp_configuration",
             "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to pending_bgp_configuration",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
-            "name": "equinix.fabric.connection.route_aggregation.failed",
+            "name": "equinix.fabric.route_aggregation_status.failed",
             "description": "Connection Route Aggregation named ${route_aggregation_rule_name} state changed to failed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
