@@ -855,373 +855,373 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.metro.am_{metroCode}.latency</td>
 		<td>Metro latency from AM to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.at_{metroCode}.latency</td>
 		<td>Metro latency from AT to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ba_{metroCode}.latency</td>
 		<td>Metro latency from BA to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bg_{metroCode}.latency</td>
 		<td>Metro latency from BG to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bl_{metroCode}.latency</td>
 		<td>Metro latency from BL to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bo_{metroCode}.latency</td>
 		<td>Metro latency from BO to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bx_{metroCode}.latency</td>
 		<td>Metro latency from BX to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ca_{metroCode}.latency</td>
 		<td>Metro latency from CA to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ch_{metroCode}.latency</td>
 		<td>Metro latency from CH to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cl_{metroCode}.latency</td>
 		<td>Metro latency from CL to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cu_{metroCode}.latency</td>
 		<td>Metro latency from CU to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.da_{metroCode}.latency</td>
 		<td>Metro latency from DA to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.db_{metroCode}.latency</td>
 		<td>Metro latency from DB to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dc_{metroCode}.latency</td>
 		<td>Metro latency from DC to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.de_{metroCode}.latency</td>
 		<td>Metro latency from DE to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dx_{metroCode}.latency</td>
 		<td>Metro latency from DX to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.fr_{metroCode}.latency</td>
 		<td>Metro latency from FR to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.gv_{metroCode}.latency</td>
 		<td>Metro latency from GV to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.he_{metroCode}.latency</td>
 		<td>Metro latency from HE to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hh_{metroCode}.latency</td>
 		<td>Metro latency from HH to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hk_{metroCode}.latency</td>
 		<td>Metro latency from HK to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ho_{metroCode}.latency</td>
 		<td>Metro latency from HO to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.il_{metroCode}.latency</td>
 		<td>Metro latency from IL to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.jh_{metroCode}.latency</td>
 		<td>Metro latency from JH to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ka_{metroCode}.latency</td>
 		<td>Metro latency from KA to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.kl_{metroCode}.latency</td>
 		<td>Metro latency from KL to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.la_{metroCode}.latency</td>
 		<td>Metro latency from LA to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ld_{metroCode}.latency</td>
 		<td>Metro latency from LD to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.lm_{metroCode}.latency</td>
 		<td>Metro latency from LM to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ls_{metroCode}.latency</td>
 		<td>Metro latency from LS to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ma_{metroCode}.latency</td>
 		<td>Metro latency from MA to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mb_{metroCode}.latency</td>
 		<td>Metro latency from MB to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.md_{metroCode}.latency</td>
 		<td>Metro latency from MD to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.me_{metroCode}.latency</td>
 		<td>Metro latency from ME to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mi_{metroCode}.latency</td>
 		<td>Metro latency from MI to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ml_{metroCode}.latency</td>
 		<td>Metro latency from ML to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mo_{metroCode}.latency</td>
 		<td>Metro latency from MO to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mt_{metroCode}.latency</td>
 		<td>Metro latency from MT to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mu_{metroCode}.latency</td>
 		<td>Metro latency from MU to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mx_{metroCode}.latency</td>
 		<td>Metro latency from MX to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ny_{metroCode}.latency</td>
 		<td>Metro latency from NY to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.os_{metroCode}.latency</td>
 		<td>Metro latency from OS to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ot_{metroCode}.latency</td>
 		<td>Metro latency from OT to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pa_{metroCode}.latency</td>
 		<td>Metro latency from PA to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pe_{metroCode}.latency</td>
 		<td>Metro latency from PE to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ph_{metroCode}.latency</td>
 		<td>Metro latency from PH to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.rj_{metroCode}.latency</td>
 		<td>Metro latency from RJ to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.se_{metroCode}.latency</td>
 		<td>Metro latency from SE to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sg_{metroCode}.latency</td>
 		<td>Metro latency from SG to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sk_{metroCode}.latency</td>
 		<td>Metro latency from SK to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sl_{metroCode}.latency</td>
 		<td>Metro latency from SL to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.so_{metroCode}.latency</td>
 		<td>Metro latency from SO to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sp_{metroCode}.latency</td>
 		<td>Metro latency from SP to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.st_{metroCode}.latency</td>
 		<td>Metro latency from ST to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sv_{metroCode}.latency</td>
 		<td>Metro latency from SV to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sy_{metroCode}.latency</td>
 		<td>Metro latency from SY to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.tr_{metroCode}.latency</td>
 		<td>Metro latency from TR to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ty_{metroCode}.latency</td>
 		<td>Metro latency from TY to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.va_{metroCode}.latency</td>
 		<td>Metro latency from VA to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wa_{metroCode}.latency</td>
 		<td>Metro latency from WA to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wi_{metroCode}.latency</td>
 		<td>Metro latency from WI to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.zh_{metroCode}.latency</td>
 		<td>Metro latency from ZH to ${metroCode} in ms</td>
 		<td>released</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.bandwidth_rx.usage</td>
