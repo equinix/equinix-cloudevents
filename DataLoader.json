@@ -180,6 +180,254 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.am_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.at_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ba_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.bg_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.bl_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.bo_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.bx_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ca_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ch_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.cl_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.cu_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.da_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.db_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.dc_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.de_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.dx_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.fr_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.gv_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.he_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.hh_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.hk_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ho_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.il_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.jh_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ka_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.kl_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.la_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ld_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.lm_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ls_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ma_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mb_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.md_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.me_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mi_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ml_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mo_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mt_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mu_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mx_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ny_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.os_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ot_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.pa_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.pe_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ph_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.rj_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.se_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sg_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sk_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sl_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.so_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sp_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.st_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sv_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sy_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.tr_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ty_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.va_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.wa_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.wi_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.zh_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.network.attribute.changed",
                 "releaseStatus": "released"
             },
@@ -822,7 +1070,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.am_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.at_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.at_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ba_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -834,7 +1094,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.bg_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.bl_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.bl_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.bo_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -846,7 +1118,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.bx_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.ca_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ca_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ch_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -858,7 +1142,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.cl_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.cu_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.cu_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.da_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -870,7 +1166,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.db_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.dc_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.dc_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.de_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -882,7 +1190,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.dx_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.fr_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.fr_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.gv_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -894,7 +1214,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.he_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.hh_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.hh_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.hk_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -906,7 +1238,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.ho_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.il_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.il_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.jh_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -918,7 +1262,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.ka_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.kl_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.kl_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.la_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -930,7 +1286,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.ld_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.lm_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.lm_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ls_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -942,7 +1310,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.ma_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.mb_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mb_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.md_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -954,7 +1334,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.me_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.mi_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mi_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ml_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -966,7 +1358,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.mo_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.mt_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mt_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mu_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -978,7 +1382,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.mx_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.ny_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ny_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.os_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -990,7 +1406,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.ot_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.pa_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.pa_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.pe_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -1002,7 +1430,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.ph_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.rj_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.rj_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.se_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -1014,7 +1454,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.sg_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.sk_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sk_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sl_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -1026,7 +1478,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.so_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.sp_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sp_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.st_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -1038,7 +1502,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.sv_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.sy_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sy_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.tr_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -1050,6 +1526,14 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.ty_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.va_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.va_{metroCode}.latency",
                 "releaseStatus": "released"
             },
@@ -1058,7 +1542,19 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.wa_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.wi_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.wi_{metroCode}.latency",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.zh_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
