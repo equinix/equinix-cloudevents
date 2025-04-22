@@ -26,6 +26,7 @@ def retrieve_supported_events():
                         if isinstance(event, dict) and "name" in event and "releaseStatus" in event:
                             dataLoaderStructure[domain][sc.EVENTS].append({
                                 "name": event["name"],
+                                "description": event["description"],
                                 "releaseStatus": event["releaseStatus"]
                             })
                             
@@ -34,6 +35,7 @@ def retrieve_supported_events():
                         if isinstance(metric, dict) and "name" in metric and "releaseStatus" in metric:
                             dataLoaderStructure[domain][sc.METRICS].append({
                                 "name": metric["name"],
+                                "description": metric["description"],
                                 "releaseStatus": metric["releaseStatus"]
                             })
                             
@@ -41,6 +43,7 @@ def retrieve_supported_events():
                         if isinstance(alert, dict) and "name" in alert and "releaseStatus" in alert:
                             dataLoaderStructure[domain][sc.ALERTS].append({
                                 "name": alert["name"],
+                                "description": alert["description"],
                                 "releaseStatus": alert["releaseStatus"]
                             })
                             
