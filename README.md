@@ -821,13 +821,13 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.connection.installed_routes_ipv4.utilization</td>
 		<td>Utilization of connection '${connection_name}' active IPv4 routes reached ${threshold}</td>
 		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.installed_routes_ipv6.utilization</td>
 		<td>Utilization of connection '${connection_name}' active IPv6 routes reached ${threshold}</td>
 		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count</td>
@@ -1265,13 +1265,13 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.router.installed_routes_ipv4.utilization</td>
 		<td>Utilization of router '${router_name}' total IPv4 routes reached ${threshold}</td>
 		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.router.installed_routes_ipv6.utilization</td>
 		<td>Utilization of router '${router_name}' total IPv6 routes reached ${threshold}</td>
 		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 </table>
 
