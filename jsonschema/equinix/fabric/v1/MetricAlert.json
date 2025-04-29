@@ -154,7 +154,9 @@
             "description": "Schema definition of AlertRule data"
         }
     },
-    "cloudeventTypes": [
+    "cloudeventTypes": [],
+    "metricNames": [],
+    "alertNames": [
         {
             "name": "equinix.fabric.connection.installed_routes_ipv4.utilization",
             "description": "Utilization of connection '${connection_name}' active IPv4 routes reached ${threshold}",
@@ -623,7 +625,5 @@
             "sloCategoryCode": "BLUE_ALERT_SLO",
             "releaseStatus": "released"
         }
-    ],
-    "metricNames": [],
-    "alertNames": []
+    ]
 }

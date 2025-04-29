@@ -83,36 +83,6 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection.installed_routes_ipv4.utilization",
-                "description": "Utilization of connection '${connection_name}' active IPv4 routes reached ${threshold}",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.installed_routes_ipv6.utilization",
-                "description": "Utilization of connection '${connection_name}' active IPv6 routes reached ${threshold}",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
-                "description": "Connection A side inbound dropped packets count above ${threshold}",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
-                "description": "Connection Z side inbound dropped packets count above ${threshold}",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
-                "description": "Connection A side outbound dropped packets count above ${threshold}",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
-                "description": "Connection Z side outbound dropped packets count above ${threshold}",
-                "releaseStatus": "released"
-            },
-            {
                 "name": "equinix.fabric.connection.state.deprovisioned",
                 "description": "Connection named ${connection_name} state changed to deprovisioned",
                 "releaseStatus": "released"
@@ -220,254 +190,6 @@
             {
                 "name": "equinix.fabric.metric",
                 "description": "",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.am_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.at_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.ba_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.bg_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.bl_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.bo_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.bx_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.ca_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.ch_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.cl_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.cu_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.da_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.db_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.dc_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.de_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.dx_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.fr_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.gv_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.he_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.hh_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.hk_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.ho_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.il_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.jh_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.ka_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.kl_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.la_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.ld_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.lm_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.ls_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.ma_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.mb_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.md_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.me_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.mi_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.ml_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.mo_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.mt_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.mu_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.mx_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.ny_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.os_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.ot_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.pa_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.pe_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.ph_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.rj_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.se_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.sg_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.sk_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.sl_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.so_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.sp_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.st_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.sv_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.sy_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.tr_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.ty_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.va_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.wa_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.wi_{metroCode}.latency",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.zh_{metroCode}.latency",
                 "releaseStatus": "released"
             },
             {
@@ -671,16 +393,6 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.router.installed_routes_ipv4.utilization",
-                "description": "Utilization of router '${router_name}' total IPv4 routes reached ${threshold}",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.router.installed_routes_ipv6.utilization",
-                "description": "Utilization of router '${router_name}' total IPv6 routes reached ${threshold}",
-                "releaseStatus": "released"
-            },
-            {
                 "name": "equinix.fabric.router.state.deprovisioned",
                 "description": "Router named ${router_name} successfully deprovisioned",
                 "releaseStatus": "released"
@@ -804,16 +516,6 @@
                 "name": "equinix.fabric.service_token.state.inactive",
                 "description": "Token successfully deactivated",
                 "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.bandwidth_rx.usage",
-                "description": "Connection inbound bandwidth usage above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection.bandwidth_tx.usage",
-                "description": "Connection outbound bandwidth usage above ${threshold}",
-                "releaseStatus": "preview"
             },
             {
                 "name": "equinix.fabric.connection.route_aggregation_status.attached",
@@ -1186,36 +888,6 @@
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.port.bandwidth_rx.usage",
-                "description": "Port inbound bandwidth usage above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port.bandwidth_tx.usage",
-                "description": "Port outbound bandwidth usage above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port.packets_dropped_rx.count",
-                "description": "Port inbound dropped packets count above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port.packets_dropped_tx.count",
-                "description": "Port outbound dropped packets count above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port.packets_erred_rx.count",
-                "description": "Port inbound erred packets count above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port.packets_erred_tx.count",
-                "description": "Port outbound erred packets count above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
                 "name": "equinix.fabric.route_aggregation.attribute.changed",
                 "description": "Route Aggregation named ${route_aggregation_name} attribute changed",
                 "releaseStatus": "preview"
@@ -1274,6 +946,7 @@
             },
             {
                 "name": "equinix.fabric.metro.am_{metroCode}.latency",
+                "description": "Metro latency from AM to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1283,10 +956,12 @@
             },
             {
                 "name": "equinix.fabric.metro.at_{metroCode}.latency",
+                "description": "Metro latency from AT to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.ba_{metroCode}.latency",
+                "description": "Metro latency from BA to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1301,6 +976,7 @@
             },
             {
                 "name": "equinix.fabric.metro.bg_{metroCode}.latency",
+                "description": "Metro latency from BG to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1310,10 +986,12 @@
             },
             {
                 "name": "equinix.fabric.metro.bl_{metroCode}.latency",
+                "description": "Metro latency from BL to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.bo_{metroCode}.latency",
+                "description": "Metro latency from BO to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1328,6 +1006,7 @@
             },
             {
                 "name": "equinix.fabric.metro.bx_{metroCode}.latency",
+                "description": "Metro latency from BX to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1337,10 +1016,12 @@
             },
             {
                 "name": "equinix.fabric.metro.ca_{metroCode}.latency",
+                "description": "Metro latency from CA to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.ch_{metroCode}.latency",
+                "description": "Metro latency from CH to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1355,6 +1036,7 @@
             },
             {
                 "name": "equinix.fabric.metro.cl_{metroCode}.latency",
+                "description": "Metro latency from CL to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1364,10 +1046,12 @@
             },
             {
                 "name": "equinix.fabric.metro.cu_{metroCode}.latency",
+                "description": "Metro latency from CU to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.da_{metroCode}.latency",
+                "description": "Metro latency from DA to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1382,6 +1066,7 @@
             },
             {
                 "name": "equinix.fabric.metro.db_{metroCode}.latency",
+                "description": "Metro latency from DB to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1391,10 +1076,12 @@
             },
             {
                 "name": "equinix.fabric.metro.dc_{metroCode}.latency",
+                "description": "Metro latency from DC to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.de_{metroCode}.latency",
+                "description": "Metro latency from DE to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1409,6 +1096,7 @@
             },
             {
                 "name": "equinix.fabric.metro.dx_{metroCode}.latency",
+                "description": "Metro latency from DX to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1418,10 +1106,12 @@
             },
             {
                 "name": "equinix.fabric.metro.fr_{metroCode}.latency",
+                "description": "Metro latency from FR to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.gv_{metroCode}.latency",
+                "description": "Metro latency from GV to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1436,6 +1126,7 @@
             },
             {
                 "name": "equinix.fabric.metro.he_{metroCode}.latency",
+                "description": "Metro latency from HE to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1445,10 +1136,12 @@
             },
             {
                 "name": "equinix.fabric.metro.hh_{metroCode}.latency",
+                "description": "Metro latency from HH to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.hk_{metroCode}.latency",
+                "description": "Metro latency from HK to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1463,6 +1156,7 @@
             },
             {
                 "name": "equinix.fabric.metro.ho_{metroCode}.latency",
+                "description": "Metro latency from HO to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1472,10 +1166,12 @@
             },
             {
                 "name": "equinix.fabric.metro.il_{metroCode}.latency",
+                "description": "Metro latency from IL to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.jh_{metroCode}.latency",
+                "description": "Metro latency from JH to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1490,6 +1186,7 @@
             },
             {
                 "name": "equinix.fabric.metro.ka_{metroCode}.latency",
+                "description": "Metro latency from KA to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1499,10 +1196,12 @@
             },
             {
                 "name": "equinix.fabric.metro.kl_{metroCode}.latency",
+                "description": "Metro latency from KL to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.la_{metroCode}.latency",
+                "description": "Metro latency from LA to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1517,6 +1216,7 @@
             },
             {
                 "name": "equinix.fabric.metro.ld_{metroCode}.latency",
+                "description": "Metro latency from LD to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1526,10 +1226,12 @@
             },
             {
                 "name": "equinix.fabric.metro.lm_{metroCode}.latency",
+                "description": "Metro latency from LM to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.ls_{metroCode}.latency",
+                "description": "Metro latency from LS to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1544,6 +1246,7 @@
             },
             {
                 "name": "equinix.fabric.metro.ma_{metroCode}.latency",
+                "description": "Metro latency from MA to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1553,10 +1256,12 @@
             },
             {
                 "name": "equinix.fabric.metro.mb_{metroCode}.latency",
+                "description": "Metro latency from MB to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.md_{metroCode}.latency",
+                "description": "Metro latency from MD to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1571,6 +1276,7 @@
             },
             {
                 "name": "equinix.fabric.metro.me_{metroCode}.latency",
+                "description": "Metro latency from ME to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1580,10 +1286,12 @@
             },
             {
                 "name": "equinix.fabric.metro.mi_{metroCode}.latency",
+                "description": "Metro latency from MI to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.ml_{metroCode}.latency",
+                "description": "Metro latency from ML to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1598,6 +1306,7 @@
             },
             {
                 "name": "equinix.fabric.metro.mo_{metroCode}.latency",
+                "description": "Metro latency from MO to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1607,10 +1316,12 @@
             },
             {
                 "name": "equinix.fabric.metro.mt_{metroCode}.latency",
+                "description": "Metro latency from MT to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.mu_{metroCode}.latency",
+                "description": "Metro latency from MU to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1625,6 +1336,7 @@
             },
             {
                 "name": "equinix.fabric.metro.mx_{metroCode}.latency",
+                "description": "Metro latency from MX to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1634,10 +1346,12 @@
             },
             {
                 "name": "equinix.fabric.metro.ny_{metroCode}.latency",
+                "description": "Metro latency from NY to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.os_{metroCode}.latency",
+                "description": "Metro latency from OS to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1652,6 +1366,7 @@
             },
             {
                 "name": "equinix.fabric.metro.ot_{metroCode}.latency",
+                "description": "Metro latency from OT to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1661,10 +1376,12 @@
             },
             {
                 "name": "equinix.fabric.metro.pa_{metroCode}.latency",
+                "description": "Metro latency from PA to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.pe_{metroCode}.latency",
+                "description": "Metro latency from PE to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1679,6 +1396,7 @@
             },
             {
                 "name": "equinix.fabric.metro.ph_{metroCode}.latency",
+                "description": "Metro latency from PH to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1688,10 +1406,12 @@
             },
             {
                 "name": "equinix.fabric.metro.rj_{metroCode}.latency",
+                "description": "Metro latency from RJ to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.se_{metroCode}.latency",
+                "description": "Metro latency from SE to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1706,6 +1426,7 @@
             },
             {
                 "name": "equinix.fabric.metro.sg_{metroCode}.latency",
+                "description": "Metro latency from SG to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1715,10 +1436,12 @@
             },
             {
                 "name": "equinix.fabric.metro.sk_{metroCode}.latency",
+                "description": "Metro latency from SK to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.sl_{metroCode}.latency",
+                "description": "Metro latency from SL to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1733,6 +1456,7 @@
             },
             {
                 "name": "equinix.fabric.metro.so_{metroCode}.latency",
+                "description": "Metro latency from SO to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1742,10 +1466,12 @@
             },
             {
                 "name": "equinix.fabric.metro.sp_{metroCode}.latency",
+                "description": "Metro latency from SP to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.st_{metroCode}.latency",
+                "description": "Metro latency from ST to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1760,6 +1486,7 @@
             },
             {
                 "name": "equinix.fabric.metro.sv_{metroCode}.latency",
+                "description": "Metro latency from SV to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1769,10 +1496,12 @@
             },
             {
                 "name": "equinix.fabric.metro.sy_{metroCode}.latency",
+                "description": "Metro latency from SY to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.tr_{metroCode}.latency",
+                "description": "Metro latency from TR to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1787,10 +1516,12 @@
             },
             {
                 "name": "equinix.fabric.metro.ty_{metroCode}.latency",
+                "description": "Metro latency from TY to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.va_{metroCode}.latency",
+                "description": "Metro latency from VA to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1805,6 +1536,7 @@
             },
             {
                 "name": "equinix.fabric.metro.wa_{metroCode}.latency",
+                "description": "Metro latency from WA to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1814,10 +1546,12 @@
             },
             {
                 "name": "equinix.fabric.metro.wi_{metroCode}.latency",
+                "description": "Metro latency from WI to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.metro.zh_{metroCode}.latency",
+                "description": "Metro latency from ZH to ${metroCode} in ms",
                 "releaseStatus": "released"
             },
             {
@@ -1856,7 +1590,398 @@
                 "releaseStatus": "released"
             }
         ],
-        "alertNames": []
+        "alertNames": [
+            {
+                "name": "equinix.fabric.connection.installed_routes_ipv4.utilization",
+                "description": "Utilization of connection '${connection_name}' active IPv4 routes reached ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection.installed_routes_ipv6.utilization",
+                "description": "Utilization of connection '${connection_name}' active IPv6 routes reached ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
+                "description": "Connection A side inbound dropped packets count above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
+                "description": "Connection Z side inbound dropped packets count above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
+                "description": "Connection A side outbound dropped packets count above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
+                "description": "Connection Z side outbound dropped packets count above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.am_{metroCode}.latency",
+                "description": "Metro latency from AM to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.at_{metroCode}.latency",
+                "description": "Metro latency from AT to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ba_{metroCode}.latency",
+                "description": "Metro latency from BA to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.bg_{metroCode}.latency",
+                "description": "Metro latency from BG to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.bl_{metroCode}.latency",
+                "description": "Metro latency from BL to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.bo_{metroCode}.latency",
+                "description": "Metro latency from BO to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.bx_{metroCode}.latency",
+                "description": "Metro latency from BX to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ca_{metroCode}.latency",
+                "description": "Metro latency from CA to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ch_{metroCode}.latency",
+                "description": "Metro latency from CH to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.cl_{metroCode}.latency",
+                "description": "Metro latency from CL to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.cu_{metroCode}.latency",
+                "description": "Metro latency from CU to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.da_{metroCode}.latency",
+                "description": "Metro latency from DA to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.db_{metroCode}.latency",
+                "description": "Metro latency from DB to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.dc_{metroCode}.latency",
+                "description": "Metro latency from DC to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.de_{metroCode}.latency",
+                "description": "Metro latency from DE to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.dx_{metroCode}.latency",
+                "description": "Metro latency from DX to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.fr_{metroCode}.latency",
+                "description": "Metro latency from FR to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.gv_{metroCode}.latency",
+                "description": "Metro latency from GV to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.he_{metroCode}.latency",
+                "description": "Metro latency from HE to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.hh_{metroCode}.latency",
+                "description": "Metro latency from HH to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.hk_{metroCode}.latency",
+                "description": "Metro latency from HK to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ho_{metroCode}.latency",
+                "description": "Metro latency from HO to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.il_{metroCode}.latency",
+                "description": "Metro latency from IL to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.jh_{metroCode}.latency",
+                "description": "Metro latency from JH to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ka_{metroCode}.latency",
+                "description": "Metro latency from KA to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.kl_{metroCode}.latency",
+                "description": "Metro latency from KL to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.la_{metroCode}.latency",
+                "description": "Metro latency from LA to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ld_{metroCode}.latency",
+                "description": "Metro latency from LD to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.lm_{metroCode}.latency",
+                "description": "Metro latency from LM to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ls_{metroCode}.latency",
+                "description": "Metro latency from LS to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ma_{metroCode}.latency",
+                "description": "Metro latency from MA to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mb_{metroCode}.latency",
+                "description": "Metro latency from MB to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.md_{metroCode}.latency",
+                "description": "Metro latency from MD to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.me_{metroCode}.latency",
+                "description": "Metro latency from ME to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mi_{metroCode}.latency",
+                "description": "Metro latency from MI to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ml_{metroCode}.latency",
+                "description": "Metro latency from ML to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mo_{metroCode}.latency",
+                "description": "Metro latency from MO to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mt_{metroCode}.latency",
+                "description": "Metro latency from MT to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mu_{metroCode}.latency",
+                "description": "Metro latency from MU to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mx_{metroCode}.latency",
+                "description": "Metro latency from MX to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ny_{metroCode}.latency",
+                "description": "Metro latency from NY to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.os_{metroCode}.latency",
+                "description": "Metro latency from OS to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ot_{metroCode}.latency",
+                "description": "Metro latency from OT to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.pa_{metroCode}.latency",
+                "description": "Metro latency from PA to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.pe_{metroCode}.latency",
+                "description": "Metro latency from PE to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ph_{metroCode}.latency",
+                "description": "Metro latency from PH to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.rj_{metroCode}.latency",
+                "description": "Metro latency from RJ to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.se_{metroCode}.latency",
+                "description": "Metro latency from SE to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sg_{metroCode}.latency",
+                "description": "Metro latency from SG to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sk_{metroCode}.latency",
+                "description": "Metro latency from SK to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sl_{metroCode}.latency",
+                "description": "Metro latency from SL to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.so_{metroCode}.latency",
+                "description": "Metro latency from SO to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sp_{metroCode}.latency",
+                "description": "Metro latency from SP to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.st_{metroCode}.latency",
+                "description": "Metro latency from ST to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sv_{metroCode}.latency",
+                "description": "Metro latency from SV to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sy_{metroCode}.latency",
+                "description": "Metro latency from SY to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.tr_{metroCode}.latency",
+                "description": "Metro latency from TR to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ty_{metroCode}.latency",
+                "description": "Metro latency from TY to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.va_{metroCode}.latency",
+                "description": "Metro latency from VA to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.wa_{metroCode}.latency",
+                "description": "Metro latency from WA to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.wi_{metroCode}.latency",
+                "description": "Metro latency from WI to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.zh_{metroCode}.latency",
+                "description": "Metro latency from ZH to ${metroCode} in ms",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.router.installed_routes_ipv4.utilization",
+                "description": "Utilization of router '${router_name}' total IPv4 routes reached ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.router.installed_routes_ipv6.utilization",
+                "description": "Utilization of router '${router_name}' total IPv6 routes reached ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection.bandwidth_rx.usage",
+                "description": "Connection inbound bandwidth usage above ${threshold}",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection.bandwidth_tx.usage",
+                "description": "Connection outbound bandwidth usage above ${threshold}",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port.bandwidth_rx.usage",
+                "description": "Port inbound bandwidth usage above ${threshold}",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port.bandwidth_tx.usage",
+                "description": "Port outbound bandwidth usage above ${threshold}",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port.packets_dropped_rx.count",
+                "description": "Port inbound dropped packets count above ${threshold}",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port.packets_dropped_tx.count",
+                "description": "Port outbound dropped packets count above ${threshold}",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port.packets_erred_rx.count",
+                "description": "Port inbound erred packets count above ${threshold}",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port.packets_erred_tx.count",
+                "description": "Port outbound erred packets count above ${threshold}",
+                "releaseStatus": "preview"
+            }
+        ]
     },
     "identity": {
         "cloudeventTypes": [

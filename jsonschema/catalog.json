@@ -732,7 +732,9 @@
             "name": "MetricAlert",
             "description": "The data within all MetricAlert events.",
             "datatype": "equinix.fabric.v1.MetricAlert",
-            "cloudeventTypes": [
+            "cloudeventTypes": [],
+            "metricNames": [],
+            "alertNames": [
                 {
                     "name": "equinix.fabric.connection.bandwidth_rx.usage",
                     "description": "Connection inbound bandwidth usage above ${threshold}",
@@ -1201,9 +1203,7 @@
                     "sloCategoryCode": "BROWN_EVENT_SLO",
                     "releaseStatus": "released"
                 }
-            ],
-            "metricNames": [],
-            "alertNames": []
+            ]
         },
         {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricEvent.json",
