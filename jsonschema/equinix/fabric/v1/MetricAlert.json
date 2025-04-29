@@ -160,25 +160,25 @@
         {
             "name": "equinix.fabric.connection.installed_routes_ipv4.utilization",
             "description": "Utilization of connection '${connection_name}' active IPv4 routes reached ${threshold}",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.connection.installed_routes_ipv6.utilization",
             "description": "Utilization of connection '${connection_name}' active IPv6 routes reached ${threshold}",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.router.installed_routes_ipv4.utilization",
             "description": "Utilization of router '${router_name}' total IPv4 routes reached ${threshold}",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.router.installed_routes_ipv6.utilization",
             "description": "Utilization of router '${router_name}' total IPv6 routes reached ${threshold}",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
