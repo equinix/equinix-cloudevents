@@ -794,7 +794,9 @@ The following data payloads are the supported events and formats for Equinix Net
 #### Data Type
 `equinix.fabric.v1.MetricAlert`
 #### Supported Events, Metrics, and Alerts
-#### Events
+
+
+#### Alerts
 
 <table>
 	<tr>
@@ -1272,8 +1274,6 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 </table>
-
-
 
 ---
 ### Equinix Fabric MetricEvent
