@@ -101,150 +101,6 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.connection.bgpipv4_session_status.active</td>
-		<td>Neighbor ${IP} address session state changed to Active</td>
-		<td>released</td>
-	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bgpipv4_session_status.connect</td>
-		<td>Neighbor ${IP} address session state changed to Connect</td>
-		<td>released</td>
-	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bgpipv4_session_status.established</td>
-		<td>Neighbor ${IP} address session state changed to Established</td>
-		<td>released</td>
-	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bgpipv4_session_status.idle</td>
-		<td>Neighbor ${IP} address session state changed to Idle</td>
-		<td>released</td>
-	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bgpipv4_session_status.open_confirm</td>
-		<td>Neighbor ${IP} address session state changed to Open_confirm</td>
-		<td>released</td>
-	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bgpipv4_session_status.open_sent</td>
-		<td>Neighbor ${IP} address session state changed to Open_sent</td>
-		<td>released</td>
-	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bgpipv6_session_status.active</td>
-		<td>Neighbor ${IP} address session state changed to Active</td>
-		<td>released</td>
-	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bgpipv6_session_status.connect</td>
-		<td>Neighbor ${IP} address session state changed to Connect</td>
-		<td>released</td>
-	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bgpipv6_session_status.established</td>
-		<td>Neighbor ${IP} address session state changed to Established</td>
-		<td>released</td>
-	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bgpipv6_session_status.idle</td>
-		<td>Neighbor ${IP} address session state changed to Idle</td>
-		<td>released</td>
-	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bgpipv6_session_status.open_confirm</td>
-		<td>Neighbor ${IP} address session state changed to Open_confirm</td>
-		<td>released</td>
-	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bgpipv6_session_status.open_sent</td>
-		<td>Neighbor ${IP} address session state changed to open_sent</td>
-		<td>released</td>
-	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation_status.attached</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attached</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation_status.attaching</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attaching</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation_status.detached</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to detached</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation_status.detaching</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to detaching</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation_status.failed</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to failed</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_aggregation_status.pending_bgp_configuration</td>
-		<td>Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to pending_bgp_configuration</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter_status.attached</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} attachment status changed to attached</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter_status.attaching</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} attachment status changed to attaching</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter_status.detached</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} attachment status changed to detached</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter_status.detaching</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} attachment status changed to detaching</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter_status.failed</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} attachment status changed to failed</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.route_filter_status.pending_bgp_configuration</td>
-		<td>Connection Route Filter named ${route_filter_rule_name} attachment status changed to pending_bgp_configuration</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
 		<td>equinix.fabric.connection.state.deprovisioned</td>
 		<td>Connection named ${connection_name} state changed to deprovisioned</td>
 		<td>released</td>
@@ -285,6 +141,150 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>Connection '${connection_name}' status changed to UP</td>
 		<td>released</td>
 	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv4_session.status.active</td>
+		<td>Neighbor ${IP} address session state changed to Active</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv4_session.status.connect</td>
+		<td>Neighbor ${IP} address session state changed to Connect</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv4_session.status.established</td>
+		<td>Neighbor ${IP} address session state changed to Established</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv4_session.status.idle</td>
+		<td>Neighbor ${IP} address session state changed to Idle</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv4_session.status.open_confirm</td>
+		<td>Neighbor ${IP} address session state changed to Open_confirm</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv4_session.status.open_sent</td>
+		<td>Neighbor ${IP} address session state changed to Open_sent</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv6_session.status.active</td>
+		<td>Neighbor ${IP} address session state changed to Active</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv6_session.status.connect</td>
+		<td>Neighbor ${IP} address session state changed to Connect</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv6_session.status.established</td>
+		<td>Neighbor ${IP} address session state changed to Established</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv6_session.status.idle</td>
+		<td>Neighbor ${IP} address session state changed to Idle</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv6_session.status.open_confirm</td>
+		<td>Neighbor ${IP} address session state changed to Open_confirm</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv6_session.status.open_sent</td>
+		<td>Neighbor ${IP} address session state changed to open_sent</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_route_aggregation.state.attached</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attached</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_route_aggregation.state.attaching</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_route_aggregation.state.detached</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to detached</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_route_aggregation.state.detaching</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to detaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_route_aggregation.state.failed</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_route_aggregation.state.pending_bgp_configuration</td>
+		<td>Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to pending_bgp_configuration</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_route_filter.state.attached</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} attachment status changed to attached</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_route_filter.state.attaching</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} attachment status changed to attaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_route_filter.state.detached</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} attachment status changed to detached</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_route_filter.state.detaching</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} attachment status changed to detaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_route_filter.state.failed</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} attachment status changed to failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_route_filter.state.pending_bgp_configuration</td>
+		<td>Connection Route Filter named ${route_filter_rule_name} attachment status changed to pending_bgp_configuration</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_routing_protocol.state.deprovisioned</td>

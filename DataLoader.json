@@ -23,66 +23,6 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection.bgpipv4_session_status.active",
-                "description": "Neighbor ${IP} address session state changed to Active",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.bgpipv4_session_status.connect",
-                "description": "Neighbor ${IP} address session state changed to Connect",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.bgpipv4_session_status.established",
-                "description": "Neighbor ${IP} address session state changed to Established",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.bgpipv4_session_status.idle",
-                "description": "Neighbor ${IP} address session state changed to Idle",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.bgpipv4_session_status.open_confirm",
-                "description": "Neighbor ${IP} address session state changed to Open_confirm",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.bgpipv4_session_status.open_sent",
-                "description": "Neighbor ${IP} address session state changed to Open_sent",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.bgpipv6_session_status.active",
-                "description": "Neighbor ${IP} address session state changed to Active",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.bgpipv6_session_status.connect",
-                "description": "Neighbor ${IP} address session state changed to Connect",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.bgpipv6_session_status.established",
-                "description": "Neighbor ${IP} address session state changed to Established",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.bgpipv6_session_status.idle",
-                "description": "Neighbor ${IP} address session state changed to Idle",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.bgpipv6_session_status.open_confirm",
-                "description": "Neighbor ${IP} address session state changed to Open_confirm",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.bgpipv6_session_status.open_sent",
-                "description": "Neighbor ${IP} address session state changed to open_sent",
-                "releaseStatus": "released"
-            },
-            {
                 "name": "equinix.fabric.connection.state.deprovisioned",
                 "description": "Connection named ${connection_name} state changed to deprovisioned",
                 "releaseStatus": "released"
@@ -518,62 +458,122 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection.route_aggregation_status.attached",
+                "name": "equinix.fabric.connection_bgpipv4_session.status.active",
+                "description": "Neighbor ${IP} address session state changed to Active",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.connect",
+                "description": "Neighbor ${IP} address session state changed to Connect",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.established",
+                "description": "Neighbor ${IP} address session state changed to Established",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.idle",
+                "description": "Neighbor ${IP} address session state changed to Idle",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.open_confirm",
+                "description": "Neighbor ${IP} address session state changed to Open_confirm",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.open_sent",
+                "description": "Neighbor ${IP} address session state changed to Open_sent",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.active",
+                "description": "Neighbor ${IP} address session state changed to Active",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.connect",
+                "description": "Neighbor ${IP} address session state changed to Connect",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.established",
+                "description": "Neighbor ${IP} address session state changed to Established",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.idle",
+                "description": "Neighbor ${IP} address session state changed to Idle",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.open_confirm",
+                "description": "Neighbor ${IP} address session state changed to Open_confirm",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.open_sent",
+                "description": "Neighbor ${IP} address session state changed to open_sent",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_route_aggregation.state.attached",
                 "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attached",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection.route_aggregation_status.attaching",
+                "name": "equinix.fabric.connection_route_aggregation.state.attaching",
                 "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attaching",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection.route_aggregation_status.detached",
+                "name": "equinix.fabric.connection_route_aggregation.state.detached",
                 "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to detached",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection.route_aggregation_status.detaching",
+                "name": "equinix.fabric.connection_route_aggregation.state.detaching",
                 "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to detaching",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection.route_aggregation_status.failed",
+                "name": "equinix.fabric.connection_route_aggregation.state.failed",
                 "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to failed",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection.route_aggregation_status.pending_bgp_configuration",
+                "name": "equinix.fabric.connection_route_aggregation.state.pending_bgp_configuration",
                 "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to pending_bgp_configuration",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection.route_filter_status.attached",
+                "name": "equinix.fabric.connection_route_filter.state.attached",
                 "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to attached",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection.route_filter_status.attaching",
+                "name": "equinix.fabric.connection_route_filter.state.attaching",
                 "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to attaching",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection.route_filter_status.detached",
+                "name": "equinix.fabric.connection_route_filter.state.detached",
                 "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to detached",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection.route_filter_status.detaching",
+                "name": "equinix.fabric.connection_route_filter.state.detaching",
                 "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to detaching",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection.route_filter_status.failed",
+                "name": "equinix.fabric.connection_route_filter.state.failed",
                 "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to failed",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection.route_filter_status.pending_bgp_configuration",
+                "name": "equinix.fabric.connection_route_filter.state.pending_bgp_configuration",
                 "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to pending_bgp_configuration",
                 "releaseStatus": "preview"
             },
