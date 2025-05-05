@@ -2162,7 +2162,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metric</td>
-		<td></td>
+		<td>Metrics collected</td>
 		<td>released</td>
 	<td>-</td>
 	</tr>

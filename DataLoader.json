@@ -129,7 +129,7 @@
             },
             {
                 "name": "equinix.fabric.metric",
-                "description": "",
+                "description": "Metrics collected",
                 "releaseStatus": "released"
             },
             {
