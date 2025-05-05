@@ -109,7 +109,7 @@
     "cloudeventTypes": [
         {
             "name": "equinix.fabric.metric",
-            "description": "",
+            "description": "Metrics collected",
             "sloCategoryCode": "",
             "releaseStatus": "released"
         }
