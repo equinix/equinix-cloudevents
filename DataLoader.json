@@ -1327,8 +1327,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.am_{metroCode}.latency",
+                "description": "Metro latency from Amsterdam to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.at_{metroCode}.latency",
                 "description": "Metro latency from Atlanta to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.at_{metroCode}.latency",
+                "description": "Metro latency from Atlanta to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ba_{metroCode}.latency",
+                "description": "Metro latency from Barcelona to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1342,8 +1357,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.bg_{metroCode}.latency",
+                "description": "Metro latency from Bogota to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.bl_{metroCode}.latency",
                 "description": "Metro latency from Brussels to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.bl_{metroCode}.latency",
+                "description": "Metro latency from Brussels to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.bo_{metroCode}.latency",
+                "description": "Metro latency from Boston to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1357,8 +1387,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.bx_{metroCode}.latency",
+                "description": "Metro latency from Bordeaux to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.ca_{metroCode}.latency",
                 "description": "Metro latency from Canberra to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ca_{metroCode}.latency",
+                "description": "Metro latency from Canberra to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ch_{metroCode}.latency",
+                "description": "Metro latency from Chicago to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1372,8 +1417,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.cl_{metroCode}.latency",
+                "description": "Metro latency from Calgary to  ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.cu_{metroCode}.latency",
                 "description": "Metro latency from Culpeper to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.cu_{metroCode}.latency",
+                "description": "Metro latency from Culpeper to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.da_{metroCode}.latency",
+                "description": "Metro latency from Dallas to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1387,8 +1447,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.db_{metroCode}.latency",
+                "description": "Metro latency from Dublin to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.dc_{metroCode}.latency",
                 "description": "Metro latency from Ashburn to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.dc_{metroCode}.latency",
+                "description": "Metro latency from Ashburn to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.de_{metroCode}.latency",
+                "description": "Metro latency from Denver to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1402,8 +1477,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.dx_{metroCode}.latency",
+                "description": "Metro latency from Dubai to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.fr_{metroCode}.latency",
                 "description": "Metro latency from Frankfurt to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.fr_{metroCode}.latency",
+                "description": "Metro latency from Frankfurt to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.gv_{metroCode}.latency",
+                "description": "Metro latency from Geneva to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1417,8 +1507,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.he_{metroCode}.latency",
+                "description": "Metro latency from Helsinki to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.hh_{metroCode}.latency",
                 "description": "Metro latency from Hamburg to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.hh_{metroCode}.latency",
+                "description": "Metro latency from Hamburg to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.hk_{metroCode}.latency",
+                "description": "Metro latency from Hong Kong to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1432,8 +1537,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.ho_{metroCode}.latency",
+                "description": "Metro latency from Houston to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.il_{metroCode}.latency",
                 "description": "Metro latency from Istanbul to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.il_{metroCode}.latency",
+                "description": "Metro latency from Istanbul to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.jh_{metroCode}.latency",
+                "description": "Metro latency from Johor to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1447,8 +1567,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.ka_{metroCode}.latency",
+                "description": "Metro latency from Kamloops to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.kl_{metroCode}.latency",
                 "description": "Metro latency from Kuala Lumpur to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.kl_{metroCode}.latency",
+                "description": "Metro latency from Kuala Lumpur to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.la_{metroCode}.latency",
+                "description": "Metro latency from Los Angeles to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1462,8 +1597,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.ld_{metroCode}.latency",
+                "description": "Metro latency from London to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.lm_{metroCode}.latency",
                 "description": "Metro latency from Lima to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.lm_{metroCode}.latency",
+                "description": "Metro latency from Lima to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ls_{metroCode}.latency",
+                "description": "Metro latency from Lisbon to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1477,8 +1627,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.ma_{metroCode}.latency",
+                "description": "Metro latency from Manchester to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.mb_{metroCode}.latency",
                 "description": "Metro latency from Mumbai to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mb_{metroCode}.latency",
+                "description": "Metro latency from Mumbai to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.md_{metroCode}.latency",
+                "description": "Metro latency from Madrid to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1492,8 +1657,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.me_{metroCode}.latency",
+                "description": "Metro latency from Melbourne to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.mi_{metroCode}.latency",
                 "description": "Metro latency from Miami to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mi_{metroCode}.latency",
+                "description": "Metro latency from Miami to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ml_{metroCode}.latency",
+                "description": "Metro latency from Milan to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1507,8 +1687,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.mo_{metroCode}.latency",
+                "description": "Metro latency from Monterrey to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.mt_{metroCode}.latency",
                 "description": "Metro latency from Montreal to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mt_{metroCode}.latency",
+                "description": "Metro latency from Montreal to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.mu_{metroCode}.latency",
+                "description": "Metro latency from Munich to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1522,8 +1717,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.mx_{metroCode}.latency",
+                "description": "Metro latency from Mexico City to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.ny_{metroCode}.latency",
                 "description": "Metro latency from New York to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.ny_{metroCode}.latency",
+                "description": "Metro latency from New York to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.os_{metroCode}.latency",
+                "description": "Metro latency from Osaka to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1537,8 +1747,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.ot_{metroCode}.latency",
+                "description": "Metro latency from Ottawa to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.pa_{metroCode}.latency",
                 "description": "Metro latency from Paris to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.pa_{metroCode}.latency",
+                "description": "Metro latency from Paris to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.pe_{metroCode}.latency",
+                "description": "Metro latency from Perth to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1552,8 +1777,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.ph_{metroCode}.latency",
+                "description": "Metro latency from Philadelphia to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.rj_{metroCode}.latency",
                 "description": "Metro latency from Rio de Janeiro to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.rj_{metroCode}.latency",
+                "description": "Metro latency from Rio de Janeiro to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.se_{metroCode}.latency",
+                "description": "Metro latency from Seattle to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1567,8 +1807,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.sg_{metroCode}.latency",
+                "description": "Metro latency from Singapore to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.sk_{metroCode}.latency",
                 "description": "Metro latency from Stockholm to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sk_{metroCode}.latency",
+                "description": "Metro latency from Stockholm to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sl_{metroCode}.latency",
+                "description": "Metro latency from Seoul to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1582,8 +1837,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.so_{metroCode}.latency",
+                "description": "Metro latency from Sofia to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.sp_{metroCode}.latency",
                 "description": "Metro latency from Sao Paulo to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sp_{metroCode}.latency",
+                "description": "Metro latency from Sao Paulo to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.st_{metroCode}.latency",
+                "description": "Metro latency from Santiago to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1597,8 +1867,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.sv_{metroCode}.latency",
+                "description": "Metro latency from Silicon Valley to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.sy_{metroCode}.latency",
                 "description": "Metro latency from Sydney to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.sy_{metroCode}.latency",
+                "description": "Metro latency from Sydney to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.tr_{metroCode}.latency",
+                "description": "Metro latency from Toronto to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1612,6 +1897,16 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.ty_{metroCode}.latency",
+                "description": "Metro latency from Tokyo to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.va_{metroCode}.latency",
+                "description": "Metro latency from Vancouver to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.va_{metroCode}.latency",
                 "description": "Metro latency from Vancouver to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
@@ -1622,8 +1917,23 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metro.wa_{metroCode}.latency",
+                "description": "Metro latency from Warsaw to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.metro.wi_{metroCode}.latency",
                 "description": "Metro latency from Winnipeg to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.wi_{metroCode}.latency",
+                "description": "Metro latency from Winnipeg to ${metroCode} above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.metro.zh_{metroCode}.latency",
+                "description": "Metro latency from Zurich to ${metroCode} above ${threshold}",
                 "releaseStatus": "released"
             },
             {
@@ -1670,316 +1980,6 @@
                 "name": "equinix.fabric.router.installed_routes_ipv6.utilization",
                 "description": "Utilization of router '${router_name}' total IPv6 routes reached ${threshold}",
                 "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.metro.am_{metroCode}.latency",
-                "description": "Metro latency from Amsterdam to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.at_{metroCode}.latency",
-                "description": "Metro latency from Atlanta to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.ba_{metroCode}.latency",
-                "description": "Metro latency from Barcelona to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.bg_{metroCode}.latency",
-                "description": "Metro latency from Bogota to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.bl_{metroCode}.latency",
-                "description": "Metro latency from Brussels to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.bo_{metroCode}.latency",
-                "description": "Metro latency from Boston to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.bx_{metroCode}.latency",
-                "description": "Metro latency from Bordeaux to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.ca_{metroCode}.latency",
-                "description": "Metro latency from Canberra to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.ch_{metroCode}.latency",
-                "description": "Metro latency from Chicago to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.cl_{metroCode}.latency",
-                "description": "Metro latency from Calgary to  ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.cu_{metroCode}.latency",
-                "description": "Metro latency from Culpeper to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.da_{metroCode}.latency",
-                "description": "Metro latency from Dallas to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.db_{metroCode}.latency",
-                "description": "Metro latency from Dublin to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.dc_{metroCode}.latency",
-                "description": "Metro latency from Ashburn to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.de_{metroCode}.latency",
-                "description": "Metro latency from Denver to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.dx_{metroCode}.latency",
-                "description": "Metro latency from Dubai to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.fr_{metroCode}.latency",
-                "description": "Metro latency from Frankfurt to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.gv_{metroCode}.latency",
-                "description": "Metro latency from Geneva to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.he_{metroCode}.latency",
-                "description": "Metro latency from Helsinki to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.hh_{metroCode}.latency",
-                "description": "Metro latency from Hamburg to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.hk_{metroCode}.latency",
-                "description": "Metro latency from Hong Kong to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.ho_{metroCode}.latency",
-                "description": "Metro latency from Houston to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.il_{metroCode}.latency",
-                "description": "Metro latency from Istanbul to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.jh_{metroCode}.latency",
-                "description": "Metro latency from Johor to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.ka_{metroCode}.latency",
-                "description": "Metro latency from Kamloops to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.kl_{metroCode}.latency",
-                "description": "Metro latency from Kuala Lumpur to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.la_{metroCode}.latency",
-                "description": "Metro latency from Los Angeles to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.ld_{metroCode}.latency",
-                "description": "Metro latency from London to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.lm_{metroCode}.latency",
-                "description": "Metro latency from Lima to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.ls_{metroCode}.latency",
-                "description": "Metro latency from Lisbon to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.ma_{metroCode}.latency",
-                "description": "Metro latency from Manchester to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.mb_{metroCode}.latency",
-                "description": "Metro latency from Mumbai to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.md_{metroCode}.latency",
-                "description": "Metro latency from Madrid to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.me_{metroCode}.latency",
-                "description": "Metro latency from Melbourne to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.mi_{metroCode}.latency",
-                "description": "Metro latency from Miami to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.ml_{metroCode}.latency",
-                "description": "Metro latency from Milan to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.mo_{metroCode}.latency",
-                "description": "Metro latency from Monterrey to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.mt_{metroCode}.latency",
-                "description": "Metro latency from Montreal to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.mu_{metroCode}.latency",
-                "description": "Metro latency from Munich to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.mx_{metroCode}.latency",
-                "description": "Metro latency from Mexico City to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.ny_{metroCode}.latency",
-                "description": "Metro latency from New York to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.os_{metroCode}.latency",
-                "description": "Metro latency from Osaka to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.ot_{metroCode}.latency",
-                "description": "Metro latency from Ottawa to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.pa_{metroCode}.latency",
-                "description": "Metro latency from Paris to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.pe_{metroCode}.latency",
-                "description": "Metro latency from Perth to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.ph_{metroCode}.latency",
-                "description": "Metro latency from Philadelphia to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.rj_{metroCode}.latency",
-                "description": "Metro latency from Rio de Janeiro to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.se_{metroCode}.latency",
-                "description": "Metro latency from Seattle to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.sg_{metroCode}.latency",
-                "description": "Metro latency from Singapore to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.sk_{metroCode}.latency",
-                "description": "Metro latency from Stockholm to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.sl_{metroCode}.latency",
-                "description": "Metro latency from Seoul to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.so_{metroCode}.latency",
-                "description": "Metro latency from Sofia to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.sp_{metroCode}.latency",
-                "description": "Metro latency from Sao Paulo to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.st_{metroCode}.latency",
-                "description": "Metro latency from Santiago to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.sv_{metroCode}.latency",
-                "description": "Metro latency from Silicon Valley to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.sy_{metroCode}.latency",
-                "description": "Metro latency from Sydney to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.tr_{metroCode}.latency",
-                "description": "Metro latency from Toronto to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.ty_{metroCode}.latency",
-                "description": "Metro latency from Tokyo to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.va_{metroCode}.latency",
-                "description": "Metro latency from Vancouver to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.wa_{metroCode}.latency",
-                "description": "Metro latency from Warsaw to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.wi_{metroCode}.latency",
-                "description": "Metro latency from Winnipeg to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.zh_{metroCode}.latency",
-                "description": "Metro latency from Zurich to ${metroCode} above ${threshold}",
-                "releaseStatus": "preview"
             }
         ]
     },
