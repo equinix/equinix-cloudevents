@@ -1994,6 +1994,16 @@
                 "name": "equinix.identity.user.activity.logged_out",
                 "description": "User loggedOut event",
                 "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.identity.user.added.to.org",
+                "description": "User added to org",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.identity.user.removed.from.org",
+                "description": "User removed from org",
+                "releaseStatus": "released"
             }
         ],
         "metricNames": [],

@@ -2465,6 +2465,29 @@
             "alertNames": []
         },
         {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserOrgLinkageEvent.json",
+            "domain": "Equinix Identity UserOrgLinkageEvent",
+            "name": "UserOrgLinkageEvent",
+            "description": "User UserOrgLinkage Event details",
+            "datatype": "equinix.identity.v1.UserOrgLinkageEvent",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.identity.user.added.to.org",
+                    "description": "User added to org event",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.identity.user.removed.to.org",
+                    "description": "User removed to org event",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/ChangeEvent.json",
             "domain": "Equinix Network Edge ChangeEvent",
             "name": "ChangeEvent",
