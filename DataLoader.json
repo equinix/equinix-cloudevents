@@ -1997,12 +1997,12 @@
             },
             {
                 "name": "equinix.identity.user.added.to.org",
-                "description": "User added to org",
+                "description": "User added to org event",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.identity.user.removed.from.org",
-                "description": "User removed from org",
+                "description": "User removed form org event",
                 "releaseStatus": "released"
             }
         ],
