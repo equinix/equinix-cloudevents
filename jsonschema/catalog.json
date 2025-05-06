@@ -2479,7 +2479,7 @@
                 },
                 {
                     "name": "equinix.identity.user.removed.to.org",
-                    "description": "User removed to org event",
+                    "description": "User removed from org event",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "released"
                 }
