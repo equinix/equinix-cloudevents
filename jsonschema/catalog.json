@@ -2478,7 +2478,7 @@
                     "releaseStatus": "released"
                 },
                 {
-                    "name": "equinix.identity.user.organization.removed.from.org",
+                    "name": "equinix.identity.user.organization.removed",
                     "description": "User removed from org event",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "released"
