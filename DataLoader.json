@@ -2002,7 +2002,7 @@
             },
             {
                 "name": "equinix.identity.user.organization.removed",
-                "description": "User removed form org event",
+                "description": "User removed from org event",
                 "releaseStatus": "released"
             }
         ],
