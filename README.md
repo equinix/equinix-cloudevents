@@ -2599,13 +2599,13 @@ The following data payloads are the supported events and formats for Equinix Net
 		<th>SLO Category</th>
 	</tr>
 	<tr>
-		<td>equinix.identity.user.added.to.org</td>
+		<td>equinix.identity.user.organization.added</td>
 		<td>User added to org event</td>
 		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.identity.user.removed.from.org</td>
+		<td>equinix.identity.user.organization.removed</td>
 		<td>User removed from org event</td>
 		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
