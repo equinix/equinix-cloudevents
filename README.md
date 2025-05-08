@@ -151,25 +151,25 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.connection_bgpipv4_session.status.connect</td>
 		<td>Neighbor ${IP} address session state changed to Connect</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv4_session.status.established</td>
 		<td>Neighbor ${IP} address session state changed to Established</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv4_session.status.idle</td>
 		<td>Neighbor ${IP} address session state changed to Idle</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv4_session.status.open_confirm</td>
 		<td>Neighbor ${IP} address session state changed to Open_confirm</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -187,19 +187,19 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.connection_bgpipv6_session.status.connect</td>
 		<td>Neighbor ${IP} address session state changed to Connect</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv6_session.status.established</td>
 		<td>Neighbor ${IP} address session state changed to Established</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv6_session.status.idle</td>
 		<td>Neighbor ${IP} address session state changed to Idle</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -808,13 +808,13 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.connection.bandwidth_rx.usage</td>
 		<td>Connection inbound bandwidth usage above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bandwidth_tx.usage</td>
 		<td>Connection outbound bandwidth usage above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1228,37 +1228,37 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.port.bandwidth_rx.usage</td>
 		<td>Port inbound bandwidth usage above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.bandwidth_tx.usage</td>
 		<td>Port outbound bandwidth usage above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_dropped_rx.count</td>
 		<td>Port inbound dropped packets count above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_dropped_tx.count</td>
 		<td>Port outbound dropped packets count above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_erred_rx.count</td>
 		<td>Port inbound erred packets count above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_erred_tx.count</td>
 		<td>Port outbound erred packets count above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>

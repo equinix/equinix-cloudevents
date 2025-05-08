@@ -90,25 +90,25 @@
                     "name": "equinix.fabric.connection_bgpipv4_session.status.connect",
                     "description": "Neighbor ${IP} address session state changed to Connect",
                     "sloCategoryCode": "BROWN_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.connection_bgpipv4_session.status.established",
                     "description": "Neighbor ${IP} address session state changed to Established",
                     "sloCategoryCode": "BROWN_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.connection_bgpipv4_session.status.idle",
                     "description": "Neighbor ${IP} address session state changed to Idle",
                     "sloCategoryCode": "BROWN_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.connection_bgpipv4_session.status.open_confirm",
                     "description": "Neighbor ${IP} address session state changed to Open_confirm",
                     "sloCategoryCode": "BROWN_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.connection_bgpipv4_session.status.open_sent",
@@ -126,19 +126,19 @@
                     "name": "equinix.fabric.connection_bgpipv6_session.status.connect",
                     "description": "Neighbor ${IP} address session state changed to Connect",
                     "sloCategoryCode": "BROWN_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.connection_bgpipv6_session.status.established",
                     "description": "Neighbor ${IP} address session state changed to Established",
                     "sloCategoryCode": "BROWN_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.connection_bgpipv6_session.status.idle",
                     "description": "Neighbor ${IP} address session state changed to Idle",
                     "sloCategoryCode": "BROWN_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.connection_bgpipv6_session.status.open_confirm",
@@ -739,13 +739,13 @@
                     "name": "equinix.fabric.connection.bandwidth_rx.usage",
                     "description": "Connection inbound bandwidth usage above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.connection.bandwidth_tx.usage",
                     "description": "Connection outbound bandwidth usage above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.connection.installed_routes_ipv4.utilization",
@@ -1159,37 +1159,37 @@
                     "name": "equinix.fabric.port.bandwidth_rx.usage",
                     "description": "Port inbound bandwidth usage above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.port.bandwidth_tx.usage",
                     "description": "Port outbound bandwidth usage above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.port.packets_dropped_rx.count",
                     "description": "Port inbound dropped packets count above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.port.packets_dropped_tx.count",
                     "description": "Port outbound dropped packets count above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.port.packets_erred_rx.count",
                     "description": "Port inbound erred packets count above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.port.packets_erred_tx.count",
                     "description": "Port outbound erred packets count above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.router.installed_routes_ipv4.utilization",
