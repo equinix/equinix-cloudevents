@@ -1996,12 +1996,12 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.identity.user.organization.added",
+                "name": "equinix.identity.organization.user.added",
                 "description": "User added to org event",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.identity.user.organization.removed",
+                "name": "equinix.identity.organization.user.removed",
                 "description": "User removed from org event",
                 "releaseStatus": "released"
             }

@@ -2472,13 +2472,13 @@
             "datatype": "equinix.identity.v1.UserOrgLinkageEvent",
             "cloudeventTypes": [
                 {
-                    "name": "equinix.identity.user.organization.added",
+                    "name": "equinix.identity.organization.user.added",
                     "description": "User added to org event",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "released"
                 },
                 {
-                    "name": "equinix.identity.user.organization.removed",
+                    "name": "equinix.identity.organization.user.removed",
                     "description": "User removed from org event",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "released"
