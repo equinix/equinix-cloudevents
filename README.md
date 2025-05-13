@@ -145,73 +145,73 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.connection_bgpipv4_session.status.active</td>
 		<td>Neighbor ${IP} address session state changed to Active</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv4_session.status.connect</td>
 		<td>Neighbor ${IP} address session state changed to Connect</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv4_session.status.established</td>
 		<td>Neighbor ${IP} address session state changed to Established</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv4_session.status.idle</td>
 		<td>Neighbor ${IP} address session state changed to Idle</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv4_session.status.open_confirm</td>
 		<td>Neighbor ${IP} address session state changed to Open_confirm</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv4_session.status.open_sent</td>
 		<td>Neighbor ${IP} address session state changed to Open_sent</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv6_session.status.active</td>
 		<td>Neighbor ${IP} address session state changed to Active</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv6_session.status.connect</td>
 		<td>Neighbor ${IP} address session state changed to Connect</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv6_session.status.established</td>
 		<td>Neighbor ${IP} address session state changed to Established</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv6_session.status.idle</td>
 		<td>Neighbor ${IP} address session state changed to Idle</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv6_session.status.open_confirm</td>
 		<td>Neighbor ${IP} address session state changed to Open_confirm</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection_bgpipv6_session.status.open_sent</td>
 		<td>Neighbor ${IP} address session state changed to open_sent</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2577,6 +2577,37 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.identity.user.activity.logged_out</td>
 		<td>User loggedOut event</td>
 		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+</table>
+
+
+
+---
+### Equinix Identity UserOrgLinkageEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserOrgLinkageEvent.json)
+#### Data Type
+`equinix.identity.v1.UserOrgLinkageEvent`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.identity.organization.user.added</td>
+		<td>User added to org event</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.identity.organization.user.removed</td>
+		<td>User removed from org event</td>
+		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 </table>

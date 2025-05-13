@@ -58,6 +58,66 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.active",
+                "description": "Neighbor ${IP} address session state changed to Active",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.connect",
+                "description": "Neighbor ${IP} address session state changed to Connect",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.established",
+                "description": "Neighbor ${IP} address session state changed to Established",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.idle",
+                "description": "Neighbor ${IP} address session state changed to Idle",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.open_confirm",
+                "description": "Neighbor ${IP} address session state changed to Open_confirm",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.open_sent",
+                "description": "Neighbor ${IP} address session state changed to Open_sent",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.active",
+                "description": "Neighbor ${IP} address session state changed to Active",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.connect",
+                "description": "Neighbor ${IP} address session state changed to Connect",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.established",
+                "description": "Neighbor ${IP} address session state changed to Established",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.idle",
+                "description": "Neighbor ${IP} address session state changed to Idle",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.open_confirm",
+                "description": "Neighbor ${IP} address session state changed to Open_confirm",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.open_sent",
+                "description": "Neighbor ${IP} address session state changed to open_sent",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.connection_routing_protocol.state.deprovisioned",
                 "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioned",
                 "releaseStatus": "released"
@@ -451,66 +511,6 @@
                 "name": "equinix.fabric.service_token.state.inactive",
                 "description": "Token successfully deactivated",
                 "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv4_session.status.active",
-                "description": "Neighbor ${IP} address session state changed to Active",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv4_session.status.connect",
-                "description": "Neighbor ${IP} address session state changed to Connect",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv4_session.status.established",
-                "description": "Neighbor ${IP} address session state changed to Established",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv4_session.status.idle",
-                "description": "Neighbor ${IP} address session state changed to Idle",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv4_session.status.open_confirm",
-                "description": "Neighbor ${IP} address session state changed to Open_confirm",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv4_session.status.open_sent",
-                "description": "Neighbor ${IP} address session state changed to Open_sent",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv6_session.status.active",
-                "description": "Neighbor ${IP} address session state changed to Active",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv6_session.status.connect",
-                "description": "Neighbor ${IP} address session state changed to Connect",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv6_session.status.established",
-                "description": "Neighbor ${IP} address session state changed to Established",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv6_session.status.idle",
-                "description": "Neighbor ${IP} address session state changed to Idle",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv6_session.status.open_confirm",
-                "description": "Neighbor ${IP} address session state changed to Open_confirm",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv6_session.status.open_sent",
-                "description": "Neighbor ${IP} address session state changed to open_sent",
-                "releaseStatus": "preview"
             },
             {
                 "name": "equinix.fabric.connection_route_aggregation.state.attached",
@@ -1347,6 +1347,36 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.port.bandwidth_rx.usage",
+                "description": "Port inbound bandwidth usage above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port.bandwidth_tx.usage",
+                "description": "Port outbound bandwidth usage above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port.packets_dropped_rx.count",
+                "description": "Port inbound dropped packets count above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port.packets_dropped_tx.count",
+                "description": "Port outbound dropped packets count above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port.packets_erred_rx.count",
+                "description": "Port inbound erred packets count above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port.packets_erred_tx.count",
+                "description": "Port outbound erred packets count above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.router.installed_routes_ipv4.utilization",
                 "description": "Utilization of router '${router_name}' total IPv4 routes reached ${threshold}",
                 "releaseStatus": "released"
@@ -1369,6 +1399,16 @@
                 "name": "equinix.identity.user.activity.logged_out",
                 "description": "User loggedOut event",
                 "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.identity.organization.user.added",
+                "description": "User added to org event",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.identity.organization.user.removed",
+                "description": "User removed from org event",
+                "releaseStatus": "preview"
             }
         ],
         "metricNames": [],
