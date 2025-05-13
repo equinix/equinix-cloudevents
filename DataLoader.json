@@ -1347,36 +1347,6 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.port.bandwidth_rx.usage",
-                "description": "Port inbound bandwidth usage above ${threshold}",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.port.bandwidth_tx.usage",
-                "description": "Port outbound bandwidth usage above ${threshold}",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.port.packets_dropped_rx.count",
-                "description": "Port inbound dropped packets count above ${threshold}",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.port.packets_dropped_tx.count",
-                "description": "Port outbound dropped packets count above ${threshold}",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.port.packets_erred_rx.count",
-                "description": "Port inbound erred packets count above ${threshold}",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.port.packets_erred_tx.count",
-                "description": "Port outbound erred packets count above ${threshold}",
-                "releaseStatus": "released"
-            },
-            {
                 "name": "equinix.fabric.router.installed_routes_ipv4.utilization",
                 "description": "Utilization of router '${router_name}' total IPv4 routes reached ${threshold}",
                 "releaseStatus": "released"
