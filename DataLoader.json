@@ -1381,6 +1381,16 @@
     "identity": {
         "cloudeventTypes": [
             {
+                "name": "equinix.identity.organization.user.added",
+                "description": "User added to org event",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.identity.organization.user.removed",
+                "description": "User removed from org event",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.identity.user.activity.logged_in",
                 "description": "User loggedIn event",
                 "releaseStatus": "released"
@@ -1389,16 +1399,6 @@
                 "name": "equinix.identity.user.activity.logged_out",
                 "description": "User loggedOut event",
                 "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.identity.organization.user.added",
-                "description": "User added to org event",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.identity.organization.user.removed",
-                "description": "User removed from org event",
-                "releaseStatus": "preview"
             }
         ],
         "metricNames": [],
