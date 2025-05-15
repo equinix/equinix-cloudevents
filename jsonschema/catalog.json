@@ -2475,13 +2475,13 @@
                     "name": "equinix.identity.organization.user.added",
                     "description": "User added to org event",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.identity.organization.user.removed",
                     "description": "User removed from org event",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 }
             ],
             "metricNames": [],
