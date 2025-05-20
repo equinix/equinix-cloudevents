@@ -29,7 +29,7 @@
                 },
                 "type" : {
                     "type": "string",
-                    "description": "Differentiates types of log events withing a particular category."
+                    "description": "Differentiates types of audit events withing a particular category."
                 },
                 "serviceId": {
                     "type": "string",
@@ -67,9 +67,9 @@
                 },
                 "eventId": {
                     "type": "string",
-                    "description": "Unique identifier for this log event."
+                    "description": "Unique identifier for this audit event."
                 },
-                "stream-ern": {
+                "streamErn": {
                     "type": "string",
                     "description": "The observability stream that produced this audit event."
                 },
@@ -85,7 +85,7 @@
             "additionalProperties": true,
             "type": "object",
             "title": "AuditEvent",
-            "description": "The customer-facing log format for the Equinix Telemetry Service."
+            "description": "The customer-facing audit log format for the Equinix Telemetry Service."
         }
     },
     "cloudeventTypes": [
