@@ -33,36 +33,37 @@
                 },
                 "serviceId": {
                     "type": "string",
-                    "description": "Indicates the service that produced this log entry."
+                    "description": "Indicates the service that produced this audit event."
                 },
                 "projectId": {
                     "type": "string",
-                    "description": "Indicates the customer Project ID with which this log entry is associated."
+                    "description": "Indicates the customer Project ID with which this audit event is associated."
                 }
             },
             "additionalProperties": true,
             "type": "object",
-            "title": "ChangeData",
-            "description": "Provides metadata about the source from which this log entry originated."
+            "title": "Source",
+            "description": "Provides metadata about the source from which this audit event originated."
         },
         "Event": {
+            "additionalProperties": true,
             "type": "object",
-            "title": "ChangeData",
-            "description": "ChangeData attribute schema"
+            "title": "Event",
+            "description": "The audit event event payload."
         },
         "AuditEvent": {
             "properties": {
                 "schema": {
                     "type": "string",
-                    "description": "Indicates the schema version of this log entry."
+                    "description": "Indicates the schema version of this audit event."
                 },
                 "timestamp" : {
                     "type": "string",
-                    "description": "The timestamp at which this log entry was produced, in ISO8601 format."
+                    "description": "The timestamp at which this audit event was produced, in ISO8601 format."
                 },
                 "level": {
                     "type": "string",
-                    "description": "A human-readable indication of the severity level of this log entry."
+                    "description": "A human-readable indication of the severity level of this audit event."
                 },
                 "eventId": {
                     "type": "string",
@@ -70,15 +71,15 @@
                 },
                 "stream-ern": {
                     "type": "string",
-                    "description": "The operation performed on the resource under change"
+                    "description": "The observability stream that produced this audit event."
                 },
                 "source": {
                     "$ref": "#/definitions/Source",
-                    "description": "Provides metadata about the source from which this log entry originated."
+                    "description": "Provides metadata about the source from which this audit event originated."
                 },
                 "event": {
                     "$ref": "#/definitions/Event",
-                    "description": "The operation performed on the resource under change"
+                    "description": "The audit event event payload."
                 }
             },
             "additionalProperties": true,
