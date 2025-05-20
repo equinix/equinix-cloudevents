@@ -998,6 +998,18 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.metro.jk_{metroCode}.latency</td>
+		<td>Metro latency from Jakarta to ${metroCode} above ${threshold}</td>
+		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.jn_{metroCode}.latency</td>
+		<td>Metro latency from Johannesburg to ${metroCode} above ${threshold}</td>
+		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.metro.ka_{metroCode}.latency</td>
 		<td>Metro latency from Kamloops to ${metroCode} above ${threshold}</td>
 		<td>released</td>
@@ -1488,6 +1500,18 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.metro.jk_{metroCode}.latency</td>
+		<td>Jakarta to ${metroCode} intermetro latency, average in milliseconds</td>
+		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.jn_{metroCode}.latency</td>
+		<td>Johannesburg to ${metroCode} intermetro latency, average in milliseconds</td>
+		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.metro.ka_{metroCode}.latency</td>
 		<td>Kamloops to ${metroCode} intermetro latency, average in milliseconds</td>
 		<td>released</td>
@@ -1916,6 +1940,18 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.metro.jk_{metroCode}.latency</td>
+		<td>Metro latency from Jakarta to ${metroCode} above ${threshold}</td>
+		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.jn_{metroCode}.latency</td>
+		<td>Metro latency from Johannesburg to ${metroCode} above ${threshold}</td>
+		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.metro.ka_{metroCode}.latency</td>
 		<td>Metro latency from Kamloops to ${metroCode} above ${threshold}</td>
 		<td>released</td>
@@ -2318,6 +2354,18 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.metro.jh_{metroCode}.latency</td>
 		<td>Johor to ${metroCode} intermetro latency, average in milliseconds</td>
+		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.jk_{metroCode}.latency</td>
+		<td>Jakarta to ${metroCode} intermetro latency, average in milliseconds</td>
+		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.jn_{metroCode}.latency</td>
+		<td>Johannesburg to ${metroCode} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
