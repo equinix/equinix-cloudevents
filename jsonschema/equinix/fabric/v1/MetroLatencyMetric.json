@@ -260,6 +260,18 @@
             "releaseStatus": "released"
         },
         {
+            "name": "equinix.fabric.metro.jk_{metroCode}.latency",
+            "description": "Jakarta to ${metroCode} intermetro latency, average in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.jn_{metroCode}.latency",
+            "description": "Johannesburg to ${metroCode} intermetro latency, average in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
             "name": "equinix.fabric.metro.ka_{metroCode}.latency",
             "description": "Kamloops to ${metroCode} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",

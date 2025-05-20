@@ -286,6 +286,18 @@
             "releaseStatus": "released"
         },
         {
+            "name": "equinix.fabric.metro.jk_{metroCode}.latency",
+            "description": "Metro latency from Jakarta to ${metroCode} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.jn_{metroCode}.latency",
+            "description": "Metro latency from Johannesburg to ${metroCode} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
             "name": "equinix.fabric.metro.ka_{metroCode}.latency",
             "description": "Metro latency from Kamloops to ${metroCode} above ${threshold}",
             "sloCategoryCode": "BLUE_ALERT_SLO",
