@@ -6,21 +6,8 @@
     "datatype": "equinix.identity.v1.AuditEvent",
     "domain": "Equinix Identity AuditEvent",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$ref": "#/definitions/Data",
+    "$ref": "#/definitions/AuditEvent",
     "definitions": {
-        "Data": {
-            "properties": {
-                "message": {
-                    "type": "string",
-                    "description": "Supporting message describing the event"
-                }
-            },
-            "additionalProperties": false,
-            "type": "object",
-            "title": "Audit Log",
-            "description": "Audit Event details"
-        },
-        
         "Source": {
             "properties": {
                 "category": {
@@ -71,7 +58,7 @@
                 },
                 "streamErn": {
                     "type": "string",
-                    "description": "The observability stream that produced this audit event."
+                    "description": "The telemetry stream that produced this audit event."
                 },
                 "source": {
                     "$ref": "#/definitions/Source",
