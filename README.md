@@ -808,13 +808,13 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.connection.bandwidth_rx.usage</td>
 		<td>Connection inbound bandwidth usage above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bandwidth_tx.usage</td>
 		<td>Connection outbound bandwidth usage above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1228,37 +1228,37 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.port.bandwidth_rx.usage</td>
 		<td>Port inbound bandwidth usage above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.bandwidth_tx.usage</td>
 		<td>Port outbound bandwidth usage above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_dropped_rx.count</td>
 		<td>Port inbound dropped packets count above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_dropped_tx.count</td>
 		<td>Port outbound dropped packets count above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_erred_rx.count</td>
 		<td>Port inbound erred packets count above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_erred_tx.count</td>
 		<td>Port outbound erred packets count above ${threshold}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2576,6 +2576,37 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.identity.user.activity.logged_out</td>
 		<td>User loggedOut event</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+</table>
+
+
+
+---
+### Equinix Identity UserOrgLinkageEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserOrgLinkageEvent.json)
+#### Data Type
+`equinix.identity.v1.UserOrgLinkageEvent`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.identity.organization.user.added</td>
+		<td>User added to org event</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.identity.organization.user.removed</td>
+		<td>User removed from org event</td>
 		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>

@@ -1,0 +1,40 @@
+{
+  "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserOrgLinkageEvent.json",
+  "name": "UserOrgLinkageEvent",
+  "examples": [],
+  "package": "equinix.identity.v1",
+  "datatype": "equinix.identity.v1.UserOrgLinkageEvent",
+  "domain": "Equinix Identity UserOrgLinkageEvent",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/Data",
+  "definitions": {
+    "Data": {
+      "properties": {
+        "message": {
+          "type": "string",
+          "description": "Supporting message describing the event"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "title": "User UserOrgLinkage Log",
+      "description": "User UserOrgLinkage Event details"
+    }
+  },
+  "cloudeventTypes": [
+    {
+      "name": "equinix.identity.organization.user.added",
+      "description": "User added to org event",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.identity.organization.user.removed",
+      "description": "User removed from org event",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    }
+  ],
+  "metricNames": [],
+  "alertNames": []
+}

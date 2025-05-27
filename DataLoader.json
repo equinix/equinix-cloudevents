@@ -1592,6 +1592,16 @@
         ],
         "alertNames": [
             {
+                "name": "equinix.fabric.connection.bandwidth_rx.usage",
+                "description": "Connection inbound bandwidth usage above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection.bandwidth_tx.usage",
+                "description": "Connection outbound bandwidth usage above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.connection.installed_routes_ipv4.utilization",
                 "description": "Utilization of connection '${connection_name}' active IPv4 routes reached ${threshold}",
                 "releaseStatus": "released"
@@ -1932,6 +1942,36 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.port.bandwidth_rx.usage",
+                "description": "Port inbound bandwidth usage above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port.bandwidth_tx.usage",
+                "description": "Port outbound bandwidth usage above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port.packets_dropped_rx.count",
+                "description": "Port inbound dropped packets count above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port.packets_dropped_tx.count",
+                "description": "Port outbound dropped packets count above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port.packets_erred_rx.count",
+                "description": "Port inbound erred packets count above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port.packets_erred_tx.count",
+                "description": "Port outbound erred packets count above ${threshold}",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.router.installed_routes_ipv4.utilization",
                 "description": "Utilization of router '${router_name}' total IPv4 routes reached ${threshold}",
                 "releaseStatus": "released"
@@ -1940,51 +1980,21 @@
                 "name": "equinix.fabric.router.installed_routes_ipv6.utilization",
                 "description": "Utilization of router '${router_name}' total IPv6 routes reached ${threshold}",
                 "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection.bandwidth_rx.usage",
-                "description": "Connection inbound bandwidth usage above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection.bandwidth_tx.usage",
-                "description": "Connection outbound bandwidth usage above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port.bandwidth_rx.usage",
-                "description": "Port inbound bandwidth usage above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port.bandwidth_tx.usage",
-                "description": "Port outbound bandwidth usage above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port.packets_dropped_rx.count",
-                "description": "Port inbound dropped packets count above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port.packets_dropped_tx.count",
-                "description": "Port outbound dropped packets count above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port.packets_erred_rx.count",
-                "description": "Port inbound erred packets count above ${threshold}",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port.packets_erred_tx.count",
-                "description": "Port outbound erred packets count above ${threshold}",
-                "releaseStatus": "preview"
             }
         ]
     },
     "identity": {
         "cloudeventTypes": [
+            {
+                "name": "equinix.identity.organization.user.added",
+                "description": "User added to org event",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.identity.organization.user.removed",
+                "description": "User removed from org event",
+                "releaseStatus": "released"
+            },
             {
                 "name": "equinix.identity.user.activity.logged_in",
                 "description": "User loggedIn event",

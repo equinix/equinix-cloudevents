@@ -739,13 +739,13 @@
                     "name": "equinix.fabric.connection.bandwidth_rx.usage",
                     "description": "Connection inbound bandwidth usage above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.connection.bandwidth_tx.usage",
                     "description": "Connection outbound bandwidth usage above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.connection.installed_routes_ipv4.utilization",
@@ -1159,37 +1159,37 @@
                     "name": "equinix.fabric.port.bandwidth_rx.usage",
                     "description": "Port inbound bandwidth usage above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.port.bandwidth_tx.usage",
                     "description": "Port outbound bandwidth usage above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.port.packets_dropped_rx.count",
                     "description": "Port inbound dropped packets count above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.port.packets_dropped_tx.count",
                     "description": "Port outbound dropped packets count above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.port.packets_erred_rx.count",
                     "description": "Port inbound erred packets count above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.port.packets_erred_tx.count",
                     "description": "Port outbound erred packets count above ${threshold}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.router.installed_routes_ipv4.utilization",
@@ -2457,6 +2457,29 @@
                 {
                     "name": "equinix.identity.user.activity.logged_out",
                     "description": "User loggedOut event",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserOrgLinkageEvent.json",
+            "domain": "Equinix Identity UserOrgLinkageEvent",
+            "name": "UserOrgLinkageEvent",
+            "description": "User UserOrgLinkage Event details",
+            "datatype": "equinix.identity.v1.UserOrgLinkageEvent",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.identity.organization.user.added",
+                    "description": "User added to org event",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.identity.organization.user.removed",
+                    "description": "User removed from org event",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "released"
                 }
