@@ -2615,6 +2615,29 @@ The following data payloads are the supported events and formats for Equinix Net
 
 
 ---
+### Equinix Identity UserEmailChangedEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserEmailChangedEvent.json)
+#### Data Type
+`equinix.identity.v1.UserEmailChangedEvent`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.identity.user.email.changed</td>
+		<td>User changed email address</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+</table>
+
+---
 ### Equinix Network Edge ChangeEvent
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/ChangeEvent.json)
 #### Data Type
