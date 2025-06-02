@@ -2465,6 +2465,23 @@
             "alertNames": []
         },
         {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserEmailChangedEvent.json",
+            "domain": "Equinix Identity UserEmailChangedEvent",
+            "name": "UserEmailChangedEvent",
+            "description": "UserEmailChanged Event details",
+            "datatype": "equinix.identity.v1.UserEmailChangedEvent",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.identity.user.email.changed",
+                    "description": "User changed email address",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserOrgLinkageEvent.json",
             "domain": "Equinix Identity UserOrgLinkageEvent",
             "name": "UserOrgLinkageEvent",
