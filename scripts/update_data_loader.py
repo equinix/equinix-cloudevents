@@ -11,7 +11,7 @@ def retrieve_supported_events():
     dataLoaderStructure = {}
     for root, dirs, files in os.walk(directory):
         for file in files:
-            if file.endswith('.json') and os.path.basename(root) != "jsonschema" and "MetroLatency" not in file:
+            if file.endswith('.json') and os.path.basename(root) != "jsonschema":
                 with open(root + "/" + file, "r") as eventFile:
                     data = json.load(eventFile)
 
