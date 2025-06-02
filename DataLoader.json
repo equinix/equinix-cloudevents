@@ -188,6 +188,11 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.metric",
+                "description": "Metrics collected",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.network.attribute.changed",
                 "description": "network named ${network_name} attribute changed",
                 "releaseStatus": "released"

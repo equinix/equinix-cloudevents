@@ -1228,8 +1228,7 @@
                     "name": "equinix.fabric.metric",
                     "description": "Metrics collected",
                     "sloCategoryCode": "",
-                    "inPreview": false,
-                    "isReleased": true
+                    "releaseStatus": "released"
                 }
             ],
             "metricNames": [
