@@ -13,8 +13,13 @@ def retrieve_supported_events():
         for file in files:
             if file.endswith('.json') and os.path.basename(root) != "jsonschema" and "MetroLatency" not in file:
                 with open(root + "/" + file, "r") as eventFile:
-                    domain = root.split("/")[-2]
                     data = json.load(eventFile)
+
+                    # Skip processing if domain contains "Deprecated"
+                    if "domain" in data and "deprecated" in data["domain"].lower():
+                        continue
+
+                    domain = root.split("/")[-2]
                     if domain not in dataLoaderStructure:
                         dataLoaderStructure[domain] = {
                             sc.EVENTS:  [],
