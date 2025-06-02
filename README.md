@@ -113,6 +113,12 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.connection.state.failed</td>
+		<td>Connection named ${connection_name} state changed to failed</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.connection.state.pending</td>
 		<td>Connection named ${connection_name} state changed to pending</td>
 		<td>released</td>

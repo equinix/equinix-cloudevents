@@ -33,6 +33,11 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.connection.state.failed",
+                "description": "Connection named ${connection_name} state changed to failed",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.connection.state.pending",
                 "description": "Connection named ${connection_name} state changed to pending",
                 "releaseStatus": "released"
