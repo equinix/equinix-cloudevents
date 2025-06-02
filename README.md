@@ -807,469 +807,481 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bandwidth_rx.usage</td>
-		<td>Connection inbound bandwidth usage above ${threshold}</td>
+		<td>Connection inbound bandwidth usage is ${operator} ${operand} bit/s</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.bandwidth_tx.usage</td>
-		<td>Connection outbound bandwidth usage above ${threshold}</td>
+		<td>Connection outbound bandwidth usage is ${operator} ${operand} bit/s</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.installed_routes_ipv4.utilization</td>
-		<td>Utilization of connection '${connection_name}' active IPv4 routes reached ${threshold}</td>
+		<td>Utilization of connection active IPv4 routes is ${operator} ${operand}</td>
 		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.installed_routes_ipv6.utilization</td>
-		<td>Utilization of connection '${connection_name}' active IPv6 routes reached ${threshold}</td>
+		<td>Utilization of connection active IPv6 routes is ${operator} ${operand}</td>
 		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count</td>
-		<td>Connection A side inbound dropped packets count above ${threshold}</td>
+		<td>Connection A side inbound dropped packets count is ${operator} ${operand}</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count</td>
-		<td>Connection Z side inbound dropped packets count above ${threshold}</td>
+		<td>Connection Z side inbound dropped packets count is ${operator} ${operand}</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count</td>
-		<td>Connection A side outbound dropped packets count above ${threshold}</td>
+		<td>Connection A side outbound dropped packets count is ${operator} ${operand}</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count</td>
-		<td>Connection Z side outbound dropped packets count above ${threshold}</td>
+		<td>Connection Z side outbound dropped packets count is ${operator} ${operand}</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.am_{metroCode}.latency</td>
-		<td>Metro latency from AM to ${metroCode} in ms</td>
+		<td>Metro latency from Amsterdam to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.at_{metroCode}.latency</td>
-		<td>Metro latency from AT to ${metroCode} in ms</td>
+		<td>Metro latency from Atlanta to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ba_{metroCode}.latency</td>
-		<td>Metro latency from BA to ${metroCode} in ms</td>
+		<td>Metro latency from Barcelona to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bg_{metroCode}.latency</td>
-		<td>Metro latency from BG to ${metroCode} in ms</td>
+		<td>Metro latency from Bogota to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bl_{metroCode}.latency</td>
-		<td>Metro latency from BL to ${metroCode} in ms</td>
+		<td>Metro latency from Brussels to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bo_{metroCode}.latency</td>
-		<td>Metro latency from BO to ${metroCode} in ms</td>
+		<td>Metro latency from Boston to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bx_{metroCode}.latency</td>
-		<td>Metro latency from BX to ${metroCode} in ms</td>
+		<td>Metro latency from Bordeaux to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ca_{metroCode}.latency</td>
-		<td>Metro latency from CA to ${metroCode} in ms</td>
+		<td>Metro latency from Canberra to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ch_{metroCode}.latency</td>
-		<td>Metro latency from CH to ${metroCode} in ms</td>
+		<td>Metro latency from Chicago to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cl_{metroCode}.latency</td>
-		<td>Metro latency from CL to ${metroCode} in ms</td>
+		<td>Metro latency from Calgary to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cu_{metroCode}.latency</td>
-		<td>Metro latency from CU to ${metroCode} in ms</td>
+		<td>Metro latency from Culpeper to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.da_{metroCode}.latency</td>
-		<td>Metro latency from DA to ${metroCode} in ms</td>
+		<td>Metro latency from Dallas to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.db_{metroCode}.latency</td>
-		<td>Metro latency from DB to ${metroCode} in ms</td>
+		<td>Metro latency from Dublin to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dc_{metroCode}.latency</td>
-		<td>Metro latency from DC to ${metroCode} in ms</td>
+		<td>Metro latency from Ashburn to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.de_{metroCode}.latency</td>
-		<td>Metro latency from DE to ${metroCode} in ms</td>
+		<td>Metro latency from Denver to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dx_{metroCode}.latency</td>
-		<td>Metro latency from DX to ${metroCode} in ms</td>
+		<td>Metro latency from Dubai to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.fr_{metroCode}.latency</td>
-		<td>Metro latency from FR to ${metroCode} in ms</td>
+		<td>Metro latency from Frankfurt to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.gv_{metroCode}.latency</td>
-		<td>Metro latency from GV to ${metroCode} in ms</td>
+		<td>Metro latency from Geneva to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.he_{metroCode}.latency</td>
-		<td>Metro latency from HE to ${metroCode} in ms</td>
+		<td>Metro latency from Helsinki to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hh_{metroCode}.latency</td>
-		<td>Metro latency from HH to ${metroCode} in ms</td>
+		<td>Metro latency from Hamburg to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hk_{metroCode}.latency</td>
-		<td>Metro latency from HK to ${metroCode} in ms</td>
+		<td>Metro latency from Hong Kong to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ho_{metroCode}.latency</td>
-		<td>Metro latency from HO to ${metroCode} in ms</td>
+		<td>Metro latency from Houston to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.il_{metroCode}.latency</td>
-		<td>Metro latency from IL to ${metroCode} in ms</td>
+		<td>Metro latency from Istanbul to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.jh_{metroCode}.latency</td>
-		<td>Metro latency from JH to ${metroCode} in ms</td>
+		<td>Metro latency from Johor to ${metro} is ${operator} ${operand} milliseconds</td>
+		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.jk_{metroCode}.latency</td>
+		<td>Metro latency from Jakarta to ${metro} is ${operator} ${operand} milliseconds</td>
+		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.jn_{metroCode}.latency</td>
+		<td>Metro latency from Johannesburg to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ka_{metroCode}.latency</td>
-		<td>Metro latency from KA to ${metroCode} in ms</td>
+		<td>Metro latency from Kamloops to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.kl_{metroCode}.latency</td>
-		<td>Metro latency from KL to ${metroCode} in ms</td>
+		<td>Metro latency from Kuala Lumpur to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.la_{metroCode}.latency</td>
-		<td>Metro latency from LA to ${metroCode} in ms</td>
+		<td>Metro latency from Los Angeles to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ld_{metroCode}.latency</td>
-		<td>Metro latency from LD to ${metroCode} in ms</td>
+		<td>Metro latency from London to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.lm_{metroCode}.latency</td>
-		<td>Metro latency from LM to ${metroCode} in ms</td>
+		<td>Metro latency from Lima to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ls_{metroCode}.latency</td>
-		<td>Metro latency from LS to ${metroCode} in ms</td>
+		<td>Metro latency from Lisbon to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ma_{metroCode}.latency</td>
-		<td>Metro latency from MA to ${metroCode} in ms</td>
+		<td>Metro latency from Manchester to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mb_{metroCode}.latency</td>
-		<td>Metro latency from MB to ${metroCode} in ms</td>
+		<td>Metro latency from Mumbai to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.md_{metroCode}.latency</td>
-		<td>Metro latency from MD to ${metroCode} in ms</td>
+		<td>Metro latency from Madrid to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.me_{metroCode}.latency</td>
-		<td>Metro latency from ME to ${metroCode} in ms</td>
+		<td>Metro latency from Melbourne to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mi_{metroCode}.latency</td>
-		<td>Metro latency from MI to ${metroCode} in ms</td>
+		<td>Metro latency from Miami to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ml_{metroCode}.latency</td>
-		<td>Metro latency from ML to ${metroCode} in ms</td>
+		<td>Metro latency from Milan to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mo_{metroCode}.latency</td>
-		<td>Metro latency from MO to ${metroCode} in ms</td>
+		<td>Metro latency from Monterrey to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mt_{metroCode}.latency</td>
-		<td>Metro latency from MT to ${metroCode} in ms</td>
+		<td>Metro latency from Montreal to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mu_{metroCode}.latency</td>
-		<td>Metro latency from MU to ${metroCode} in ms</td>
+		<td>Metro latency from Munich to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mx_{metroCode}.latency</td>
-		<td>Metro latency from MX to ${metroCode} in ms</td>
+		<td>Metro latency from Mexico City to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ny_{metroCode}.latency</td>
-		<td>Metro latency from NY to ${metroCode} in ms</td>
+		<td>Metro latency from New York to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.os_{metroCode}.latency</td>
-		<td>Metro latency from OS to ${metroCode} in ms</td>
+		<td>Metro latency from Osaka to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ot_{metroCode}.latency</td>
-		<td>Metro latency from OT to ${metroCode} in ms</td>
+		<td>Metro latency from Ottawa to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pa_{metroCode}.latency</td>
-		<td>Metro latency from PA to ${metroCode} in ms</td>
+		<td>Metro latency from Paris to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pe_{metroCode}.latency</td>
-		<td>Metro latency from PE to ${metroCode} in ms</td>
+		<td>Metro latency from Perth to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ph_{metroCode}.latency</td>
-		<td>Metro latency from PH to ${metroCode} in ms</td>
+		<td>Metro latency from Philadelphia to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.rj_{metroCode}.latency</td>
-		<td>Metro latency from RJ to ${metroCode} in ms</td>
+		<td>Metro latency from Rio de Janeiro to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.se_{metroCode}.latency</td>
-		<td>Metro latency from SE to ${metroCode} in ms</td>
+		<td>Metro latency from Seattle to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sg_{metroCode}.latency</td>
-		<td>Metro latency from SG to ${metroCode} in ms</td>
+		<td>Metro latency from Singapore to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sk_{metroCode}.latency</td>
-		<td>Metro latency from SK to ${metroCode} in ms</td>
+		<td>Metro latency from Stockholm to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sl_{metroCode}.latency</td>
-		<td>Metro latency from SL to ${metroCode} in ms</td>
+		<td>Metro latency from Seoul to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.so_{metroCode}.latency</td>
-		<td>Metro latency from SO to ${metroCode} in ms</td>
+		<td>Metro latency from Sofia to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sp_{metroCode}.latency</td>
-		<td>Metro latency from SP to ${metroCode} in ms</td>
+		<td>Metro latency from Sao Paulo to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.st_{metroCode}.latency</td>
-		<td>Metro latency from ST to ${metroCode} in ms</td>
+		<td>Metro latency from Santiago to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sv_{metroCode}.latency</td>
-		<td>Metro latency from SV to ${metroCode} in ms</td>
+		<td>Metro latency from Silicon Valley to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sy_{metroCode}.latency</td>
-		<td>Metro latency from SY to ${metroCode} in ms</td>
+		<td>Metro latency from Sydney to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.tr_{metroCode}.latency</td>
-		<td>Metro latency from TR to ${metroCode} in ms</td>
+		<td>Metro latency from Toronto to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ty_{metroCode}.latency</td>
-		<td>Metro latency from TY to ${metroCode} in ms</td>
+		<td>Metro latency from Tokyo to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.va_{metroCode}.latency</td>
-		<td>Metro latency from VA to ${metroCode} in ms</td>
+		<td>Metro latency from Vancouver to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wa_{metroCode}.latency</td>
-		<td>Metro latency from WA to ${metroCode} in ms</td>
+		<td>Metro latency from Warsaw to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wi_{metroCode}.latency</td>
-		<td>Metro latency from WI to ${metroCode} in ms</td>
+		<td>Metro latency from Winnipeg to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.zh_{metroCode}.latency</td>
-		<td>Metro latency from ZH to ${metroCode} in ms</td>
+		<td>Metro latency from Zurich to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.bandwidth_rx.usage</td>
-		<td>Port inbound bandwidth usage above ${threshold}</td>
+		<td>Port inbound bandwidth usage is ${operator} ${operand} bit/s</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.bandwidth_tx.usage</td>
-		<td>Port outbound bandwidth usage above ${threshold}</td>
+		<td>Port outbound bandwidth usage is ${operator} ${operand} bit/s</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_dropped_rx.count</td>
-		<td>Port inbound dropped packets count above ${threshold}</td>
+		<td>Port inbound dropped packets count is ${operator} ${operand}</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_dropped_tx.count</td>
-		<td>Port outbound dropped packets count above ${threshold}</td>
+		<td>Port outbound dropped packets count is ${operator} ${operand}</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_erred_rx.count</td>
-		<td>Port inbound erred packets count above ${threshold}</td>
+		<td>Port inbound erred packets count is ${operator} ${operand}</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.packets_erred_tx.count</td>
-		<td>Port outbound erred packets count above ${threshold}</td>
+		<td>Port outbound erred packets count is ${operator} ${operand}</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.router.installed_routes_ipv4.utilization</td>
-		<td>Utilization of router '${router_name}' total IPv4 routes reached ${threshold}</td>
+		<td>Utilization of router total IPv4 routes is ${operator} ${operand}</td>
 		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.router.installed_routes_ipv6.utilization</td>
-		<td>Utilization of router '${router_name}' total IPv6 routes reached ${threshold}</td>
+		<td>Utilization of router total IPv6 routes is ${operator} ${operand}</td>
 		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
@@ -1292,8 +1304,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metric</td>
-		<td></td>
-		<td>-</td>
+		<td>Metrics collected</td>
+		<td>released</td>
 	<td>-</td>
 	</tr>
 </table>
@@ -1345,373 +1357,385 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.am_{metroCode}.latency</td>
-		<td>Metro latency from AM to ${metroCode} in ms</td>
+		<td>Amsterdam to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.at_{metroCode}.latency</td>
-		<td>Metro latency from AT to ${metroCode} in ms</td>
+		<td>Atlanta to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ba_{metroCode}.latency</td>
-		<td>Metro latency from BA to ${metroCode} in ms</td>
+		<td>Barcelona to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bg_{metroCode}.latency</td>
-		<td>Metro latency from BG to ${metroCode} in ms</td>
+		<td>Bogota to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bl_{metroCode}.latency</td>
-		<td>Metro latency from BL to ${metroCode} in ms</td>
+		<td>Brussels to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bo_{metroCode}.latency</td>
-		<td>Metro latency from BO to ${metroCode} in ms</td>
+		<td>Boston to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bx_{metroCode}.latency</td>
-		<td>Metro latency from BX to ${metroCode} in ms</td>
+		<td>Bordeaux to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ca_{metroCode}.latency</td>
-		<td>Metro latency from CA to ${metroCode} in ms</td>
+		<td>Canberra to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ch_{metroCode}.latency</td>
-		<td>Metro latency from CH to ${metroCode} in ms</td>
+		<td>Chicago to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cl_{metroCode}.latency</td>
-		<td>Metro latency from CL to ${metroCode} in ms</td>
+		<td>Calgary to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cu_{metroCode}.latency</td>
-		<td>Metro latency from CU to ${metroCode} in ms</td>
+		<td>Culpeper to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.da_{metroCode}.latency</td>
-		<td>Metro latency from DA to ${metroCode} in ms</td>
+		<td>Dallas to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.db_{metroCode}.latency</td>
-		<td>Metro latency from DB to ${metroCode} in ms</td>
+		<td>Dublin to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dc_{metroCode}.latency</td>
-		<td>Metro latency from DC to ${metroCode} in ms</td>
+		<td>Ashburn to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.de_{metroCode}.latency</td>
-		<td>Metro latency from DE to ${metroCode} in ms</td>
+		<td>Denver to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dx_{metroCode}.latency</td>
-		<td>Metro latency from DX to ${metroCode} in ms</td>
+		<td>Dubai to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.fr_{metroCode}.latency</td>
-		<td>Metro latency from FR to ${metroCode} in ms</td>
+		<td>Frankfurt to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.gv_{metroCode}.latency</td>
-		<td>Metro latency from GV to ${metroCode} in ms</td>
+		<td>Geneva to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.he_{metroCode}.latency</td>
-		<td>Metro latency from HE to ${metroCode} in ms</td>
+		<td>Helsinki to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hh_{metroCode}.latency</td>
-		<td>Metro latency from HH to ${metroCode} in ms</td>
+		<td>Hamburg to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hk_{metroCode}.latency</td>
-		<td>Metro latency from HK to ${metroCode} in ms</td>
+		<td>Hong Kong to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ho_{metroCode}.latency</td>
-		<td>Metro latency from HO to ${metroCode} in ms</td>
+		<td>Houston to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.il_{metroCode}.latency</td>
-		<td>Metro latency from IL to ${metroCode} in ms</td>
+		<td>Istanbul to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.jh_{metroCode}.latency</td>
-		<td>Metro latency from JH to ${metroCode} in ms</td>
+		<td>Johor to ${metro} intermetro latency, average in milliseconds</td>
+		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.jk_{metroCode}.latency</td>
+		<td>Jakarta to ${metro} intermetro latency, average in milliseconds</td>
+		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.jn_{metroCode}.latency</td>
+		<td>Johannesburg to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ka_{metroCode}.latency</td>
-		<td>Metro latency from KA to ${metroCode} in ms</td>
+		<td>Kamloops to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.kl_{metroCode}.latency</td>
-		<td>Metro latency from KL to ${metroCode} in ms</td>
+		<td>Kuala Lumpur to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.la_{metroCode}.latency</td>
-		<td>Metro latency from LA to ${metroCode} in ms</td>
+		<td>Los Angeles to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ld_{metroCode}.latency</td>
-		<td>Metro latency from LD to ${metroCode} in ms</td>
+		<td>London to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.lm_{metroCode}.latency</td>
-		<td>Metro latency from LM to ${metroCode} in ms</td>
+		<td>Lima to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ls_{metroCode}.latency</td>
-		<td>Metro latency from LS to ${metroCode} in ms</td>
+		<td>Lisbon to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ma_{metroCode}.latency</td>
-		<td>Metro latency from MA to ${metroCode} in ms</td>
+		<td>Manchester to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mb_{metroCode}.latency</td>
-		<td>Metro latency from MB to ${metroCode} in ms</td>
+		<td>Mumbai to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.md_{metroCode}.latency</td>
-		<td>Metro latency from MD to ${metroCode} in ms</td>
+		<td>Madrid to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.me_{metroCode}.latency</td>
-		<td>Metro latency from ME to ${metroCode} in ms</td>
+		<td>Melbourne to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mi_{metroCode}.latency</td>
-		<td>Metro latency from MI to ${metroCode} in ms</td>
+		<td>Miami to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ml_{metroCode}.latency</td>
-		<td>Metro latency from ML to ${metroCode} in ms</td>
+		<td>Milan to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mo_{metroCode}.latency</td>
-		<td>Metro latency from MO to ${metroCode} in ms</td>
+		<td>Monterrey to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mt_{metroCode}.latency</td>
-		<td>Metro latency from MT to ${metroCode} in ms</td>
+		<td>Montreal to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mu_{metroCode}.latency</td>
-		<td>Metro latency from MU to ${metroCode} in ms</td>
+		<td>Munich to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mx_{metroCode}.latency</td>
-		<td>Metro latency from MX to ${metroCode} in ms</td>
+		<td>Mexico City to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ny_{metroCode}.latency</td>
-		<td>Metro latency from NY to ${metroCode} in ms</td>
+		<td>New York to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.os_{metroCode}.latency</td>
-		<td>Metro latency from OS to ${metroCode} in ms</td>
+		<td>Osaka to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ot_{metroCode}.latency</td>
-		<td>Metro latency from OT to ${metroCode} in ms</td>
+		<td>Ottawa to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pa_{metroCode}.latency</td>
-		<td>Metro latency from PA to ${metroCode} in ms</td>
+		<td>Paris to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pe_{metroCode}.latency</td>
-		<td>Metro latency from PE to ${metroCode} in ms</td>
+		<td>Perth to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ph_{metroCode}.latency</td>
-		<td>Metro latency from PH to ${metroCode} in ms</td>
+		<td>Philadelphia to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.rj_{metroCode}.latency</td>
-		<td>Metro latency from RJ to ${metroCode} in ms</td>
+		<td>Rio de Janeiro to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.se_{metroCode}.latency</td>
-		<td>Metro latency from SE to ${metroCode} in ms</td>
+		<td>Seattle to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sg_{metroCode}.latency</td>
-		<td>Metro latency from SG to ${metroCode} in ms</td>
+		<td>Singapore to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sk_{metroCode}.latency</td>
-		<td>Metro latency from SK to ${metroCode} in ms</td>
+		<td>Stockholm to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sl_{metroCode}.latency</td>
-		<td>Metro latency from SL to ${metroCode} in ms</td>
+		<td>Seoul to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.so_{metroCode}.latency</td>
-		<td>Metro latency from SO to ${metroCode} in ms</td>
+		<td>Sofia to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sp_{metroCode}.latency</td>
-		<td>Metro latency from SP to ${metroCode} in ms</td>
+		<td>Sao Paulo to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.st_{metroCode}.latency</td>
-		<td>Metro latency from ST to ${metroCode} in ms</td>
+		<td>Santiago to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sv_{metroCode}.latency</td>
-		<td>Metro latency from SV to ${metroCode} in ms</td>
+		<td>Silicon Valley to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sy_{metroCode}.latency</td>
-		<td>Metro latency from SY to ${metroCode} in ms</td>
+		<td>Sydney to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.tr_{metroCode}.latency</td>
-		<td>Metro latency from TR to ${metroCode} in ms</td>
+		<td>Toronto to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ty_{metroCode}.latency</td>
-		<td>Metro latency from TY to ${metroCode} in ms</td>
+		<td>Tokyo to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.va_{metroCode}.latency</td>
-		<td>Metro latency from VA to ${metroCode} in ms</td>
+		<td>Vancouver to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wa_{metroCode}.latency</td>
-		<td>Metro latency from WA to ${metroCode} in ms</td>
+		<td>Warsaw to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wi_{metroCode}.latency</td>
-		<td>Metro latency from WI to ${metroCode} in ms</td>
+		<td>Winnipeg to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.zh_{metroCode}.latency</td>
-		<td>Metro latency from ZH to ${metroCode} in ms</td>
+		<td>Zurich to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
@@ -1760,7 +1784,9 @@ The following data payloads are the supported events and formats for Equinix Net
 #### Data Type
 `equinix.fabric.v1.MetroLatencyAlert`
 #### Supported Events, Metrics, and Alerts
-#### Events
+
+
+#### Alerts
 
 <table>
 	<tr>
@@ -1771,379 +1797,389 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.am_{metroCode}.latency</td>
-		<td>Metro latency from AM to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Amsterdam to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.at_{metroCode}.latency</td>
-		<td>Metro latency from AT to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Atlanta to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ba_{metroCode}.latency</td>
-		<td>Metro latency from BA to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Barcelona to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bg_{metroCode}.latency</td>
-		<td>Metro latency from BG to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Bogota to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bl_{metroCode}.latency</td>
-		<td>Metro latency from BL to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Brussels to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bo_{metroCode}.latency</td>
-		<td>Metro latency from BO to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Boston to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bx_{metroCode}.latency</td>
-		<td>Metro latency from BX to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Bordeaux to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ca_{metroCode}.latency</td>
-		<td>Metro latency from CA to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Canberra to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ch_{metroCode}.latency</td>
-		<td>Metro latency from CH to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Chicago to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cl_{metroCode}.latency</td>
-		<td>Metro latency from CL to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Calgary to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cu_{metroCode}.latency</td>
-		<td>Metro latency from CU to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Culpeper to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.da_{metroCode}.latency</td>
-		<td>Metro latency from DA to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Dallas to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.db_{metroCode}.latency</td>
-		<td>Metro latency from DB to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Dublin to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dc_{metroCode}.latency</td>
-		<td>Metro latency from DC to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Ashburn to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.de_{metroCode}.latency</td>
-		<td>Metro latency from DE to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Denver to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dx_{metroCode}.latency</td>
-		<td>Metro latency from DX to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Dubai to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.fr_{metroCode}.latency</td>
-		<td>Metro latency from FR to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Frankfurt to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.gv_{metroCode}.latency</td>
-		<td>Metro latency from GV to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Geneva to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.he_{metroCode}.latency</td>
-		<td>Metro latency from HE to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Helsinki to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hh_{metroCode}.latency</td>
-		<td>Metro latency from HH to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Hamburg to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hk_{metroCode}.latency</td>
-		<td>Metro latency from HK to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Hong Kong to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ho_{metroCode}.latency</td>
-		<td>Metro latency from HO to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Houston to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.il_{metroCode}.latency</td>
-		<td>Metro latency from IL to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Istanbul to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.jh_{metroCode}.latency</td>
-		<td>Metro latency from JH to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Johor to ${metro} above ${threshold}</td>
+		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.jk_{metroCode}.latency</td>
+		<td>Metro latency from Jakarta to ${metro} above ${threshold}</td>
+		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.jn_{metroCode}.latency</td>
+		<td>Metro latency from Johannesburg to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ka_{metroCode}.latency</td>
-		<td>Metro latency from KA to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Kamloops to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.kl_{metroCode}.latency</td>
-		<td>Metro latency from KL to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Kuala Lumpur to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.la_{metroCode}.latency</td>
-		<td>Metro latency from LA to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Los Angeles to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ld_{metroCode}.latency</td>
-		<td>Metro latency from LD to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from London to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.lm_{metroCode}.latency</td>
-		<td>Metro latency from LM to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Lima to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ls_{metroCode}.latency</td>
-		<td>Metro latency from LS to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Lisbon to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ma_{metroCode}.latency</td>
-		<td>Metro latency from MA to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Manchester to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mb_{metroCode}.latency</td>
-		<td>Metro latency from MB to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Mumbai to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.md_{metroCode}.latency</td>
-		<td>Metro latency from MD to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Madrid to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.me_{metroCode}.latency</td>
-		<td>Metro latency from ME to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Melbourne to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mi_{metroCode}.latency</td>
-		<td>Metro latency from MI to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Miami to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ml_{metroCode}.latency</td>
-		<td>Metro latency from ML to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Milan to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mo_{metroCode}.latency</td>
-		<td>Metro latency from MO to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Monterrey to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mt_{metroCode}.latency</td>
-		<td>Metro latency from MT to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Montreal to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mu_{metroCode}.latency</td>
-		<td>Metro latency from MU to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Munich to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mx_{metroCode}.latency</td>
-		<td>Metro latency from MX to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Mexico City to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ny_{metroCode}.latency</td>
-		<td>Metro latency from NY to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from New York to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.os_{metroCode}.latency</td>
-		<td>Metro latency from OS to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Osaka to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ot_{metroCode}.latency</td>
-		<td>Metro latency from OT to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Ottawa to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pa_{metroCode}.latency</td>
-		<td>Metro latency from PA to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Paris to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pe_{metroCode}.latency</td>
-		<td>Metro latency from PE to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Perth to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ph_{metroCode}.latency</td>
-		<td>Metro latency from PH to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Philadelphia to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.rj_{metroCode}.latency</td>
-		<td>Metro latency from RJ to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Rio de Janeiro to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.se_{metroCode}.latency</td>
-		<td>Metro latency from SE to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Seattle to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sg_{metroCode}.latency</td>
-		<td>Metro latency from SG to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Singapore to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sk_{metroCode}.latency</td>
-		<td>Metro latency from SK to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Stockholm to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sl_{metroCode}.latency</td>
-		<td>Metro latency from SL to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Seoul to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.so_{metroCode}.latency</td>
-		<td>Metro latency from SO to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Sofia to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sp_{metroCode}.latency</td>
-		<td>Metro latency from SP to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Sao Paulo to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.st_{metroCode}.latency</td>
-		<td>Metro latency from ST to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Santiago to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sv_{metroCode}.latency</td>
-		<td>Metro latency from SV to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Silicon Valley to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sy_{metroCode}.latency</td>
-		<td>Metro latency from SY to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Sydney to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.tr_{metroCode}.latency</td>
-		<td>Metro latency from TR to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Toronto to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ty_{metroCode}.latency</td>
-		<td>Metro latency from TY to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Tokyo to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.va_{metroCode}.latency</td>
-		<td>Metro latency from VA to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Vancouver to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wa_{metroCode}.latency</td>
-		<td>Metro latency from WA to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Warsaw to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wi_{metroCode}.latency</td>
-		<td>Metro latency from WI to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Winnipeg to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.zh_{metroCode}.latency</td>
-		<td>Metro latency from ZH to ${metroCode} above ${threshold}</td>
-		<td>preview</td>
+		<td>Metro latency from Zurich to ${metro} above ${threshold}</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 </table>
-
-
 
 ---
 ### Equinix Fabric Metro Latency Metric (Deprecated)
@@ -2162,7 +2198,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metric</td>
-		<td></td>
+		<td>Metrics collected</td>
 		<td>released</td>
 	<td>-</td>
 	</tr>
@@ -2179,373 +2215,385 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.am_{metroCode}.latency</td>
-		<td>Metro latency from AM to ${metroCode} in ms</td>
+		<td>Amsterdam to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.at_{metroCode}.latency</td>
-		<td>Metro latency from AT to ${metroCode} in ms</td>
+		<td>Atlanta to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ba_{metroCode}.latency</td>
-		<td>Metro latency from BA to ${metroCode} in ms</td>
+		<td>Barcelona to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bg_{metroCode}.latency</td>
-		<td>Metro latency from BG to ${metroCode} in ms</td>
+		<td>Bogota to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bl_{metroCode}.latency</td>
-		<td>Metro latency from BL to ${metroCode} in ms</td>
+		<td>Brussels to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bo_{metroCode}.latency</td>
-		<td>Metro latency from BO to ${metroCode} in ms</td>
+		<td>Boston to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bx_{metroCode}.latency</td>
-		<td>Metro latency from BX to ${metroCode} in ms</td>
+		<td>Bordeaux to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ca_{metroCode}.latency</td>
-		<td>Metro latency from CA to ${metroCode} in ms</td>
+		<td>Canberra to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ch_{metroCode}.latency</td>
-		<td>Metro latency from CH to ${metroCode} in ms</td>
+		<td>Chicago to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cl_{metroCode}.latency</td>
-		<td>Metro latency from CL to ${metroCode} in ms</td>
+		<td>Calgary to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cu_{metroCode}.latency</td>
-		<td>Metro latency from CU to ${metroCode} in ms</td>
+		<td>Culpeper to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.da_{metroCode}.latency</td>
-		<td>Metro latency from DA to ${metroCode} in ms</td>
+		<td>Dallas to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.db_{metroCode}.latency</td>
-		<td>Metro latency from DB to ${metroCode} in ms</td>
+		<td>Dublin to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dc_{metroCode}.latency</td>
-		<td>Metro latency from DC to ${metroCode} in ms</td>
+		<td>Ashburn to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.de_{metroCode}.latency</td>
-		<td>Metro latency from DE to ${metroCode} in ms</td>
+		<td>Denver to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dx_{metroCode}.latency</td>
-		<td>Metro latency from DX to ${metroCode} in ms</td>
+		<td>Dubai to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.fr_{metroCode}.latency</td>
-		<td>Metro latency from FR to ${metroCode} in ms</td>
+		<td>Frankfurt to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.gv_{metroCode}.latency</td>
-		<td>Metro latency from GV to ${metroCode} in ms</td>
+		<td>Geneva to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.he_{metroCode}.latency</td>
-		<td>Metro latency from HE to ${metroCode} in ms</td>
+		<td>Helsinki to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hh_{metroCode}.latency</td>
-		<td>Metro latency from HH to ${metroCode} in ms</td>
+		<td>Hamburg to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hk_{metroCode}.latency</td>
-		<td>Metro latency from HK to ${metroCode} in ms</td>
+		<td>Hong Kong to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ho_{metroCode}.latency</td>
-		<td>Metro latency from HO to ${metroCode} in ms</td>
+		<td>Houston to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.il_{metroCode}.latency</td>
-		<td>Metro latency from IL to ${metroCode} in ms</td>
+		<td>Istanbul to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.jh_{metroCode}.latency</td>
-		<td>Metro latency from JH to ${metroCode} in ms</td>
+		<td>Johor to ${metro} intermetro latency, average in milliseconds</td>
+		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.jk_{metroCode}.latency</td>
+		<td>Jakarta to ${metro} intermetro latency, average in milliseconds</td>
+		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.jn_{metroCode}.latency</td>
+		<td>Johannesburg to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ka_{metroCode}.latency</td>
-		<td>Metro latency from KA to ${metroCode} in ms</td>
+		<td>Kamloops to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.kl_{metroCode}.latency</td>
-		<td>Metro latency from KL to ${metroCode} in ms</td>
+		<td>Kuala Lumpur to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.la_{metroCode}.latency</td>
-		<td>Metro latency from LA to ${metroCode} in ms</td>
+		<td>Los Angeles to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ld_{metroCode}.latency</td>
-		<td>Metro latency from LD to ${metroCode} in ms</td>
+		<td>London to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.lm_{metroCode}.latency</td>
-		<td>Metro latency from LM to ${metroCode} in ms</td>
+		<td>Lima to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ls_{metroCode}.latency</td>
-		<td>Metro latency from LS to ${metroCode} in ms</td>
+		<td>Lisbon to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ma_{metroCode}.latency</td>
-		<td>Metro latency from MA to ${metroCode} in ms</td>
+		<td>Manchester to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mb_{metroCode}.latency</td>
-		<td>Metro latency from MB to ${metroCode} in ms</td>
+		<td>Mumbai to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.md_{metroCode}.latency</td>
-		<td>Metro latency from MD to ${metroCode} in ms</td>
+		<td>Madrid to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.me_{metroCode}.latency</td>
-		<td>Metro latency from ME to ${metroCode} in ms</td>
+		<td>Melbourne to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mi_{metroCode}.latency</td>
-		<td>Metro latency from MI to ${metroCode} in ms</td>
+		<td>Miami to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ml_{metroCode}.latency</td>
-		<td>Metro latency from ML to ${metroCode} in ms</td>
+		<td>Milan to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mo_{metroCode}.latency</td>
-		<td>Metro latency from MO to ${metroCode} in ms</td>
+		<td>Monterrey to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mt_{metroCode}.latency</td>
-		<td>Metro latency from MT to ${metroCode} in ms</td>
+		<td>Montreal to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mu_{metroCode}.latency</td>
-		<td>Metro latency from MU to ${metroCode} in ms</td>
+		<td>Munich to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mx_{metroCode}.latency</td>
-		<td>Metro latency from MX to ${metroCode} in ms</td>
+		<td>Mexico City to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ny_{metroCode}.latency</td>
-		<td>Metro latency from NY to ${metroCode} in ms</td>
+		<td>New York to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.os_{metroCode}.latency</td>
-		<td>Metro latency from OS to ${metroCode} in ms</td>
+		<td>Osaka to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ot_{metroCode}.latency</td>
-		<td>Metro latency from OT to ${metroCode} in ms</td>
+		<td>Ottawa to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pa_{metroCode}.latency</td>
-		<td>Metro latency from PA to ${metroCode} in ms</td>
+		<td>Paris to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pe_{metroCode}.latency</td>
-		<td>Metro latency from PE to ${metroCode} in ms</td>
+		<td>Perth to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ph_{metroCode}.latency</td>
-		<td>Metro latency from PH to ${metroCode} in ms</td>
+		<td>Philadelphia to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.rj_{metroCode}.latency</td>
-		<td>Metro latency from RJ to ${metroCode} in ms</td>
+		<td>Rio de Janeiro to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.se_{metroCode}.latency</td>
-		<td>Metro latency from SE to ${metroCode} in ms</td>
+		<td>Seattle to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sg_{metroCode}.latency</td>
-		<td>Metro latency from SG to ${metroCode} in ms</td>
+		<td>Singapore to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sk_{metroCode}.latency</td>
-		<td>Metro latency from SK to ${metroCode} in ms</td>
+		<td>Stockholm to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sl_{metroCode}.latency</td>
-		<td>Metro latency from SL to ${metroCode} in ms</td>
+		<td>Seoul to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.so_{metroCode}.latency</td>
-		<td>Metro latency from SO to ${metroCode} in ms</td>
+		<td>Sofia to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sp_{metroCode}.latency</td>
-		<td>Metro latency from SP to ${metroCode} in ms</td>
+		<td>Sao Paulo to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.st_{metroCode}.latency</td>
-		<td>Metro latency from ST to ${metroCode} in ms</td>
+		<td>Santiago to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sv_{metroCode}.latency</td>
-		<td>Metro latency from SV to ${metroCode} in ms</td>
+		<td>Silicon Valley to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sy_{metroCode}.latency</td>
-		<td>Metro latency from SY to ${metroCode} in ms</td>
+		<td>Sydney to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.tr_{metroCode}.latency</td>
-		<td>Metro latency from TR to ${metroCode} in ms</td>
+		<td>Toronto to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ty_{metroCode}.latency</td>
-		<td>Metro latency from TY to ${metroCode} in ms</td>
+		<td>Tokyo to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.va_{metroCode}.latency</td>
-		<td>Metro latency from VA to ${metroCode} in ms</td>
+		<td>Vancouver to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wa_{metroCode}.latency</td>
-		<td>Metro latency from WA to ${metroCode} in ms</td>
+		<td>Warsaw to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wi_{metroCode}.latency</td>
-		<td>Metro latency from WI to ${metroCode} in ms</td>
+		<td>Winnipeg to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.zh_{metroCode}.latency</td>
-		<td>Metro latency from ZH to ${metroCode} in ms</td>
+		<td>Zurich to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
