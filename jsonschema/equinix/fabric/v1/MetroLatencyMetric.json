@@ -117,385 +117,385 @@
     "metricNames": [
         {
             "name": "equinix.fabric.metro.am_{metroCode}.latency",
-            "description": "Amsterdam to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Amsterdam to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.at_{metroCode}.latency",
-            "description": "Atlanta to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Atlanta to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.ba_{metroCode}.latency",
-            "description": "Barcelona to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Barcelona to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.bg_{metroCode}.latency",
-            "description": "Bogota to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Bogota to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.bl_{metroCode}.latency",
-            "description": "Brussels to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Brussels to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.bo_{metroCode}.latency",
-            "description": "Boston to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Boston to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.bx_{metroCode}.latency",
-            "description": "Bordeaux to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Bordeaux to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.ca_{metroCode}.latency",
-            "description": "Canberra to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Canberra to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.ch_{metroCode}.latency",
-            "description": "Chicago to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Chicago to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.cl_{metroCode}.latency",
-            "description": "Calgary to  ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Calgary to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.cu_{metroCode}.latency",
-            "description": "Culpeper to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Culpeper to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.da_{metroCode}.latency",
-            "description": "Dallas to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Dallas to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.db_{metroCode}.latency",
-            "description": "Dublin to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Dublin to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.dc_{metroCode}.latency",
-            "description": "Ashburn to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Ashburn to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.de_{metroCode}.latency",
-            "description": "Denver to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Denver to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.dx_{metroCode}.latency",
-            "description": "Dubai to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Dubai to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.fr_{metroCode}.latency",
-            "description": "Frankfurt to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Frankfurt to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.gv_{metroCode}.latency",
-            "description": "Geneva to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Geneva to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.he_{metroCode}.latency",
-            "description": "Helsinki to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Helsinki to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.hh_{metroCode}.latency",
-            "description": "Hamburg to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Hamburg to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.hk_{metroCode}.latency",
-            "description": "Hong Kong to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Hong Kong to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.ho_{metroCode}.latency",
-            "description": "Houston to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Houston to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.il_{metroCode}.latency",
-            "description": "Istanbul to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Istanbul to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.jh_{metroCode}.latency",
-            "description": "Johor to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Johor to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.jk_{metroCode}.latency",
-            "description": "Jakarta to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Jakarta to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.jn_{metroCode}.latency",
-            "description": "Johannesburg to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Johannesburg to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.ka_{metroCode}.latency",
-            "description": "Kamloops to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Kamloops to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.kl_{metroCode}.latency",
-            "description": "Kuala Lumpur to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Kuala Lumpur to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.la_{metroCode}.latency",
-            "description": "Los Angeles to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Los Angeles to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.ld_{metroCode}.latency",
-            "description": "London to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "London to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.lm_{metroCode}.latency",
-            "description": "Lima to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Lima to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.ls_{metroCode}.latency",
-            "description": "Lisbon to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Lisbon to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.ma_{metroCode}.latency",
-            "description": "Manchester to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Manchester to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.mb_{metroCode}.latency",
-            "description": "Mumbai to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Mumbai to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.md_{metroCode}.latency",
-            "description": "Madrid to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Madrid to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.me_{metroCode}.latency",
-            "description": "Melbourne to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Melbourne to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.mi_{metroCode}.latency",
-            "description": "Miami to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Miami to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.ml_{metroCode}.latency",
-            "description": "Milan to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Milan to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.mo_{metroCode}.latency",
-            "description": "Monterrey to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Monterrey to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.mt_{metroCode}.latency",
-            "description": "Montreal to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Montreal to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.mu_{metroCode}.latency",
-            "description": "Munich to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Munich to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.mx_{metroCode}.latency",
-            "description": "Mexico City to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Mexico City to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.ny_{metroCode}.latency",
-            "description": "New York to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "New York to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.os_{metroCode}.latency",
-            "description": "Osaka to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Osaka to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.ot_{metroCode}.latency",
-            "description": "Ottawa to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Ottawa to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.pa_{metroCode}.latency",
-            "description": "Paris to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Paris to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.pe_{metroCode}.latency",
-            "description": "Perth to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Perth to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.ph_{metroCode}.latency",
-            "description": "Philadelphia to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Philadelphia to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.rj_{metroCode}.latency",
-            "description": "Rio de Janeiro to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Rio de Janeiro to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.se_{metroCode}.latency",
-            "description": "Seattle to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Seattle to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.sg_{metroCode}.latency",
-            "description": "Singapore to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Singapore to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.sk_{metroCode}.latency",
-            "description": "Stockholm to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Stockholm to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.sl_{metroCode}.latency",
-            "description": "Seoul to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Seoul to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.so_{metroCode}.latency",
-            "description": "Sofia to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Sofia to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.sp_{metroCode}.latency",
-            "description": "Sao Paulo to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Sao Paulo to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.st_{metroCode}.latency",
-            "description": "Santiago to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Santiago to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.sv_{metroCode}.latency",
-            "description": "Silicon Valley to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Silicon Valley to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.sy_{metroCode}.latency",
-            "description": "Sydney to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Sydney to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.tr_{metroCode}.latency",
-            "description": "Toronto to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Toronto to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.ty_{metroCode}.latency",
-            "description": "Tokyo to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Tokyo to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.va_{metroCode}.latency",
-            "description": "Vancouver to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Vancouver to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.wa_{metroCode}.latency",
-            "description": "Warsaw to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Warsaw to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.wi_{metroCode}.latency",
-            "description": "Winnipeg to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Winnipeg to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.metro.zh_{metroCode}.latency",
-            "description": "Zurich to ${metroCode} intermetro latency, average in milliseconds",
+            "description": "Zurich to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
         }
