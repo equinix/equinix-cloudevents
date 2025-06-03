@@ -51,6 +51,12 @@
                     "releaseStatus": "released"
                 },
                 {
+                    "name": "equinix.fabric.connection.state.failed",
+                    "description": "Connection named ${connection_name} state changed to failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
                     "name": "equinix.fabric.connection.state.pending",
                     "description": "Connection named ${connection_name} state changed to pending",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
