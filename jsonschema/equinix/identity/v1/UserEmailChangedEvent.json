@@ -1,0 +1,34 @@
+{
+  "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserEmailChangedEvent.json",
+  "name": "UserEmailChangedEvent",
+  "examples": [],
+  "package": "equinix.identity.v1",
+  "datatype": "equinix.identity.v1.UserEmailChangedEvent",
+  "domain": "Equinix Identity UserEmailChangedEvent",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/Data",
+  "definitions": {
+    "Data": {
+      "properties": {
+        "message": {
+          "type": "string",
+          "description": "Supporting message describing the event"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "title": "UserEmailChanged Log",
+      "description": "UserEmailChanged Event details"
+    }
+  },
+  "cloudeventTypes": [
+    {
+      "name": "equinix.identity.user.email.changed",
+      "description": "User changed email address",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    }
+  ],
+  "metricNames": [],
+  "alertNames": []
+}
