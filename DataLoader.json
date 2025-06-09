@@ -238,6 +238,11 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.port.state.inactive",
+                "description": "Virtual port named ${port_name} state changed to inactive",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.port.state.provisioned",
                 "description": "Virtual port named ${port_name} state changed to provisioned",
                 "releaseStatus": "released"

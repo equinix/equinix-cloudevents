@@ -425,6 +425,12 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.port.state.inactive</td>
+		<td>Virtual port named ${port_name} state changed to inactive</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.port.state.provisioned</td>
 		<td>Virtual port named ${port_name} state changed to provisioned</td>
 		<td>released</td>
