@@ -75,6 +75,12 @@
                     "releaseStatus": "released"
                 },
                 {
+                    "name": "equinix.fabric.connection.state.reprovisioning",
+                    "description": "Connection named ${connection_name} state changed to reprovisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
                     "name": "equinix.fabric.connection.status.down",
                     "description": "Connection '${connection_name}' status changed to DOWN",
                     "sloCategoryCode": "PURPLE_EVENT_SLO",
@@ -2625,6 +2631,12 @@
                     "releaseStatus": "released"
                 },
                 {
+                    "name": "equinix.network_edge.device.state.failed",
+                    "description": "Network edge device order failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
                     "name": "equinix.network_edge.device.state.provisioned",
                     "description": "Network edge device is provisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
@@ -2649,8 +2661,20 @@
                     "releaseStatus": "released"
                 },
                 {
+                    "name": "equinix.network_edge.devicelinkgroup.state.deprovisioned",
+                    "description": "Network edge device link group is updated",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
                     "name": "equinix.network_edge.devicelinkgroup.state.updated",
                     "description": "Network edge device link group is updated",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.publickey.created",
+                    "description": "Network edge public key created",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "released"
                 }

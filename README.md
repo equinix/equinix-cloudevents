@@ -137,6 +137,12 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.connection.state.reprovisioning</td>
+		<td>Connection named ${connection_name} state changed to reprovisioning</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.connection.status.down</td>
 		<td>Connection '${connection_name}' status changed to DOWN</td>
 		<td>released</td>
@@ -2769,6 +2775,12 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.network_edge.device.state.failed</td>
+		<td>Network edge device order failed</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.network_edge.device.state.provisioned</td>
 		<td>Network edge device is provisioned</td>
 		<td>released</td>
@@ -2793,8 +2805,20 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.network_edge.devicelinkgroup.state.deprovisioned</td>
+		<td>Network edge device link group is updated</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.network_edge.devicelinkgroup.state.updated</td>
 		<td>Network edge device link group is updated</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.publickey.created</td>
+		<td>Network edge public key created</td>
 		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>

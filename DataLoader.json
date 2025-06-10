@@ -53,6 +53,11 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.connection.state.reprovisioning",
+                "description": "Connection named ${connection_name} state changed to reprovisioning",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.connection.status.down",
                 "description": "Connection '${connection_name}' status changed to DOWN",
                 "releaseStatus": "released"
@@ -1472,6 +1477,11 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.network_edge.device.state.failed",
+                "description": "Network edge device order failed",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.network_edge.device.state.provisioned",
                 "description": "Network edge device is provisioned",
                 "releaseStatus": "released"
@@ -1492,8 +1502,18 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.network_edge.devicelinkgroup.state.deprovisioned",
+                "description": "Network edge device link group is updated",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.network_edge.devicelinkgroup.state.updated",
                 "description": "Network edge device link group is updated",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network_edge.publickey.created",
+                "description": "Network edge public key created",
                 "releaseStatus": "released"
             }
         ],
