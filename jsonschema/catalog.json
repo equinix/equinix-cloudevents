@@ -2671,12 +2671,6 @@
                     "description": "Network edge device link group is updated",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "released"
-                },
-                {
-                    "name": "equinix.network_edge.publickey.created",
-                    "description": "Network edge public key created",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
                 }
             ],
             "metricNames": [],

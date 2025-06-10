@@ -2816,12 +2816,6 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
-	<tr>
-		<td>equinix.network_edge.publickey.created</td>
-		<td>Network edge public key created</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
 </table>
 
 

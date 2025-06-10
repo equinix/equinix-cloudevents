@@ -1510,11 +1510,6 @@
                 "name": "equinix.network_edge.devicelinkgroup.state.updated",
                 "description": "Network edge device link group is updated",
                 "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network_edge.publickey.created",
-                "description": "Network edge public key created",
-                "releaseStatus": "released"
             }
         ],
         "metricNames": [],
