@@ -90,6 +90,12 @@
             "releaseStatus": "released"
         },
         {
+            "name": "equinix.network_edge.device.state.failed",
+            "description": "Network edge device order failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
             "name": "equinix.network_edge.acl.state.created",
             "description": "Network edge acl is created",
             "sloCategoryCode": "BLUE_EVENT_SLO",
@@ -131,15 +137,27 @@
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
-         {
+        {
+            "name":  "equinix.network_edge.devicelinkgroup.state.deprovisioned",
+            "description": "Network edge device link group is updated",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
             "name":  "equinix.network_edge.devicelinkgroup.state.deleted",
             "description": "Network edge device link group is deleted",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
-         {
+        {
             "name":  "equinix.network_edge.devicelinkgroup.state.updated",
             "description": "Network edge device link group is updated",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name":  "equinix.network_edge.publickey.created",
+            "description": "Network edge public key created",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         }
