@@ -2631,12 +2631,6 @@
                     "releaseStatus": "released"
                 },
                 {
-                    "name": "equinix.network_edge.device.state.failed",
-                    "description": "Network edge device order failed",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
-                },
-                {
                     "name": "equinix.network_edge.device.state.provisioned",
                     "description": "Network edge device is provisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
@@ -2657,12 +2651,6 @@
                 {
                     "name": "equinix.network_edge.devicelinkgroup.state.deleted",
                     "description": "Network edge device link group is deleted",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
-                },
-                {
-                    "name": "equinix.network_edge.devicelinkgroup.state.deprovisioned",
-                    "description": "Network edge device link group is updated",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "released"
                 },

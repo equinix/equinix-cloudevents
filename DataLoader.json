@@ -1477,11 +1477,6 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.network_edge.device.state.failed",
-                "description": "Network edge device order failed",
-                "releaseStatus": "released"
-            },
-            {
                 "name": "equinix.network_edge.device.state.provisioned",
                 "description": "Network edge device is provisioned",
                 "releaseStatus": "released"
@@ -1499,11 +1494,6 @@
             {
                 "name": "equinix.network_edge.devicelinkgroup.state.deleted",
                 "description": "Network edge device link group is deleted",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network_edge.devicelinkgroup.state.deprovisioned",
-                "description": "Network edge device link group is updated",
                 "releaseStatus": "released"
             },
             {
