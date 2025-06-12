@@ -53,6 +53,11 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.connection.state.reprovisioning",
+                "description": "Connection named ${connection_name} state changed to reprovisioning",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.connection.status.down",
                 "description": "Connection '${connection_name}' status changed to DOWN",
                 "releaseStatus": "released"

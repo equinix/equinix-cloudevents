@@ -75,6 +75,12 @@
                     "releaseStatus": "released"
                 },
                 {
+                    "name": "equinix.fabric.connection.state.reprovisioning",
+                    "description": "Connection named ${connection_name} state changed to reprovisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
                     "name": "equinix.fabric.connection.status.down",
                     "description": "Connection '${connection_name}' status changed to DOWN",
                     "sloCategoryCode": "PURPLE_EVENT_SLO",
