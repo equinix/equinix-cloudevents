@@ -131,13 +131,13 @@
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
-        {
+         {
             "name":  "equinix.network_edge.devicelinkgroup.state.deleted",
             "description": "Network edge device link group is deleted",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
-        {
+         {
             "name":  "equinix.network_edge.devicelinkgroup.state.updated",
             "description": "Network edge device link group is updated",
             "sloCategoryCode": "BLUE_EVENT_SLO",
