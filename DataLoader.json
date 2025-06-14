@@ -128,6 +128,66 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.connection_route_aggregation.state.attached",
+                "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attached",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_route_aggregation.state.attaching",
+                "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attaching",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_route_aggregation.state.detached",
+                "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to detached",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_route_aggregation.state.detaching",
+                "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to detaching",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_route_aggregation.state.failed",
+                "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_route_aggregation.state.pending_bgp_configuration",
+                "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to pending_bgp_configuration",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_route_filter.state.attached",
+                "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to attached",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_route_filter.state.attaching",
+                "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to attaching",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_route_filter.state.detached",
+                "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to detached",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_route_filter.state.detaching",
+                "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to detaching",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_route_filter.state.failed",
+                "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_route_filter.state.pending_bgp_configuration",
+                "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to pending_bgp_configuration",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.connection_routing_protocol.state.deprovisioned",
                 "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioned",
                 "releaseStatus": "released"
@@ -531,66 +591,6 @@
                 "name": "equinix.fabric.service_token.state.inactive",
                 "description": "Token successfully deactivated",
                 "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection_route_aggregation.state.attached",
-                "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attached",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_route_aggregation.state.attaching",
-                "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attaching",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_route_aggregation.state.detached",
-                "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to detached",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_route_aggregation.state.detaching",
-                "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to detaching",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_route_aggregation.state.failed",
-                "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_route_aggregation.state.pending_bgp_configuration",
-                "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to pending_bgp_configuration",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_route_filter.state.attached",
-                "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to attached",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_route_filter.state.attaching",
-                "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to attaching",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_route_filter.state.detached",
-                "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to detached",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_route_filter.state.detaching",
-                "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to detaching",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_route_filter.state.failed",
-                "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_route_filter.state.pending_bgp_configuration",
-                "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to pending_bgp_configuration",
-                "releaseStatus": "preview"
             },
             {
                 "name": "equinix.fabric.route_aggregation.attribute.changed",
