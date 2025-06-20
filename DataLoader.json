@@ -1546,52 +1546,52 @@
             {
                 "name": "equinix.fabric.time_service.state.cancelled",
                 "description": "Time Service is cancelled",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.time_service.state.configuring",
                 "description": "Time Service is configuring",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.time_service.state.configuring_failed",
                 "description": "Time Service is configuring failed",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.time_service.state.deprovisioned",
                 "description": "Time Service is deprovisioned",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.time_service.state.deprovisioning",
                 "description": "Time Service is deprovisioning",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.time_service.state.deprovisioning_failed",
                 "description": "Time Service is deprovisioning failed",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.time_service.state.draft",
                 "description": "Time Service is in draft state",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.time_service.state.provisioned",
                 "description": "Time Service is provisioned",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.time_service.state.provisioning",
                 "description": "Time Service is provisioning",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.time_service.state.provisioning_failed",
                 "description": "Time Service is provisioning failed",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             }
         ],
         "metricNames": [],

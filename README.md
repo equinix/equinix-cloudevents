@@ -2881,61 +2881,61 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.time_service.state.cancelled</td>
 		<td>Time Service is cancelled</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.configuring</td>
 		<td>Time Service is configuring</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.configuring_failed</td>
 		<td>Time Service is configuring failed</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.deprovisioned</td>
 		<td>Time Service is deprovisioned</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.deprovisioning</td>
 		<td>Time Service is deprovisioning</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.deprovisioning_failed</td>
 		<td>Time Service is deprovisioning failed</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.draft</td>
 		<td>Time Service is in draft state</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.provisioned</td>
 		<td>Time Service is provisioned</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.provisioning</td>
 		<td>Time Service is provisioning</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.provisioning_failed</td>
 		<td>Time Service is provisioning failed</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 </table>
