@@ -351,6 +351,42 @@
                     "releaseStatus": "released"
                 },
                 {
+                    "name": "equinix.fabric.physical_port.state.deprovisioned",
+                    "description": "Physical port ${port_id} state changed to deprovisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.physical_port.state.deprovisioning",
+                    "description": "Physical port ${port_id} state changed to deprovisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.physical_port.state.failed",
+                    "description": "Physical port ${port_id} state changed to failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.physical_port.state.pending_cross_connect",
+                    "description": "Physical port ${port_id} state changed to pending_cross_connect",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.physical_port.state.provisioned",
+                    "description": "Physical port ${port_id} state changed to provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.physical_port.state.provisioning",
+                    "description": "Physical port ${port_id} state changed to provisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
                     "name": "equinix.fabric.port.state.deprovisioned",
                     "description": "Virtual port named ${port_name} state changed to deprovisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
