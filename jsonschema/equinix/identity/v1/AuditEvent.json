@@ -1,0 +1,88 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/AuditEvent.json",
+    "name": "AuditEvent",
+    "examples": [],
+    "package": "equinix.identity.v1",
+    "datatype": "equinix.identity.v1.AuditEvent",
+    "domain": "Equinix Identity AuditEvent",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/AuditEvent",
+    "definitions": {
+        "Source": {
+            "properties": {
+                "category": {
+                    "type": "string",
+                    "description": "Groups logs into high-level application categories."
+                },
+                "type" : {
+                    "type": "string",
+                    "description": "Differentiates types of audit events withing a particular category."
+                },
+                "serviceId": {
+                    "type": "string",
+                    "description": "Indicates the service that produced this audit event."
+                },
+                "projectId": {
+                    "type": "string",
+                    "description": "Indicates the customer Project ID with which this audit event is associated."
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Source",
+            "description": "Provides metadata about the source from which this audit event originated."
+        },
+        "Event": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Event",
+            "description": "The audit event event payload."
+        },
+        "AuditEvent": {
+            "properties": {
+                "schema": {
+                    "type": "string",
+                    "description": "Indicates the schema version of this audit event."
+                },
+                "timestamp" : {
+                    "type": "string",
+                    "description": "The timestamp at which this audit event was produced, in ISO8601 format."
+                },
+                "level": {
+                    "type": "string",
+                    "description": "A human-readable indication of the severity level of this audit event."
+                },
+                "eventId": {
+                    "type": "string",
+                    "description": "Unique identifier for this audit event."
+                },
+                "streamErn": {
+                    "type": "string",
+                    "description": "The telemetry stream that produced this audit event."
+                },
+                "source": {
+                    "$ref": "#/definitions/Source",
+                    "description": "Provides metadata about the source from which this audit event originated."
+                },
+                "event": {
+                    "$ref": "#/definitions/Event",
+                    "description": "The audit event event payload."
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "AuditEvent",
+            "description": "The customer-facing audit log format for the Equinix Telemetry Service."
+        }
+    },
+    "cloudeventTypes": [
+        {
+            "name": "equinix.identity.audit",
+            "description": "ECS Identity Audit Event",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        }
+    ],
+    "metricNames": [],
+    "alertNames": []
+}
