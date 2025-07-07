@@ -2926,6 +2926,12 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
+    <tr>
+		<td>equinix.fabric.time_service.state.configured</td>
+		<td>Time Service is configured</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
 	<tr>
 		<td>equinix.fabric.time_service.state.configuring_failed</td>
 		<td>Time Service is configuring failed</td>

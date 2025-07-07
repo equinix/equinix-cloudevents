@@ -1584,6 +1584,11 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.time_service.state.configured",
+                "description": "Time Service is configured",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.time_service.state.configuring_failed",
                 "description": "Time Service is configuring failed",
                 "releaseStatus": "released"
