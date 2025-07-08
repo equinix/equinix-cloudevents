@@ -156,6 +156,30 @@
             "releaseStatus": "released"
         },
         {
+            "name": "equinix.fabric.connection.bandwidth_rx.utilization",
+            "description": "Connection inbound bandwidth utilization percentage",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.connection.bandwidth_tx.utilization",
+            "description": "Connection outbound bandwidth utilization percentage",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.port.bandwidth_rx.utilization",
+            "description": "Port inbound bandwidth utilization percentage",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.port.bandwidth_tx.utilization",
+            "description": "Port outbound bandwidth utilization percentage",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
             "name": "equinix.fabric.port.packets_erred_rx.count",
             "description": "Port inbound erred packets count",
             "sloCategoryCode": "PURPLE_METRIC_SLO",
