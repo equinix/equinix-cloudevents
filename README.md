@@ -1404,9 +1404,21 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.connection.bandwidth_rx.utilization</td>
+		<td>Connection inbound bandwidth utilization in %</td>
+		<td>preview</td>
+	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.connection.bandwidth_tx.usage</td>
 		<td>Connection outbound bandwidth usage in bit/sec</td>
 		<td>released</td>
+	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.bandwidth_tx.utilization</td>
+		<td>Connection outbound bandwidth utilization in %</td>
+		<td>preview</td>
 	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1824,9 +1836,21 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.port.bandwidth_rx.utilization</td>
+		<td>Port inbound bandwidth utilization in %</td>
+		<td>preview</td>
+	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.port.bandwidth_tx.usage</td>
 		<td>Port outbound bandwidth usage in bit/sec</td>
 		<td>released</td>
+	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.bandwidth_tx.utilization</td>
+		<td>Port outbound bandwidth utilization in %</td>
+		<td>preview</td>
 	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
