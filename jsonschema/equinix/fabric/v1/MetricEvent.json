@@ -586,389 +586,390 @@
             "description": "Zurich to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
-        },{
+        },
+        {
             "name": "equinix.fabric.metro.am_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Amsterdam to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Amsterdam to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.at_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Atlanta to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Atlanta to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.ba_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Barcelona to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Barcelona to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.bg_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Bogota to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Bogota to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.bl_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Brussels to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Brussels to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.bo_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Boston to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Boston to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.bx_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Bordeaux to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Bordeaux to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.ca_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Canberra to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Canberra to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.ch_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Chicago to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Chicago to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.cl_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Calgary to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Calgary to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.cu_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Culpeper to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Culpeper to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.da_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Dallas to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Dallas to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.db_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Dublin to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Dublin to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.dc_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Ashburn to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Ashburn to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.de_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Denver to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Denver to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.dx_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Dubai to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Dubai to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.fr_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Frankfurt to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Frankfurt to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.gv_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Geneva to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Geneva to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.he_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Helsinki to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Helsinki to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.hh_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Hamburg to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Hamburg to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.hk_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Hong Kong to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Hong Kong to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.ho_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Houston to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Houston to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.il_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Istanbul to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Istanbul to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.jh_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Johor to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Johor to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.jk_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Jakarta to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Jakarta to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.jn_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Johannesburg to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Johannesburg to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.ka_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Kamloops to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Kamloops to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.kl_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Kuala Lumpur to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Kuala Lumpur to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.la_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Los Angeles to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Los Angeles to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.ld_{metroCode}.jitter_avg",
-            "description": "Metro jitter from London to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "London to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.lm_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Lima to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Lima to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.ls_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Lisbon to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Lisbon to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.ma_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Manchester to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Manchester to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.mb_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Mumbai to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Mumbai to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.md_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Madrid to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Madrid to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.me_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Melbourne to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Melbourne to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.mi_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Miami to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Miami to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.ml_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Milan to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Milan to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.mo_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Monterrey to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Monterrey to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.mt_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Montreal to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Montreal to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.mu_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Munich to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Munich to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.mx_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Mexico City to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Mexico City to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.ny_{metroCode}.jitter_avg",
-            "description": "Metro jitter from New York to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "New York to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.os_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Osaka to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Osaka to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.ot_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Ottawa to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Ottawa to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.pa_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Paris to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Paris to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.pe_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Perth to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Perth to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.ph_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Philadelphia to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Philadelphia to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.rj_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Rio de Janeiro to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Rio de Janeiro to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.se_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Seattle to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Seattle to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.sg_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Singapore to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Singapore to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.sk_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Stockholm to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Stockholm to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.sl_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Seoul to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Seoul to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.so_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Sofia to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Sofia to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.sp_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Sao Paulo to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Sao Paulo to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.st_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Santiago to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Santiago to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.sv_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Silicon Valley to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Silicon Valley to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.sy_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Sydney to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Sydney to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.tr_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Toronto to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Toronto to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.ty_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Tokyo to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Tokyo to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.va_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Vancouver to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Vancouver to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.wa_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Warsaw to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Warsaw to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.wi_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Winnipeg to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Winnipeg to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.zh_{metroCode}.jitter_avg",
-            "description": "Metro jitter from Zurich to ${metro} is ${operator} ${operand} milliseconds",
-            "sloCategoryCode": "BLUE_ALERT_SLO",
-            "releaseStatus": "released"
+            "description": "Zurich to ${metro} intermetro average jitter in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         }
     ],
     "alertNames": []
