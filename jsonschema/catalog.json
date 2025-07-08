@@ -796,10 +796,22 @@
                     "releaseStatus": "released"
                 },
                 {
+                    "name": "equinix.fabric.connection.bandwidth_rx.utilization",
+                    "description": "Connection inbound bandwidth utilization is ${operator} ${operand}%",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
                     "name": "equinix.fabric.connection.bandwidth_tx.usage",
                     "description": "Connection outbound bandwidth usage is ${operator} ${operand} bit/s",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
                     "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bandwidth_tx.utilization",
+                    "description": "Connection outbound bandwidth utilization is ${operator} ${operand}%",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
                 },
                 {
                     "name": "equinix.fabric.connection.installed_routes_ipv4.utilization",
@@ -1612,10 +1624,22 @@
                     "releaseStatus": "released"
                 },
                 {
+                    "name": "equinix.fabric.port.bandwidth_rx.utilization",
+                    "description": "Port inbound bandwidth utilization is ${operator} ${operand}%",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
                     "name": "equinix.fabric.port.bandwidth_tx.usage",
                     "description": "Port outbound bandwidth usage is ${operator} ${operand} bit/s",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
                     "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port.bandwidth_tx.utilization",
+                    "description": "Port outbound bandwidth utilization is ${operator} ${operand}%",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
                 },
                 {
                     "name": "equinix.fabric.port.packets_dropped_rx.count",
