@@ -641,6 +641,46 @@
                 "name": "equinix.fabric.route_filter_rule.attribute.changed",
                 "description": "Route Filter Rule named ${route_filter_rule_name} attribute changed",
                 "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.maintenance.state.cancelled",
+                "description": "Network maintenance state changed to cancelled",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.maintenance.state.completed",
+                "description": "Network maintenance state changed to completed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.maintenance.state.confirmed",
+                "description": "Network maintenance state changed to confirmed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.maintenance.state.in_progress",
+                "description": "Network maintenance state changed to in_progress",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.repair.state.cancelled",
+                "description": "Network repair state changed to cancelled",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.repair.state.completed",
+                "description": "Network repair state changed to completed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.repair.state.confirmed",
+                "description": "Network repair state changed to confirmed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.repair.state.in_progress",
+                "description": "Network repair state changed to in_progress",
+                "releaseStatus": "preview"
             }
         ],
         "metricNames": [

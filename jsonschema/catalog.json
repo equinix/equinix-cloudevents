@@ -781,6 +781,65 @@
             "alertNames": []
         },
         {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json",
+            "domain": "Equinix Fabric Incident",
+            "name": "Incident",
+            "description": "The data within all ChangeEvent events.",
+            "datatype": "equinix.fabric.v1.Incident",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.network.maintenance.state.cancelled",
+                    "description": "Network maintenance state changed to cancelled",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network.maintenance.state.completed",
+                    "description": "Network maintenance state changed to completed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network.maintenance.state.confirmed",
+                    "description": "Network maintenance state changed to confirmed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network.maintenance.state.in_progress",
+                    "description": "Network maintenance state changed to in_progress",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network.repair.state.cancelled",
+                    "description": "Network repair state changed to cancelled",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network.repair.state.completed",
+                    "description": "Network repair state changed to completed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network.repair.state.confirmed",
+                    "description": "Network repair state changed to confirmed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network.repair.state.in_progress",
+                    "description": "Network repair state changed to in_progress",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricAlert.json",
             "domain": "Equinix Fabric MetricAlert",
             "name": "MetricAlert",
