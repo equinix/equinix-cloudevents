@@ -32,29 +32,9 @@
     },
     "Auth": {
       "properties": {
-        "id": {
-          "type": "string",
-          "description": "The unique identifier of the entity generating the event"
-        },
         "type": {
           "type": "string",
           "description": "The type of the entity generating the event"
-        },
-        "name": {
-          "type": "string",
-          "description": "Name of the entity generating the event"
-        },
-        "email": {
-          "type": "string",
-          "description": "Email of the user generating the event"
-        },
-        "sourceIp": {
-          "type": "string",
-          "description": "IP address of the user generating the event"
-        },
-        "agent": {
-          "type": "string",
-          "description": "The software that made the request"
         }
       },
       "additionalProperties": true,
@@ -64,10 +44,6 @@
     },
     "Resource": {
       "properties": {
-        "href": {
-          "type": "string",
-          "description": "Link to the resource that has generated the event"
-        },
         "type": {
           "type": "string",
           "description": "Type of the resource generating the event"
@@ -76,23 +52,74 @@
           "type": "string",
           "description": "Equinix assigned unique identifier of the resource generating the event"
         },
-        "name": {
+        "state": {
           "type": "string",
-          "description": "Name of the resource generating the event"
-        },
-        "status": {
-          "type": "string",
-          "description": "Status of the resource generating the event"
+          "description": "State of the maintenance incident"
         },
         "description": {
           "type": "string",
           "description": "Description of the resource generating the event"
+        },
+        "servicerId": {
+          "type": "string",
+          "description": "Servicer ID for the maintenance incident"
+        },
+        "startDateTime": {
+          "type": "string",
+          "description": "Start date and time of the maintenance incident"
+        },
+        "endDateTime": {
+          "type": "string",
+          "description": "End date and time of the maintenance incident"
+        },
+        "accountNumber": {
+          "type": "string",
+          "description": "Account number associated with the maintenance incident"
+        },
+        "impact": {
+          "type": "string",
+          "description": "Impact of the maintenance incident"
+        },
+        "prodID": {
+          "type": "string",
+          "description": "Product ID or notification reference"
+        },
+        "organizer": {
+          "type": "string",
+          "description": "Organizer of the maintenance incident"
+        },
+        "assets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Asset"
+          },
+          "description": "List of assets affected by the maintenance incident"
         }
       },
       "additionalProperties": true,
       "type": "object",
       "title": "Resource",
       "description": "Schema of the resource that fired the event"
+    },
+    "Asset": {
+      "properties": {
+        "href": {
+          "type": "string",
+          "description": "Link to the asset"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of the asset"
+        },
+        "uuid": {
+          "type": "string",
+          "description": "Unique identifier of the asset"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Asset",
+      "description": "Schema of an asset affected by the maintenance incident"
     }
   },
   "cloudeventTypes": [
