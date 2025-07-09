@@ -1,0 +1,150 @@
+{
+  "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json",
+  "name": "Incident",
+  "examples": [],
+  "package": "equinix.fabric.v1",
+  "datatype": "equinix.fabric.v1.Incident",
+  "domain": "Equinix Fabric Incident",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/Data",
+  "definitions": {
+    "Data": {
+      "properties": {
+        "resource": {
+          "$ref": "#/definitions/Resource",
+          "additionalProperties": true,
+          "description": "Optional. The Backup event payload. Unset for deletion events."
+        },
+        "message": {
+          "type": "string",
+          "description": "Supporting message describing the event"
+        },
+        "auth": {
+          "$ref": "#/definitions/Auth",
+          "additionalProperties": true,
+          "description": "The auth context within all ChangeEvent events."
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "ChangeEvent Event Data",
+      "description": "The data within all ChangeEvent events."
+    },
+    "Auth": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The unique identifier of the entity generating the event"
+        },
+        "type": {
+          "type": "string",
+          "description": "The type of the entity generating the event"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the entity generating the event"
+        },
+        "email": {
+          "type": "string",
+          "description": "Email of the user generating the event"
+        },
+        "sourceIp": {
+          "type": "string",
+          "description": "IP address of the user generating the event"
+        },
+        "agent": {
+          "type": "string",
+          "description": "The software that made the request"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Auth",
+      "description": "Auth information of the generated event"
+    },
+    "Resource": {
+      "properties": {
+        "href": {
+          "type": "string",
+          "description": "Link to the resource that has generated the event"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of the resource generating the event"
+        },
+        "uuid": {
+          "type": "string",
+          "description": "Equinix assigned unique identifier of the resource generating the event"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the resource generating the event"
+        },
+        "status": {
+          "type": "string",
+          "description": "Status of the resource generating the event"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the resource generating the event"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Resource",
+      "description": "Schema of the resource that fired the event"
+    }
+  },
+  "cloudeventTypes": [
+    {
+      "name": "equinix.network.maintenance.state.confirmed",
+      "description": "Network maintenance state changed to confirmed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.network.maintenance.state.in_progress",
+      "description": "Network maintenance state changed to in_progress",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.network.maintenance.state.cancelled",
+      "description": "Network maintenance state changed to cancelled",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.network.maintenance.state.completed",
+      "description": "Network maintenance state changed to completed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.network.repair.state.confirmed",
+      "description": "Network repair state changed to confirmed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.network.repair.state.in_progress",
+      "description": "Network repair state changed to in_progress",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.network.repair.state.cancelled",
+      "description": "Network repair state changed to cancelled",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.network.repair.state.completed",
+      "description": "Network repair state changed to completed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    }
+  ],
+  "metricNames": [],
+  "alertNames": []
+}
