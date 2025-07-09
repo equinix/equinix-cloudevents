@@ -1,0 +1,125 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/iam/v1/TokenIssuedEvent.json",
+    "title": "TokenIssuedEvent",
+    "examples": [],
+    "package": "equinix.iam.v1",
+    "datatype": "equinix.iam.v1.TokenIssuedEvent",
+    "domain": "Equinix IAM TokenIssuedEvent",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "type": "object",
+            "title": "TokenIssued event data",
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "resource": { "$ref": "#/definitions/Resource" },
+                "auth": { "$ref": "#/definitions/Auth" }
+            },
+            "required": [ "message", "resource", "auth" ],
+            "additionalProperties": true
+        },
+        "Resource": {
+            "type": "object",
+            "title": "TokenIssued resource definition",
+            "description": "Provides detailed information about the token issuance",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "The identifier of the principal to whom the token was issued"
+                },
+                "token": { "$ref": "#/definitions/Token" }
+            },
+            "required": [ "id", "token" ],
+            "additionalProperties": true
+        },
+        "Auth": {
+            "type": "object",
+            "title": "Auth context",
+            "description": "Authentication context for the token issuance",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "The unique identifier of the authenticated principal."
+                },
+                "type": {
+                    "type": "string",
+                    "description": "The type of authenticated principal."
+                }
+            },
+            "required": [ "id", "type" ],
+            "additionalProperties": true
+        },
+        "Token": {
+            "type": "object",
+            "title": "Token",
+            "description": "Details about the token that was issued.",
+            "properties": {
+                "scope": {
+                    "type": "string",
+                    "description": "The scope of access that was requested for the token"
+                },
+                "claims": { "$ref": "#/definitions/Claims" }
+            },
+            "required": [ "scope", "claims" ],
+            "additionalProperties": true
+        },
+        "Claims": {
+            "type": "object",
+            "title": "Claims",
+            "description": "Details about the JWT claims in the issued token.",
+            "properties": {
+                "iss": {
+                    "type": "string",
+                    "description": "URI of the token issuer"
+                },
+                "aud": {
+                    "type": "string",
+                    "description": "The access token audience"
+                },
+                "sub": {
+                    "type": "string",
+                    "description": "The principal that is the subject of the access token"
+                },
+                "iat": {
+                    "type": "integer",
+                    "description": "Timestamp when the token was issued, in Unix epoch milliseconds"
+                },
+                "exp": {
+                    "type": "integer",
+                    "description": "Expiration time for the token, in Unix epoch milliseconds"
+                },
+                "equinix.com/scope_type": {
+                    "enum": [ "accesspolicy", "roleassignments" ],
+                    "description": "Indicates whether the scope of access is tied to an access policy or the principal's role assignments."
+                },
+                "equinix.com/access_policy_ern": {
+                    "type": "string",
+                    "description": "For access-policy scoped tokens, the ERN of the access policy that will be used for authorization decisions."
+                },
+                "equinix.com/org": {
+                    "type": "string",
+                    "description": "For role-assignment scoped tokens, the organization ID in which access is granted."
+                },
+                "equinix.com/cust_org": {
+                    "type": "string",
+                    "description": "For role-assignment scoped tokens, the cust-org ID in which access is granted."
+                }
+            },
+            "required": [ "iss", "aud", "sub", "iat", "exp" ],
+            "additionalProperties": true
+        }
+    },
+    "cloudeventTypes": [
+        {
+            "name": "equinix.iam.principal.token.issued",
+            "description": "Access token issued to principal ${principal_id}",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        }
+    ],
+    "metricNames": [],
+    "alertNames": []
+}
