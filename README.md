@@ -161,9 +161,21 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.connection_bgpipv4_session.status.closing</td>
+		<td>Neighbor ${IP} address session state changed to Closing</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.connection_bgpipv4_session.status.connect</td>
 		<td>Neighbor ${IP} address session state changed to Connect</td>
 		<td>released</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv4_session.status.deleting</td>
+		<td>Neighbor ${IP} address session state changed to Deleting</td>
+		<td>preview</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -179,6 +191,12 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.connection_bgpipv4_session.status.incomplete</td>
+		<td>Neighbor ${IP} address session state changed to Incomplete</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.connection_bgpipv4_session.status.open_confirm</td>
 		<td>Neighbor ${IP} address session state changed to Open_confirm</td>
 		<td>released</td>
@@ -191,15 +209,39 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.connection_bgpipv4_session.status.shutdown</td>
+		<td>Neighbor ${IP} address session state changed to ShutDown</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv4_session.status.unknown</td>
+		<td>Neighbor ${IP} address session state changed to Unknown</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.connection_bgpipv6_session.status.active</td>
 		<td>Neighbor ${IP} address session state changed to Active</td>
 		<td>released</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.connection_bgpipv6_session.status.closing</td>
+		<td>Neighbor ${IP} address session state changed to Closing</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.connection_bgpipv6_session.status.connect</td>
 		<td>Neighbor ${IP} address session state changed to Connect</td>
 		<td>released</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv6_session.status.deleting</td>
+		<td>Neighbor ${IP} address session state changed to Deleting</td>
+		<td>preview</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -215,6 +257,12 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.connection_bgpipv6_session.status.incomplete</td>
+		<td>Neighbor ${IP} address session state changed to Incomplete</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.connection_bgpipv6_session.status.open_confirm</td>
 		<td>Neighbor ${IP} address session state changed to Open_confirm</td>
 		<td>released</td>
@@ -224,6 +272,18 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.connection_bgpipv6_session.status.open_sent</td>
 		<td>Neighbor ${IP} address session state changed to open_sent</td>
 		<td>released</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv6_session.status.shutdown</td>
+		<td>Neighbor ${IP} address session state changed to ShutDown</td>
+		<td>preview</td>
+	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection_bgpipv6_session.status.unknown</td>
+		<td>Neighbor ${IP} address session state changed to Unknown</td>
+		<td>preview</td>
 	<td><a href='#brown_event_slo'> <span style='color:brown'>BROWN_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
