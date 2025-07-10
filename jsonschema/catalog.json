@@ -784,7 +784,7 @@
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json",
             "domain": "Equinix Fabric Incident",
             "name": "Incident",
-            "description": "The data within all ChangeEvent events.",
+            "description": "The data within all Incident events",
             "datatype": "equinix.fabric.v1.Incident",
             "cloudeventTypes": [
                 {
