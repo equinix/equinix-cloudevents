@@ -98,6 +98,31 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.unknown",
+                "description": "Neighbor ${IP} address session state changed to Unknown",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.closing",
+                "description": "Neighbor ${IP} address session state changed to Closing",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.deleting",
+                "description": "Neighbor ${IP} address session state changed to Deleting",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.incomplete",
+                "description": "Neighbor ${IP} address session state changed to Incomplete",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.shutdown",
+                "description": "Neighbor ${IP} address session state changed to ShutDown",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.connection_bgpipv6_session.status.active",
                 "description": "Neighbor ${IP} address session state changed to Active",
                 "releaseStatus": "released"
