@@ -253,7 +253,6 @@
             "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
         },
-
         {
             "name": "equinix.fabric.connection_bgpipv4_session.status.unknown",
             "description": "Neighbor ${IP} address session state changed to Unknown",
@@ -374,7 +373,6 @@
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
         },
-
         {
             "name": "equinix.fabric.network.attribute.changed",
             "description": "network named ${network_name} attribute changed",
