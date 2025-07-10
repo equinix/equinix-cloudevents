@@ -254,6 +254,36 @@
             "releaseStatus": "released"
         },
         {
+            "name": "equinix.fabric.connection_bgpipv4_session.status.unknown",
+            "description": "Neighbor ${IP} address session state changed to Unknown",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.connection_bgpipv4_session.status.closing",
+            "description": "Neighbor ${IP} address session state changed to Closing",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.connection_bgpipv4_session.status.deleting",
+            "description": "Neighbor ${IP} address session state changed to Deleting",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.connection_bgpipv4_session.status.incomplete",
+            "description": "Neighbor ${IP} address session state changed to Incomplete",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.connection_bgpipv4_session.status.shutdown",
+            "description": "Neighbor ${IP} address session state changed to ShutDown",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
             "name": "equinix.fabric.connection_bgpipv6_session.status.idle",
             "description": "Neighbor ${IP} address session state changed to Idle",
             "sloCategoryCode": "BROWN_EVENT_SLO",
@@ -288,6 +318,36 @@
             "description": "Neighbor ${IP} address session state changed to Established",
             "sloCategoryCode": "BROWN_EVENT_SLO",
             "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.connection_bgpipv6_session.status.unknown",
+            "description": "Neighbor ${IP} address session state changed to Unknown",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.connection_bgpipv6_session.status.closing",
+            "description": "Neighbor ${IP} address session state changed to Closing",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.connection_bgpipv6_session.status.deleting",
+            "description": "Neighbor ${IP} address session state changed to Deleting",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.connection_bgpipv6_session.status.incomplete",
+            "description": "Neighbor ${IP} address session state changed to Incomplete",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.connection_bgpipv6_session.status.shutdown",
+            "description": "Neighbor ${IP} address session state changed to ShutDown",
+            "sloCategoryCode": "BROWN_EVENT_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.network.state.provisioning",
