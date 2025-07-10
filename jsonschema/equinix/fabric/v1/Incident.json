@@ -13,22 +13,22 @@
         "resource": {
           "$ref": "#/definitions/Resource",
           "additionalProperties": true,
-          "description": "Optional. The Backup event payload. Unset for deletion events."
+          "description": "Optional. The Backup event payload. Unset for deletion events"
         },
         "message": {
           "type": "string",
-          "description": "Supporting message describing the event"
+          "description": "Supporting message describing the incident event"
         },
         "auth": {
           "$ref": "#/definitions/Auth",
           "additionalProperties": true,
-          "description": "The auth context within all ChangeEvent events."
+          "description": "The auth context within all incident event"
         }
       },
       "additionalProperties": true,
       "type": "object",
-      "title": "ChangeEvent Event Data",
-      "description": "The data within all ChangeEvent events."
+      "title": "Incident Event Data",
+      "description": "The data within all Incident events"
     },
     "Auth": {
       "properties": {
@@ -40,45 +40,45 @@
       "additionalProperties": true,
       "type": "object",
       "title": "Auth",
-      "description": "Auth information of the generated event"
+      "description": "Auth information of the generated Incident event"
     },
     "Resource": {
       "properties": {
         "type": {
           "type": "string",
-          "description": "Type of the resource generating the event"
+          "description": "Type of the incident (e.g., maintenance or repair)"
         },
         "uuid": {
           "type": "string",
-          "description": "Equinix assigned unique identifier of the resource generating the event"
+          "description": "Equinix assigned unique identifier of the incident"
         },
         "state": {
           "type": "string",
-          "description": "State of the maintenance incident"
+          "description": "State of the maintenance/repair incident"
         },
         "description": {
           "type": "string",
-          "description": "Description of the resource generating the event"
+          "description": "Description of the maintenance/repair incident"
         },
         "servicerId": {
           "type": "string",
-          "description": "Servicer ID for the maintenance incident"
+          "description": "Servicer ID for the maintenance/repair incident"
         },
         "startDateTime": {
           "type": "string",
-          "description": "Start date and time of the maintenance incident"
+          "description": "Start date and time of the maintenance/repair incident"
         },
         "endDateTime": {
           "type": "string",
-          "description": "End date and time of the maintenance incident"
+          "description": "End date and time of the maintenance/repair incident"
         },
         "accountNumber": {
           "type": "string",
-          "description": "Account number associated with the maintenance incident"
+          "description": "Account number associated with the maintenance/repair incident"
         },
         "impact": {
           "type": "string",
-          "description": "Impact of the maintenance incident"
+          "description": "Impact of the maintenance/repair incident"
         },
         "prodID": {
           "type": "string",
@@ -86,40 +86,40 @@
         },
         "organizer": {
           "type": "string",
-          "description": "Organizer of the maintenance incident"
+          "description": "Organizer of the maintenance/repair incident"
         },
         "assets": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/Asset"
           },
-          "description": "List of assets affected by the maintenance incident"
+          "description": "List of assets affected by the maintenance/repair incident"
         }
       },
       "additionalProperties": true,
       "type": "object",
       "title": "Resource",
-      "description": "Schema of the resource that fired the event"
+      "description": "Schema of the resource that fired the incident event"
     },
     "Asset": {
       "properties": {
         "href": {
           "type": "string",
-          "description": "Link to the asset"
+          "description": "Link to the asset affected by the maintenance/repair incident"
         },
         "type": {
           "type": "string",
-          "description": "Type of the asset"
+          "description": "Type of the asset affected by the maintenance/repair incident"
         },
         "uuid": {
           "type": "string",
-          "description": "Unique identifier of the asset"
+          "description": "Unique identifier of the asset affected by the maintenance/repair incident"
         }
       },
       "additionalProperties": true,
       "type": "object",
       "title": "Asset",
-      "description": "Schema of an asset affected by the maintenance incident"
+      "description": "Schema of an asset affected by the maintenance/repair incident"
     }
   },
   "cloudeventTypes": [
