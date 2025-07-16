@@ -1054,7 +1054,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.am_{metroCode}.latency</td>
-		<td>Metro latency from Amsterdam to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Amsterdam to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1066,7 +1066,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.at_{metroCode}.latency</td>
-		<td>Metro latency from Atlanta to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Atlanta to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1078,7 +1078,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ba_{metroCode}.latency</td>
-		<td>Metro latency from Barcelona to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Barcelona to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1090,7 +1090,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bg_{metroCode}.latency</td>
-		<td>Metro latency from Bogota to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Bogota to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1102,7 +1102,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bl_{metroCode}.latency</td>
-		<td>Metro latency from Brussels to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Brussels to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1114,7 +1114,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bo_{metroCode}.latency</td>
-		<td>Metro latency from Boston to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Boston to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1126,7 +1126,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bx_{metroCode}.latency</td>
-		<td>Metro latency from Bordeaux to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Bordeaux to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1138,7 +1138,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ca_{metroCode}.latency</td>
-		<td>Metro latency from Canberra to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Canberra to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1150,7 +1150,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ch_{metroCode}.latency</td>
-		<td>Metro latency from Chicago to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Chicago to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1162,7 +1162,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cl_{metroCode}.latency</td>
-		<td>Metro latency from Calgary to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Calgary to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1174,7 +1174,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cu_{metroCode}.latency</td>
-		<td>Metro latency from Culpeper to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Culpeper to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1186,7 +1186,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.da_{metroCode}.latency</td>
-		<td>Metro latency from Dallas to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Dallas to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1198,7 +1198,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.db_{metroCode}.latency</td>
-		<td>Metro latency from Dublin to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Dublin to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1210,7 +1210,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dc_{metroCode}.latency</td>
-		<td>Metro latency from Ashburn to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Ashburn to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1222,7 +1222,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.de_{metroCode}.latency</td>
-		<td>Metro latency from Denver to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Denver to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1234,7 +1234,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dx_{metroCode}.latency</td>
-		<td>Metro latency from Dubai to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Dubai to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1246,7 +1246,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.fr_{metroCode}.latency</td>
-		<td>Metro latency from Frankfurt to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Frankfurt to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1258,7 +1258,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.gv_{metroCode}.latency</td>
-		<td>Metro latency from Geneva to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Geneva to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1270,7 +1270,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.he_{metroCode}.latency</td>
-		<td>Metro latency from Helsinki to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Helsinki to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1282,7 +1282,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hh_{metroCode}.latency</td>
-		<td>Metro latency from Hamburg to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Hamburg to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1294,7 +1294,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hk_{metroCode}.latency</td>
-		<td>Metro latency from Hong Kong to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Hong Kong to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1306,7 +1306,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ho_{metroCode}.latency</td>
-		<td>Metro latency from Houston to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Houston to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1318,7 +1318,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.il_{metroCode}.latency</td>
-		<td>Metro latency from Istanbul to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Istanbul to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1330,7 +1330,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.jh_{metroCode}.latency</td>
-		<td>Metro latency from Johor to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Johor to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1342,7 +1342,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.jk_{metroCode}.latency</td>
-		<td>Metro latency from Jakarta to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Jakarta to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1354,7 +1354,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.jn_{metroCode}.latency</td>
-		<td>Metro latency from Johannesburg to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Johannesburg to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1366,7 +1366,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ka_{metroCode}.latency</td>
-		<td>Metro latency from Kamloops to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Kamloops to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1378,7 +1378,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.kl_{metroCode}.latency</td>
-		<td>Metro latency from Kuala Lumpur to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Kuala Lumpur to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1390,7 +1390,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.la_{metroCode}.latency</td>
-		<td>Metro latency from Los Angeles to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Los Angeles to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1402,7 +1402,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ld_{metroCode}.latency</td>
-		<td>Metro latency from London to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from London to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1414,7 +1414,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.lm_{metroCode}.latency</td>
-		<td>Metro latency from Lima to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Lima to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1426,7 +1426,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ls_{metroCode}.latency</td>
-		<td>Metro latency from Lisbon to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Lisbon to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1438,7 +1438,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ma_{metroCode}.latency</td>
-		<td>Metro latency from Manchester to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Manchester to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1450,7 +1450,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mb_{metroCode}.latency</td>
-		<td>Metro latency from Mumbai to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Mumbai to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1462,7 +1462,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.md_{metroCode}.latency</td>
-		<td>Metro latency from Madrid to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Madrid to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1474,7 +1474,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.me_{metroCode}.latency</td>
-		<td>Metro latency from Melbourne to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Melbourne to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1486,7 +1486,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mi_{metroCode}.latency</td>
-		<td>Metro latency from Miami to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Miami to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1498,7 +1498,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ml_{metroCode}.latency</td>
-		<td>Metro latency from Milan to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Milan to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1510,7 +1510,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mo_{metroCode}.latency</td>
-		<td>Metro latency from Monterrey to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Monterrey to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1522,7 +1522,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mt_{metroCode}.latency</td>
-		<td>Metro latency from Montreal to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Montreal to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1534,7 +1534,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mu_{metroCode}.latency</td>
-		<td>Metro latency from Munich to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Munich to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1546,7 +1546,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mx_{metroCode}.latency</td>
-		<td>Metro latency from Mexico City to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Mexico City to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1558,7 +1558,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ny_{metroCode}.latency</td>
-		<td>Metro latency from New York to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from New York to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1570,7 +1570,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.os_{metroCode}.latency</td>
-		<td>Metro latency from Osaka to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Osaka to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1582,7 +1582,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ot_{metroCode}.latency</td>
-		<td>Metro latency from Ottawa to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Ottawa to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1594,7 +1594,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pa_{metroCode}.latency</td>
-		<td>Metro latency from Paris to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Paris to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1606,7 +1606,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pe_{metroCode}.latency</td>
-		<td>Metro latency from Perth to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Perth to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1618,7 +1618,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ph_{metroCode}.latency</td>
-		<td>Metro latency from Philadelphia to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Philadelphia to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1630,7 +1630,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.rj_{metroCode}.latency</td>
-		<td>Metro latency from Rio de Janeiro to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Rio de Janeiro to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1642,7 +1642,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.se_{metroCode}.latency</td>
-		<td>Metro latency from Seattle to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Seattle to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1654,7 +1654,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sg_{metroCode}.latency</td>
-		<td>Metro latency from Singapore to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Singapore to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1666,7 +1666,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sk_{metroCode}.latency</td>
-		<td>Metro latency from Stockholm to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Stockholm to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1678,7 +1678,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sl_{metroCode}.latency</td>
-		<td>Metro latency from Seoul to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Seoul to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1690,7 +1690,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.so_{metroCode}.latency</td>
-		<td>Metro latency from Sofia to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Sofia to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1702,7 +1702,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sp_{metroCode}.latency</td>
-		<td>Metro latency from Sao Paulo to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Sao Paulo to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1714,7 +1714,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.st_{metroCode}.latency</td>
-		<td>Metro latency from Santiago to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Santiago to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1726,7 +1726,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sv_{metroCode}.latency</td>
-		<td>Metro latency from Silicon Valley to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Silicon Valley to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1738,7 +1738,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sy_{metroCode}.latency</td>
-		<td>Metro latency from Sydney to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Sydney to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1750,7 +1750,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.tr_{metroCode}.latency</td>
-		<td>Metro latency from Toronto to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Toronto to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1762,7 +1762,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ty_{metroCode}.latency</td>
-		<td>Metro latency from Tokyo to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Tokyo to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1774,7 +1774,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.va_{metroCode}.latency</td>
-		<td>Metro latency from Vancouver to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Vancouver to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1786,7 +1786,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wa_{metroCode}.latency</td>
-		<td>Metro latency from Warsaw to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Warsaw to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1798,7 +1798,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wi_{metroCode}.latency</td>
-		<td>Metro latency from Winnipeg to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Winnipeg to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -1810,7 +1810,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.zh_{metroCode}.latency</td>
-		<td>Metro latency from Zurich to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>Metro latency from Zurich to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
