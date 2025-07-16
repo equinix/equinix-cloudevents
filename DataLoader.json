@@ -73,8 +73,18 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.closing",
+                "description": "Neighbor ${IP} address session state changed to Closing",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.connection_bgpipv4_session.status.connect",
                 "description": "Neighbor ${IP} address session state changed to Connect",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.deleting",
+                "description": "Neighbor ${IP} address session state changed to Deleting",
                 "releaseStatus": "released"
             },
             {
@@ -88,6 +98,11 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.incomplete",
+                "description": "Neighbor ${IP} address session state changed to Incomplete",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.connection_bgpipv4_session.status.open_confirm",
                 "description": "Neighbor ${IP} address session state changed to Open_confirm",
                 "releaseStatus": "released"
@@ -98,13 +113,33 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.shutdown",
+                "description": "Neighbor ${IP} address session state changed to ShutDown",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv4_session.status.unknown",
+                "description": "Neighbor ${IP} address session state changed to Unknown",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.connection_bgpipv6_session.status.active",
                 "description": "Neighbor ${IP} address session state changed to Active",
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.closing",
+                "description": "Neighbor ${IP} address session state changed to Closing",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.connection_bgpipv6_session.status.connect",
                 "description": "Neighbor ${IP} address session state changed to Connect",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.deleting",
+                "description": "Neighbor ${IP} address session state changed to Deleting",
                 "releaseStatus": "released"
             },
             {
@@ -118,6 +153,11 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.incomplete",
+                "description": "Neighbor ${IP} address session state changed to Incomplete",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.connection_bgpipv6_session.status.open_confirm",
                 "description": "Neighbor ${IP} address session state changed to Open_confirm",
                 "releaseStatus": "released"
@@ -125,6 +165,16 @@
             {
                 "name": "equinix.fabric.connection_bgpipv6_session.status.open_sent",
                 "description": "Neighbor ${IP} address session state changed to open_sent",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.shutdown",
+                "description": "Neighbor ${IP} address session state changed to ShutDown",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_bgpipv6_session.status.unknown",
+                "description": "Neighbor ${IP} address session state changed to Unknown",
                 "releaseStatus": "released"
             },
             {
@@ -591,56 +641,6 @@
                 "name": "equinix.fabric.service_token.state.inactive",
                 "description": "Token successfully deactivated",
                 "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv4_session.status.closing",
-                "description": "Neighbor ${IP} address session state changed to Closing",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv4_session.status.deleting",
-                "description": "Neighbor ${IP} address session state changed to Deleting",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv4_session.status.incomplete",
-                "description": "Neighbor ${IP} address session state changed to Incomplete",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv4_session.status.shutdown",
-                "description": "Neighbor ${IP} address session state changed to ShutDown",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv4_session.status.unknown",
-                "description": "Neighbor ${IP} address session state changed to Unknown",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv6_session.status.closing",
-                "description": "Neighbor ${IP} address session state changed to Closing",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv6_session.status.deleting",
-                "description": "Neighbor ${IP} address session state changed to Deleting",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv6_session.status.incomplete",
-                "description": "Neighbor ${IP} address session state changed to Incomplete",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv6_session.status.shutdown",
-                "description": "Neighbor ${IP} address session state changed to ShutDown",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_bgpipv6_session.status.unknown",
-                "description": "Neighbor ${IP} address session state changed to Unknown",
-                "releaseStatus": "preview"
             },
             {
                 "name": "equinix.fabric.physical_port.state.deprovisioned",
