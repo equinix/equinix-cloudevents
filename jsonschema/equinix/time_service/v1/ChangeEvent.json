@@ -161,6 +161,24 @@
             "description": "Time Service is in draft state",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.time_service.status.up",
+            "description": "Time Service status changed to up",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.status.down",
+            "description": "Time Service status changed to down",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.status.degraded",
+            "description": "Time Service status changed to degraded",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
         }
     ],
     "metricNames": [],

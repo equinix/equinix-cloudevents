@@ -3899,6 +3899,24 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
+    <tr>
+		<td>equinix.fabric.time_service.status.up</td>
+		<td>Time Service is status changed to up</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+    <tr>
+		<td>equinix.fabric.time_service.status.down</td>
+		<td>Time Service is status changed to down</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+    <tr>
+		<td>equinix.fabric.time_service.status.degraded</td>
+		<td>Time Service is status changed to degraded</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
 </table>
 
 
