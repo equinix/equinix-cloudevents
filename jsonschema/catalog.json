@@ -3732,8 +3732,8 @@
                     "releaseStatus": "released"
                 },
                 {
-                    "name": "equinix.fabric.time_service.status.up",
-                    "description": "Time Service status changed to up",
+                    "name": "equinix.fabric.time_service.status.degraded",
+                    "description": "Time Service status changed to degraded",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
                 },
@@ -3744,8 +3744,8 @@
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.time_service.status.degraded",
-                    "description": "Time Service status changed to degraded",
+                    "name": "equinix.fabric.time_service.status.up",
+                    "description": "Time Service status changed to up",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
                 }
