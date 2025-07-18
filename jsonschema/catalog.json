@@ -3454,6 +3454,23 @@
             "alertNames": []
         },
         {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/iam/v1/TokenIssuedEvent.json",
+            "domain": "Equinix IAM TokenIssuedEvent",
+            "name": "TokenIssuedEvent",
+            "description": "The data within all TokenIssuedEvent events",
+            "datatype": "equinix.iam.v1.TokenIssuedEvent",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.iam.principal.token.issued",
+                    "description": "Access token issued to principal ${principal_id}",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserAuthenticationEvent.json",
             "domain": "Equinix Identity UserAuthenticationEvent",
             "name": "UserAuthenticationEvent",

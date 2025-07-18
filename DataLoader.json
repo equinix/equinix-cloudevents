@@ -2178,6 +2178,17 @@
             }
         ]
     },
+    "iam": {
+        "cloudeventTypes": [
+            {
+                "name": "equinix.iam.principal.token.issued",
+                "description": "Access token issued to principal ${principal_id}",
+                "releaseStatus": "preview"
+            }
+        ],
+        "metricNames": [],
+        "alertNames": []
+    },
     "identity": {
         "cloudeventTypes": [
             {
