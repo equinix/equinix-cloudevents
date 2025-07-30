@@ -288,6 +288,36 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.physical_port.state.deprovisioned",
+                "description": "Physical port ${port_id} state changed to deprovisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.physical_port.state.deprovisioning",
+                "description": "Physical port ${port_id} state changed to deprovisioning",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.physical_port.state.failed",
+                "description": "Physical port ${port_id} state changed to failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.physical_port.state.pending_cross_connect",
+                "description": "Physical port ${port_id} state changed to pending_cross_connect",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.physical_port.state.provisioned",
+                "description": "Physical port ${port_id} state changed to provisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.physical_port.state.provisioning",
+                "description": "Physical port ${port_id} state changed to provisioning",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.port.state.deprovisioned",
                 "description": "Virtual port named ${port_name} state changed to deprovisioned",
                 "releaseStatus": "released"
@@ -641,36 +671,6 @@
                 "name": "equinix.fabric.connection_bgpipv6_session.status.unknown",
                 "description": "Neighbor ${IP} address session state changed to Unknown",
                 "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.physical_port.state.deprovisioned",
-                "description": "Physical port ${port_id} state changed to deprovisioned",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.physical_port.state.deprovisioning",
-                "description": "Physical port ${port_id} state changed to deprovisioning",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.physical_port.state.failed",
-                "description": "Physical port ${port_id} state changed to failed",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.physical_port.state.pending_cross_connect",
-                "description": "Physical port ${port_id} state changed to pending_cross_connect",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.physical_port.state.provisioned",
-                "description": "Physical port ${port_id} state changed to provisioned",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.physical_port.state.provisioning",
-                "description": "Physical port ${port_id} state changed to provisioning",
-                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.route_aggregation.attribute.changed",
