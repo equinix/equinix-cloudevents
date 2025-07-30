@@ -645,32 +645,32 @@
             {
                 "name": "equinix.fabric.physical_port.state.deprovisioned",
                 "description": "Physical port ${port_id} state changed to deprovisioned",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.physical_port.state.deprovisioning",
                 "description": "Physical port ${port_id} state changed to deprovisioning",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.physical_port.state.failed",
                 "description": "Physical port ${port_id} state changed to failed",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.physical_port.state.pending_cross_connect",
                 "description": "Physical port ${port_id} state changed to pending_cross_connect",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.physical_port.state.provisioned",
                 "description": "Physical port ${port_id} state changed to provisioned",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.physical_port.state.provisioning",
                 "description": "Physical port ${port_id} state changed to provisioning",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.route_aggregation.attribute.changed",
