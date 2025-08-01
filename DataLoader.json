@@ -1115,6 +1115,16 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.connection.bandwidth_rx.utilization",
+                "description": "Connection inbound bandwidth utilization in %",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection.bandwidth_tx.utilization",
+                "description": "Connection outbound bandwidth utilization in %",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.metro.am_{metroCode}.jitter_avg",
                 "description": "Amsterdam to ${metro} intermetro average jitter in microseconds",
                 "releaseStatus": "preview"
@@ -1432,6 +1442,16 @@
             {
                 "name": "equinix.fabric.metro.zh_{metroCode}.jitter_avg",
                 "description": "Zurich to ${metro} intermetro average jitter in microseconds",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port.bandwidth_rx.utilization",
+                "description": "Port inbound bandwidth utilization in %",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port.bandwidth_tx.utilization",
+                "description": "Port outbound bandwidth utilization in %",
                 "releaseStatus": "preview"
             }
         ],
