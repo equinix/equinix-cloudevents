@@ -5,7 +5,7 @@
             "reportingInterval": "",
             "reportingLatencyMax": "PT480S",
             "streamLatencyMax": "PT60S",
-            "orignalDataRetention": "PT90D",
+            "orignalDataRetention": "P1Y",
             "1HAggregationRetention": "",
             "1DAggregationRetention": ""
         },
@@ -14,7 +14,7 @@
             "reportingInterval": "",
             "reportingLatencyMax": "PT3S",
             "streamLatencyMax": "PT60S",
-            "orignalDataRetention": "PT90D",
+            "orignalDataRetention": "P1Y",
             "1HAggregationRetention": "",
             "1DAggregationRetention": ""
         },
@@ -23,7 +23,7 @@
             "reportingInterval": "",
             "reportingLatencyMax": "PT1S",
             "streamLatencyMax": "PT60S",
-            "orignalDataRetention": "PT90D",
+            "orignalDataRetention": "P1Y",
             "1HAggregationRetention": "",
             "1DAggregationRetention": ""
         }
@@ -34,27 +34,27 @@
             "reportingInterval": "PT300S",
             "reportingLatencyMax": "PT720S",
             "streamLatencyMax": "PT60S",
-            "orignalDataRetention": "PT90D",
-            "1HAggregationRetention": "PT365D",
-            "1DAggregationRetention": "PT1095D"
+            "orignalDataRetention": "P90D",
+            "1HAggregationRetention": "P1Y",
+            "1DAggregationRetention": "P2Y"
         },
         {
             "category_code": "BROWN_METRIC_SLO",
             "reportingInterval": "PT300S",
             "reportingLatencyMax": "PT390S",
             "streamLatencyMax": "PT60S",
-            "orignalDataRetention": "PT90D",
-            "1HAggregationRetention": "PT365D",
-            "1DAggregationRetention": "PT1095D"
+            "orignalDataRetention": "P90D",
+            "1HAggregationRetention": "P1Y",
+            "1DAggregationRetention": "P2Y"
         },
         {
             "category_code": "BLUE_METRIC_SLO",
             "reportingInterval": "PT300S",
             "reportingLatencyMax": "PT1S",
             "streamLatencyMax": "PT60S",
-            "orignalDataRetention": "PT90D",
-            "1HAggregationRetention": "PT365D",
-            "1DAggregationRetention": "PT1095D"
+            "orignalDataRetention": "P90D",
+            "1HAggregationRetention": "P1Y",
+            "1DAggregationRetention": "P2Y"
         }
     ],
     "alertsSLO": [
@@ -63,7 +63,7 @@
             "reportingInterval": "",
             "reportingLatencyMax": "PT1S",
             "streamLatencyMax": "PT60S",
-            "orignalDataRetention": "PT90D",
+            "orignalDataRetention": "P1Y",
             "1HAggregationRetention": "",
             "1DAggregationRetention": ""
         }
