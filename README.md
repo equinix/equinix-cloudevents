@@ -9,21 +9,21 @@ Definitive "source of truth" for the Equinix Network Observability event data fo
 <!-- SLO_CATEGORY -->
 <table>
 <tr>
-<th>Category Code</th><th>Reporting Interval</th><th>Reporting Latency Max</th><th>Stream Latency Max</th><th>Original Data Retention</th><th>1 Hour Aggregation Retention</th><th>1 Day Aggregation Retention</th></tr>
+<th>Category Code</th><th>Reporting Interval</th><th>Reporting Latency Max</th><th>Stream Latency Max</th><th>Original Data Retention</th><th>Hourly Aggregation Retention</th><th>Daily Aggregation Retention</th></tr>
 <tr id='purple_metric_slo'>
-<td><span style='color:purple'>PURPLE_METRIC_SLO</span></td><td>PT300S</td><td>PT720S</td><td>PT60S</td><td>PT90D</td><td>PT365D</td><td>PT1095D</td></tr>
+<td><span style='color:purple'>PURPLE_METRIC_SLO</span></td><td>PT300S</td><td>PT720S</td><td>PT60S</td><td>P90D</td><td>P1Y</td><td>P2Y</td></tr>
 <tr id='brown_metric_slo'>
-<td><span style='color:brown'>BROWN_METRIC_SLO</span></td><td>PT300S</td><td>PT390S</td><td>PT60S</td><td>PT90D</td><td>PT365D</td><td>PT1095D</td></tr>
+<td><span style='color:brown'>BROWN_METRIC_SLO</span></td><td>PT300S</td><td>PT390S</td><td>PT60S</td><td>P90D</td><td>P1Y</td><td>P2Y</td></tr>
 <tr id='blue_metric_slo'>
-<td><span style='color:blue'>BLUE_METRIC_SLO</span></td><td>PT300S</td><td>PT1S</td><td>PT60S</td><td>PT90D</td><td>PT365D</td><td>PT1095D</td></tr>
+<td><span style='color:blue'>BLUE_METRIC_SLO</span></td><td>PT300S</td><td>PT1S</td><td>PT60S</td><td>P90D</td><td>P1Y</td><td>P2Y</td></tr>
 <tr id='purple_event_slo'>
-<td><span style='color:purple'>PURPLE_EVENT_SLO</span></td><td>-</td><td>PT480S</td><td>PT60S</td><td>PT90D</td><td>-</td><td>-</td></tr>
+<td><span style='color:purple'>PURPLE_EVENT_SLO</span></td><td>-</td><td>PT480S</td><td>PT60S</td><td>P1Y</td><td>-</td><td>-</td></tr>
 <tr id='brown_event_slo'>
-<td><span style='color:brown'>BROWN_EVENT_SLO</span></td><td>-</td><td>PT3S</td><td>PT60S</td><td>PT90D</td><td>-</td><td>-</td></tr>
+<td><span style='color:brown'>BROWN_EVENT_SLO</span></td><td>-</td><td>PT3S</td><td>PT60S</td><td>P1Y</td><td>-</td><td>-</td></tr>
 <tr id='blue_event_slo'>
-<td><span style='color:blue'>BLUE_EVENT_SLO</span></td><td>-</td><td>PT1S</td><td>PT60S</td><td>PT90D</td><td>-</td><td>-</td></tr>
+<td><span style='color:blue'>BLUE_EVENT_SLO</span></td><td>-</td><td>PT1S</td><td>PT60S</td><td>P1Y</td><td>-</td><td>-</td></tr>
 <tr id='blue_alert_slo'>
-<td><span style='color:blue'>BLUE_ALERT_SLO</span></td><td>-</td><td>PT1S</td><td>PT60S</td><td>PT90D</td><td>-</td><td>-</td></tr>
+<td><span style='color:blue'>BLUE_ALERT_SLO</span></td><td>-</td><td>PT1S</td><td>PT60S</td><td>P1Y</td><td>-</td><td>-</td></tr>
 </table>
 
 <!-- SLO_CATEGORY_END -->
