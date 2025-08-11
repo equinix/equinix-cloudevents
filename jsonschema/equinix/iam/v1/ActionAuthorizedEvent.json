@@ -1,0 +1,104 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/iam/v1/ActionAuthorizedEvent.json",
+    "name": "ActionAuthorizedEvent",
+    "examples": [],
+    "package": "equinix.iam.v1",
+    "datatype": "equinix.iam.v1.ActionAuthorizedEvent",
+    "domain": "Equinix IAM ActionAuthorizedEvent",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "type": "object",
+            "title": "ActionAuthorized event data",
+            "description": "The data within all ActionAuthorizedEvent events",
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "resource": { "$ref": "#/definitions/Resource" },
+                "auth": { "$ref": "#/definitions/Auth" }
+            },
+            "required": [ "message", "resource", "auth" ],
+            "additionalProperties": true
+        },
+        "Resource": {
+            "type": "object",
+            "title": "ActionAuthorized resource definition",
+            "description": "Provides detailed information about the token issuance",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "The identifier of the principal to whom the token was issued"
+                },
+                "action": { "$ref": "#/definitions/Action" }
+            },
+            "required": [ "id", "token" ],
+            "additionalProperties": true
+        },
+        "Auth": {
+            "type": "object",
+            "title": "Auth context",
+            "description": "Authentication context for the token issuance",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "The unique identifier of the authenticated principal."
+                },
+                "type": {
+                    "type": "string",
+                    "description": "The type of authenticated principal."
+                }
+            },
+            "required": [ "id", "type" ],
+            "additionalProperties": true
+        },
+        "Action": {
+            "type": "object",
+            "title": "Action",
+            "description": "Details about the action that was authorized.",
+            "properties": {
+                "actionId": {
+                    "type": "string",
+                    "description": "The service-specific identifier of the action that was authorized."
+                },
+                "targetResourceErn": {
+                    "type": "string",
+                    "description": "The ERN of the resource that was the target of the authorization check; will be omitted for coarse-grained actions."
+                },
+                "targetServiceId": {
+                    "type": "string",
+                    "description": "For service-aspect actions, indicates the service that was the target of the authorized action."
+                },
+                "accessPolicyErn": {
+                    "type": "string",
+                    "description": "For access-policy scoped requests, indicates the ERN of the access policy that was used as the basis of the authorization check. Not provided for role-assignment scoped requests."
+                },
+                "attributeValues": {
+                    "type": "object",
+                    "description": "Indicates the action-level attribute values that were part of the authorization context."
+                },
+                "resourceAttributeValues": {
+                    "type": "object",
+                    "description": "Indicates the resource-level attribute values that were part of the authorization context."
+                },
+                "resourceTags": {
+                    "type": "object",
+                    "description": "Indicates the resource tags that were part of the authorization context."
+                }
+            },
+            "required": [ "actionId" ],
+            "additionalProperties": true
+        }
+    },
+    "cloudeventTypes": [
+        {
+            "name": "equinix.iam.principal.action.authorized",
+            "description": "Action ${action_id} authorized for principal ${principal_id}",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        }
+    ],
+    "metricNames": [],
+    "alertNames": []
+}

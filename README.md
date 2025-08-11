@@ -9,21 +9,21 @@ Definitive "source of truth" for the Equinix Network Observability event data fo
 <!-- SLO_CATEGORY -->
 <table>
 <tr>
-<th>Category Code</th><th>Reporting Interval</th><th>Reporting Latency Max</th><th>Stream Latency Max</th><th>Original Data Retention</th><th>1 Hour Aggregation Retention</th><th>1 Day Aggregation Retention</th></tr>
+<th>Category Code</th><th>Reporting Interval</th><th>Reporting Latency Max</th><th>Stream Latency Max</th><th>Original Data Retention</th><th>Hourly Aggregation Retention</th><th>Daily Aggregation Retention</th></tr>
 <tr id='purple_metric_slo'>
-<td><span style='color:purple'>PURPLE_METRIC_SLO</span></td><td>PT300S</td><td>PT720S</td><td>PT60S</td><td>PT90D</td><td>PT365D</td><td>PT1095D</td></tr>
+<td><span style='color:purple'>PURPLE_METRIC_SLO</span></td><td>PT300S</td><td>PT720S</td><td>PT60S</td><td>P90D</td><td>P1Y</td><td>P2Y</td></tr>
 <tr id='brown_metric_slo'>
-<td><span style='color:brown'>BROWN_METRIC_SLO</span></td><td>PT300S</td><td>PT390S</td><td>PT60S</td><td>PT90D</td><td>PT365D</td><td>PT1095D</td></tr>
+<td><span style='color:brown'>BROWN_METRIC_SLO</span></td><td>PT300S</td><td>PT390S</td><td>PT60S</td><td>P90D</td><td>P1Y</td><td>P2Y</td></tr>
 <tr id='blue_metric_slo'>
-<td><span style='color:blue'>BLUE_METRIC_SLO</span></td><td>PT300S</td><td>PT1S</td><td>PT60S</td><td>PT90D</td><td>PT365D</td><td>PT1095D</td></tr>
+<td><span style='color:blue'>BLUE_METRIC_SLO</span></td><td>PT300S</td><td>PT1S</td><td>PT60S</td><td>P90D</td><td>P1Y</td><td>P2Y</td></tr>
 <tr id='purple_event_slo'>
-<td><span style='color:purple'>PURPLE_EVENT_SLO</span></td><td>-</td><td>PT480S</td><td>PT60S</td><td>PT90D</td><td>-</td><td>-</td></tr>
+<td><span style='color:purple'>PURPLE_EVENT_SLO</span></td><td>-</td><td>PT480S</td><td>PT60S</td><td>P1Y</td><td>-</td><td>-</td></tr>
 <tr id='brown_event_slo'>
-<td><span style='color:brown'>BROWN_EVENT_SLO</span></td><td>-</td><td>PT3S</td><td>PT60S</td><td>PT90D</td><td>-</td><td>-</td></tr>
+<td><span style='color:brown'>BROWN_EVENT_SLO</span></td><td>-</td><td>PT3S</td><td>PT60S</td><td>P1Y</td><td>-</td><td>-</td></tr>
 <tr id='blue_event_slo'>
-<td><span style='color:blue'>BLUE_EVENT_SLO</span></td><td>-</td><td>PT1S</td><td>PT60S</td><td>PT90D</td><td>-</td><td>-</td></tr>
+<td><span style='color:blue'>BLUE_EVENT_SLO</span></td><td>-</td><td>PT1S</td><td>PT60S</td><td>P1Y</td><td>-</td><td>-</td></tr>
 <tr id='blue_alert_slo'>
-<td><span style='color:blue'>BLUE_ALERT_SLO</span></td><td>-</td><td>PT1S</td><td>PT60S</td><td>PT90D</td><td>-</td><td>-</td></tr>
+<td><span style='color:blue'>BLUE_ALERT_SLO</span></td><td>-</td><td>PT1S</td><td>PT60S</td><td>P1Y</td><td>-</td><td>-</td></tr>
 </table>
 
 <!-- SLO_CATEGORY_END -->
@@ -475,37 +475,37 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.physical_port.state.deprovisioned</td>
 		<td>Physical port ${port_id} state changed to deprovisioned</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.physical_port.state.deprovisioning</td>
 		<td>Physical port ${port_id} state changed to deprovisioning</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.physical_port.state.failed</td>
 		<td>Physical port ${port_id} state changed to failed</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.physical_port.state.pending_cross_connect</td>
 		<td>Physical port ${port_id} state changed to pending_cross_connect</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.physical_port.state.provisioned</td>
 		<td>Physical port ${port_id} state changed to provisioned</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.physical_port.state.provisioning</td>
 		<td>Physical port ${port_id} state changed to provisioning</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1048,8 +1048,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.am_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Amsterdam to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Amsterdam to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1060,8 +1060,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.at_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Atlanta to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Atlanta to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1072,8 +1072,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ba_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Barcelona to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Barcelona to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1084,8 +1084,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bg_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Bogota to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Bogota to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1096,8 +1096,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bl_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Brussels to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Brussels to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1108,8 +1108,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bo_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Boston to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Boston to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1120,8 +1120,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bx_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Bordeaux to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Bordeaux to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1132,8 +1132,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ca_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Canberra to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Canberra to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1144,8 +1144,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ch_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Chicago to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Chicago to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1156,8 +1156,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cl_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Calgary to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Calgary to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1168,8 +1168,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cu_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Culpeper to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Culpeper to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1180,8 +1180,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.da_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Dallas to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Dallas to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1192,8 +1192,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.db_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Dublin to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Dublin to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1204,8 +1204,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dc_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Ashburn to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Ashburn to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1216,8 +1216,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.de_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Denver to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Denver to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1228,8 +1228,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dx_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Dubai to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Dubai to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1240,8 +1240,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.fr_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Frankfurt to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Frankfurt to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1252,8 +1252,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.gv_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Geneva to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Geneva to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1264,8 +1264,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.he_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Helsinki to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Helsinki to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1276,8 +1276,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hh_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Hamburg to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Hamburg to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1288,8 +1288,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hk_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Hong Kong to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Hong Kong to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1300,8 +1300,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ho_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Houston to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Houston to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1312,8 +1312,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.il_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Istanbul to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Istanbul to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1324,8 +1324,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.jh_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Johor to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Johor to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1336,8 +1336,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.jk_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Jakarta to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Jakarta to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1348,8 +1348,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.jn_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Johannesburg to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Johannesburg to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1360,8 +1360,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ka_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Kamloops to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Kamloops to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1372,8 +1372,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.kl_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Kuala Lumpur to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Kuala Lumpur to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1384,8 +1384,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.la_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Los Angeles to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Los Angeles to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1396,8 +1396,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ld_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from London to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from London to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1408,8 +1408,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.lm_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Lima to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Lima to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1420,8 +1420,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ls_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Lisbon to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Lisbon to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1432,8 +1432,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ma_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Manchester to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Manchester to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1444,8 +1444,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mb_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Mumbai to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Mumbai to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1456,8 +1456,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.md_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Madrid to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Madrid to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1468,8 +1468,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.me_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Melbourne to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Melbourne to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1480,8 +1480,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mi_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Miami to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Miami to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1492,8 +1492,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ml_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Milan to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Milan to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1504,8 +1504,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mo_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Monterrey to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Monterrey to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1516,8 +1516,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mt_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Montreal to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Montreal to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1528,8 +1528,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mu_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Munich to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Munich to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1540,8 +1540,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mx_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Mexico City to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Mexico City to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1552,8 +1552,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ny_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from New York to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from New York to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1564,8 +1564,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.os_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Osaka to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Osaka to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1576,8 +1576,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ot_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Ottawa to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Ottawa to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1588,8 +1588,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pa_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Paris to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Paris to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1600,8 +1600,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pe_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Perth to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Perth to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1612,8 +1612,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ph_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Philadelphia to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Philadelphia to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1624,8 +1624,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.rj_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Rio de Janeiro to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Rio de Janeiro to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1636,8 +1636,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.se_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Seattle to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Seattle to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1648,8 +1648,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sg_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Singapore to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Singapore to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1660,8 +1660,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sk_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Stockholm to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Stockholm to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1672,8 +1672,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sl_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Seoul to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Seoul to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1684,8 +1684,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.so_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Sofia to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Sofia to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1696,8 +1696,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sp_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Sao Paulo to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Sao Paulo to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1708,8 +1708,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.st_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Santiago to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Santiago to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1720,8 +1720,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sv_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Silicon Valley to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Silicon Valley to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1732,8 +1732,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sy_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Sydney to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Sydney to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1744,8 +1744,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.tr_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Toronto to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Toronto to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1756,8 +1756,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ty_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Tokyo to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Tokyo to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1768,8 +1768,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.va_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Vancouver to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Vancouver to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1780,8 +1780,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wa_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Warsaw to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Warsaw to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1792,8 +1792,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wi_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Winnipeg to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Winnipeg to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1804,8 +1804,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.zh_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Zurich to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
+		<td>Average metro jitter from Zurich to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1915,9 +1915,21 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.connection.bandwidth_rx.utilization</td>
+		<td>Connection inbound bandwidth utilization in %</td>
+		<td>preview</td>
+	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.connection.bandwidth_tx.usage</td>
 		<td>Connection outbound bandwidth usage in bit/sec</td>
 		<td>released</td>
+	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.bandwidth_tx.utilization</td>
+		<td>Connection outbound bandwidth utilization in %</td>
+		<td>preview</td>
 	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1946,8 +1958,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.am_{metroCode}.jitter_avg</td>
-		<td>Amsterdam to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Amsterdam to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1958,8 +1970,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.at_{metroCode}.jitter_avg</td>
-		<td>Atlanta to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Atlanta to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1970,8 +1982,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ba_{metroCode}.jitter_avg</td>
-		<td>Barcelona to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Barcelona to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1982,8 +1994,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bg_{metroCode}.jitter_avg</td>
-		<td>Bogota to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Bogota to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1994,8 +2006,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bl_{metroCode}.jitter_avg</td>
-		<td>Brussels to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Brussels to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2006,8 +2018,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bo_{metroCode}.jitter_avg</td>
-		<td>Boston to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Boston to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2018,8 +2030,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.bx_{metroCode}.jitter_avg</td>
-		<td>Bordeaux to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Bordeaux to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2030,8 +2042,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ca_{metroCode}.jitter_avg</td>
-		<td>Canberra to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Canberra to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2042,8 +2054,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ch_{metroCode}.jitter_avg</td>
-		<td>Chicago to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Chicago to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2054,8 +2066,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cl_{metroCode}.jitter_avg</td>
-		<td>Calgary to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Calgary to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2066,8 +2078,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.cu_{metroCode}.jitter_avg</td>
-		<td>Culpeper to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Culpeper to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2078,8 +2090,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.da_{metroCode}.jitter_avg</td>
-		<td>Dallas to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Dallas to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2090,8 +2102,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.db_{metroCode}.jitter_avg</td>
-		<td>Dublin to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Dublin to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2102,8 +2114,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dc_{metroCode}.jitter_avg</td>
-		<td>Ashburn to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Ashburn to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2114,8 +2126,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.de_{metroCode}.jitter_avg</td>
-		<td>Denver to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Denver to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2126,8 +2138,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.dx_{metroCode}.jitter_avg</td>
-		<td>Dubai to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Dubai to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2138,8 +2150,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.fr_{metroCode}.jitter_avg</td>
-		<td>Frankfurt to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Frankfurt to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2150,8 +2162,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.gv_{metroCode}.jitter_avg</td>
-		<td>Geneva to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Geneva to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2162,8 +2174,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.he_{metroCode}.jitter_avg</td>
-		<td>Helsinki to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Helsinki to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2174,8 +2186,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hh_{metroCode}.jitter_avg</td>
-		<td>Hamburg to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Hamburg to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2186,8 +2198,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.hk_{metroCode}.jitter_avg</td>
-		<td>Hong Kong to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Hong Kong to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2198,8 +2210,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ho_{metroCode}.jitter_avg</td>
-		<td>Houston to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Houston to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2210,8 +2222,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.il_{metroCode}.jitter_avg</td>
-		<td>Istanbul to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Istanbul to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2222,8 +2234,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.jh_{metroCode}.jitter_avg</td>
-		<td>Johor to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Johor to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2234,8 +2246,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.jk_{metroCode}.jitter_avg</td>
-		<td>Jakarta to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Jakarta to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2246,8 +2258,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.jn_{metroCode}.jitter_avg</td>
-		<td>Johannesburg to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Johannesburg to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2258,8 +2270,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ka_{metroCode}.jitter_avg</td>
-		<td>Kamloops to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Kamloops to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2270,8 +2282,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.kl_{metroCode}.jitter_avg</td>
-		<td>Kuala Lumpur to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Kuala Lumpur to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2282,8 +2294,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.la_{metroCode}.jitter_avg</td>
-		<td>Los Angeles to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Los Angeles to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2294,8 +2306,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ld_{metroCode}.jitter_avg</td>
-		<td>London to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>London to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2306,8 +2318,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.lm_{metroCode}.jitter_avg</td>
-		<td>Lima to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Lima to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2318,8 +2330,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ls_{metroCode}.jitter_avg</td>
-		<td>Lisbon to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Lisbon to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2330,8 +2342,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ma_{metroCode}.jitter_avg</td>
-		<td>Manchester to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Manchester to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2342,8 +2354,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mb_{metroCode}.jitter_avg</td>
-		<td>Mumbai to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Mumbai to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2354,8 +2366,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.md_{metroCode}.jitter_avg</td>
-		<td>Madrid to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Madrid to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2366,8 +2378,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.me_{metroCode}.jitter_avg</td>
-		<td>Melbourne to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Melbourne to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2378,8 +2390,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mi_{metroCode}.jitter_avg</td>
-		<td>Miami to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Miami to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2390,8 +2402,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ml_{metroCode}.jitter_avg</td>
-		<td>Milan to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Milan to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2402,8 +2414,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mo_{metroCode}.jitter_avg</td>
-		<td>Monterrey to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Monterrey to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2414,8 +2426,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mt_{metroCode}.jitter_avg</td>
-		<td>Montreal to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Montreal to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2426,8 +2438,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mu_{metroCode}.jitter_avg</td>
-		<td>Munich to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Munich to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2438,8 +2450,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.mx_{metroCode}.jitter_avg</td>
-		<td>Mexico City to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Mexico City to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2450,8 +2462,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ny_{metroCode}.jitter_avg</td>
-		<td>New York to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>New York to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2462,8 +2474,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.os_{metroCode}.jitter_avg</td>
-		<td>Osaka to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Osaka to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2474,8 +2486,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ot_{metroCode}.jitter_avg</td>
-		<td>Ottawa to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Ottawa to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2486,8 +2498,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pa_{metroCode}.jitter_avg</td>
-		<td>Paris to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Paris to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2498,8 +2510,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.pe_{metroCode}.jitter_avg</td>
-		<td>Perth to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Perth to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2510,8 +2522,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ph_{metroCode}.jitter_avg</td>
-		<td>Philadelphia to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Philadelphia to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2522,8 +2534,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.rj_{metroCode}.jitter_avg</td>
-		<td>Rio de Janeiro to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Rio de Janeiro to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2534,8 +2546,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.se_{metroCode}.jitter_avg</td>
-		<td>Seattle to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Seattle to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2546,8 +2558,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sg_{metroCode}.jitter_avg</td>
-		<td>Singapore to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Singapore to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2558,8 +2570,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sk_{metroCode}.jitter_avg</td>
-		<td>Stockholm to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Stockholm to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2570,8 +2582,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sl_{metroCode}.jitter_avg</td>
-		<td>Seoul to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Seoul to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2582,8 +2594,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.so_{metroCode}.jitter_avg</td>
-		<td>Sofia to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Sofia to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2594,8 +2606,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sp_{metroCode}.jitter_avg</td>
-		<td>Sao Paulo to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Sao Paulo to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2606,8 +2618,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.st_{metroCode}.jitter_avg</td>
-		<td>Santiago to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Santiago to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2618,8 +2630,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sv_{metroCode}.jitter_avg</td>
-		<td>Silicon Valley to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Silicon Valley to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2630,8 +2642,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.sy_{metroCode}.jitter_avg</td>
-		<td>Sydney to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Sydney to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2642,8 +2654,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.tr_{metroCode}.jitter_avg</td>
-		<td>Toronto to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Toronto to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2654,8 +2666,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.ty_{metroCode}.jitter_avg</td>
-		<td>Tokyo to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Tokyo to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2666,8 +2678,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.va_{metroCode}.jitter_avg</td>
-		<td>Vancouver to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Vancouver to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2678,8 +2690,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wa_{metroCode}.jitter_avg</td>
-		<td>Warsaw to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Warsaw to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2690,8 +2702,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.wi_{metroCode}.jitter_avg</td>
-		<td>Winnipeg to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Winnipeg to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2702,8 +2714,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.metro.zh_{metroCode}.jitter_avg</td>
-		<td>Zurich to ${metro} intermetro average jitter in milliseconds</td>
-		<td>preview</td>
+		<td>Zurich to ${metro} intermetro average jitter in microseconds</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2719,9 +2731,21 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.port.bandwidth_rx.utilization</td>
+		<td>Port inbound bandwidth utilization in %</td>
+		<td>preview</td>
+	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.port.bandwidth_tx.usage</td>
 		<td>Port outbound bandwidth usage in bit/sec</td>
 		<td>released</td>
+	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.bandwidth_tx.utilization</td>
+		<td>Port outbound bandwidth utilization in %</td>
+		<td>preview</td>
 	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -3574,6 +3598,56 @@ The following data payloads are the supported events and formats for Equinix Net
 
 
 ---
+### Equinix IAM ActionAuthorizedEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/iam/v1/ActionAuthorizedEvent.json)
+#### Data Type
+`equinix.iam.v1.ActionAuthorizedEvent`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.iam.principal.action.authorized</td>
+		<td>Action ${action_id} authorized for principal ${principal_id}</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+</table>
+
+
+
+---
+### Equinix IAM TokenIssuedEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/iam/v1/TokenIssuedEvent.json)
+#### Data Type
+`equinix.iam.v1.TokenIssuedEvent`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.iam.principal.token.issued</td>
+		<td>Access token issued to principal ${principal_id}</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+</table>
+
+
+
+---
 ### Equinix Identity UserAuthenticationEvent
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/identity/v1/UserAuthenticationEvent.json)
 #### Data Type
@@ -3897,6 +3971,24 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.time_service.state.provisioning_failed</td>
 		<td>Time Service is provisioning failed</td>
 		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.time_service.status.degraded</td>
+		<td>Time Service status changed to degraded</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.time_service.status.down</td>
+		<td>Time Service status changed to down</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.time_service.status.up</td>
+		<td>Time Service status changed to up</td>
+		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 </table>

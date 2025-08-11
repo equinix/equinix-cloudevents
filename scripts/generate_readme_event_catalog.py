@@ -55,7 +55,7 @@ def slo_table(slo_data):
     table = "<table>\n<tr>\n"
     
     # Extract headers from the first entry
-    headers = ['Category Code', 'Reporting Interval', 'Reporting Latency Max', 'Stream Latency Max', 'Original Data Retention', '1 Hour Aggregation Retention', '1 Day Aggregation Retention']
+    headers = ['Category Code', 'Reporting Interval', 'Reporting Latency Max', 'Stream Latency Max', 'Original Data Retention', 'Hourly Aggregation Retention', 'Daily Aggregation Retention']
     table += "".join(f"<th>{header}</th>" for header in headers) + "</tr>\n"
 
     all_slo_entries = sorted(
