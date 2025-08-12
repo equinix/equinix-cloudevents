@@ -96,7 +96,7 @@
             "name": "equinix.iam.principal.action.authorized",
             "description": "Action ${action_id} authorized for principal ${principal_id}",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         }
     ],
     "metricNames": [],

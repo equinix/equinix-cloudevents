@@ -118,7 +118,7 @@
             "name": "equinix.iam.principal.token.issued",
             "description": "Access token issued to principal ${principal_id}",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         }
     ],
     "metricNames": [],
