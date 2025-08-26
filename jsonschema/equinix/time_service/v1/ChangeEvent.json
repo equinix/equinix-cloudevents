@@ -80,19 +80,36 @@
                     "type": "string",
                     "description": "Name of the resource generating the event"
                 },
-                "status": {
+                "state": {
                     "type": "string",
                     "description": "Status of the resource generating the event"
                 },
                 "description": {
                     "type": "string",
                     "description": "Description of the resource generating the event"
+                },
+                "operation": {
+                    "$ref": "#/definitions/Operation",
+                    "additionalProperties": true,
+                    "description": "Change information for the resource that fired the event"
                 }
             },
             "additionalProperties": true,
             "type": "object",
             "title": "Resource",
             "description": "Schema of the resource that fired the event"
+        },
+        "Operation": {
+            "properties": {
+                "operationalStatus": {
+                    "type": "string",
+                    "description": "Operational status of time service"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Operation",
+            "description": "Operational details of the time service"
         }
     },
     "cloudeventTypes": [
