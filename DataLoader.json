@@ -2203,12 +2203,12 @@
             {
                 "name": "equinix.iam.principal.action.authorized",
                 "description": "Action ${action_id} authorized for principal ${principal_id}",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.iam.principal.token.issued",
                 "description": "Access token issued to principal ${principal_id}",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             }
         ],
         "metricNames": [],

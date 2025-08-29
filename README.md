@@ -3615,7 +3615,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.iam.principal.action.authorized</td>
 		<td>Action ${action_id} authorized for principal ${principal_id}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 </table>
@@ -3640,7 +3640,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.iam.principal.token.issued</td>
 		<td>Access token issued to principal ${principal_id}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 </table>
