@@ -92,6 +92,11 @@
                     "$ref": "#/definitions/Change",
                     "additionalProperties": true,
                     "description": "Change information for the resource that fired the event"
+                },
+                "operation": {
+                    "$ref": "#/definitions/Operation",
+                    "additionalProperties": true,
+                    "description": "Operation status of resource that fired the event"
                 }
             },
             "additionalProperties": true,
@@ -154,6 +159,18 @@
             "type": "object",
             "title": "ChangeData",
             "description": "ChangeData attribute schema"
+        },
+        "Operation": {
+            "properties": {
+                "operationStatus": {
+                    "type": "string",
+                    "description": "Operation status for the resource target of the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Operation",
+            "description": "Operation attribute schema"
         }
     },
     "cloudeventTypes": [
@@ -961,7 +978,7 @@
             "description": "Router Command state changed to deleted",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
-        }    
+        }
     ],
     "metricNames": [],
     "alertNames": []
