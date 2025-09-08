@@ -96,7 +96,7 @@
                 "operation": {
                     "$ref": "#/definitions/Operation",
                     "additionalProperties": true,
-                    "description": "Operation status of resource that fired the event"
+                    "description": "Operational status of resource that fired the event"
                 }
             },
             "additionalProperties": true,
@@ -162,9 +162,9 @@
         },
         "Operation": {
             "properties": {
-                "operationStatus": {
+                "operationalStatus": {
                     "type": "string",
-                    "description": "Operation status for the resource target of the event"
+                    "description": "Operational status for the resource target of the event"
                 }
             },
             "additionalProperties": true,
