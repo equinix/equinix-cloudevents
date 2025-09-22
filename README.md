@@ -898,6 +898,90 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
+	<tr>
+		<td>equinix.fabric.tunnel.status.down</td>
+		<td>Tunnel Interface ${tunnel_interface_name}: Operationally Down - Remote Peer Unreachable</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.tunnel.status.up</td>
+		<td>Tunnel Interface ${tunnel_interface_name}: Operationally Up</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.tunnel_bgpipv4_session.status.active</td>
+		<td>BGP peer ${ipv4_address} (AS ${asn}) session active</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.tunnel_bgpipv4_session.status.connect</td>
+		<td>BGP peer ${ipv4_address} (AS ${asn}) session connect</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.tunnel_bgpipv4_session.status.established</td>
+		<td>BGP peer ${ipv4_address} (AS ${asn}) session established</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.tunnel_bgpipv4_session.status.idle</td>
+		<td>BGP peer ${ipv4_address} (AS ${asn}) session idle</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.tunnel_bgpipv4_session.status.open_confirm</td>
+		<td>BGP peer ${ipv4_address} (AS ${asn}) session open_confirm</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.tunnel_bgpipv4_session.status.open_sent</td>
+		<td>BGP peer ${ipv4_address} (AS ${asn}) session open_sent</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.tunnel_bgpipv6_session.status.active</td>
+		<td>BGP peer ${ipv6_address} (AS ${asn}) session active</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.tunnel_bgpipv6_session.status.connect</td>
+		<td>BGP peer ${ipv6_address} (AS ${asn}) session connect</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.tunnel_bgpipv6_session.status.established</td>
+		<td>BGP peer ${ipv6_address} (AS ${asn}) session established</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.tunnel_bgpipv6_session.status.idle</td>
+		<td>BGP peer ${ipv6_address} (AS ${asn}) session idle</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.tunnel_bgpipv6_session.status.open_confirm</td>
+		<td>BGP peer ${ipv6_address} (AS ${asn}) session open_confirm</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.tunnel_bgpipv6_session.status.open_sent</td>
+		<td>BGP peer ${ipv6_address} (AS ${asn}) session open_sent</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
 </table>
 
 
