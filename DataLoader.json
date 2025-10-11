@@ -673,26 +673,6 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.route_aggregation.attribute.changed",
-                "description": "Route Aggregation named ${route_aggregation_name} attribute changed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.route_aggregation_rule.attribute.changed",
-                "description": "Route Aggregation Rule named ${route_aggregation_rule_name} attribute changed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.route_filter.attribute.changed",
-                "description": "Route Filter named ${route_filter_name} attribute changed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.route_filter_rule.attribute.changed",
-                "description": "Route Filter Rule named ${route_filter_rule_name} attribute changed",
-                "releaseStatus": "preview"
-            },
-            {
                 "name": "equinix.fabric.tunnel.status.down",
                 "description": "Tunnel Interface ${tunnel_interface_name}: Operationally Down - Remote Peer Unreachable",
                 "releaseStatus": "released"
@@ -761,6 +741,26 @@
                 "name": "equinix.fabric.tunnel_bgpipv6_session.status.open_sent",
                 "description": "BGP peer ${ipv6_address} (AS ${asn}) session open_sent",
                 "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.route_aggregation.attribute.changed",
+                "description": "Route Aggregation named ${route_aggregation_name} attribute changed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.route_aggregation_rule.attribute.changed",
+                "description": "Route Aggregation Rule named ${route_aggregation_rule_name} attribute changed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.route_filter.attribute.changed",
+                "description": "Route Filter named ${route_filter_name} attribute changed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.route_filter_rule.attribute.changed",
+                "description": "Route Filter Rule named ${route_filter_rule_name} attribute changed",
+                "releaseStatus": "preview"
             },
             {
                 "name": "equinix.network.maintenance.state.cancelled",
