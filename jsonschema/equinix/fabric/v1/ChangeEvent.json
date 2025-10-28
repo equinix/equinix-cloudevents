@@ -434,21 +434,33 @@
         },
         {
             "name": "equinix.fabric.port.status.up",
-            "description": "Virtual|Physical port '${port_name}' status changed to UP",
+            "description": "Virtual '${port_name}' status changed to UP",
             "sloCategoryCode": "PURPLE_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.status.inactive",
-            "description": "Virtual|Physical port '${port_name}' status changed to INACTIVE",
+            "description": "Virtual '${port_name}' status changed to INACTIVE",
             "sloCategoryCode": "PURPLE_EVENT_SLO",
             "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.port.status.down",
-            "description": "Virtual|Physical port '${port_name}' status changed to DOWN",
+            "description": "Virtual port '${port_name}' status changed to DOWN",
             "sloCategoryCode": "PURPLE_EVENT_SLO",
             "releaseStatus": "released"
+        },
+        {
+          "name": "equinix.fabric.physical_port.status.up",
+          "description": "Physical port '${port_name}' status changed to UP",
+          "sloCategoryCode": "PURPLE_EVENT_SLO",
+          "releaseStatus": "preview"
+        },
+        {
+          "name": "equinix.fabric.physical_port.status.down",
+          "description": "Physical port '${port_name}' status changed to DOWN",
+          "sloCategoryCode": "PURPLE_EVENT_SLO",
+          "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.physical_port.state.provisioning",
