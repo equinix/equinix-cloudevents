@@ -564,13 +564,13 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.status.inactive</td>
-		<td>Virtual '${port_name}' status changed to INACTIVE</td>
+		<td>Virtual port '${port_name}' status changed to INACTIVE</td>
 		<td>released</td>
 	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.status.up</td>
-		<td>Virtual '${port_name}' status changed to UP</td>
+		<td>Virtual port '${port_name}' status changed to UP</td>
 		<td>released</td>
 	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
 	</tr>

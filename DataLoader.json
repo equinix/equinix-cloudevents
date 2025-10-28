@@ -404,12 +404,12 @@
             },
             {
                 "name": "equinix.fabric.port.status.inactive",
-                "description": "Virtual '${port_name}' status changed to INACTIVE",
+                "description": "Virtual port '${port_name}' status changed to INACTIVE",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.port.status.up",
-                "description": "Virtual '${port_name}' status changed to UP",
+                "description": "Virtual port '${port_name}' status changed to UP",
                 "releaseStatus": "released"
             },
             {
