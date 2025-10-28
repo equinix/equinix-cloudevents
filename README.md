@@ -509,6 +509,18 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.physical_port.status.down</td>
+		<td>Physical port '${port_name}' status changed to DOWN</td>
+		<td>preview</td>
+	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.physical_port.status.up</td>
+		<td>Physical port '${port_name}' status changed to UP</td>
+		<td>preview</td>
+	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.port.state.deprovisioned</td>
 		<td>Virtual port named ${port_name} state changed to deprovisioned</td>
 		<td>released</td>
@@ -546,19 +558,19 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.status.down</td>
-		<td>Virtual|Physical port '${port_name}' status changed to DOWN</td>
+		<td>Virtual port '${port_name}' status changed to DOWN</td>
 		<td>released</td>
 	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.status.inactive</td>
-		<td>Virtual|Physical port '${port_name}' status changed to INACTIVE</td>
+		<td>Virtual '${port_name}' status changed to INACTIVE</td>
 		<td>released</td>
 	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.port.status.up</td>
-		<td>Virtual|Physical port '${port_name}' status changed to UP</td>
+		<td>Virtual '${port_name}' status changed to UP</td>
 		<td>released</td>
 	<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
 	</tr>
