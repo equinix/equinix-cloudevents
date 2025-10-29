@@ -399,17 +399,17 @@
             },
             {
                 "name": "equinix.fabric.port.status.down",
-                "description": "Virtual|Physical port '${port_name}' status changed to DOWN",
+                "description": "Virtual port '${port_name}' status changed to DOWN",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.port.status.inactive",
-                "description": "Virtual|Physical port '${port_name}' status changed to INACTIVE",
+                "description": "Virtual port '${port_name}' status changed to INACTIVE",
                 "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.port.status.up",
-                "description": "Virtual|Physical port '${port_name}' status changed to UP",
+                "description": "Virtual port '${port_name}' status changed to UP",
                 "releaseStatus": "released"
             },
             {
@@ -741,6 +741,16 @@
                 "name": "equinix.fabric.tunnel_bgpipv6_session.status.open_sent",
                 "description": "BGP peer ${ipv6_address} (AS ${asn}) session open_sent",
                 "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.physical_port.status.down",
+                "description": "Physical port '${port_name}' status changed to DOWN",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.physical_port.status.up",
+                "description": "Physical port '${port_name}' status changed to UP",
+                "releaseStatus": "preview"
             },
             {
                 "name": "equinix.fabric.route_aggregation.attribute.changed",
