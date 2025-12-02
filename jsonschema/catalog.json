@@ -450,13 +450,13 @@
                     "name": "equinix.fabric.physical_port.status.down",
                     "description": "Physical port '${port_name}' status changed to DOWN",
                     "sloCategoryCode": "PURPLE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.physical_port.status.up",
                     "description": "Physical port '${port_name}' status changed to UP",
                     "sloCategoryCode": "PURPLE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.port.state.deprovisioned",
