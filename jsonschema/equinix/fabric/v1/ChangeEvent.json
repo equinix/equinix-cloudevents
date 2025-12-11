@@ -995,85 +995,85 @@
             "name": "equinix.fabric.tunnel.status.down",
             "description": "Tunnel Interface ${tunnel_interface_name}: Operationally Down - Remote Peer Unreachable",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.tunnel.status.up",
             "description": "Tunnel Interface ${tunnel_interface_name}: Operationally Up",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.tunnel_bgpipv4_session.status.idle",
             "description": "BGP peer ${ipv4_address} (AS ${asn}) session idle",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.tunnel_bgpipv4_session.status.connect",
             "description": "BGP peer ${ipv4_address} (AS ${asn}) session connect",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.tunnel_bgpipv4_session.status.open_sent",
             "description": "BGP peer ${ipv4_address} (AS ${asn}) session open_sent",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.tunnel_bgpipv4_session.status.open_confirm",
             "description": "BGP peer ${ipv4_address} (AS ${asn}) session open_confirm",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.tunnel_bgpipv4_session.status.active",
             "description": "BGP peer ${ipv4_address} (AS ${asn}) session active",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.tunnel_bgpipv4_session.status.established",
             "description": "BGP peer ${ipv4_address} (AS ${asn}) session established",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.tunnel_bgpipv6_session.status.idle",
             "description": "BGP peer ${ipv6_address} (AS ${asn}) session idle",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.tunnel_bgpipv6_session.status.connect",
             "description": "BGP peer ${ipv6_address} (AS ${asn}) session connect",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.tunnel_bgpipv6_session.status.open_sent",
             "description": "BGP peer ${ipv6_address} (AS ${asn}) session open_sent",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.tunnel_bgpipv6_session.status.open_confirm",
             "description": "BGP peer ${ipv6_address} (AS ${asn}) session open_confirm",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.tunnel_bgpipv6_session.status.active",
             "description": "BGP peer ${ipv6_address} (AS ${asn}) session active",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.tunnel_bgpipv6_session.status.established",
             "description": "BGP peer ${ipv6_address} (AS ${asn}) session established",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         }
     ],
     "metricNames": [],
