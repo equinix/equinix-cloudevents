@@ -1029,6 +1029,18 @@
                     "releaseStatus": "preview"
                 },
                 {
+                    "name": "equinix.fabric.connection.byte_rx.count",
+                    "description": "Connection inbound byte count is ${operator} ${operand} MB",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.byte_tx.count",
+                    "description": "Connection outbound byte count is ${operator} ${operand} MB",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
                     "name": "equinix.fabric.connection.installed_routes_ipv4.utilization",
                     "description": "Utilization of connection active IPv4 routes is ${operator} ${operand}",
                     "sloCategoryCode": "BROWN_EVENT_SLO",
@@ -1857,6 +1869,18 @@
                     "releaseStatus": "preview"
                 },
                 {
+                    "name": "equinix.fabric.port.byte_rx.count",
+                    "description": "Port inbound byte count is ${operator} ${operand} MB",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.port.byte_tx.count",
+                    "description": "Port outbound byte count is ${operator} ${operand} MB",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
                     "name": "equinix.fabric.port.packets_dropped_rx.count",
                     "description": "Port inbound dropped packets count is ${operator} ${operand}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
@@ -1930,6 +1954,18 @@
                 {
                     "name": "equinix.fabric.connection.bandwidth_tx.utilization",
                     "description": "Connection outbound bandwidth utilization in %",
+                    "sloCategoryCode": "PURPLE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.byte_rx.count",
+                    "description": "Connection inbound dropped byte count",
+                    "sloCategoryCode": "PURPLE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.byte_tx.count",
+                    "description": "Connection outbound dropped byte count",
                     "sloCategoryCode": "PURPLE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
@@ -2746,6 +2782,18 @@
                 {
                     "name": "equinix.fabric.port.bandwidth_tx.utilization",
                     "description": "Port outbound bandwidth utilization in %",
+                    "sloCategoryCode": "PURPLE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.port.byte_rx.count",
+                    "description": "Port inbound dropped byte count",
+                    "sloCategoryCode": "PURPLE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.port.byte_tx.count",
+                    "description": "Port outbound dropped byte count",
                     "sloCategoryCode": "PURPLE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
