@@ -278,6 +278,30 @@
             "releaseStatus": "released"
         },
         {
+            "name": "equinix.fabric.connection.byte_rx.count",
+            "description": "Connection inbound byte count is ${operator} ${operand} MB",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.connection.byte_tx.count",
+            "description": "Connection outbound byte count is ${operator} ${operand} MB",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.port.byte_rx.count",
+            "description": "Port inbound byte count is ${operator} ${operand} MB",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.port.byte_tx.count",
+            "description": "Port outbound byte count is ${operator} ${operand} MB",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
             "name": "equinix.fabric.metro.am_{metroCode}.latency",
             "description": "Metro latency from Amsterdam to ${metro} is ${operator} ${operand} milliseconds",
             "sloCategoryCode": "BLUE_ALERT_SLO",
