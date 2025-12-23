@@ -1107,6 +1107,18 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.connection.byte_rx.count</td>
+		<td>Connection inbound byte count is ${operator} ${operand} MB</td>
+		<td>preview</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.byte_tx.count</td>
+		<td>Connection outbound byte count is ${operator} ${operand} MB</td>
+		<td>preview</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.connection.installed_routes_ipv4.utilization</td>
 		<td>Utilization of connection active IPv4 routes is ${operator} ${operand}</td>
 		<td>released</td>
@@ -1935,6 +1947,18 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.port.byte_rx.count</td>
+		<td>Port inbound byte count is ${operator} ${operand} MB</td>
+		<td>preview</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.byte_tx.count</td>
+		<td>Port outbound byte count is ${operator} ${operand} MB</td>
+		<td>preview</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.port.packets_dropped_rx.count</td>
 		<td>Port inbound dropped packets count is ${operator} ${operand}</td>
 		<td>released</td>
@@ -2025,6 +2049,18 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.connection.bandwidth_tx.utilization</td>
 		<td>Connection outbound bandwidth utilization in %</td>
+		<td>preview</td>
+	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.byte_rx.count</td>
+		<td>Connection inbound dropped byte count</td>
+		<td>preview</td>
+	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.connection.byte_tx.count</td>
+		<td>Connection outbound dropped byte count</td>
 		<td>preview</td>
 	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
 	</tr>
@@ -2841,6 +2877,18 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.port.bandwidth_tx.utilization</td>
 		<td>Port outbound bandwidth utilization in %</td>
+		<td>preview</td>
+	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.byte_rx.count</td>
+		<td>Port inbound dropped byte count</td>
+		<td>preview</td>
+	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port.byte_tx.count</td>
+		<td>Port outbound dropped byte count</td>
 		<td>preview</td>
 	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
 	</tr>
