@@ -1525,6 +1525,16 @@
                 "releaseStatus": "preview"
             },
             {
+                "name": "equinix.fabric.connection.byte_rx.count",
+                "description": "Connection inbound dropped byte count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection.byte_tx.count",
+                "description": "Connection outbound dropped byte count",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.port.bandwidth_rx.utilization",
                 "description": "Port inbound bandwidth utilization in %",
                 "releaseStatus": "preview"
@@ -1532,6 +1542,16 @@
             {
                 "name": "equinix.fabric.port.bandwidth_tx.utilization",
                 "description": "Port outbound bandwidth utilization in %",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port.byte_rx.count",
+                "description": "Port inbound dropped byte count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port.byte_tx.count",
+                "description": "Port outbound dropped byte count",
                 "releaseStatus": "preview"
             }
         ],
@@ -2267,6 +2287,16 @@
                 "releaseStatus": "preview"
             },
             {
+                "name": "equinix.fabric.connection.byte_rx.count",
+                "description": "Connection inbound byte count is ${operator} ${operand} MB",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection.byte_tx.count",
+                "description": "Connection outbound byte count is ${operator} ${operand} MB",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.port.bandwidth_rx.utilization",
                 "description": "Port inbound bandwidth utilization is ${operator} ${operand}%",
                 "releaseStatus": "preview"
@@ -2274,6 +2304,16 @@
             {
                 "name": "equinix.fabric.port.bandwidth_tx.utilization",
                 "description": "Port outbound bandwidth utilization is ${operator} ${operand}%",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port.byte_rx.count",
+                "description": "Port inbound byte count is ${operator} ${operand} MB",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port.byte_tx.count",
+                "description": "Port outbound byte count is ${operator} ${operand} MB",
                 "releaseStatus": "preview"
             }
         ]
