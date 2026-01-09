@@ -26,10 +26,10 @@ If you don’t have one yet, start by creating a stream, attach your connection 
 ## Available Tools
 This skill can use the following tools:
 
-*   **`search_connection`**: Searches for an existing connection `.
-*   **`stream_alert_rule_details`**: Searches for an existing alert rule.
-*   **`update_connection`**: Update connection. Used to upgrade bandwidth.
-*   **`next_available_bw_tier`**: Fetches the next available billing tier based on a bandwidth input.
+*   **`equinix_fabric_search_connection`**: Searches for an existing connection `.
+*   **`equinix_fabric_stream_alert_rule_details`**: Searches for an existing alert rule.
+*   **`equinix_fabric_update_connection`**: Update connection. Used to upgrade bandwidth.
+*   **`equinix_fabric_next_available_bw_tier`**: Fetches the next available billing tier based on a bandwidth input.
 
 ## Guidelines
 *   **Prioritize Clarity**: Ensure all parameters for the MCP tools are clearly identified from the user's request before making the tool call.
