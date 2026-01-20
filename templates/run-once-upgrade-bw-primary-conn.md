@@ -2,6 +2,7 @@
 
 ## Overview
 This skill sets up and activate an Equinix agent that upgrades the bandwidth of a connection.
+This agent only run once.
 
 ## Prerequisites
 Connections should be in PROVISIONED state to be eligible for bandwidth upgrade.
@@ -19,9 +20,9 @@ Connections should be in PROVISIONED state to be eligible for bandwidth upgrade.
 ## Available Tools
 This skill can use the following tools:
 
-*   **`equinix_fabric_search_connection`**: Searches for an existing connection `.
-*   **`equinix_fabric_update_connection`**: Update connection. Used to upgrade bandwidth.
-*   **`equinix_fabric_get_next_available_bandwidth_tier `**: Fetches the next available billing tier based on a bandwidth input.
+*   **`fabric_search_connection`**: Searches for an existing connection `.
+*   **`fabric_update_connection`**: Update connection. Used to upgrade bandwidth.
+*   **`fabric_get_next_available_bandwidth_tier `**: Fetches the next available billing tier based on a bandwidth input.
 
 ## Guidelines
 *   **Prioritize Clarity**: Ensure all parameters for the MCP tools are clearly identified from the user's request before making the tool call.
