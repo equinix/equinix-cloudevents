@@ -1,7 +1,7 @@
 # Scheduled bandwidth upgrader agent
 
 ## Overview
-This skill sets up and activate an Equinix agent that upgrades the bandwidth of a connection.
+This definition sets up and activate an Equinix agent that upgrades the bandwidth of a connection.
 This agent is triggered at 3pm every Monday and Wednesday each month.
 
 ## Prerequisites
@@ -28,4 +28,4 @@ This skill can use the following tools:
 *   **Prioritize Clarity**: Ensure all parameters for the MCP tools are clearly identified from the user's request before making the tool call.
 *   **Error Handling**: If parameters are invalid or operations fail, log errors and stop the process.
 *   **Token Efficiency**: Only call the tools when all necessary information is present, avoiding unnecessary context loading.
-*   **User should specify connection uuid
+*   **Optional Parameters** User should specify a connection uuid.

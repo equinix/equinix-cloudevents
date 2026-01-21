@@ -1,7 +1,7 @@
 # Network Bandwidth monitoring and upgrade agent
 
 ## Overview
-This skill sets up and activate an Equinix agent that automatically upgrades the bandwidth of a connection when usage reaches a certain threshold.
+This definition sets up and activate an Equinix agent that automatically upgrades the bandwidth of a connection when usage reaches a certain threshold.
 
 ## Prerequisites
 To receive alerts from your connections, you must first set up alert rules in a stream.
@@ -35,5 +35,5 @@ This skill can use the following tools:
 *   **Prioritize Clarity**: Ensure all parameters for the MCP tools are clearly identified from the user's request before making the tool call.
 *   **Error Handling**: If parameters are invalid or operations fail, log errors and stop the process.
 *   **Token Efficiency**: Only call the tools when all necessary information is present, avoiding unnecessary context loading.
-*   **User can specify alert rule uuid
-*   **User can specify connection uuid
+*   **Optional Parameters** User can specify a list of alert rule uuids.
+*   **Optional Parameters** User can specify a list of connection uuids.
