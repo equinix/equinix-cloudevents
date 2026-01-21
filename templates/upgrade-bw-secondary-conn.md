@@ -1,28 +1,41 @@
 # Network Bandwidth monitoring and upgrade agent
 
 ## Overview
-This skill sets up and activate an Equinix agent that automatically upgrades the bandwidth of the secondary connection to be same as primary connection when the primary connection usage reaches a certain threshold.
+This automated agent monitors Equinix Fabric connections and maintains bandwidth parity between redundant connection pairs. 
+When bandwidth utilization on a primary connection reaches a configured threshold, the agent automatically upgrades the secondary connection to match the primary connection's bandwidth, ensuring consistent performance across the redundant pair.
 
 ## Prerequisites
-To receive alerts from your connections, you must first set up alert rules in a stream.
-If you don't have one yet, start by creating a stream, attach your connection resources to it, and then configure alert rules for those resources.
+Before deploying this agent, ensure the following resources are configured:
+1.Equinix Fabric Stream: A provisioned stream to receive cloud events
+2.Alert Rules: Bandwidth threshold alert rules configured for monitoring connections
+If these resources are not yet configured, create a stream, attach your connection resources, and configure appropriate alert rules before activating this agent.
 
 ## Capabilities
-- Monitor real-time network event streams
-- Detect bandwidth threshold alerts
-- Identify connection redundant group and primary secondary connections pair
-- Analyze connection utilization patterns
-- Automatically upgrade connection bandwidth
-- Log all actions and decisions
-- Send notifications for critical events
+This agent provides the following automated monitoring and remediation capabilities:
+ - Real-time Event Monitoring: Continuously monitors network event streams for bandwidth alerts
+ - Threshold Detection: Identifies when connections exceed configured bandwidth utilization thresholds
+ - Redundancy Analysis: Automatically discovers redundant connection pairs and identifies primary/secondary relationships
+ - Intelligent Bandwidth Matching: Upgrades secondary connection bandwidth to match primary connection specifications
+ - Comprehensive Logging: Records all actions, decisions, and state changes for audit and troubleshooting- Monitor real-time network event streams
 
-## Follow the action step by step below:
-1. Once the cloud event is received, look at the alert rule from the cloud event message.
-2. Search for an existing alert rule given the alertRule uuid extracted from the cloud event message to find out if the alert rule exists.
-3. Search for the existing primary connection given the subject connection uuid from the cloud event message.
-4. Extract the bandwidth and redundant_group from the connection details.
-5. Identify the secondary connection of the edundant_group.
-6. Upgrade the bandwidth of the secondary connection with the primary connection bandwidth.
+## Workflow
+The agent follows this automated workflow when processing bandwidth alerts:
+1. Alert Rule Validation
+ - Receives cloud event notification containing alert metadata
+ - Validates alert rule existence using fabric_get_stream_alert_rule_details
+ - Confirms alert is for bandwidth threshold monitoring
+2. Primary Connection Analysis
+ - Extracts connection UUID from the cloud event subject field
+ - Retrieves complete connection details using fabric_search_connection
+ - Extracts current bandwidth allocation
+ - Identifies redundant_group membership
+3. Secondary Connection Discovery
+ - Identify the secondary connection of the redundant_group
+ - Filters by redundancy group UUID and SECONDARY priority
+ - Validates secondary connection configuration
+4. Bandwidth Synchronization
+ - Sets secondary bandwidth to match primary connection bandwidth
+ - Logs upgrade action with before/after values
 
 
 ## Available Tools
