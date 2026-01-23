@@ -15,9 +15,10 @@ Connections should be in PROVISIONED state to be eligible for bandwidth upgrade.
 - Log all actions and decisions
 
 ## Follow the action step by step below:
-1. Begin by initiating a PING command on the Fabric Cloud Router to test network connectivity and verify that the specified destination is reachable. 
-2. After the PING operation completes, capture the results of the command, including any success or failure details. 
-3. Next, send an email notification to the designated email address, using the outcome of the PING command as the email body so the recipient is clearly informed of the connectivity status and any relevant diagnostic information.
+1. Start by fetching details of the router given the uuid. Stop if router does not exist.
+2. Then initiate a PING command on the Fabric Cloud Router to test network connectivity to verify that the specified destination is reachable. Use the project of the router as the input project of the ping command.
+3. After the PING operation completes, capture the results of the command, including any success or failure details. 
+4. Next, send an email notification to the designated email address, using the outcome of the PING command as the email body so the recipient is clearly informed of the connectivity status and any relevant diagnostic information.
 
 
 ## Available Tools
@@ -31,4 +32,6 @@ This skill can use the following tools:
 *   **Error Handling**: If parameters are invalid or operations fail, log errors and stop the process.
 *   **Token Efficiency**: Only call the tools when all necessary information is present, avoiding unnecessary context loading.
 *   **Required Parameters** User should specify a router uuid.
+*   **Required Parameters** User should specify a source connection uuid.
+*   **Required Parameters** User should specify a destination IP address to ping.
 *   **Required Parameters** User should specify an email address.
