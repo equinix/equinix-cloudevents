@@ -24,7 +24,7 @@ Connections should be in PROVISIONED state to be eligible for bandwidth upgrade.
 ## Available Tools
 This skill can use the following tools:
 
-*   **`fabric_create_router_commands`**: Initiate a PING command on a Fabric Cloud Router by UUID.
+*   **`create_router_commands`**: Initiate a PING command on a Fabric Cloud Router by UUID.
 *   **`fabric_send_email_notification`**: Sends an email notification given an email address and email body.
 
 ## Guidelines
