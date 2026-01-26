@@ -20,9 +20,9 @@ Connections should be in PROVISIONED state to be eligible for bandwidth upgrade.
 ## Available Tools
 This skill can use the following tools:
 
-*   **`fabric_search_connection`**: Searches for an existing connection `.
-*   **`fabric_update_connection`**: Update connection. Used to upgrade bandwidth.
-*   **`fabric_get_next_available_bandwidth_tier `**: Fetches the next available billing tier based on a bandwidth input.
+*   **`search_connection`**: Searches for an existing connection `.
+*   **`update_connection`**: Update connection. Used to upgrade bandwidth.
+*   **`get_next_available_bandwidth_tier `**: Fetches the next available billing tier based on a bandwidth input.
 
 ## Guidelines
 *   **Prioritize Clarity**: Ensure all parameters for the MCP tools are clearly identified from the user's request before making the tool call.
