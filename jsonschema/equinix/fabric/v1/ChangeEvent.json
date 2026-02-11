@@ -123,6 +123,11 @@
                     "description": "The time that the resource that fired the event was created",
                     "format": "date-time"
                 },
+                "updatedDateTime": {
+                    "type": "string",
+                    "description": "The time that the resource that fired the event was last updated",
+                    "format": "date-time"
+                },
                 "data": {
                     "type": "array",
                     "description": "Data of the change event",
@@ -1072,6 +1077,66 @@
         {
             "name": "equinix.fabric.tunnel_bgpipv6_session.status.established",
             "description": "BGP peer ${ipv6_address} (AS ${asn}) session established",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.company_profile.state.pending",
+            "description": "Company profile state changed to pending",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.company_profile.state.approved",
+            "description": "Company profile state changed to approved",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.company_profile.state.rejected",
+            "description": "Company profile state changed to rejected",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.company_profile.tag.attaching",
+            "description": "Company profile tag attaching",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.company_profile.tag.approved",
+            "description": "Company profile tag approved",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.company_profile.tag.rejected",
+            "description": "Company profile tag rejected",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.company_profile.tag.detached",
+            "description": "Company profile tag detached",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.company_profile.attribute.changing",
+            "description": "Company profile attribute updating",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.company_profile.attribute.approved",
+            "description": "Company profile update approved",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.company_profile.attribute.rejected",
+            "description": "Company profile update rejected",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "preview"
         }
