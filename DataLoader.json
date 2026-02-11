@@ -683,6 +683,56 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.company_profile.attribute.approved",
+                "description": "Company profile update approved",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.company_profile.attribute.changing",
+                "description": "Company profile attribute updating",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.company_profile.attribute.rejected",
+                "description": "Company profile update rejected",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.company_profile.state.approved",
+                "description": "Company profile state changed to approved",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.company_profile.state.pending",
+                "description": "Company profile state changed to pending",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.company_profile.state.rejected",
+                "description": "Company profile state changed to rejected",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.company_profile.tag.approved",
+                "description": "Company profile tag approved",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.company_profile.tag.attaching",
+                "description": "Company profile tag attaching",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.company_profile.tag.detached",
+                "description": "Company profile tag detached",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.company_profile.tag.rejected",
+                "description": "Company profile tag rejected",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.route_aggregation.attribute.changed",
                 "description": "Route Aggregation named ${route_aggregation_name} attribute changed",
                 "releaseStatus": "preview"
