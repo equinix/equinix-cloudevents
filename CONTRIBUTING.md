@@ -21,7 +21,7 @@ manages which environment the data schema is ready to support by managing the `c
 `alertNames` attributes in the JSON. Each attribute contains a list of object with the following attributes: 
 
 * `name` - The name of the CloudEvents type, Metric or Alert
-* `description` = A breif description of the event, metric or alert
+* `description` = A brief description of the event, metric or alert
 * `sloCategoryCode` - This attribute signifies the SLO category code associated with the event, metric or alert
 * `releaseStatus` - Set as `released` under `cloudeventTypes`,`metricNames` and `alertNames` if the name listed is fully
   tested and ready to be sent in production
