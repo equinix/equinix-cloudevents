@@ -838,8 +838,18 @@
                 "releaseStatus": "preview"
             },
             {
+                "name": "equinix.network.maintenance.state.extended",
+                "description": "Network maintenance state changed to extended",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.network.maintenance.state.in_progress",
                 "description": "Network maintenance state changed to in_progress",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.maintenance.state.rescheduled",
+                "description": "Network maintenance state changed to rescheduled",
                 "releaseStatus": "preview"
             },
             {
@@ -860,6 +870,16 @@
             {
                 "name": "equinix.network.repair.state.in_progress",
                 "description": "Network repair state changed to in_progress",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.repair.state.rescheduled",
+                "description": "Network repair state changed to rescheduled",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.repair.state.resolved",
+                "description": "Network repair state changed to resolved",
                 "releaseStatus": "preview"
             }
         ],

@@ -148,6 +148,16 @@
       "releaseStatus": "preview"
     },
     {
+      "name": "equinix.network.maintenance.state.extended",
+      "description": "Network maintenance state changed to extended",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.network.maintenance.state.rescheduled",
+      "description": "Network maintenance state changed to rescheduled",
+      "releaseStatus": "preview"
+    },
+    {
       "name": "equinix.network.repair.state.confirmed",
       "description": "Network repair state changed to confirmed",
       "sloCategoryCode": "BLUE_EVENT_SLO",
@@ -169,6 +179,16 @@
       "name": "equinix.network.repair.state.completed",
       "description": "Network repair state changed to completed",
       "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.network.repair.state.rescheduled",
+      "description": "Network repair state changed to rescheduled",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.network.repair.state.resolved",
+      "description": "Network repair state changed to resolved",
       "releaseStatus": "preview"
     }
   ],
