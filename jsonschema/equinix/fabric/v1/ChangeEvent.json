@@ -426,6 +426,12 @@
             "releaseStatus": "released"
         },
         {
+            "name": "equinix.fabric.port.state.reprovisioning",
+            "description": "Virtual port named ${port_name} state changed to reprovisioning",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
             "name": "equinix.fabric.port.state.failed",
             "description": "Virtual port named ${port_name} state changed to failed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
