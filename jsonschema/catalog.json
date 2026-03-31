@@ -3805,6 +3805,29 @@
             "alertNames": []
         },
         {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/mc_service/v1/ChangeEvent.json",
+            "domain": "Equinix MC Service ChangeEvent",
+            "name": "ChangeEvent",
+            "description": "The data within all ChangeEvent events.",
+            "datatype": "equinix.mc_service.v1.ChangeEvent",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.mc_service.state.provisioned",
+                    "description": "MC Service is provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.mc_service.state.provisioning",
+                    "description": "MC Service is provisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/ChangeEvent.json",
             "domain": "Equinix Network Edge ChangeEvent",
             "name": "ChangeEvent",
@@ -4034,29 +4057,6 @@
                 {
                     "name": "equinix.fabric.time_service.status.up",
                     "description": "Time Service status changed to up",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
-                }
-            ],
-            "metricNames": [],
-            "alertNames": []
-        },
-        {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/mc_service/v1/ChangeEvent.json",
-            "domain": "Equinix MC Service ChangeEvent",
-            "name": "ChangeEvent",
-            "description": "The data within all ChangeEvent events.",
-            "datatype": "equinix.mc_service.v1.ChangeEvent",
-            "cloudeventTypes": [
-                {
-                    "name": "equinix.fabric.mc_service.state.provisioned",
-                    "description": "MC Service is provisioned",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
-                },
-                {
-                    "name": "equinix.fabric.mc_service.state.provisioning",
-                    "description": "MC Service is provisioning",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
                 }

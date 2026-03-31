@@ -2440,6 +2440,22 @@
         "metricNames": [],
         "alertNames": []
     },
+    "mc_service": {
+        "cloudeventTypes": [
+            {
+                "name": "equinix.fabric.mc_service.state.provisioned",
+                "description": "MC Service is provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.mc_service.state.provisioning",
+                "description": "MC Service is provisioning",
+                "releaseStatus": "preview"
+            }
+        ],
+        "metricNames": [],
+        "alertNames": []
+    },
     "network_edge": {
         "cloudeventTypes": [
             {
@@ -2622,22 +2638,6 @@
             {
                 "name": "equinix.fabric.time_service.status.up",
                 "description": "Time Service status changed to up",
-                "releaseStatus": "preview"
-            }
-        ],
-        "metricNames": [],
-        "alertNames": []
-    },
-    "mc_service": {
-        "cloudeventTypes": [
-            {
-                "name": "equinix.fabric.mc_service.state.provisioned",
-                "description": "MC Service is provisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.mc_service.state.provisioning",
-                "description": "MC Service is provisioning",
                 "releaseStatus": "preview"
             }
         ],
