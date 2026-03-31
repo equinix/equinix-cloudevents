@@ -4227,6 +4227,33 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 </table>
 
+---
+### Equinix MC Service ChangeEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/mc_service/v1/ChangeEvent.json)
+#### Data Type
+`equinix.mc_service.v1.ChangeEvent`
+#### Supported Events, Metrics, and Alerts
+#### Events
 
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.fabric.mc_service.state.provisioned</td>
+		<td>MC Service is provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.mc_service.state.provisioning</td>
+		<td>MC Service is provisioning</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+</table>
 
 <!-- CATALOG_GENERATION_END -->

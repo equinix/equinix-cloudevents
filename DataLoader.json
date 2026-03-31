@@ -2627,5 +2627,21 @@
         ],
         "metricNames": [],
         "alertNames": []
+    },
+    "mc_service": {
+        "cloudeventTypes": [
+            {
+                "name": "equinix.fabric.mc_service.state.provisioned",
+                "description": "MC Service is provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.mc_service.state.provisioning",
+                "description": "MC Service is provisioning",
+                "releaseStatus": "preview"
+            }
+        ],
+        "metricNames": [],
+        "alertNames": []
     }
 }

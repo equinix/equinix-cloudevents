@@ -1,0 +1,131 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/mc_service/v1/ChangeEvent.json",
+    "name": "ChangeEvent",
+    "examples": [],
+    "package": "equinix.mc_service.v1",
+    "datatype": "equinix.mc_service.v1.ChangeEvent",
+    "domain": "Equinix MC Service ChangeEvent",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "Optional. The Backup event payload. Unset for deletion events."
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                },
+                "auth": {
+                    "$ref": "#/definitions/Auth",
+                    "additionalProperties": true,
+                    "description": "The auth context within all ChangeEvent events."
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ChangeEvent Event Data",
+            "description": "The data within all ChangeEvent events."
+        },
+        "Auth": {
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "The unique identifier of the entity generating the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "The type of the entity generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the entity generating the event"
+                },
+                "email": {
+                    "type": "string",
+                    "description": "Email of the user generating the event"
+                },
+                "sourceIp": {
+                    "type": "string",
+                    "description": "IP address of the user generating the event"
+                },
+                "agent": {
+                    "type": "string",
+                    "description": "The software that made the request"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Auth",
+            "description": "Auth information of the generated event"
+        },
+        "Resource": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                },
+                "state": {
+                    "type": "string",
+                    "description": "Status of the resource generating the event"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the resource generating the event"
+                },
+                "operation": {
+                    "$ref": "#/definitions/Operation",
+                    "additionalProperties": true,
+                    "description": "Change information for the resource that fired the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        },
+        "Operation": {
+            "properties": {
+                "operationalStatus": {
+                    "type": "string",
+                    "description": "Operational status of mc service"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Operation",
+            "description": "Operational details of the mc service"
+        }
+    },
+    "cloudeventTypes": [
+        {
+            "name": "equinix.fabric.mc_service.state.provisioning",
+            "description": "MC Service is provisioning",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.mc_service.state.provisioned",
+            "description": "MC Service is provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        }
+    ],
+    "metricNames": [],
+    "alertNames": []
+}
