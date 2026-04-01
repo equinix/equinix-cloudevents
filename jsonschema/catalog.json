@@ -3812,6 +3812,24 @@
             "datatype": "equinix.metro_connect.v1.ChangeEvent",
             "cloudeventTypes": [
                 {
+                    "name": "equinix.fabric.metro_connect.state.deprovisioned",
+                    "description": "Metro Connect is deprovisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro_connect.state.deprovisioning",
+                    "description": "Metro Connect is deprovisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro_connect.state.failed",
+                    "description": "Metro Connect is provisioning failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
                     "name": "equinix.fabric.metro_connect.state.provisioned",
                     "description": "Metro Connect is provisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
@@ -3824,29 +3842,11 @@
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.metro_connect.state.deprovisioned",
-                    "description": "Metro Connect is deprovisioned",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
-                },
-                {
-                    "name": "equinix.fabric.metro_connect.state.deprovisioning",
-                    "description": "Metro Connect is deprovisioning",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
-                }, {
                     "name": "equinix.fabric.metro_connect.state.reprovisioning",
                     "description": "Metro Connect is reprovisioning",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
-                },
-                {
-                    "name": "equinix.fabric.metro_connect.state.failed",
-                    "description": "Metro Connect is provisioning failed",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
                 }
-
             ],
             "metricNames": [],
             "alertNames": []
