@@ -2440,16 +2440,36 @@
         "metricNames": [],
         "alertNames": []
     },
-    "mc_service": {
+    "metro_connect": {
         "cloudeventTypes": [
             {
-                "name": "equinix.fabric.mc_service.state.provisioned",
-                "description": "MC Service is provisioned",
+                "name": "equinix.fabric.metro_connect.state.provisioned",
+                "description": "Metro Connect is provisioned",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.mc_service.state.provisioning",
-                "description": "MC Service is provisioning",
+                "name": "equinix.fabric.metro_connect.state.provisioning",
+                "description": "Metro Connect is provisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.metro_connect.state.deprovisioned",
+                "description": "Metro Connect is deprovisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.metro_connect.state.deprovisioning",
+                "description": "Metro Connect is deprovisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.metro_connect.state.reprovisioning",
+                "description": "Metro Connect is reprovisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.metro_connect.state.failed",
+                "description": "Metro Connect is provisioning failed",
                 "releaseStatus": "preview"
             }
         ],
