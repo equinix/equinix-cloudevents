@@ -127,7 +127,7 @@
       "name": "equinix.network.maintenance.state.confirmed",
       "description": "Network maintenance state changed to confirmed",
       "sloCategoryCode": "BLUE_EVENT_SLO",
-      "releaseStatus": "preview"
+      "releaseStatus": "released"
     },
     {
       "name": "equinix.network.maintenance.state.in_progress",
@@ -139,41 +139,41 @@
       "name": "equinix.network.maintenance.state.cancelled",
       "description": "Network maintenance state changed to cancelled",
       "sloCategoryCode": "BLUE_EVENT_SLO",
-      "releaseStatus": "preview"
+      "releaseStatus": "released"
     },
     {
       "name": "equinix.network.maintenance.state.completed",
       "description": "Network maintenance state changed to completed",
       "sloCategoryCode": "BLUE_EVENT_SLO",
-      "releaseStatus": "preview"
+      "releaseStatus": "released"
     },
     {
       "name": "equinix.network.maintenance.state.extended",
       "description": "Network maintenance state changed to extended",
-      "releaseStatus": "preview"
+      "releaseStatus": "released"
     },
     {
       "name": "equinix.network.maintenance.state.rescheduled",
       "description": "Network maintenance state changed to rescheduled",
-      "releaseStatus": "preview"
+      "releaseStatus": "released"
     },
     {
       "name": "equinix.network.repair.state.confirmed",
       "description": "Network repair state changed to confirmed",
       "sloCategoryCode": "BLUE_EVENT_SLO",
-      "releaseStatus": "preview"
+      "releaseStatus": "released"
     },
     {
       "name": "equinix.network.repair.state.in_progress",
       "description": "Network repair state changed to in_progress",
       "sloCategoryCode": "BLUE_EVENT_SLO",
-      "releaseStatus": "preview"
+      "releaseStatus": "released"
     },
     {
       "name": "equinix.network.repair.state.cancelled",
       "description": "Network repair state changed to cancelled",
       "sloCategoryCode": "BLUE_EVENT_SLO",
-      "releaseStatus": "preview"
+      "releaseStatus": "released"
     },
     {
       "name": "equinix.network.repair.state.completed",
@@ -184,12 +184,12 @@
     {
       "name": "equinix.network.repair.state.rescheduled",
       "description": "Network repair state changed to rescheduled",
-      "releaseStatus": "preview"
+      "releaseStatus": "released"
     },
     {
       "name": "equinix.network.repair.state.resolved",
       "description": "Network repair state changed to resolved",
-      "releaseStatus": "preview"
+      "releaseStatus": "released"
     }
   ],
   "metricNames": [],
