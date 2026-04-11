@@ -1,4 +1,5 @@
 {
+// Equinix Precision Time
     "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/time_service/v1/ChangeEvent.json",
     "name": "ChangeEvent",
     "examples": [],
