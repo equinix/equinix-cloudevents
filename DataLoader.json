@@ -735,7 +735,7 @@
             {
                 "name": "equinix.fabric.port.state.reprovisioning",
                 "description": "Virtual port named ${port_name} state changed to reprovisioning",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.route_aggregation.attribute.changed",
