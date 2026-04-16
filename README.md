@@ -619,7 +619,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.port.state.reprovisioning</td>
 		<td>Virtual port named ${port_name} state changed to reprovisioning</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>

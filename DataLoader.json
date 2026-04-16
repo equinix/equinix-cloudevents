@@ -458,6 +458,11 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.port.state.reprovisioning",
+                "description": "Virtual port named ${port_name} state changed to reprovisioning",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.port.status.down",
                 "description": "Virtual port '${port_name}' status changed to DOWN",
                 "releaseStatus": "released"
@@ -731,11 +736,6 @@
                 "name": "equinix.fabric.service_token.state.inactive",
                 "description": "Token successfully deactivated",
                 "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.port.state.reprovisioning",
-                "description": "Virtual port named ${port_name} state changed to reprovisioning",
-                "releaseStatus": "preview"
             },
             {
                 "name": "equinix.fabric.route_aggregation.attribute.changed",
