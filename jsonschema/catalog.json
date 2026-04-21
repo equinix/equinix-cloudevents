@@ -1047,7 +1047,7 @@
                     "name": "equinix.network.repair.state.cancelled",
                     "description": "Network repair state changed to cancelled",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.network.repair.state.completed",
@@ -1059,23 +1059,23 @@
                     "name": "equinix.network.repair.state.confirmed",
                     "description": "Network repair state changed to confirmed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.network.repair.state.in_progress",
                     "description": "Network repair state changed to in_progress",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.network.repair.state.rescheduled",
                     "description": "Network repair state changed to rescheduled",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.network.repair.state.resolved",
                     "description": "Network repair state changed to resolved",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 }
             ],
             "metricNames": [],
