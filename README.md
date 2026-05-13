@@ -503,6 +503,36 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.ip_block.state.deprovisioned</td>
+		<td>Ip Block de-provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.ip_block.state.deprovisioning</td>
+		<td>Ip Block de-provisioning started</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.ip_block.state.failed</td>
+		<td>Ip Block provisioning or de-provisioning failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.ip_block.state.provisioned</td>
+		<td>Ip Block provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.ip_block.state.provisioning</td>
+		<td>Ip Block provisioning started</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.network.attribute.changed</td>
 		<td>network named ${network_name} attribute changed</td>
 		<td>released</td>
