@@ -764,17 +764,17 @@
             },
             {
                 "name": "equinix.fabric.ip_block.state.deprovisioned",
-                "description": "Ip Block de-provisioned",
+                "description": "Ip Block deprovisioned",
                 "releaseStatus": "preview"
             },
             {
                 "name": "equinix.fabric.ip_block.state.deprovisioning",
-                "description": "Ip Block de-provisioning started",
+                "description": "Ip Block deprovisioning started",
                 "releaseStatus": "preview"
             },
             {
                 "name": "equinix.fabric.ip_block.state.failed",
-                "description": "Ip Block provisioning or de-provisioning failed",
+                "description": "Ip Block provisioning or deprovisioning failed",
                 "releaseStatus": "preview"
             },
             {
