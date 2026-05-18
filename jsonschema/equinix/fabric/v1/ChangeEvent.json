@@ -654,6 +654,36 @@
             "releaseStatus": "released"
         },
         {
+            "name": "equinix.fabric.ip_block.state.provisioning",
+            "description": "Ip Block provisioning started",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.ip_block.state.provisioned",
+            "description": "Ip Block provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.ip_block.state.deprovisioning",
+            "description": "Ip Block deprovisioning started",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.ip_block.state.deprovisioned",
+            "description": "Ip Block deprovisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.ip_block.state.failed",
+            "description": "Ip Block provisioning or deprovisioning failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
             "name": "equinix.fabric.connection_routing_protocol.state.provisioning",
             "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioning",
             "sloCategoryCode": "BLUE_EVENT_SLO",
