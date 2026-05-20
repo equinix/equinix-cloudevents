@@ -1112,25 +1112,25 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.network.maintenance.state.cancelled</td>
 		<td>Network maintenance state changed to cancelled</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.network.maintenance.state.completed</td>
 		<td>Network maintenance state changed to completed</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.network.maintenance.state.confirmed</td>
 		<td>Network maintenance state changed to confirmed</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.network.maintenance.state.extended</td>
 		<td>Network maintenance state changed to extended</td>
-		<td>preview</td>
+		<td>released</td>
 	<td>-</td>
 	</tr>
 	<tr>
@@ -1142,7 +1142,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.network.maintenance.state.rescheduled</td>
 		<td>Network maintenance state changed to rescheduled</td>
-		<td>preview</td>
+		<td>released</td>
 	<td>-</td>
 	</tr>
 	<tr>
