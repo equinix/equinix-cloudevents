@@ -4099,6 +4099,18 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.network_edge.devicelinkgroup.state.deprovisioned</td>
+		<td>Network edge device link group is deprovisioned</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.devicelinkgroup.state.provisioned</td>
+		<td>Network edge device link group is provisioned</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.network_edge.devicelinkgroup.state.updated</td>
 		<td>Network edge device link group is updated</td>
 		<td>released</td>

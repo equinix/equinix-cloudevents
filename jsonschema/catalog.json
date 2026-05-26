@@ -3919,6 +3919,18 @@
                     "releaseStatus": "released"
                 },
                 {
+                    "name": "equinix.network_edge.devicelinkgroup.state.deprovisioned",
+                    "description": "Network edge device link group is deprovisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.devicelinkgroup.state.provisioned",
+                    "description": "Network edge device link group is provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
                     "name": "equinix.network_edge.devicelinkgroup.state.updated",
                     "description": "Network edge device link group is updated",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
