@@ -228,7 +228,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.service_profile.connection.deprovisioned</td>
-		<td>Service Profile Connection '${connection_name}' state changed to deporvisioned</td>
+		<td>Service Profile Connection '${connection_name}' state changed to deprovisioned</td>
 		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:purple'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
