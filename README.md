@@ -965,6 +965,24 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.service_profile.connection.deprovisioned</td>
+		<td>Service Profile Connection ${connection_name} state changed to deprovisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.service_profile.connection.pending_approval</td>
+		<td>Service Profile Connection ${connection_name} state changed to pending_approval</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.service_profile.connection.provisioned</td>
+		<td>Service Profile Connection ${connection_name} state changed to provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.service_token.attribute.changed</td>
 		<td>Token successfully updated</td>
 		<td>released</td>

@@ -808,6 +808,21 @@
                 "releaseStatus": "preview"
             },
             {
+                "name": "equinix.fabric.service_profile.connection.deprovisioned",
+                "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.service_profile.connection.pending_approval",
+                "description": "Service Profile Connection ${connection_name} state changed to pending_approval",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.service_profile.connection.provisioned",
+                "description": "Service Profile Connection ${connection_name} state changed to provisioned",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.tunnel.status.down",
                 "description": "Tunnel Interface ${tunnel_interface_name}: Operationally Down - Remote Peer Unreachable",
                 "releaseStatus": "preview"
