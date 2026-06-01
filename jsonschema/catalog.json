@@ -93,24 +93,6 @@
                     "releaseStatus": "released"
                 },
                 {
-                    "name": "equinix.fabric.service_profile.connection.pending_approval",
-                    "description": "Service Profile Connection ${connection_name} state changed to pending_approval",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
-                },
-                {
-                    "name": "equinix.fabric.service_profile.connection.provisioned",
-                    "description": "Service Profile Connection ${connection_name} state changed to provisioned",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
-                },
-                {
-                    "name": "equinix.fabric.service_profile.connection.deprovisioned",
-                    "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
-                },
-                {
                     "name": "equinix.fabric.connection.attribute.changed",
                     "description": "Connection named ${connection_name} attributes are changed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
@@ -919,6 +901,24 @@
                     "description": "Routing Protocol Action state changed to succeeded",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_profile.connection.deprovisioned",
+                    "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.service_profile.connection.pending_approval",
+                    "description": "Service Profile Connection ${connection_name} state changed to pending_approval",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.service_profile.connection.provisioned",
+                    "description": "Service Profile Connection ${connection_name} state changed to provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
                 },
                 {
                     "name": "equinix.fabric.service_token.attribute.changed",
