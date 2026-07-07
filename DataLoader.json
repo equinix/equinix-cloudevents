@@ -2440,42 +2440,6 @@
         "metricNames": [],
         "alertNames": []
     },
-    "metro_connect": {
-        "cloudeventTypes": [
-            {
-                "name": "equinix.fabric.metro_connect.state.deprovisioned",
-                "description": "Metro Connect is deprovisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro_connect.state.deprovisioning",
-                "description": "Metro Connect is deprovisioning",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro_connect.state.failed",
-                "description": "Metro Connect is provisioning failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro_connect.state.provisioned",
-                "description": "Metro Connect is provisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro_connect.state.provisioning",
-                "description": "Metro Connect is provisioning",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro_connect.state.reprovisioning",
-                "description": "Metro Connect is reprovisioning",
-                "releaseStatus": "preview"
-            }
-        ],
-        "metricNames": [],
-        "alertNames": []
-    },
     "network_edge": {
         "cloudeventTypes": [
             {
@@ -2547,6 +2511,42 @@
                 "name": "equinix.network_edge.devicelinkgroup.state.updated",
                 "description": "Network edge device link group is updated",
                 "releaseStatus": "released"
+            }
+        ],
+        "metricNames": [],
+        "alertNames": []
+    },
+    "optical_connect": {
+        "cloudeventTypes": [
+            {
+                "name": "equinix.fabric.optical_connect.state.deprovisioned",
+                "description": "Optical Connect is deprovisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.optical_connect.state.deprovisioning",
+                "description": "Optical Connect is deprovisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.optical_connect.state.failed",
+                "description": "Optical Connect is provisioning failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.optical_connect.state.provisioned",
+                "description": "Optical Connect is provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.optical_connect.state.provisioning",
+                "description": "Optical Connect is provisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.optical_connect.state.reprovisioning",
+                "description": "Optical Connect is reprovisioning",
+                "releaseStatus": "preview"
             }
         ],
         "metricNames": [],
