@@ -3969,61 +3969,6 @@ The following data payloads are the supported events and formats for Equinix Net
 
 
 ---
-### Equinix Metro Connect ChangeEvent
-#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/metro_connect/v1/ChangeEvent.json)
-#### Data Type
-`equinix.metro_connect.v1.ChangeEvent`
-#### Supported Events, Metrics, and Alerts
-#### Events
-
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-		<th>Release Status</th>
-		<th>SLO Category</th>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro_connect.state.deprovisioned</td>
-		<td>Metro Connect is deprovisioned</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro_connect.state.deprovisioning</td>
-		<td>Metro Connect is deprovisioning</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro_connect.state.failed</td>
-		<td>Metro Connect is provisioning failed</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro_connect.state.provisioned</td>
-		<td>Metro Connect is provisioned</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro_connect.state.provisioning</td>
-		<td>Metro Connect is provisioning</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro_connect.state.reprovisioning</td>
-		<td>Metro Connect is reprovisioning</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-</table>
-
-
-
----
 ### Equinix Network Edge ChangeEvent
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/ChangeEvent.json)
 #### Data Type
@@ -4120,6 +4065,61 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.network_edge.devicelinkgroup.state.updated</td>
 		<td>Network edge device link group is updated</td>
 		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+</table>
+
+
+
+---
+### Equinix Optical Connect ChangeEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/optical_connect/v1/ChangeEvent.json)
+#### Data Type
+`equinix.optical_connect.v1.ChangeEvent`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.fabric.optical_connect.state.deprovisioned</td>
+		<td>Optical Connect is deprovisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.optical_connect.state.deprovisioning</td>
+		<td>Optical Connect is deprovisioning</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.optical_connect.state.failed</td>
+		<td>Optical Connect is provisioning failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.optical_connect.state.provisioned</td>
+		<td>Optical Connect is provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.optical_connect.state.provisioning</td>
+		<td>Optical Connect is provisioning</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.optical_connect.state.reprovisioning</td>
+		<td>Optical Connect is reprovisioning</td>
+		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 </table>
