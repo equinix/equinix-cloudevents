@@ -763,6 +763,46 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.asn.attribute.changed",
+                "description": "ASN changed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.asn.attribute.changing",
+                "description": "ASN changing",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.asn.attribute.failed",
+                "description": "ASN change failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.asn.state.deprovisioned",
+                "description": "ASN de-provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.asn.state.deprovisioning",
+                "description": "ASN de-provisioning started",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.asn.state.failed",
+                "description": "ASN provisioning or de-provisioning failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.asn.state.provisioned",
+                "description": "ASN provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.asn.state.provisioning",
+                "description": "ASN provisioning started",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.ip_block.state.deprovisioned",
                 "description": "Ip Block deprovisioned",
                 "releaseStatus": "preview"

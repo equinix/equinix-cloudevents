@@ -33,6 +33,54 @@
             "datatype": "equinix.fabric.v1.ChangeEvent",
             "cloudeventTypes": [
                 {
+                    "name": "equinix.fabric.asn.attribute.changed",
+                    "description": "ASN changed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.asn.attribute.changing",
+                    "description": "ASN changing",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.asn.attribute.failed",
+                    "description": "ASN change failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.asn.state.deprovisioned",
+                    "description": "ASN de-provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.asn.state.deprovisioning",
+                    "description": "ASN de-provisioning started",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.asn.state.failed",
+                    "description": "ASN provisioning or de-provisioning failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.asn.state.provisioned",
+                    "description": "ASN provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.asn.state.provisioning",
+                    "description": "ASN provisioning started",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
                     "name": "equinix.fabric.company_profile.attribute.approved",
                     "description": "Company profile update approved",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
