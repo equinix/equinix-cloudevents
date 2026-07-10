@@ -684,6 +684,54 @@
             "releaseStatus": "preview"
         },
         {
+            "name": "equinix.fabric.asn.state.provisioning",
+            "description": "ASN provisioning started",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.asn.state.provisioned",
+            "description": "ASN provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.asn.state.deprovisioning",
+            "description": "ASN de-provisioning started",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.asn.state.deprovisioned",
+            "description": "ASN de-provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.asn.state.failed",
+            "description": "ASN provisioning or de-provisioning failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.asn.attribute.changing",
+            "description": "ASN changing",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.asn.attribute.changed",
+            "description": "ASN changed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.asn.attribute.failed",
+            "description": "ASN change failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
             "name": "equinix.fabric.connection_routing_protocol.state.provisioning",
             "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioning",
             "sloCategoryCode": "BLUE_EVENT_SLO",
