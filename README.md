@@ -3969,6 +3969,61 @@ The following data payloads are the supported events and formats for Equinix Net
 
 
 ---
+### Equinix Maintenance Service MaintenanceEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/maintenance_service/v1/MaintenanceEvent.json)
+#### Data Type
+`equinix.maintenance_service.v1.MaintenanceEvent`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port_maintenance.state.cancelled</td>
+		<td>Port maintenance is cancelled</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port_maintenance.state.completed</td>
+		<td>Port maintenance is completed</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port_maintenance.state.deferred</td>
+		<td>Port maintenance is deferred</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port_maintenance.state.failed</td>
+		<td>Port maintenance has failed</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port_maintenance.state.in_progress</td>
+		<td>Port maintenance is in progress</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port_maintenance.state.scheduled</td>
+		<td>Port maintenance is scheduled</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+</table>
+
+
+
+---
 ### Equinix Network Edge ChangeEvent
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/ChangeEvent.json)
 #### Data Type

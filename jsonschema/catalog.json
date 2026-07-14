@@ -3805,6 +3805,53 @@
             "alertNames": []
         },
         {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/maintenance_service/v1/MaintenanceEvent.json",
+            "domain": "Equinix Maintenance Service MaintenanceEvent",
+            "name": "MaintenanceEvent",
+            "description": "The data within all MaintenanceEvent events.",
+            "datatype": "equinix.maintenance_service.v1.MaintenanceEvent",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.port_maintenance.state.cancelled",
+                    "description": "Port maintenance is cancelled",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port_maintenance.state.completed",
+                    "description": "Port maintenance is completed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port_maintenance.state.deferred",
+                    "description": "Port maintenance is deferred",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port_maintenance.state.failed",
+                    "description": "Port maintenance has failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port_maintenance.state.in_progress",
+                    "description": "Port maintenance is in progress",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.port_maintenance.state.scheduled",
+                    "description": "Port maintenance is scheduled",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/ChangeEvent.json",
             "domain": "Equinix Network Edge ChangeEvent",
             "name": "ChangeEvent",

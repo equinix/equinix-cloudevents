@@ -2440,6 +2440,42 @@
         "metricNames": [],
         "alertNames": []
     },
+    "maintenance_service": {
+        "cloudeventTypes": [
+            {
+                "name": "equinix.fabric.port_maintenance.state.cancelled",
+                "description": "Port maintenance is cancelled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.completed",
+                "description": "Port maintenance is completed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.deferred",
+                "description": "Port maintenance is deferred",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.failed",
+                "description": "Port maintenance has failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.in_progress",
+                "description": "Port maintenance is in progress",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.scheduled",
+                "description": "Port maintenance is scheduled",
+                "releaseStatus": "released"
+            }
+        ],
+        "metricNames": [],
+        "alertNames": []
+    },
     "network_edge": {
         "cloudeventTypes": [
             {
