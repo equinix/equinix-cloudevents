@@ -1,1200 +1,1313 @@
 {
-    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeEvent.json",
-    "name": "ChangeEvent",
-    "examples": [],
-    "package": "equinix.fabric.v1",
-    "datatype": "equinix.fabric.v1.ChangeEvent",
-    "domain": "Equinix Fabric ChangeEvent",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "$ref": "#/definitions/Data",
-    "definitions": {
-        "Data": {
-            "properties": {
-                "resource": {
-                    "$ref": "#/definitions/Resource",
-                    "additionalProperties": true,
-                    "description": "Optional. The Backup event payload. Unset for deletion events."
-                },
-                "message": {
-                    "type": "string",
-                    "description": "Supporting message describing the event"
-                },
-                "auth": {
-                    "$ref": "#/definitions/Auth",
-                    "additionalProperties": true,
-                    "description": "The auth context within all ChangeEvent events."
-                }
-            },
-            "additionalProperties": true,
-            "type": "object",
-            "title": "ChangeEvent Event Data",
-            "description": "The data within all ChangeEvent events."
+  "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeEvent.json",
+  "name": "ChangeEvent",
+  "examples": [],
+  "package": "equinix.fabric.v1",
+  "datatype": "equinix.fabric.v1.ChangeEvent",
+  "domain": "Equinix Fabric ChangeEvent",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/Data",
+  "definitions": {
+    "Data": {
+      "properties": {
+        "resource": {
+          "$ref": "#/definitions/Resource",
+          "additionalProperties": true,
+          "description": "Optional. The Backup event payload. Unset for deletion events."
         },
-        "Auth": {
-            "properties": {
-                "id": {
-                    "type": "string",
-                    "description": "The unique identifier of the entity generating the event"
-                },
-                "type": {
-                    "type": "string",
-                    "description": "The type of the entity generating the event"
-                },
-                "name": {
-                    "type": "string",
-                    "description": "Name of the entity generating the event"
-                },
-                "email": {
-                    "type": "string",
-                    "description": "Email of the user generating the event"
-                },
-                "sourceIp": {
-                    "type": "string",
-                    "description": "IP address of the user generating the event"
-                },
-                "agent": {
-                    "type": "string",
-                    "description": "The software that made the request"
-                }
-            },
-            "additionalProperties": true,
-            "type": "object",
-            "title": "Auth",
-            "description": "Auth information of the generated event"
+        "message": {
+          "type": "string",
+          "description": "Supporting message describing the event"
         },
-        "Resource": {
-            "properties": {
-                "href": {
-                    "type": "string",
-                    "description": "Link to the resource that has generated the event"
-                },
-                "type": {
-                    "type": "string",
-                    "description": "Type of the resource generating the event"
-                },
-                "uuid": {
-                    "type": "string",
-                    "description": "Equinix assigned unique identifier of the resource generating the event"
-                },
-                "name": {
-                    "type": "string",
-                    "description": "Name of the resource generating the event"
-                },
-                "state": {
-                    "type": "string",
-                    "description": "State of the resource generating the event"
-                },
-                "description": {
-                    "type": "string",
-                    "description": "Description of the resource generating the event"
-                },
-                "change": {
-                    "$ref": "#/definitions/Change",
-                    "additionalProperties": true,
-                    "description": "Change information for the resource that fired the event"
-                },
-                "operation": {
-                    "$ref": "#/definitions/Operation",
-                    "additionalProperties": true,
-                    "description": "Operational status of resource that fired the event"
-                }
-            },
-            "additionalProperties": true,
-            "type": "object",
-            "title": "Resource",
-            "description": "Schema of the resource that fired the event"
-        },
-        "Change": {
-            "properties": {
-                "uuid": {
-                    "type": "string",
-                    "description": "Uuid of the of change for the resource target of the event"
-                },
-                "type": {
-                    "type": "string",
-                    "description": "Type of the change happening on the resource for the target of the event"
-                },
-                "status": {
-                    "type": "string",
-                    "description": "Status of the change event on the resource target"
-                },
-                "createdDateTime": {
-                    "type": "string",
-                    "description": "The time that the resource that fired the event was created",
-                    "format": "date-time"
-                },
-                "updatedDateTime": {
-                    "type": "string",
-                    "description": "The time that the resource that fired the event was last updated",
-                    "format": "date-time"
-                },
-                "data": {
-                    "type": "array",
-                    "description": "Data of the change event",
-                    "items": {
-                        "$ref": "#/definitions/ChangeData"
-                    }
-                }
-            },
-            "additionalProperties": true,
-            "type": "object",
-            "title": "Change",
-            "description": "Change attribute schema"
-        },
-        "ChangeData": {
-            "properties": {
-                "op": {
-                    "type": "string",
-                    "description": "The operation performed on the resource under change"
-                },
-                "path": {
-                    "type": "string",
-                    "description": "The attribute on the resource being changed"
-                },
-                "value": {
-                    "type": "string",
-                    "description": "The current value of the attribute under change"
-                },
-                "previousValue": {
-                    "type": "string",
-                    "description": "The previous value of the attribute under change"
-                }
-            },
-            "additionalProperties": true,
-            "type": "object",
-            "title": "ChangeData",
-            "description": "ChangeData attribute schema"
-        },
-        "Operation": {
-            "properties": {
-                "operationalStatus": {
-                    "type": "string",
-                    "description": "Operational status for the resource target of the event"
-                }
-            },
-            "additionalProperties": true,
-            "type": "object",
-            "title": "Operation",
-            "description": "Operation attribute schema"
+        "auth": {
+          "$ref": "#/definitions/Auth",
+          "additionalProperties": true,
+          "description": "The auth context within all ChangeEvent events."
         }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "ChangeEvent Event Data",
+      "description": "The data within all ChangeEvent events."
     },
-    "cloudeventTypes": [
-        {
-            "name": "equinix.fabric.connection.state.pending",
-            "description": "Connection named ${connection_name} state changed to pending",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection.state.provisioning",
-            "description": "Connection named ${connection_name} state changed to provisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection.state.provisioned",
-            "description": "Connection named ${connection_name} state changed to provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection.state.reprovisioning",
-            "description": "Connection named ${connection_name} state changed to reprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection.state.deprovisioning",
-            "description": "Connection named ${connection_name} state changed to deprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection.state.deprovisioned",
-            "description": "Connection named ${connection_name} state changed to deprovisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection.state.failed",
-            "description": "Connection named ${connection_name} state changed to failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection.attribute.changed",
-            "description": "Connection named ${connection_name} attributes are changed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection.status.up",
-            "description": "Connection '${connection_name}' status changed to UP",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection.status.down",
-            "description": "Connection '${connection_name}' status changed to DOWN",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv4_session.status.idle",
-            "description": "Neighbor ${IP} address session state changed to Idle",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv4_session.status.connect",
-            "description": "Neighbor ${IP} address session state changed to Connect",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv4_session.status.active",
-            "description": "Neighbor ${IP} address session state changed to Active",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv4_session.status.open_sent",
-            "description": "Neighbor ${IP} address session state changed to Open_sent",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv4_session.status.open_confirm",
-            "description": "Neighbor ${IP} address session state changed to Open_confirm",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv4_session.status.established",
-            "description": "Neighbor ${IP} address session state changed to Established",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv4_session.status.unknown",
-            "description": "Neighbor ${IP} address session state changed to Unknown",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv4_session.status.closing",
-            "description": "Neighbor ${IP} address session state changed to Closing",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv4_session.status.deleting",
-            "description": "Neighbor ${IP} address session state changed to Deleting",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv4_session.status.incomplete",
-            "description": "Neighbor ${IP} address session state changed to Incomplete",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv4_session.status.shutdown",
-            "description": "Neighbor ${IP} address session state changed to ShutDown",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv6_session.status.idle",
-            "description": "Neighbor ${IP} address session state changed to Idle",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv6_session.status.connect",
-            "description": "Neighbor ${IP} address session state changed to Connect",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv6_session.status.active",
-            "description": "Neighbor ${IP} address session state changed to Active",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv6_session.status.open_sent",
-            "description": "Neighbor ${IP} address session state changed to open_sent",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv6_session.status.open_confirm",
-            "description": "Neighbor ${IP} address session state changed to Open_confirm",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv6_session.status.established",
-            "description": "Neighbor ${IP} address session state changed to Established",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv6_session.status.unknown",
-            "description": "Neighbor ${IP} address session state changed to Unknown",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv6_session.status.closing",
-            "description": "Neighbor ${IP} address session state changed to Closing",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv6_session.status.deleting",
-            "description": "Neighbor ${IP} address session state changed to Deleting",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv6_session.status.incomplete",
-            "description": "Neighbor ${IP} address session state changed to Incomplete",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_bgpipv6_session.status.shutdown",
-            "description": "Neighbor ${IP} address session state changed to ShutDown",
-            "sloCategoryCode": "BROWN_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.network.state.provisioning",
-            "description": "Network named ${network_name} state changed to provisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.network.state.provisioned",
-            "description": "Network named ${network_name} state changed to provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.network.state.deprovisioning",
-            "description": "Network named ${network_name} state changed to deprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.network.state.deprovisioned",
-            "description": "Network named ${network_name} state changed to deprovisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.network.attribute.changed",
-            "description": "network named ${network_name} attribute changed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.port.state.provisioning",
-            "description": "Virtual port named ${port_name} state changed to provisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.port.state.provisioned",
-            "description": "Virtual port named ${port_name} state changed to provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.port.state.deprovisioning",
-            "description": "Virtual port named ${port_name} state changed to deprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.port.state.deprovisioned",
-            "description": "Virtual port named ${port_name} state changed to deprovisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.port.state.reprovisioning",
-            "description": "Virtual port named ${port_name} state changed to reprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.port.state.failed",
-            "description": "Virtual port named ${port_name} state changed to failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.port.state.inactive",
-            "description": "Virtual port named ${port_name} state changed to inactive",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.port.status.up",
-            "description": "Virtual port '${port_name}' status changed to UP",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.port.status.inactive",
-            "description": "Virtual port '${port_name}' status changed to INACTIVE",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.port.status.down",
-            "description": "Virtual port '${port_name}' status changed to DOWN",
-            "sloCategoryCode": "PURPLE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-          "name": "equinix.fabric.physical_port.status.up",
-          "description": "Physical port '${port_name}' status changed to UP",
-          "sloCategoryCode": "PURPLE_EVENT_SLO",
-          "releaseStatus": "released"
-        },
-        {
-          "name": "equinix.fabric.physical_port.status.down",
-          "description": "Physical port '${port_name}' status changed to DOWN",
-          "sloCategoryCode": "PURPLE_EVENT_SLO",
-          "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.physical_port.state.provisioning",
-            "description": "Physical port ${port_id} state changed to provisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.physical_port.state.pending_cross_connect",
-            "description": "Physical port ${port_id} state changed to pending_cross_connect",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.physical_port.state.provisioned",
-            "description": "Physical port ${port_id} state changed to provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.physical_port.state.deprovisioning",
-            "description": "Physical port ${port_id} state changed to deprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.physical_port.state.deprovisioned",
-            "description": "Physical port ${port_id} state changed to deprovisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.physical_port.state.failed",
-            "description": "Physical port ${port_id} state changed to failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.router.state.provisioning",
-            "description": "Router named ${router_name} state changed to provisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.router.state.provisioned",
-            "description": "Router named ${router_name} successfully provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.router.state.reprovisioning",
-            "description": "Router named ${router_name} state changed to reprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.router.state.deprovisioning",
-            "description": "Router named ${router_name} state changed to deprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.router.state.deprovisioned",
-            "description": "Router named ${router_name} successfully deprovisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.router.state.failed",
-            "description": "Router named ${router_name} state changed to failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.router.state.not_provisioned",
-            "description": "Router named ${router_name} state changed to not_provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.router.state.not_deprovisioned",
-            "description": "Router named ${router_name} state changed to not_deprovisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.service_token.state.active",
-            "description": "Token successfully activated",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.router.attribute.changed",
-            "description": "Router named ${router_name} attribute changed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.service_token.state.inactive",
-            "description": "Token successfully deactivated",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.service_token.state.deleted",
-            "description": "Token successfully deleted",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.service_token.state.expired",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "description": "Token expired",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.service_token.attribute.changed",
-            "description": "Token successfully updated",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.service_token.resend_email_notification.succeeded",
-            "description": "Token resend email notification succeeded",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.service_token.resend_email_notification.failed",
-            "description": "Token resend email notification failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.internet_access.state.provisioning",
-            "description": "Internet access service provisioning started",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.internet_access.state.provisioned",
-            "description": "Internet access service provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.internet_access.state.deprovisioning",
-            "description": "Internet access service de-provisioning started",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.internet_access.state.deprovisioned",
-            "description": "Internet access service de-provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.internet_access.state.failed",
-            "description": "Internet access service provisioning or de-provisioning failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.internet_access.attribute.changed",
-            "description": "Internet access service changed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.internet_access.attribute.changing",
-            "description": "Internet access service changing",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.internet_access.attribute.failed",
-            "description": "Internet access service changed failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.ip_block.state.provisioning",
-            "description": "Ip Block provisioning started",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.ip_block.state.provisioned",
-            "description": "Ip Block provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.ip_block.state.deprovisioning",
-            "description": "Ip Block deprovisioning started",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.ip_block.state.deprovisioned",
-            "description": "Ip Block deprovisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.ip_block.state.failed",
-            "description": "Ip Block provisioning or deprovisioning failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.connection_routing_protocol.state.provisioning",
-            "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_routing_protocol.state.reprovisioning",
-            "description": "Routing Protocol named ${routing_protocol_name} state changed to reprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_routing_protocol.state.deprovisioning",
-            "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_routing_protocol.state.provisioned",
-            "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_routing_protocol.state.deprovisioned",
-            "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_routing_protocol.state.failed",
-            "description": "Routing Protocol named ${routing_protocol_name} state changed to failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_filter.state.provisioning",
-            "description": "Route Filter named ${route_filter_name} state changed to provisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_filter.state.reprovisioning",
-            "description": "Route Filter named ${route_filter_name} state changed to reprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_filter.state.deprovisioning",
-            "description": "Route Filter named ${route_filter_name} state changed to deprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_filter.state.provisioned",
-            "description": "Route Filter named ${route_filter_name} state changed to provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_filter.state.deprovisioned",
-            "description": "Route Filter named ${route_filter_name} state changed to deprovisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_filter.state.not_provisioned",
-            "description": "Route Filter named ${route_filter_name} state changed to not_provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_filter.state.not_deprovisioned",
-            "description": "Route Filter named ${route_filter_name} state changed to not_deprovisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_filter.attribute.changed",
-            "description": "Route Filter named ${route_filter_name} attribute changed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.route_filter_rule.state.provisioning",
-            "description": "Route Filter Rule named ${route_filter_rule_name} state changed to provisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_filter_rule.state.reprovisioning",
-            "description": "Route Filter Rule named ${route_filter_rule_name} state changed to reprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_filter_rule.state.deprovisioning",
-            "description": "Route Filter Rule named ${route_filter_rule_name} state changed to deprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_filter_rule.state.provisioned",
-            "description": "Route Filter Rule named ${route_filter_rule_name} state changed to provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_filter_rule.state.deprovisioned",
-            "description": "Route Filter Rule named ${route_filter_rule_name} state changed to deprovisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_filter_rule.state.failed",
-            "description": "Route Filter Rule named ${route_filter_rule_name} state changed to failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_filter_rule.attribute.changed",
-            "description": "Route Filter Rule named ${route_filter_rule_name} attribute changed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.connection_route_filter.state.attaching",
-            "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to attaching",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_route_filter.state.detaching",
-            "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to detaching",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_route_filter.state.attached",
-            "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to attached",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_route_filter.state.detached",
-            "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to detached",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_route_filter.state.pending_bgp_configuration",
-            "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to pending_bgp_configuration",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_route_filter.state.failed",
-            "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_aggregation.state.provisioning",
-            "description": "Route Aggregation named ${route_aggregation_name} state changed to provisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_aggregation.state.reprovisioning",
-            "description": "Route Aggregation named ${route_aggregation_name} state changed to reprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_aggregation.state.deprovisioning",
-            "description": "Route Aggregation named ${route_aggregation_name} state changed to deprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_aggregation.state.provisioned",
-            "description": "Route Aggregation named ${route_aggregation_name} state changed to provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_aggregation.state.deprovisioned",
-            "description": "Route Aggregation named ${route_aggregation_name} state changed to deprovisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_aggregation.state.not_provisioned",
-            "description": "Route Aggregation named ${route_aggregation_name} state changed to not_provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_aggregation.state.not_deprovisioned",
-            "description": "Route Aggregation named ${route_aggregation_name} state changed to not_deprovisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_aggregation.attribute.changed",
-            "description": "Route Aggregation named ${route_aggregation_name} attribute changed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.route_aggregation_rule.state.provisioning",
-            "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to provisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_aggregation_rule.state.reprovisioning",
-            "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to reprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_aggregation_rule.state.deprovisioning",
-            "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to deprovisioning",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_aggregation_rule.state.provisioned",
-            "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_aggregation_rule.state.deprovisioned",
-            "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to deprovisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_aggregation_rule.state.failed",
-            "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.route_aggregation_rule.attribute.changed",
-            "description": "Route Aggregation Rule named ${route_aggregation_rule_name} attribute changed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.connection_route_aggregation.state.attaching",
-            "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attaching",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_route_aggregation.state.detaching",
-            "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to detaching",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_route_aggregation.state.attached",
-            "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attached",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_route_aggregation.state.detached",
-            "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to detached",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_route_aggregation.state.pending_bgp_configuration",
-            "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to pending_bgp_configuration",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.connection_route_aggregation.state.failed",
-            "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.routing_protocol_action.state.pending",
-            "description": "Routing Protocol Action state changed to pending",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.routing_protocol_action.state.succeeded",
-            "description": "Routing Protocol Action state changed to succeeded",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.routing_protocol_action.state.failed",
-            "description": "Routing Protocol Action state changed to failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.router_action.state.pending",
-            "description": "Router Action state changed to pending",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.router_action.state.succeeded",
-            "description": "Router Action state changed to succeeded",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.router_action.state.failed",
-            "description": "Router Action state changed to failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.router_command.state.pending",
-            "description": "Router Command state changed to pending",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.router_command.state.succeeded",
-            "description": "Router Command state changed to succeeded",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.router_command.state.failed",
-            "description": "Router Command state changed to failed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-
-        },
-        {
-            "name": "equinix.fabric.router_command.state.deleted",
-            "description": "Router Command state changed to deleted",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.tunnel.status.down",
-            "description": "Tunnel Interface ${tunnel_interface_name}: Operationally Down - Remote Peer Unreachable",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.tunnel.status.up",
-            "description": "Tunnel Interface ${tunnel_interface_name}: Operationally Up",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.tunnel_bgpipv4_session.status.idle",
-            "description": "BGP peer ${ipv4_address} (AS ${asn}) session idle",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.tunnel_bgpipv4_session.status.connect",
-            "description": "BGP peer ${ipv4_address} (AS ${asn}) session connect",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.tunnel_bgpipv4_session.status.open_sent",
-            "description": "BGP peer ${ipv4_address} (AS ${asn}) session open_sent",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.tunnel_bgpipv4_session.status.open_confirm",
-            "description": "BGP peer ${ipv4_address} (AS ${asn}) session open_confirm",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.tunnel_bgpipv4_session.status.active",
-            "description": "BGP peer ${ipv4_address} (AS ${asn}) session active",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.tunnel_bgpipv4_session.status.established",
-            "description": "BGP peer ${ipv4_address} (AS ${asn}) session established",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.tunnel_bgpipv6_session.status.idle",
-            "description": "BGP peer ${ipv6_address} (AS ${asn}) session idle",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.tunnel_bgpipv6_session.status.connect",
-            "description": "BGP peer ${ipv6_address} (AS ${asn}) session connect",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.tunnel_bgpipv6_session.status.open_sent",
-            "description": "BGP peer ${ipv6_address} (AS ${asn}) session open_sent",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.tunnel_bgpipv6_session.status.open_confirm",
-            "description": "BGP peer ${ipv6_address} (AS ${asn}) session open_confirm",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.tunnel_bgpipv6_session.status.active",
-            "description": "BGP peer ${ipv6_address} (AS ${asn}) session active",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.tunnel_bgpipv6_session.status.established",
-            "description": "BGP peer ${ipv6_address} (AS ${asn}) session established",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.company_profile.state.pending",
-            "description": "Company profile state changed to pending",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.company_profile.state.approved",
-            "description": "Company profile state changed to approved",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.company_profile.state.rejected",
-            "description": "Company profile state changed to rejected",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.company_profile.tag.attaching",
-            "description": "Company profile tag attaching",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.company_profile.tag.approved",
-            "description": "Company profile tag approved",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.company_profile.tag.rejected",
-            "description": "Company profile tag rejected",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.company_profile.tag.detached",
-            "description": "Company profile tag detached",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.company_profile.attribute.changing",
-            "description": "Company profile attribute updating",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.company_profile.attribute.approved",
-            "description": "Company profile update approved",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.company_profile.attribute.rejected",
-            "description": "Company profile update rejected",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
-        },
-        {
-            "name": "equinix.fabric.service_profile.connection.pending_approval",
-            "description": "Service Profile Connection ${connection_name} state changed to pending_approval",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.service_profile.connection.provisioned",
-            "description": "Service Profile Connection ${connection_name} state changed to provisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.service_profile.connection.deprovisioned",
-            "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+    "Auth": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The unique identifier of the entity generating the event"
+        },
+        "type": {
+          "type": "string",
+          "description": "The type of the entity generating the event"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the entity generating the event"
+        },
+        "email": {
+          "type": "string",
+          "description": "Email of the user generating the event"
+        },
+        "sourceIp": {
+          "type": "string",
+          "description": "IP address of the user generating the event"
+        },
+        "agent": {
+          "type": "string",
+          "description": "The software that made the request"
         }
-    ],
-    "metricNames": [],
-    "alertNames": []
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Auth",
+      "description": "Auth information of the generated event"
+    },
+    "Resource": {
+      "properties": {
+        "href": {
+          "type": "string",
+          "description": "Link to the resource that has generated the event"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of the resource generating the event"
+        },
+        "uuid": {
+          "type": "string",
+          "description": "Equinix assigned unique identifier of the resource generating the event"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the resource generating the event"
+        },
+        "state": {
+          "type": "string",
+          "description": "State of the resource generating the event"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the resource generating the event"
+        },
+        "change": {
+          "$ref": "#/definitions/Change",
+          "additionalProperties": true,
+          "description": "Change information for the resource that fired the event"
+        },
+        "operation": {
+          "$ref": "#/definitions/Operation",
+          "additionalProperties": true,
+          "description": "Operational status of resource that fired the event"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Resource",
+      "description": "Schema of the resource that fired the event"
+    },
+    "Change": {
+      "properties": {
+        "uuid": {
+          "type": "string",
+          "description": "Uuid of the of change for the resource target of the event"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of the change happening on the resource for the target of the event"
+        },
+        "status": {
+          "type": "string",
+          "description": "Status of the change event on the resource target"
+        },
+        "createdDateTime": {
+          "type": "string",
+          "description": "The time that the resource that fired the event was created",
+          "format": "date-time"
+        },
+        "updatedDateTime": {
+          "type": "string",
+          "description": "The time that the resource that fired the event was last updated",
+          "format": "date-time"
+        },
+        "data": {
+          "type": "array",
+          "description": "Data of the change event",
+          "items": {
+            "$ref": "#/definitions/ChangeData"
+          }
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Change",
+      "description": "Change attribute schema"
+    },
+    "ChangeData": {
+      "properties": {
+        "op": {
+          "type": "string",
+          "description": "The operation performed on the resource under change"
+        },
+        "path": {
+          "type": "string",
+          "description": "The attribute on the resource being changed"
+        },
+        "value": {
+          "type": "string",
+          "description": "The current value of the attribute under change"
+        },
+        "previousValue": {
+          "type": "string",
+          "description": "The previous value of the attribute under change"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "ChangeData",
+      "description": "ChangeData attribute schema"
+    },
+    "Operation": {
+      "properties": {
+        "operationalStatus": {
+          "type": "string",
+          "description": "Operational status for the resource target of the event"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Operation",
+      "description": "Operation attribute schema"
+    }
+  },
+  "cloudeventTypes": [
+    {
+      "name": "equinix.fabric.connection.state.pending",
+      "description": "Connection named ${connection_name} state changed to pending",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection.state.provisioning",
+      "description": "Connection named ${connection_name} state changed to provisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection.state.provisioned",
+      "description": "Connection named ${connection_name} state changed to provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection.state.reprovisioning",
+      "description": "Connection named ${connection_name} state changed to reprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection.state.deprovisioning",
+      "description": "Connection named ${connection_name} state changed to deprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection.state.deprovisioned",
+      "description": "Connection named ${connection_name} state changed to deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection.state.failed",
+      "description": "Connection named ${connection_name} state changed to failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection.attribute.changed",
+      "description": "Connection named ${connection_name} attributes are changed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection.status.up",
+      "description": "Connection '${connection_name}' status changed to UP",
+      "sloCategoryCode": "PURPLE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection.status.down",
+      "description": "Connection '${connection_name}' status changed to DOWN",
+      "sloCategoryCode": "PURPLE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv4_session.status.idle",
+      "description": "Neighbor ${IP} address session state changed to Idle",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv4_session.status.connect",
+      "description": "Neighbor ${IP} address session state changed to Connect",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv4_session.status.active",
+      "description": "Neighbor ${IP} address session state changed to Active",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv4_session.status.open_sent",
+      "description": "Neighbor ${IP} address session state changed to Open_sent",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv4_session.status.open_confirm",
+      "description": "Neighbor ${IP} address session state changed to Open_confirm",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv4_session.status.established",
+      "description": "Neighbor ${IP} address session state changed to Established",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv4_session.status.unknown",
+      "description": "Neighbor ${IP} address session state changed to Unknown",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv4_session.status.closing",
+      "description": "Neighbor ${IP} address session state changed to Closing",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv4_session.status.deleting",
+      "description": "Neighbor ${IP} address session state changed to Deleting",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv4_session.status.incomplete",
+      "description": "Neighbor ${IP} address session state changed to Incomplete",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv4_session.status.shutdown",
+      "description": "Neighbor ${IP} address session state changed to ShutDown",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv6_session.status.idle",
+      "description": "Neighbor ${IP} address session state changed to Idle",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv6_session.status.connect",
+      "description": "Neighbor ${IP} address session state changed to Connect",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv6_session.status.active",
+      "description": "Neighbor ${IP} address session state changed to Active",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv6_session.status.open_sent",
+      "description": "Neighbor ${IP} address session state changed to open_sent",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv6_session.status.open_confirm",
+      "description": "Neighbor ${IP} address session state changed to Open_confirm",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv6_session.status.established",
+      "description": "Neighbor ${IP} address session state changed to Established",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv6_session.status.unknown",
+      "description": "Neighbor ${IP} address session state changed to Unknown",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv6_session.status.closing",
+      "description": "Neighbor ${IP} address session state changed to Closing",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv6_session.status.deleting",
+      "description": "Neighbor ${IP} address session state changed to Deleting",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv6_session.status.incomplete",
+      "description": "Neighbor ${IP} address session state changed to Incomplete",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_bgpipv6_session.status.shutdown",
+      "description": "Neighbor ${IP} address session state changed to ShutDown",
+      "sloCategoryCode": "BROWN_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.network.state.provisioning",
+      "description": "Network named ${network_name} state changed to provisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.network.state.provisioned",
+      "description": "Network named ${network_name} state changed to provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.network.state.deprovisioning",
+      "description": "Network named ${network_name} state changed to deprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.network.state.deprovisioned",
+      "description": "Network named ${network_name} state changed to deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.network.attribute.changed",
+      "description": "network named ${network_name} attribute changed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.port.state.provisioning",
+      "description": "Virtual port named ${port_name} state changed to provisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.port.state.provisioned",
+      "description": "Virtual port named ${port_name} state changed to provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.port.state.deprovisioning",
+      "description": "Virtual port named ${port_name} state changed to deprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.port.state.deprovisioned",
+      "description": "Virtual port named ${port_name} state changed to deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.port.state.reprovisioning",
+      "description": "Virtual port named ${port_name} state changed to reprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.port.state.failed",
+      "description": "Virtual port named ${port_name} state changed to failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.port.state.inactive",
+      "description": "Virtual port named ${port_name} state changed to inactive",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.port.status.up",
+      "description": "Virtual port '${port_name}' status changed to UP",
+      "sloCategoryCode": "PURPLE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.port.status.inactive",
+      "description": "Virtual port '${port_name}' status changed to INACTIVE",
+      "sloCategoryCode": "PURPLE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.port.status.down",
+      "description": "Virtual port '${port_name}' status changed to DOWN",
+      "sloCategoryCode": "PURPLE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.physical_port.status.up",
+      "description": "Physical port '${port_name}' status changed to UP",
+      "sloCategoryCode": "PURPLE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.physical_port.status.down",
+      "description": "Physical port '${port_name}' status changed to DOWN",
+      "sloCategoryCode": "PURPLE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.physical_port.state.provisioning",
+      "description": "Physical port ${port_id} state changed to provisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.physical_port.state.pending_cross_connect",
+      "description": "Physical port ${port_id} state changed to pending_cross_connect",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.physical_port.state.provisioned",
+      "description": "Physical port ${port_id} state changed to provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.physical_port.state.deprovisioning",
+      "description": "Physical port ${port_id} state changed to deprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.physical_port.state.deprovisioned",
+      "description": "Physical port ${port_id} state changed to deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.physical_port.state.failed",
+      "description": "Physical port ${port_id} state changed to failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router.state.provisioning",
+      "description": "Router named ${router_name} state changed to provisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router.state.provisioned",
+      "description": "Router named ${router_name} successfully provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router.state.reprovisioning",
+      "description": "Router named ${router_name} state changed to reprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router.state.deprovisioning",
+      "description": "Router named ${router_name} state changed to deprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router.state.deprovisioned",
+      "description": "Router named ${router_name} successfully deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router.state.failed",
+      "description": "Router named ${router_name} state changed to failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router.state.not_provisioned",
+      "description": "Router named ${router_name} state changed to not_provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router.state.not_deprovisioned",
+      "description": "Router named ${router_name} state changed to not_deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.service_token.state.active",
+      "description": "Token successfully activated",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router.attribute.changed",
+      "description": "Router named ${router_name} attribute changed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.service_token.state.inactive",
+      "description": "Token successfully deactivated",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.service_token.state.deleted",
+      "description": "Token successfully deleted",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.service_token.state.expired",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "description": "Token expired",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.service_token.attribute.changed",
+      "description": "Token successfully updated",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.service_token.resend_email_notification.succeeded",
+      "description": "Token resend email notification succeeded",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.service_token.resend_email_notification.failed",
+      "description": "Token resend email notification failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.internet_access.state.provisioning",
+      "description": "Internet access service provisioning started",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.internet_access.state.provisioned",
+      "description": "Internet access service provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.internet_access.state.deprovisioning",
+      "description": "Internet access service de-provisioning started",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.internet_access.state.deprovisioned",
+      "description": "Internet access service de-provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.internet_access.state.failed",
+      "description": "Internet access service provisioning or de-provisioning failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.internet_access.attribute.changed",
+      "description": "Internet access service changed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.internet_access.attribute.changing",
+      "description": "Internet access service changing",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.internet_access.attribute.failed",
+      "description": "Internet access service changed failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.ip_block.state.provisioning",
+      "description": "Ip Block provisioning started",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.ip_block.state.provisioned",
+      "description": "Ip Block provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.ip_block.state.deprovisioning",
+      "description": "Ip Block deprovisioning started",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.ip_block.state.deprovisioned",
+      "description": "Ip Block deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.ip_block.state.failed",
+      "description": "Ip Block provisioning or deprovisioning failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.connection_routing_protocol.state.provisioning",
+      "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_routing_protocol.state.reprovisioning",
+      "description": "Routing Protocol named ${routing_protocol_name} state changed to reprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_routing_protocol.state.deprovisioning",
+      "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_routing_protocol.state.provisioned",
+      "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_routing_protocol.state.deprovisioned",
+      "description": "Routing Protocol named ${routing_protocol_name} state changed to deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_routing_protocol.state.failed",
+      "description": "Routing Protocol named ${routing_protocol_name} state changed to failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_filter.state.provisioning",
+      "description": "Route Filter named ${route_filter_name} state changed to provisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_filter.state.reprovisioning",
+      "description": "Route Filter named ${route_filter_name} state changed to reprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_filter.state.deprovisioning",
+      "description": "Route Filter named ${route_filter_name} state changed to deprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_filter.state.provisioned",
+      "description": "Route Filter named ${route_filter_name} state changed to provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_filter.state.deprovisioned",
+      "description": "Route Filter named ${route_filter_name} state changed to deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_filter.state.not_provisioned",
+      "description": "Route Filter named ${route_filter_name} state changed to not_provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_filter.state.not_deprovisioned",
+      "description": "Route Filter named ${route_filter_name} state changed to not_deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_filter.attribute.changed",
+      "description": "Route Filter named ${route_filter_name} attribute changed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.route_filter_rule.state.provisioning",
+      "description": "Route Filter Rule named ${route_filter_rule_name} state changed to provisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_filter_rule.state.reprovisioning",
+      "description": "Route Filter Rule named ${route_filter_rule_name} state changed to reprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_filter_rule.state.deprovisioning",
+      "description": "Route Filter Rule named ${route_filter_rule_name} state changed to deprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_filter_rule.state.provisioned",
+      "description": "Route Filter Rule named ${route_filter_rule_name} state changed to provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_filter_rule.state.deprovisioned",
+      "description": "Route Filter Rule named ${route_filter_rule_name} state changed to deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_filter_rule.state.failed",
+      "description": "Route Filter Rule named ${route_filter_rule_name} state changed to failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_filter_rule.attribute.changed",
+      "description": "Route Filter Rule named ${route_filter_rule_name} attribute changed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.connection_route_filter.state.attaching",
+      "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to attaching",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_route_filter.state.detaching",
+      "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to detaching",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_route_filter.state.attached",
+      "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to attached",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_route_filter.state.detached",
+      "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to detached",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_route_filter.state.pending_bgp_configuration",
+      "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to pending_bgp_configuration",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_route_filter.state.failed",
+      "description": "Connection Route Filter named ${route_filter_rule_name} attachment status changed to failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_aggregation.state.provisioning",
+      "description": "Route Aggregation named ${route_aggregation_name} state changed to provisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_aggregation.state.reprovisioning",
+      "description": "Route Aggregation named ${route_aggregation_name} state changed to reprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_aggregation.state.deprovisioning",
+      "description": "Route Aggregation named ${route_aggregation_name} state changed to deprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_aggregation.state.provisioned",
+      "description": "Route Aggregation named ${route_aggregation_name} state changed to provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_aggregation.state.deprovisioned",
+      "description": "Route Aggregation named ${route_aggregation_name} state changed to deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_aggregation.state.not_provisioned",
+      "description": "Route Aggregation named ${route_aggregation_name} state changed to not_provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_aggregation.state.not_deprovisioned",
+      "description": "Route Aggregation named ${route_aggregation_name} state changed to not_deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_aggregation.attribute.changed",
+      "description": "Route Aggregation named ${route_aggregation_name} attribute changed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.route_aggregation_rule.state.provisioning",
+      "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to provisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_aggregation_rule.state.reprovisioning",
+      "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to reprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_aggregation_rule.state.deprovisioning",
+      "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to deprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_aggregation_rule.state.provisioned",
+      "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_aggregation_rule.state.deprovisioned",
+      "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_aggregation_rule.state.failed",
+      "description": "Route Aggregation Rule named ${route_aggregation_rule_name} state changed to failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.route_aggregation_rule.attribute.changed",
+      "description": "Route Aggregation Rule named ${route_aggregation_rule_name} attribute changed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.connection_route_aggregation.state.attaching",
+      "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attaching",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_route_aggregation.state.detaching",
+      "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to detaching",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_route_aggregation.state.attached",
+      "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attached",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_route_aggregation.state.detached",
+      "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to detached",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_route_aggregation.state.pending_bgp_configuration",
+      "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to pending_bgp_configuration",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.connection_route_aggregation.state.failed",
+      "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.routing_protocol_action.state.pending",
+      "description": "Routing Protocol Action state changed to pending",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.routing_protocol_action.state.succeeded",
+      "description": "Routing Protocol Action state changed to succeeded",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.routing_protocol_action.state.failed",
+      "description": "Routing Protocol Action state changed to failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router_action.state.pending",
+      "description": "Router Action state changed to pending",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router_action.state.succeeded",
+      "description": "Router Action state changed to succeeded",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router_action.state.failed",
+      "description": "Router Action state changed to failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router_command.state.pending",
+      "description": "Router Command state changed to pending",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router_command.state.succeeded",
+      "description": "Router Command state changed to succeeded",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router_command.state.failed",
+      "description": "Router Command state changed to failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.router_command.state.deleted",
+      "description": "Router Command state changed to deleted",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.tunnel.status.down",
+      "description": "Tunnel Interface ${tunnel_interface_name}: Operationally Down - Remote Peer Unreachable",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.tunnel.status.up",
+      "description": "Tunnel Interface ${tunnel_interface_name}: Operationally Up",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.tunnel_bgpipv4_session.status.idle",
+      "description": "BGP peer ${ipv4_address} (AS ${asn}) session idle",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.tunnel_bgpipv4_session.status.connect",
+      "description": "BGP peer ${ipv4_address} (AS ${asn}) session connect",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.tunnel_bgpipv4_session.status.open_sent",
+      "description": "BGP peer ${ipv4_address} (AS ${asn}) session open_sent",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.tunnel_bgpipv4_session.status.open_confirm",
+      "description": "BGP peer ${ipv4_address} (AS ${asn}) session open_confirm",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.tunnel_bgpipv4_session.status.active",
+      "description": "BGP peer ${ipv4_address} (AS ${asn}) session active",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.tunnel_bgpipv4_session.status.established",
+      "description": "BGP peer ${ipv4_address} (AS ${asn}) session established",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.tunnel_bgpipv6_session.status.idle",
+      "description": "BGP peer ${ipv6_address} (AS ${asn}) session idle",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.tunnel_bgpipv6_session.status.connect",
+      "description": "BGP peer ${ipv6_address} (AS ${asn}) session connect",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.tunnel_bgpipv6_session.status.open_sent",
+      "description": "BGP peer ${ipv6_address} (AS ${asn}) session open_sent",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.tunnel_bgpipv6_session.status.open_confirm",
+      "description": "BGP peer ${ipv6_address} (AS ${asn}) session open_confirm",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.tunnel_bgpipv6_session.status.active",
+      "description": "BGP peer ${ipv6_address} (AS ${asn}) session active",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.tunnel_bgpipv6_session.status.established",
+      "description": "BGP peer ${ipv6_address} (AS ${asn}) session established",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.company_profile.state.pending",
+      "description": "Company profile state changed to pending",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.company_profile.state.approved",
+      "description": "Company profile state changed to approved",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.company_profile.state.rejected",
+      "description": "Company profile state changed to rejected",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.company_profile.tag.attaching",
+      "description": "Company profile tag attaching",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.company_profile.tag.approved",
+      "description": "Company profile tag approved",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.company_profile.tag.rejected",
+      "description": "Company profile tag rejected",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.company_profile.tag.detached",
+      "description": "Company profile tag detached",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.company_profile.attribute.changing",
+      "description": "Company profile attribute updating",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.company_profile.attribute.approved",
+      "description": "Company profile update approved",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.company_profile.attribute.rejected",
+      "description": "Company profile update rejected",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.fabric.service_profile.connection.pending_approval",
+      "description": "Service Profile Connection ${connection_name} state changed to pending_approval",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.service_profile.connection.provisioned",
+      "description": "Service Profile Connection ${connection_name} state changed to provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.service_profile.connection.deprovisioned",
+      "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_subscription.state.provisioning",
+      "description": "Application Subscription is provisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_subscription.state.provisioned",
+      "description": "Application Subscription is provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_subscription.state.provisioning_failed",
+      "description": "Application Subscription provisioning failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_subscription.state.deprovisioning",
+      "description": "Application Subscription is deprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_subscription.state.deprovisioned",
+      "description": "Application Subscription is deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_subscription.state.deprovisioning_failed",
+      "description": "Application Subscription deprovisioning failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_domain.state.pending_verification",
+      "description": "Application Domain verification is pending",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_domain.state.provisioned",
+      "description": "Application Domain is provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_domain.state.deprovisioned",
+      "description": "Application Domain is deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_domain.state.provisioning_failed",
+      "description": "Application Domain provisioning failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_domain.state.deprovisioning_failed",
+      "description": "Application Domain deprovisioning failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_link.state.provisioning",
+      "description": "Application Link is provisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_link.state.provisioned",
+      "description": "Application Link is provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_link.state.provisioning_failed",
+      "description": "Application Link provisioning failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_link.state.deprovisioning",
+      "description": "Application Link is deprovisioning",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_link.state.deprovisioned",
+      "description": "Application Link is deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_link.state.deprovisioning_failed",
+      "description": "Application Link deprovisioning failed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_service.state.provisioned",
+      "description": "Application Service is provisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.app_service.state.deprovisioned",
+      "description": "Application Service is deprovisioned",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    }
+  ],
+  "metricNames": [],
+  "alertNames": []
 }
