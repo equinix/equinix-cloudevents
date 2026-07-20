@@ -1,10 +1,10 @@
 {
-  "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json",
-  "name": "Incident",
+  "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network/v1/NotificationEvent.json",
+  "name": "Notification Event",
   "examples": [],
-  "package": "equinix.fabric.v1",
-  "datatype": "equinix.fabric.v1.Incident",
-  "domain": "Equinix Fabric Incident",
+  "package": "equinix.network.v1",
+  "datatype": "equinix.network.v1.Notification Event",
+  "domain": "Equinix Network Notification Event",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "$ref": "#/definitions/Data",
   "definitions": {
@@ -17,18 +17,18 @@
         },
         "message": {
           "type": "string",
-          "description": "Supporting message describing the incident event"
+          "description": "Supporting message describing the notification event"
         },
         "auth": {
           "$ref": "#/definitions/Auth",
           "additionalProperties": true,
-          "description": "The auth context within all incident event"
+          "description": "The auth context within all notification event"
         }
       },
       "additionalProperties": true,
       "type": "object",
-      "title": "Incident Event Data",
-      "description": "The data within all Incident events"
+      "title": "Notification Event Data",
+      "description": "The data within all Notification Events"
     },
     "Auth": {
       "properties": {
@@ -40,45 +40,45 @@
       "additionalProperties": true,
       "type": "object",
       "title": "Auth",
-      "description": "Auth information of the generated Incident event"
+      "description": "Auth information of the generated Notification Event"
     },
     "Resource": {
       "properties": {
         "type": {
           "type": "string",
-          "description": "Type of the incident (e.g., maintenance or repair)"
+          "description": "Type of the notification event (e.g., maintenance or repair)"
         },
         "uuid": {
           "type": "string",
-          "description": "Equinix assigned unique identifier of the incident"
+          "description": "Equinix assigned unique identifier of the notification event"
         },
         "state": {
           "type": "string",
-          "description": "State of the maintenance/repair incident"
+          "description": "State of the maintenance/repair notification event"
         },
         "description": {
           "type": "string",
-          "description": "Description of the maintenance/repair incident"
+          "description": "Description of the maintenance/repair notification event"
         },
         "servicerId": {
           "type": "string",
-          "description": "Servicer ID for the maintenance/repair incident"
+          "description": "Servicer ID for the maintenance/repair notification event"
         },
         "startDateTime": {
           "type": "string",
-          "description": "Start date and time of the maintenance/repair incident"
+          "description": "Start date and time of the maintenance/repair notification event"
         },
         "endDateTime": {
           "type": "string",
-          "description": "End date and time of the maintenance/repair incident"
+          "description": "End date and time of the maintenance/repair notification event"
         },
         "accountNumber": {
           "type": "string",
-          "description": "Account number associated with the maintenance/repair incident"
+          "description": "Account number associated with the maintenance/repair notification event"
         },
         "impact": {
           "type": "string",
-          "description": "Impact of the maintenance/repair incident"
+          "description": "Impact of the maintenance/repair notification event"
         },
         "prodID": {
           "type": "string",
@@ -86,40 +86,40 @@
         },
         "organizer": {
           "type": "string",
-          "description": "Organizer of the maintenance/repair incident"
+          "description": "Organizer of the maintenance/repair notification event"
         },
         "assets": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/Asset"
           },
-          "description": "List of assets affected by the maintenance/repair incident"
+          "description": "List of assets affected by the maintenance/repair notification event"
         }
       },
       "additionalProperties": true,
       "type": "object",
       "title": "Resource",
-      "description": "Schema of the resource that fired the incident event"
+      "description": "Schema of the resource that fired the notification event"
     },
     "Asset": {
       "properties": {
         "href": {
           "type": "string",
-          "description": "Link to the asset affected by the maintenance/repair incident"
+          "description": "Link to the asset affected by the maintenance/repair notification event"
         },
         "type": {
           "type": "string",
-          "description": "Type of the asset affected by the maintenance/repair incident"
+          "description": "Type of the asset affected by the maintenance/repair notification event"
         },
         "uuid": {
           "type": "string",
-          "description": "Unique identifier of the asset affected by the maintenance/repair incident"
+          "description": "Unique identifier of the asset affected by the maintenance/repair notification event"
         }
       },
       "additionalProperties": true,
       "type": "object",
       "title": "Asset",
-      "description": "Schema of an asset affected by the maintenance/repair incident"
+      "description": "Schema of an asset affected by the maintenance/repair notification event"
     }
   },
   "cloudeventTypes": [
