@@ -703,6 +703,16 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.service_profile.connection.deprovisioned",
+                "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.service_profile.connection.provisioned",
+                "description": "Service Profile Connection ${connection_name} state changed to provisioned",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.service_token.attribute.changed",
                 "description": "Token successfully updated",
                 "releaseStatus": "released"
@@ -808,18 +818,13 @@
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.service_profile.connection.deprovisioned",
-                "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
+                "name": "equinix.fabric.service_profile.connection.failed",
+                "description": "Service Profile Connection ${connection_name} state changed to failed",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.service_profile.connection.pending_approval",
-                "description": "Service Profile Connection ${connection_name} state changed to pending_approval",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.service_profile.connection.provisioned",
-                "description": "Service Profile Connection ${connection_name} state changed to provisioned",
+                "name": "equinix.fabric.service_profile.connection.pending",
+                "description": "Service Profile Connection ${connection_name} state changed to pending",
                 "releaseStatus": "preview"
             },
             {
