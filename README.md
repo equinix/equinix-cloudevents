@@ -971,6 +971,12 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.service_profile.connection.failed</td>
+		<td>Service Profile Connection ${connection_name} state changed to failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.service_profile.connection.pending</td>
 		<td>Service Profile Connection ${connection_name} state changed to pending</td>
 		<td>preview</td>
@@ -982,11 +988,6 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
-	<tr>
-		<td>equinix.fabric.service_profile.connection.failed</td>
-		<td>Service Profile Connection ${connection_name} state changed to failed</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	<tr>
 		<td>equinix.fabric.service_token.attribute.changed</td>
 		<td>Token successfully updated</td>
