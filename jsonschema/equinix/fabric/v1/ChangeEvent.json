@@ -1175,6 +1175,24 @@
             "description": "Company profile update rejected",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.service_profile.connection.pending_approval",
+            "description": "Service Profile Connection ${connection_name} state changed to pending_approval",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.service_profile.connection.provisioned",
+            "description": "Service Profile Connection ${connection_name} state changed to provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.service_profile.connection.deprovisioned",
+            "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
         }
     ],
     "metricNames": [],
