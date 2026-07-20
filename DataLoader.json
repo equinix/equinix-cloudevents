@@ -738,56 +738,6 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.network.maintenance.state.cancelled",
-                "description": "Network maintenance state changed to cancelled",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.maintenance.state.completed",
-                "description": "Network maintenance state changed to completed",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.maintenance.state.confirmed",
-                "description": "Network maintenance state changed to confirmed",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.maintenance.state.extended",
-                "description": "Network maintenance state changed to extended",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.maintenance.state.rescheduled",
-                "description": "Network maintenance state changed to rescheduled",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.repair.state.cancelled",
-                "description": "Network repair state changed to cancelled",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.repair.state.confirmed",
-                "description": "Network repair state changed to confirmed",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.repair.state.in_progress",
-                "description": "Network repair state changed to in_progress",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.repair.state.rescheduled",
-                "description": "Network repair state changed to rescheduled",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.repair.state.resolved",
-                "description": "Network repair state changed to resolved",
-                "releaseStatus": "released"
-            },
-            {
                 "name": "equinix.fabric.ip_block.state.deprovisioned",
                 "description": "Ip Block deprovisioned",
                 "releaseStatus": "preview"
@@ -900,16 +850,6 @@
             {
                 "name": "equinix.fabric.tunnel_bgpipv6_session.status.open_sent",
                 "description": "BGP peer ${ipv6_address} (AS ${asn}) session open_sent",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.maintenance.state.in_progress",
-                "description": "Network maintenance state changed to in_progress",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.repair.state.completed",
-                "description": "Network repair state changed to completed",
                 "releaseStatus": "preview"
             }
         ],
@@ -2495,6 +2435,72 @@
             {
                 "name": "equinix.fabric.metro_connect.state.reprovisioning",
                 "description": "Metro Connect is reprovisioning",
+                "releaseStatus": "preview"
+            }
+        ],
+        "metricNames": [],
+        "alertNames": []
+    },
+    "network": {
+        "cloudeventTypes": [
+            {
+                "name": "equinix.network.maintenance.state.cancelled",
+                "description": "Network maintenance state changed to cancelled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.maintenance.state.completed",
+                "description": "Network maintenance state changed to completed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.maintenance.state.confirmed",
+                "description": "Network maintenance state changed to confirmed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.maintenance.state.extended",
+                "description": "Network maintenance state changed to extended",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.maintenance.state.rescheduled",
+                "description": "Network maintenance state changed to rescheduled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.cancelled",
+                "description": "Network repair state changed to cancelled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.confirmed",
+                "description": "Network repair state changed to confirmed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.in_progress",
+                "description": "Network repair state changed to in_progress",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.rescheduled",
+                "description": "Network repair state changed to rescheduled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.resolved",
+                "description": "Network repair state changed to resolved",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.maintenance.state.in_progress",
+                "description": "Network maintenance state changed to in_progress",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.repair.state.completed",
+                "description": "Network repair state changed to completed",
                 "releaseStatus": "preview"
             }
         ],
