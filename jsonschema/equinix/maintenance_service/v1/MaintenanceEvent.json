@@ -1,74 +1,7 @@
 {
     "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/maintenance_service/v1/MaintenanceEvent.json",
     "name": "MaintenanceEvent",
-    "examples": [
-        {
-            "specversion": "1.0",
-            "source": "https://api.equinix.com/fabric/v4/cloudevents",
-            "id": "6c573287-9914-4202-8b6d-2d15e7da04b8",
-            "type": "equinix.fabric.port_maintenance.state.scheduled",
-            "subject": "/fabric/v4/ports/956a86fb-d03d-436c-8d5d-30d1f51f7688/maintenances/856a86fb-d03d-436c-8d5d-30d1f51f7688",
-            "time": "2026-06-11T18:06:21.000Z",
-            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/maintenance_service/v1/MaintenanceEvent.json",
-            "datacontenttype": "application/json",
-            "severitynumber": "9",
-            "severitytext": "INFO",
-            "equinixalert": "clear/NCAB543WC4lrLpET8nLX4Vm8",
-            "equinixproject": "b11d4cb5-978a-418a-8b13-bf19abb97938",
-            "equinixtags": "Env=Prod,Team=IT,Type=Maintenance",
-            "data": {
-                "message": "Virtual port 'Test-Port' maintenance scheduled from 2026-06-29 05:30:00 to 2026-06-29 15:30:00.",
-                "resource": {
-                    "href": "https://api.equinix.com/fabric/v4/ports/956a86fb-d03d-436c-8d5d-30d1f51f7688/maintenances/856a86fb-d03d-436c-8d5d-30d1f51f7688",
-                    "uuid": "856a86fb-d03d-436c-8d5d-30d1f51f7688",
-                    "type": "XF_MAINTENANCE",
-                    "state": "SCHEDULED",
-                    "description": "Scheduled maintenance for Test-Port",
-                    "port": {
-                        "uuid": "956a86fb-d03d-436c-8d5d-30d1f51f7688",
-                        "href": "https://api.equinix.com/fabric/v4/ports/956a86fb-d03d-436c-8d5d-30d1f51f7688"
-                    },
-                    "incidentRefId": "CR1234567890",
-                    "startDateTime": "2026-06-29 05:30:00",
-                    "duration": "PT8H",
-                    "batchUuid": "656a86fb-d03d-436c-8d5d-30d1f51f7688"
-                }
-            }
-        },
-        {
-            "specversion": "1.0",
-            "source": "https://api.equinix.com/fabric/v4/cloudevents",
-            "id": "7d684398-0025-5313-9c7e-3e26f8ec755c",
-            "type": "equinix.fabric.connection_maintenance.state.scheduled",
-            "subject": "/fabric/v4/connections/956a86fb-d03d-436c-8d5d-30d1f51f7688/maintenances/856a86fb-d03d-436c-8d5d-30d1f51f7688",
-            "time": "2026-06-11T18:06:21.000Z",
-            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/maintenance_service/v1/MaintenanceEvent.json",
-            "datacontenttype": "application/json",
-            "severitynumber": "9",
-            "severitytext": "INFO",
-            "equinixalert": "clear/NCAB543WC4lrLpET8nLX4Vm8",
-            "equinixproject": "b11d4cb5-978a-418a-8b13-bf19abb97938",
-            "equinixtags": "Env=Prod,Team=IT,Type=Maintenance",
-            "data": {
-                "message": "Connection 'Test-Connection' maintenance scheduled from 2026-06-29 05:30:00 to 2026-06-29 15:30:00.",
-                "resource": {
-                    "href": "https://api.equinix.com/fabric/v4/connections/956a86fb-d03d-436c-8d5d-30d1f51f7688/maintenances/856a86fb-d03d-436c-8d5d-30d1f51f7688",
-                    "uuid": "856a86fb-d03d-436c-8d5d-30d1f51f7688",
-                    "type": "XF_MAINTENANCE",
-                    "state": "SCHEDULED",
-                    "description": "Scheduled maintenance for Test-Connection",
-                    "connection": {
-                        "uuid": "956a86fb-d03d-436c-8d5d-30d1f51f7688",
-                        "href": "https://api.equinix.com/fabric/v4/connections/956a86fb-d03d-436c-8d5d-30d1f51f7688"
-                    },
-                    "incidentRefId": "CR1234567890",
-                    "startDateTime": "2026-06-29 05:30:00",
-                    "duration": "PT8H",
-                    "batchUuid": "656a86fb-d03d-436c-8d5d-30d1f51f7688"
-                }
-            }
-        }
-    ],
+    "examples": [],
     "package": "equinix.maintenance_service.v1",
     "datatype": "equinix.maintenance_service.v1.MaintenanceEvent",
     "domain": "Equinix Maintenance Service MaintenanceEvent",
