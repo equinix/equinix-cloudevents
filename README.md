@@ -1246,6 +1246,97 @@ The following data payloads are the supported events and formats for Equinix Net
 
 
 ---
+### Equinix Fabric Incident
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json)
+#### Data Type
+`equinix.fabric.v1.Incident`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.network.maintenance.state.cancelled</td>
+		<td>Network maintenance state changed to cancelled</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network.maintenance.state.completed</td>
+		<td>Network maintenance state changed to completed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network.maintenance.state.confirmed</td>
+		<td>Network maintenance state changed to confirmed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network.maintenance.state.extended</td>
+		<td>Network maintenance state changed to extended</td>
+		<td>preview</td>
+	<td>-</td>
+	</tr>
+	<tr>
+		<td>equinix.network.maintenance.state.in_progress</td>
+		<td>Network maintenance state changed to in_progress</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network.maintenance.state.rescheduled</td>
+		<td>Network maintenance state changed to rescheduled</td>
+		<td>preview</td>
+	<td>-</td>
+	</tr>
+	<tr>
+		<td>equinix.network.repair.state.cancelled</td>
+		<td>Network repair state changed to cancelled</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network.repair.state.completed</td>
+		<td>Network repair state changed to completed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network.repair.state.confirmed</td>
+		<td>Network repair state changed to confirmed</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network.repair.state.in_progress</td>
+		<td>Network repair state changed to in_progress</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network.repair.state.rescheduled</td>
+		<td>Network repair state changed to rescheduled</td>
+		<td>released</td>
+	<td>-</td>
+	</tr>
+	<tr>
+		<td>equinix.network.repair.state.resolved</td>
+		<td>Network repair state changed to resolved</td>
+		<td>released</td>
+	<td>-</td>
+	</tr>
+</table>
+
+
+
+---
 ### Equinix Fabric MetricAlert
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricAlert.json)
 #### Data Type
