@@ -714,20 +714,8 @@
             "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.asn.attribute.changing",
-            "description": "ASN changing",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
             "name": "equinix.fabric.asn.attribute.changed",
             "description": "ASN changed",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.asn.attribute.failed",
-            "description": "ASN change failed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "preview"
         },
