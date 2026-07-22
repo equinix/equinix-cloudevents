@@ -2638,6 +2638,16 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.network_edge.devicelinkgroup.state.deprovisioned",
+                "description": "Network edge device link group is deprovisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network_edge.devicelinkgroup.state.provisioned",
+                "description": "Network edge device link group is provisioned",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.network_edge.devicelinkgroup.state.updated",
                 "description": "Network edge device link group is updated",
                 "releaseStatus": "released"
