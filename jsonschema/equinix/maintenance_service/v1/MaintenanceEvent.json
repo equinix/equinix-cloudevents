@@ -62,8 +62,8 @@
                         "href": "https://api.equinix.com/fabric/v4/connections/956a86fb-d03d-436c-8d5d-30d1f51f7688"
                     },
                     "calledByCloudEvent": {
-                        "href": "https://api.equinix.com/fabric/v4/ports/956a86fb-d03d-436c-8d5d-30d1f51f7688/maintenances/c791f8cb-5d21-d210-8ce0-306a5c00a4ee",
-                        "uuid": "c791f8cb-5d21-d210-8ce0-306a5c00a4ee"
+                        "href": "https://api.equinix.com/fabric/v4/ports/956a86fb-d03d-436c-8d5d-30d1f51f7688/maintenances/956a86fb-d03d-436c-8d5d-30d1f51f7688",
+                        "uuid": "7422dece-3c6f-4f99-acf2-b717e96f78b4"
                     },
                     "incidentRefId": "CR1234567890",
                     "startDateTime": "2026-06-29 05:30:00",
