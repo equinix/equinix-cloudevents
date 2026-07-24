@@ -1021,41 +1021,6 @@
                 "name": "equinix.fabric.tunnel_bgpipv6_session.status.open_sent",
                 "description": "BGP peer ${ipv6_address} (AS ${asn}) session open_sent",
                 "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.maintenance.state.cancelled",
-                "description": "Network maintenance state changed to cancelled",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.maintenance.state.completed",
-                "description": "Network maintenance state changed to completed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.maintenance.state.confirmed",
-                "description": "Network maintenance state changed to confirmed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.maintenance.state.extended",
-                "description": "Network maintenance state changed to extended",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.maintenance.state.in_progress",
-                "description": "Network maintenance state changed to in_progress",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.maintenance.state.rescheduled",
-                "description": "Network maintenance state changed to rescheduled",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.repair.state.completed",
-                "description": "Network repair state changed to completed",
-                "releaseStatus": "preview"
             }
         ],
         "metricNames": [
@@ -2564,6 +2529,47 @@
             {
                 "name": "equinix.identity.user.email.changed",
                 "description": "User changed email address",
+                "releaseStatus": "preview"
+            }
+        ],
+        "metricNames": [],
+        "alertNames": []
+    },
+    "network": {
+        "cloudeventTypes": [
+            {
+                "name": "equinix.network.maintenance.state.cancelled",
+                "description": "Network maintenance state changed to cancelled",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.maintenance.state.completed",
+                "description": "Network maintenance state changed to completed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.maintenance.state.confirmed",
+                "description": "Network maintenance state changed to confirmed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.maintenance.state.extended",
+                "description": "Network maintenance state changed to extended",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.maintenance.state.in_progress",
+                "description": "Network maintenance state changed to in_progress",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.maintenance.state.rescheduled",
+                "description": "Network maintenance state changed to rescheduled",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network.repair.state.completed",
+                "description": "Network repair state changed to completed",
                 "releaseStatus": "preview"
             }
         ],
