@@ -703,6 +703,16 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.service_profile.connection.deprovisioned",
+                "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.service_profile.connection.provisioned",
+                "description": "Service Profile Connection ${connection_name} state changed to provisioned",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.service_token.attribute.changed",
                 "description": "Token successfully updated",
                 "releaseStatus": "released"
@@ -763,6 +773,131 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.app_domain.state.deprovisioned",
+                "description": "Application Domain is deprovisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_domain.state.deprovisioning_failed",
+                "description": "Application Domain deprovisioning failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_domain.state.pending_verification",
+                "description": "Application Domain verification is pending",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_domain.state.provisioned",
+                "description": "Application Domain is provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_domain.state.provisioning_failed",
+                "description": "Application Domain provisioning failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_link.state.deprovisioned",
+                "description": "Application Link is deprovisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_link.state.deprovisioning",
+                "description": "Application Link is deprovisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_link.state.deprovisioning_failed",
+                "description": "Application Link deprovisioning failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_link.state.provisioned",
+                "description": "Application Link is provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_link.state.provisioning",
+                "description": "Application Link is provisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_link.state.provisioning_failed",
+                "description": "Application Link provisioning failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_service.state.deprovisioned",
+                "description": "Application Service is deprovisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_service.state.provisioned",
+                "description": "Application Service is provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_subscription.state.deprovisioned",
+                "description": "Application Subscription is deprovisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_subscription.state.deprovisioning",
+                "description": "Application Subscription is deprovisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_subscription.state.deprovisioning_failed",
+                "description": "Application Subscription deprovisioning failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_subscription.state.provisioned",
+                "description": "Application Subscription is provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_subscription.state.provisioning",
+                "description": "Application Subscription is provisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.app_subscription.state.provisioning_failed",
+                "description": "Application Subscription provisioning failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.asn.attribute.changed",
+                "description": "ASN changed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.asn.state.deprovisioned",
+                "description": "ASN de-provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.asn.state.deprovisioning",
+                "description": "ASN de-provisioning started",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.asn.state.failed",
+                "description": "ASN provisioning or de-provisioning failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.asn.state.provisioned",
+                "description": "ASN provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.asn.state.provisioning",
+                "description": "ASN provisioning started",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.ip_block.state.deprovisioned",
                 "description": "Ip Block deprovisioned",
                 "releaseStatus": "preview"
@@ -808,18 +943,13 @@
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.service_profile.connection.deprovisioned",
-                "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
+                "name": "equinix.fabric.service_profile.connection.failed",
+                "description": "Service Profile Connection ${connection_name} state changed to failed",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.service_profile.connection.pending_approval",
-                "description": "Service Profile Connection ${connection_name} state changed to pending_approval",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.service_profile.connection.provisioned",
-                "description": "Service Profile Connection ${connection_name} state changed to provisioned",
+                "name": "equinix.fabric.service_profile.connection.pending",
+                "description": "Service Profile Connection ${connection_name} state changed to pending",
                 "releaseStatus": "preview"
             },
             {
@@ -890,41 +1020,6 @@
             {
                 "name": "equinix.fabric.tunnel_bgpipv6_session.status.open_sent",
                 "description": "BGP peer ${ipv6_address} (AS ${asn}) session open_sent",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.maintenance.state.cancelled",
-                "description": "Network maintenance state changed to cancelled",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.maintenance.state.completed",
-                "description": "Network maintenance state changed to completed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.maintenance.state.confirmed",
-                "description": "Network maintenance state changed to confirmed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.maintenance.state.extended",
-                "description": "Network maintenance state changed to extended",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.maintenance.state.in_progress",
-                "description": "Network maintenance state changed to in_progress",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.maintenance.state.rescheduled",
-                "description": "Network maintenance state changed to rescheduled",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.repair.state.completed",
-                "description": "Network repair state changed to completed",
                 "releaseStatus": "preview"
             }
         ],
@@ -2440,66 +2535,41 @@
         "metricNames": [],
         "alertNames": []
     },
-    "maintenance_service": {
+    "network": {
         "cloudeventTypes": [
             {
-                "name": "equinix.fabric.connection_maintenance.state.cancelled",
-                "description": "Connection maintenance is cancelled",
+                "name": "equinix.network.maintenance.state.cancelled",
+                "description": "Network maintenance state changed to cancelled",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection_maintenance.state.completed",
-                "description": "Connection maintenance is completed",
+                "name": "equinix.network.maintenance.state.completed",
+                "description": "Network maintenance state changed to completed",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection_maintenance.state.deferred",
-                "description": "Connection maintenance is deferred",
+                "name": "equinix.network.maintenance.state.confirmed",
+                "description": "Network maintenance state changed to confirmed",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection_maintenance.state.failed",
-                "description": "Connection maintenance has failed",
+                "name": "equinix.network.maintenance.state.extended",
+                "description": "Network maintenance state changed to extended",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection_maintenance.state.in_progress",
-                "description": "Connection maintenance is in progress",
+                "name": "equinix.network.maintenance.state.in_progress",
+                "description": "Network maintenance state changed to in_progress",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection_maintenance.state.scheduled",
-                "description": "Connection maintenance is scheduled",
+                "name": "equinix.network.maintenance.state.rescheduled",
+                "description": "Network maintenance state changed to rescheduled",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.port_maintenance.state.cancelled",
-                "description": "Port maintenance is cancelled",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port_maintenance.state.completed",
-                "description": "Port maintenance is completed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port_maintenance.state.deferred",
-                "description": "Port maintenance is deferred",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port_maintenance.state.failed",
-                "description": "Port maintenance has failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port_maintenance.state.in_progress",
-                "description": "Port maintenance is in progress",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port_maintenance.state.scheduled",
-                "description": "Port maintenance is scheduled",
+                "name": "equinix.network.repair.state.completed",
+                "description": "Network repair state changed to completed",
                 "releaseStatus": "preview"
             }
         ],
@@ -2571,6 +2641,16 @@
             {
                 "name": "equinix.network_edge.devicelinkgroup.state.deleted",
                 "description": "Network edge device link group is deleted",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network_edge.devicelinkgroup.state.deprovisioned",
+                "description": "Network edge device link group is deprovisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network_edge.devicelinkgroup.state.provisioned",
+                "description": "Network edge device link group is provisioned",
                 "releaseStatus": "released"
             },
             {

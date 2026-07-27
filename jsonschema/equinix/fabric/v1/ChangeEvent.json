@@ -684,6 +684,42 @@
             "releaseStatus": "preview"
         },
         {
+            "name": "equinix.fabric.asn.state.provisioning",
+            "description": "ASN provisioning started",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.asn.state.provisioned",
+            "description": "ASN provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.asn.state.deprovisioning",
+            "description": "ASN de-provisioning started",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.asn.state.deprovisioned",
+            "description": "ASN de-provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.asn.state.failed",
+            "description": "ASN provisioning or de-provisioning failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.asn.attribute.changed",
+            "description": "ASN changed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
             "name": "equinix.fabric.connection_routing_protocol.state.provisioning",
             "description": "Routing Protocol named ${routing_protocol_name} state changed to provisioning",
             "sloCategoryCode": "BLUE_EVENT_SLO",
@@ -1177,8 +1213,8 @@
             "releaseStatus": "released"
         },
         {
-            "name": "equinix.fabric.service_profile.connection.pending_approval",
-            "description": "Service Profile Connection ${connection_name} state changed to pending_approval",
+            "name": "equinix.fabric.service_profile.connection.pending",
+            "description": "Service Profile Connection ${connection_name} state changed to pending",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "preview"
         },
@@ -1186,11 +1222,131 @@
             "name": "equinix.fabric.service_profile.connection.provisioned",
             "description": "Service Profile Connection ${connection_name} state changed to provisioned",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.service_profile.connection.deprovisioned",
             "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.service_profile.connection.failed",
+            "description": "Service Profile Connection ${connection_name} state changed to failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.state.provisioning",
+            "description": "Application Subscription is provisioning",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.state.provisioned",
+            "description": "Application Subscription is provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.state.provisioning_failed",
+            "description": "Application Subscription provisioning failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.state.deprovisioning",
+            "description": "Application Subscription is deprovisioning",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.state.deprovisioned",
+            "description": "Application Subscription is deprovisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.state.deprovisioning_failed",
+            "description": "Application Subscription deprovisioning failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_domain.state.pending_verification",
+            "description": "Application Domain verification is pending",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_domain.state.provisioned",
+            "description": "Application Domain is provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_domain.state.deprovisioned",
+            "description": "Application Domain is deprovisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_domain.state.provisioning_failed",
+            "description": "Application Domain provisioning failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_domain.state.deprovisioning_failed",
+            "description": "Application Domain deprovisioning failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_link.state.provisioning",
+            "description": "Application Link is provisioning",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_link.state.provisioned",
+            "description": "Application Link is provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_link.state.provisioning_failed",
+            "description": "Application Link provisioning failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_link.state.deprovisioning",
+            "description": "Application Link is deprovisioning",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_link.state.deprovisioned",
+            "description": "Application Link is deprovisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_link.state.deprovisioning_failed",
+            "description": "Application Link deprovisioning failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_service.state.provisioned",
+            "description": "Application Service is provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.app_service.state.deprovisioned",
+            "description": "Application Service is deprovisioned",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "preview"
         }

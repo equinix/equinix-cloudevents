@@ -95,6 +95,156 @@ The following data payloads are the supported events and formats for Equinix Net
 		<th>SLO Category</th>
 	</tr>
 	<tr>
+		<td>equinix.fabric.app_domain.state.deprovisioned</td>
+		<td>Application Domain is deprovisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_domain.state.deprovisioning_failed</td>
+		<td>Application Domain deprovisioning failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_domain.state.pending_verification</td>
+		<td>Application Domain verification is pending</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_domain.state.provisioned</td>
+		<td>Application Domain is provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_domain.state.provisioning_failed</td>
+		<td>Application Domain provisioning failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link.state.deprovisioned</td>
+		<td>Application Link is deprovisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link.state.deprovisioning</td>
+		<td>Application Link is deprovisioning</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link.state.deprovisioning_failed</td>
+		<td>Application Link deprovisioning failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link.state.provisioned</td>
+		<td>Application Link is provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link.state.provisioning</td>
+		<td>Application Link is provisioning</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link.state.provisioning_failed</td>
+		<td>Application Link provisioning failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_service.state.deprovisioned</td>
+		<td>Application Service is deprovisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_service.state.provisioned</td>
+		<td>Application Service is provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_subscription.state.deprovisioned</td>
+		<td>Application Subscription is deprovisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_subscription.state.deprovisioning</td>
+		<td>Application Subscription is deprovisioning</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_subscription.state.deprovisioning_failed</td>
+		<td>Application Subscription deprovisioning failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_subscription.state.provisioned</td>
+		<td>Application Subscription is provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_subscription.state.provisioning</td>
+		<td>Application Subscription is provisioning</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_subscription.state.provisioning_failed</td>
+		<td>Application Subscription provisioning failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.asn.attribute.changed</td>
+		<td>ASN changed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.asn.state.deprovisioned</td>
+		<td>ASN de-provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.asn.state.deprovisioning</td>
+		<td>ASN de-provisioning started</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.asn.state.failed</td>
+		<td>ASN provisioning or de-provisioning failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.asn.state.provisioned</td>
+		<td>ASN provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.asn.state.provisioning</td>
+		<td>ASN provisioning started</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.company_profile.attribute.approved</td>
 		<td>Company profile update approved</td>
 		<td>released</td>
@@ -967,19 +1117,25 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.service_profile.connection.deprovisioned</td>
 		<td>Service Profile Connection ${connection_name} state changed to deprovisioned</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.service_profile.connection.failed</td>
+		<td>Service Profile Connection ${connection_name} state changed to failed</td>
 		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.service_profile.connection.pending_approval</td>
-		<td>Service Profile Connection ${connection_name} state changed to pending_approval</td>
+		<td>equinix.fabric.service_profile.connection.pending</td>
+		<td>Service Profile Connection ${connection_name} state changed to pending</td>
 		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.service_profile.connection.provisioned</td>
 		<td>Service Profile Connection ${connection_name} state changed to provisioned</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1113,10 +1269,10 @@ The following data payloads are the supported events and formats for Equinix Net
 
 
 ---
-### Equinix Fabric Incident
+### Equinix Network Notification Event
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json)
 #### Data Type
-`equinix.fabric.v1.Incident`
+`equinix.network.v1.Incident`
 #### Supported Events, Metrics, and Alerts
 #### Events
 
@@ -1164,15 +1320,34 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td>-</td>
 	</tr>
 	<tr>
-		<td>equinix.network.repair.state.cancelled</td>
-		<td>Network repair state changed to cancelled</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
 		<td>equinix.network.repair.state.completed</td>
 		<td>Network repair state changed to completed</td>
 		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+</table>
+
+
+
+---
+### Equinix Fabric Incident
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json)
+#### Data Type
+`equinix.fabric.v1.Incident`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.network.repair.state.cancelled</td>
+		<td>Network repair state changed to cancelled</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -4149,6 +4324,18 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.network_edge.devicelinkgroup.state.deleted</td>
 		<td>Network edge device link group is deleted</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.devicelinkgroup.state.deprovisioned</td>
+		<td>Network edge device link group is deprovisioned</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.devicelinkgroup.state.provisioned</td>
+		<td>Network edge device link group is provisioned</td>
 		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
