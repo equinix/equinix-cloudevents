@@ -2535,6 +2535,72 @@
         "metricNames": [],
         "alertNames": []
     },
+    "maintenance_service": {
+        "cloudeventTypes": [
+            {
+                "name": "equinix.fabric.connection_maintenance.state.cancelled",
+                "description": "Connection maintenance is cancelled",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_maintenance.state.completed",
+                "description": "Connection maintenance is completed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_maintenance.state.deferred",
+                "description": "Connection maintenance is deferred",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_maintenance.state.failed",
+                "description": "Connection maintenance has failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_maintenance.state.in_progress",
+                "description": "Connection maintenance is in progress",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_maintenance.state.scheduled",
+                "description": "Connection maintenance is scheduled",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.cancelled",
+                "description": "Port maintenance is cancelled",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.completed",
+                "description": "Port maintenance is completed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.deferred",
+                "description": "Port maintenance is deferred",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.failed",
+                "description": "Port maintenance has failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.in_progress",
+                "description": "Port maintenance is in progress",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.scheduled",
+                "description": "Port maintenance is scheduled",
+                "releaseStatus": "preview"
+            }
+        ],
+        "metricNames": [],
+        "alertNames": []
+    },
     "network": {
         "cloudeventTypes": [
             {
