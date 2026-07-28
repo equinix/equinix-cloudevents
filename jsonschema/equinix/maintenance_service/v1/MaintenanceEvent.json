@@ -61,7 +61,7 @@
                         "uuid": "956a86fb-d03d-436c-8d5d-30d1f51f7688",
                         "href": "https://api.equinix.com/fabric/v4/connections/956a86fb-d03d-436c-8d5d-30d1f51f7688"
                     },
-                    "causedByCloudEvent": {
+                    "causedBy": {
                         "href": "https://api.equinix.com/fabric/v4/ports/956a86fb-d03d-436c-8d5d-30d1f51f7688/maintenances/956a86fb-d03d-436c-8d5d-30d1f51f7688",
                         "uuid": "7422dece-3c6f-4f99-acf2-b717e96f78b4"
                     },
@@ -139,8 +139,8 @@
                     "type": "string",
                     "description": "Unique identifier for the maintenance batch"
                 },
-                "causedByCloudEvent": {
-                    "$ref": "#/definitions/CausedByCloudEvent",
+                "causedBy": {
+                    "$ref": "#/definitions/CausedBy",
                     "additionalProperties": true,
                     "description": "The port maintenance cloud event that triggered this connection maintenance event"
                 }
@@ -150,7 +150,7 @@
             "title": "Resource",
             "description": "Schema of the maintenance resource that fired the event"
         },
-        "CausedByCloudEvent": {
+        "CausedBy": {
             "properties": {
                 "href": {
                     "type": "string",
@@ -163,7 +163,7 @@
             },
             "additionalProperties": true,
             "type": "object",
-            "title": "CausedByCloudEvent",
+            "title": "CausedBy",
             "description": "Reference to the port maintenance cloud event that triggered this connection maintenance event"
         },
         "Port": {
