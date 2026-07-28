@@ -26,13 +26,20 @@
                     "description": "Scheduled maintenance for Test-Port",
                     "port": {
                         "uuid": "956a86fb-d03d-436c-8d5d-30d1f51f7688",
-                        "href": "https://api.equinix.com/fabric/v4/ports/956a86fb-d03d-436c-8d5d-30d1f51f7688"
+                        "href": "https://api.equinix.com/fabric/v4/ports/956a86fb-d03d-436c-8d5d-30d1f51f7688",
+                        "type": "XF_PORT"
                     },
                     "incidentRefId": "CR1234567890",
                     "startDateTime": "2026-06-29 05:30:00",
                     "duration": "PT8H",
                     "batchUuid": "656a86fb-d03d-436c-8d5d-30d1f51f7688"
                 }
+            },
+            "auth": {
+                "type": "system",
+                "id": "100000",
+                "name": "username",
+                "email": "username@test.com"
             }
         },
         {
@@ -57,19 +64,27 @@
                     "type": "XF_MAINTENANCE",
                     "state": "SCHEDULED",
                     "description": "Scheduled maintenance for Test-Connection",
-                    "connection": {
+                    "port": {
                         "uuid": "956a86fb-d03d-436c-8d5d-30d1f51f7688",
-                        "href": "https://api.equinix.com/fabric/v4/connections/956a86fb-d03d-436c-8d5d-30d1f51f7688"
-                    },
-                    "causedBy": {
-                        "href": "https://api.equinix.com/fabric/v4/ports/956a86fb-d03d-436c-8d5d-30d1f51f7688/maintenances/956a86fb-d03d-436c-8d5d-30d1f51f7688",
-                        "uuid": "7422dece-3c6f-4f99-acf2-b717e96f78b4"
+                        "href": "https://api.equinix.com/fabric/v4/connections/956a86fb-d03d-436c-8d5d-30d1f51f7688",
+                        "type": "XF_PORT"
                     },
                     "incidentRefId": "CR1234567890",
                     "startDateTime": "2026-06-29 05:30:00",
                     "duration": "PT8H",
                     "batchUuid": "656a86fb-d03d-436c-8d5d-30d1f51f7688"
+                },
+                "causedBy": {
+                    "href": "https://api.equinix.com/fabric/v4/ports/956a86fb-d03d-436c-8d5d-30d1f51f7688/maintenances/956a86fb-d03d-436c-8d5d-30d1f51f7688",
+                    "uuid": "7422dece-3c6f-4f99-acf2-b717e96f78b4",
+                    "type": "XF_MAINTENANCE"
                 }
+            },
+            "auth": {
+                "type": "system",
+                "id": "100000",
+                "name": "username",
+                "email": "username@test.com"
             }
         }
     ],
@@ -89,6 +104,11 @@
                 "message": {
                     "type": "string",
                     "description": "Supporting message describing the event"
+                },
+                "causedBy": {
+                    "$ref": "#/definitions/CausedBy",
+                    "additionalProperties": true,
+                    "description": "The port maintenance cloud event that triggered this connection maintenance event"
                 }
             },
             "additionalProperties": true,
@@ -112,7 +132,7 @@
                 },
                 "state": {
                     "type": "string",
-                    "description": "Current state of the maintenance (SCHEDULED, IN_PROGRESS, COMPLETED, CANCELLED, DEFERRED, FAILED)"
+                    "description": "Current state of the maintenance (SCHEDULED, IN_PROGRESS, COMPLETED, DEFERRED)"
                 },
                 "description": {
                     "type": "string",
@@ -138,11 +158,6 @@
                 "batchUuid": {
                     "type": "string",
                     "description": "Unique identifier for the maintenance batch"
-                },
-                "causedBy": {
-                    "$ref": "#/definitions/CausedBy",
-                    "additionalProperties": true,
-                    "description": "The port maintenance cloud event that triggered this connection maintenance event"
                 }
             },
             "additionalProperties": true,
@@ -159,6 +174,10 @@
                 "uuid": {
                     "type": "string",
                     "description": "Unique identifier of the port maintenance cloud event that triggered this connection maintenance event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource that triggered this connection maintenance event"
                 }
             },
             "additionalProperties": true,
@@ -175,6 +194,10 @@
                 "href": {
                     "type": "string",
                     "description": "Link to the port resource"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the port resource"
                 }
             },
             "additionalProperties": true,
@@ -203,20 +226,8 @@
             "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.port_maintenance.state.cancelled",
-            "description": "Port maintenance is cancelled",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
             "name": "equinix.fabric.port_maintenance.state.deferred",
             "description": "Port maintenance is deferred",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.port_maintenance.state.failed",
-            "description": "Port maintenance has failed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "preview"
         },
@@ -239,20 +250,8 @@
             "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.connection_maintenance.state.cancelled",
-            "description": "Connection maintenance is cancelled",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
             "name": "equinix.fabric.connection_maintenance.state.deferred",
             "description": "Connection maintenance is deferred",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.connection_maintenance.state.failed",
-            "description": "Connection maintenance has failed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "preview"
         }
