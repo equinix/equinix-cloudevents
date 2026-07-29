@@ -2586,31 +2586,31 @@
             {
                 "name": "equinix.network.maintenance.state.cancelled",
                 "description": "Network maintenance state changed to cancelled",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.network.maintenance.state.completed",
                 "description": "Network maintenance state changed to completed",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.network.maintenance.state.confirmed",
                 "description": "Network maintenance state changed to confirmed",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.network.maintenance.state.extended",
                 "description": "Network maintenance state changed to extended",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.network.maintenance.state.in_progress",
-                "description": "Network maintenance state changed to in_progress",
-                "releaseStatus": "preview"
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.network.maintenance.state.rescheduled",
                 "description": "Network maintenance state changed to rescheduled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.maintenance.state.in_progress",
+                "description": "Network maintenance state changed to in_progress",
                 "releaseStatus": "preview"
             },
             {
