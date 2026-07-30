@@ -1,7 +1,54 @@
 {
     "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/MetricEvent.json",
     "name": "MetricEvent",
-    "examples": [],
+    "examples": [
+        {
+            "specversion": "1.0",
+            "source": "https://uatapi.equinix.com/fabric/v4/cloudevents",
+            "id": "732f33a6-7034-4ef3-ade3-7712451fe233",
+            "time": "2026-07-30T20:10:00.059281923Z",
+            "type": "equinix.fabric.metric",
+            "subject": "/ne/v1/devices/e8776dcb-1e57-4af8-94aa-6abd422a953d/interfaces/10",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricEvent.json",
+            "datacontenttype": "application/json",
+            "severitynumber": "9",
+            "severitytext": "INFO",
+            "equinixproject": "b11d4cb5-978a-418a-8b13-bf19abb97938",
+            "data": {
+                "resource": {
+                    "href": "https://uatapi.equinix.com/ne/v1/devices/e8776dcb-1e57-4af8-94aa-6abd422a953d/interfaces/10",
+                    "type": "DATA",
+                    "uuid": "29efbff5-1c37-4b1b-abcf-f7344cf482e9",
+                    "id": 10,
+                    "state": "PROVISIONED"
+                },
+                "metrics": [
+                    {
+                        "type": "GAUGE",
+                        "name": "equinix.network_edge.device_interface.bandwidth_rx.usage",
+                        "unit": "bps",
+                        "datapoints": [
+                            {
+                                "endDateTime": "2026-07-30T20:08:00.000Z",
+                                "value": 42
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "equinix.network_edge.device_interface.bandwidth_tx.usage",
+                        "unit": "bps",
+                        "datapoints": [
+                            {
+                                "endDateTime": "2026-07-30T20:08:00.000Z",
+                                "value": 41
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
     "package": "equinix.network_edge.v1",
     "datatype": "equinix.network_edge.v1.MetricEvent",
     "domain": "Equinix Network Edge MetricEvent",
