@@ -2737,7 +2737,38 @@
                 "releaseStatus": "preview"
             }
         ],
-        "alertNames": []
+        "alertNames": [
+            {
+                "name": "equinix.network_edge.device_interface.bandwidth_rx.usage",
+                "description": "Device interface inbound bandwidth usage is ${operator} ${operand} bit/s",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network_edge.device_interface.bandwidth_tx.usage",
+                "description": "Device interface outbound bandwidth usage is ${operator} ${operand} bit/s",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network_edge.device_interface.packets_dropped_rx.count",
+                "description": "Device interface inbound dropped packets count is ${operator} ${operand}",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network_edge.device_interface.packets_dropped_tx.count",
+                "description": "Device interface outbound dropped packets count is ${operator} ${operand}",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network_edge.device_interface.packets_erred_rx.count",
+                "description": "Device interface inbound erred packets count is ${operator} ${operand}",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network_edge.device_interface.packets_erred_tx.count",
+                "description": "Device interface outbound erred packets count is ${operator} ${operand}",
+                "releaseStatus": "preview"
+            }
+        ]
     },
     "optical_connect": {
         "cloudeventTypes": [
