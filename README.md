@@ -4326,6 +4326,61 @@ The following data payloads are the supported events and formats for Equinix Net
 
 
 ---
+### Equinix Network Edge MetricEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/MetricEvent.json)
+#### Data Type
+`equinix.network_edge.v1.MetricEvent`
+#### Supported Events, Metrics, and Alerts
+
+#### Metrics
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.bandwidth_rx.usage</td>
+		<td>Device interface inbound bandwidth usage in bit/sec</td>
+		<td>preview</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.bandwidth_tx.usage</td>
+		<td>Device interface outbound bandwidth usage in bit/sec</td>
+		<td>preview</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.packets_dropped_rx.count</td>
+		<td>Device interface inbound dropped packets count</td>
+		<td>preview</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.packets_dropped_tx.count</td>
+		<td>Device interface outbound dropped packets count</td>
+		<td>preview</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.packets_erred_rx.count</td>
+		<td>Device interface inbound erred packets count</td>
+		<td>preview</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.packets_erred_tx.count</td>
+		<td>Device interface outbound erred packets count</td>
+		<td>preview</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+</table>
+
+
+---
 ### Equinix Optical Connect ChangeEvent
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/optical_connect/v1/ChangeEvent.json)
 #### Data Type

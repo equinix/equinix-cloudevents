@@ -2705,7 +2705,38 @@
                 "releaseStatus": "released"
             }
         ],
-        "metricNames": [],
+        "metricNames": [
+            {
+                "name": "equinix.network_edge.device_interface.bandwidth_rx.usage",
+                "description": "Device interface inbound bandwidth usage in bit/sec",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network_edge.device_interface.bandwidth_tx.usage",
+                "description": "Device interface outbound bandwidth usage in bit/sec",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network_edge.device_interface.packets_dropped_rx.count",
+                "description": "Device interface inbound dropped packets count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network_edge.device_interface.packets_dropped_tx.count",
+                "description": "Device interface outbound dropped packets count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network_edge.device_interface.packets_erred_rx.count",
+                "description": "Device interface inbound erred packets count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.network_edge.device_interface.packets_erred_tx.count",
+                "description": "Device interface outbound erred packets count",
+                "releaseStatus": "preview"
+            }
+        ],
         "alertNames": []
     },
     "optical_connect": {
