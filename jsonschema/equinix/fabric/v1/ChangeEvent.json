@@ -1216,7 +1216,7 @@
             "name": "equinix.fabric.service_profile.connection.pending",
             "description": "Service Profile Connection ${connection_name} state changed to pending",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.service_profile.connection.provisioned",
@@ -1234,7 +1234,7 @@
             "name": "equinix.fabric.service_profile.connection.failed",
             "description": "Service Profile Connection ${connection_name} state changed to failed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.app_subscription.state.provisioning",
