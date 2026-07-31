@@ -4138,6 +4138,100 @@
             "alertNames": []
         },
         {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/MetricAlert.json",
+            "domain": "Equinix Network Edge MetricAlert",
+            "name": "MetricAlert",
+            "description": "The data within all MetricAlert events.",
+            "datatype": "equinix.network_edge.v1.MetricAlert",
+            "cloudeventTypes": [],
+            "metricNames": [],
+            "alertNames": [
+                {
+                    "name": "equinix.network_edge.device_interface.bandwidth_rx.usage",
+                    "description": "Device interface inbound bandwidth usage is ${operator} ${operand} bit/s",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.bandwidth_tx.usage",
+                    "description": "Device interface outbound bandwidth usage is ${operator} ${operand} bit/s",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_dropped_rx.count",
+                    "description": "Device interface inbound dropped packets count is ${operator} ${operand}",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_dropped_tx.count",
+                    "description": "Device interface outbound dropped packets count is ${operator} ${operand}",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_erred_rx.count",
+                    "description": "Device interface inbound erred packets count is ${operator} ${operand}",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_erred_tx.count",
+                    "description": "Device interface outbound erred packets count is ${operator} ${operand}",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                }
+            ]
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/MetricEvent.json",
+            "domain": "Equinix Network Edge MetricEvent",
+            "name": "MetricEvent",
+            "description": "The data within all MetricEvent events.",
+            "datatype": "equinix.network_edge.v1.MetricEvent",
+            "cloudeventTypes": [],
+            "metricNames": [
+                {
+                    "name": "equinix.network_edge.device_interface.bandwidth_rx.usage",
+                    "description": "Device interface inbound bandwidth usage in bit/sec",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.bandwidth_tx.usage",
+                    "description": "Device interface outbound bandwidth usage in bit/sec",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_dropped_rx.count",
+                    "description": "Device interface inbound dropped packets count",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_dropped_tx.count",
+                    "description": "Device interface outbound dropped packets count",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_erred_rx.count",
+                    "description": "Device interface inbound erred packets count",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_erred_tx.count",
+                    "description": "Device interface outbound erred packets count",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
+                }
+            ],
+            "alertNames": []
+        },
+        {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/optical_connect/v1/ChangeEvent.json",
             "domain": "Equinix Optical Connect ChangeEvent",
             "name": "ChangeEvent",
