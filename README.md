@@ -4345,37 +4345,37 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.network_edge.device_interface.bandwidth_rx.usage</td>
 		<td>Device interface inbound bandwidth usage is ${operator} ${operand} bit/s</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device_interface.bandwidth_tx.usage</td>
 		<td>Device interface outbound bandwidth usage is ${operator} ${operand} bit/s</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device_interface.packets_dropped_rx.count</td>
 		<td>Device interface inbound dropped packets count is ${operator} ${operand}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device_interface.packets_dropped_tx.count</td>
 		<td>Device interface outbound dropped packets count is ${operator} ${operand}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device_interface.packets_erred_rx.count</td>
 		<td>Device interface inbound erred packets count is ${operator} ${operand}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device_interface.packets_erred_tx.count</td>
 		<td>Device interface outbound erred packets count is ${operator} ${operand}</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 </table>
@@ -4399,37 +4399,37 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.network_edge.device_interface.bandwidth_rx.usage</td>
 		<td>Device interface inbound bandwidth usage in bit/sec</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device_interface.bandwidth_tx.usage</td>
 		<td>Device interface outbound bandwidth usage in bit/sec</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device_interface.packets_dropped_rx.count</td>
 		<td>Device interface inbound dropped packets count</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device_interface.packets_dropped_tx.count</td>
 		<td>Device interface outbound dropped packets count</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device_interface.packets_erred_rx.count</td>
 		<td>Device interface inbound erred packets count</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.network_edge.device_interface.packets_erred_tx.count</td>
 		<td>Device interface outbound erred packets count</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 </table>
