@@ -1077,6 +1077,30 @@
                     "releaseStatus": "released"
                 },
                 {
+                    "name": "equinix.fabric.service_profile_connection.state.deprovisioned",
+                    "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.service_profile_connection.state.failed",
+                    "description": "Service Profile Connection ${connection_name} state changed to failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.service_profile_connection.state.pending",
+                    "description": "Service Profile Connection ${connection_name} state changed to pending",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.service_profile_connection.state.provisioned",
+                    "description": "Service Profile Connection ${connection_name} state changed to provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
                     "name": "equinix.fabric.service_token.attribute.changed",
                     "description": "Token successfully updated",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
