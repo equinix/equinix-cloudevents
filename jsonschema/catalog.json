@@ -1056,25 +1056,25 @@
                     "name": "equinix.fabric.service_profile.connection.deprovisioned",
                     "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
+                    "releaseStatus": "preview"
                 },
                 {
                     "name": "equinix.fabric.service_profile.connection.failed",
                     "description": "Service Profile Connection ${connection_name} state changed to failed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
+                    "releaseStatus": "preview"
                 },
                 {
                     "name": "equinix.fabric.service_profile.connection.pending",
                     "description": "Service Profile Connection ${connection_name} state changed to pending",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
+                    "releaseStatus": "preview"
                 },
                 {
                     "name": "equinix.fabric.service_profile.connection.provisioned",
                     "description": "Service Profile Connection ${connection_name} state changed to provisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
+                    "releaseStatus": "preview"
                 },
                 {
                     "name": "equinix.fabric.service_profile_connection.state.deprovisioned",
