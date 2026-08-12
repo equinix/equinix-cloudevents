@@ -288,6 +288,12 @@
             "releaseStatus": "released"
         },
         {
+            "name": "equinix.fabric.metro.cn_{metroCode}.latency",
+            "description": "Chennai to ${metro} intermetro latency, average in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
             "name": "equinix.fabric.metro.cu_{metroCode}.latency",
             "description": "Culpeper to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
@@ -454,6 +460,12 @@
             "description": "Milan to ${metro} intermetro latency, average in milliseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.mn_{metroCode}.latency",
+            "description": "Manila to ${metro} intermetro latency, average in milliseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.mo_{metroCode}.latency",
@@ -672,6 +684,12 @@
             "releaseStatus": "preview"
         },
         {
+            "name": "equinix.fabric.metro.cn_{metroCode}.jitter_avg",
+            "description": "Chennai to ${metro} intermetro average jitter in microseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
             "name": "equinix.fabric.metro.cu_{metroCode}.jitter_avg",
             "description": "Culpeper to ${metro} intermetro average jitter in microseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
@@ -836,6 +854,12 @@
         {
             "name": "equinix.fabric.metro.ml_{metroCode}.jitter_avg",
             "description": "Milan to ${metro} intermetro average jitter in microseconds",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.metro.mn_{metroCode}.jitter_avg",
+            "description": "Manila to ${metro} intermetro average jitter in microseconds",
             "sloCategoryCode": "BROWN_METRIC_SLO",
             "releaseStatus": "preview"
         },
