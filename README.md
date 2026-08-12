@@ -1293,6 +1293,55 @@ The following data payloads are the supported events and formats for Equinix Net
 
 
 ---
+### Equinix Fabric Incident
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json)
+#### Data Type
+`equinix.fabric.v1.Incident`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.network.repair.state.cancelled</td>
+		<td>Network repair state changed to cancelled</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network.repair.state.confirmed</td>
+		<td>Network repair state changed to confirmed</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network.repair.state.in_progress</td>
+		<td>Network repair state changed to in_progress</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network.repair.state.rescheduled</td>
+		<td>Network repair state changed to rescheduled</td>
+		<td>released</td>
+	<td>-</td>
+	</tr>
+	<tr>
+		<td>equinix.network.repair.state.resolved</td>
+		<td>Network repair state changed to resolved</td>
+		<td>released</td>
+	<td>-</td>
+	</tr>
+</table>
+
+
+
+---
 ### Equinix Network Notification Event
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json)
 #### Data Type
@@ -1348,55 +1397,6 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>Network repair state changed to completed</td>
 		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-</table>
-
-
-
----
-### Equinix Fabric Incident
-#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json)
-#### Data Type
-`equinix.fabric.v1.Incident`
-#### Supported Events, Metrics, and Alerts
-#### Events
-
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-		<th>Release Status</th>
-		<th>SLO Category</th>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.cancelled</td>
-		<td>Network repair state changed to cancelled</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.confirmed</td>
-		<td>Network repair state changed to confirmed</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.in_progress</td>
-		<td>Network repair state changed to in_progress</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.rescheduled</td>
-		<td>Network repair state changed to rescheduled</td>
-		<td>released</td>
-	<td>-</td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.resolved</td>
-		<td>Network repair state changed to resolved</td>
-		<td>released</td>
-	<td>-</td>
 	</tr>
 </table>
 
@@ -1597,6 +1597,18 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.metro.cl_{metroCode}.latency</td>
 		<td>Metro latency from Calgary to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.cn_{metroCode}.jitter_avg</td>
+		<td>Average metro jitter from Chennai to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>preview</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.cn_{metroCode}.latency</td>
+		<td>Metro latency from Chennai to ${metro} is ${operator} ${operand} milliseconds</td>
+		<td>preview</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1933,6 +1945,18 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.metro.ml_{metroCode}.latency</td>
 		<td>Metro latency from Milan to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.mn_{metroCode}.jitter_avg</td>
+		<td>Average metro jitter from Manila to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>preview</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.mn_{metroCode}.latency</td>
+		<td>Metro latency from Manila to ${metro} is ${operator} ${operand} milliseconds</td>
+		<td>preview</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2510,6 +2534,18 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.metro.cn_{metroCode}.jitter_avg</td>
+		<td>Chennai to ${metro} intermetro average jitter in microseconds</td>
+		<td>preview</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.cn_{metroCode}.latency</td>
+		<td>Chennai to ${metro} intermetro latency, average in milliseconds</td>
+		<td>preview</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.metro.cu_{metroCode}.jitter_avg</td>
 		<td>Culpeper to ${metro} intermetro average jitter in microseconds</td>
 		<td>preview</td>
@@ -2843,6 +2879,18 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.metro.ml_{metroCode}.latency</td>
 		<td>Milan to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.mn_{metroCode}.jitter_avg</td>
+		<td>Manila to ${metro} intermetro average jitter in microseconds</td>
+		<td>preview</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.mn_{metroCode}.latency</td>
+		<td>Manila to ${metro} intermetro latency, average in milliseconds</td>
+		<td>preview</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
