@@ -1485,6 +1485,16 @@
                 "releaseStatus": "preview"
             },
             {
+                "name": "equinix.fabric.metro.cn_{metroCode}.jitter_avg",
+                "description": "Chennai to ${metro} intermetro average jitter in microseconds",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.metro.cn_{metroCode}.latency",
+                "description": "Chennai to ${metro} intermetro latency, average in milliseconds",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.metro.cu_{metroCode}.jitter_avg",
                 "description": "Culpeper to ${metro} intermetro average jitter in microseconds",
                 "releaseStatus": "preview"
@@ -1622,6 +1632,16 @@
             {
                 "name": "equinix.fabric.metro.ml_{metroCode}.jitter_avg",
                 "description": "Milan to ${metro} intermetro average jitter in microseconds",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.metro.mn_{metroCode}.jitter_avg",
+                "description": "Manila to ${metro} intermetro average jitter in microseconds",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.metro.mn_{metroCode}.latency",
+                "description": "Manila to ${metro} intermetro latency, average in milliseconds",
                 "releaseStatus": "preview"
             },
             {
@@ -2227,6 +2247,16 @@
                 "releaseStatus": "preview"
             },
             {
+                "name": "equinix.fabric.metro.cn_{metroCode}.jitter_avg",
+                "description": "Average metro jitter from Chennai to ${metro} is ${operator} ${operand} microseconds",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.metro.cn_{metroCode}.latency",
+                "description": "Metro latency from Chennai to ${metro} is ${operator} ${operand} milliseconds",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.metro.cu_{metroCode}.jitter_avg",
                 "description": "Average metro jitter from Culpeper to ${metro} is ${operator} ${operand} microseconds",
                 "releaseStatus": "preview"
@@ -2364,6 +2394,16 @@
             {
                 "name": "equinix.fabric.metro.ml_{metroCode}.jitter_avg",
                 "description": "Average metro jitter from Milan to ${metro} is ${operator} ${operand} microseconds",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.metro.mn_{metroCode}.jitter_avg",
+                "description": "Average metro jitter from Manila to ${metro} is ${operator} ${operand} microseconds",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.metro.mn_{metroCode}.latency",
+                "description": "Metro latency from Manila to ${metro} is ${operator} ${operand} milliseconds",
                 "releaseStatus": "preview"
             },
             {
