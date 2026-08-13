@@ -133,11 +133,11 @@
                 },
                 "name": {
                     "type": "string",
-                    "description": "Name of the entity generating the event"
+                    "description": "Optional. Name of the entity generating the event"
                 },
                 "email": {
                     "type": "string",
-                    "description": "Email of the user generating the event"
+                    "description": "Optional. Email of the user generating the event"
                 }
             },
             "additionalProperties": true,
