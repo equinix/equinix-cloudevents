@@ -2366,6 +2366,96 @@ The following data payloads are the supported events and formats for Equinix Net
 		<th>SLO Category</th>
 	</tr>
 	<tr>
+		<td>equinix.fabric.applink.egress_bytes_rx.count</td>
+		<td>Application Link egress received bytes count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_bytes_tx.count</td>
+		<td>Application Link egress transmitted bytes count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_connections_erred.count</td>
+		<td>Application Link egress erred connections count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_connections_retried.count</td>
+		<td>Application Link egress retried connections count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_down.count</td>
+		<td>Application Link egress backend down count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_down.time</td>
+		<td>Application Link egress backend downtime in seconds</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_requests_queued.count</td>
+		<td>Application Link egress queued requests count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_requests_queued.time</td>
+		<td>Application Link egress average queued request time in seconds</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_requests_redispatched.count</td>
+		<td>Application Link egress redispatched requests count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_responses.latency</td>
+		<td>Application Link egress average response latency in seconds</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_responses_erred.count</td>
+		<td>Application Link egress erred responses count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.ingress_bytes_rx.count</td>
+		<td>Application Link ingress received bytes count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.ingress_bytes_tx.count</td>
+		<td>Application Link ingress transmitted bytes count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.ingress_requests_erred.count</td>
+		<td>Application Link ingress erred requests count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.ingress_sessions.rate</td>
+		<td>Application Link ingress sessions rate in sessions/sec</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.connection.bandwidth_rx.usage</td>
 		<td>Connection inbound bandwidth usage in bit/sec</td>
 		<td>released</td>

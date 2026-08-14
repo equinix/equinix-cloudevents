@@ -1425,6 +1425,81 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.applink.egress_bytes_rx.count",
+                "description": "Application Link egress received bytes count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.applink.egress_bytes_tx.count",
+                "description": "Application Link egress transmitted bytes count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.applink.egress_connections_erred.count",
+                "description": "Application Link egress erred connections count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.applink.egress_connections_retried.count",
+                "description": "Application Link egress retried connections count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.applink.egress_down.count",
+                "description": "Application Link egress backend down count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.applink.egress_down.time",
+                "description": "Application Link egress backend downtime in seconds",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.applink.egress_requests_queued.count",
+                "description": "Application Link egress queued requests count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.applink.egress_requests_queued.time",
+                "description": "Application Link egress average queued request time in seconds",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.applink.egress_requests_redispatched.count",
+                "description": "Application Link egress redispatched requests count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.applink.egress_responses.latency",
+                "description": "Application Link egress average response latency in seconds",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.applink.egress_responses_erred.count",
+                "description": "Application Link egress erred responses count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.applink.ingress_bytes_rx.count",
+                "description": "Application Link ingress received bytes count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.applink.ingress_bytes_tx.count",
+                "description": "Application Link ingress transmitted bytes count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.applink.ingress_requests_erred.count",
+                "description": "Application Link ingress erred requests count",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.applink.ingress_sessions.rate",
+                "description": "Application Link ingress sessions rate in sessions/sec",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.connection.bandwidth_rx.utilization",
                 "description": "Connection inbound bandwidth utilization in %",
                 "releaseStatus": "preview"
