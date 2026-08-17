@@ -4237,14 +4237,14 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.connection_maintenance.state.in_progress</td>
-		<td>Connection maintenance is in progress</td>
+		<td>equinix.fabric.connection_maintenance.state.deferred</td>
+		<td>Connection maintenance is deferred</td>
 		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.connection_maintenance.state.postponed</td>
-		<td>Connection maintenance is postponed</td>
+		<td>equinix.fabric.connection_maintenance.state.in_progress</td>
+		<td>Connection maintenance is in progress</td>
 		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
@@ -4261,14 +4261,14 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.port_maintenance.state.in_progress</td>
-		<td>Port maintenance is in progress</td>
+		<td>equinix.fabric.port_maintenance.state.deferred</td>
+		<td>Port maintenance is deferred</td>
 		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.port_maintenance.state.postponed</td>
-		<td>Port maintenance is postponed</td>
+		<td>equinix.fabric.port_maintenance.state.in_progress</td>
+		<td>Port maintenance is in progress</td>
 		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
