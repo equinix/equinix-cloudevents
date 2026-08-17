@@ -1208,6 +1208,45 @@
         },
         {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json",
+            "domain": "Equinix Fabric Incident",
+            "name": "Incident",
+            "description": "The data within all Incident events",
+            "datatype": "equinix.fabric.v1.Incident",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.network.repair.state.cancelled",
+                    "description": "Network repair state changed to cancelled",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network.repair.state.confirmed",
+                    "description": "Network repair state changed to confirmed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network.repair.state.in_progress",
+                    "description": "Network repair state changed to in_progress",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network.repair.state.rescheduled",
+                    "description": "Network repair state changed to rescheduled",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network.repair.state.resolved",
+                    "description": "Network repair state changed to resolved",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json",
             "domain": "Equinix Network Notification Event",
             "name": "Incident",
             "description": "The data within all Notification Events",
@@ -1252,45 +1291,6 @@
                     "description": "Network repair state changed to completed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
-                }
-            ],
-            "metricNames": [],
-            "alertNames": []
-        },
-        {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json",
-            "domain": "Equinix Fabric Incident",
-            "name": "Incident",
-            "description": "The data within all Incident events",
-            "datatype": "equinix.fabric.v1.Incident",
-            "cloudeventTypes": [
-                {
-                    "name": "equinix.network.repair.state.cancelled",
-                    "description": "Network repair state changed to cancelled",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
-                },
-                {
-                    "name": "equinix.network.repair.state.confirmed",
-                    "description": "Network repair state changed to confirmed",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
-                },
-                {
-                    "name": "equinix.network.repair.state.in_progress",
-                    "description": "Network repair state changed to in_progress",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
-                },
-                {
-                    "name": "equinix.network.repair.state.rescheduled",
-                    "description": "Network repair state changed to rescheduled",
-                    "releaseStatus": "released"
-                },
-                {
-                    "name": "equinix.network.repair.state.resolved",
-                    "description": "Network repair state changed to resolved",
-                    "releaseStatus": "released"
                 }
             ],
             "metricNames": [],
@@ -3985,14 +3985,14 @@
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.connection_maintenance.state.deferred",
-                    "description": "Connection maintenance is deferred",
+                    "name": "equinix.fabric.connection_maintenance.state.in_progress",
+                    "description": "Connection maintenance is in progress",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.connection_maintenance.state.in_progress",
-                    "description": "Connection maintenance is in progress",
+                    "name": "equinix.fabric.connection_maintenance.state.postponed",
+                    "description": "Connection maintenance is postponed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
                 },
@@ -4009,14 +4009,14 @@
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.port_maintenance.state.deferred",
-                    "description": "Port maintenance is deferred",
+                    "name": "equinix.fabric.port_maintenance.state.in_progress",
+                    "description": "Port maintenance is in progress",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.port_maintenance.state.in_progress",
-                    "description": "Port maintenance is in progress",
+                    "name": "equinix.fabric.port_maintenance.state.postponed",
+                    "description": "Port maintenance is postponed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
                 },
