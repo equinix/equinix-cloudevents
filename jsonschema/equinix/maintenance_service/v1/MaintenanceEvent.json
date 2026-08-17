@@ -161,7 +161,7 @@
                 },
                 "state": {
                     "type": "string",
-                    "description": "Current state of the maintenance (SCHEDULED, IN_PROGRESS, COMPLETED, DEFERRED)"
+                    "description": "Current state of the maintenance (SCHEDULED, IN_PROGRESS, COMPLETED, POSTPONED)"
                 },
                 "description": {
                     "type": "string",
@@ -255,8 +255,8 @@
             "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.port_maintenance.state.deferred",
-            "description": "Port maintenance is deferred",
+            "name": "equinix.fabric.port_maintenance.state.postponed",
+            "description": "Port maintenance is postponed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "preview"
         },
@@ -279,8 +279,8 @@
             "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.connection_maintenance.state.deferred",
-            "description": "Connection maintenance is deferred",
+            "name": "equinix.fabric.connection_maintenance.state.postponed",
+            "description": "Connection maintenance is postponed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "preview"
         }
