@@ -1117,7 +1117,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.service_profile.connection.deprovisioned</td>
 		<td>Service Profile Connection ${connection_name} state changed to deprovisioned</td>
-		<td>released</td>
+		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1134,6 +1134,30 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>equinix.fabric.service_profile.connection.provisioned</td>
+		<td>Service Profile Connection ${connection_name} state changed to provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.service_profile_connection.state.deprovisioned</td>
+		<td>Service Profile Connection ${connection_name} state changed to deprovisioned</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.service_profile_connection.state.failed</td>
+		<td>Service Profile Connection ${connection_name} state changed to failed</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.service_profile_connection.state.pending</td>
+		<td>Service Profile Connection ${connection_name} state changed to pending</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.service_profile_connection.state.provisioned</td>
 		<td>Service Profile Connection ${connection_name} state changed to provisioned</td>
 		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
@@ -1270,55 +1294,6 @@ The following data payloads are the supported events and formats for Equinix Net
 
 ---
 ### Equinix Fabric Incident
-#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json)
-#### Data Type
-`equinix.fabric.v1.Incident`
-#### Supported Events, Metrics, and Alerts
-#### Events
-
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-		<th>Release Status</th>
-		<th>SLO Category</th>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.cancelled</td>
-		<td>Network repair state changed to cancelled</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.confirmed</td>
-		<td>Network repair state changed to confirmed</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.in_progress</td>
-		<td>Network repair state changed to in_progress</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.rescheduled</td>
-		<td>Network repair state changed to rescheduled</td>
-		<td>released</td>
-	<td>-</td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.resolved</td>
-		<td>Network repair state changed to resolved</td>
-		<td>released</td>
-	<td>-</td>
-	</tr>
-</table>
-
-
-
----
-### Equinix Network Notification Event
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json)
 #### Data Type
 `equinix.network.v1.Incident`
@@ -1573,6 +1548,18 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.metro.cl_{metroCode}.latency</td>
 		<td>Metro latency from Calgary to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.cn_{metroCode}.jitter_avg</td>
+		<td>Average metro jitter from Chennai to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>preview</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.cn_{metroCode}.latency</td>
+		<td>Metro latency from Chennai to ${metro} is ${operator} ${operand} milliseconds</td>
+		<td>preview</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1909,6 +1896,18 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.metro.ml_{metroCode}.latency</td>
 		<td>Metro latency from Milan to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.mn_{metroCode}.jitter_avg</td>
+		<td>Average metro jitter from Manila to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>preview</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.mn_{metroCode}.latency</td>
+		<td>Metro latency from Manila to ${metro} is ${operator} ${operand} milliseconds</td>
+		<td>preview</td>
 	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2318,6 +2317,96 @@ The following data payloads are the supported events and formats for Equinix Net
 		<th>SLO Category</th>
 	</tr>
 	<tr>
+		<td>equinix.fabric.applink.egress_bytes_rx.count</td>
+		<td>Application Link egress received bytes count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_bytes_tx.count</td>
+		<td>Application Link egress transmitted bytes count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_connections_erred.count</td>
+		<td>Application Link egress erred connections count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_connections_retried.count</td>
+		<td>Application Link egress retried connections count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_down.count</td>
+		<td>Application Link egress backend down count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_down.time</td>
+		<td>Application Link egress backend downtime in seconds</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_requests_queued.count</td>
+		<td>Application Link egress queued requests count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_requests_queued.time</td>
+		<td>Application Link egress average queued request time in seconds</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_requests_redispatched.count</td>
+		<td>Application Link egress redispatched requests count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_responses.latency</td>
+		<td>Application Link egress average response latency in seconds</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.egress_responses_erred.count</td>
+		<td>Application Link egress erred responses count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.ingress_bytes_rx.count</td>
+		<td>Application Link ingress received bytes count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.ingress_bytes_tx.count</td>
+		<td>Application Link ingress transmitted bytes count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.ingress_requests_erred.count</td>
+		<td>Application Link ingress erred requests count</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.applink.ingress_sessions.rate</td>
+		<td>Application Link ingress sessions rate in sessions/sec</td>
+		<td>preview</td>
+	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.connection.bandwidth_rx.usage</td>
 		<td>Connection inbound bandwidth usage in bit/sec</td>
 		<td>released</td>
@@ -2483,6 +2572,18 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.metro.cl_{metroCode}.latency</td>
 		<td>Calgary to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.cn_{metroCode}.jitter_avg</td>
+		<td>Chennai to ${metro} intermetro average jitter in microseconds</td>
+		<td>preview</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.cn_{metroCode}.latency</td>
+		<td>Chennai to ${metro} intermetro latency, average in milliseconds</td>
+		<td>preview</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2819,6 +2920,18 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.metro.ml_{metroCode}.latency</td>
 		<td>Milan to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.mn_{metroCode}.jitter_avg</td>
+		<td>Manila to ${metro} intermetro average jitter in microseconds</td>
+		<td>preview</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.metro.mn_{metroCode}.latency</td>
+		<td>Manila to ${metro} intermetro latency, average in milliseconds</td>
+		<td>preview</td>
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -4211,6 +4324,67 @@ The following data payloads are the supported events and formats for Equinix Net
 
 
 ---
+### Equinix Network Notification Event
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network/v1/NotificationEvent.json)
+#### Data Type
+`equinix.network.v1.NotificationEvent`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.network.maintenance.state.cancelled</td>
+		<td>Network maintenance state changed to cancelled</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network.maintenance.state.completed</td>
+		<td>Network maintenance state changed to completed</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network.maintenance.state.confirmed</td>
+		<td>Network maintenance state changed to confirmed</td>
+		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network.maintenance.state.extended</td>
+		<td>Network maintenance state changed to extended</td>
+		<td>released</td>
+	<td>-</td>
+	</tr>
+	<tr>
+		<td>equinix.network.maintenance.state.in_progress</td>
+		<td>Network maintenance state changed to in_progress</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network.maintenance.state.rescheduled</td>
+		<td>Network maintenance state changed to rescheduled</td>
+		<td>released</td>
+	<td>-</td>
+	</tr>
+	<tr>
+		<td>equinix.network.repair.state.completed</td>
+		<td>Network repair state changed to completed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+</table>
+
+
+
+---
 ### Equinix Network Edge ChangeEvent
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/ChangeEvent.json)
 #### Data Type
@@ -4323,6 +4497,116 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 </table>
 
+
+
+---
+### Equinix Network Edge MetricAlert
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/MetricAlert.json)
+#### Data Type
+`equinix.network_edge.v1.MetricAlert`
+#### Supported Events, Metrics, and Alerts
+
+
+#### Alerts
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.bandwidth_rx.usage</td>
+		<td>Device interface inbound bandwidth usage is ${operator} ${operand} bit/s</td>
+		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.bandwidth_tx.usage</td>
+		<td>Device interface outbound bandwidth usage is ${operator} ${operand} bit/s</td>
+		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.packets_dropped_rx.count</td>
+		<td>Device interface inbound dropped packets count is ${operator} ${operand}</td>
+		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.packets_dropped_tx.count</td>
+		<td>Device interface outbound dropped packets count is ${operator} ${operand}</td>
+		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.packets_erred_rx.count</td>
+		<td>Device interface inbound erred packets count is ${operator} ${operand}</td>
+		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.packets_erred_tx.count</td>
+		<td>Device interface outbound erred packets count is ${operator} ${operand}</td>
+		<td>released</td>
+	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+</table>
+
+---
+### Equinix Network Edge MetricEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/MetricEvent.json)
+#### Data Type
+`equinix.network_edge.v1.MetricEvent`
+#### Supported Events, Metrics, and Alerts
+
+#### Metrics
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.bandwidth_rx.usage</td>
+		<td>Device interface inbound bandwidth usage in bit/sec</td>
+		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.bandwidth_tx.usage</td>
+		<td>Device interface outbound bandwidth usage in bit/sec</td>
+		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.packets_dropped_rx.count</td>
+		<td>Device interface inbound dropped packets count</td>
+		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.packets_dropped_tx.count</td>
+		<td>Device interface outbound dropped packets count</td>
+		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.packets_erred_rx.count</td>
+		<td>Device interface inbound erred packets count</td>
+		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.network_edge.device_interface.packets_erred_tx.count</td>
+		<td>Device interface outbound erred packets count</td>
+		<td>released</td>
+	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+</table>
 
 
 ---
