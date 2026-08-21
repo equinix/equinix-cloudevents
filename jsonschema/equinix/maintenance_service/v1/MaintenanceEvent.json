@@ -33,13 +33,13 @@
                     "startDateTime": "2026-06-29 05:30:00",
                     "duration": "PT8H",
                     "batchUuid": "656a86fb-d03d-436c-8d5d-30d1f51f7688"
+                },
+                "auth": {
+                    "type": "system",
+                    "id": "100000",
+                    "name": "username",
+                    "email": "username@test.com"
                 }
-            },
-            "auth": {
-                "type": "system",
-                "id": "100000",
-                "name": "username",
-                "email": "username@test.com"
             }
         },
         {
@@ -78,13 +78,13 @@
                     "href": "https://api.equinix.com/fabric/v4/ports/956a86fb-d03d-436c-8d5d-30d1f51f7688/maintenances/956a86fb-d03d-436c-8d5d-30d1f51f7688",
                     "uuid": "7422dece-3c6f-4f99-acf2-b717e96f78b4",
                     "type": "XF_MAINTENANCE"
+                },
+                "auth": {
+                    "type": "system",
+                    "id": "100000",
+                    "name": "username",
+                    "email": "username@test.com"
                 }
-            },
-            "auth": {
-                "type": "system",
-                "id": "100000",
-                "name": "username",
-                "email": "username@test.com"
             }
         }
     ],
@@ -109,12 +109,41 @@
                     "$ref": "#/definitions/CausedBy",
                     "additionalProperties": true,
                     "description": "The port maintenance cloud event that triggered this connection maintenance event"
+                },
+                "auth": {
+                    "$ref": "#/definitions/Auth",
+                    "additionalProperties": true,
+                    "description": "The auth context within all MaintenanceEvent events."
                 }
             },
             "additionalProperties": true,
             "type": "object",
             "title": "MaintenanceEvent Event Data",
             "description": "The data within all MaintenanceEvent events."
+        },
+        "Auth": {
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "The unique identifier of the entity generating the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "The type of the entity generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Optional. Name of the entity generating the event"
+                },
+                "email": {
+                    "type": "string",
+                    "description": "Optional. Email of the user generating the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Auth",
+            "description": "Auth information of the generated event"
         },
         "Resource": {
             "properties": {
@@ -132,7 +161,7 @@
                 },
                 "state": {
                     "type": "string",
-                    "description": "Current state of the maintenance (SCHEDULED, IN_PROGRESS, COMPLETED, DEFERRED)"
+                    "description": "Current state of the maintenance (SCHEDULED, IN_PROGRESS, COMPLETED, POSTPONED)"
                 },
                 "description": {
                     "type": "string",
@@ -226,8 +255,8 @@
             "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.port_maintenance.state.deferred",
-            "description": "Port maintenance is deferred",
+            "name": "equinix.fabric.port_maintenance.state.postponed",
+            "description": "Port maintenance is postponed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "preview"
         },
@@ -250,8 +279,8 @@
             "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.connection_maintenance.state.deferred",
-            "description": "Connection maintenance is deferred",
+            "name": "equinix.fabric.connection_maintenance.state.postponed",
+            "description": "Connection maintenance is postponed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "preview"
         }
