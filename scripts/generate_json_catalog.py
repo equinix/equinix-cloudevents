@@ -16,7 +16,7 @@ def retrieve_json_schemas():
     json_schemas = []
     for root, dirs, files in os.walk(directory):
         for file in files:
-            if file.endswith('.json') and os.path.basename(root) != "jsonschema":
+            if file.endswith('.json') and os.path.basename(root) in sc.PUBLISHED_VERSIONS:
                 with open(root + "/" + file, "r") as eventFile:
                     data = json.load(eventFile)
                     events = sortedRemoveDuplicates(data.get(sc.EVENTS, []))

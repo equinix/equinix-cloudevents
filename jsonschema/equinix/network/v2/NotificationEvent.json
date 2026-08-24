@@ -1,0 +1,169 @@
+{
+  "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/Incident.json",
+  "name": "Incident",
+  "examples": [],
+  "package": "equinix.fabric.v2",
+  "datatype": "equinix.network.v2.Incident",
+  "domain": "Equinix Network Notification Event",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/Data",
+  "definitions": {
+    "Data": {
+      "properties": {
+        "resource": {
+          "$ref": "#/definitions/Resource",
+          "additionalProperties": true,
+          "description": "Optional. The Backup event payload. Unset for deletion events"
+        },
+        "message": {
+          "type": "string",
+          "description": "Supporting message describing the notification event"
+        },
+        "auth": {
+          "$ref": "#/definitions/Auth",
+          "additionalProperties": true,
+          "description": "The auth context within all notification event"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Notification Event Data",
+      "description": "The data within all Notification Events"
+    },
+    "Auth": {
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "The type of the entity generating the event"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Auth",
+      "description": "Auth information of the generated Notification Event"
+    },
+    "Resource": {
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Type of the notification event (e.g., maintenance or repair)"
+        },
+        "uuid": {
+          "type": "string",
+          "description": "Equinix assigned unique identifier of the notification event"
+        },
+        "state": {
+          "type": "string",
+          "description": "State of the maintenance/repair notification event"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the maintenance/repair notification event"
+        },
+        "servicerId": {
+          "type": "string",
+          "description": "Servicer ID for the maintenance/repair notification event"
+        },
+        "startDateTime": {
+          "type": "string",
+          "description": "Start date and time of the maintenance/repair notification event"
+        },
+        "endDateTime": {
+          "type": "string",
+          "description": "End date and time of the maintenance/repair notification event"
+        },
+        "accountNumber": {
+          "type": "string",
+          "description": "Account number associated with the maintenance/repair notification event"
+        },
+        "impact": {
+          "type": "string",
+          "description": "Impact of the maintenance/repair notification event"
+        },
+        "prodID": {
+          "type": "string",
+          "description": "Product ID or notification reference"
+        },
+        "organizer": {
+          "type": "string",
+          "description": "Organizer of the maintenance/repair notification event"
+        },
+        "assets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Asset"
+          },
+          "description": "List of assets affected by the maintenance/repair notification event"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Resource",
+      "description": "Schema of the resource that fired the notification event"
+    },
+    "Asset": {
+      "properties": {
+        "href": {
+          "type": "string",
+          "description": "Link to the asset affected by the maintenance/repair notification event"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of the asset affected by the maintenance/repair notification event"
+        },
+        "uuid": {
+          "type": "string",
+          "description": "Unique identifier of the asset affected by the maintenance/repair notification event"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Asset",
+      "description": "Schema of an asset affected by the maintenance/repair notification event"
+    }
+  },
+  "cloudeventTypes": [
+    {
+      "name": "equinix.network.maintenance.state.confirmed",
+      "description": "Network maintenance state changed to confirmed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.network.maintenance.state.in_progress",
+      "description": "Network maintenance state changed to in_progress",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.network.maintenance.state.cancelled",
+      "description": "Network maintenance state changed to cancelled",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.network.maintenance.state.completed",
+      "description": "Network maintenance state changed to completed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.network.maintenance.state.extended",
+      "description": "Network maintenance state changed to extended",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.network.maintenance.state.rescheduled",
+      "description": "Network maintenance state changed to rescheduled",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.network.repair.state.completed",
+      "description": "Network repair state changed to completed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    }
+  ],
+  "metricNames": [],
+  "alertNames": []
+}

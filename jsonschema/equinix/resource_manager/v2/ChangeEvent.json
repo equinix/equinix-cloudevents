@@ -1,0 +1,88 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/resource_manager/v2/ResourceManagerChangeEvent.json",
+    "name": "ResourceManagerChangeEvent",
+    "examples": [],
+    "package": "equinix.resource_manager.v2",
+    "datatype": "equinix.resource_manager.v2.ChangeEvent",
+    "domain": "Equinix Resource Manager ChangeEvent",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "Optional. The Backup event payload. Unset for deletion events."
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ChangeEvent Event Data",
+            "description": "The data within all ChangeEvent events."
+        },
+        "Resource": {
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                }
+            },
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        }
+    },
+    "cloudeventTypes": [
+        {
+            "name": "equinix.resource_manager.organization.state.created",
+            "description": "Organization created event.",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.resource_manager.organization.state.updated",
+            "description": "Organization updated event.",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.resource_manager.organization.state.deleted",
+            "description": "Organization deleted event.",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.resource_manager.project.state.created",
+            "description": "Project created event.",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.resource_manager.project.state.updated",
+            "description": "Project updated event.",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.resource_manager.project.state.deleted",
+            "description": "Project deleted event.",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        }
+    ],
+    "metricNames": [],
+    "alertNames": []
+}
