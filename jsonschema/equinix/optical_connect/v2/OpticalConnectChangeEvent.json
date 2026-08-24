@@ -3,7 +3,7 @@
     "name": "OpticalConnectChangeEvent",
     "examples": [],
     "package": "equinix.optical_connect.v2",
-    "datatype": "equinix.optical_connect.v2.ChangeEvent",
+    "datatype": "equinix.optical_connect.v2.OpticalConnectChangeEvent",
     "domain": "Equinix Optical Connect ChangeEvent",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",

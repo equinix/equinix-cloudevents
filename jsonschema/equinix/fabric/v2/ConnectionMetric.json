@@ -1,0 +1,184 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/ConnectionMetric.json",
+    "name": "ConnectionMetric",
+    "examples": [],
+    "package": "equinix.fabric.v2",
+    "datatype": "equinix.fabric.v2.ConnectionMetric",
+    "domain": "Equinix Fabric Connection Metric",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "Optional. The Backup event payload. Unset for deletion events."
+                },
+                "metrics": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Metric",
+                        "additionalProperties": true
+                    },
+                    "description": "Specific details of the metric"
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ConnectionMetric Event Data",
+            "description": "The data within all ConnectionMetric events."
+        },
+        "Resource": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                },
+                "state": {
+                    "type": "string",
+                    "description": "State of the resource generating the event"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the resource generating the event"
+                },
+                "code": {
+                    "type": "string",
+                    "description": "Metro code of the source metro generating the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        },
+        "Metric": {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "The type of the metric"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The name of the metric"
+                },
+                "unit": {
+                    "type": "string",
+                    "description": "Unified Code for Units of Measure"
+                },
+                "interval": {
+                    "type": "string",
+                    "description": "The time interval that the metric datapoints refer to"
+                },
+                "dataPoints": {
+                    "type": "array",
+                    "description": "Metric data values and end times",
+                    "items": {
+                        "$ref": "#/definitions/DataPoint"
+                    }
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Metrics",
+            "description": "Schema definition of Metrics data"
+        },
+        "DataPoint": {
+            "properties": {
+                "startDateTime": {
+                    "type": "string",
+                    "description": "The start time of the metric data point value given",
+                    "format": "date-time"
+                },
+                "endDateTime": {
+                    "type": "string",
+                    "description": "The end time of the metric data point value given",
+                    "format": "date-time"
+                },
+                "value": {
+                    "type": "number",
+                    "description": "The value of the metric data point"
+                }
+            },
+            "type": "object",
+            "title": "DataPoints",
+            "additionalProperties": true
+        }
+    },
+    "cloudeventTypes": [
+        {
+            "name": "equinix.fabric.metric",
+            "description": "Metrics collected",
+            "sloCategoryCode": "",
+            "releaseStatus": "released"
+        }
+    ],
+    "metricNames": [
+        {
+            "name": "equinix.fabric.connection.bandwidth_rx.usage",
+            "description": "Connection inbound bandwidth usage in bit/sec",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.connection.bandwidth_rx.utilization",
+            "description": "Connection inbound bandwidth utilization in %",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.connection.bandwidth_tx.usage",
+            "description": "Connection outbound bandwidth usage in bit/sec",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.connection.bandwidth_tx.utilization",
+            "description": "Connection outbound bandwidth utilization in %",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
+            "description": "Connection A side inbound dropped packets count",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
+            "description": "Connection Z side inbound dropped packets count",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
+            "description": "Connection A side outbound dropped packets count",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
+            "description": "Connection Z side outbound dropped packets count",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "released"
+        }
+    ],
+    "alertNames": []
+}

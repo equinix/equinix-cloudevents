@@ -1,0 +1,77 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/AclChangeEvent.json",
+    "name": "AclChangeEvent",
+    "examples": [],
+    "package": "equinix.network_edge.v2",
+    "datatype": "equinix.network_edge.v2.AclChangeEvent",
+    "domain": "Equinix Network Edge Acl ChangeEvent",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "Optional. The Backup event payload. Unset for deletion events."
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "AclChangeEvent Event Data",
+            "description": "The data within all AclChangeEvent events."
+        },
+        "Resource": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the resource generating the event"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the resource generating the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        }
+    },
+    "cloudeventTypes": [
+        {
+            "name": "equinix.network_edge.acl.state.created",
+            "description": "Network edge acl is created",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.acl.state.deleted",
+            "description": "Network edge acl is deleted",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        }
+    ],
+    "metricNames": [],
+    "alertNames": []
+}

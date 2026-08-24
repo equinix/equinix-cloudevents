@@ -3,7 +3,7 @@
     "name": "TimeServiceChangeEvent",
     "examples": [],
     "package": "equinix.time_service.v2",
-    "datatype": "equinix.time_service.v2.ChangeEvent",
+    "datatype": "equinix.time_service.v2.TimeServiceChangeEvent",
     "domain": "Equinix Time Service ChangeEvent",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",

@@ -1,0 +1,208 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/DeviceInterfaceMetric.json",
+    "name": "DeviceInterfaceMetric",
+    "examples": [
+        {
+            "specversion": "1.0",
+            "source": "https://uatapi.equinix.com/fabric/v4/cloudevents",
+            "id": "732f33a6-7034-4ef3-ade3-7712451fe233",
+            "time": "2026-07-30T20:10:00.059281923Z",
+            "type": "equinix.fabric.metric",
+            "subject": "/ne/v1/devices/e8776dcb-1e57-4af8-94aa-6abd422a953d/interfaces/10",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/DeviceInterfaceMetric.json",
+            "datacontenttype": "application/json",
+            "severitynumber": "9",
+            "severitytext": "INFO",
+            "equinixproject": "b11d4cb5-978a-418a-8b13-bf19abb97938",
+            "data": {
+                "resource": {
+                    "href": "https://uatapi.equinix.com/ne/v1/devices/e8776dcb-1e57-4af8-94aa-6abd422a953d/interfaces/10",
+                    "type": "DATA",
+                    "uuid": "29efbff5-1c37-4b1b-abcf-f7344cf482e9",
+                    "id": 10,
+                    "state": "PROVISIONED"
+                },
+                "metrics": [
+                    {
+                        "type": "GAUGE",
+                        "name": "equinix.network_edge.device_interface.bandwidth_rx.usage",
+                        "unit": "bps",
+                        "datapoints": [
+                            {
+                                "endDateTime": "2026-07-30T20:08:00.000Z",
+                                "value": 42
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "equinix.network_edge.device_interface.bandwidth_tx.usage",
+                        "unit": "bps",
+                        "datapoints": [
+                            {
+                                "endDateTime": "2026-07-30T20:08:00.000Z",
+                                "value": 41
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "package": "equinix.network_edge.v2",
+    "datatype": "equinix.network_edge.v2.DeviceInterfaceMetric",
+    "domain": "Equinix Network Edge Device Interface Metric",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "The resource that the metric was collected for"
+                },
+                "metrics": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Metric",
+                        "additionalProperties": true
+                    },
+                    "description": "Specific details of the metric"
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "DeviceInterfaceMetric Event Data",
+            "description": "The data within all DeviceInterfaceMetric events."
+        },
+        "Resource": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the resource generating the event"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the resource generating the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        },
+        "Metric": {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "The type of the metric"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The name of the metric"
+                },
+                "unit": {
+                    "type": "string",
+                    "description": "Unified Code for Units of Measure"
+                },
+                "interval": {
+                    "type": "string",
+                    "description": "The time interval that the metric datapoints refer to"
+                },
+                "dataPoints": {
+                    "type": "array",
+                    "description": "Metric data values and end times",
+                    "items": {
+                        "$ref": "#/definitions/DataPoint"
+                    }
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Metrics",
+            "description": "Schema definition of Metrics data"
+        },
+        "DataPoint": {
+            "properties": {
+                "startDateTime": {
+                    "type": "string",
+                    "description": "The start time of the metric data point value given",
+                    "format": "date-time"
+                },
+                "endDateTime": {
+                    "type": "string",
+                    "description": "The end time of the metric data point value given",
+                    "format": "date-time"
+                },
+                "value": {
+                    "type": "number",
+                    "description": "The value of the metric data point"
+                }
+            },
+            "type": "object",
+            "title": "DataPoints",
+            "additionalProperties": true
+        }
+    },
+    "cloudeventTypes": [],
+    "metricNames": [
+        {
+            "name": "equinix.network_edge.device_interface.bandwidth_rx.usage",
+            "description": "Device interface inbound bandwidth usage in bit/sec",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.device_interface.bandwidth_tx.usage",
+            "description": "Device interface outbound bandwidth usage in bit/sec",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.device_interface.packets_dropped_rx.count",
+            "description": "Device interface inbound dropped packets count",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.device_interface.packets_dropped_tx.count",
+            "description": "Device interface outbound dropped packets count",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.device_interface.packets_erred_rx.count",
+            "description": "Device interface inbound erred packets count",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.device_interface.packets_erred_tx.count",
+            "description": "Device interface outbound erred packets count",
+            "sloCategoryCode": "BROWN_METRIC_SLO",
+            "releaseStatus": "released"
+        }
+    ],
+    "alertNames": []
+}

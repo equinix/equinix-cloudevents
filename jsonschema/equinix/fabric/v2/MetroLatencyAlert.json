@@ -1,0 +1,529 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/MetroLatencyAlert.json",
+    "name": "MetroLatencyAlert",
+    "examples": [],
+    "package": "equinix.fabric.v2",
+    "datatype": "equinix.fabric.v2.MetroLatencyAlert",
+    "domain": "Equinix Fabric Metro Latency Alert (Deprecated)",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "The source metro payload"
+                },
+                "metrics": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Metric",
+                        "additionalProperties": true
+                    },
+                    "description": "Specific details of the metric"
+                },
+                "alertRule": {
+                    "type": "object",
+                    "items": {
+                        "$ref": "#/definitions/AlertRule",
+                        "additionalProperties": true
+                    },
+                    "description": "Metadata about the AlertRule triggering the Alert"
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "MetricAlert Event Data",
+            "description": "The data within all MetricAlert events."
+        },
+        "Resource": {
+            "properties": {
+                "metroHref": {
+                    "type": "string",
+                    "description": "Link to the source metro that has generated the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "metroCode": {
+                    "type": "string",
+                    "description": "Metro code of the source metro generating the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        },
+        "Metric": {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "The type of the metric"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The name of the metric"
+                },
+                "unit": {
+                    "type": "string",
+                    "description": "Unified Code for Units of Measure"
+                },
+                "interval": {
+                    "type": "string",
+                    "description": "The time interval that the metric datapoints refer to"
+                },
+                "dataPoints": {
+                    "type": "array",
+                    "description": "Metric data values and end times",
+                    "items": {
+                        "$ref": "#/definitions/DataPoint"
+                    }
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Metrics",
+            "description": "Schema definition of Metrics data"
+        },
+        "DataPoint": {
+            "properties": {
+                "startDateTime": {
+                    "type": "string",
+                    "description": "The start time of the metric data point value given",
+                    "format": "date-time"
+                },
+                "endDateTime": {
+                    "type": "string",
+                    "description": "The end time of the metric data point value given",
+                    "format": "date-time"
+                },
+                "value": {
+                    "type": "number",
+                    "description": "The value of the metric data point"
+                }
+            },
+            "type": "object",
+            "title": "DataPoints",
+            "additionalProperties": true
+        },
+        "AlertRule": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the alert"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the alert"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the alert"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "AlertRule",
+            "description": "Schema definition of AlertRule data"
+        }
+    },
+    "cloudeventTypes": [],
+    "metricNames": [],
+    "alertNames": [
+        {
+            "name": "equinix.fabric.metro.am_{metroCode}.latency",
+            "description": "Metro latency from Amsterdam to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.at_{metroCode}.latency",
+            "description": "Metro latency from Atlanta to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.ba_{metroCode}.latency",
+            "description": "Metro latency from Barcelona to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.bg_{metroCode}.latency",
+            "description": "Metro latency from Bogota to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.bl_{metroCode}.latency",
+            "description": "Metro latency from Brussels to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.bo_{metroCode}.latency",
+            "description": "Metro latency from Boston to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.bx_{metroCode}.latency",
+            "description": "Metro latency from Bordeaux to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.ca_{metroCode}.latency",
+            "description": "Metro latency from Canberra to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.ch_{metroCode}.latency",
+            "description": "Metro latency from Chicago to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.cl_{metroCode}.latency",
+            "description": "Metro latency from Calgary to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.cu_{metroCode}.latency",
+            "description": "Metro latency from Culpeper to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.da_{metroCode}.latency",
+            "description": "Metro latency from Dallas to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.db_{metroCode}.latency",
+            "description": "Metro latency from Dublin to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.dc_{metroCode}.latency",
+            "description": "Metro latency from Ashburn to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.de_{metroCode}.latency",
+            "description": "Metro latency from Denver to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.dx_{metroCode}.latency",
+            "description": "Metro latency from Dubai to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.fr_{metroCode}.latency",
+            "description": "Metro latency from Frankfurt to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.gv_{metroCode}.latency",
+            "description": "Metro latency from Geneva to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.he_{metroCode}.latency",
+            "description": "Metro latency from Helsinki to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.hh_{metroCode}.latency",
+            "description": "Metro latency from Hamburg to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.hk_{metroCode}.latency",
+            "description": "Metro latency from Hong Kong to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.ho_{metroCode}.latency",
+            "description": "Metro latency from Houston to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.il_{metroCode}.latency",
+            "description": "Metro latency from Istanbul to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.jh_{metroCode}.latency",
+            "description": "Metro latency from Johor to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.jk_{metroCode}.latency",
+            "description": "Metro latency from Jakarta to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.jn_{metroCode}.latency",
+            "description": "Metro latency from Johannesburg to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.ka_{metroCode}.latency",
+            "description": "Metro latency from Kamloops to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.kl_{metroCode}.latency",
+            "description": "Metro latency from Kuala Lumpur to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.la_{metroCode}.latency",
+            "description": "Metro latency from Los Angeles to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.ld_{metroCode}.latency",
+            "description": "Metro latency from London to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.lm_{metroCode}.latency",
+            "description": "Metro latency from Lima to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.ls_{metroCode}.latency",
+            "description": "Metro latency from Lisbon to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.ma_{metroCode}.latency",
+            "description": "Metro latency from Manchester to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.mb_{metroCode}.latency",
+            "description": "Metro latency from Mumbai to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.md_{metroCode}.latency",
+            "description": "Metro latency from Madrid to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.me_{metroCode}.latency",
+            "description": "Metro latency from Melbourne to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.mi_{metroCode}.latency",
+            "description": "Metro latency from Miami to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.ml_{metroCode}.latency",
+            "description": "Metro latency from Milan to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.mo_{metroCode}.latency",
+            "description": "Metro latency from Monterrey to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.mt_{metroCode}.latency",
+            "description": "Metro latency from Montreal to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.mu_{metroCode}.latency",
+            "description": "Metro latency from Munich to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.mx_{metroCode}.latency",
+            "description": "Metro latency from Mexico City to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.ny_{metroCode}.latency",
+            "description": "Metro latency from New York to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.os_{metroCode}.latency",
+            "description": "Metro latency from Osaka to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.ot_{metroCode}.latency",
+            "description": "Metro latency from Ottawa to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.pa_{metroCode}.latency",
+            "description": "Metro latency from Paris to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.pe_{metroCode}.latency",
+            "description": "Metro latency from Perth to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.ph_{metroCode}.latency",
+            "description": "Metro latency from Philadelphia to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.rj_{metroCode}.latency",
+            "description": "Metro latency from Rio de Janeiro to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.se_{metroCode}.latency",
+            "description": "Metro latency from Seattle to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.sg_{metroCode}.latency",
+            "description": "Metro latency from Singapore to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.sk_{metroCode}.latency",
+            "description": "Metro latency from Stockholm to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.sl_{metroCode}.latency",
+            "description": "Metro latency from Seoul to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.so_{metroCode}.latency",
+            "description": "Metro latency from Sofia to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.sp_{metroCode}.latency",
+            "description": "Metro latency from Sao Paulo to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.st_{metroCode}.latency",
+            "description": "Metro latency from Santiago to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.sv_{metroCode}.latency",
+            "description": "Metro latency from Silicon Valley to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.sy_{metroCode}.latency",
+            "description": "Metro latency from Sydney to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.tr_{metroCode}.latency",
+            "description": "Metro latency from Toronto to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.ty_{metroCode}.latency",
+            "description": "Metro latency from Tokyo to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.va_{metroCode}.latency",
+            "description": "Metro latency from Vancouver to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.wa_{metroCode}.latency",
+            "description": "Metro latency from Warsaw to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.wi_{metroCode}.latency",
+            "description": "Metro latency from Winnipeg to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.zh_{metroCode}.latency",
+            "description": "Metro latency from Zurich to ${metro} above ${threshold}",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "released"
+        }
+    ]
+}

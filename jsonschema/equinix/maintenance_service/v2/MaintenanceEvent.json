@@ -1,5 +1,5 @@
 {
-    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/maintenance_service/v1/MaintenanceEvent.json",
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/maintenance_service/v2/MaintenanceEvent.json",
     "name": "MaintenanceEvent",
     "examples": [
         {
@@ -9,7 +9,7 @@
             "type": "equinix.fabric.port_maintenance.state.scheduled",
             "subject": "/fabric/v4/ports/956a86fb-d03d-436c-8d5d-30d1f51f7688/maintenances/856a86fb-d03d-436c-8d5d-30d1f51f7688",
             "time": "2026-06-11T18:06:21.000Z",
-            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/maintenance_service/v1/MaintenanceEvent.json",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/maintenance_service/v2/MaintenanceEvent.json",
             "datacontenttype": "application/json",
             "severitynumber": "9",
             "severitytext": "INFO",
@@ -49,7 +49,7 @@
             "type": "equinix.fabric.connection_maintenance.state.scheduled",
             "subject": "/fabric/v4/connections/956a86fb-d03d-436c-8d5d-30d1f51f7688/maintenances/856a86fb-d03d-436c-8d5d-30d1f51f7688",
             "time": "2026-06-11T18:06:21.000Z",
-            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/maintenance_service/v1/MaintenanceEvent.json",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/maintenance_service/v2/MaintenanceEvent.json",
             "datacontenttype": "application/json",
             "severitynumber": "9",
             "severitytext": "INFO",
@@ -88,8 +88,8 @@
             }
         }
     ],
-    "package": "equinix.maintenance_service.v1",
-    "datatype": "equinix.maintenance_service.v1.MaintenanceEvent",
+    "package": "equinix.maintenance_service.v2",
+    "datatype": "equinix.maintenance_service.v2.MaintenanceEvent",
     "domain": "Equinix Maintenance Service MaintenanceEvent",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",

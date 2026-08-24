@@ -3,7 +3,7 @@
     "name": "ResourceManagerChangeEvent",
     "examples": [],
     "package": "equinix.resource_manager.v2",
-    "datatype": "equinix.resource_manager.v2.ChangeEvent",
+    "datatype": "equinix.resource_manager.v2.ResourceManagerChangeEvent",
     "domain": "Equinix Resource Manager ChangeEvent",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",

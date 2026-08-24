@@ -1,0 +1,119 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/DeviceChangeEvent.json",
+    "name": "DeviceChangeEvent",
+    "examples": [],
+    "package": "equinix.network_edge.v2",
+    "datatype": "equinix.network_edge.v2.DeviceChangeEvent",
+    "domain": "Equinix Network Edge Device ChangeEvent",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "Optional. The Backup event payload. Unset for deletion events."
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "DeviceChangeEvent Event Data",
+            "description": "The data within all DeviceChangeEvent events."
+        },
+        "Resource": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the resource generating the event"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the resource generating the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        }
+    },
+    "cloudeventTypes": [
+        {
+            "name": "equinix.network_edge.device.acl.updated",
+            "description": "Network edge acl is updated",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.device.attribute.changed",
+            "description": "Network edge device attributes updated",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.device.reboot.completed",
+            "description": "Network edge device reboot completed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.device.reboot.started",
+            "description": "Network edge device reboot started",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.device.state.cancelled",
+            "description": "Network edge device order cancelled",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.device.state.created",
+            "description": "Network edge device created",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.device.state.deleted",
+            "description": "Network edge device deleted",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.device.state.provisioned",
+            "description": "Network edge device is provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.device.state.provisioning",
+            "description": "Network edge device is provisioning",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        }
+    ],
+    "metricNames": [],
+    "alertNames": []
+}
