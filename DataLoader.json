@@ -358,31 +358,6 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.ip_block.state.deprovisioned",
-                "description": "Ip Block deprovisioned",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.ip_block.state.deprovisioning",
-                "description": "Ip Block deprovisioning started",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.ip_block.state.failed",
-                "description": "Ip Block provisioning or deprovisioning failed",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.ip_block.state.provisioned",
-                "description": "Ip Block provisioned",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.ip_block.state.provisioning",
-                "description": "Ip Block provisioning started",
-                "releaseStatus": "released"
-            },
-            {
                 "name": "equinix.fabric.metric",
                 "description": "Metrics collected",
                 "releaseStatus": "released"
@@ -783,28 +758,58 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.network.repair.state.cancelled",
-                "description": "Network repair state changed to cancelled",
+                "name": "equinix.fabric.time_service.state.cancelled",
+                "description": "Time Service is cancelled",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.network.repair.state.confirmed",
-                "description": "Network repair state changed to confirmed",
+                "name": "equinix.fabric.time_service.state.configured",
+                "description": "Time Service is configured",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.network.repair.state.in_progress",
-                "description": "Network repair state changed to in_progress",
+                "name": "equinix.fabric.time_service.state.configuring",
+                "description": "Time Service is configuring",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.network.repair.state.rescheduled",
-                "description": "Network repair state changed to rescheduled",
+                "name": "equinix.fabric.time_service.state.configuring_failed",
+                "description": "Time Service is configuring failed",
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.network.repair.state.resolved",
-                "description": "Network repair state changed to resolved",
+                "name": "equinix.fabric.time_service.state.deprovisioned",
+                "description": "Time Service is deprovisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.time_service.state.deprovisioning",
+                "description": "Time Service is deprovisioning",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.time_service.state.deprovisioning_failed",
+                "description": "Time Service is deprovisioning failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.time_service.state.draft",
+                "description": "Time Service is in draft state",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.time_service.state.provisioned",
+                "description": "Time Service is provisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.time_service.state.provisioning",
+                "description": "Time Service is provisioning",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.time_service.state.provisioning_failed",
+                "description": "Time Service is provisioning failed",
                 "releaseStatus": "released"
             },
             {
@@ -933,6 +938,101 @@
                 "releaseStatus": "preview"
             },
             {
+                "name": "equinix.fabric.connection_maintenance.state.completed",
+                "description": "Connection maintenance is completed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_maintenance.state.deferred",
+                "description": "Connection maintenance is deferred",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_maintenance.state.in_progress",
+                "description": "Connection maintenance is in progress",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_maintenance.state.scheduled",
+                "description": "Connection maintenance is scheduled",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.ip_block.state.deprovisioned",
+                "description": "Ip Block deprovisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.ip_block.state.deprovisioning",
+                "description": "Ip Block deprovisioning started",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.ip_block.state.failed",
+                "description": "Ip Block provisioning or deprovisioning failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.ip_block.state.provisioned",
+                "description": "Ip Block provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.ip_block.state.provisioning",
+                "description": "Ip Block provisioning started",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.optical_connect.state.deprovisioned",
+                "description": "Optical Connect is deprovisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.optical_connect.state.deprovisioning",
+                "description": "Optical Connect is deprovisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.optical_connect.state.failed",
+                "description": "Optical Connect is provisioning failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.optical_connect.state.provisioned",
+                "description": "Optical Connect is provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.optical_connect.state.provisioning",
+                "description": "Optical Connect is provisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.optical_connect.state.reprovisioning",
+                "description": "Optical Connect is reprovisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.completed",
+                "description": "Port maintenance is completed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.deferred",
+                "description": "Port maintenance is deferred",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.in_progress",
+                "description": "Port maintenance is in progress",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.scheduled",
+                "description": "Port maintenance is scheduled",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.route_aggregation.attribute.changed",
                 "description": "Route Aggregation named ${route_aggregation_name} attribute changed",
                 "releaseStatus": "preview"
@@ -953,23 +1053,18 @@
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.service_profile.connection.deprovisioned",
-                "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
+                "name": "equinix.fabric.time_service.status.degraded",
+                "description": "Time Service status changed to degraded",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.service_profile.connection.failed",
-                "description": "Service Profile Connection ${connection_name} state changed to failed",
+                "name": "equinix.fabric.time_service.status.down",
+                "description": "Time Service status changed to down",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.service_profile.connection.pending",
-                "description": "Service Profile Connection ${connection_name} state changed to pending",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.service_profile.connection.provisioned",
-                "description": "Service Profile Connection ${connection_name} state changed to provisioned",
+                "name": "equinix.fabric.time_service.status.up",
+                "description": "Time Service status changed to up",
                 "releaseStatus": "preview"
             },
             {
@@ -1425,81 +1520,6 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.applink.egress_bytes_rx.count",
-                "description": "Application Link egress received bytes count",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.applink.egress_bytes_tx.count",
-                "description": "Application Link egress transmitted bytes count",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.applink.egress_connections_erred.count",
-                "description": "Application Link egress erred connections count",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.applink.egress_connections_retried.count",
-                "description": "Application Link egress retried connections count",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.applink.egress_down.count",
-                "description": "Application Link egress backend down count",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.applink.egress_down.time",
-                "description": "Application Link egress backend downtime in seconds",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.applink.egress_requests_queued.count",
-                "description": "Application Link egress queued requests count",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.applink.egress_requests_queued.time",
-                "description": "Application Link egress average queued request time in seconds",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.applink.egress_requests_redispatched.count",
-                "description": "Application Link egress redispatched requests count",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.applink.egress_responses.latency",
-                "description": "Application Link egress average response latency in seconds",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.applink.egress_responses_erred.count",
-                "description": "Application Link egress erred responses count",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.applink.ingress_bytes_rx.count",
-                "description": "Application Link ingress received bytes count",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.applink.ingress_bytes_tx.count",
-                "description": "Application Link ingress transmitted bytes count",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.applink.ingress_requests_erred.count",
-                "description": "Application Link ingress erred requests count",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.applink.ingress_sessions.rate",
-                "description": "Application Link ingress sessions rate in sessions/sec",
-                "releaseStatus": "preview"
-            },
-            {
                 "name": "equinix.fabric.connection.bandwidth_rx.utilization",
                 "description": "Connection inbound bandwidth utilization in %",
                 "releaseStatus": "preview"
@@ -1557,16 +1577,6 @@
             {
                 "name": "equinix.fabric.metro.cl_{metroCode}.jitter_avg",
                 "description": "Calgary to ${metro} intermetro average jitter in microseconds",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.cn_{metroCode}.jitter_avg",
-                "description": "Chennai to ${metro} intermetro average jitter in microseconds",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.cn_{metroCode}.latency",
-                "description": "Chennai to ${metro} intermetro latency, average in milliseconds",
                 "releaseStatus": "preview"
             },
             {
@@ -1707,16 +1717,6 @@
             {
                 "name": "equinix.fabric.metro.ml_{metroCode}.jitter_avg",
                 "description": "Milan to ${metro} intermetro average jitter in microseconds",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.mn_{metroCode}.jitter_avg",
-                "description": "Manila to ${metro} intermetro average jitter in microseconds",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.mn_{metroCode}.latency",
-                "description": "Manila to ${metro} intermetro latency, average in milliseconds",
                 "releaseStatus": "preview"
             },
             {
@@ -2322,16 +2322,6 @@
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.metro.cn_{metroCode}.jitter_avg",
-                "description": "Average metro jitter from Chennai to ${metro} is ${operator} ${operand} microseconds",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.cn_{metroCode}.latency",
-                "description": "Metro latency from Chennai to ${metro} is ${operator} ${operand} milliseconds",
-                "releaseStatus": "preview"
-            },
-            {
                 "name": "equinix.fabric.metro.cu_{metroCode}.jitter_avg",
                 "description": "Average metro jitter from Culpeper to ${metro} is ${operator} ${operand} microseconds",
                 "releaseStatus": "preview"
@@ -2469,16 +2459,6 @@
             {
                 "name": "equinix.fabric.metro.ml_{metroCode}.jitter_avg",
                 "description": "Average metro jitter from Milan to ${metro} is ${operator} ${operand} microseconds",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.mn_{metroCode}.jitter_avg",
-                "description": "Average metro jitter from Manila to ${metro} is ${operator} ${operand} microseconds",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.metro.mn_{metroCode}.latency",
-                "description": "Metro latency from Manila to ${metro} is ${operator} ${operand} milliseconds",
                 "releaseStatus": "preview"
             },
             {
@@ -2670,52 +2650,6 @@
         "metricNames": [],
         "alertNames": []
     },
-    "maintenance_service": {
-        "cloudeventTypes": [
-            {
-                "name": "equinix.fabric.connection_maintenance.state.completed",
-                "description": "Connection maintenance is completed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_maintenance.state.deferred",
-                "description": "Connection maintenance is deferred",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_maintenance.state.in_progress",
-                "description": "Connection maintenance is in progress",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_maintenance.state.scheduled",
-                "description": "Connection maintenance is scheduled",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port_maintenance.state.completed",
-                "description": "Port maintenance is completed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port_maintenance.state.deferred",
-                "description": "Port maintenance is deferred",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port_maintenance.state.in_progress",
-                "description": "Port maintenance is in progress",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port_maintenance.state.scheduled",
-                "description": "Port maintenance is scheduled",
-                "releaseStatus": "preview"
-            }
-        ],
-        "metricNames": [],
-        "alertNames": []
-    },
     "network": {
         "cloudeventTypes": [
             {
@@ -2741,6 +2675,31 @@
             {
                 "name": "equinix.network.maintenance.state.rescheduled",
                 "description": "Network maintenance state changed to rescheduled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.cancelled",
+                "description": "Network repair state changed to cancelled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.confirmed",
+                "description": "Network repair state changed to confirmed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.in_progress",
+                "description": "Network repair state changed to in_progress",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.rescheduled",
+                "description": "Network repair state changed to rescheduled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.resolved",
+                "description": "Network repair state changed to resolved",
                 "releaseStatus": "released"
             },
             {
@@ -2905,42 +2864,6 @@
             }
         ]
     },
-    "optical_connect": {
-        "cloudeventTypes": [
-            {
-                "name": "equinix.fabric.optical_connect.state.deprovisioned",
-                "description": "Optical Connect is deprovisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.optical_connect.state.deprovisioning",
-                "description": "Optical Connect is deprovisioning",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.optical_connect.state.failed",
-                "description": "Optical Connect is provisioning failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.optical_connect.state.provisioned",
-                "description": "Optical Connect is provisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.optical_connect.state.provisioning",
-                "description": "Optical Connect is provisioning",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.optical_connect.state.reprovisioning",
-                "description": "Optical Connect is reprovisioning",
-                "releaseStatus": "preview"
-            }
-        ],
-        "metricNames": [],
-        "alertNames": []
-    },
     "resource_manager": {
         "cloudeventTypes": [
             {
@@ -2972,82 +2895,6 @@
                 "name": "equinix.resource_manager.project.state.updated",
                 "description": "Project updated event.",
                 "releaseStatus": "released"
-            }
-        ],
-        "metricNames": [],
-        "alertNames": []
-    },
-    "time_service": {
-        "cloudeventTypes": [
-            {
-                "name": "equinix.fabric.time_service.state.cancelled",
-                "description": "Time Service is cancelled",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.configured",
-                "description": "Time Service is configured",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.configuring",
-                "description": "Time Service is configuring",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.configuring_failed",
-                "description": "Time Service is configuring failed",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.deprovisioned",
-                "description": "Time Service is deprovisioned",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.deprovisioning",
-                "description": "Time Service is deprovisioning",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.deprovisioning_failed",
-                "description": "Time Service is deprovisioning failed",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.draft",
-                "description": "Time Service is in draft state",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.provisioned",
-                "description": "Time Service is provisioned",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.provisioning",
-                "description": "Time Service is provisioning",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.time_service.state.provisioning_failed",
-                "description": "Time Service is provisioning failed",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.time_service.status.degraded",
-                "description": "Time Service status changed to degraded",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.time_service.status.down",
-                "description": "Time Service status changed to down",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.time_service.status.up",
-                "description": "Time Service status changed to up",
-                "releaseStatus": "preview"
             }
         ],
         "metricNames": [],

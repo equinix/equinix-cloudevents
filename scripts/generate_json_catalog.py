@@ -15,8 +15,12 @@ def retrieve_json_schemas():
     directory = os.path.dirname(os.path.abspath(__file__)) + '/../jsonschema'
     json_schemas = []
     for root, dirs, files in os.walk(directory):
+        # schemas may sit directly in the version directory or in product
+        # sub-directories beneath it (equinix/fabric/v2/connection/...)
+        published = any(part in sc.PUBLISHED_VERSIONS
+                        for part in os.path.relpath(root, directory).split(os.sep))
         for file in files:
-            if file.endswith('.json') and os.path.basename(root) != "jsonschema":
+            if file.endswith('.json') and published:
                 with open(root + "/" + file, "r") as eventFile:
                     data = json.load(eventFile)
                     events = sortedRemoveDuplicates(data.get(sc.EVENTS, []))
