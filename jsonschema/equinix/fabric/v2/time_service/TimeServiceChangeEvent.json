@@ -1,0 +1,203 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/time_service/TimeServiceChangeEvent.json",
+    "name": "TimeServiceChangeEvent",
+    "examples": [],
+    "package": "equinix.time_service.v2",
+    "datatype": "equinix.time_service.v2.TimeServiceChangeEvent",
+    "domain": "Equinix Time Service ChangeEvent",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "Optional. The Backup event payload. Unset for deletion events."
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                },
+                "auth": {
+                    "$ref": "#/definitions/Auth",
+                    "additionalProperties": true,
+                    "description": "The auth context within all ChangeEvent events."
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ChangeEvent Event Data",
+            "description": "The data within all ChangeEvent events."
+        },
+        "Auth": {
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "The unique identifier of the entity generating the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "The type of the entity generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the entity generating the event"
+                },
+                "email": {
+                    "type": "string",
+                    "description": "Email of the user generating the event"
+                },
+                "sourceIp": {
+                    "type": "string",
+                    "description": "IP address of the user generating the event"
+                },
+                "agent": {
+                    "type": "string",
+                    "description": "The software that made the request"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Auth",
+            "description": "Auth information of the generated event"
+        },
+        "Resource": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                },
+                "state": {
+                    "type": "string",
+                    "description": "Status of the resource generating the event"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the resource generating the event"
+                },
+                "operation": {
+                    "$ref": "#/definitions/Operation",
+                    "additionalProperties": true,
+                    "description": "Change information for the resource that fired the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        },
+        "Operation": {
+            "properties": {
+                "operationalStatus": {
+                    "type": "string",
+                    "description": "Operational status of time service"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Operation",
+            "description": "Operational details of the time service"
+        }
+    },
+    "cloudeventTypes": [
+        {
+            "name": "equinix.fabric.time_service.state.provisioning",
+            "description": "Time Service is provisioning",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.provisioned",
+            "description": "Time Service is provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.deprovisioning",
+            "description": "Time Service is deprovisioning",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.deprovisioned",
+            "description": "Time Service is deprovisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.cancelled",
+            "description": "Time Service is cancelled",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.provisioning_failed",
+            "description": "Time Service is provisioning failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.configuring_failed",
+            "description": "Time Service is configuring failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.deprovisioning_failed",
+            "description": "Time Service is deprovisioning failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.configuring",
+            "description": "Time Service is configuring",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.configured",
+            "description": "Time Service is configured",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.time_service.state.draft",
+            "description": "Time Service is in draft state",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.time_service.status.up",
+            "description": "Time Service status changed to up",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.status.down",
+            "description": "Time Service status changed to down",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.time_service.status.degraded",
+            "description": "Time Service status changed to degraded",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        }
+    ],
+    "metricNames": [],
+    "alertNames": []
+}
