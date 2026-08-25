@@ -4,17 +4,17 @@
     "examples": [
         {
             "specversion": "1.0",
-            "source": "https://uatapi.equinix.com/fabric/v4/cloudevents",
-            "id": "732f33a6-7034-4ef3-ade3-7712451fe233",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "11111111-1111-1111-1111-111111111111",
             "time": "2026-07-30T20:10:00.059281923Z",
             "type": "equinix.network_edge.device_interface.bandwidth_rx.usage",
-            "subject": "/ne/v1/devices/e8776dcb-1e57-4af8-94aa-6abd422a953d/interfaces/10",
+            "subject": "/ne/v1/devices/11111111-1111-1111-1111-111111111111/interfaces/10",
             "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/DeviceInterfaceMetricAlert.json",
             "datacontenttype": "application/json",
             "severitynumber": "9",
             "severitytext": "INFO",
             "equinixalert": "raise/18ym6lIS5hU54WKLHDjgNQ",
-            "equinixproject": "b11d4cb5-978a-418a-8b13-bf19abb97938",
+            "equinixproject": "11111111-1111-1111-1111-111111111111",
             "data": {
                 "metrics": [
                     {
@@ -28,18 +28,18 @@
                     }
                 ],
                 "alertRule": {
-                    "href": "https://uatapi.equinix.com/fabric/v4/streams/eadb980f-7e7b-4e91-a0f8-0682eae4a762/alertRules/ee5d160c-da25-4a8b-8979-8757ccee40af",
+                    "href": "https://api.equinix.com/fabric/v4/streams/11111111-1111-1111-1111-111111111111/alertRules/11111111-1111-1111-1111-111111111111",
                     "type": "METRIC_ALERT",
                     "name": "alert-network-ege-interface",
-                    "uuid": "ee5d160c-da25-4a8b-8979-8757ccee40af",
+                    "uuid": "11111111-1111-1111-1111-111111111111",
                     "detectionMethod": {
                         "type": "THRESHOLD"
                     }
                 },
                 "resource": {
-                    "href": "https://uatapi.equinix.com/ne/v1/devices/e8776dcb-1e57-4af8-94aa-6abd422a953d/interfaces/10",
+                    "href": "https://api.equinix.com/ne/v1/devices/11111111-1111-1111-1111-111111111111/interfaces/10",
                     "type": "DATA",
-                    "uuid": "29efbff5-1c37-4b1b-abcf-f7344cf482e9",
+                    "uuid": "11111111-1111-1111-1111-111111111111",
                     "id": 10,
                     "state": "PROVISIONED"
                 }

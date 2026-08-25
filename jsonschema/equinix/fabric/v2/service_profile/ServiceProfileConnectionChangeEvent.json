@@ -1,7 +1,38 @@
 {
     "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_profile/ServiceProfileConnectionChangeEvent.json",
     "name": "ServiceProfileConnectionChangeEvent",
-    "examples": [],
+    "examples": [
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "11111111-1111-1111-1111-111111111111",
+            "time": "2026-07-20T22:47:12Z",
+            "type": "equinix.fabric.service_profile_connection.state.pending",
+            "subject": "/fabric/v4/serviceProfiles/11111111-1111-1111-1111-111111111111/connections/11111111-1111-1111-1111-111111111111",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_profile/ServiceProfileConnectionChangeEvent.json",
+            "datacontenttype": "application/json",
+            "severitynumber": "9",
+            "severitytext": "INFO",
+            "equinixproject": "11111111-1111-1111-1111-111111111111",
+            "authtype": "system",
+            "authid": "equinix",
+            "traceparent": "00-11111111111111111111111111111111-111111111111111-01",
+            "tracestate": "111111111111111",
+            "data": {
+                "message": "Service Profile Connection Test-Connection state changed to pending",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/serviceProfiles/11111111-1111-1111-1111-111111111111/connections/11111111-1111-1111-1111-111111111111",
+                    "uuid": "11111111-1111-1111-1111-111111111111",
+                    "type": "EVPL_VC",
+                    "name": "Test-Connection"
+                },
+                "auth": {
+                    "type": "system",
+                    "id": "equinix"
+                }
+            }
+        }
+    ],
     "package": "equinix.fabric.v2",
     "datatype": "equinix.fabric.v2.ServiceProfileConnectionChangeEvent",
     "domain": "Equinix Fabric Service Profile Connection ChangeEvent",

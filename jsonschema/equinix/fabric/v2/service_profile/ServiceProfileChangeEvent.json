@@ -4,7 +4,7 @@
     "examples": [],
     "package": "equinix.fabric.v2",
     "datatype": "equinix.fabric.v2.ServiceProfileChangeEvent",
-    "domain": "Equinix Fabric Service Profile ChangeEvent",
+    "domain": "Equinix Fabric Service Profile ChangeEvent (Deprecated)",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",
     "definitions": {

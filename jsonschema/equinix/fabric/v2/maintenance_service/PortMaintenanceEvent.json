@@ -1,0 +1,192 @@
+{
+  "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/maintenance_service/PortMaintenanceEvent.json",
+  "name": "PortMaintenanceEvent",
+  "examples": [
+    {
+      "specversion": "1.0",
+      "source": "https://api.equinix.com/fabric/v4/cloudevents",
+      "id": "11111111-1111-1111-1111-111111111111",
+      "type": "equinix.fabric.port_maintenance.state.scheduled",
+      "subject": "/fabric/v4/ports/11111111-1111-1111-1111-111111111111/maintenances/11111111-1111-1111-1111-111111111111",
+      "time": "2026-06-11T18:06:21.000Z",
+      "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/maintenance_service/v2/MaintenanceEvent.json",
+      "datacontenttype": "application/json",
+      "severitynumber": "9",
+      "severitytext": "INFO",
+      "equinixalert": "raise/NCAB543WC4lrLpET8nLX4Vm8",
+      "equinixproject": "11111111-1111-1111-1111-111111111111",
+      "equinixtags": "Env=Prod,Team=IT,Type=Maintenance",
+      "data": {
+        "message": "Virtual port 'Test-Port' maintenance scheduled.",
+        "resource": {
+          "href": "https://api.equinix.com/fabric/v4/ports/11111111-1111-1111-1111-111111111111/maintenances/11111111-1111-1111-1111-111111111111",
+          "uuid": "11111111-1111-1111-1111-111111111111",
+          "type": "XF_MAINTENANCE",
+          "state": "SCHEDULED",
+          "description": "Scheduled maintenance for Test-Port",
+          "port": {
+            "uuid": "11111111-1111-1111-1111-111111111111",
+            "href": "https://api.equinix.com/fabric/v4/ports/11111111-1111-1111-1111-111111111111",
+            "type": "XF_PORT"
+          },
+          "incidentRefId": "CR1111111111",
+          "startDateTime": "2026-06-29 05:30:00",
+          "duration": "PT8H",
+          "batchUuid": "11111111-1111-1111-1111-111111111111"
+        }
+      },
+      "auth": {
+        "type": "system",
+        "id": "111111",
+        "name": "username",
+        "email": "username@test.com"
+      }
+    }
+  ],
+  "package": "equinix.maintenance_service.v2",
+  "datatype": "equinix.maintenance_service.v2.PortMaintenanceEvent",
+  "domain": "Equinix Maintenance Service PortMaintenanceEvent",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/Data",
+  "definitions": {
+    "Data": {
+      "properties": {
+        "resource": {
+          "$ref": "#/definitions/Resource",
+          "additionalProperties": true,
+          "description": "The maintenance event payload."
+        },
+        "message": {
+          "type": "string",
+          "description": "Supporting message describing the event"
+        },
+        "causedBy": {
+          "$ref": "#/definitions/CausedBy",
+          "additionalProperties": true,
+          "description": "The port maintenance cloud event that triggered this connection maintenance event"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "MaintenanceEvent Event Data",
+      "description": "The data within all MaintenanceEvent events."
+    },
+    "Resource": {
+      "properties": {
+        "href": {
+          "type": "string",
+          "description": "Link to the maintenance resource"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of the resource generating the event"
+        },
+        "uuid": {
+          "type": "string",
+          "description": "Equinix assigned unique identifier of the maintenance resource"
+        },
+        "state": {
+          "type": "string",
+          "description": "Current state of the maintenance (SCHEDULED, IN_PROGRESS, COMPLETED, DEFERRED)"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the maintenance event"
+        },
+        "incidentRefId": {
+          "type": "string",
+          "description": "Reference identifier for the maintenance incident"
+        },
+        "port": {
+          "$ref": "#/definitions/Port",
+          "additionalProperties": true,
+          "description": "The port associated with this maintenance event"
+        },
+        "startDateTime": {
+          "type": "string",
+          "description": "Scheduled start date and time of the maintenance"
+        },
+        "duration": {
+          "type": "string",
+          "description": "Duration of the maintenance in ISO 8601 duration format"
+        },
+        "batchUuid": {
+          "type": "string",
+          "description": "Unique identifier for the maintenance batch"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Resource",
+      "description": "Schema of the maintenance resource that fired the event"
+    },
+    "CausedBy": {
+      "properties": {
+        "href": {
+          "type": "string",
+          "description": "Link to the port maintenance cloud event that triggered this connection maintenance event"
+        },
+        "uuid": {
+          "type": "string",
+          "description": "Unique identifier of the port maintenance cloud event that triggered this connection maintenance event"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of the resource that triggered this connection maintenance event"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "CausedBy",
+      "description": "Reference to the port maintenance cloud event that triggered this connection maintenance event"
+    },
+    "Port": {
+      "properties": {
+        "uuid": {
+          "type": "string",
+          "description": "Equinix assigned unique identifier of the port"
+        },
+        "href": {
+          "type": "string",
+          "description": "Link to the port resource"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of the port resource"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Port",
+      "description": "Port associated with the maintenance event"
+    }
+  },
+  "cloudeventTypes": [
+    {
+      "name": "equinix.fabric.port_maintenance.state.scheduled",
+      "description": "Port maintenance is scheduled",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.port_maintenance.state.in_progress",
+      "description": "Port maintenance is in progress",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.port_maintenance.state.completed",
+      "description": "Port maintenance is completed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.port_maintenance.state.deferred",
+      "description": "Port maintenance is deferred",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    }
+  ],
+  "metricNames": [],
+  "alertNames": []
+}
