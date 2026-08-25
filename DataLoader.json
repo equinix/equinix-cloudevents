@@ -703,26 +703,6 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.service_profile.connection.deprovisioned",
-                "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.service_profile.connection.failed",
-                "description": "Service Profile Connection ${connection_name} state changed to failed",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.service_profile.connection.pending",
-                "description": "Service Profile Connection ${connection_name} state changed to pending",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.service_profile.connection.provisioned",
-                "description": "Service Profile Connection ${connection_name} state changed to provisioned",
-                "releaseStatus": "released"
-            },
-            {
                 "name": "equinix.fabric.service_profile_connection.state.deprovisioned",
                 "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
                 "releaseStatus": "released"
@@ -830,31 +810,6 @@
             {
                 "name": "equinix.fabric.time_service.state.provisioning_failed",
                 "description": "Time Service is provisioning failed",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.repair.state.cancelled",
-                "description": "Network repair state changed to cancelled",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.repair.state.confirmed",
-                "description": "Network repair state changed to confirmed",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.repair.state.in_progress",
-                "description": "Network repair state changed to in_progress",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.repair.state.rescheduled",
-                "description": "Network repair state changed to rescheduled",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.repair.state.resolved",
-                "description": "Network repair state changed to resolved",
                 "releaseStatus": "released"
             },
             {
@@ -2720,6 +2675,31 @@
             {
                 "name": "equinix.network.maintenance.state.rescheduled",
                 "description": "Network maintenance state changed to rescheduled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.cancelled",
+                "description": "Network repair state changed to cancelled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.confirmed",
+                "description": "Network repair state changed to confirmed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.in_progress",
+                "description": "Network repair state changed to in_progress",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.rescheduled",
+                "description": "Network repair state changed to rescheduled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.resolved",
+                "description": "Network repair state changed to resolved",
                 "releaseStatus": "released"
             },
             {
