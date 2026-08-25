@@ -145,7 +145,7 @@ def grouped_entry(group, schemas):
 {tables}"""
 
 def build_catalog(schemas):
-    """Group Evnet/ChangeEvent/Alert/Metric schemas by domain."""
+    """Group Event/ChangeEvent/Alert/Metric schemas by domain."""
     groups = {}
     for s in schemas:
         groups.setdefault(domain_group(s), []).append(s)

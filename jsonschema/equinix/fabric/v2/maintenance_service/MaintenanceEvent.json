@@ -1,6 +1,6 @@
 {
     "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/maintenance_service/MaintenanceEvent.json",
-    "name": "MaintenanceServiceEvent",
+    "name": "MaintenanceEvent",
     "examples": [
         {
             "specversion": "1.0",
