@@ -52,15 +52,11 @@ The following data payloads are the supported events and formats for Equinix Net
 
 - [Equinix Access Manager](#equinix-access-manager)
 - [Equinix Fabric](#equinix-fabric)
-- [Equinix Fabric Incident](#equinix-fabric-incident)
 - [Equinix Iam](#equinix-iam)
 - [Equinix Identity](#equinix-identity)
-- [Equinix Maintenance Service](#equinix-maintenance-service)
 - [Equinix Network](#equinix-network)
 - [Equinix Network Edge](#equinix-network-edge)
-- [Equinix Optical Connect](#equinix-optical-connect)
 - [Equinix Resource Manager](#equinix-resource-manager)
-- [Equinix Time Service](#equinix-time-service)
 
 ---
 ### Equinix Access Manager
@@ -117,7 +113,7 @@ The following data payloads are the supported events and formats for Equinix Net
 ---
 ### Equinix Fabric
 <details>
-<summary><b>Schemas</b> (39)</summary>
+<summary><b>Schemas</b> (42)</summary>
 
 <table>
 	<tr>
@@ -127,197 +123,212 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>App Domain</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/AppDomainChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppDomainChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.AppDomainChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>App Link</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/AppLinkChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.AppLinkChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>App Service</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/AppServiceChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppServiceChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.AppServiceChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>App Subscription</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/AppSubscriptionChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppSubscriptionChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.AppSubscriptionChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Asn</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/AsnChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/AsnChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.AsnChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Company Profile</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/CompanyProfileChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/company_profile/CompanyProfileChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.CompanyProfileChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Connection</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/ConnectionChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.ConnectionChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Connection</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/ConnectionMetric.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionMetric.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.ConnectionMetric</code></td>
 	</tr>
 	<tr>
 		<td>Connection</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/ConnectionMetricAlert.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionMetricAlert.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.ConnectionMetricAlert</code></td>
 	</tr>
 	<tr>
 		<td>Connection Bgpipv4 Session</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/ConnectionBgpipv4SessionChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionBgpipv4SessionChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.ConnectionBgpipv4SessionChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Connection Bgpipv6 Session</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/ConnectionBgpipv6SessionChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionBgpipv6SessionChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.ConnectionBgpipv6SessionChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Connection Route Aggregation</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/ConnectionRouteAggregationChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRouteAggregationChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.ConnectionRouteAggregationChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Connection Route Filter</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/ConnectionRouteFilterChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRouteFilterChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.ConnectionRouteFilterChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Connection Routing Protocol</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/ConnectionRoutingProtocolChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRoutingProtocolChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.ConnectionRoutingProtocolChangeEvent</code></td>
 	</tr>
 	<tr>
+		<td>Incident</td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/incident/IncidentChangeEvent.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.IncidentChangeEvent</code></td>
+	</tr>
+	<tr>
 		<td>Internet Access</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/InternetAccessChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/InternetAccessChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.InternetAccessChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Ip Block</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/IpBlockChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/IpBlockChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.IpBlockChangeEvent</code></td>
 	</tr>
 	<tr>
+		<td>Maintenance</td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/maintenance_service/MaintenanceEvent.json'>JSON</a></td>
+		<td><code>equinix.maintenance_service.v2.MaintenanceEvent</code></td>
+	</tr>
+	<tr>
 		<td>Metro</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/MetroMetric.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/metro/MetroMetric.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.MetroMetric</code></td>
 	</tr>
 	<tr>
 		<td>Metro</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/MetroMetricAlert.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/metro/MetroMetricAlert.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.MetroMetricAlert</code></td>
 	</tr>
 	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/MetroLatencyAlert.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.MetroLatencyAlert</code></td>
-	</tr>
-	<tr>
 		<td>Network</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/NetworkChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/network/NetworkChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.NetworkChangeEvent</code></td>
 	</tr>
 	<tr>
+		<td>Optical Connect</td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/optical_connect/OpticalConnectChangeEvent.json'>JSON</a></td>
+		<td><code>equinix.optical_connect.v2.OpticalConnectChangeEvent</code></td>
+	</tr>
+	<tr>
 		<td>Physical Port</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/PhysicalPortChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PhysicalPortChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.PhysicalPortChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Port</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/PortChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PortChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.PortChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Port</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/PortMetric.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PortMetric.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.PortMetric</code></td>
 	</tr>
 	<tr>
 		<td>Port</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/PortMetricAlert.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PortMetricAlert.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.PortMetricAlert</code></td>
 	</tr>
 	<tr>
 		<td>Route Aggregation</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/RouteAggregationChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_aggregation/RouteAggregationChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.RouteAggregationChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Route Aggregation Rule</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/RouteAggregationRuleChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_aggregation/RouteAggregationRuleChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.RouteAggregationRuleChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Route Filter</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/RouteFilterChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_filter/RouteFilterChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.RouteFilterChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Route Filter Rule</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/RouteFilterRuleChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_filter/RouteFilterRuleChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.RouteFilterRuleChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Router</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/RouterChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.RouterChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Router</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/RouterMetricAlert.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterMetricAlert.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.RouterMetricAlert</code></td>
 	</tr>
 	<tr>
 		<td>Router Action</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/RouterActionChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterActionChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.RouterActionChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Router Command</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/RouterCommandChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterCommandChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.RouterCommandChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Routing Protocol Action</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/RoutingProtocolActionChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_protocol/RoutingProtocolActionChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.RoutingProtocolActionChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Service Profile</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/ServiceProfileChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_profile/ServiceProfileChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.ServiceProfileChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Service Profile Connection</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/ServiceProfileConnectionChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_profile/ServiceProfileConnectionChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.ServiceProfileConnectionChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Service Token</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/ServiceTokenChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_token/ServiceTokenChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.ServiceTokenChangeEvent</code></td>
 	</tr>
 	<tr>
+		<td>Time Service</td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/time_service/TimeServiceChangeEvent.json'>JSON</a></td>
+		<td><code>equinix.time_service.v2.TimeServiceChangeEvent</code></td>
+	</tr>
+	<tr>
 		<td>Tunnel</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/TunnelChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/tunnel/TunnelChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.TunnelChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Tunnel Bgpipv4 Session</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/TunnelBgpipv4SessionChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/tunnel/TunnelBgpipv4SessionChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.TunnelBgpipv4SessionChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Tunnel Bgpipv6 Session</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/TunnelBgpipv6SessionChangeEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/tunnel/TunnelBgpipv6SessionChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.TunnelBgpipv6SessionChangeEvent</code></td>
 	</tr>
 </table>
@@ -325,7 +336,7 @@ The following data payloads are the supported events and formats for Equinix Net
 </details>
 
 <details>
-<summary><b>Events</b> (202)</summary>
+<summary><b>Events</b> (235)</summary>
 
 <table>
 	<tr>
@@ -938,6 +949,41 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>Incident</td>
+		<td>equinix.network.repair.state.cancelled</td>
+		<td>Network repair state changed to cancelled</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Incident</td>
+		<td>equinix.network.repair.state.confirmed</td>
+		<td>Network repair state changed to confirmed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Incident</td>
+		<td>equinix.network.repair.state.in_progress</td>
+		<td>Network repair state changed to in_progress</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Incident</td>
+		<td>equinix.network.repair.state.rescheduled</td>
+		<td>Network repair state changed to rescheduled</td>
+		<td>released</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Incident</td>
+		<td>equinix.network.repair.state.resolved</td>
+		<td>Network repair state changed to resolved</td>
+		<td>released</td>
+		<td>-</td>
+	</tr>
+	<tr>
 		<td>Internet Access</td>
 		<td>equinix.fabric.internet_access.attribute.changed</td>
 		<td>Internet access service changed</td>
@@ -997,36 +1043,99 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>Ip Block</td>
 		<td>equinix.fabric.ip_block.state.deprovisioned</td>
 		<td>Ip Block deprovisioned</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Ip Block</td>
 		<td>equinix.fabric.ip_block.state.deprovisioning</td>
 		<td>Ip Block deprovisioning started</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Ip Block</td>
 		<td>equinix.fabric.ip_block.state.failed</td>
 		<td>Ip Block provisioning or deprovisioning failed</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Ip Block</td>
 		<td>equinix.fabric.ip_block.state.provisioned</td>
 		<td>Ip Block provisioned</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Ip Block</td>
 		<td>equinix.fabric.ip_block.state.provisioning</td>
 		<td>Ip Block provisioning started</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Maintenance</td>
+		<td>equinix.fabric.connection_maintenance.state.completed</td>
+		<td>Connection maintenance is completed</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Maintenance</td>
+		<td>equinix.fabric.connection_maintenance.state.deferred</td>
+		<td>Connection maintenance is deferred</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Maintenance</td>
+		<td>equinix.fabric.connection_maintenance.state.in_progress</td>
+		<td>Connection maintenance is in progress</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Maintenance</td>
+		<td>equinix.fabric.connection_maintenance.state.scheduled</td>
+		<td>Connection maintenance is scheduled</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Maintenance</td>
+		<td>equinix.fabric.port_maintenance.state.completed</td>
+		<td>Port maintenance is completed</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Maintenance</td>
+		<td>equinix.fabric.port_maintenance.state.deferred</td>
+		<td>Port maintenance is deferred</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Maintenance</td>
+		<td>equinix.fabric.port_maintenance.state.in_progress</td>
+		<td>Port maintenance is in progress</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Maintenance</td>
+		<td>equinix.fabric.port_maintenance.state.scheduled</td>
+		<td>Port maintenance is scheduled</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Metro</td>
+		<td>equinix.fabric.metric</td>
+		<td>Metrics collected</td>
 		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+		<td>-</td>
 	</tr>
 	<tr>
 		<td>Network</td>
@@ -1061,6 +1170,48 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.network.state.provisioning</td>
 		<td>Network named ${network_name} state changed to provisioning</td>
 		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Optical Connect</td>
+		<td>equinix.fabric.optical_connect.state.deprovisioned</td>
+		<td>Optical Connect is deprovisioned</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Optical Connect</td>
+		<td>equinix.fabric.optical_connect.state.deprovisioning</td>
+		<td>Optical Connect is deprovisioning</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Optical Connect</td>
+		<td>equinix.fabric.optical_connect.state.failed</td>
+		<td>Optical Connect is provisioning failed</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Optical Connect</td>
+		<td>equinix.fabric.optical_connect.state.provisioned</td>
+		<td>Optical Connect is provisioned</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Optical Connect</td>
+		<td>equinix.fabric.optical_connect.state.provisioning</td>
+		<td>Optical Connect is provisioning</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Optical Connect</td>
+		<td>equinix.fabric.optical_connect.state.reprovisioning</td>
+		<td>Optical Connect is reprovisioning</td>
+		<td>preview</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1543,29 +1694,29 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>Service Profile</td>
 		<td>equinix.fabric.service_profile.connection.deprovisioned</td>
 		<td>Service Profile Connection ${connection_name} state changed to deprovisioned</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Service Profile</td>
 		<td>equinix.fabric.service_profile.connection.failed</td>
 		<td>Service Profile Connection ${connection_name} state changed to failed</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Service Profile</td>
 		<td>equinix.fabric.service_profile.connection.pending</td>
 		<td>Service Profile Connection ${connection_name} state changed to pending</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Service Profile</td>
 		<td>equinix.fabric.service_profile.connection.provisioned</td>
 		<td>Service Profile Connection ${connection_name} state changed to provisioned</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Service Profile Connection</td>
@@ -1642,6 +1793,104 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.service_token.state.inactive</td>
 		<td>Token successfully deactivated</td>
 		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Time Service</td>
+		<td>equinix.fabric.time_service.state.cancelled</td>
+		<td>Time Service is cancelled</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Time Service</td>
+		<td>equinix.fabric.time_service.state.configured</td>
+		<td>Time Service is configured</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Time Service</td>
+		<td>equinix.fabric.time_service.state.configuring</td>
+		<td>Time Service is configuring</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Time Service</td>
+		<td>equinix.fabric.time_service.state.configuring_failed</td>
+		<td>Time Service is configuring failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Time Service</td>
+		<td>equinix.fabric.time_service.state.deprovisioned</td>
+		<td>Time Service is deprovisioned</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Time Service</td>
+		<td>equinix.fabric.time_service.state.deprovisioning</td>
+		<td>Time Service is deprovisioning</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Time Service</td>
+		<td>equinix.fabric.time_service.state.deprovisioning_failed</td>
+		<td>Time Service is deprovisioning failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Time Service</td>
+		<td>equinix.fabric.time_service.state.draft</td>
+		<td>Time Service is in draft state</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Time Service</td>
+		<td>equinix.fabric.time_service.state.provisioned</td>
+		<td>Time Service is provisioned</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Time Service</td>
+		<td>equinix.fabric.time_service.state.provisioning</td>
+		<td>Time Service is provisioning</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Time Service</td>
+		<td>equinix.fabric.time_service.state.provisioning_failed</td>
+		<td>Time Service is provisioning failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Time Service</td>
+		<td>equinix.fabric.time_service.status.degraded</td>
+		<td>Time Service status changed to degraded</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Time Service</td>
+		<td>equinix.fabric.time_service.status.down</td>
+		<td>Time Service status changed to down</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Time Service</td>
+		<td>equinix.fabric.time_service.status.up</td>
+		<td>Time Service status changed to up</td>
+		<td>preview</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1740,63 +1989,14 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.tunnel_bgpipv6_session.status.open_sent</td>
 		<td>BGP peer ${ipv6_address} (AS ${asn}) session open_sent</td>
 		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-</table>
-
-
-
----
-### Equinix Fabric Incident
-#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json)
-#### Data Type
-`equinix.fabric.v1.Incident`
-#### Supported Events, Metrics, and Alerts
-#### Events
-
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-		<th>Release Status</th>
-		<th>SLO Category</th>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.cancelled</td>
-		<td>Network repair state changed to cancelled</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.confirmed</td>
-		<td>Network repair state changed to confirmed</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.in_progress</td>
-		<td>Network repair state changed to in_progress</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.rescheduled</td>
-		<td>Network repair state changed to rescheduled</td>
-		<td>released</td>
-	<td>-</td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.resolved</td>
-		<td>Network repair state changed to resolved</td>
-		<td>released</td>
-	<td>-</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 </table>
 
 </details>
 
 <details>
-<summary><b>Alerts</b> (212)</summary>
+<summary><b>Alerts</b> (148)</summary>
 
 <table>
 	<tr>
@@ -2017,18 +2217,7 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.metro.cn_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Chennai to ${metro} is ${operator} ${operand} microseconds</td>
-		<td>preview</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.cn_{metroCode}.latency</td>
-		<td>Metro latency from Chennai to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
+		<td>Metro</td>
 		<td>equinix.fabric.metro.cu_{metroCode}.jitter_avg</td>
 		<td>Average metro jitter from Culpeper to ${metro} is ${operator} ${operand} microseconds</td>
 		<td>preview</td>
@@ -2420,18 +2609,7 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.metro.mn_{metroCode}.jitter_avg</td>
-		<td>Average metro jitter from Manila to ${metro} is ${operator} ${operand} microseconds</td>
-		<td>preview</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.mn_{metroCode}.latency</td>
-		<td>Metro latency from Manila to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>preview</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
+		<td>Metro</td>
 		<td>equinix.fabric.metro.mo_{metroCode}.jitter_avg</td>
 		<td>Average metro jitter from Monterrey to ${metro} is ${operator} ${operand} microseconds</td>
 		<td>preview</td>
@@ -2791,1529 +2969,6 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>Metro</td>
 		<td>equinix.fabric.metro.zh_{metroCode}.latency</td>
 		<td>Metro latency from Zurich to ${metro} is ${operator} ${operand} milliseconds</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.am_{metroCode}.latency</td>
-		<td>Metro latency from Amsterdam to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.at_{metroCode}.latency</td>
-		<td>Metro latency from Atlanta to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.ba_{metroCode}.latency</td>
-		<td>Metro latency from Barcelona to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.bg_{metroCode}.latency</td>
-		<td>Metro latency from Bogota to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.bl_{metroCode}.latency</td>
-		<td>Metro latency from Brussels to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.bo_{metroCode}.latency</td>
-		<td>Metro latency from Boston to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.bx_{metroCode}.latency</td>
-		<td>Metro latency from Bordeaux to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.ca_{metroCode}.latency</td>
-		<td>Metro latency from Canberra to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.ch_{metroCode}.latency</td>
-		<td>Metro latency from Chicago to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.cl_{metroCode}.latency</td>
-		<td>Metro latency from Calgary to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.cu_{metroCode}.latency</td>
-		<td>Metro latency from Culpeper to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.da_{metroCode}.latency</td>
-		<td>Metro latency from Dallas to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.db_{metroCode}.latency</td>
-		<td>Metro latency from Dublin to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.applink.egress_bytes_rx.count</td>
-		<td>Application Link egress received bytes count</td>
-		<td>preview</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.applink.egress_bytes_tx.count</td>
-		<td>Application Link egress transmitted bytes count</td>
-		<td>preview</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.applink.egress_connections_erred.count</td>
-		<td>Application Link egress erred connections count</td>
-		<td>preview</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.applink.egress_connections_retried.count</td>
-		<td>Application Link egress retried connections count</td>
-		<td>preview</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.applink.egress_down.count</td>
-		<td>Application Link egress backend down count</td>
-		<td>preview</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.applink.egress_down.time</td>
-		<td>Application Link egress backend downtime in seconds</td>
-		<td>preview</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.applink.egress_requests_queued.count</td>
-		<td>Application Link egress queued requests count</td>
-		<td>preview</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.applink.egress_requests_queued.time</td>
-		<td>Application Link egress average queued request time in seconds</td>
-		<td>preview</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.applink.egress_requests_redispatched.count</td>
-		<td>Application Link egress redispatched requests count</td>
-		<td>preview</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.applink.egress_responses.latency</td>
-		<td>Application Link egress average response latency in seconds</td>
-		<td>preview</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.applink.egress_responses_erred.count</td>
-		<td>Application Link egress erred responses count</td>
-		<td>preview</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.applink.ingress_bytes_rx.count</td>
-		<td>Application Link ingress received bytes count</td>
-		<td>preview</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.applink.ingress_bytes_tx.count</td>
-		<td>Application Link ingress transmitted bytes count</td>
-		<td>preview</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.applink.ingress_requests_erred.count</td>
-		<td>Application Link ingress erred requests count</td>
-		<td>preview</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.applink.ingress_sessions.rate</td>
-		<td>Application Link ingress sessions rate in sessions/sec</td>
-		<td>preview</td>
-	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.connection.bandwidth_rx.usage</td>
-		<td>Connection inbound bandwidth usage in bit/sec</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.de_{metroCode}.latency</td>
-		<td>Metro latency from Denver to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.dx_{metroCode}.latency</td>
-		<td>Metro latency from Dubai to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.fr_{metroCode}.latency</td>
-		<td>Metro latency from Frankfurt to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.gv_{metroCode}.latency</td>
-		<td>Metro latency from Geneva to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.he_{metroCode}.latency</td>
-		<td>Metro latency from Helsinki to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.hh_{metroCode}.latency</td>
-		<td>Metro latency from Hamburg to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.hk_{metroCode}.latency</td>
-		<td>Metro latency from Hong Kong to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.am_{metroCode}.jitter_avg</td>
-		<td>Amsterdam to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.am_{metroCode}.latency</td>
-		<td>Amsterdam to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.at_{metroCode}.jitter_avg</td>
-		<td>Atlanta to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.at_{metroCode}.latency</td>
-		<td>Atlanta to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ba_{metroCode}.jitter_avg</td>
-		<td>Barcelona to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ba_{metroCode}.latency</td>
-		<td>Barcelona to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.bg_{metroCode}.jitter_avg</td>
-		<td>Bogota to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.bg_{metroCode}.latency</td>
-		<td>Bogota to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.bl_{metroCode}.jitter_avg</td>
-		<td>Brussels to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.bl_{metroCode}.latency</td>
-		<td>Brussels to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.bo_{metroCode}.jitter_avg</td>
-		<td>Boston to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.bo_{metroCode}.latency</td>
-		<td>Boston to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.bx_{metroCode}.jitter_avg</td>
-		<td>Bordeaux to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.bx_{metroCode}.latency</td>
-		<td>Bordeaux to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ca_{metroCode}.jitter_avg</td>
-		<td>Canberra to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ca_{metroCode}.latency</td>
-		<td>Canberra to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ch_{metroCode}.jitter_avg</td>
-		<td>Chicago to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ch_{metroCode}.latency</td>
-		<td>Chicago to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.cl_{metroCode}.jitter_avg</td>
-		<td>Calgary to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.cl_{metroCode}.latency</td>
-		<td>Calgary to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.cn_{metroCode}.jitter_avg</td>
-		<td>Chennai to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.cn_{metroCode}.latency</td>
-		<td>Chennai to ${metro} intermetro latency, average in milliseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.cu_{metroCode}.jitter_avg</td>
-		<td>Culpeper to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.cu_{metroCode}.latency</td>
-		<td>Culpeper to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.da_{metroCode}.jitter_avg</td>
-		<td>Dallas to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.da_{metroCode}.latency</td>
-		<td>Dallas to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.db_{metroCode}.jitter_avg</td>
-		<td>Dublin to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.db_{metroCode}.latency</td>
-		<td>Dublin to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.dc_{metroCode}.jitter_avg</td>
-		<td>Ashburn to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.dc_{metroCode}.latency</td>
-		<td>Ashburn to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.de_{metroCode}.jitter_avg</td>
-		<td>Denver to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.de_{metroCode}.latency</td>
-		<td>Denver to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.dx_{metroCode}.jitter_avg</td>
-		<td>Dubai to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.dx_{metroCode}.latency</td>
-		<td>Dubai to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.fr_{metroCode}.jitter_avg</td>
-		<td>Frankfurt to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.fr_{metroCode}.latency</td>
-		<td>Frankfurt to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.gv_{metroCode}.jitter_avg</td>
-		<td>Geneva to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.gv_{metroCode}.latency</td>
-		<td>Geneva to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.he_{metroCode}.jitter_avg</td>
-		<td>Helsinki to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.he_{metroCode}.latency</td>
-		<td>Helsinki to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.hh_{metroCode}.jitter_avg</td>
-		<td>Hamburg to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.hh_{metroCode}.latency</td>
-		<td>Hamburg to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.hk_{metroCode}.jitter_avg</td>
-		<td>Hong Kong to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.hk_{metroCode}.latency</td>
-		<td>Hong Kong to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ho_{metroCode}.jitter_avg</td>
-		<td>Houston to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ho_{metroCode}.latency</td>
-		<td>Houston to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.il_{metroCode}.jitter_avg</td>
-		<td>Istanbul to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.il_{metroCode}.latency</td>
-		<td>Istanbul to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.jh_{metroCode}.jitter_avg</td>
-		<td>Johor to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.jh_{metroCode}.latency</td>
-		<td>Johor to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.jk_{metroCode}.jitter_avg</td>
-		<td>Jakarta to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.jk_{metroCode}.latency</td>
-		<td>Jakarta to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.jn_{metroCode}.jitter_avg</td>
-		<td>Johannesburg to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.jn_{metroCode}.latency</td>
-		<td>Johannesburg to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ka_{metroCode}.jitter_avg</td>
-		<td>Kamloops to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ka_{metroCode}.latency</td>
-		<td>Kamloops to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.kl_{metroCode}.jitter_avg</td>
-		<td>Kuala Lumpur to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.kl_{metroCode}.latency</td>
-		<td>Kuala Lumpur to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.la_{metroCode}.jitter_avg</td>
-		<td>Los Angeles to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.la_{metroCode}.latency</td>
-		<td>Los Angeles to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ld_{metroCode}.jitter_avg</td>
-		<td>London to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ld_{metroCode}.latency</td>
-		<td>London to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.lm_{metroCode}.jitter_avg</td>
-		<td>Lima to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.lm_{metroCode}.latency</td>
-		<td>Lima to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ls_{metroCode}.jitter_avg</td>
-		<td>Lisbon to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ls_{metroCode}.latency</td>
-		<td>Lisbon to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ma_{metroCode}.jitter_avg</td>
-		<td>Manchester to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ma_{metroCode}.latency</td>
-		<td>Manchester to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.mb_{metroCode}.jitter_avg</td>
-		<td>Mumbai to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.mb_{metroCode}.latency</td>
-		<td>Mumbai to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.md_{metroCode}.jitter_avg</td>
-		<td>Madrid to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.md_{metroCode}.latency</td>
-		<td>Madrid to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.me_{metroCode}.jitter_avg</td>
-		<td>Melbourne to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.me_{metroCode}.latency</td>
-		<td>Melbourne to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.mi_{metroCode}.jitter_avg</td>
-		<td>Miami to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.mi_{metroCode}.latency</td>
-		<td>Miami to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ml_{metroCode}.jitter_avg</td>
-		<td>Milan to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ml_{metroCode}.latency</td>
-		<td>Milan to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.mn_{metroCode}.jitter_avg</td>
-		<td>Manila to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.mn_{metroCode}.latency</td>
-		<td>Manila to ${metro} intermetro latency, average in milliseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.mo_{metroCode}.jitter_avg</td>
-		<td>Monterrey to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.mo_{metroCode}.latency</td>
-		<td>Monterrey to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.mt_{metroCode}.jitter_avg</td>
-		<td>Montreal to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.mt_{metroCode}.latency</td>
-		<td>Montreal to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.mu_{metroCode}.jitter_avg</td>
-		<td>Munich to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.mu_{metroCode}.latency</td>
-		<td>Munich to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.mx_{metroCode}.jitter_avg</td>
-		<td>Mexico City to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.mx_{metroCode}.latency</td>
-		<td>Mexico City to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ny_{metroCode}.jitter_avg</td>
-		<td>New York to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ny_{metroCode}.latency</td>
-		<td>New York to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.os_{metroCode}.jitter_avg</td>
-		<td>Osaka to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.os_{metroCode}.latency</td>
-		<td>Osaka to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ot_{metroCode}.jitter_avg</td>
-		<td>Ottawa to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ot_{metroCode}.latency</td>
-		<td>Ottawa to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.pa_{metroCode}.jitter_avg</td>
-		<td>Paris to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.pa_{metroCode}.latency</td>
-		<td>Paris to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.pe_{metroCode}.jitter_avg</td>
-		<td>Perth to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.pe_{metroCode}.latency</td>
-		<td>Perth to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ph_{metroCode}.jitter_avg</td>
-		<td>Philadelphia to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ph_{metroCode}.latency</td>
-		<td>Philadelphia to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.rj_{metroCode}.jitter_avg</td>
-		<td>Rio de Janeiro to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.rj_{metroCode}.latency</td>
-		<td>Rio de Janeiro to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.se_{metroCode}.jitter_avg</td>
-		<td>Seattle to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.se_{metroCode}.latency</td>
-		<td>Seattle to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.sg_{metroCode}.jitter_avg</td>
-		<td>Singapore to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.sg_{metroCode}.latency</td>
-		<td>Singapore to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.sk_{metroCode}.jitter_avg</td>
-		<td>Stockholm to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.sk_{metroCode}.latency</td>
-		<td>Stockholm to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.sl_{metroCode}.jitter_avg</td>
-		<td>Seoul to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.sl_{metroCode}.latency</td>
-		<td>Seoul to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.so_{metroCode}.jitter_avg</td>
-		<td>Sofia to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.so_{metroCode}.latency</td>
-		<td>Sofia to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.sp_{metroCode}.jitter_avg</td>
-		<td>Sao Paulo to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.sp_{metroCode}.latency</td>
-		<td>Sao Paulo to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.st_{metroCode}.jitter_avg</td>
-		<td>Santiago to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.st_{metroCode}.latency</td>
-		<td>Santiago to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.sv_{metroCode}.jitter_avg</td>
-		<td>Silicon Valley to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.sv_{metroCode}.latency</td>
-		<td>Silicon Valley to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.sy_{metroCode}.jitter_avg</td>
-		<td>Sydney to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.sy_{metroCode}.latency</td>
-		<td>Sydney to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.tr_{metroCode}.jitter_avg</td>
-		<td>Toronto to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.tr_{metroCode}.latency</td>
-		<td>Toronto to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ty_{metroCode}.jitter_avg</td>
-		<td>Tokyo to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ty_{metroCode}.latency</td>
-		<td>Tokyo to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.va_{metroCode}.jitter_avg</td>
-		<td>Vancouver to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.va_{metroCode}.latency</td>
-		<td>Vancouver to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.wa_{metroCode}.jitter_avg</td>
-		<td>Warsaw to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.wa_{metroCode}.latency</td>
-		<td>Warsaw to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.wi_{metroCode}.jitter_avg</td>
-		<td>Winnipeg to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.wi_{metroCode}.latency</td>
-		<td>Winnipeg to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.zh_{metroCode}.jitter_avg</td>
-		<td>Zurich to ${metro} intermetro average jitter in microseconds</td>
-		<td>preview</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.zh_{metroCode}.latency</td>
-		<td>Zurich to ${metro} intermetro latency, average in milliseconds</td>
-		<td>released</td>
-	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.bandwidth_rx.usage</td>
-		<td>Port inbound bandwidth usage in bit/sec</td>
-		<td>released</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.bandwidth_rx.utilization</td>
-		<td>Port inbound bandwidth utilization in %</td>
-		<td>preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.bandwidth_tx.usage</td>
-		<td>Port outbound bandwidth usage in bit/sec</td>
-		<td>released</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.bandwidth_tx.utilization</td>
-		<td>Port outbound bandwidth utilization in %</td>
-		<td>preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.packets_dropped_rx.count</td>
-		<td>Port inbound dropped packets count</td>
-		<td>released</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.packets_dropped_tx.count</td>
-		<td>Port outbound dropped packets count</td>
-		<td>released</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.packets_erred_rx.count</td>
-		<td>Port inbound erred packets count</td>
-		<td>released</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.port.packets_erred_tx.count</td>
-		<td>Port outbound erred packets count</td>
-		<td>released</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-</table>
-
-
----
-### Equinix Fabric Metro Latency Alert (Deprecated)
-#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetroLatencyAlert.json)
-#### Data Type
-`equinix.fabric.v1.MetroLatencyAlert`
-#### Supported Events, Metrics, and Alerts
-
-
-#### Alerts
-
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-		<th>Release Status</th>
-		<th>SLO Category</th>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.am_{metroCode}.latency</td>
-		<td>Metro latency from Amsterdam to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.at_{metroCode}.latency</td>
-		<td>Metro latency from Atlanta to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ba_{metroCode}.latency</td>
-		<td>Metro latency from Barcelona to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.bg_{metroCode}.latency</td>
-		<td>Metro latency from Bogota to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.bl_{metroCode}.latency</td>
-		<td>Metro latency from Brussels to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.bo_{metroCode}.latency</td>
-		<td>Metro latency from Boston to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.bx_{metroCode}.latency</td>
-		<td>Metro latency from Bordeaux to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ca_{metroCode}.latency</td>
-		<td>Metro latency from Canberra to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.ch_{metroCode}.latency</td>
-		<td>Metro latency from Chicago to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.cl_{metroCode}.latency</td>
-		<td>Metro latency from Calgary to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.cu_{metroCode}.latency</td>
-		<td>Metro latency from Culpeper to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.da_{metroCode}.latency</td>
-		<td>Metro latency from Dallas to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.db_{metroCode}.latency</td>
-		<td>Metro latency from Dublin to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.dc_{metroCode}.latency</td>
-		<td>Metro latency from Ashburn to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.de_{metroCode}.latency</td>
-		<td>Metro latency from Denver to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.dx_{metroCode}.latency</td>
-		<td>Metro latency from Dubai to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.fr_{metroCode}.latency</td>
-		<td>Metro latency from Frankfurt to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.gv_{metroCode}.latency</td>
-		<td>Metro latency from Geneva to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.he_{metroCode}.latency</td>
-		<td>Metro latency from Helsinki to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.hh_{metroCode}.latency</td>
-		<td>Metro latency from Hamburg to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.metro.hk_{metroCode}.latency</td>
-		<td>Metro latency from Hong Kong to ${metro} above ${threshold}</td>
-		<td>released</td>
-	<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.ho_{metroCode}.latency</td>
-		<td>Metro latency from Houston to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.il_{metroCode}.latency</td>
-		<td>Metro latency from Istanbul to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.jh_{metroCode}.latency</td>
-		<td>Metro latency from Johor to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.jk_{metroCode}.latency</td>
-		<td>Metro latency from Jakarta to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.jn_{metroCode}.latency</td>
-		<td>Metro latency from Johannesburg to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.ka_{metroCode}.latency</td>
-		<td>Metro latency from Kamloops to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.kl_{metroCode}.latency</td>
-		<td>Metro latency from Kuala Lumpur to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.la_{metroCode}.latency</td>
-		<td>Metro latency from Los Angeles to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.ld_{metroCode}.latency</td>
-		<td>Metro latency from London to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.lm_{metroCode}.latency</td>
-		<td>Metro latency from Lima to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.ls_{metroCode}.latency</td>
-		<td>Metro latency from Lisbon to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.ma_{metroCode}.latency</td>
-		<td>Metro latency from Manchester to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.mb_{metroCode}.latency</td>
-		<td>Metro latency from Mumbai to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.md_{metroCode}.latency</td>
-		<td>Metro latency from Madrid to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.me_{metroCode}.latency</td>
-		<td>Metro latency from Melbourne to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.mi_{metroCode}.latency</td>
-		<td>Metro latency from Miami to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.ml_{metroCode}.latency</td>
-		<td>Metro latency from Milan to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.mo_{metroCode}.latency</td>
-		<td>Metro latency from Monterrey to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.mt_{metroCode}.latency</td>
-		<td>Metro latency from Montreal to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.mu_{metroCode}.latency</td>
-		<td>Metro latency from Munich to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.mx_{metroCode}.latency</td>
-		<td>Metro latency from Mexico City to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.ny_{metroCode}.latency</td>
-		<td>Metro latency from New York to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.os_{metroCode}.latency</td>
-		<td>Metro latency from Osaka to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.ot_{metroCode}.latency</td>
-		<td>Metro latency from Ottawa to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.pa_{metroCode}.latency</td>
-		<td>Metro latency from Paris to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.pe_{metroCode}.latency</td>
-		<td>Metro latency from Perth to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.ph_{metroCode}.latency</td>
-		<td>Metro latency from Philadelphia to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.rj_{metroCode}.latency</td>
-		<td>Metro latency from Rio de Janeiro to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.se_{metroCode}.latency</td>
-		<td>Metro latency from Seattle to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.sg_{metroCode}.latency</td>
-		<td>Metro latency from Singapore to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.sk_{metroCode}.latency</td>
-		<td>Metro latency from Stockholm to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.sl_{metroCode}.latency</td>
-		<td>Metro latency from Seoul to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.so_{metroCode}.latency</td>
-		<td>Metro latency from Sofia to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.sp_{metroCode}.latency</td>
-		<td>Metro latency from Sao Paulo to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.st_{metroCode}.latency</td>
-		<td>Metro latency from Santiago to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.sv_{metroCode}.latency</td>
-		<td>Metro latency from Silicon Valley to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.sy_{metroCode}.latency</td>
-		<td>Metro latency from Sydney to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.tr_{metroCode}.latency</td>
-		<td>Metro latency from Toronto to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.ty_{metroCode}.latency</td>
-		<td>Metro latency from Tokyo to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.va_{metroCode}.latency</td>
-		<td>Metro latency from Vancouver to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.wa_{metroCode}.latency</td>
-		<td>Metro latency from Warsaw to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.wi_{metroCode}.latency</td>
-		<td>Metro latency from Winnipeg to ${metro} above ${threshold}</td>
-		<td>released</td>
-		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Metro Latency (Deprecated)</td>
-		<td>equinix.fabric.metro.zh_{metroCode}.latency</td>
-		<td>Metro latency from Zurich to ${metro} above ${threshold}</td>
 		<td>released</td>
 		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
@@ -5416,58 +4071,6 @@ The following data payloads are the supported events and formats for Equinix Net
 
 
 ---
-### Equinix Fabric Incident
-#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/Incident.json)
-#### Data Type
-`equinix.fabric.v2.Incident`
-#### Supported Events, Metrics, and Alerts
-<details>
-<summary><b>Events</b> (5)</summary>
-
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-		<th>Release Status</th>
-		<th>SLO Category</th>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.cancelled</td>
-		<td>Network repair state changed to cancelled</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.confirmed</td>
-		<td>Network repair state changed to confirmed</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.in_progress</td>
-		<td>Network repair state changed to in_progress</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.rescheduled</td>
-		<td>Network repair state changed to rescheduled</td>
-		<td>released</td>
-	<td>-</td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.resolved</td>
-		<td>Network repair state changed to resolved</td>
-		<td>released</td>
-	<td>-</td>
-	</tr>
-</table>
-
-</details>
-
-
-
----
 ### Equinix Iam
 <details>
 <summary><b>Schemas</b> (2)</summary>
@@ -5608,167 +4211,9 @@ The following data payloads are the supported events and formats for Equinix Net
 
 
 ---
-### Equinix Maintenance Service
+### Equinix Network
 <details>
 <summary><b>Schemas</b> (1)</summary>
-
-<table>
-	<tr>
-		<th>Product</th>
-		<th>DataSchema</th>
-		<th>Data Type</th>
-	</tr>
-	<tr>
-		<td>Maintenance</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/maintenance_service/v2/MaintenanceEvent.json'>JSON</a></td>
-		<td><code>equinix.maintenance_service.v2.MaintenanceEvent</code></td>
-	</tr>
-</table>
-
-</details>
-
-<details>
-<summary><b>Events</b> (8)</summary>
-
-<table>
-	<tr>
-		<th>Product</th>
-		<th>Cloud Event Types</th>
-		<th>Description</th>
-		<th>Release Status</th>
-		<th>SLO Category</th>
-	</tr>
-	<tr>
-		<td>Maintenance</td>
-		<td>equinix.fabric.connection_maintenance.state.completed</td>
-		<td>Connection maintenance is completed</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Maintenance</td>
-		<td>equinix.fabric.connection_maintenance.state.deferred</td>
-		<td>Connection maintenance is deferred</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Maintenance</td>
-		<td>equinix.fabric.connection_maintenance.state.in_progress</td>
-		<td>Connection maintenance is in progress</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Maintenance</td>
-		<td>equinix.fabric.connection_maintenance.state.scheduled</td>
-		<td>Connection maintenance is scheduled</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Maintenance</td>
-		<td>equinix.fabric.port_maintenance.state.completed</td>
-		<td>Port maintenance is completed</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Maintenance</td>
-		<td>equinix.fabric.port_maintenance.state.deferred</td>
-		<td>Port maintenance is deferred</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Maintenance</td>
-		<td>equinix.fabric.port_maintenance.state.in_progress</td>
-		<td>Port maintenance is in progress</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Maintenance</td>
-		<td>equinix.fabric.port_maintenance.state.scheduled</td>
-		<td>Port maintenance is scheduled</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-</table>
-
-</details>
-
-
-
-
----
-### Equinix Network Notification Event
-#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network/v1/NotificationEvent.json)
-#### Data Type
-`equinix.network.v1.NotificationEvent`
-#### Supported Events, Metrics, and Alerts
-#### Events
-
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Description</th>
-		<th>Release Status</th>
-		<th>SLO Category</th>
-	</tr>
-	<tr>
-		<td>equinix.network.maintenance.state.cancelled</td>
-		<td>Network maintenance state changed to cancelled</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.maintenance.state.completed</td>
-		<td>Network maintenance state changed to completed</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.maintenance.state.confirmed</td>
-		<td>Network maintenance state changed to confirmed</td>
-		<td>released</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.maintenance.state.extended</td>
-		<td>Network maintenance state changed to extended</td>
-		<td>released</td>
-	<td>-</td>
-	</tr>
-	<tr>
-		<td>equinix.network.maintenance.state.in_progress</td>
-		<td>Network maintenance state changed to in_progress</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.network.maintenance.state.rescheduled</td>
-		<td>Network maintenance state changed to rescheduled</td>
-		<td>released</td>
-	<td>-</td>
-	</tr>
-	<tr>
-		<td>equinix.network.repair.state.completed</td>
-		<td>Network repair state changed to completed</td>
-		<td>preview</td>
-	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-</table>
-
-
-
----
-### Equinix Network Edge ChangeEvent
-#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/ChangeEvent.json)
-#### Data Type
-`equinix.network_edge.v1.ChangeEvent`
-#### Supported Events, Metrics, and Alerts
-#### Events
 
 <table>
 	<tr>
@@ -6135,86 +4580,6 @@ The following data payloads are the supported events and formats for Equinix Net
 
 
 ---
-### Equinix Optical Connect
-<details>
-<summary><b>Schemas</b> (1)</summary>
-
-<table>
-	<tr>
-		<th>Product</th>
-		<th>DataSchema</th>
-		<th>Data Type</th>
-	</tr>
-	<tr>
-		<td>Optical Connect</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/optical_connect/v2/OpticalConnectChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.optical_connect.v2.OpticalConnectChangeEvent</code></td>
-	</tr>
-</table>
-
-</details>
-
-<details>
-<summary><b>Events</b> (6)</summary>
-
-<table>
-	<tr>
-		<th>Product</th>
-		<th>Cloud Event Types</th>
-		<th>Description</th>
-		<th>Release Status</th>
-		<th>SLO Category</th>
-	</tr>
-	<tr>
-		<td>Optical Connect</td>
-		<td>equinix.fabric.optical_connect.state.deprovisioned</td>
-		<td>Optical Connect is deprovisioned</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Optical Connect</td>
-		<td>equinix.fabric.optical_connect.state.deprovisioning</td>
-		<td>Optical Connect is deprovisioning</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Optical Connect</td>
-		<td>equinix.fabric.optical_connect.state.failed</td>
-		<td>Optical Connect is provisioning failed</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Optical Connect</td>
-		<td>equinix.fabric.optical_connect.state.provisioned</td>
-		<td>Optical Connect is provisioned</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Optical Connect</td>
-		<td>equinix.fabric.optical_connect.state.provisioning</td>
-		<td>Optical Connect is provisioning</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Optical Connect</td>
-		<td>equinix.fabric.optical_connect.state.reprovisioning</td>
-		<td>Optical Connect is reprovisioning</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-</table>
-
-</details>
-
-
-
-
----
 ### Equinix Resource Manager
 <details>
 <summary><b>Schemas</b> (1)</summary>
@@ -6285,142 +4650,6 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.resource_manager.project.state.updated</td>
 		<td>Project updated event.</td>
 		<td>released</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-</table>
-
-</details>
-
-
-
-
----
-### Equinix Time Service
-<details>
-<summary><b>Schemas</b> (1)</summary>
-
-<table>
-	<tr>
-		<th>Product</th>
-		<th>DataSchema</th>
-		<th>Data Type</th>
-	</tr>
-	<tr>
-		<td>Time Service</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/time_service/v2/TimeServiceChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.time_service.v2.TimeServiceChangeEvent</code></td>
-	</tr>
-</table>
-
-</details>
-
-<details>
-<summary><b>Events</b> (14)</summary>
-
-<table>
-	<tr>
-		<th>Product</th>
-		<th>Cloud Event Types</th>
-		<th>Description</th>
-		<th>Release Status</th>
-		<th>SLO Category</th>
-	</tr>
-	<tr>
-		<td>Time Service</td>
-		<td>equinix.fabric.time_service.state.cancelled</td>
-		<td>Time Service is cancelled</td>
-		<td>released</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Time Service</td>
-		<td>equinix.fabric.time_service.state.configured</td>
-		<td>Time Service is configured</td>
-		<td>released</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Time Service</td>
-		<td>equinix.fabric.time_service.state.configuring</td>
-		<td>Time Service is configuring</td>
-		<td>released</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Time Service</td>
-		<td>equinix.fabric.time_service.state.configuring_failed</td>
-		<td>Time Service is configuring failed</td>
-		<td>released</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Time Service</td>
-		<td>equinix.fabric.time_service.state.deprovisioned</td>
-		<td>Time Service is deprovisioned</td>
-		<td>released</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Time Service</td>
-		<td>equinix.fabric.time_service.state.deprovisioning</td>
-		<td>Time Service is deprovisioning</td>
-		<td>released</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Time Service</td>
-		<td>equinix.fabric.time_service.state.deprovisioning_failed</td>
-		<td>Time Service is deprovisioning failed</td>
-		<td>released</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Time Service</td>
-		<td>equinix.fabric.time_service.state.draft</td>
-		<td>Time Service is in draft state</td>
-		<td>released</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Time Service</td>
-		<td>equinix.fabric.time_service.state.provisioned</td>
-		<td>Time Service is provisioned</td>
-		<td>released</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Time Service</td>
-		<td>equinix.fabric.time_service.state.provisioning</td>
-		<td>Time Service is provisioning</td>
-		<td>released</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Time Service</td>
-		<td>equinix.fabric.time_service.state.provisioning_failed</td>
-		<td>Time Service is provisioning failed</td>
-		<td>released</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Time Service</td>
-		<td>equinix.fabric.time_service.status.degraded</td>
-		<td>Time Service status changed to degraded</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Time Service</td>
-		<td>equinix.fabric.time_service.status.down</td>
-		<td>Time Service status changed to down</td>
-		<td>preview</td>
-		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>Time Service</td>
-		<td>equinix.fabric.time_service.status.up</td>
-		<td>Time Service status changed to up</td>
-		<td>preview</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 </table>
