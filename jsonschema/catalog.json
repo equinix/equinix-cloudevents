@@ -644,32 +644,35 @@
                     "releaseStatus": "released"
                 },
                 {
-                    "name": "equinix.fabric.connection.packets_dropped_rx_zside_rateexceeded.count",
-                    "description": "Connection Z side inbound dropped packets count is ${operator} ${operand}",
-                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "name": "equinix.fabric.ip_block.state.deprovisioned",
+                    "description": "Ip Block deprovisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "released"
                 },
                 {
-                    "name": "equinix.fabric.connection.packets_dropped_tx_aside_rateexceeded.count",
-                    "description": "Connection A side outbound dropped packets count is ${operator} ${operand}",
-                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "name": "equinix.fabric.ip_block.state.deprovisioning",
+                    "description": "Ip Block deprovisioning started",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "released"
                 },
                 {
-                    "name": "equinix.fabric.connection.packets_dropped_tx_zside_rateexceeded.count",
-                    "description": "Connection Z side outbound dropped packets count is ${operator} ${operand}",
-                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "name": "equinix.fabric.ip_block.state.failed",
+                    "description": "Ip Block provisioning or deprovisioning failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "released"
-                }
-            ]
-        },
-        {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/ConnectionRouteAggregationChangeEvent.json",
-            "domain": "Equinix Fabric Connection Route Aggregation ChangeEvent",
-            "name": "ConnectionRouteAggregationChangeEvent",
-            "description": "The data within all ConnectionRouteAggregationChangeEvent events.",
-            "datatype": "equinix.fabric.v2.ConnectionRouteAggregationChangeEvent",
-            "cloudeventTypes": [
+                },
+                {
+                    "name": "equinix.fabric.ip_block.state.provisioned",
+                    "description": "Ip Block provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.ip_block.state.provisioning",
+                    "description": "Ip Block provisioning started",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
                 {
                     "name": "equinix.fabric.connection_route_aggregation.state.attached",
                     "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attached",
@@ -1145,8 +1148,270 @@
                     "releaseStatus": "released"
                 },
                 {
-                    "name": "equinix.fabric.metro.ma_{metroCode}.latency",
-                    "description": "Metro latency from Manchester to ${metro} above ${threshold}",
+                    "name": "equinix.fabric.service_profile.connection.deprovisioned",
+                    "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.service_profile.connection.failed",
+                    "description": "Service Profile Connection ${connection_name} state changed to failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.service_profile.connection.pending",
+                    "description": "Service Profile Connection ${connection_name} state changed to pending",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.service_profile.connection.provisioned",
+                    "description": "Service Profile Connection ${connection_name} state changed to provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.service_profile_connection.state.deprovisioned",
+                    "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_profile_connection.state.failed",
+                    "description": "Service Profile Connection ${connection_name} state changed to failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_profile_connection.state.pending",
+                    "description": "Service Profile Connection ${connection_name} state changed to pending",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_profile_connection.state.provisioned",
+                    "description": "Service Profile Connection ${connection_name} state changed to provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_token.attribute.changed",
+                    "description": "Token successfully updated",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_token.resend_email_notification.failed",
+                    "description": "Token resend email notification failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_token.resend_email_notification.succeeded",
+                    "description": "Token resend email notification succeeded",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_token.state.active",
+                    "description": "Token successfully activated",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_token.state.deleted",
+                    "description": "Token successfully deleted",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_token.state.expired",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "description": "Token expired",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_token.state.inactive",
+                    "description": "Token successfully deactivated",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.tunnel.status.down",
+                    "description": "Tunnel Interface ${tunnel_interface_name}: Operationally Down - Remote Peer Unreachable",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.tunnel.status.up",
+                    "description": "Tunnel Interface ${tunnel_interface_name}: Operationally Up",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.tunnel_bgpipv4_session.status.active",
+                    "description": "BGP peer ${ipv4_address} (AS ${asn}) session active",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.tunnel_bgpipv4_session.status.connect",
+                    "description": "BGP peer ${ipv4_address} (AS ${asn}) session connect",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.tunnel_bgpipv4_session.status.established",
+                    "description": "BGP peer ${ipv4_address} (AS ${asn}) session established",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.tunnel_bgpipv4_session.status.idle",
+                    "description": "BGP peer ${ipv4_address} (AS ${asn}) session idle",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.tunnel_bgpipv4_session.status.open_confirm",
+                    "description": "BGP peer ${ipv4_address} (AS ${asn}) session open_confirm",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.tunnel_bgpipv4_session.status.open_sent",
+                    "description": "BGP peer ${ipv4_address} (AS ${asn}) session open_sent",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.tunnel_bgpipv6_session.status.active",
+                    "description": "BGP peer ${ipv6_address} (AS ${asn}) session active",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.tunnel_bgpipv6_session.status.connect",
+                    "description": "BGP peer ${ipv6_address} (AS ${asn}) session connect",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.tunnel_bgpipv6_session.status.established",
+                    "description": "BGP peer ${ipv6_address} (AS ${asn}) session established",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.tunnel_bgpipv6_session.status.idle",
+                    "description": "BGP peer ${ipv6_address} (AS ${asn}) session idle",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.tunnel_bgpipv6_session.status.open_confirm",
+                    "description": "BGP peer ${ipv6_address} (AS ${asn}) session open_confirm",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.tunnel_bgpipv6_session.status.open_sent",
+                    "description": "BGP peer ${ipv6_address} (AS ${asn}) session open_sent",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json",
+            "domain": "Equinix Fabric Incident",
+            "name": "Incident",
+            "description": "The data within all Incident events",
+            "datatype": "equinix.fabric.v1.Incident",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.network.repair.state.cancelled",
+                    "description": "Network repair state changed to cancelled",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network.repair.state.confirmed",
+                    "description": "Network repair state changed to confirmed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network.repair.state.in_progress",
+                    "description": "Network repair state changed to in_progress",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network.repair.state.rescheduled",
+                    "description": "Network repair state changed to rescheduled",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network.repair.state.resolved",
+                    "description": "Network repair state changed to resolved",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/MetricAlert.json",
+            "domain": "Equinix Fabric MetricAlert",
+            "name": "MetricAlert",
+            "description": "The data within all MetricAlert events.",
+            "datatype": "equinix.fabric.v1.MetricAlert",
+            "cloudeventTypes": [],
+            "metricNames": [],
+            "alertNames": [
+                {
+                    "name": "equinix.fabric.connection.bandwidth_rx.usage",
+                    "description": "Connection inbound bandwidth usage is ${operator} ${operand} bit/s",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bandwidth_rx.utilization",
+                    "description": "Connection inbound bandwidth utilization is ${operator} ${operand}%",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.bandwidth_tx.usage",
+                    "description": "Connection outbound bandwidth usage is ${operator} ${operand} bit/s",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.bandwidth_tx.utilization",
+                    "description": "Connection outbound bandwidth utilization is ${operator} ${operand}%",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.installed_routes_ipv4.utilization",
+                    "description": "Utilization of connection active IPv4 routes is ${operator} ${operand}",
+                    "sloCategoryCode": "BROWN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.installed_routes_ipv6.utilization",
+                    "description": "Utilization of connection active IPv6 routes is ${operator} ${operand}",
+                    "sloCategoryCode": "BROWN_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
+                    "description": "Connection A side inbound dropped packets count is ${operator} ${operand}",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
                     "releaseStatus": "released"
                 },
@@ -1229,8 +1494,26 @@
                     "releaseStatus": "released"
                 },
                 {
-                    "name": "equinix.fabric.metro.pe_{metroCode}.latency",
-                    "description": "Metro latency from Perth to ${metro} above ${threshold}",
+                    "name": "equinix.fabric.metro.cn_{metroCode}.jitter_avg",
+                    "description": "Average metro jitter from Chennai to ${metro} is ${operator} ${operand} microseconds",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.cn_{metroCode}.latency",
+                    "description": "Metro latency from Chennai to ${metro} is ${operator} ${operand} milliseconds",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.cu_{metroCode}.jitter_avg",
+                    "description": "Average metro jitter from Culpeper to ${metro} is ${operator} ${operand} microseconds",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.cu_{metroCode}.latency",
+                    "description": "Metro latency from Culpeper to ${metro} is ${operator} ${operand} milliseconds",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
                     "releaseStatus": "released"
                 },
@@ -1522,9 +1805,21 @@
                     "releaseStatus": "released"
                 },
                 {
-                    "name": "equinix.fabric.metro.de_{metroCode}.jitter_avg",
-                    "description": "Denver to ${metro} intermetro average jitter in microseconds",
-                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "name": "equinix.fabric.metro.mn_{metroCode}.jitter_avg",
+                    "description": "Average metro jitter from Manila to ${metro} is ${operator} ${operand} microseconds",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.mn_{metroCode}.latency",
+                    "description": "Metro latency from Manila to ${metro} is ${operator} ${operand} milliseconds",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.mo_{metroCode}.jitter_avg",
+                    "description": "Average metro jitter from Monterrey to ${metro} is ${operator} ${operand} microseconds",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
                     "releaseStatus": "preview"
                 },
                 {
@@ -1900,9 +2195,99 @@
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.metro.pa_{metroCode}.latency",
-                    "description": "Paris to ${metro} intermetro latency, average in milliseconds",
-                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "name": "equinix.fabric.applink.egress_bytes_rx.count",
+                    "description": "Application Link egress received bytes count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_bytes_tx.count",
+                    "description": "Application Link egress transmitted bytes count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_connections_erred.count",
+                    "description": "Application Link egress erred connections count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_connections_retried.count",
+                    "description": "Application Link egress retried connections count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_down.count",
+                    "description": "Application Link egress backend down count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_down.time",
+                    "description": "Application Link egress backend downtime in seconds",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_requests_queued.count",
+                    "description": "Application Link egress queued requests count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_requests_queued.time",
+                    "description": "Application Link egress average queued request time in seconds",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_requests_redispatched.count",
+                    "description": "Application Link egress redispatched requests count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_responses.latency",
+                    "description": "Application Link egress average response latency in seconds",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_responses_erred.count",
+                    "description": "Application Link egress erred responses count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.ingress_bytes_rx.count",
+                    "description": "Application Link ingress received bytes count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.ingress_bytes_tx.count",
+                    "description": "Application Link ingress transmitted bytes count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.ingress_requests_erred.count",
+                    "description": "Application Link ingress erred requests count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.ingress_sessions.rate",
+                    "description": "Application Link ingress sessions rate in sessions/sec",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.connection.bandwidth_rx.usage",
+                    "description": "Connection inbound bandwidth usage in bit/sec",
+                    "sloCategoryCode": "PURPLE_METRIC_SLO",
                     "releaseStatus": "released"
                 },
                 {
@@ -2074,8 +2459,20 @@
                     "releaseStatus": "released"
                 },
                 {
-                    "name": "equinix.fabric.metro.va_{metroCode}.jitter_avg",
-                    "description": "Vancouver to ${metro} intermetro average jitter in microseconds",
+                    "name": "equinix.fabric.metro.cn_{metroCode}.jitter_avg",
+                    "description": "Chennai to ${metro} intermetro average jitter in microseconds",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.cn_{metroCode}.latency",
+                    "description": "Chennai to ${metro} intermetro latency, average in milliseconds",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.cu_{metroCode}.jitter_avg",
+                    "description": "Culpeper to ${metro} intermetro average jitter in microseconds",
                     "sloCategoryCode": "BROWN_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
@@ -2434,9 +2831,21 @@
                     "releaseStatus": "released"
                 },
                 {
-                    "name": "equinix.fabric.metro.jn_{metroCode}.jitter_avg",
-                    "description": "Average metro jitter from Johannesburg to ${metro} is ${operator} ${operand} microseconds",
-                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "name": "equinix.fabric.metro.mn_{metroCode}.jitter_avg",
+                    "description": "Manila to ${metro} intermetro average jitter in microseconds",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.mn_{metroCode}.latency",
+                    "description": "Manila to ${metro} intermetro latency, average in milliseconds",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.mo_{metroCode}.jitter_avg",
+                    "description": "Monterrey to ${metro} intermetro average jitter in microseconds",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
                 {
@@ -4001,11 +4410,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network/v2/NotificationEvent.json",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network/v1/NotificationEvent.json",
             "domain": "Equinix Network Notification Event",
             "name": "NotificationEvent",
             "description": "The data within all Notification Events",
-            "datatype": "equinix.network.v2.NotificationEvent",
+            "datatype": "equinix.network.v1.NotificationEvent",
             "cloudeventTypes": [
                 {
                     "name": "equinix.network.maintenance.state.cancelled",
@@ -4052,11 +4461,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/AclChangeEvent.json",
-            "domain": "Equinix Network Edge Acl ChangeEvent",
-            "name": "AclChangeEvent",
-            "description": "The data within all AclChangeEvent events.",
-            "datatype": "equinix.network_edge.v2.AclChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/ChangeEvent.json",
+            "domain": "Equinix Network Edge ChangeEvent",
+            "name": "ChangeEvent",
+            "description": "The data within all ChangeEvent events.",
+            "datatype": "equinix.network_edge.v1.ChangeEvent",
             "cloudeventTypes": [
                 {
                     "name": "equinix.network_edge.acl.state.created",
