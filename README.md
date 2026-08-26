@@ -4810,4 +4810,91 @@ The following data payloads are the supported events and formats for Equinix Net
 
 
 
+
+---
+### Equinix Internet Exchange ChangeEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/internet_exchange/v1/ChangeEvent.json)
+#### Data Type
+`equinix.internet_exchange.v1.ChangeEvent`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+    <tr>
+        <td>equinix.fabric.internet_exchange.state.provisioning</td>
+        <td>Internet Exchange is provisioning</td>
+        <td>preview</td>
+        <td><a href='#blue_event_slo'><span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+    </tr>
+    <tr>
+        <td>equinix.fabric.internet_exchange.state.provisioning_failed</td>
+        <td>Internet Exchange provisioning has failed</td>
+        <td>preview</td>
+        <td><a href='#blue_event_slo'><span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+    </tr>
+    <tr>
+        <td>equinix.fabric.internet_exchange.state.pending_activation</td>
+        <td>Internet Exchange is pending activation</td>
+        <td>preview</td>
+        <td><a href='#blue_event_slo'><span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+    </tr>
+    <tr>
+        <td>equinix.fabric.internet_exchange.state.activating</td>
+        <td>Internet Exchange is activating</td>
+        <td>preview</td>
+        <td><a href='#blue_event_slo'><span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+    </tr>
+    <tr>
+        <td>equinix.fabric.internet_exchange.state.activating_failed</td>
+        <td>Internet Exchange activation has failed</td>
+        <td>preview</td>
+        <td><a href='#blue_event_slo'><span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+    </tr>
+    <tr>
+        <td>equinix.fabric.internet_exchange.state.provisioned</td>
+        <td>Internet Exchange is provisioned</td>
+        <td>preview</td>
+        <td><a href='#blue_event_slo'><span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+    </tr>
+    <tr>
+        <td>equinix.fabric.internet_exchange.state.reprovisioning</td>
+        <td>Internet Exchange is reprovisioning</td>
+        <td>preview</td>
+        <td><a href='#blue_event_slo'><span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+    </tr>
+    <tr>
+        <td>equinix.fabric.internet_exchange.state.reprovisioning_failed</td>
+        <td>Internet Exchange reprovisioning has failed</td>
+        <td>preview</td>
+        <td><a href='#blue_event_slo'><span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+    </tr>
+    <tr>
+        <td>equinix.fabric.internet_exchange.state.deprovisioning</td>
+        <td>Internet Exchange is deprovisioning</td>
+        <td>preview</td>
+        <td><a href='#blue_event_slo'><span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+    </tr>
+    <tr>
+        <td>equinix.fabric.internet_exchange.state.deprovision</td>
+        <td>Internet Exchange is deprovisioned</td>
+        <td>preview</td>
+        <td><a href='#blue_event_slo'><span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+    </tr>
+    <tr>
+        <td>equinix.fabric.internet_exchange.state.deprovisioning_failed</td>
+        <td>Internet Exchange deprovisioning has failed</td>
+        <td>preview</td>
+        <td><a href='#blue_event_slo'><span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+    </tr>
+	
+</table>
+
+
+
 <!-- CATALOG_GENERATION_END -->
