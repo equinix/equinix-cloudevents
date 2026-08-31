@@ -1,7 +1,116 @@
 {
   "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/internet_exchange/v1/ChangeEvent.json",
   "name": "ChangeEvent",
-  "examples": [],
+  "examples": [
+    {
+      "specversion" : "1.0",
+      "source" : "https://api.equinix.com/fabric/v4/cloudevents",
+      "id" : "4505c58d-e477-4415-8db6-13baef3500f7",
+      "type" : "equinix.fabric.internet_exchange.state.provisioning",
+      "subject" : "/fabric/v4/exchangeServices/7e487896-e6c1-41c6-ae6a-fd563997d22e",
+      "time" : "2026-08-31T02:19:27.885776Z",
+      "dataschema" : "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeEvent.json",
+      "datacontenttype" : "application/json",
+      "severitynumber" : "9",
+      "severitytext" : "INFO",
+      "equinixproject" : "8899794a-d9f9-4972-8a1c-70a7a10fefa6",
+      "authtype" : "user",
+      "data" : {
+        "message" : "Exchange Service is provisioning",
+        "resource" : {
+          "href" : "https://api.equinix.com/fabric/v4/exchangeServices/7e487896-e6c1-41c6-ae6a-fd563997d22e",
+          "uuid" : "7e487896-e6c1-41c6-ae6a-fd563997d22e",
+          "type" : "IX",
+          "name" : "IX-exchange-service",
+          "state" : "PROVISIONING"
+        },
+        "auth" : {
+          "authtype" : "user"
+        }
+      }
+    },
+    {
+      "specversion" : "1.0",
+      "source" : "https://api.equinix.com/fabric/v4/cloudevents",
+      "id" : "4505c58d-e477-4415-8db6-13baef3500f7",
+      "type" : "equinix.fabric.internet_exchange.state.activating",
+      "subject" : "/fabric/v4/exchangeServices/7e487896-e6c1-41c6-ae6a-fd563997d22e",
+      "time" : "2026-08-31T02:19:27.885776Z",
+      "dataschema" : "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeEvent.json",
+      "datacontenttype" : "application/json",
+      "severitynumber" : "9",
+      "severitytext" : "INFO",
+      "equinixproject" : "8899794a-d9f9-4972-8a1c-70a7a10fefa6",
+      "authtype" : "user",
+      "data" : {
+        "message" : "Exchange Service is activating",
+        "resource" : {
+          "href" : "https://api.equinix.com/fabric/v4/exchangeServices/7e487896-e6c1-41c6-ae6a-fd563997d22e",
+          "uuid" : "7e487896-e6c1-41c6-ae6a-fd563997d22e",
+          "type" : "IX",
+          "name" : "IX-exchange-service",
+          "state" : "ACTIVATING"
+        },
+        "auth" : {
+          "authtype" : "user"
+        }
+      }
+    },
+    {
+      "specversion" : "1.0",
+      "source" : "https://api.equinix.com/fabric/v4/cloudevents",
+      "id" : "4d5854a1-ded0-4693-8a2d-80e90312a62c",
+      "type" : "equinix.fabric.internet_exchange.state.provisioning_failed",
+      "subject" : "/fabric/v4/exchangeServices/2938bdaa-48b4-4417-a435-df2712d32f1e",
+      "time" : "2026-08-31T02:23:34.475213Z",
+      "dataschema" : "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeEvent.json",
+      "datacontenttype" : "application/json",
+      "severitynumber" : "17",
+      "severitytext" : "ERROR",
+      "equinixproject" : "5256502e-d327-42dd-b08c-fab9a2dbb426",
+      "authtype" : "user",
+      "data" : {
+        "message" : "Exchange Service is provisioning failed",
+        "resource" : {
+          "href" : "https://api.equinix.com/fabric/v4/exchangeServices/2938bdaa-48b4-4417-a435-df2712d32f1e",
+          "uuid" : "2938bdaa-48b4-4417-a435-df2712d32f1e",
+          "type" : "IX",
+          "name" : "IX-exchange-service",
+          "state" : "PROVISIONING_FAILED"
+        },
+        "auth" : {
+          "authtype" : "user"
+        }
+      }
+    },
+    {
+      "specversion" : "1.0",
+      "source" : "https://api.equinix.com/fabric/v4/cloudevents",
+      "id" : "c44f0dcc-7d73-41ec-b86a-03ba851b42fe",
+      "type" : "equinix.fabric.internet_exchange.state.reprovisioning_failed",
+      "subject" : "/fabric/v4/exchangeServices/d11906e2-b520-47c6-982f-5ecae2a5596c",
+      "time" : "2026-08-31T02:24:33.362868Z",
+      "dataschema" : "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeEvent.json",
+      "datacontenttype" : "application/json",
+      "severitynumber" : "17",
+      "severitytext" : "ERROR",
+      "equinixproject" : "9f2814ae-0457-44c9-be2a-0ab5bb38bf2e",
+      "authtype" : "user",
+      "data" : {
+        "message" : "Exchange Service is reprovisioning failed",
+        "resource" : {
+          "href" : "https://api.equinix.com/fabric/v4/exchangeServices/d11906e2-b520-47c6-982f-5ecae2a5596c",
+          "uuid" : "d11906e2-b520-47c6-982f-5ecae2a5596c",
+          "type" : "IX",
+          "name" : "IX-exchange-service",
+          "state" : "REPROVISIONING_FAILED"
+        },
+        "auth" : {
+          "authtype" : "user"
+        }
+      }
+    }
+  ],
   "package": "equinix.internet_exchange.v1",
   "datatype": "equinix.internet_exchange.v1.ChangeEvent",
   "domain": "Equinix Internet Exchange ChangeEvent",
