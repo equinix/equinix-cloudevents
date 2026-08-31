@@ -4102,7 +4102,7 @@
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.internet_exchange.state.deprovision",
+                    "name": "equinix.fabric.internet_exchange.state.deprovisioned",
                     "description": "IX - Exchange Service is deprovisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"

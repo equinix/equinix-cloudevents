@@ -4272,7 +4272,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.internet_exchange.state.deprovision</td>
+		<td>equinix.fabric.internet_exchange.state.deprovisioned</td>
 		<td>IX - Exchange Service is deprovisioned</td>
 		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
