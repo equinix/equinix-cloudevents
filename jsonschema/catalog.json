@@ -4083,6 +4083,83 @@
             "alertNames": []
         },
         {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/internet_exchange/v1/ChangeEvent.json",
+            "domain": "Equinix Internet Exchange ChangeEvent",
+            "name": "ChangeEvent",
+            "description": "The data within all ChangeEvent events.",
+            "datatype": "equinix.internet_exchange.v1.ChangeEvent",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.internet_exchange.state.activating",
+                    "description": "IX - Exchange Service is activating",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.activating_failed",
+                    "description": "IX - Exchange Service activation failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.deprovisioned",
+                    "description": "IX - Exchange Service is deprovisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.deprovisioning",
+                    "description": "IX - Exchange Service is deprovisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.deprovisioning_failed",
+                    "description": "IX - Exchange Service deprovisioning failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.pending_activation",
+                    "description": "IX - Exchange Service is pending activation",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.provisioned",
+                    "description": "IX - Exchange Service is provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.provisioning",
+                    "description": "IX - Exchange Service is provisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.provisioning_failed",
+                    "description": "IX - Exchange Service provisioning failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.reprovisioning",
+                    "description": "IX - Exchange Service is reprovisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.reprovisioning_failed",
+                    "description": "IX - Exchange Service reprovisioning failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/maintenance_service/v1/MaintenanceEvent.json",
             "domain": "Equinix Maintenance Service MaintenanceEvent",
             "name": "MaintenanceEvent",
