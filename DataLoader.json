@@ -2739,13 +2739,13 @@
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection_maintenance.state.deferred",
-                "description": "Connection maintenance is deferred",
+                "name": "equinix.fabric.connection_maintenance.state.in_progress",
+                "description": "Connection maintenance is in progress",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection_maintenance.state.in_progress",
-                "description": "Connection maintenance is in progress",
+                "name": "equinix.fabric.connection_maintenance.state.postponed",
+                "description": "Connection maintenance is postponed",
                 "releaseStatus": "preview"
             },
             {
@@ -2759,13 +2759,13 @@
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.port_maintenance.state.deferred",
-                "description": "Port maintenance is deferred",
+                "name": "equinix.fabric.port_maintenance.state.in_progress",
+                "description": "Port maintenance is in progress",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.port_maintenance.state.in_progress",
-                "description": "Port maintenance is in progress",
+                "name": "equinix.fabric.port_maintenance.state.postponed",
+                "description": "Port maintenance is postponed",
                 "releaseStatus": "preview"
             },
             {
