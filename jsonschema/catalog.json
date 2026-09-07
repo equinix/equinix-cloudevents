@@ -1056,7 +1056,7 @@
                     "name": "equinix.fabric.service_profile.connection.deprovisioned",
                     "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
+                    "releaseStatus": "preview"
                 },
                 {
                     "name": "equinix.fabric.service_profile.connection.failed",
@@ -1072,6 +1072,30 @@
                 },
                 {
                     "name": "equinix.fabric.service_profile.connection.provisioned",
+                    "description": "Service Profile Connection ${connection_name} state changed to provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.service_profile_connection.state.deprovisioned",
+                    "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_profile_connection.state.failed",
+                    "description": "Service Profile Connection ${connection_name} state changed to failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_profile_connection.state.pending",
+                    "description": "Service Profile Connection ${connection_name} state changed to pending",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_profile_connection.state.provisioned",
                     "description": "Service Profile Connection ${connection_name} state changed to provisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "released"
@@ -1240,57 +1264,6 @@
                     "name": "equinix.network.repair.state.resolved",
                     "description": "Network repair state changed to resolved",
                     "releaseStatus": "released"
-                }
-            ],
-            "metricNames": [],
-            "alertNames": []
-        },
-        {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/Incident.json",
-            "domain": "Equinix Network Notification Event",
-            "name": "Incident",
-            "description": "The data within all Notification Events",
-            "datatype": "equinix.network.v1.Incident",
-            "cloudeventTypes": [
-                {
-                    "name": "equinix.network.maintenance.state.cancelled",
-                    "description": "Network maintenance state changed to cancelled",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
-                },
-                {
-                    "name": "equinix.network.maintenance.state.completed",
-                    "description": "Network maintenance state changed to completed",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
-                },
-                {
-                    "name": "equinix.network.maintenance.state.confirmed",
-                    "description": "Network maintenance state changed to confirmed",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
-                },
-                {
-                    "name": "equinix.network.maintenance.state.extended",
-                    "description": "Network maintenance state changed to extended",
-                    "releaseStatus": "preview"
-                },
-                {
-                    "name": "equinix.network.maintenance.state.in_progress",
-                    "description": "Network maintenance state changed to in_progress",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
-                },
-                {
-                    "name": "equinix.network.maintenance.state.rescheduled",
-                    "description": "Network maintenance state changed to rescheduled",
-                    "releaseStatus": "preview"
-                },
-                {
-                    "name": "equinix.network.repair.state.completed",
-                    "description": "Network repair state changed to completed",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
                 }
             ],
             "metricNames": [],
@@ -1484,6 +1457,18 @@
                     "description": "Metro latency from Calgary to ${metro} is ${operator} ${operand} milliseconds",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
                     "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.cn_{metroCode}.jitter_avg",
+                    "description": "Average metro jitter from Chennai to ${metro} is ${operator} ${operand} microseconds",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.cn_{metroCode}.latency",
+                    "description": "Metro latency from Chennai to ${metro} is ${operator} ${operand} milliseconds",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
                 },
                 {
                     "name": "equinix.fabric.metro.cu_{metroCode}.jitter_avg",
@@ -1820,6 +1805,18 @@
                     "description": "Metro latency from Milan to ${metro} is ${operator} ${operand} milliseconds",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
                     "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.mn_{metroCode}.jitter_avg",
+                    "description": "Average metro jitter from Manila to ${metro} is ${operator} ${operand} microseconds",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.mn_{metroCode}.latency",
+                    "description": "Metro latency from Manila to ${metro} is ${operator} ${operand} milliseconds",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
                 },
                 {
                     "name": "equinix.fabric.metro.mo_{metroCode}.jitter_avg",
@@ -2211,6 +2208,96 @@
             ],
             "metricNames": [
                 {
+                    "name": "equinix.fabric.applink.egress_bytes_rx.count",
+                    "description": "Application Link egress received bytes count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_bytes_tx.count",
+                    "description": "Application Link egress transmitted bytes count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_connections_erred.count",
+                    "description": "Application Link egress erred connections count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_connections_retried.count",
+                    "description": "Application Link egress retried connections count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_down.count",
+                    "description": "Application Link egress backend down count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_down.time",
+                    "description": "Application Link egress backend downtime in seconds",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_requests_queued.count",
+                    "description": "Application Link egress queued requests count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_requests_queued.time",
+                    "description": "Application Link egress average queued request time in seconds",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_requests_redispatched.count",
+                    "description": "Application Link egress redispatched requests count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_responses.latency",
+                    "description": "Application Link egress average response latency in seconds",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_responses_erred.count",
+                    "description": "Application Link egress erred responses count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.ingress_bytes_rx.count",
+                    "description": "Application Link ingress received bytes count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.ingress_bytes_tx.count",
+                    "description": "Application Link ingress transmitted bytes count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.ingress_requests_erred.count",
+                    "description": "Application Link ingress erred requests count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.ingress_sessions.rate",
+                    "description": "Application Link ingress sessions rate in sessions/sec",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
                     "name": "equinix.fabric.connection.bandwidth_rx.usage",
                     "description": "Connection inbound bandwidth usage in bit/sec",
                     "sloCategoryCode": "PURPLE_METRIC_SLO",
@@ -2377,6 +2464,18 @@
                     "description": "Calgary to ${metro} intermetro latency, average in milliseconds",
                     "sloCategoryCode": "BROWN_METRIC_SLO",
                     "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.cn_{metroCode}.jitter_avg",
+                    "description": "Chennai to ${metro} intermetro average jitter in microseconds",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.cn_{metroCode}.latency",
+                    "description": "Chennai to ${metro} intermetro latency, average in milliseconds",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
                 },
                 {
                     "name": "equinix.fabric.metro.cu_{metroCode}.jitter_avg",
@@ -2713,6 +2812,18 @@
                     "description": "Milan to ${metro} intermetro latency, average in milliseconds",
                     "sloCategoryCode": "BROWN_METRIC_SLO",
                     "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.mn_{metroCode}.jitter_avg",
+                    "description": "Manila to ${metro} intermetro average jitter in microseconds",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.mn_{metroCode}.latency",
+                    "description": "Manila to ${metro} intermetro latency, average in milliseconds",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
                 },
                 {
                     "name": "equinix.fabric.metro.mo_{metroCode}.jitter_avg",
@@ -4031,6 +4142,57 @@
             "alertNames": []
         },
         {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network/v1/NotificationEvent.json",
+            "domain": "Equinix Network Notification Event",
+            "name": "NotificationEvent",
+            "description": "The data within all Notification Events",
+            "datatype": "equinix.network.v1.NotificationEvent",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.network.maintenance.state.cancelled",
+                    "description": "Network maintenance state changed to cancelled",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network.maintenance.state.completed",
+                    "description": "Network maintenance state changed to completed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network.maintenance.state.confirmed",
+                    "description": "Network maintenance state changed to confirmed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network.maintenance.state.extended",
+                    "description": "Network maintenance state changed to extended",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network.maintenance.state.in_progress",
+                    "description": "Network maintenance state changed to in_progress",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.network.maintenance.state.rescheduled",
+                    "description": "Network maintenance state changed to rescheduled",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network.repair.state.completed",
+                    "description": "Network repair state changed to completed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/ChangeEvent.json",
             "domain": "Equinix Network Edge ChangeEvent",
             "name": "ChangeEvent",
@@ -4135,6 +4297,100 @@
                 }
             ],
             "metricNames": [],
+            "alertNames": []
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/MetricAlert.json",
+            "domain": "Equinix Network Edge MetricAlert",
+            "name": "MetricAlert",
+            "description": "The data within all MetricAlert events.",
+            "datatype": "equinix.network_edge.v1.MetricAlert",
+            "cloudeventTypes": [],
+            "metricNames": [],
+            "alertNames": [
+                {
+                    "name": "equinix.network_edge.device_interface.bandwidth_rx.usage",
+                    "description": "Device interface inbound bandwidth usage is ${operator} ${operand} bit/s",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.bandwidth_tx.usage",
+                    "description": "Device interface outbound bandwidth usage is ${operator} ${operand} bit/s",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_dropped_rx.count",
+                    "description": "Device interface inbound dropped packets count is ${operator} ${operand}",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_dropped_tx.count",
+                    "description": "Device interface outbound dropped packets count is ${operator} ${operand}",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_erred_rx.count",
+                    "description": "Device interface inbound erred packets count is ${operator} ${operand}",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_erred_tx.count",
+                    "description": "Device interface outbound erred packets count is ${operator} ${operand}",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "released"
+                }
+            ]
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v1/MetricEvent.json",
+            "domain": "Equinix Network Edge MetricEvent",
+            "name": "MetricEvent",
+            "description": "The data within all MetricEvent events.",
+            "datatype": "equinix.network_edge.v1.MetricEvent",
+            "cloudeventTypes": [],
+            "metricNames": [
+                {
+                    "name": "equinix.network_edge.device_interface.bandwidth_rx.usage",
+                    "description": "Device interface inbound bandwidth usage in bit/sec",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.bandwidth_tx.usage",
+                    "description": "Device interface outbound bandwidth usage in bit/sec",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_dropped_rx.count",
+                    "description": "Device interface inbound dropped packets count",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_dropped_tx.count",
+                    "description": "Device interface outbound dropped packets count",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_erred_rx.count",
+                    "description": "Device interface inbound erred packets count",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.network_edge.device_interface.packets_erred_tx.count",
+                    "description": "Device interface outbound erred packets count",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
             "alertNames": []
         },
         {

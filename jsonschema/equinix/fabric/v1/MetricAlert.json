@@ -338,6 +338,12 @@
             "releaseStatus": "released"
         },
         {
+            "name": "equinix.fabric.metro.cn_{metroCode}.latency",
+            "description": "Metro latency from Chennai to ${metro} is ${operator} ${operand} milliseconds",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
             "name": "equinix.fabric.metro.cu_{metroCode}.latency",
             "description": "Metro latency from Culpeper to ${metro} is ${operator} ${operand} milliseconds",
             "sloCategoryCode": "BLUE_ALERT_SLO",
@@ -504,6 +510,12 @@
             "description": "Metro latency from Milan to ${metro} is ${operator} ${operand} milliseconds",
             "sloCategoryCode": "BLUE_ALERT_SLO",
             "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.metro.mn_{metroCode}.latency",
+            "description": "Metro latency from Manila to ${metro} is ${operator} ${operand} milliseconds",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "preview"
         },
         {
             "name": "equinix.fabric.metro.mo_{metroCode}.latency",
@@ -722,6 +734,12 @@
             "releaseStatus": "preview"
         },
         {
+            "name": "equinix.fabric.metro.cn_{metroCode}.jitter_avg",
+            "description": "Average metro jitter from Chennai to ${metro} is ${operator} ${operand} microseconds",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
             "name": "equinix.fabric.metro.cu_{metroCode}.jitter_avg",
             "description": "Average metro jitter from Culpeper to ${metro} is ${operator} ${operand} microseconds",
             "sloCategoryCode": "BLUE_ALERT_SLO",
@@ -886,6 +904,12 @@
         {
             "name": "equinix.fabric.metro.ml_{metroCode}.jitter_avg",
             "description": "Average metro jitter from Milan to ${metro} is ${operator} ${operand} microseconds",
+            "sloCategoryCode": "BLUE_ALERT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.metro.mn_{metroCode}.jitter_avg",
+            "description": "Average metro jitter from Manila to ${metro} is ${operator} ${operand} microseconds",
             "sloCategoryCode": "BLUE_ALERT_SLO",
             "releaseStatus": "preview"
         },
