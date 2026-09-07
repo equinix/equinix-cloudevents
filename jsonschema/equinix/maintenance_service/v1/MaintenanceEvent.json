@@ -36,9 +36,7 @@
                 },
                 "auth": {
                     "type": "system",
-                    "id": "100000",
-                    "name": "username",
-                    "email": "username@test.com"
+                    "id": "100000"
                 }
             }
         },
@@ -81,9 +79,7 @@
                 },
                 "auth": {
                     "type": "system",
-                    "id": "100000",
-                    "name": "username",
-                    "email": "username@test.com"
+                    "id": "100000"
                 }
             }
         }
