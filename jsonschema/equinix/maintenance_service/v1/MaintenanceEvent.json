@@ -32,7 +32,7 @@
                     "incidentRefId": "CR1234567890",
                     "startDateTime": "2026-06-29 05:30:00",
                     "duration": "PT8H",
-                    "batchUuid": "656a86fb-d03d-436c-8d5d-30d1f51f7688"
+                    "groupUuid": "656a86fb-d03d-436c-8d5d-30d1f51f7688"
                 },
                 "auth": {
                     "type": "system",
@@ -72,7 +72,7 @@
                     "incidentRefId": "CR1234567890",
                     "startDateTime": "2026-06-29 05:30:00",
                     "duration": "PT8H",
-                    "batchUuid": "656a86fb-d03d-436c-8d5d-30d1f51f7688"
+                    "groupUuid": "656a86fb-d03d-436c-8d5d-30d1f51f7688"
                 },
                 "causedBy": {
                     "href": "https://api.equinix.com/fabric/v4/ports/956a86fb-d03d-436c-8d5d-30d1f51f7688/maintenances/956a86fb-d03d-436c-8d5d-30d1f51f7688",
@@ -161,7 +161,7 @@
                 },
                 "state": {
                     "type": "string",
-                    "description": "Current state of the maintenance (SCHEDULED, IN_PROGRESS, COMPLETED, POSTPONED)"
+                    "description": "Current state of the maintenance (SCHEDULED, IN_PROGRESS, COMPLETED, POSTPONED, CANCELLED)"
                 },
                 "description": {
                     "type": "string",
@@ -184,7 +184,7 @@
                     "type": "string",
                     "description": "Duration of the maintenance in ISO 8601 duration format"
                 },
-                "batchUuid": {
+                "groupUuid": {
                     "type": "string",
                     "description": "Unique identifier for the maintenance batch"
                 }
@@ -261,6 +261,12 @@
             "releaseStatus": "preview"
         },
         {
+            "name": "equinix.fabric.port_maintenance.state.cancelled",
+            "description": "Port maintenance is cancelled",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
             "name": "equinix.fabric.connection_maintenance.state.scheduled",
             "description": "Connection maintenance is scheduled",
             "sloCategoryCode": "BLUE_EVENT_SLO",
@@ -281,6 +287,12 @@
         {
             "name": "equinix.fabric.connection_maintenance.state.postponed",
             "description": "Connection maintenance is postponed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.connection_maintenance.state.cancelled",
+            "description": "Connection maintenance is cancelled",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "preview"
         }
