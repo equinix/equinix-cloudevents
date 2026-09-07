@@ -4090,6 +4090,12 @@
             "datatype": "equinix.maintenance_service.v1.MaintenanceEvent",
             "cloudeventTypes": [
                 {
+                    "name": "equinix.fabric.connection_maintenance.state.cancelled",
+                    "description": "Connection maintenance is cancelled",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
                     "name": "equinix.fabric.connection_maintenance.state.completed",
                     "description": "Connection maintenance is completed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
@@ -4110,6 +4116,12 @@
                 {
                     "name": "equinix.fabric.connection_maintenance.state.scheduled",
                     "description": "Connection maintenance is scheduled",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.port_maintenance.state.cancelled",
+                    "description": "Port maintenance is cancelled",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
                 },

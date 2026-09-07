@@ -4260,6 +4260,12 @@ The following data payloads are the supported events and formats for Equinix Net
 		<th>SLO Category</th>
 	</tr>
 	<tr>
+		<td>equinix.fabric.connection_maintenance.state.cancelled</td>
+		<td>Connection maintenance is cancelled</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.connection_maintenance.state.completed</td>
 		<td>Connection maintenance is completed</td>
 		<td>preview</td>
@@ -4280,6 +4286,12 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.connection_maintenance.state.scheduled</td>
 		<td>Connection maintenance is scheduled</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.port_maintenance.state.cancelled</td>
+		<td>Port maintenance is cancelled</td>
 		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
