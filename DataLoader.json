@@ -18,6 +18,36 @@
     "fabric": {
         "cloudeventTypes": [
             {
+                "name": "equinix.fabric.asn.attribute.changed",
+                "description": "ASN changed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.asn.state.deprovisioned",
+                "description": "ASN de-provisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.asn.state.deprovisioning",
+                "description": "ASN de-provisioning started",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.asn.state.failed",
+                "description": "ASN provisioning or de-provisioning failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.asn.state.provisioned",
+                "description": "ASN provisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.asn.state.provisioning",
+                "description": "ASN provisioning started",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.company_profile.attribute.approved",
                 "description": "Company profile update approved",
                 "releaseStatus": "released"
@@ -900,36 +930,6 @@
             {
                 "name": "equinix.fabric.app_subscription.state.provisioning_failed",
                 "description": "Application Subscription provisioning failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.asn.attribute.changed",
-                "description": "ASN changed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.asn.state.deprovisioned",
-                "description": "ASN de-provisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.asn.state.deprovisioning",
-                "description": "ASN de-provisioning started",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.asn.state.failed",
-                "description": "ASN provisioning or de-provisioning failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.asn.state.provisioned",
-                "description": "ASN provisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.asn.state.provisioning",
-                "description": "ASN provisioning started",
                 "releaseStatus": "preview"
             },
             {
