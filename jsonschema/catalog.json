@@ -26,6 +26,114 @@
             "alertNames": []
         },
         {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppConnectMetric.json",
+            "domain": "Equinix Fabric Application Connect Metric",
+            "name": "AppConnectMetric",
+            "description": "The data within all MetricEvent events.",
+            "datatype": "equinix.fabric.v2.AppConnectMetric",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.metric",
+                    "description": "Metrics collected",
+                    "sloCategoryCode": "",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [
+                {
+                    "name": "equinix.fabric.applink.egress_bytes_rx.count",
+                    "description": "Application Link egress received bytes count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_bytes_tx.count",
+                    "description": "Application Link egress transmitted bytes count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_connections_erred.count",
+                    "description": "Application Link egress erred connections count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_connections_retried.count",
+                    "description": "Application Link egress retried connections count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_down.count",
+                    "description": "Application Link egress backend down count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_down.time",
+                    "description": "Application Link egress backend downtime in seconds",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_requests_queued.count",
+                    "description": "Application Link egress queued requests count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_requests_queued.time",
+                    "description": "Application Link egress average queued request time in seconds",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_requests_redispatched.count",
+                    "description": "Application Link egress redispatched requests count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_responses.latency",
+                    "description": "Application Link egress average response latency in seconds",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.egress_responses_erred.count",
+                    "description": "Application Link egress erred responses count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.ingress_bytes_rx.count",
+                    "description": "Application Link ingress received bytes count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.ingress_bytes_tx.count",
+                    "description": "Application Link ingress transmitted bytes count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.ingress_requests_erred.count",
+                    "description": "Application Link ingress erred requests count",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.applink.ingress_sessions.rate",
+                    "description": "Application Link ingress sessions rate in sessions/sec",
+                    "sloCategoryCode": "BLUE_METRIC_SLO",
+                    "releaseStatus": "preview"
+                }
+            ],
+            "alertNames": []
+        },
+        {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppDomainChangeEvent.json",
             "domain": "Equinix Fabric App Domain ChangeEvent",
             "name": "AppDomainChangeEvent",
