@@ -18,6 +18,36 @@
     "fabric": {
         "cloudeventTypes": [
             {
+                "name": "equinix.fabric.asn.attribute.changed",
+                "description": "ASN changed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.asn.state.deprovisioned",
+                "description": "ASN de-provisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.asn.state.deprovisioning",
+                "description": "ASN de-provisioning started",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.asn.state.failed",
+                "description": "ASN provisioning or de-provisioning failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.asn.state.provisioned",
+                "description": "ASN provisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.asn.state.provisioning",
+                "description": "ASN provisioning started",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.company_profile.attribute.approved",
                 "description": "Company profile update approved",
                 "releaseStatus": "released"
@@ -908,33 +938,8 @@
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.asn.attribute.changed",
-                "description": "ASN changed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.asn.state.deprovisioned",
-                "description": "ASN de-provisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.asn.state.deprovisioning",
-                "description": "ASN de-provisioning started",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.asn.state.failed",
-                "description": "ASN provisioning or de-provisioning failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.asn.state.provisioned",
-                "description": "ASN provisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.asn.state.provisioning",
-                "description": "ASN provisioning started",
+                "name": "equinix.fabric.connection_maintenance.state.cancelled",
+                "description": "Connection maintenance is cancelled",
                 "releaseStatus": "preview"
             },
             {
@@ -943,18 +948,73 @@
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.connection_maintenance.state.deferred",
-                "description": "Connection maintenance is deferred",
-                "releaseStatus": "preview"
-            },
-            {
                 "name": "equinix.fabric.connection_maintenance.state.in_progress",
                 "description": "Connection maintenance is in progress",
                 "releaseStatus": "preview"
             },
             {
+                "name": "equinix.fabric.connection_maintenance.state.postponed",
+                "description": "Connection maintenance is postponed",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.connection_maintenance.state.scheduled",
                 "description": "Connection maintenance is scheduled",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.internet_exchange.state.activating",
+                "description": "IX - Exchange Service is activating",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.internet_exchange.state.activating_failed",
+                "description": "IX - Exchange Service activation failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.internet_exchange.state.deprovisioned",
+                "description": "IX - Exchange Service is deprovisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.internet_exchange.state.deprovisioning",
+                "description": "IX - Exchange Service is deprovisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.internet_exchange.state.deprovisioning_failed",
+                "description": "IX - Exchange Service deprovisioning failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.internet_exchange.state.pending_activation",
+                "description": "IX - Exchange Service is pending activation",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.internet_exchange.state.provisioned",
+                "description": "IX - Exchange Service is provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.internet_exchange.state.provisioning",
+                "description": "IX - Exchange Service is provisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.internet_exchange.state.provisioning_failed",
+                "description": "IX - Exchange Service provisioning failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.internet_exchange.state.reprovisioning",
+                "description": "IX - Exchange Service is reprovisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.internet_exchange.state.reprovisioning_failed",
+                "description": "IX - Exchange Service reprovisioning failed",
                 "releaseStatus": "preview"
             },
             {
@@ -1013,18 +1073,23 @@
                 "releaseStatus": "preview"
             },
             {
+                "name": "equinix.fabric.port_maintenance.state.cancelled",
+                "description": "Port maintenance is cancelled",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.port_maintenance.state.completed",
                 "description": "Port maintenance is completed",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.port_maintenance.state.deferred",
-                "description": "Port maintenance is deferred",
+                "name": "equinix.fabric.port_maintenance.state.in_progress",
+                "description": "Port maintenance is in progress",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.port_maintenance.state.in_progress",
-                "description": "Port maintenance is in progress",
+                "name": "equinix.fabric.port_maintenance.state.postponed",
+                "description": "Port maintenance is postponed",
                 "releaseStatus": "preview"
             },
             {

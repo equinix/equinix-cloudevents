@@ -768,37 +768,37 @@
                     "name": "equinix.fabric.asn.attribute.changed",
                     "description": "ASN changed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.asn.state.deprovisioned",
                     "description": "ASN de-provisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.asn.state.deprovisioning",
                     "description": "ASN de-provisioning started",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.asn.state.failed",
                     "description": "ASN provisioning or de-provisioning failed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.asn.state.provisioned",
                     "description": "ASN provisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.asn.state.provisioning",
                     "description": "ASN provisioning started",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 }
             ],
             "metricNames": [],
@@ -905,6 +905,83 @@
             "alertNames": []
         },
         {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_exchange/InternetExchangeChangeEvent.json",
+            "domain": "Equinix Internet Exchange ChangeEvent",
+            "name": "InternetExchangeChangeEvent",
+            "description": "The data within all InternetExchangeChangeEvent events.",
+            "datatype": "equinix.internet_exchange.v2.InternetExchangeChangeEvent",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.internet_exchange.state.activating",
+                    "description": "IX - Exchange Service is activating",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.activating_failed",
+                    "description": "IX - Exchange Service activation failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.deprovisioned",
+                    "description": "IX - Exchange Service is deprovisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.deprovisioning",
+                    "description": "IX - Exchange Service is deprovisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.deprovisioning_failed",
+                    "description": "IX - Exchange Service deprovisioning failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.pending_activation",
+                    "description": "IX - Exchange Service is pending activation",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.provisioned",
+                    "description": "IX - Exchange Service is provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.provisioning",
+                    "description": "IX - Exchange Service is provisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.provisioning_failed",
+                    "description": "IX - Exchange Service provisioning failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.reprovisioning",
+                    "description": "IX - Exchange Service is reprovisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.internet_exchange.state.reprovisioning_failed",
+                    "description": "IX - Exchange Service reprovisioning failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/maintenance_service/ConnectionMaintenanceEvent.json",
             "domain": "Equinix Maintenance Service ConnectionMaintenanceEvent",
             "name": "ConnectionMaintenanceEvent",
@@ -912,20 +989,26 @@
             "datatype": "equinix.maintenance_service.v2.ConnectionMaintenanceEvent",
             "cloudeventTypes": [
                 {
+                    "name": "equinix.fabric.connection_maintenance.state.cancelled",
+                    "description": "Connection maintenance is cancelled",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
                     "name": "equinix.fabric.connection_maintenance.state.completed",
                     "description": "Connection maintenance is completed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.connection_maintenance.state.deferred",
-                    "description": "Connection maintenance is deferred",
+                    "name": "equinix.fabric.connection_maintenance.state.in_progress",
+                    "description": "Connection maintenance is in progress",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.connection_maintenance.state.in_progress",
-                    "description": "Connection maintenance is in progress",
+                    "name": "equinix.fabric.connection_maintenance.state.postponed",
+                    "description": "Connection maintenance is postponed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
                 },
@@ -947,20 +1030,26 @@
             "datatype": "equinix.maintenance_service.v2.PortMaintenanceEvent",
             "cloudeventTypes": [
                 {
+                    "name": "equinix.fabric.port_maintenance.state.cancelled",
+                    "description": "Port maintenance is cancelled",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
                     "name": "equinix.fabric.port_maintenance.state.completed",
                     "description": "Port maintenance is completed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.port_maintenance.state.deferred",
-                    "description": "Port maintenance is deferred",
+                    "name": "equinix.fabric.port_maintenance.state.in_progress",
+                    "description": "Port maintenance is in progress",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.port_maintenance.state.in_progress",
-                    "description": "Port maintenance is in progress",
+                    "name": "equinix.fabric.port_maintenance.state.postponed",
+                    "description": "Port maintenance is postponed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
                 },

@@ -113,7 +113,7 @@ The following data payloads are the supported events and formats for Equinix Net
 ---
 ### Equinix Fabric
 <details>
-<summary><b>Schemas</b> (44)</summary>
+<summary><b>Schemas</b> (45)</summary>
 
 <table>
 	<tr>
@@ -200,6 +200,11 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>Internet Access</td>
 		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/InternetAccessChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.InternetAccessChangeEvent</code></td>
+	</tr>
+	<tr>
+		<td>Internet Exchange</td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_exchange/InternetExchangeChangeEvent.json'>JSON</a></td>
+		<td><code>equinix.internet_exchange.v2.InternetExchangeChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>Ip Block</td>
@@ -346,7 +351,7 @@ The following data payloads are the supported events and formats for Equinix Net
 </details>
 
 <details>
-<summary><b>Events</b> (231)</summary>
+<summary><b>Events</b> (244)</summary>
 
 <table>
 	<tr>
@@ -493,42 +498,42 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>Asn</td>
 		<td>equinix.fabric.asn.attribute.changed</td>
 		<td>ASN changed</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Asn</td>
 		<td>equinix.fabric.asn.state.deprovisioned</td>
 		<td>ASN de-provisioned</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Asn</td>
 		<td>equinix.fabric.asn.state.deprovisioning</td>
 		<td>ASN de-provisioning started</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Asn</td>
 		<td>equinix.fabric.asn.state.failed</td>
 		<td>ASN provisioning or de-provisioning failed</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Asn</td>
 		<td>equinix.fabric.asn.state.provisioned</td>
 		<td>ASN provisioned</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Asn</td>
 		<td>equinix.fabric.asn.state.provisioning</td>
 		<td>ASN provisioning started</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -834,6 +839,13 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>Connection Maintenance</td>
+		<td>equinix.fabric.connection_maintenance.state.cancelled</td>
+		<td>Connection maintenance is cancelled</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Connection Maintenance</td>
 		<td>equinix.fabric.connection_maintenance.state.completed</td>
 		<td>Connection maintenance is completed</td>
 		<td>preview</td>
@@ -841,15 +853,15 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>Connection Maintenance</td>
-		<td>equinix.fabric.connection_maintenance.state.deferred</td>
-		<td>Connection maintenance is deferred</td>
+		<td>equinix.fabric.connection_maintenance.state.in_progress</td>
+		<td>Connection maintenance is in progress</td>
 		<td>preview</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Connection Maintenance</td>
-		<td>equinix.fabric.connection_maintenance.state.in_progress</td>
-		<td>Connection maintenance is in progress</td>
+		<td>equinix.fabric.connection_maintenance.state.postponed</td>
+		<td>Connection maintenance is postponed</td>
 		<td>preview</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
@@ -1040,6 +1052,83 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.internet_access.state.provisioning</td>
 		<td>Internet access service provisioning started</td>
 		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Internet Exchange</td>
+		<td>equinix.fabric.internet_exchange.state.activating</td>
+		<td>IX - Exchange Service is activating</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Internet Exchange</td>
+		<td>equinix.fabric.internet_exchange.state.activating_failed</td>
+		<td>IX - Exchange Service activation failed</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Internet Exchange</td>
+		<td>equinix.fabric.internet_exchange.state.deprovisioned</td>
+		<td>IX - Exchange Service is deprovisioned</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Internet Exchange</td>
+		<td>equinix.fabric.internet_exchange.state.deprovisioning</td>
+		<td>IX - Exchange Service is deprovisioning</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Internet Exchange</td>
+		<td>equinix.fabric.internet_exchange.state.deprovisioning_failed</td>
+		<td>IX - Exchange Service deprovisioning failed</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Internet Exchange</td>
+		<td>equinix.fabric.internet_exchange.state.pending_activation</td>
+		<td>IX - Exchange Service is pending activation</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Internet Exchange</td>
+		<td>equinix.fabric.internet_exchange.state.provisioned</td>
+		<td>IX - Exchange Service is provisioned</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Internet Exchange</td>
+		<td>equinix.fabric.internet_exchange.state.provisioning</td>
+		<td>IX - Exchange Service is provisioning</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Internet Exchange</td>
+		<td>equinix.fabric.internet_exchange.state.provisioning_failed</td>
+		<td>IX - Exchange Service provisioning failed</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Internet Exchange</td>
+		<td>equinix.fabric.internet_exchange.state.reprovisioning</td>
+		<td>IX - Exchange Service is reprovisioning</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Internet Exchange</td>
+		<td>equinix.fabric.internet_exchange.state.reprovisioning_failed</td>
+		<td>IX - Exchange Service reprovisioning failed</td>
+		<td>preview</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1303,6 +1392,13 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>Port Maintenance</td>
+		<td>equinix.fabric.port_maintenance.state.cancelled</td>
+		<td>Port maintenance is cancelled</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Port Maintenance</td>
 		<td>equinix.fabric.port_maintenance.state.completed</td>
 		<td>Port maintenance is completed</td>
 		<td>preview</td>
@@ -1310,15 +1406,15 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>Port Maintenance</td>
-		<td>equinix.fabric.port_maintenance.state.deferred</td>
-		<td>Port maintenance is deferred</td>
+		<td>equinix.fabric.port_maintenance.state.in_progress</td>
+		<td>Port maintenance is in progress</td>
 		<td>preview</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Port Maintenance</td>
-		<td>equinix.fabric.port_maintenance.state.in_progress</td>
-		<td>Port maintenance is in progress</td>
+		<td>equinix.fabric.port_maintenance.state.postponed</td>
+		<td>Port maintenance is postponed</td>
 		<td>preview</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
