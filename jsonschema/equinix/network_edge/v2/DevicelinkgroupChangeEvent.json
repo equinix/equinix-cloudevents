@@ -1,0 +1,95 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/DevicelinkgroupChangeEvent.json",
+    "name": "DevicelinkgroupChangeEvent",
+    "examples": [],
+    "package": "equinix.network_edge.v2",
+    "datatype": "equinix.network_edge.v2.DevicelinkgroupChangeEvent",
+    "domain": "Equinix Network Edge Devicelinkgroup ChangeEvent",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "Optional. The Backup event payload. Unset for deletion events."
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "DevicelinkgroupChangeEvent Event Data",
+            "description": "The data within all DevicelinkgroupChangeEvent events."
+        },
+        "Resource": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the resource generating the event"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the resource generating the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        }
+    },
+    "cloudeventTypes": [
+        {
+            "name": "equinix.network_edge.devicelinkgroup.state.created",
+            "description": "Network edge device link group is created",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.devicelinkgroup.state.deleted",
+            "description": "Network edge device link group is deleted",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.devicelinkgroup.state.deprovisioned",
+            "description": "Network edge device link group is deprovisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.devicelinkgroup.state.provisioned",
+            "description": "Network edge device link group is provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.network_edge.devicelinkgroup.state.updated",
+            "description": "Network edge device link group is updated",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        }
+    ],
+    "metricNames": [],
+    "alertNames": []
+}

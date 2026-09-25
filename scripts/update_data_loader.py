@@ -10,8 +10,12 @@ def retrieve_supported_events():
     directory = os.path.dirname(os.path.abspath(__file__)) + '/../jsonschema'
     dataLoaderStructure = {}
     for root, dirs, files in os.walk(directory):
+        # equinix/<domain>/<version>[/<product>]; schemas may sit directly in the
+        # version directory or in product sub-directories beneath it
+        parts = os.path.relpath(root, directory).split(os.sep)
+        published = any(part in sc.PUBLISHED_VERSIONS for part in parts)
         for file in files:
-            if file.endswith('.json') and os.path.basename(root) != "jsonschema":
+            if file.endswith('.json') and published:
                 with open(root + "/" + file, "r") as eventFile:
                     data = json.load(eventFile)
 
@@ -19,7 +23,7 @@ def retrieve_supported_events():
                     if "domain" in data and "deprecated" in data["domain"].lower():
                         continue
 
-                    domain = root.split("/")[-2]
+                    domain = parts[1]
                     if domain not in dataLoaderStructure:
                         dataLoaderStructure[domain] = {
                             sc.EVENTS:  [],
@@ -52,11 +56,14 @@ def retrieve_supported_events():
                                 "releaseStatus": alert["releaseStatus"]
                             })
                             
-                    for section in [sc.EVENTS, sc.METRICS, sc.ALERTS]:
-                        dataLoaderStructure[domain][section] = sorted(
-                            dataLoaderStructure[domain][section], 
-                            key=lambda x: (x["releaseStatus"] != "released", x["name"])
-                        )
+    # successive versions of a domain redeclare the same names, so collapse each
+    # section down to one entry per name
+    for sections in dataLoaderStructure.values():
+        for section, entries in sections.items():
+            sections[section] = sorted(
+                {entry["name"]: entry for entry in entries}.values(),
+                key=lambda x: (x["releaseStatus"] != "released", x["name"])
+            )
 
     dataLoaderStructure = dict(sorted(dataLoaderStructure.items()))
 
