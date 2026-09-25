@@ -1,10 +1,10 @@
 {
-    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/AsnChangeEvent.json",
-    "name": "AsnChangeEvent",
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_exchange/InternetExchangeChangeEvent.json",
+    "name": "InternetExchangeChangeEvent",
     "examples": [],
-    "package": "equinix.fabric.v2",
-    "datatype": "equinix.fabric.v2.AsnChangeEvent",
-    "domain": "Equinix Fabric Asn ChangeEvent",
+    "package": "equinix.internet_exchange.v2",
+    "datatype": "equinix.internet_exchange.v2.InternetExchangeChangeEvent",
+    "domain": "Equinix Internet Exchange ChangeEvent",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$ref": "#/definitions/Data",
     "definitions": {
@@ -13,7 +13,7 @@
                 "resource": {
                     "$ref": "#/definitions/Resource",
                     "additionalProperties": true,
-                    "description": "Optional. The Backup event payload. Unset for deletion events."
+                    "description": "Optional. The event resource payload. Unset for deletion events."
                 },
                 "message": {
                     "type": "string",
@@ -27,8 +27,8 @@
             },
             "additionalProperties": true,
             "type": "object",
-            "title": "AsnChangeEvent Event Data",
-            "description": "The data within all AsnChangeEvent events."
+            "title": "InternetExchangeChangeEvent Event Data",
+            "description": "The data within all InternetExchangeChangeEvent events."
         },
         "Auth": {
             "properties": {
@@ -88,11 +88,6 @@
                     "type": "string",
                     "description": "Description of the resource generating the event"
                 },
-                "change": {
-                    "$ref": "#/definitions/Change",
-                    "additionalProperties": true,
-                    "description": "Change information for the resource that fired the event"
-                },
                 "operation": {
                     "$ref": "#/definitions/Operation",
                     "additionalProperties": true,
@@ -104,116 +99,85 @@
             "title": "Resource",
             "description": "Schema of the resource that fired the event"
         },
-        "Change": {
-            "properties": {
-                "uuid": {
-                    "type": "string",
-                    "description": "Uuid of the of change for the resource target of the event"
-                },
-                "type": {
-                    "type": "string",
-                    "description": "Type of the change happening on the resource for the target of the event"
-                },
-                "status": {
-                    "type": "string",
-                    "description": "Status of the change event on the resource target"
-                },
-                "createdDateTime": {
-                    "type": "string",
-                    "description": "The time that the resource that fired the event was created",
-                    "format": "date-time"
-                },
-                "updatedDateTime": {
-                    "type": "string",
-                    "description": "The time that the resource that fired the event was last updated",
-                    "format": "date-time"
-                },
-                "data": {
-                    "type": "array",
-                    "description": "Data of the change event",
-                    "items": {
-                        "$ref": "#/definitions/ChangeData"
-                    }
-                }
-            },
-            "additionalProperties": true,
-            "type": "object",
-            "title": "Change",
-            "description": "Change attribute schema"
-        },
-        "ChangeData": {
-            "properties": {
-                "op": {
-                    "type": "string",
-                    "description": "The operation performed on the resource under change"
-                },
-                "path": {
-                    "type": "string",
-                    "description": "The attribute on the resource being changed"
-                },
-                "value": {
-                    "type": "string",
-                    "description": "The current value of the attribute under change"
-                },
-                "previousValue": {
-                    "type": "string",
-                    "description": "The previous value of the attribute under change"
-                }
-            },
-            "additionalProperties": true,
-            "type": "object",
-            "title": "ChangeData",
-            "description": "ChangeData attribute schema"
-        },
         "Operation": {
             "properties": {
                 "operationalStatus": {
                     "type": "string",
-                    "description": "Operational status for the resource target of the event"
+                    "description": "Operational status of the Internet Exchange service"
                 }
             },
             "additionalProperties": true,
             "type": "object",
             "title": "Operation",
-            "description": "Operation attribute schema"
+            "description": "Operational details of the Internet Exchange service"
         }
     },
     "cloudeventTypes": [
         {
-            "name": "equinix.fabric.asn.attribute.changed",
-            "description": "ASN changed",
+            "name": "equinix.fabric.internet_exchange.state.provisioning",
+            "description": "IX - Exchange Service is provisioning",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.asn.state.deprovisioned",
-            "description": "ASN de-provisioned",
+            "name": "equinix.fabric.internet_exchange.state.provisioning_failed",
+            "description": "IX - Exchange Service provisioning failed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.asn.state.deprovisioning",
-            "description": "ASN de-provisioning started",
+            "name": "equinix.fabric.internet_exchange.state.pending_activation",
+            "description": "IX - Exchange Service is pending activation",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.asn.state.failed",
-            "description": "ASN provisioning or de-provisioning failed",
+            "name": "equinix.fabric.internet_exchange.state.activating",
+            "description": "IX - Exchange Service is activating",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.asn.state.provisioned",
-            "description": "ASN provisioned",
+            "name": "equinix.fabric.internet_exchange.state.activating_failed",
+            "description": "IX - Exchange Service activation failed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
         },
         {
-            "name": "equinix.fabric.asn.state.provisioning",
-            "description": "ASN provisioning started",
+            "name": "equinix.fabric.internet_exchange.state.provisioned",
+            "description": "IX - Exchange Service is provisioned",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "released"
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.internet_exchange.state.reprovisioning",
+            "description": "IX - Exchange Service is reprovisioning",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.internet_exchange.state.reprovisioning_failed",
+            "description": "IX - Exchange Service reprovisioning failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.internet_exchange.state.deprovisioning",
+            "description": "IX - Exchange Service is deprovisioning",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.internet_exchange.state.deprovisioned",
+            "description": "IX - Exchange Service is deprovisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.internet_exchange.state.deprovisioning_failed",
+            "description": "IX - Exchange Service deprovisioning failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
         }
     ],
     "metricNames": [],

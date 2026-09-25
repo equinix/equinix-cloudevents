@@ -32,14 +32,12 @@
           "incidentRefId": "CR1111111111",
           "startDateTime": "2026-06-29 05:30:00",
           "duration": "PT8H",
-          "batchUuid": "11111111-1111-1111-1111-111111111111"
+          "groupUuid": "11111111-1111-1111-1111-111111111111"
+        },
+        "auth": {
+          "type": "system",
+          "id": "111111"
         }
-      },
-      "auth": {
-        "type": "system",
-        "id": "111111",
-        "name": "username",
-        "email": "username@test.com"
       }
     }
   ],
@@ -64,12 +62,41 @@
           "$ref": "#/definitions/CausedBy",
           "additionalProperties": true,
           "description": "The port maintenance cloud event that triggered this connection maintenance event"
+        },
+        "auth": {
+          "$ref": "#/definitions/Auth",
+          "additionalProperties": true,
+          "description": "The auth context within all MaintenanceEvent events."
         }
       },
       "additionalProperties": true,
       "type": "object",
       "title": "MaintenanceEvent Event Data",
       "description": "The data within all MaintenanceEvent events."
+    },
+    "Auth": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The unique identifier of the entity generating the event"
+        },
+        "type": {
+          "type": "string",
+          "description": "The type of the entity generating the event"
+        },
+        "name": {
+          "type": "string",
+          "description": "Optional. Name of the entity generating the event"
+        },
+        "email": {
+          "type": "string",
+          "description": "Optional. Email of the user generating the event"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Auth",
+      "description": "Auth information of the generated event"
     },
     "Resource": {
       "properties": {
@@ -87,7 +114,7 @@
         },
         "state": {
           "type": "string",
-          "description": "Current state of the maintenance (SCHEDULED, IN_PROGRESS, COMPLETED, DEFERRED)"
+          "description": "Current state of the maintenance (SCHEDULED, IN_PROGRESS, COMPLETED, POSTPONED, CANCELLED)"
         },
         "description": {
           "type": "string",
@@ -110,7 +137,7 @@
           "type": "string",
           "description": "Duration of the maintenance in ISO 8601 duration format"
         },
-        "batchUuid": {
+        "groupUuid": {
           "type": "string",
           "description": "Unique identifier for the maintenance batch"
         }
@@ -181,8 +208,14 @@
       "releaseStatus": "preview"
     },
     {
-      "name": "equinix.fabric.port_maintenance.state.deferred",
-      "description": "Port maintenance is deferred",
+      "name": "equinix.fabric.port_maintenance.state.postponed",
+      "description": "Port maintenance is postponed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "preview"
+    },
+    {
+      "name": "equinix.fabric.port_maintenance.state.cancelled",
+      "description": "Port maintenance is cancelled",
       "sloCategoryCode": "BLUE_EVENT_SLO",
       "releaseStatus": "preview"
     }
