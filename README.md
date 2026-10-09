@@ -95,6 +95,24 @@ The following data payloads are the supported events and formats for Equinix Net
 		<th>SLO Category</th>
 	</tr>
 	<tr>
+		<td>equinix.fabric.app_domain.attribute.change_failed</td>
+		<td>Application Domain attribute change failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_domain.attribute.change_requested</td>
+		<td>Application Domain attribute change requested</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_domain.attribute.changed</td>
+		<td>Application Domain attribute changed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.app_domain.state.deprovisioned</td>
 		<td>Application Domain is deprovisioned</td>
 		<td>preview</td>
@@ -121,6 +139,24 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.app_domain.state.provisioning_failed</td>
 		<td>Application Domain provisioning failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link.attribute.change_failed</td>
+		<td>Application Link attribute change failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link.attribute.change_requested</td>
+		<td>Application Link attribute change requested</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link.attribute.changed</td>
+		<td>Application Link attribute changed</td>
 		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
@@ -161,6 +197,204 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.app_link_app_domain.state.attached</td>
+		<td>Application Domain to Application Link attachment status changed to attached</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_domain.state.attaching</td>
+		<td>Application Domain to Application Link attachment status changed to attaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_domain.state.attaching_failed</td>
+		<td>Application Domain to Application Link attachment status changed to attaching failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_domain.state.detached</td>
+		<td>Application Domain to Application Link attachment status changed to detached</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_domain.state.detaching</td>
+		<td>Application Domain to Application Link attachment status changed to detaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_domain.state.detaching_failed</td>
+		<td>Application Domain to Application Link attachment status changed to detaching failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_domain.state.reattaching</td>
+		<td>Application Domain to Application Link attachment status changed to reattaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_domain.state.reattaching_failed</td>
+		<td>Application Domain to Application Link attachment status changed to reattaching failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_processor.state.attached</td>
+		<td>Application Processor to Application Link attachment status changed to attached</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_processor.state.attaching</td>
+		<td>Application Processor to Application Link attachment status changed to attaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_processor.state.attaching_failed</td>
+		<td>Application Processor to Application Link attachment status changed to attaching failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_processor.state.detached</td>
+		<td>Application Processor to Application Link attachment status changed to detached</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_processor.state.detaching</td>
+		<td>Application Processor to Application Link attachment status changed to detaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_processor.state.detaching_failed</td>
+		<td>Application Processor to Application Link attachment status changed to detaching failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_processor.state.reattaching</td>
+		<td>Application Processor to Application Link attachment status changed to reattaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_processor.state.reattaching_failed</td>
+		<td>Application Processor to Application Link attachment status changed to reattaching failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_service.state.attached</td>
+		<td>Application Service to Application Link attachment status changed to attached</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_service.state.attaching</td>
+		<td>Application Service to Application Link attachment status changed to attaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_service.state.attaching_failed</td>
+		<td>Application Service to Application Link attachment status changed to attaching failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_service.state.detached</td>
+		<td>Application Service to Application Link attachment status changed to detached</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_service.state.detaching</td>
+		<td>Application Service to Application Link attachment status changed to detaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_service.state.detaching_failed</td>
+		<td>Application Service to Application Link attachment status changed to detaching failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_service.state.reattaching</td>
+		<td>Application Service to Application Link attachment status changed to reattaching</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_link_app_service.state.reattaching_failed</td>
+		<td>Application Service to Application Link attachment status changed to reattaching failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_processor.state.deprovisioned</td>
+		<td>Application Processor is deprovisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_processor.state.deprovisioning</td>
+		<td>Application Processor is deprovisioning</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_processor.state.deprovisioning_failed</td>
+		<td>Application Processor deprovisioning failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_processor.state.provisioned</td>
+		<td>Application Processor is provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_processor.state.provisioning</td>
+		<td>Application Processor is provisioning</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_processor.state.provisioning_failed</td>
+		<td>Application Processor provisioning failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_service.attribute.change_failed</td>
+		<td>Application Service attribute change failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_service.attribute.change_requested</td>
+		<td>Application Service attribute change requested</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_service.attribute.changed</td>
+		<td>Application Service attribute changed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.app_service.state.deprovisioned</td>
 		<td>Application Service is deprovisioned</td>
 		<td>preview</td>
@@ -169,6 +403,24 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.app_service.state.provisioned</td>
 		<td>Application Service is provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_subscription.attribute.change_failed</td>
+		<td>Application Subscription attribute change failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_subscription.attribute.change_requested</td>
+		<td>Application Subscription attribute change requested</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.app_subscription.attribute.changed</td>
+		<td>Application Subscription attribute changed</td>
 		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
