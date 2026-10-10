@@ -211,37 +211,37 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.asn.attribute.changed</td>
 		<td>ASN changed</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.asn.state.deprovisioned</td>
 		<td>ASN de-provisioned</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.asn.state.deprovisioning</td>
 		<td>ASN de-provisioning started</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.asn.state.failed</td>
 		<td>ASN provisioning or de-provisioning failed</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.asn.state.provisioned</td>
 		<td>ASN provisioned</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.asn.state.provisioning</td>
 		<td>ASN provisioning started</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -655,31 +655,31 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.ip_block.state.deprovisioned</td>
 		<td>Ip Block deprovisioned</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.ip_block.state.deprovisioning</td>
 		<td>Ip Block deprovisioning started</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.ip_block.state.failed</td>
 		<td>Ip Block provisioning or deprovisioning failed</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.ip_block.state.provisioned</td>
 		<td>Ip Block provisioned</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.ip_block.state.provisioning</td>
 		<td>Ip Block provisioning started</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2305,91 +2305,91 @@ The following data payloads are the supported events and formats for Equinix Net
 		<th>SLO Category</th>
 	</tr>
 	<tr>
-		<td>equinix.fabric.applink.egress_bytes_rx.count</td>
+		<td>equinix.fabric.app_link.egress_bytes_rx.count</td>
 		<td>Application Link egress received bytes count</td>
 		<td>preview</td>
 	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.applink.egress_bytes_tx.count</td>
+		<td>equinix.fabric.app_link.egress_bytes_tx.count</td>
 		<td>Application Link egress transmitted bytes count</td>
 		<td>preview</td>
 	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.applink.egress_connections_erred.count</td>
+		<td>equinix.fabric.app_link.egress_connections_erred.count</td>
 		<td>Application Link egress erred connections count</td>
 		<td>preview</td>
 	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.applink.egress_connections_retried.count</td>
+		<td>equinix.fabric.app_link.egress_connections_retried.count</td>
 		<td>Application Link egress retried connections count</td>
 		<td>preview</td>
 	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.applink.egress_down.count</td>
+		<td>equinix.fabric.app_link.egress_down.count</td>
 		<td>Application Link egress backend down count</td>
 		<td>preview</td>
 	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.applink.egress_down.time</td>
+		<td>equinix.fabric.app_link.egress_down.time</td>
 		<td>Application Link egress backend downtime in seconds</td>
 		<td>preview</td>
 	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.applink.egress_requests_queued.count</td>
+		<td>equinix.fabric.app_link.egress_requests_queued.count</td>
 		<td>Application Link egress queued requests count</td>
 		<td>preview</td>
 	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.applink.egress_requests_queued.time</td>
+		<td>equinix.fabric.app_link.egress_requests_queued.time</td>
 		<td>Application Link egress average queued request time in seconds</td>
 		<td>preview</td>
 	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.applink.egress_requests_redispatched.count</td>
+		<td>equinix.fabric.app_link.egress_requests_redispatched.count</td>
 		<td>Application Link egress redispatched requests count</td>
 		<td>preview</td>
 	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.applink.egress_responses.latency</td>
+		<td>equinix.fabric.app_link.egress_responses.latency</td>
 		<td>Application Link egress average response latency in seconds</td>
 		<td>preview</td>
 	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.applink.egress_responses_erred.count</td>
+		<td>equinix.fabric.app_link.egress_responses_erred.count</td>
 		<td>Application Link egress erred responses count</td>
 		<td>preview</td>
 	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.applink.ingress_bytes_rx.count</td>
+		<td>equinix.fabric.app_link.ingress_bytes_rx.count</td>
 		<td>Application Link ingress received bytes count</td>
 		<td>preview</td>
 	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.applink.ingress_bytes_tx.count</td>
+		<td>equinix.fabric.app_link.ingress_bytes_tx.count</td>
 		<td>Application Link ingress transmitted bytes count</td>
 		<td>preview</td>
 	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.applink.ingress_requests_erred.count</td>
+		<td>equinix.fabric.app_link.ingress_requests_erred.count</td>
 		<td>Application Link ingress erred requests count</td>
 		<td>preview</td>
 	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.applink.ingress_sessions.rate</td>
+		<td>equinix.fabric.app_link.ingress_sessions.rate</td>
 		<td>Application Link ingress sessions rate in sessions/sec</td>
 		<td>preview</td>
 	<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
@@ -4238,6 +4238,91 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.identity.organization.user.removed</td>
 		<td>User removed from org event</td>
 		<td>released</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+</table>
+
+
+
+---
+### Equinix Internet Exchange ChangeEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/internet_exchange/v1/ChangeEvent.json)
+#### Data Type
+`equinix.internet_exchange.v1.ChangeEvent`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_exchange.state.activating</td>
+		<td>IX - Exchange Service is activating</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_exchange.state.activating_failed</td>
+		<td>IX - Exchange Service activation failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_exchange.state.deprovisioned</td>
+		<td>IX - Exchange Service is deprovisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_exchange.state.deprovisioning</td>
+		<td>IX - Exchange Service is deprovisioning</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_exchange.state.deprovisioning_failed</td>
+		<td>IX - Exchange Service deprovisioning failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_exchange.state.pending_activation</td>
+		<td>IX - Exchange Service is pending activation</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_exchange.state.provisioned</td>
+		<td>IX - Exchange Service is provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_exchange.state.provisioning</td>
+		<td>IX - Exchange Service is provisioning</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_exchange.state.provisioning_failed</td>
+		<td>IX - Exchange Service provisioning failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_exchange.state.reprovisioning</td>
+		<td>IX - Exchange Service is reprovisioning</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.internet_exchange.state.reprovisioning_failed</td>
+		<td>IX - Exchange Service reprovisioning failed</td>
+		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 </table>
