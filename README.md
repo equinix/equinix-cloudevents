@@ -80,10 +80,10 @@ The following data payloads are the supported events and formats for Equinix Net
 
 
 ---
-### Equinix Fabric ChangeEvent
-#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeEvent.json)
+### Equinix Fabric AppConnectEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/AppConnectEvent.json)
 #### Data Type
-`equinix.fabric.v1.ChangeEvent`
+`equinix.fabric.v1.AppConnectEvent`
 #### Supported Events, Metrics, and Alerts
 #### Events
 
@@ -459,6 +459,25 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>Application Subscription provisioning failed</td>
 		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+</table>
+
+
+
+---
+### Equinix Fabric ChangeEvent
+#### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeEvent.json)
+#### Data Type
+`equinix.fabric.v1.ChangeEvent`
+#### Supported Events, Metrics, and Alerts
+#### Events
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Release Status</th>
+		<th>SLO Category</th>
 	</tr>
 	<tr>
 		<td>equinix.fabric.asn.attribute.changed</td>

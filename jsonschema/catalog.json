@@ -26,11 +26,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeEvent.json",
-            "domain": "Equinix Fabric ChangeEvent",
-            "name": "ChangeEvent",
-            "description": "The data within all ChangeEvent events.",
-            "datatype": "equinix.fabric.v1.ChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/AppConnectEvent.json",
+            "domain": "Equinix Fabric AppConnectEvent",
+            "name": "AppConnectEvent",
+            "description": "The data within all AppConnectEvent events.",
+            "datatype": "equinix.fabric.v1.AppConnectEvent",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.app_domain.attribute.change_failed",
@@ -397,7 +397,18 @@
                     "description": "Application Subscription provisioning failed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "preview"
-                },
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/ChangeEvent.json",
+            "domain": "Equinix Fabric ChangeEvent",
+            "name": "ChangeEvent",
+            "description": "The data within all ChangeEvent events.",
+            "datatype": "equinix.fabric.v1.ChangeEvent",
+            "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.asn.attribute.changed",
                     "description": "ASN changed",
