@@ -30,7 +30,7 @@
                         "type": "XF_PORT"
                     },
                     "incidentRefId": "CR1234567890",
-                    "startDateTime": "2026-06-29 05:30:00",
+                    "startDateTime": "2026-06-29T05:30:00Z",
                     "duration": "PT8H",
                     "groupUuid": "656a86fb-d03d-436c-8d5d-30d1f51f7688"
                 },
@@ -68,7 +68,7 @@
                         "type": "XF_PORT"
                     },
                     "incidentRefId": "CR1234567890",
-                    "startDateTime": "2026-06-29 05:30:00",
+                    "startDateTime": "2026-06-29T05:30:00Z",
                     "duration": "PT8H",
                     "groupUuid": "656a86fb-d03d-436c-8d5d-30d1f51f7688"
                 },
@@ -174,7 +174,8 @@
                 },
                 "startDateTime": {
                     "type": "string",
-                    "description": "Scheduled start date and time of the maintenance"
+                    "format": "date-time",
+                    "description": "Scheduled start date and time of the maintenance in ISO 8601 format"
                 },
                 "duration": {
                     "type": "string",
