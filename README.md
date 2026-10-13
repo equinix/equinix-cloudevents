@@ -80,7 +80,7 @@ The following data payloads are the supported events and formats for Equinix Net
 
 
 ---
-### Equinix Fabric AppConnectEvent
+### Equinix Fabric Application Connect Event
 #### DataSchema [JSON](https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/AppConnectEvent.json)
 #### Data Type
 `equinix.fabric.v1.AppConnectEvent`

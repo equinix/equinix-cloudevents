@@ -27,7 +27,7 @@
         },
         {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/AppConnectEvent.json",
-            "domain": "Equinix Fabric AppConnectEvent",
+            "domain": "Equinix Fabric Application Connect Event",
             "name": "AppConnectEvent",
             "description": "The data within all AppConnectEvent events.",
             "datatype": "equinix.fabric.v1.AppConnectEvent",
