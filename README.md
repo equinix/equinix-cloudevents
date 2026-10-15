@@ -4533,67 +4533,67 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.internet_exchange.state.activating</td>
 		<td>IX - Exchange Service is activating</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.internet_exchange.state.activating_failed</td>
 		<td>IX - Exchange Service activation failed</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.internet_exchange.state.deprovisioned</td>
 		<td>IX - Exchange Service is deprovisioned</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.internet_exchange.state.deprovisioning</td>
 		<td>IX - Exchange Service is deprovisioning</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.internet_exchange.state.deprovisioning_failed</td>
 		<td>IX - Exchange Service deprovisioning failed</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.internet_exchange.state.pending_activation</td>
 		<td>IX - Exchange Service is pending activation</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.internet_exchange.state.provisioned</td>
 		<td>IX - Exchange Service is provisioned</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.internet_exchange.state.provisioning</td>
 		<td>IX - Exchange Service is provisioning</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.internet_exchange.state.provisioning_failed</td>
 		<td>IX - Exchange Service provisioning failed</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.internet_exchange.state.reprovisioning</td>
 		<td>IX - Exchange Service is reprovisioning</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>equinix.fabric.internet_exchange.state.reprovisioning_failed</td>
 		<td>IX - Exchange Service reprovisioning failed</td>
-		<td>preview</td>
+		<td>released</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 </table>
