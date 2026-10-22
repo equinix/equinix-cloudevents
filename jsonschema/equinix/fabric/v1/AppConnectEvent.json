@@ -192,7 +192,7 @@
                     "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
                     "type": "APP_PROCESSOR",
                     "attachmentStatus": "ATTACHING",
-                    "config": "bW9kZWxfbGlzdDoKICAtIG1vZGVsX25hbWU6IGdwdC00bwogICA=",
+                    "config": "[REDACTED]",
                     "endpoint": "123456.privateai.link"
                 },
                 "auth": {
