@@ -18,6 +18,311 @@
     "fabric": {
         "cloudeventTypes": [
             {
+                "name": "equinix.fabric.app_domain.attribute.change_failed",
+                "description": "Application Domain attribute change failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_domain.attribute.change_requested",
+                "description": "Application Domain attribute change requested",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_domain.attribute.changed",
+                "description": "Application Domain attribute changed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_domain.state.deprovisioned",
+                "description": "Application Domain is deprovisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_domain.state.deprovisioning_failed",
+                "description": "Application Domain deprovisioning failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_domain.state.pending_verification",
+                "description": "Application Domain verification is pending",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_domain.state.provisioned",
+                "description": "Application Domain is provisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_domain.state.provisioning_failed",
+                "description": "Application Domain provisioning failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link.attribute.change_failed",
+                "description": "Application Link attribute change failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link.attribute.change_requested",
+                "description": "Application Link attribute change requested",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link.attribute.changed",
+                "description": "Application Link attribute changed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link.state.deprovisioned",
+                "description": "Application Link is deprovisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link.state.deprovisioning",
+                "description": "Application Link is deprovisioning",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link.state.deprovisioning_failed",
+                "description": "Application Link deprovisioning failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link.state.provisioned",
+                "description": "Application Link is provisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link.state.provisioning",
+                "description": "Application Link is provisioning",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link.state.provisioning_failed",
+                "description": "Application Link provisioning failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_domain.state.attached",
+                "description": "Application Domain to Application Link attachment status changed to attached",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_domain.state.attaching",
+                "description": "Application Domain to Application Link attachment status changed to attaching",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_domain.state.attaching_failed",
+                "description": "Application Domain to Application Link attachment status changed to attaching failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_domain.state.detached",
+                "description": "Application Domain to Application Link attachment status changed to detached",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_domain.state.detaching",
+                "description": "Application Domain to Application Link attachment status changed to detaching",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_domain.state.detaching_failed",
+                "description": "Application Domain to Application Link attachment status changed to detaching failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_domain.state.reattaching",
+                "description": "Application Domain to Application Link attachment status changed to reattaching",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_domain.state.reattaching_failed",
+                "description": "Application Domain to Application Link attachment status changed to reattaching failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_processor.state.attached",
+                "description": "Application Processor to Application Link attachment status changed to attached",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_processor.state.attaching",
+                "description": "Application Processor to Application Link attachment status changed to attaching",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_processor.state.attaching_failed",
+                "description": "Application Processor to Application Link attachment status changed to attaching failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_processor.state.detached",
+                "description": "Application Processor to Application Link attachment status changed to detached",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_processor.state.detaching",
+                "description": "Application Processor to Application Link attachment status changed to detaching",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_processor.state.detaching_failed",
+                "description": "Application Processor to Application Link attachment status changed to detaching failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_processor.state.reattaching",
+                "description": "Application Processor to Application Link attachment status changed to reattaching",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_processor.state.reattaching_failed",
+                "description": "Application Processor to Application Link attachment status changed to reattaching failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_service.state.attached",
+                "description": "Application Service to Application Link attachment status changed to attached",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_service.state.attaching",
+                "description": "Application Service to Application Link attachment status changed to attaching",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_service.state.attaching_failed",
+                "description": "Application Service to Application Link attachment status changed to attaching failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_service.state.detached",
+                "description": "Application Service to Application Link attachment status changed to detached",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_service.state.detaching",
+                "description": "Application Service to Application Link attachment status changed to detaching",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_service.state.detaching_failed",
+                "description": "Application Service to Application Link attachment status changed to detaching failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_service.state.reattaching",
+                "description": "Application Service to Application Link attachment status changed to reattaching",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_link_app_service.state.reattaching_failed",
+                "description": "Application Service to Application Link attachment status changed to reattaching failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_processor.state.deprovisioned",
+                "description": "Application Processor is deprovisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_processor.state.deprovisioning",
+                "description": "Application Processor is deprovisioning",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_processor.state.deprovisioning_failed",
+                "description": "Application Processor deprovisioning failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_processor.state.provisioned",
+                "description": "Application Processor is provisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_processor.state.provisioning",
+                "description": "Application Processor is provisioning",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_processor.state.provisioning_failed",
+                "description": "Application Processor provisioning failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_service.attribute.change_failed",
+                "description": "Application Service attribute change failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_service.attribute.change_requested",
+                "description": "Application Service attribute change requested",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_service.attribute.changed",
+                "description": "Application Service attribute changed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_service.state.deprovisioned",
+                "description": "Application Service is deprovisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_service.state.provisioned",
+                "description": "Application Service is provisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_subscription.attribute.change_failed",
+                "description": "Application Subscription attribute change failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_subscription.attribute.change_requested",
+                "description": "Application Subscription attribute change requested",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_subscription.attribute.changed",
+                "description": "Application Subscription attribute changed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_subscription.state.deprovisioned",
+                "description": "Application Subscription is deprovisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_subscription.state.deprovisioning",
+                "description": "Application Subscription is deprovisioning",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_subscription.state.deprovisioning_failed",
+                "description": "Application Subscription deprovisioning failed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_subscription.state.provisioned",
+                "description": "Application Subscription is provisioned",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_subscription.state.provisioning",
+                "description": "Application Subscription is provisioning",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.app_subscription.state.provisioning_failed",
+                "description": "Application Subscription provisioning failed",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.asn.attribute.changed",
                 "description": "ASN changed",
                 "releaseStatus": "released"
@@ -836,311 +1141,6 @@
                 "name": "equinix.network.repair.state.resolved",
                 "description": "Network repair state changed to resolved",
                 "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.fabric.app_domain.attribute.change_failed",
-                "description": "Application Domain attribute change failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_domain.attribute.change_requested",
-                "description": "Application Domain attribute change requested",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_domain.attribute.changed",
-                "description": "Application Domain attribute changed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_domain.state.deprovisioned",
-                "description": "Application Domain is deprovisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_domain.state.deprovisioning_failed",
-                "description": "Application Domain deprovisioning failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_domain.state.pending_verification",
-                "description": "Application Domain verification is pending",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_domain.state.provisioned",
-                "description": "Application Domain is provisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_domain.state.provisioning_failed",
-                "description": "Application Domain provisioning failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link.attribute.change_failed",
-                "description": "Application Link attribute change failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link.attribute.change_requested",
-                "description": "Application Link attribute change requested",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link.attribute.changed",
-                "description": "Application Link attribute changed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link.state.deprovisioned",
-                "description": "Application Link is deprovisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link.state.deprovisioning",
-                "description": "Application Link is deprovisioning",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link.state.deprovisioning_failed",
-                "description": "Application Link deprovisioning failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link.state.provisioned",
-                "description": "Application Link is provisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link.state.provisioning",
-                "description": "Application Link is provisioning",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link.state.provisioning_failed",
-                "description": "Application Link provisioning failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_domain.state.attached",
-                "description": "Application Domain to Application Link attachment status changed to attached",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_domain.state.attaching",
-                "description": "Application Domain to Application Link attachment status changed to attaching",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_domain.state.attaching_failed",
-                "description": "Application Domain to Application Link attachment status changed to attaching failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_domain.state.detached",
-                "description": "Application Domain to Application Link attachment status changed to detached",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_domain.state.detaching",
-                "description": "Application Domain to Application Link attachment status changed to detaching",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_domain.state.detaching_failed",
-                "description": "Application Domain to Application Link attachment status changed to detaching failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_domain.state.reattaching",
-                "description": "Application Domain to Application Link attachment status changed to reattaching",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_domain.state.reattaching_failed",
-                "description": "Application Domain to Application Link attachment status changed to reattaching failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_processor.state.attached",
-                "description": "Application Processor to Application Link attachment status changed to attached",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_processor.state.attaching",
-                "description": "Application Processor to Application Link attachment status changed to attaching",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_processor.state.attaching_failed",
-                "description": "Application Processor to Application Link attachment status changed to attaching failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_processor.state.detached",
-                "description": "Application Processor to Application Link attachment status changed to detached",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_processor.state.detaching",
-                "description": "Application Processor to Application Link attachment status changed to detaching",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_processor.state.detaching_failed",
-                "description": "Application Processor to Application Link attachment status changed to detaching failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_processor.state.reattaching",
-                "description": "Application Processor to Application Link attachment status changed to reattaching",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_processor.state.reattaching_failed",
-                "description": "Application Processor to Application Link attachment status changed to reattaching failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_service.state.attached",
-                "description": "Application Service to Application Link attachment status changed to attached",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_service.state.attaching",
-                "description": "Application Service to Application Link attachment status changed to attaching",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_service.state.attaching_failed",
-                "description": "Application Service to Application Link attachment status changed to attaching failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_service.state.detached",
-                "description": "Application Service to Application Link attachment status changed to detached",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_service.state.detaching",
-                "description": "Application Service to Application Link attachment status changed to detaching",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_service.state.detaching_failed",
-                "description": "Application Service to Application Link attachment status changed to detaching failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_service.state.reattaching",
-                "description": "Application Service to Application Link attachment status changed to reattaching",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_link_app_service.state.reattaching_failed",
-                "description": "Application Service to Application Link attachment status changed to reattaching failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_processor.state.deprovisioned",
-                "description": "Application Processor is deprovisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_processor.state.deprovisioning",
-                "description": "Application Processor is deprovisioning",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_processor.state.deprovisioning_failed",
-                "description": "Application Processor deprovisioning failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_processor.state.provisioned",
-                "description": "Application Processor is provisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_processor.state.provisioning",
-                "description": "Application Processor is provisioning",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_processor.state.provisioning_failed",
-                "description": "Application Processor provisioning failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_service.attribute.change_failed",
-                "description": "Application Service attribute change failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_service.attribute.change_requested",
-                "description": "Application Service attribute change requested",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_service.attribute.changed",
-                "description": "Application Service attribute changed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_service.state.deprovisioned",
-                "description": "Application Service is deprovisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_service.state.provisioned",
-                "description": "Application Service is provisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_subscription.attribute.change_failed",
-                "description": "Application Subscription attribute change failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_subscription.attribute.change_requested",
-                "description": "Application Subscription attribute change requested",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_subscription.attribute.changed",
-                "description": "Application Subscription attribute changed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_subscription.state.deprovisioned",
-                "description": "Application Subscription is deprovisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_subscription.state.deprovisioning",
-                "description": "Application Subscription is deprovisioning",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_subscription.state.deprovisioning_failed",
-                "description": "Application Subscription deprovisioning failed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_subscription.state.provisioned",
-                "description": "Application Subscription is provisioned",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_subscription.state.provisioning",
-                "description": "Application Subscription is provisioning",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.app_subscription.state.provisioning_failed",
-                "description": "Application Subscription provisioning failed",
-                "releaseStatus": "preview"
             },
             {
                 "name": "equinix.fabric.route_aggregation.attribute.changed",
