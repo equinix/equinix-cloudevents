@@ -192,7 +192,7 @@
                     "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
                     "type": "APP_PROCESSOR",
                     "attachmentStatus": "ATTACHING",
-                    "config": "bW9kZWxfbGlzdDoKICAtIG1vZGVsX25hbWU6IGdwdC00bwogICA=",
+                    "config": "[REDACTED]",
                     "endpoint": "123456.privateai.link"
                 },
                 "auth": {
@@ -205,8 +205,8 @@
             "specversion": "1.0",
             "source": "https://api.equinix.com/fabric/v4/cloudevents",
             "id": "6c573287-9914-4202-8b6d-2d15e7da04b8",
-            "type": "equinix.fabric.app_domain.attribute.change_requested",
-            "subject": "/fabric/v4/appDomains/bfb4ca1d-1e0a-4c6d-b164-d2974f3287d3",
+            "type": "equinix.fabric.app_link.attribute.change_requested",
+            "subject": "/fabric/v4/appLinks/8ac8ecfe-c7cb-4def-9f77-5ce93c19d83d",
             "time": "2026-04-25T17:31:00Z",
             "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v1/AppConnectEvent.json",
             "datacontenttype": "application/json",
@@ -216,25 +216,25 @@
             "authtype": "user",
             "authid": "<userId>",
             "data": {
-                "message": "Application Domain 'My-App-Domain' attribute change requested",
+                "message": "Application Link 'My-App-Link' attribute change requested",
                 "resource": {
-                    "href": "https://api.equinix.com/fabric/v4/appDomains/bfb4ca1d-1e0a-4c6d-b164-d2974f3287d3",
-                    "uuid": "bfb4ca1d-1e0a-4c6d-b164-d2974f3287d3",
-                    "type": "APP_DOMAIN",
-                    "name": "My-App-Domain",
+                    "href": "https://api.equinix.com/fabric/v4/appLinks/8ac8ecfe-c7cb-4def-9f77-5ce93c19d83d",
+                    "uuid": "8ac8ecfe-c7cb-4def-9f77-5ce93c19d83d",
+                    "type": "APP_LINK",
+                    "name": "My-App-Link",
                     "state": "REPROVISIONING",
                     "change": {
                         "uuid": "a558e0a0-8b6a-45fa-8b26-1b2eeb082533",
-                        "type": "APP_DOMAIN_UPDATE",
+                        "type": "APP_LINK_UPDATE",
                         "status": "REQUESTED",
                         "createdDateTime": "2026-04-25T17:31:00Z",
                         "updatedDateTime": "2026-04-25T17:31:00Z",
                         "data": [
                             {
                                 "op": "replace",
-                                "path": "/description",
-                                "value": "Groq Domain - Update",
-                                "previousValue": "Groq Domain"
+                                "path": "/ipv4Subnet",
+                                "value": "192.168.200.0/24",
+                                "previousValue": "192.168.100.0/24"
                             }
                         ]
                     }
