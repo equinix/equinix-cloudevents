@@ -1118,31 +1118,6 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.network.repair.state.cancelled",
-                "description": "Network repair state changed to cancelled",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.repair.state.confirmed",
-                "description": "Network repair state changed to confirmed",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.repair.state.in_progress",
-                "description": "Network repair state changed to in_progress",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.repair.state.rescheduled",
-                "description": "Network repair state changed to rescheduled",
-                "releaseStatus": "released"
-            },
-            {
-                "name": "equinix.network.repair.state.resolved",
-                "description": "Network repair state changed to resolved",
-                "releaseStatus": "released"
-            },
-            {
                 "name": "equinix.fabric.route_aggregation.attribute.changed",
                 "description": "Route Aggregation named ${route_aggregation_name} attribute changed",
                 "releaseStatus": "preview"
@@ -3022,6 +2997,31 @@
             {
                 "name": "equinix.network.maintenance.state.rescheduled",
                 "description": "Network maintenance state changed to rescheduled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.cancelled",
+                "description": "Network repair state changed to cancelled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.confirmed",
+                "description": "Network repair state changed to confirmed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.in_progress",
+                "description": "Network repair state changed to in_progress",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.rescheduled",
+                "description": "Network repair state changed to rescheduled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.network.repair.state.resolved",
+                "description": "Network repair state changed to resolved",
                 "releaseStatus": "released"
             },
             {
