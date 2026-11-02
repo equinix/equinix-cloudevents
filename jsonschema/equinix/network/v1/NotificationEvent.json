@@ -2,7 +2,7 @@
   "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network/v1/NotificationEvent.json",
   "name": "NotificationEvent",
   "examples": [],
-  "package": "equinix.fabric.v1",
+  "package": "equinix.network.v1",
   "datatype": "equinix.network.v1.NotificationEvent",
   "domain": "Equinix Network Notification Event",
   "$schema": "http://json-schema.org/draft-04/schema#",
