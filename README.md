@@ -3506,74 +3506,20 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.physical_port.light_rx_lane1.power</td>
-		<td>Physical port lane 1 received optical power in dBm</td>
+		<td>equinix.fabric.physical_port.light_rx_lane{laneNumber}.power</td>
+		<td>Physical port per-lane received optical power in dBm</td>
 		<td>preview</td>
 	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.physical_port.light_rx_lane2.power</td>
-		<td>Physical port lane 2 received optical power in dBm</td>
+		<td>equinix.fabric.physical_port.light_tx_lane{laneNumber}.current</td>
+		<td>Physical port per-lane transmit bias current in mA</td>
 		<td>preview</td>
 	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
-		<td>equinix.fabric.physical_port.light_rx_lane3.power</td>
-		<td>Physical port lane 3 received optical power in dBm</td>
-		<td>preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.physical_port.light_rx_lane4.power</td>
-		<td>Physical port lane 4 received optical power in dBm</td>
-		<td>preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.physical_port.light_tx_lane1.current</td>
-		<td>Physical port lane 1 transmit bias current in mA</td>
-		<td>preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.physical_port.light_tx_lane1.power</td>
-		<td>Physical port lane 1 transmit optical power in dBm</td>
-		<td>preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.physical_port.light_tx_lane2.current</td>
-		<td>Physical port lane 2 transmit bias current in mA</td>
-		<td>preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.physical_port.light_tx_lane2.power</td>
-		<td>Physical port lane 2 transmit optical power in dBm</td>
-		<td>preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.physical_port.light_tx_lane3.current</td>
-		<td>Physical port lane 3 transmit bias current in mA</td>
-		<td>preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.physical_port.light_tx_lane3.power</td>
-		<td>Physical port lane 3 transmit optical power in dBm</td>
-		<td>preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.physical_port.light_tx_lane4.current</td>
-		<td>Physical port lane 4 transmit bias current in mA</td>
-		<td>preview</td>
-	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
-	</tr>
-	<tr>
-		<td>equinix.fabric.physical_port.light_tx_lane4.power</td>
-		<td>Physical port lane 4 transmit optical power in dBm</td>
+		<td>equinix.fabric.physical_port.light_tx_lane{laneNumber}.power</td>
+		<td>Physical port per-lane transmit optical power in dBm</td>
 		<td>preview</td>
 	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
 	</tr>

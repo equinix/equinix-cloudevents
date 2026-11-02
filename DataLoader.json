@@ -2060,63 +2060,18 @@
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.physical_port.light_rx_lane1.power",
-                "description": "Physical port lane 1 received optical power in dBm",
+                "name": "equinix.fabric.physical_port.light_rx_lane{laneNumber}.power",
+                "description": "Physical port per-lane received optical power in dBm",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.physical_port.light_rx_lane2.power",
-                "description": "Physical port lane 2 received optical power in dBm",
+                "name": "equinix.fabric.physical_port.light_tx_lane{laneNumber}.current",
+                "description": "Physical port per-lane transmit bias current in mA",
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.physical_port.light_rx_lane3.power",
-                "description": "Physical port lane 3 received optical power in dBm",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.physical_port.light_rx_lane4.power",
-                "description": "Physical port lane 4 received optical power in dBm",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.physical_port.light_tx_lane1.current",
-                "description": "Physical port lane 1 transmit bias current in mA",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.physical_port.light_tx_lane1.power",
-                "description": "Physical port lane 1 transmit optical power in dBm",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.physical_port.light_tx_lane2.current",
-                "description": "Physical port lane 2 transmit bias current in mA",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.physical_port.light_tx_lane2.power",
-                "description": "Physical port lane 2 transmit optical power in dBm",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.physical_port.light_tx_lane3.current",
-                "description": "Physical port lane 3 transmit bias current in mA",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.physical_port.light_tx_lane3.power",
-                "description": "Physical port lane 3 transmit optical power in dBm",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.physical_port.light_tx_lane4.current",
-                "description": "Physical port lane 4 transmit bias current in mA",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.physical_port.light_tx_lane4.power",
-                "description": "Physical port lane 4 transmit optical power in dBm",
+                "name": "equinix.fabric.physical_port.light_tx_lane{laneNumber}.power",
+                "description": "Physical port per-lane transmit optical power in dBm",
                 "releaseStatus": "preview"
             },
             {
