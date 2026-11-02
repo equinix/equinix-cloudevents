@@ -204,6 +204,78 @@
             "releaseStatus": "released"
         },
         {
+            "name": "equinix.fabric.physical_port.light_rx_lane1.power",
+            "description": "Physical port lane 1 received optical power in dBm",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.physical_port.light_rx_lane2.power",
+            "description": "Physical port lane 2 received optical power in dBm",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.physical_port.light_rx_lane3.power",
+            "description": "Physical port lane 3 received optical power in dBm",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.physical_port.light_rx_lane4.power",
+            "description": "Physical port lane 4 received optical power in dBm",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.physical_port.light_tx_lane1.power",
+            "description": "Physical port lane 1 transmit optical power in dBm",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.physical_port.light_tx_lane2.power",
+            "description": "Physical port lane 2 transmit optical power in dBm",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.physical_port.light_tx_lane3.power",
+            "description": "Physical port lane 3 transmit optical power in dBm",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.physical_port.light_tx_lane4.power",
+            "description": "Physical port lane 4 transmit optical power in dBm",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.physical_port.light_tx_lane1.current",
+            "description": "Physical port lane 1 transmit bias current in mA",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.physical_port.light_tx_lane2.current",
+            "description": "Physical port lane 2 transmit bias current in mA",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.physical_port.light_tx_lane3.current",
+            "description": "Physical port lane 3 transmit bias current in mA",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.physical_port.light_tx_lane4.current",
+            "description": "Physical port lane 4 transmit bias current in mA",
+            "sloCategoryCode": "PURPLE_METRIC_SLO",
+            "releaseStatus": "preview"
+        },
+        {
             "name": "equinix.fabric.connection.packets_dropped_rx_aside_rateexceeded.count",
             "description": "Connection A side inbound dropped packets count",
             "sloCategoryCode": "PURPLE_METRIC_SLO",
