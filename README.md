@@ -113,7 +113,7 @@ The following data payloads are the supported events and formats for Equinix Net
 ---
 ### Equinix Fabric
 <details>
-<summary><b>Schemas</b> (46)</summary>
+<summary><b>Schemas</b> (50)</summary>
 
 <table>
 	<tr>
@@ -135,6 +135,26 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>App Link</td>
 		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkChangeEvent.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.AppLinkChangeEvent</code></td>
+	</tr>
+	<tr>
+		<td>App Link App Domain</td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppDomainChangeEvent.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.AppLinkAppDomainChangeEvent</code></td>
+	</tr>
+	<tr>
+		<td>App Link App Processor</td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppProcessorChangeEvent.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.AppLinkAppProcessorChangeEvent</code></td>
+	</tr>
+	<tr>
+		<td>App Link App Service</td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppServiceChangeEvent.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.AppLinkAppServiceChangeEvent</code></td>
+	</tr>
+	<tr>
+		<td>App Processor</td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppProcessorChangeEvent.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.AppProcessorChangeEvent</code></td>
 	</tr>
 	<tr>
 		<td>App Service</td>
@@ -356,7 +376,7 @@ The following data payloads are the supported events and formats for Equinix Net
 </details>
 
 <details>
-<summary><b>Events</b> (245)</summary>
+<summary><b>Events</b> (287)</summary>
 
 <table>
 	<tr>
@@ -375,135 +395,429 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>App Domain</td>
+		<td>equinix.fabric.app_domain.attribute.change_failed</td>
+		<td>Application Domain attribute change failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Domain</td>
+		<td>equinix.fabric.app_domain.attribute.change_requested</td>
+		<td>Application Domain attribute change requested</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Domain</td>
+		<td>equinix.fabric.app_domain.attribute.changed</td>
+		<td>Application Domain attribute changed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Domain</td>
 		<td>equinix.fabric.app_domain.state.deprovisioned</td>
 		<td>Application Domain is deprovisioned</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Domain</td>
 		<td>equinix.fabric.app_domain.state.deprovisioning_failed</td>
 		<td>Application Domain deprovisioning failed</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Domain</td>
 		<td>equinix.fabric.app_domain.state.pending_verification</td>
 		<td>Application Domain verification is pending</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Domain</td>
 		<td>equinix.fabric.app_domain.state.provisioned</td>
 		<td>Application Domain is provisioned</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Domain</td>
 		<td>equinix.fabric.app_domain.state.provisioning_failed</td>
 		<td>Application Domain provisioning failed</td>
-		<td>preview</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link</td>
+		<td>equinix.fabric.app_link.attribute.change_failed</td>
+		<td>Application Link attribute change failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link</td>
+		<td>equinix.fabric.app_link.attribute.change_requested</td>
+		<td>Application Link attribute change requested</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link</td>
+		<td>equinix.fabric.app_link.attribute.changed</td>
+		<td>Application Link attribute changed</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Link</td>
 		<td>equinix.fabric.app_link.state.deprovisioned</td>
 		<td>Application Link is deprovisioned</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Link</td>
 		<td>equinix.fabric.app_link.state.deprovisioning</td>
 		<td>Application Link is deprovisioning</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Link</td>
 		<td>equinix.fabric.app_link.state.deprovisioning_failed</td>
 		<td>Application Link deprovisioning failed</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Link</td>
 		<td>equinix.fabric.app_link.state.provisioned</td>
 		<td>Application Link is provisioned</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Link</td>
 		<td>equinix.fabric.app_link.state.provisioning</td>
 		<td>Application Link is provisioning</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Link</td>
 		<td>equinix.fabric.app_link.state.provisioning_failed</td>
 		<td>Application Link provisioning failed</td>
-		<td>preview</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Domain</td>
+		<td>equinix.fabric.app_link_app_domain.state.attached</td>
+		<td>Application Domain to Application Link attachment status changed to attached</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Domain</td>
+		<td>equinix.fabric.app_link_app_domain.state.attaching</td>
+		<td>Application Domain to Application Link attachment status changed to attaching</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Domain</td>
+		<td>equinix.fabric.app_link_app_domain.state.attaching_failed</td>
+		<td>Application Domain to Application Link attachment status changed to attaching failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Domain</td>
+		<td>equinix.fabric.app_link_app_domain.state.detached</td>
+		<td>Application Domain to Application Link attachment status changed to detached</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Domain</td>
+		<td>equinix.fabric.app_link_app_domain.state.detaching</td>
+		<td>Application Domain to Application Link attachment status changed to detaching</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Domain</td>
+		<td>equinix.fabric.app_link_app_domain.state.detaching_failed</td>
+		<td>Application Domain to Application Link attachment status changed to detaching failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Domain</td>
+		<td>equinix.fabric.app_link_app_domain.state.reattaching</td>
+		<td>Application Domain to Application Link attachment status changed to reattaching</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Domain</td>
+		<td>equinix.fabric.app_link_app_domain.state.reattaching_failed</td>
+		<td>Application Domain to Application Link attachment status changed to reattaching failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Processor</td>
+		<td>equinix.fabric.app_link_app_processor.state.attached</td>
+		<td>Application Processor to Application Link attachment status changed to attached</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Processor</td>
+		<td>equinix.fabric.app_link_app_processor.state.attaching</td>
+		<td>Application Processor to Application Link attachment status changed to attaching</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Processor</td>
+		<td>equinix.fabric.app_link_app_processor.state.attaching_failed</td>
+		<td>Application Processor to Application Link attachment status changed to attaching failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Processor</td>
+		<td>equinix.fabric.app_link_app_processor.state.detached</td>
+		<td>Application Processor to Application Link attachment status changed to detached</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Processor</td>
+		<td>equinix.fabric.app_link_app_processor.state.detaching</td>
+		<td>Application Processor to Application Link attachment status changed to detaching</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Processor</td>
+		<td>equinix.fabric.app_link_app_processor.state.detaching_failed</td>
+		<td>Application Processor to Application Link attachment status changed to detaching failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Processor</td>
+		<td>equinix.fabric.app_link_app_processor.state.reattaching</td>
+		<td>Application Processor to Application Link attachment status changed to reattaching</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Processor</td>
+		<td>equinix.fabric.app_link_app_processor.state.reattaching_failed</td>
+		<td>Application Processor to Application Link attachment status changed to reattaching failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Service</td>
+		<td>equinix.fabric.app_link_app_service.state.attached</td>
+		<td>Application Service to Application Link attachment status changed to attached</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Service</td>
+		<td>equinix.fabric.app_link_app_service.state.attaching</td>
+		<td>Application Service to Application Link attachment status changed to attaching</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Service</td>
+		<td>equinix.fabric.app_link_app_service.state.attaching_failed</td>
+		<td>Application Service to Application Link attachment status changed to attaching failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Service</td>
+		<td>equinix.fabric.app_link_app_service.state.detached</td>
+		<td>Application Service to Application Link attachment status changed to detached</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Service</td>
+		<td>equinix.fabric.app_link_app_service.state.detaching</td>
+		<td>Application Service to Application Link attachment status changed to detaching</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Service</td>
+		<td>equinix.fabric.app_link_app_service.state.detaching_failed</td>
+		<td>Application Service to Application Link attachment status changed to detaching failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Service</td>
+		<td>equinix.fabric.app_link_app_service.state.reattaching</td>
+		<td>Application Service to Application Link attachment status changed to reattaching</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Link App Service</td>
+		<td>equinix.fabric.app_link_app_service.state.reattaching_failed</td>
+		<td>Application Service to Application Link attachment status changed to reattaching failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Processor</td>
+		<td>equinix.fabric.app_processor.state.deprovisioned</td>
+		<td>Application Processor is deprovisioned</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Processor</td>
+		<td>equinix.fabric.app_processor.state.deprovisioning</td>
+		<td>Application Processor is deprovisioning</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Processor</td>
+		<td>equinix.fabric.app_processor.state.deprovisioning_failed</td>
+		<td>Application Processor deprovisioning failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Processor</td>
+		<td>equinix.fabric.app_processor.state.provisioned</td>
+		<td>Application Processor is provisioned</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Processor</td>
+		<td>equinix.fabric.app_processor.state.provisioning</td>
+		<td>Application Processor is provisioning</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Processor</td>
+		<td>equinix.fabric.app_processor.state.provisioning_failed</td>
+		<td>Application Processor provisioning failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Service</td>
+		<td>equinix.fabric.app_service.attribute.change_failed</td>
+		<td>Application Service attribute change failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Service</td>
+		<td>equinix.fabric.app_service.attribute.change_requested</td>
+		<td>Application Service attribute change requested</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Service</td>
+		<td>equinix.fabric.app_service.attribute.changed</td>
+		<td>Application Service attribute changed</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Service</td>
 		<td>equinix.fabric.app_service.state.deprovisioned</td>
 		<td>Application Service is deprovisioned</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Service</td>
 		<td>equinix.fabric.app_service.state.provisioned</td>
 		<td>Application Service is provisioned</td>
-		<td>preview</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Subscription</td>
+		<td>equinix.fabric.app_subscription.attribute.change_failed</td>
+		<td>Application Subscription attribute change failed</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Subscription</td>
+		<td>equinix.fabric.app_subscription.attribute.change_requested</td>
+		<td>Application Subscription attribute change requested</td>
+		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Subscription</td>
+		<td>equinix.fabric.app_subscription.attribute.changed</td>
+		<td>Application Subscription attribute changed</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Subscription</td>
 		<td>equinix.fabric.app_subscription.state.deprovisioned</td>
 		<td>Application Subscription is deprovisioned</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Subscription</td>
 		<td>equinix.fabric.app_subscription.state.deprovisioning</td>
 		<td>Application Subscription is deprovisioning</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Subscription</td>
 		<td>equinix.fabric.app_subscription.state.deprovisioning_failed</td>
 		<td>Application Subscription deprovisioning failed</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Subscription</td>
 		<td>equinix.fabric.app_subscription.state.provisioned</td>
 		<td>Application Subscription is provisioned</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Subscription</td>
 		<td>equinix.fabric.app_subscription.state.provisioning</td>
 		<td>Application Subscription is provisioning</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Subscription</td>
 		<td>equinix.fabric.app_subscription.state.provisioning_failed</td>
 		<td>Application Subscription provisioning failed</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1147,35 +1461,35 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>Ip Block</td>
 		<td>equinix.fabric.ip_block.state.deprovisioned</td>
 		<td>Ip Block deprovisioned</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Ip Block</td>
 		<td>equinix.fabric.ip_block.state.deprovisioning</td>
 		<td>Ip Block deprovisioning started</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Ip Block</td>
 		<td>equinix.fabric.ip_block.state.failed</td>
 		<td>Ip Block provisioning or deprovisioning failed</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Ip Block</td>
 		<td>equinix.fabric.ip_block.state.provisioned</td>
 		<td>Ip Block provisioned</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Ip Block</td>
 		<td>equinix.fabric.ip_block.state.provisioning</td>
 		<td>Ip Block provisioning started</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2086,7 +2400,7 @@ The following data payloads are the supported events and formats for Equinix Net
 </details>
 
 <details>
-<summary><b>Alerts</b> (212)</summary>
+<summary><b>Alerts</b> (216)</summary>
 
 <table>
 	<tr>
@@ -2304,6 +2618,20 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.metro.cl_{metroCode}.latency</td>
 		<td>Metro latency from Calgary to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Metro</td>
+		<td>equinix.fabric.metro.cn_{metroCode}.jitter_avg</td>
+		<td>Average metro jitter from Chennai to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Metro</td>
+		<td>equinix.fabric.metro.cn_{metroCode}.latency</td>
+		<td>Metro latency from Chennai to ${metro} is ${operator} ${operand} milliseconds</td>
+		<td>preview</td>
 		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2696,6 +3024,20 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.metro.ml_{metroCode}.latency</td>
 		<td>Metro latency from Milan to ${metro} is ${operator} ${operand} milliseconds</td>
 		<td>released</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Metro</td>
+		<td>equinix.fabric.metro.mn_{metroCode}.jitter_avg</td>
+		<td>Average metro jitter from Manila to ${metro} is ${operator} ${operand} microseconds</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Metro</td>
+		<td>equinix.fabric.metro.mn_{metroCode}.latency</td>
+		<td>Metro latency from Manila to ${metro} is ${operator} ${operand} milliseconds</td>
+		<td>preview</td>
 		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -3585,7 +3927,7 @@ The following data payloads are the supported events and formats for Equinix Net
 </details>
 
 <details>
-<summary><b>Metrics</b> (223)</summary>
+<summary><b>Metrics</b> (227)</summary>
 
 <table>
 	<tr>
@@ -3597,105 +3939,105 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>App Connect</td>
-		<td>equinix.fabric.applink.egress_bytes_rx.count</td>
+		<td>equinix.fabric.app_link.egress_bytes_rx.count</td>
 		<td>Application Link egress received bytes count</td>
 		<td>preview</td>
 		<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Connect</td>
-		<td>equinix.fabric.applink.egress_bytes_tx.count</td>
+		<td>equinix.fabric.app_link.egress_bytes_tx.count</td>
 		<td>Application Link egress transmitted bytes count</td>
 		<td>preview</td>
 		<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Connect</td>
-		<td>equinix.fabric.applink.egress_connections_erred.count</td>
+		<td>equinix.fabric.app_link.egress_connections_erred.count</td>
 		<td>Application Link egress erred connections count</td>
 		<td>preview</td>
 		<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Connect</td>
-		<td>equinix.fabric.applink.egress_connections_retried.count</td>
+		<td>equinix.fabric.app_link.egress_connections_retried.count</td>
 		<td>Application Link egress retried connections count</td>
 		<td>preview</td>
 		<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Connect</td>
-		<td>equinix.fabric.applink.egress_down.count</td>
+		<td>equinix.fabric.app_link.egress_down.count</td>
 		<td>Application Link egress backend down count</td>
 		<td>preview</td>
 		<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Connect</td>
-		<td>equinix.fabric.applink.egress_down.time</td>
+		<td>equinix.fabric.app_link.egress_down.time</td>
 		<td>Application Link egress backend downtime in seconds</td>
 		<td>preview</td>
 		<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Connect</td>
-		<td>equinix.fabric.applink.egress_requests_queued.count</td>
+		<td>equinix.fabric.app_link.egress_requests_queued.count</td>
 		<td>Application Link egress queued requests count</td>
 		<td>preview</td>
 		<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Connect</td>
-		<td>equinix.fabric.applink.egress_requests_queued.time</td>
+		<td>equinix.fabric.app_link.egress_requests_queued.time</td>
 		<td>Application Link egress average queued request time in seconds</td>
 		<td>preview</td>
 		<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Connect</td>
-		<td>equinix.fabric.applink.egress_requests_redispatched.count</td>
+		<td>equinix.fabric.app_link.egress_requests_redispatched.count</td>
 		<td>Application Link egress redispatched requests count</td>
 		<td>preview</td>
 		<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Connect</td>
-		<td>equinix.fabric.applink.egress_responses.latency</td>
+		<td>equinix.fabric.app_link.egress_responses.latency</td>
 		<td>Application Link egress average response latency in seconds</td>
 		<td>preview</td>
 		<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Connect</td>
-		<td>equinix.fabric.applink.egress_responses_erred.count</td>
+		<td>equinix.fabric.app_link.egress_responses_erred.count</td>
 		<td>Application Link egress erred responses count</td>
 		<td>preview</td>
 		<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Connect</td>
-		<td>equinix.fabric.applink.ingress_bytes_rx.count</td>
+		<td>equinix.fabric.app_link.ingress_bytes_rx.count</td>
 		<td>Application Link ingress received bytes count</td>
 		<td>preview</td>
 		<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Connect</td>
-		<td>equinix.fabric.applink.ingress_bytes_tx.count</td>
+		<td>equinix.fabric.app_link.ingress_bytes_tx.count</td>
 		<td>Application Link ingress transmitted bytes count</td>
 		<td>preview</td>
 		<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Connect</td>
-		<td>equinix.fabric.applink.ingress_requests_erred.count</td>
+		<td>equinix.fabric.app_link.ingress_requests_erred.count</td>
 		<td>Application Link ingress erred requests count</td>
 		<td>preview</td>
 		<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>App Connect</td>
-		<td>equinix.fabric.applink.ingress_sessions.rate</td>
+		<td>equinix.fabric.app_link.ingress_sessions.rate</td>
 		<td>Application Link ingress sessions rate in sessions/sec</td>
 		<td>preview</td>
 		<td><a href='#blue_metric_slo'> <span style='color:blue'>BLUE_METRIC_SLO</span></a></td>
@@ -3894,6 +4236,20 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.metro.cl_{metroCode}.latency</td>
 		<td>Calgary to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
+		<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Metro</td>
+		<td>equinix.fabric.metro.cn_{metroCode}.jitter_avg</td>
+		<td>Chennai to ${metro} intermetro average jitter in microseconds</td>
+		<td>preview</td>
+		<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Metro</td>
+		<td>equinix.fabric.metro.cn_{metroCode}.latency</td>
+		<td>Chennai to ${metro} intermetro latency, average in milliseconds</td>
+		<td>preview</td>
 		<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -4286,6 +4642,20 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.metro.ml_{metroCode}.latency</td>
 		<td>Milan to ${metro} intermetro latency, average in milliseconds</td>
 		<td>released</td>
+		<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Metro</td>
+		<td>equinix.fabric.metro.mn_{metroCode}.jitter_avg</td>
+		<td>Manila to ${metro} intermetro average jitter in microseconds</td>
+		<td>preview</td>
+		<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Metro</td>
+		<td>equinix.fabric.metro.mn_{metroCode}.latency</td>
+		<td>Manila to ${metro} intermetro latency, average in milliseconds</td>
+		<td>preview</td>
 		<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>

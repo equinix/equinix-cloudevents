@@ -41,91 +41,91 @@
             ],
             "metricNames": [
                 {
-                    "name": "equinix.fabric.applink.egress_bytes_rx.count",
+                    "name": "equinix.fabric.app_link.egress_bytes_rx.count",
                     "description": "Application Link egress received bytes count",
                     "sloCategoryCode": "BLUE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.applink.egress_bytes_tx.count",
+                    "name": "equinix.fabric.app_link.egress_bytes_tx.count",
                     "description": "Application Link egress transmitted bytes count",
                     "sloCategoryCode": "BLUE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.applink.egress_connections_erred.count",
+                    "name": "equinix.fabric.app_link.egress_connections_erred.count",
                     "description": "Application Link egress erred connections count",
                     "sloCategoryCode": "BLUE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.applink.egress_connections_retried.count",
+                    "name": "equinix.fabric.app_link.egress_connections_retried.count",
                     "description": "Application Link egress retried connections count",
                     "sloCategoryCode": "BLUE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.applink.egress_down.count",
+                    "name": "equinix.fabric.app_link.egress_down.count",
                     "description": "Application Link egress backend down count",
                     "sloCategoryCode": "BLUE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.applink.egress_down.time",
+                    "name": "equinix.fabric.app_link.egress_down.time",
                     "description": "Application Link egress backend downtime in seconds",
                     "sloCategoryCode": "BLUE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.applink.egress_requests_queued.count",
+                    "name": "equinix.fabric.app_link.egress_requests_queued.count",
                     "description": "Application Link egress queued requests count",
                     "sloCategoryCode": "BLUE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.applink.egress_requests_queued.time",
+                    "name": "equinix.fabric.app_link.egress_requests_queued.time",
                     "description": "Application Link egress average queued request time in seconds",
                     "sloCategoryCode": "BLUE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.applink.egress_requests_redispatched.count",
+                    "name": "equinix.fabric.app_link.egress_requests_redispatched.count",
                     "description": "Application Link egress redispatched requests count",
                     "sloCategoryCode": "BLUE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.applink.egress_responses.latency",
+                    "name": "equinix.fabric.app_link.egress_responses.latency",
                     "description": "Application Link egress average response latency in seconds",
                     "sloCategoryCode": "BLUE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.applink.egress_responses_erred.count",
+                    "name": "equinix.fabric.app_link.egress_responses_erred.count",
                     "description": "Application Link egress erred responses count",
                     "sloCategoryCode": "BLUE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.applink.ingress_bytes_rx.count",
+                    "name": "equinix.fabric.app_link.ingress_bytes_rx.count",
                     "description": "Application Link ingress received bytes count",
                     "sloCategoryCode": "BLUE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.applink.ingress_bytes_tx.count",
+                    "name": "equinix.fabric.app_link.ingress_bytes_tx.count",
                     "description": "Application Link ingress transmitted bytes count",
                     "sloCategoryCode": "BLUE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.applink.ingress_requests_erred.count",
+                    "name": "equinix.fabric.app_link.ingress_requests_erred.count",
                     "description": "Application Link ingress erred requests count",
                     "sloCategoryCode": "BLUE_METRIC_SLO",
                     "releaseStatus": "preview"
                 },
                 {
-                    "name": "equinix.fabric.applink.ingress_sessions.rate",
+                    "name": "equinix.fabric.app_link.ingress_sessions.rate",
                     "description": "Application Link ingress sessions rate in sessions/sec",
                     "sloCategoryCode": "BLUE_METRIC_SLO",
                     "releaseStatus": "preview"
@@ -141,34 +141,229 @@
             "datatype": "equinix.fabric.v2.AppDomainChangeEvent",
             "cloudeventTypes": [
                 {
+                    "name": "equinix.fabric.app_domain.attribute.change_failed",
+                    "description": "Application Domain attribute change failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_domain.attribute.change_requested",
+                    "description": "Application Domain attribute change requested",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_domain.attribute.changed",
+                    "description": "Application Domain attribute changed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
                     "name": "equinix.fabric.app_domain.state.deprovisioned",
                     "description": "Application Domain is deprovisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.app_domain.state.deprovisioning_failed",
                     "description": "Application Domain deprovisioning failed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.app_domain.state.pending_verification",
                     "description": "Application Domain verification is pending",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.app_domain.state.provisioned",
                     "description": "Application Domain is provisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.app_domain.state.provisioning_failed",
                     "description": "Application Domain provisioning failed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppDomainChangeEvent.json",
+            "domain": "Equinix Fabric App Link App Domain ChangeEvent",
+            "name": "AppLinkAppDomainChangeEvent",
+            "description": "The data within all AppLinkAppDomainChangeEvent events.",
+            "datatype": "equinix.fabric.v2.AppLinkAppDomainChangeEvent",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.app_link_app_domain.state.attached",
+                    "description": "Application Domain to Application Link attachment status changed to attached",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_domain.state.attaching",
+                    "description": "Application Domain to Application Link attachment status changed to attaching",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_domain.state.attaching_failed",
+                    "description": "Application Domain to Application Link attachment status changed to attaching failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_domain.state.detached",
+                    "description": "Application Domain to Application Link attachment status changed to detached",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_domain.state.detaching",
+                    "description": "Application Domain to Application Link attachment status changed to detaching",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_domain.state.detaching_failed",
+                    "description": "Application Domain to Application Link attachment status changed to detaching failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_domain.state.reattaching",
+                    "description": "Application Domain to Application Link attachment status changed to reattaching",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_domain.state.reattaching_failed",
+                    "description": "Application Domain to Application Link attachment status changed to reattaching failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppProcessorChangeEvent.json",
+            "domain": "Equinix Fabric App Link App Processor ChangeEvent",
+            "name": "AppLinkAppProcessorChangeEvent",
+            "description": "The data within all AppLinkAppProcessorChangeEvent events.",
+            "datatype": "equinix.fabric.v2.AppLinkAppProcessorChangeEvent",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.app_link_app_processor.state.attached",
+                    "description": "Application Processor to Application Link attachment status changed to attached",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_processor.state.attaching",
+                    "description": "Application Processor to Application Link attachment status changed to attaching",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_processor.state.attaching_failed",
+                    "description": "Application Processor to Application Link attachment status changed to attaching failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_processor.state.detached",
+                    "description": "Application Processor to Application Link attachment status changed to detached",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_processor.state.detaching",
+                    "description": "Application Processor to Application Link attachment status changed to detaching",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_processor.state.detaching_failed",
+                    "description": "Application Processor to Application Link attachment status changed to detaching failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_processor.state.reattaching",
+                    "description": "Application Processor to Application Link attachment status changed to reattaching",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_processor.state.reattaching_failed",
+                    "description": "Application Processor to Application Link attachment status changed to reattaching failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppServiceChangeEvent.json",
+            "domain": "Equinix Fabric App Link App Service ChangeEvent",
+            "name": "AppLinkAppServiceChangeEvent",
+            "description": "The data within all AppLinkAppServiceChangeEvent events.",
+            "datatype": "equinix.fabric.v2.AppLinkAppServiceChangeEvent",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.app_link_app_service.state.attached",
+                    "description": "Application Service to Application Link attachment status changed to attached",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_service.state.attaching",
+                    "description": "Application Service to Application Link attachment status changed to attaching",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_service.state.attaching_failed",
+                    "description": "Application Service to Application Link attachment status changed to attaching failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_service.state.detached",
+                    "description": "Application Service to Application Link attachment status changed to detached",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_service.state.detaching",
+                    "description": "Application Service to Application Link attachment status changed to detaching",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_service.state.detaching_failed",
+                    "description": "Application Service to Application Link attachment status changed to detaching failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_service.state.reattaching",
+                    "description": "Application Service to Application Link attachment status changed to reattaching",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link_app_service.state.reattaching_failed",
+                    "description": "Application Service to Application Link attachment status changed to reattaching failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
                 }
             ],
             "metricNames": [],
@@ -182,40 +377,105 @@
             "datatype": "equinix.fabric.v2.AppLinkChangeEvent",
             "cloudeventTypes": [
                 {
+                    "name": "equinix.fabric.app_link.attribute.change_failed",
+                    "description": "Application Link attribute change failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link.attribute.change_requested",
+                    "description": "Application Link attribute change requested",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_link.attribute.changed",
+                    "description": "Application Link attribute changed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
                     "name": "equinix.fabric.app_link.state.deprovisioned",
                     "description": "Application Link is deprovisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.app_link.state.deprovisioning",
                     "description": "Application Link is deprovisioning",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.app_link.state.deprovisioning_failed",
                     "description": "Application Link deprovisioning failed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.app_link.state.provisioned",
                     "description": "Application Link is provisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.app_link.state.provisioning",
                     "description": "Application Link is provisioning",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.app_link.state.provisioning_failed",
                     "description": "Application Link provisioning failed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppProcessorChangeEvent.json",
+            "domain": "Equinix Fabric App Processor ChangeEvent",
+            "name": "AppProcessorChangeEvent",
+            "description": "The data within all AppProcessorChangeEvent events.",
+            "datatype": "equinix.fabric.v2.AppProcessorChangeEvent",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.app_processor.state.deprovisioned",
+                    "description": "Application Processor is deprovisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_processor.state.deprovisioning",
+                    "description": "Application Processor is deprovisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_processor.state.deprovisioning_failed",
+                    "description": "Application Processor deprovisioning failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_processor.state.provisioned",
+                    "description": "Application Processor is provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_processor.state.provisioning",
+                    "description": "Application Processor is provisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_processor.state.provisioning_failed",
+                    "description": "Application Processor provisioning failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
                 }
             ],
             "metricNames": [],
@@ -229,16 +489,34 @@
             "datatype": "equinix.fabric.v2.AppServiceChangeEvent",
             "cloudeventTypes": [
                 {
+                    "name": "equinix.fabric.app_service.attribute.change_failed",
+                    "description": "Application Service attribute change failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_service.attribute.change_requested",
+                    "description": "Application Service attribute change requested",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_service.attribute.changed",
+                    "description": "Application Service attribute changed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
                     "name": "equinix.fabric.app_service.state.deprovisioned",
                     "description": "Application Service is deprovisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.app_service.state.provisioned",
                     "description": "Application Service is provisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 }
             ],
             "metricNames": [],
@@ -252,40 +530,58 @@
             "datatype": "equinix.fabric.v2.AppSubscriptionChangeEvent",
             "cloudeventTypes": [
                 {
+                    "name": "equinix.fabric.app_subscription.attribute.change_failed",
+                    "description": "Application Subscription attribute change failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_subscription.attribute.change_requested",
+                    "description": "Application Subscription attribute change requested",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.app_subscription.attribute.changed",
+                    "description": "Application Subscription attribute changed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
                     "name": "equinix.fabric.app_subscription.state.deprovisioned",
                     "description": "Application Subscription is deprovisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.app_subscription.state.deprovisioning",
                     "description": "Application Subscription is deprovisioning",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.app_subscription.state.deprovisioning_failed",
                     "description": "Application Subscription deprovisioning failed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.app_subscription.state.provisioned",
                     "description": "Application Subscription is provisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.app_subscription.state.provisioning",
                     "description": "Application Subscription is provisioning",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.app_subscription.state.provisioning_failed",
                     "description": "Application Subscription provisioning failed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 }
             ],
             "metricNames": [],
@@ -982,31 +1278,31 @@
                     "name": "equinix.fabric.ip_block.state.deprovisioned",
                     "description": "Ip Block deprovisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.ip_block.state.deprovisioning",
                     "description": "Ip Block deprovisioning started",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.ip_block.state.failed",
                     "description": "Ip Block provisioning or deprovisioning failed",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.ip_block.state.provisioned",
                     "description": "Ip Block provisioned",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 },
                 {
                     "name": "equinix.fabric.ip_block.state.provisioning",
                     "description": "Ip Block provisioning started",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "preview"
+                    "releaseStatus": "released"
                 }
             ],
             "metricNames": [],
@@ -2104,6 +2400,18 @@
                     "releaseStatus": "released"
                 },
                 {
+                    "name": "equinix.fabric.metro.cn_{metroCode}.jitter_avg",
+                    "description": "Chennai to ${metro} intermetro average jitter in microseconds",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.cn_{metroCode}.latency",
+                    "description": "Chennai to ${metro} intermetro latency, average in milliseconds",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
                     "name": "equinix.fabric.metro.cu_{metroCode}.jitter_avg",
                     "description": "Culpeper to ${metro} intermetro average jitter in microseconds",
                     "sloCategoryCode": "BROWN_METRIC_SLO",
@@ -2438,6 +2746,18 @@
                     "description": "Milan to ${metro} intermetro latency, average in milliseconds",
                     "sloCategoryCode": "BROWN_METRIC_SLO",
                     "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.mn_{metroCode}.jitter_avg",
+                    "description": "Manila to ${metro} intermetro average jitter in microseconds",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.mn_{metroCode}.latency",
+                    "description": "Manila to ${metro} intermetro latency, average in milliseconds",
+                    "sloCategoryCode": "BROWN_METRIC_SLO",
+                    "releaseStatus": "preview"
                 },
                 {
                     "name": "equinix.fabric.metro.mo_{metroCode}.jitter_avg",
@@ -2884,6 +3204,18 @@
                     "releaseStatus": "released"
                 },
                 {
+                    "name": "equinix.fabric.metro.cn_{metroCode}.jitter_avg",
+                    "description": "Average metro jitter from Chennai to ${metro} is ${operator} ${operand} microseconds",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.cn_{metroCode}.latency",
+                    "description": "Metro latency from Chennai to ${metro} is ${operator} ${operand} milliseconds",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
                     "name": "equinix.fabric.metro.cu_{metroCode}.jitter_avg",
                     "description": "Average metro jitter from Culpeper to ${metro} is ${operator} ${operand} microseconds",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
@@ -3218,6 +3550,18 @@
                     "description": "Metro latency from Milan to ${metro} is ${operator} ${operand} milliseconds",
                     "sloCategoryCode": "BLUE_ALERT_SLO",
                     "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.metro.mn_{metroCode}.jitter_avg",
+                    "description": "Average metro jitter from Manila to ${metro} is ${operator} ${operand} microseconds",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.metro.mn_{metroCode}.latency",
+                    "description": "Metro latency from Manila to ${metro} is ${operator} ${operand} milliseconds",
+                    "sloCategoryCode": "BLUE_ALERT_SLO",
+                    "releaseStatus": "preview"
                 },
                 {
                     "name": "equinix.fabric.metro.mo_{metroCode}.jitter_avg",
