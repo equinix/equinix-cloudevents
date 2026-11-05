@@ -180,16 +180,34 @@
     },
     "cloudeventTypes": [
         {
+            "name": "equinix.fabric.app_service.attribute.change_failed",
+            "description": "Application Service attribute change failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_service.attribute.change_requested",
+            "description": "Application Service attribute change requested",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_service.attribute.changed",
+            "description": "Application Service attribute changed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
             "name": "equinix.fabric.app_service.state.deprovisioned",
             "description": "Application Service is deprovisioned",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.app_service.state.provisioned",
             "description": "Application Service is provisioned",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         }
     ],
     "metricNames": [],

@@ -1,7 +1,77 @@
 {
     "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppSubscriptionChangeEvent.json",
     "name": "AppSubscriptionChangeEvent",
-    "examples": [],
+    "examples": [
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "6c573287-9914-4202-8b6d-2d15e7da04b8",
+            "type": "equinix.fabric.app_subscription.state.provisioning",
+            "subject": "/fabric/v4/appSubscriptions/01e1218a-8ed4-493e-a5e9-8e54806894b9",
+            "time": "2026-04-25T17:31:00Z",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppSubscriptionChangeEvent.json",
+            "datacontenttype": "application/json",
+            "severitynumber": 9,
+            "severitytext": "INFO",
+            "equinixproject": "b11d4cb5-978a-418a-8b13-bf19abb97938",
+            "authtype": "user",
+            "authid": "<userId>",
+            "data": {
+                "message": "Application Subscription is provisioning",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/appSubscriptions/01e1218a-8ed4-493e-a5e9-8e54806894b9",
+                    "uuid": "01e1218a-8ed4-493e-a5e9-8e54806894b9",
+                    "type": "APP_SUBSCRIPTION",
+                    "state": "PROVISIONING"
+                },
+                "auth": {
+                    "type": "user",
+                    "id": "<userId>"
+                }
+            }
+        },
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "6c573287-9914-4202-8b6d-2d15e7da04b8",
+            "type": "equinix.fabric.app_subscription.attribute.change_failed",
+            "subject": "/fabric/v4/appSubscriptions/01e1218a-8ed4-493e-a5e9-8e54806894b9",
+            "time": "2026-04-25T17:31:00Z",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppSubscriptionChangeEvent.json",
+            "datacontenttype": "application/json",
+            "severitynumber": 9,
+            "severitytext": "INFO",
+            "equinixproject": "b11d4cb5-978a-418a-8b13-bf19abb97938",
+            "authtype": "system",
+            "data": {
+                "message": "Application Subscription attribute change failed",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/appSubscriptions/01e1218a-8ed4-493e-a5e9-8e54806894b9",
+                    "uuid": "01e1218a-8ed4-493e-a5e9-8e54806894b9",
+                    "type": "APP_SUBSCRIPTION",
+                    "state": "PROVISIONED",
+                    "change": {
+                        "uuid": "a558e0a0-8b6a-45fa-8b26-1b2eeb082533",
+                        "type": "APP_SUBSCRIPTION_UPDATE",
+                        "status": "FAILED",
+                        "createdDateTime": "2026-04-25T17:31:00Z",
+                        "updatedDateTime": "2026-04-25T17:33:00Z",
+                        "data": [
+                            {
+                                "op": "add",
+                                "path": "/source/ipSubnets",
+                                "value": "192.168.200.0/24",
+                                "previousValue": "192.168.100.0/24"
+                            }
+                        ]
+                    }
+                },
+                "auth": {
+                    "type": "system"
+                }
+            }
+        }
+    ],
     "package": "equinix.fabric.v2",
     "datatype": "equinix.fabric.v2.AppSubscriptionChangeEvent",
     "domain": "Equinix Fabric App Subscription ChangeEvent",
@@ -180,40 +250,58 @@
     },
     "cloudeventTypes": [
         {
+            "name": "equinix.fabric.app_subscription.attribute.change_failed",
+            "description": "Application Subscription attribute change failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.attribute.change_requested",
+            "description": "Application Subscription attribute change requested",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.attribute.changed",
+            "description": "Application Subscription attribute changed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
             "name": "equinix.fabric.app_subscription.state.deprovisioned",
             "description": "Application Subscription is deprovisioned",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.app_subscription.state.deprovisioning",
             "description": "Application Subscription is deprovisioning",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.app_subscription.state.deprovisioning_failed",
             "description": "Application Subscription deprovisioning failed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.app_subscription.state.provisioned",
             "description": "Application Subscription is provisioned",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.app_subscription.state.provisioning",
             "description": "Application Subscription is provisioning",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.app_subscription.state.provisioning_failed",
             "description": "Application Subscription provisioning failed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         }
     ],
     "metricNames": [],

@@ -180,34 +180,52 @@
     },
     "cloudeventTypes": [
         {
+            "name": "equinix.fabric.app_domain.attribute.change_failed",
+            "description": "Application Domain attribute change failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_domain.attribute.change_requested",
+            "description": "Application Domain attribute change requested",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_domain.attribute.changed",
+            "description": "Application Domain attribute changed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
             "name": "equinix.fabric.app_domain.state.deprovisioned",
             "description": "Application Domain is deprovisioned",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.app_domain.state.deprovisioning_failed",
             "description": "Application Domain deprovisioning failed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.app_domain.state.pending_verification",
             "description": "Application Domain verification is pending",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.app_domain.state.provisioned",
             "description": "Application Domain is provisioned",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         },
         {
             "name": "equinix.fabric.app_domain.state.provisioning_failed",
             "description": "Application Domain provisioning failed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
+            "releaseStatus": "released"
         }
     ],
     "metricNames": [],
