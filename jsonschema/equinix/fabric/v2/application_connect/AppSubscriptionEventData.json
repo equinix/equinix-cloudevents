@@ -1,0 +1,309 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppSubscriptionEventData.json",
+    "name": "AppSubscriptionEventData",
+    "examples": [
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "6c573287-9914-4202-8b6d-2d15e7da04b8",
+            "type": "equinix.fabric.app_subscription.state.provisioning",
+            "subject": "/fabric/v4/appSubscriptions/01e1218a-8ed4-493e-a5e9-8e54806894b9",
+            "time": "2026-04-25T17:31:00Z",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppSubscriptionEventData.json",
+            "datacontenttype": "application/json",
+            "severitynumber": 9,
+            "severitytext": "INFO",
+            "equinixproject": "b11d4cb5-978a-418a-8b13-bf19abb97938",
+            "authtype": "user",
+            "authid": "<userId>",
+            "data": {
+                "message": "Application Subscription is provisioning",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/appSubscriptions/01e1218a-8ed4-493e-a5e9-8e54806894b9",
+                    "uuid": "01e1218a-8ed4-493e-a5e9-8e54806894b9",
+                    "type": "APP_SUBSCRIPTION",
+                    "state": "PROVISIONING"
+                },
+                "auth": {
+                    "type": "user",
+                    "id": "<userId>"
+                }
+            }
+        },
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "6c573287-9914-4202-8b6d-2d15e7da04b8",
+            "type": "equinix.fabric.app_subscription.attribute.change_failed",
+            "subject": "/fabric/v4/appSubscriptions/01e1218a-8ed4-493e-a5e9-8e54806894b9",
+            "time": "2026-04-25T17:31:00Z",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppSubscriptionEventData.json",
+            "datacontenttype": "application/json",
+            "severitynumber": 9,
+            "severitytext": "INFO",
+            "equinixproject": "b11d4cb5-978a-418a-8b13-bf19abb97938",
+            "authtype": "system",
+            "data": {
+                "message": "Application Subscription attribute change failed",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/appSubscriptions/01e1218a-8ed4-493e-a5e9-8e54806894b9",
+                    "uuid": "01e1218a-8ed4-493e-a5e9-8e54806894b9",
+                    "type": "APP_SUBSCRIPTION",
+                    "state": "PROVISIONED",
+                    "change": {
+                        "uuid": "a558e0a0-8b6a-45fa-8b26-1b2eeb082533",
+                        "type": "APP_SUBSCRIPTION_UPDATE",
+                        "status": "FAILED",
+                        "createdDateTime": "2026-04-25T17:31:00Z",
+                        "updatedDateTime": "2026-04-25T17:33:00Z",
+                        "data": [
+                            {
+                                "op": "add",
+                                "path": "/source/ipSubnets",
+                                "value": "192.168.200.0/24",
+                                "previousValue": "192.168.100.0/24"
+                            }
+                        ]
+                    }
+                },
+                "auth": {
+                    "type": "system"
+                }
+            }
+        }
+    ],
+    "package": "equinix.fabric.v2",
+    "datatype": "equinix.fabric.v2.AppSubscriptionEventData",
+    "domain": "Equinix Fabric App Subscription EventData",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "Optional. The Backup event payload. Unset for deletion events."
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                },
+                "auth": {
+                    "$ref": "#/definitions/Auth",
+                    "additionalProperties": true,
+                    "description": "The auth context within all ChangeEvent events."
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "AppSubscriptionEventData Event Data",
+            "description": "The data within all AppSubscriptionEventData events."
+        },
+        "Auth": {
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "The unique identifier of the entity generating the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "The type of the entity generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the entity generating the event"
+                },
+                "email": {
+                    "type": "string",
+                    "description": "Email of the user generating the event"
+                },
+                "sourceIp": {
+                    "type": "string",
+                    "description": "IP address of the user generating the event"
+                },
+                "agent": {
+                    "type": "string",
+                    "description": "The software that made the request"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Auth",
+            "description": "Auth information of the generated event"
+        },
+        "Resource": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the resource generating the event"
+                },
+                "state": {
+                    "type": "string",
+                    "description": "State of the resource generating the event"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the resource generating the event"
+                },
+                "change": {
+                    "$ref": "#/definitions/Change",
+                    "additionalProperties": true,
+                    "description": "Change information for the resource that fired the event"
+                },
+                "operation": {
+                    "$ref": "#/definitions/Operation",
+                    "additionalProperties": true,
+                    "description": "Operational status of resource that fired the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        },
+        "Change": {
+            "properties": {
+                "uuid": {
+                    "type": "string",
+                    "description": "Uuid of the of change for the resource target of the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the change happening on the resource for the target of the event"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the change event on the resource target"
+                },
+                "createdDateTime": {
+                    "type": "string",
+                    "description": "The time that the resource that fired the event was created",
+                    "format": "date-time"
+                },
+                "updatedDateTime": {
+                    "type": "string",
+                    "description": "The time that the resource that fired the event was last updated",
+                    "format": "date-time"
+                },
+                "data": {
+                    "type": "array",
+                    "description": "Data of the change event",
+                    "items": {
+                        "$ref": "#/definitions/ChangeData"
+                    }
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Change",
+            "description": "Change attribute schema"
+        },
+        "ChangeData": {
+            "properties": {
+                "op": {
+                    "type": "string",
+                    "description": "The operation performed on the resource under change"
+                },
+                "path": {
+                    "type": "string",
+                    "description": "The attribute on the resource being changed"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "The current value of the attribute under change"
+                },
+                "previousValue": {
+                    "type": "string",
+                    "description": "The previous value of the attribute under change"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ChangeData",
+            "description": "ChangeData attribute schema"
+        },
+        "Operation": {
+            "properties": {
+                "operationalStatus": {
+                    "type": "string",
+                    "description": "Operational status for the resource target of the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Operation",
+            "description": "Operation attribute schema"
+        }
+    },
+    "cloudeventTypes": [
+        {
+            "name": "equinix.fabric.app_subscription.attribute.change_failed",
+            "description": "Application Subscription attribute change failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.attribute.change_requested",
+            "description": "Application Subscription attribute change requested",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.attribute.changed",
+            "description": "Application Subscription attribute changed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.state.deprovisioned",
+            "description": "Application Subscription is deprovisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.state.deprovisioning",
+            "description": "Application Subscription is deprovisioning",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.state.deprovisioning_failed",
+            "description": "Application Subscription deprovisioning failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.state.provisioned",
+            "description": "Application Subscription is provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.state.provisioning",
+            "description": "Application Subscription is provisioning",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_subscription.state.provisioning_failed",
+            "description": "Application Subscription provisioning failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        }
+    ],
+    "metricNames": [],
+    "alertNames": []
+}

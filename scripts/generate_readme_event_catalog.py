@@ -5,7 +5,8 @@ import re
 
 # Schemas whose name ends with one of these are grouped into per-domain tables
 # with a Product column. Anything else keeps its own per-file section.
-GROUPED_SUFFIXES = ["Event", "ChangeEvent", "Alert", "Metric"]
+# Matched longest-first, so EventData/ChangeEvent win over a bare Event.
+GROUPED_SUFFIXES = ["Event", "ChangeEvent", "EventData", "Alert", "Metric"]
 
 def get_colored_text(text):
     font_color = 'black'
