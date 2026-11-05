@@ -128,58 +128,58 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>App Domain</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppDomainChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.AppDomainChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppDomainEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.AppDomainEventData</code></td>
 	</tr>
 	<tr>
 		<td>App Link</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.AppLinkChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.AppLinkEventData</code></td>
 	</tr>
 	<tr>
 		<td>App Link App Domain</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppDomainChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.AppLinkAppDomainChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppDomainEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.AppLinkAppDomainEventData</code></td>
 	</tr>
 	<tr>
 		<td>App Link App Processor</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppProcessorChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.AppLinkAppProcessorChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppProcessorEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.AppLinkAppProcessorEventData</code></td>
 	</tr>
 	<tr>
 		<td>App Link App Service</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppServiceChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.AppLinkAppServiceChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppServiceEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.AppLinkAppServiceEventData</code></td>
 	</tr>
 	<tr>
 		<td>App Processor</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppProcessorChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.AppProcessorChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppProcessorEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.AppProcessorEventData</code></td>
 	</tr>
 	<tr>
 		<td>App Service</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppServiceChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.AppServiceChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppServiceEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.AppServiceEventData</code></td>
 	</tr>
 	<tr>
 		<td>App Subscription</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppSubscriptionChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.AppSubscriptionChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppSubscriptionEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.AppSubscriptionEventData</code></td>
 	</tr>
 	<tr>
 		<td>Asn</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/AsnChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.AsnChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/AsnEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.AsnEventData</code></td>
 	</tr>
 	<tr>
 		<td>Company Profile</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/company_profile/CompanyProfileChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.CompanyProfileChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/company_profile/CompanyProfileEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.CompanyProfileEventData</code></td>
 	</tr>
 	<tr>
 		<td>Connection</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.ConnectionChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.ConnectionEventData</code></td>
 	</tr>
 	<tr>
 		<td>Connection</td>
@@ -193,13 +193,13 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>Connection Bgpipv4 Session</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionBgpipv4SessionChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.ConnectionBgpipv4SessionChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionBgpipv4SessionEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.ConnectionBgpipv4SessionEventData</code></td>
 	</tr>
 	<tr>
 		<td>Connection Bgpipv6 Session</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionBgpipv6SessionChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.ConnectionBgpipv6SessionChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionBgpipv6SessionEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.ConnectionBgpipv6SessionEventData</code></td>
 	</tr>
 	<tr>
 		<td>Connection Maintenance</td>
@@ -208,33 +208,33 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>Connection Route Aggregation</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRouteAggregationChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.ConnectionRouteAggregationChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRouteAggregationEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.ConnectionRouteAggregationEventData</code></td>
 	</tr>
 	<tr>
 		<td>Connection Route Filter</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRouteFilterChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.ConnectionRouteFilterChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRouteFilterEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.ConnectionRouteFilterEventData</code></td>
 	</tr>
 	<tr>
 		<td>Connection Routing Protocol</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRoutingProtocolChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.ConnectionRoutingProtocolChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRoutingProtocolEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.ConnectionRoutingProtocolEventData</code></td>
 	</tr>
 	<tr>
 		<td>Internet Access</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/InternetAccessChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.InternetAccessChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/InternetAccessEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.InternetAccessEventData</code></td>
 	</tr>
 	<tr>
 		<td>Internet Exchange</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_exchange/InternetExchangeChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.internet_exchange.v2.InternetExchangeChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_exchange/InternetExchangeEventData.json'>JSON</a></td>
+		<td><code>equinix.internet_exchange.v2.InternetExchangeEventData</code></td>
 	</tr>
 	<tr>
 		<td>Ip Block</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/IpBlockChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.IpBlockChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/IpBlockEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.IpBlockEventData</code></td>
 	</tr>
 	<tr>
 		<td>Metro</td>
@@ -258,23 +258,23 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>Network</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/network/NetworkChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.NetworkChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/network/NetworkEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.NetworkEventData</code></td>
 	</tr>
 	<tr>
 		<td>Optical Connect</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/optical_connect/OpticalConnectChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.optical_connect.v2.OpticalConnectChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/optical_connect/OpticalConnectEventData.json'>JSON</a></td>
+		<td><code>equinix.optical_connect.v2.OpticalConnectEventData</code></td>
 	</tr>
 	<tr>
 		<td>Physical Port</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PhysicalPortChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.PhysicalPortChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PhysicalPortEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.PhysicalPortEventData</code></td>
 	</tr>
 	<tr>
 		<td>Port</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PortChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.PortChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PortEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.PortEventData</code></td>
 	</tr>
 	<tr>
 		<td>Port</td>
@@ -293,28 +293,28 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>Route Aggregation</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_aggregation/RouteAggregationChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.RouteAggregationChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_aggregation/RouteAggregationEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.RouteAggregationEventData</code></td>
 	</tr>
 	<tr>
 		<td>Route Aggregation Rule</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_aggregation/RouteAggregationRuleChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.RouteAggregationRuleChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_aggregation/RouteAggregationRuleEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.RouteAggregationRuleEventData</code></td>
 	</tr>
 	<tr>
 		<td>Route Filter</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_filter/RouteFilterChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.RouteFilterChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_filter/RouteFilterEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.RouteFilterEventData</code></td>
 	</tr>
 	<tr>
 		<td>Route Filter Rule</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_filter/RouteFilterRuleChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.RouteFilterRuleChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_filter/RouteFilterRuleEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.RouteFilterRuleEventData</code></td>
 	</tr>
 	<tr>
 		<td>Router</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.RouterChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.RouterEventData</code></td>
 	</tr>
 	<tr>
 		<td>Router</td>
@@ -323,53 +323,53 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>Router Action</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterActionChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.RouterActionChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterActionEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.RouterActionEventData</code></td>
 	</tr>
 	<tr>
 		<td>Router Command</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterCommandChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.RouterCommandChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterCommandEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.RouterCommandEventData</code></td>
 	</tr>
 	<tr>
 		<td>Routing Protocol Action</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_protocol/RoutingProtocolActionChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.RoutingProtocolActionChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_protocol/RoutingProtocolActionEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.RoutingProtocolActionEventData</code></td>
 	</tr>
 	<tr>
 		<td>Service Profile (Deprecated)</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_profile/ServiceProfileChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.ServiceProfileChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_profile/ServiceProfileEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.ServiceProfileEventData</code></td>
 	</tr>
 	<tr>
 		<td>Service Profile Connection</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_profile/ServiceProfileConnectionChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.ServiceProfileConnectionChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_profile/ServiceProfileConnectionEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.ServiceProfileConnectionEventData</code></td>
 	</tr>
 	<tr>
 		<td>Service Token</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_token/ServiceTokenChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.ServiceTokenChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_token/ServiceTokenEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.ServiceTokenEventData</code></td>
 	</tr>
 	<tr>
 		<td>Time Service</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/time_service/TimeServiceChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.time_service.v2.TimeServiceChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/time_service/TimeServiceEventData.json'>JSON</a></td>
+		<td><code>equinix.time_service.v2.TimeServiceEventData</code></td>
 	</tr>
 	<tr>
 		<td>Tunnel</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/tunnel/TunnelChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.TunnelChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/tunnel/TunnelEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.TunnelEventData</code></td>
 	</tr>
 	<tr>
 		<td>Tunnel Bgpipv4 Session</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/tunnel/TunnelBgpipv4SessionChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.TunnelBgpipv4SessionChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/tunnel/TunnelBgpipv4SessionEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.TunnelBgpipv4SessionEventData</code></td>
 	</tr>
 	<tr>
 		<td>Tunnel Bgpipv6 Session</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/tunnel/TunnelBgpipv6SessionChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.fabric.v2.TunnelBgpipv6SessionChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/tunnel/TunnelBgpipv6SessionEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.TunnelBgpipv6SessionEventData</code></td>
 	</tr>
 </table>
 
@@ -5806,13 +5806,13 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>Acl</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/AclChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.network_edge.v2.AclChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/AclEventData.json'>JSON</a></td>
+		<td><code>equinix.network_edge.v2.AclEventData</code></td>
 	</tr>
 	<tr>
 		<td>Device</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/DeviceChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.network_edge.v2.DeviceChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/DeviceEventData.json'>JSON</a></td>
+		<td><code>equinix.network_edge.v2.DeviceEventData</code></td>
 	</tr>
 	<tr>
 		<td>Device Interface</td>
@@ -5826,8 +5826,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>Devicelinkgroup</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/DevicelinkgroupChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.network_edge.v2.DevicelinkgroupChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/DevicelinkgroupEventData.json'>JSON</a></td>
+		<td><code>equinix.network_edge.v2.DevicelinkgroupEventData</code></td>
 	</tr>
 </table>
 
@@ -6088,8 +6088,8 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>Resource Manager</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/resource_manager/v2/ResourceManagerChangeEvent.json'>JSON</a></td>
-		<td><code>equinix.resource_manager.v2.ResourceManagerChangeEvent</code></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/resource_manager/v2/ResourceManagerEventData.json'>JSON</a></td>
+		<td><code>equinix.resource_manager.v2.ResourceManagerEventData</code></td>
 	</tr>
 </table>
 

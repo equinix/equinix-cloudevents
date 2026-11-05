@@ -134,11 +134,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppDomainChangeEvent.json",
-            "domain": "Equinix Fabric App Domain ChangeEvent",
-            "name": "AppDomainChangeEvent",
-            "description": "The data within all AppDomainChangeEvent events.",
-            "datatype": "equinix.fabric.v2.AppDomainChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppDomainEventData.json",
+            "domain": "Equinix Fabric App Domain EventData",
+            "name": "AppDomainEventData",
+            "description": "The data within all AppDomainEventData events.",
+            "datatype": "equinix.fabric.v2.AppDomainEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.app_domain.attribute.change_failed",
@@ -193,11 +193,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppDomainChangeEvent.json",
-            "domain": "Equinix Fabric App Link App Domain ChangeEvent",
-            "name": "AppLinkAppDomainChangeEvent",
-            "description": "The data within all AppLinkAppDomainChangeEvent events.",
-            "datatype": "equinix.fabric.v2.AppLinkAppDomainChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppDomainEventData.json",
+            "domain": "Equinix Fabric App Link App Domain EventData",
+            "name": "AppLinkAppDomainEventData",
+            "description": "The data within all AppLinkAppDomainEventData events.",
+            "datatype": "equinix.fabric.v2.AppLinkAppDomainEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.app_link_app_domain.state.attached",
@@ -252,11 +252,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppProcessorChangeEvent.json",
-            "domain": "Equinix Fabric App Link App Processor ChangeEvent",
-            "name": "AppLinkAppProcessorChangeEvent",
-            "description": "The data within all AppLinkAppProcessorChangeEvent events.",
-            "datatype": "equinix.fabric.v2.AppLinkAppProcessorChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppProcessorEventData.json",
+            "domain": "Equinix Fabric App Link App Processor EventData",
+            "name": "AppLinkAppProcessorEventData",
+            "description": "The data within all AppLinkAppProcessorEventData events.",
+            "datatype": "equinix.fabric.v2.AppLinkAppProcessorEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.app_link_app_processor.state.attached",
@@ -311,11 +311,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppServiceChangeEvent.json",
-            "domain": "Equinix Fabric App Link App Service ChangeEvent",
-            "name": "AppLinkAppServiceChangeEvent",
-            "description": "The data within all AppLinkAppServiceChangeEvent events.",
-            "datatype": "equinix.fabric.v2.AppLinkAppServiceChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppServiceEventData.json",
+            "domain": "Equinix Fabric App Link App Service EventData",
+            "name": "AppLinkAppServiceEventData",
+            "description": "The data within all AppLinkAppServiceEventData events.",
+            "datatype": "equinix.fabric.v2.AppLinkAppServiceEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.app_link_app_service.state.attached",
@@ -370,11 +370,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkChangeEvent.json",
-            "domain": "Equinix Fabric App Link ChangeEvent",
-            "name": "AppLinkChangeEvent",
-            "description": "The data within all AppLinkChangeEvent events.",
-            "datatype": "equinix.fabric.v2.AppLinkChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkEventData.json",
+            "domain": "Equinix Fabric App Link EventData",
+            "name": "AppLinkEventData",
+            "description": "The data within all AppLinkEventData events.",
+            "datatype": "equinix.fabric.v2.AppLinkEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.app_link.attribute.change_failed",
@@ -435,11 +435,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppProcessorChangeEvent.json",
-            "domain": "Equinix Fabric App Processor ChangeEvent",
-            "name": "AppProcessorChangeEvent",
-            "description": "The data within all AppProcessorChangeEvent events.",
-            "datatype": "equinix.fabric.v2.AppProcessorChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppProcessorEventData.json",
+            "domain": "Equinix Fabric App Processor EventData",
+            "name": "AppProcessorEventData",
+            "description": "The data within all AppProcessorEventData events.",
+            "datatype": "equinix.fabric.v2.AppProcessorEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.app_processor.state.deprovisioned",
@@ -482,11 +482,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppServiceChangeEvent.json",
-            "domain": "Equinix Fabric App Service ChangeEvent",
-            "name": "AppServiceChangeEvent",
-            "description": "The data within all AppServiceChangeEvent events.",
-            "datatype": "equinix.fabric.v2.AppServiceChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppServiceEventData.json",
+            "domain": "Equinix Fabric App Service EventData",
+            "name": "AppServiceEventData",
+            "description": "The data within all AppServiceEventData events.",
+            "datatype": "equinix.fabric.v2.AppServiceEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.app_service.attribute.change_failed",
@@ -523,11 +523,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppSubscriptionChangeEvent.json",
-            "domain": "Equinix Fabric App Subscription ChangeEvent",
-            "name": "AppSubscriptionChangeEvent",
-            "description": "The data within all AppSubscriptionChangeEvent events.",
-            "datatype": "equinix.fabric.v2.AppSubscriptionChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppSubscriptionEventData.json",
+            "domain": "Equinix Fabric App Subscription EventData",
+            "name": "AppSubscriptionEventData",
+            "description": "The data within all AppSubscriptionEventData events.",
+            "datatype": "equinix.fabric.v2.AppSubscriptionEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.app_subscription.attribute.change_failed",
@@ -588,11 +588,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/company_profile/CompanyProfileChangeEvent.json",
-            "domain": "Equinix Fabric Company Profile ChangeEvent",
-            "name": "CompanyProfileChangeEvent",
-            "description": "The data within all CompanyProfileChangeEvent events.",
-            "datatype": "equinix.fabric.v2.CompanyProfileChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/company_profile/CompanyProfileEventData.json",
+            "domain": "Equinix Fabric Company Profile EventData",
+            "name": "CompanyProfileEventData",
+            "description": "The data within all CompanyProfileEventData events.",
+            "datatype": "equinix.fabric.v2.CompanyProfileEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.company_profile.attribute.approved",
@@ -659,11 +659,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionBgpipv4SessionChangeEvent.json",
-            "domain": "Equinix Fabric Connection Bgpipv4 Session ChangeEvent",
-            "name": "ConnectionBgpipv4SessionChangeEvent",
-            "description": "The data within all ConnectionBgpipv4SessionChangeEvent events.",
-            "datatype": "equinix.fabric.v2.ConnectionBgpipv4SessionChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionBgpipv4SessionEventData.json",
+            "domain": "Equinix Fabric Connection Bgpipv4 Session EventData",
+            "name": "ConnectionBgpipv4SessionEventData",
+            "description": "The data within all ConnectionBgpipv4SessionEventData events.",
+            "datatype": "equinix.fabric.v2.ConnectionBgpipv4SessionEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.connection_bgpipv4_session.status.active",
@@ -736,11 +736,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionBgpipv6SessionChangeEvent.json",
-            "domain": "Equinix Fabric Connection Bgpipv6 Session ChangeEvent",
-            "name": "ConnectionBgpipv6SessionChangeEvent",
-            "description": "The data within all ConnectionBgpipv6SessionChangeEvent events.",
-            "datatype": "equinix.fabric.v2.ConnectionBgpipv6SessionChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionBgpipv6SessionEventData.json",
+            "domain": "Equinix Fabric Connection Bgpipv6 Session EventData",
+            "name": "ConnectionBgpipv6SessionEventData",
+            "description": "The data within all ConnectionBgpipv6SessionEventData events.",
+            "datatype": "equinix.fabric.v2.ConnectionBgpipv6SessionEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.connection_bgpipv6_session.status.active",
@@ -813,11 +813,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionChangeEvent.json",
-            "domain": "Equinix Fabric Connection ChangeEvent",
-            "name": "ConnectionChangeEvent",
-            "description": "The data within all ConnectionChangeEvent events.",
-            "datatype": "equinix.fabric.v2.ConnectionChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionEventData.json",
+            "domain": "Equinix Fabric Connection EventData",
+            "name": "ConnectionEventData",
+            "description": "The data within all ConnectionEventData events.",
+            "datatype": "equinix.fabric.v2.ConnectionEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.connection.attribute.changed",
@@ -1021,11 +1021,11 @@
             ]
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRouteAggregationChangeEvent.json",
-            "domain": "Equinix Fabric Connection Route Aggregation ChangeEvent",
-            "name": "ConnectionRouteAggregationChangeEvent",
-            "description": "The data within all ConnectionRouteAggregationChangeEvent events.",
-            "datatype": "equinix.fabric.v2.ConnectionRouteAggregationChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRouteAggregationEventData.json",
+            "domain": "Equinix Fabric Connection Route Aggregation EventData",
+            "name": "ConnectionRouteAggregationEventData",
+            "description": "The data within all ConnectionRouteAggregationEventData events.",
+            "datatype": "equinix.fabric.v2.ConnectionRouteAggregationEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.connection_route_aggregation.state.attached",
@@ -1068,11 +1068,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRouteFilterChangeEvent.json",
-            "domain": "Equinix Fabric Connection Route Filter ChangeEvent",
-            "name": "ConnectionRouteFilterChangeEvent",
-            "description": "The data within all ConnectionRouteFilterChangeEvent events.",
-            "datatype": "equinix.fabric.v2.ConnectionRouteFilterChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRouteFilterEventData.json",
+            "domain": "Equinix Fabric Connection Route Filter EventData",
+            "name": "ConnectionRouteFilterEventData",
+            "description": "The data within all ConnectionRouteFilterEventData events.",
+            "datatype": "equinix.fabric.v2.ConnectionRouteFilterEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.connection_route_filter.state.attached",
@@ -1115,11 +1115,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRoutingProtocolChangeEvent.json",
-            "domain": "Equinix Fabric Connection Routing Protocol ChangeEvent",
-            "name": "ConnectionRoutingProtocolChangeEvent",
-            "description": "The data within all ConnectionRoutingProtocolChangeEvent events.",
-            "datatype": "equinix.fabric.v2.ConnectionRoutingProtocolChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRoutingProtocolEventData.json",
+            "domain": "Equinix Fabric Connection Routing Protocol EventData",
+            "name": "ConnectionRoutingProtocolEventData",
+            "description": "The data within all ConnectionRoutingProtocolEventData events.",
+            "datatype": "equinix.fabric.v2.ConnectionRoutingProtocolEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.connection_routing_protocol.state.deprovisioned",
@@ -1162,11 +1162,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/AsnChangeEvent.json",
-            "domain": "Equinix Fabric Asn ChangeEvent",
-            "name": "AsnChangeEvent",
-            "description": "The data within all AsnChangeEvent events.",
-            "datatype": "equinix.fabric.v2.AsnChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/AsnEventData.json",
+            "domain": "Equinix Fabric Asn EventData",
+            "name": "AsnEventData",
+            "description": "The data within all AsnEventData events.",
+            "datatype": "equinix.fabric.v2.AsnEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.asn.attribute.changed",
@@ -1209,11 +1209,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/InternetAccessChangeEvent.json",
-            "domain": "Equinix Fabric Internet Access ChangeEvent",
-            "name": "InternetAccessChangeEvent",
-            "description": "The data within all InternetAccessChangeEvent events.",
-            "datatype": "equinix.fabric.v2.InternetAccessChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/InternetAccessEventData.json",
+            "domain": "Equinix Fabric Internet Access EventData",
+            "name": "InternetAccessEventData",
+            "description": "The data within all InternetAccessEventData events.",
+            "datatype": "equinix.fabric.v2.InternetAccessEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.internet_access.attribute.changed",
@@ -1268,11 +1268,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/IpBlockChangeEvent.json",
-            "domain": "Equinix Fabric Ip Block ChangeEvent",
-            "name": "IpBlockChangeEvent",
-            "description": "The data within all IpBlockChangeEvent events.",
-            "datatype": "equinix.fabric.v2.IpBlockChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_access/IpBlockEventData.json",
+            "domain": "Equinix Fabric Ip Block EventData",
+            "name": "IpBlockEventData",
+            "description": "The data within all IpBlockEventData events.",
+            "datatype": "equinix.fabric.v2.IpBlockEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.ip_block.state.deprovisioned",
@@ -1309,11 +1309,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_exchange/InternetExchangeChangeEvent.json",
-            "domain": "Equinix Internet Exchange ChangeEvent",
-            "name": "InternetExchangeChangeEvent",
-            "description": "The data within all InternetExchangeChangeEvent events.",
-            "datatype": "equinix.internet_exchange.v2.InternetExchangeChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/internet_exchange/InternetExchangeEventData.json",
+            "domain": "Equinix Internet Exchange EventData",
+            "name": "InternetExchangeEventData",
+            "description": "The data within all InternetExchangeEventData events.",
+            "datatype": "equinix.internet_exchange.v2.InternetExchangeEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.internet_exchange.state.activating",
@@ -3878,11 +3878,11 @@
             ]
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/network/NetworkChangeEvent.json",
-            "domain": "Equinix Fabric Network ChangeEvent",
-            "name": "NetworkChangeEvent",
-            "description": "The data within all NetworkChangeEvent events.",
-            "datatype": "equinix.fabric.v2.NetworkChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/network/NetworkEventData.json",
+            "domain": "Equinix Fabric Network EventData",
+            "name": "NetworkEventData",
+            "description": "The data within all NetworkEventData events.",
+            "datatype": "equinix.fabric.v2.NetworkEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.network.attribute.changed",
@@ -3919,11 +3919,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/optical_connect/OpticalConnectChangeEvent.json",
-            "domain": "Equinix Optical Connect ChangeEvent",
-            "name": "OpticalConnectChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/optical_connect/OpticalConnectEventData.json",
+            "domain": "Equinix Optical Connect EventData",
+            "name": "OpticalConnectEventData",
             "description": "The data within all ChangeEvent events.",
-            "datatype": "equinix.optical_connect.v2.OpticalConnectChangeEvent",
+            "datatype": "equinix.optical_connect.v2.OpticalConnectEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.optical_connect.state.deprovisioned",
@@ -3966,11 +3966,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PhysicalPortChangeEvent.json",
-            "domain": "Equinix Fabric Physical Port ChangeEvent",
-            "name": "PhysicalPortChangeEvent",
-            "description": "The data within all PhysicalPortChangeEvent events.",
-            "datatype": "equinix.fabric.v2.PhysicalPortChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PhysicalPortEventData.json",
+            "domain": "Equinix Fabric Physical Port EventData",
+            "name": "PhysicalPortEventData",
+            "description": "The data within all PhysicalPortEventData events.",
+            "datatype": "equinix.fabric.v2.PhysicalPortEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.physical_port.state.deprovisioned",
@@ -4025,11 +4025,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PortChangeEvent.json",
-            "domain": "Equinix Fabric Port ChangeEvent",
-            "name": "PortChangeEvent",
-            "description": "The data within all PortChangeEvent events.",
-            "datatype": "equinix.fabric.v2.PortChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PortEventData.json",
+            "domain": "Equinix Fabric Port EventData",
+            "name": "PortEventData",
+            "description": "The data within all PortEventData events.",
+            "datatype": "equinix.fabric.v2.PortEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.port.state.deprovisioned",
@@ -4221,11 +4221,11 @@
             ]
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_aggregation/RouteAggregationChangeEvent.json",
-            "domain": "Equinix Fabric Route Aggregation ChangeEvent",
-            "name": "RouteAggregationChangeEvent",
-            "description": "The data within all RouteAggregationChangeEvent events.",
-            "datatype": "equinix.fabric.v2.RouteAggregationChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_aggregation/RouteAggregationEventData.json",
+            "domain": "Equinix Fabric Route Aggregation EventData",
+            "name": "RouteAggregationEventData",
+            "description": "The data within all RouteAggregationEventData events.",
+            "datatype": "equinix.fabric.v2.RouteAggregationEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.route_aggregation.attribute.changed",
@@ -4280,11 +4280,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_aggregation/RouteAggregationRuleChangeEvent.json",
-            "domain": "Equinix Fabric Route Aggregation Rule ChangeEvent",
-            "name": "RouteAggregationRuleChangeEvent",
-            "description": "The data within all RouteAggregationRuleChangeEvent events.",
-            "datatype": "equinix.fabric.v2.RouteAggregationRuleChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_aggregation/RouteAggregationRuleEventData.json",
+            "domain": "Equinix Fabric Route Aggregation Rule EventData",
+            "name": "RouteAggregationRuleEventData",
+            "description": "The data within all RouteAggregationRuleEventData events.",
+            "datatype": "equinix.fabric.v2.RouteAggregationRuleEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.route_aggregation_rule.attribute.changed",
@@ -4333,11 +4333,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_filter/RouteFilterChangeEvent.json",
-            "domain": "Equinix Fabric Route Filter ChangeEvent",
-            "name": "RouteFilterChangeEvent",
-            "description": "The data within all RouteFilterChangeEvent events.",
-            "datatype": "equinix.fabric.v2.RouteFilterChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_filter/RouteFilterEventData.json",
+            "domain": "Equinix Fabric Route Filter EventData",
+            "name": "RouteFilterEventData",
+            "description": "The data within all RouteFilterEventData events.",
+            "datatype": "equinix.fabric.v2.RouteFilterEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.route_filter.attribute.changed",
@@ -4392,11 +4392,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_filter/RouteFilterRuleChangeEvent.json",
-            "domain": "Equinix Fabric Route Filter Rule ChangeEvent",
-            "name": "RouteFilterRuleChangeEvent",
-            "description": "The data within all RouteFilterRuleChangeEvent events.",
-            "datatype": "equinix.fabric.v2.RouteFilterRuleChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_filter/RouteFilterRuleEventData.json",
+            "domain": "Equinix Fabric Route Filter Rule EventData",
+            "name": "RouteFilterRuleEventData",
+            "description": "The data within all RouteFilterRuleEventData events.",
+            "datatype": "equinix.fabric.v2.RouteFilterRuleEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.route_filter_rule.attribute.changed",
@@ -4445,11 +4445,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_protocol/RoutingProtocolActionChangeEvent.json",
-            "domain": "Equinix Fabric Routing Protocol Action ChangeEvent",
-            "name": "RoutingProtocolActionChangeEvent",
-            "description": "The data within all RoutingProtocolActionChangeEvent events.",
-            "datatype": "equinix.fabric.v2.RoutingProtocolActionChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/route_protocol/RoutingProtocolActionEventData.json",
+            "domain": "Equinix Fabric Routing Protocol Action EventData",
+            "name": "RoutingProtocolActionEventData",
+            "description": "The data within all RoutingProtocolActionEventData events.",
+            "datatype": "equinix.fabric.v2.RoutingProtocolActionEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.routing_protocol_action.state.failed",
@@ -4474,11 +4474,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterActionChangeEvent.json",
-            "domain": "Equinix Fabric Router Action ChangeEvent",
-            "name": "RouterActionChangeEvent",
-            "description": "The data within all RouterActionChangeEvent events.",
-            "datatype": "equinix.fabric.v2.RouterActionChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterActionEventData.json",
+            "domain": "Equinix Fabric Router Action EventData",
+            "name": "RouterActionEventData",
+            "description": "The data within all RouterActionEventData events.",
+            "datatype": "equinix.fabric.v2.RouterActionEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.router_action.state.failed",
@@ -4503,11 +4503,46 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterChangeEvent.json",
-            "domain": "Equinix Fabric Router ChangeEvent",
-            "name": "RouterChangeEvent",
-            "description": "The data within all RouterChangeEvent events.",
-            "datatype": "equinix.fabric.v2.RouterChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterCommandEventData.json",
+            "domain": "Equinix Fabric Router Command EventData",
+            "name": "RouterCommandEventData",
+            "description": "The data within all RouterCommandEventData events.",
+            "datatype": "equinix.fabric.v2.RouterCommandEventData",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.router_command.state.deleted",
+                    "description": "Router Command state changed to deleted",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.router_command.state.failed",
+                    "description": "Router Command state changed to failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.router_command.state.pending",
+                    "description": "Router Command state changed to pending",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.router_command.state.succeeded",
+                    "description": "Router Command state changed to succeeded",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterEventData.json",
+            "domain": "Equinix Fabric Router EventData",
+            "name": "RouterEventData",
+            "description": "The data within all RouterEventData events.",
+            "datatype": "equinix.fabric.v2.RouterEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.router.attribute.changed",
@@ -4568,41 +4603,6 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterCommandChangeEvent.json",
-            "domain": "Equinix Fabric Router Command ChangeEvent",
-            "name": "RouterCommandChangeEvent",
-            "description": "The data within all RouterCommandChangeEvent events.",
-            "datatype": "equinix.fabric.v2.RouterCommandChangeEvent",
-            "cloudeventTypes": [
-                {
-                    "name": "equinix.fabric.router_command.state.deleted",
-                    "description": "Router Command state changed to deleted",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
-                },
-                {
-                    "name": "equinix.fabric.router_command.state.failed",
-                    "description": "Router Command state changed to failed",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
-                },
-                {
-                    "name": "equinix.fabric.router_command.state.pending",
-                    "description": "Router Command state changed to pending",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
-                },
-                {
-                    "name": "equinix.fabric.router_command.state.succeeded",
-                    "description": "Router Command state changed to succeeded",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
-                }
-            ],
-            "metricNames": [],
-            "alertNames": []
-        },
-        {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/router/RouterMetricAlert.json",
             "domain": "Equinix Fabric Router MetricAlert",
             "name": "RouterMetricAlert",
@@ -4626,46 +4626,11 @@
             ]
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_profile/ServiceProfileChangeEvent.json",
-            "domain": "Equinix Fabric Service Profile ChangeEvent (Deprecated)",
-            "name": "ServiceProfileChangeEvent",
-            "description": "The data within all ServiceProfileChangeEvent events.",
-            "datatype": "equinix.fabric.v2.ServiceProfileChangeEvent",
-            "cloudeventTypes": [
-                {
-                    "name": "equinix.fabric.service_profile.connection.deprovisioned",
-                    "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
-                },
-                {
-                    "name": "equinix.fabric.service_profile.connection.failed",
-                    "description": "Service Profile Connection ${connection_name} state changed to failed",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
-                },
-                {
-                    "name": "equinix.fabric.service_profile.connection.pending",
-                    "description": "Service Profile Connection ${connection_name} state changed to pending",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
-                },
-                {
-                    "name": "equinix.fabric.service_profile.connection.provisioned",
-                    "description": "Service Profile Connection ${connection_name} state changed to provisioned",
-                    "sloCategoryCode": "BLUE_EVENT_SLO",
-                    "releaseStatus": "released"
-                }
-            ],
-            "metricNames": [],
-            "alertNames": []
-        },
-        {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_profile/ServiceProfileConnectionChangeEvent.json",
-            "domain": "Equinix Fabric Service Profile Connection ChangeEvent",
-            "name": "ServiceProfileConnectionChangeEvent",
-            "description": "The data within all ServiceProfileConnectionChangeEvent events.",
-            "datatype": "equinix.fabric.v2.ServiceProfileConnectionChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_profile/ServiceProfileConnectionEventData.json",
+            "domain": "Equinix Fabric Service Profile Connection EventData",
+            "name": "ServiceProfileConnectionEventData",
+            "description": "The data within all ServiceProfileConnectionEventData events.",
+            "datatype": "equinix.fabric.v2.ServiceProfileConnectionEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.service_profile_connection.state.deprovisioned",
@@ -4696,11 +4661,46 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_token/ServiceTokenChangeEvent.json",
-            "domain": "Equinix Fabric Service Token ChangeEvent",
-            "name": "ServiceTokenChangeEvent",
-            "description": "The data within all ServiceTokenChangeEvent events.",
-            "datatype": "equinix.fabric.v2.ServiceTokenChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_profile/ServiceProfileEventData.json",
+            "domain": "Equinix Fabric Service Profile EventData (Deprecated)",
+            "name": "ServiceProfileEventData",
+            "description": "The data within all ServiceProfileEventData events.",
+            "datatype": "equinix.fabric.v2.ServiceProfileEventData",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.service_profile.connection.deprovisioned",
+                    "description": "Service Profile Connection ${connection_name} state changed to deprovisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_profile.connection.failed",
+                    "description": "Service Profile Connection ${connection_name} state changed to failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_profile.connection.pending",
+                    "description": "Service Profile Connection ${connection_name} state changed to pending",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                },
+                {
+                    "name": "equinix.fabric.service_profile.connection.provisioned",
+                    "description": "Service Profile Connection ${connection_name} state changed to provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/service_token/ServiceTokenEventData.json",
+            "domain": "Equinix Fabric Service Token EventData",
+            "name": "ServiceTokenEventData",
+            "description": "The data within all ServiceTokenEventData events.",
+            "datatype": "equinix.fabric.v2.ServiceTokenEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.service_token.attribute.changed",
@@ -4749,11 +4749,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/time_service/TimeServiceChangeEvent.json",
-            "domain": "Equinix Time Service ChangeEvent",
-            "name": "TimeServiceChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/time_service/TimeServiceEventData.json",
+            "domain": "Equinix Time Service EventData",
+            "name": "TimeServiceEventData",
             "description": "The data within all ChangeEvent events.",
-            "datatype": "equinix.time_service.v2.TimeServiceChangeEvent",
+            "datatype": "equinix.time_service.v2.TimeServiceEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.time_service.state.cancelled",
@@ -4844,11 +4844,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/tunnel/TunnelBgpipv4SessionChangeEvent.json",
-            "domain": "Equinix Fabric Tunnel Bgpipv4 Session ChangeEvent",
-            "name": "TunnelBgpipv4SessionChangeEvent",
-            "description": "The data within all TunnelBgpipv4SessionChangeEvent events.",
-            "datatype": "equinix.fabric.v2.TunnelBgpipv4SessionChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/tunnel/TunnelBgpipv4SessionEventData.json",
+            "domain": "Equinix Fabric Tunnel Bgpipv4 Session EventData",
+            "name": "TunnelBgpipv4SessionEventData",
+            "description": "The data within all TunnelBgpipv4SessionEventData events.",
+            "datatype": "equinix.fabric.v2.TunnelBgpipv4SessionEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.tunnel_bgpipv4_session.status.active",
@@ -4891,11 +4891,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/tunnel/TunnelBgpipv6SessionChangeEvent.json",
-            "domain": "Equinix Fabric Tunnel Bgpipv6 Session ChangeEvent",
-            "name": "TunnelBgpipv6SessionChangeEvent",
-            "description": "The data within all TunnelBgpipv6SessionChangeEvent events.",
-            "datatype": "equinix.fabric.v2.TunnelBgpipv6SessionChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/tunnel/TunnelBgpipv6SessionEventData.json",
+            "domain": "Equinix Fabric Tunnel Bgpipv6 Session EventData",
+            "name": "TunnelBgpipv6SessionEventData",
+            "description": "The data within all TunnelBgpipv6SessionEventData events.",
+            "datatype": "equinix.fabric.v2.TunnelBgpipv6SessionEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.tunnel_bgpipv6_session.status.active",
@@ -4938,11 +4938,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/tunnel/TunnelChangeEvent.json",
-            "domain": "Equinix Fabric Tunnel ChangeEvent",
-            "name": "TunnelChangeEvent",
-            "description": "The data within all TunnelChangeEvent events.",
-            "datatype": "equinix.fabric.v2.TunnelChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/tunnel/TunnelEventData.json",
+            "domain": "Equinix Fabric Tunnel EventData",
+            "name": "TunnelEventData",
+            "description": "The data within all TunnelEventData events.",
+            "datatype": "equinix.fabric.v2.TunnelEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.fabric.tunnel.status.down",
@@ -5137,11 +5137,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/AclChangeEvent.json",
-            "domain": "Equinix Network Edge Acl ChangeEvent",
-            "name": "AclChangeEvent",
-            "description": "The data within all AclChangeEvent events.",
-            "datatype": "equinix.network_edge.v2.AclChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/AclEventData.json",
+            "domain": "Equinix Network Edge Acl EventData",
+            "name": "AclEventData",
+            "description": "The data within all AclEventData events.",
+            "datatype": "equinix.network_edge.v2.AclEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.network_edge.acl.state.created",
@@ -5160,11 +5160,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/DeviceChangeEvent.json",
-            "domain": "Equinix Network Edge Device ChangeEvent",
-            "name": "DeviceChangeEvent",
-            "description": "The data within all DeviceChangeEvent events.",
-            "datatype": "equinix.network_edge.v2.DeviceChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/DeviceEventData.json",
+            "domain": "Equinix Network Edge Device EventData",
+            "name": "DeviceEventData",
+            "description": "The data within all DeviceEventData events.",
+            "datatype": "equinix.network_edge.v2.DeviceEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.network_edge.device.acl.updated",
@@ -5319,11 +5319,11 @@
             ]
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/DevicelinkgroupChangeEvent.json",
-            "domain": "Equinix Network Edge Devicelinkgroup ChangeEvent",
-            "name": "DevicelinkgroupChangeEvent",
-            "description": "The data within all DevicelinkgroupChangeEvent events.",
-            "datatype": "equinix.network_edge.v2.DevicelinkgroupChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/DevicelinkgroupEventData.json",
+            "domain": "Equinix Network Edge Devicelinkgroup EventData",
+            "name": "DevicelinkgroupEventData",
+            "description": "The data within all DevicelinkgroupEventData events.",
+            "datatype": "equinix.network_edge.v2.DevicelinkgroupEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.network_edge.devicelinkgroup.state.created",
@@ -5360,11 +5360,11 @@
             "alertNames": []
         },
         {
-            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/resource_manager/v2/ResourceManagerChangeEvent.json",
-            "domain": "Equinix Resource Manager ChangeEvent",
-            "name": "ResourceManagerChangeEvent",
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/resource_manager/v2/ResourceManagerEventData.json",
+            "domain": "Equinix Resource Manager EventData",
+            "name": "ResourceManagerEventData",
             "description": "The data within all ChangeEvent events.",
-            "datatype": "equinix.resource_manager.v2.ResourceManagerChangeEvent",
+            "datatype": "equinix.resource_manager.v2.ResourceManagerEventData",
             "cloudeventTypes": [
                 {
                     "name": "equinix.resource_manager.organization.state.created",
