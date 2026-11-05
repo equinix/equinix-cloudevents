@@ -2,7 +2,7 @@
   "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network/v1/NotificationEvent.json",
   "name": "NotificationEvent",
   "examples": [],
-  "package": "equinix.fabric.v1",
+  "package": "equinix.network.v1",
   "datatype": "equinix.network.v1.NotificationEvent",
   "domain": "Equinix Network Notification Event",
   "$schema": "http://json-schema.org/draft-04/schema#",
@@ -155,6 +155,34 @@
     {
       "name": "equinix.network.maintenance.state.rescheduled",
       "description": "Network maintenance state changed to rescheduled",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.network.repair.state.confirmed",
+      "description": "Network repair state changed to confirmed",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.network.repair.state.in_progress",
+      "description": "Network repair state changed to in_progress",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.network.repair.state.cancelled",
+      "description": "Network repair state changed to cancelled",
+      "sloCategoryCode": "BLUE_EVENT_SLO",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.network.repair.state.rescheduled",
+      "description": "Network repair state changed to rescheduled",
+      "releaseStatus": "released"
+    },
+    {
+      "name": "equinix.network.repair.state.resolved",
+      "description": "Network repair state changed to resolved",
       "releaseStatus": "released"
     },
     {
