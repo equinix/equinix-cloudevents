@@ -203,7 +203,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>Connection Maintenance</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/maintenance_service/ConnectionMaintenanceEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/maintenance_service/ConnectionMaintenanceEventData.json'>JSON</a></td>
 		<td><code>equinix.maintenance_service.v2.ConnectionMaintenanceEvent</code></td>
 	</tr>
 	<tr>
@@ -288,7 +288,7 @@ The following data payloads are the supported events and formats for Equinix Net
 	</tr>
 	<tr>
 		<td>Port Maintenance</td>
-		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/maintenance_service/PortMaintenanceEvent.json'>JSON</a></td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/maintenance_service/PortMaintenanceEventData.json'>JSON</a></td>
 		<td><code>equinix.maintenance_service.v2.PortMaintenanceEvent</code></td>
 	</tr>
 	<tr>
@@ -1167,35 +1167,35 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>Connection Maintenance</td>
 		<td>equinix.fabric.connection_maintenance.state.cancelled</td>
 		<td>Connection maintenance is cancelled</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Connection Maintenance</td>
 		<td>equinix.fabric.connection_maintenance.state.completed</td>
 		<td>Connection maintenance is completed</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Connection Maintenance</td>
 		<td>equinix.fabric.connection_maintenance.state.in_progress</td>
 		<td>Connection maintenance is in progress</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Connection Maintenance</td>
 		<td>equinix.fabric.connection_maintenance.state.postponed</td>
 		<td>Connection maintenance is postponed</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Connection Maintenance</td>
 		<td>equinix.fabric.connection_maintenance.state.scheduled</td>
 		<td>Connection maintenance is scheduled</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -1720,35 +1720,35 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>Port Maintenance</td>
 		<td>equinix.fabric.port_maintenance.state.cancelled</td>
 		<td>Port maintenance is cancelled</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Port Maintenance</td>
 		<td>equinix.fabric.port_maintenance.state.completed</td>
 		<td>Port maintenance is completed</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Port Maintenance</td>
 		<td>equinix.fabric.port_maintenance.state.in_progress</td>
 		<td>Port maintenance is in progress</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Port Maintenance</td>
 		<td>equinix.fabric.port_maintenance.state.postponed</td>
 		<td>Port maintenance is postponed</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Port Maintenance</td>
 		<td>equinix.fabric.port_maintenance.state.scheduled</td>
 		<td>Port maintenance is scheduled</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
@@ -2280,21 +2280,21 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>Time Service</td>
 		<td>equinix.fabric.time_service.status.degraded</td>
 		<td>Time Service status changed to degraded</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Time Service</td>
 		<td>equinix.fabric.time_service.status.down</td>
 		<td>Time Service status changed to down</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Time Service</td>
 		<td>equinix.fabric.time_service.status.up</td>
 		<td>Time Service status changed to up</td>
-		<td>preview</td>
+		<td>released</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>

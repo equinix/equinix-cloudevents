@@ -563,6 +563,31 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.connection_maintenance.state.cancelled",
+                "description": "Connection maintenance is cancelled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_maintenance.state.completed",
+                "description": "Connection maintenance is completed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_maintenance.state.in_progress",
+                "description": "Connection maintenance is in progress",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_maintenance.state.postponed",
+                "description": "Connection maintenance is postponed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.connection_maintenance.state.scheduled",
+                "description": "Connection maintenance is scheduled",
+                "releaseStatus": "released"
+            },
+            {
                 "name": "equinix.fabric.connection_route_aggregation.state.attached",
                 "description": "Connection Route Aggregation named ${route_aggregation_rule_name} attachment status changed to attached",
                 "releaseStatus": "released"
@@ -835,6 +860,31 @@
             {
                 "name": "equinix.fabric.port.status.up",
                 "description": "Virtual port '${port_name}' status changed to UP",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.cancelled",
+                "description": "Port maintenance is cancelled",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.completed",
+                "description": "Port maintenance is completed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.in_progress",
+                "description": "Port maintenance is in progress",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.postponed",
+                "description": "Port maintenance is postponed",
+                "releaseStatus": "released"
+            },
+            {
+                "name": "equinix.fabric.port_maintenance.state.scheduled",
+                "description": "Port maintenance is scheduled",
                 "releaseStatus": "released"
             },
             {
@@ -1173,29 +1223,19 @@
                 "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection_maintenance.state.cancelled",
-                "description": "Connection maintenance is cancelled",
-                "releaseStatus": "preview"
+                "name": "equinix.fabric.time_service.status.degraded",
+                "description": "Time Service status changed to degraded",
+                "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection_maintenance.state.completed",
-                "description": "Connection maintenance is completed",
-                "releaseStatus": "preview"
+                "name": "equinix.fabric.time_service.status.down",
+                "description": "Time Service status changed to down",
+                "releaseStatus": "released"
             },
             {
-                "name": "equinix.fabric.connection_maintenance.state.in_progress",
-                "description": "Connection maintenance is in progress",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_maintenance.state.postponed",
-                "description": "Connection maintenance is postponed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.connection_maintenance.state.scheduled",
-                "description": "Connection maintenance is scheduled",
-                "releaseStatus": "preview"
+                "name": "equinix.fabric.time_service.status.up",
+                "description": "Time Service status changed to up",
+                "releaseStatus": "released"
             },
             {
                 "name": "equinix.fabric.internet_exchange.state.activating",
@@ -1283,31 +1323,6 @@
                 "releaseStatus": "preview"
             },
             {
-                "name": "equinix.fabric.port_maintenance.state.cancelled",
-                "description": "Port maintenance is cancelled",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port_maintenance.state.completed",
-                "description": "Port maintenance is completed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port_maintenance.state.in_progress",
-                "description": "Port maintenance is in progress",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port_maintenance.state.postponed",
-                "description": "Port maintenance is postponed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.port_maintenance.state.scheduled",
-                "description": "Port maintenance is scheduled",
-                "releaseStatus": "preview"
-            },
-            {
                 "name": "equinix.fabric.route_aggregation.attribute.changed",
                 "description": "Route Aggregation named ${route_aggregation_name} attribute changed",
                 "releaseStatus": "preview"
@@ -1325,21 +1340,6 @@
             {
                 "name": "equinix.fabric.route_filter_rule.attribute.changed",
                 "description": "Route Filter Rule named ${route_filter_rule_name} attribute changed",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.time_service.status.degraded",
-                "description": "Time Service status changed to degraded",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.time_service.status.down",
-                "description": "Time Service status changed to down",
-                "releaseStatus": "preview"
-            },
-            {
-                "name": "equinix.fabric.time_service.status.up",
-                "description": "Time Service status changed to up",
                 "releaseStatus": "preview"
             },
             {
