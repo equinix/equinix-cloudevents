@@ -37,8 +37,8 @@
             "subject": "/fabric/v4/ports/11111111-1111-1111-1111-111111111111/physicalPorts/11111111-1111-1111-1111-111111111111",
             "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PhysicalPortEventData.json",
             "datacontenttype": "application/json",
-            "severitynumber": "19",
-            "severitytext": "CRITICAL",
+            "severitynumber": "9",
+            "severitytext": "INFO",
             "equinixalert": "clear/AbCDeFGHi2bCYwtS5uZg",
             "equinixproject": "11111111-1111-1111-1111-111111111111",
             "data": {
