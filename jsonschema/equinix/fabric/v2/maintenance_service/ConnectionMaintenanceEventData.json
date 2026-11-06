@@ -1,15 +1,15 @@
 {
-  "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/maintenance_service/PortMaintenanceEvent.json",
-  "name": "PortMaintenanceEvent",
+  "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/maintenance_service/ConnectionMaintenanceEventData.json",
+  "name": "ConnectionMaintenanceEvent",
   "examples": [
     {
       "specversion": "1.0",
       "source": "https://api.equinix.com/fabric/v4/cloudevents",
       "id": "11111111-1111-1111-1111-111111111111",
-      "type": "equinix.fabric.port_maintenance.state.scheduled",
-      "subject": "/fabric/v4/ports/11111111-1111-1111-1111-111111111111/maintenances/11111111-1111-1111-1111-111111111111",
+      "type": "equinix.fabric.connection_maintenance.state.scheduled",
+      "subject": "/fabric/v4/connections/11111111-1111-1111-1111-111111111111/maintenances/11111111-1111-1111-1111-111111111111",
       "time": "2026-06-11T18:06:21.000Z",
-      "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/maintenance_service/v2/MaintenanceEvent.json",
+      "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/maintenance_service/ConnectionMaintenanceEventData.json",
       "datacontenttype": "application/json",
       "severitynumber": "9",
       "severitytext": "INFO",
@@ -17,22 +17,27 @@
       "equinixproject": "11111111-1111-1111-1111-111111111111",
       "equinixtags": "Env=Prod,Team=IT,Type=Maintenance",
       "data": {
-        "message": "Virtual port 'Test-Port' maintenance scheduled.",
+        "message": "Connection 'Test-Connection' maintenance scheduled from 2026-06-29 05:30:00 to 2026-06-29 15:30:00.",
         "resource": {
-          "href": "https://api.equinix.com/fabric/v4/ports/11111111-1111-1111-1111-111111111111/maintenances/11111111-1111-1111-1111-111111111111",
+          "href": "https://api.equinix.com/fabric/v4/connections/11111111-1111-1111-1111-111111111111/maintenances/11111111-1111-1111-1111-111111111111",
           "uuid": "11111111-1111-1111-1111-111111111111",
           "type": "XF_MAINTENANCE",
           "state": "SCHEDULED",
-          "description": "Scheduled maintenance for Test-Port",
+          "description": "Scheduled maintenance for Test-Connection",
           "port": {
             "uuid": "11111111-1111-1111-1111-111111111111",
-            "href": "https://api.equinix.com/fabric/v4/ports/11111111-1111-1111-1111-111111111111",
+            "href": "https://api.equinix.com/fabric/v4/connections/11111111-1111-1111-1111-111111111111",
             "type": "XF_PORT"
           },
           "incidentRefId": "CR1111111111",
-          "startDateTime": "2026-06-29 05:30:00",
+          "startDateTime": "2026-06-29T05:30:00Z",
           "duration": "PT8H",
           "groupUuid": "11111111-1111-1111-1111-111111111111"
+        },
+        "causedBy": {
+          "href": "https://api.equinix.com/fabric/v4/ports/11111111-1111-1111-1111-111111111111/maintenances/11111111-1111-1111-1111-111111111111",
+          "uuid": "11111111-1111-1111-1111-111111111111",
+          "type": "XF_MAINTENANCE"
         },
         "auth": {
           "type": "system",
@@ -42,8 +47,8 @@
     }
   ],
   "package": "equinix.maintenance_service.v2",
-  "datatype": "equinix.maintenance_service.v2.PortMaintenanceEvent",
-  "domain": "Equinix Maintenance Service PortMaintenanceEvent",
+  "datatype": "equinix.maintenance_service.v2.ConnectionMaintenanceEvent",
+  "domain": "Equinix Maintenance Service ConnectionMaintenanceEvent",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "$ref": "#/definitions/Data",
   "definitions": {
@@ -131,7 +136,8 @@
         },
         "startDateTime": {
           "type": "string",
-          "description": "Scheduled start date and time of the maintenance"
+          "format": "date-time",
+          "description": "Scheduled start date and time of the maintenance in ISO 8601 format"
         },
         "duration": {
           "type": "string",
@@ -190,34 +196,34 @@
   },
   "cloudeventTypes": [
     {
-      "name": "equinix.fabric.port_maintenance.state.scheduled",
-      "description": "Port maintenance is scheduled",
+      "name": "equinix.fabric.connection_maintenance.state.scheduled",
+      "description": "Connection maintenance is scheduled",
       "sloCategoryCode": "BLUE_EVENT_SLO",
-      "releaseStatus": "preview"
+      "releaseStatus": "released"
     },
     {
-      "name": "equinix.fabric.port_maintenance.state.in_progress",
-      "description": "Port maintenance is in progress",
+      "name": "equinix.fabric.connection_maintenance.state.in_progress",
+      "description": "Connection maintenance is in progress",
       "sloCategoryCode": "BLUE_EVENT_SLO",
-      "releaseStatus": "preview"
+      "releaseStatus": "released"
     },
     {
-      "name": "equinix.fabric.port_maintenance.state.completed",
-      "description": "Port maintenance is completed",
+      "name": "equinix.fabric.connection_maintenance.state.completed",
+      "description": "Connection maintenance is completed",
       "sloCategoryCode": "BLUE_EVENT_SLO",
-      "releaseStatus": "preview"
+      "releaseStatus": "released"
     },
     {
-      "name": "equinix.fabric.port_maintenance.state.postponed",
-      "description": "Port maintenance is postponed",
+      "name": "equinix.fabric.connection_maintenance.state.postponed",
+      "description": "Connection maintenance is postponed",
       "sloCategoryCode": "BLUE_EVENT_SLO",
-      "releaseStatus": "preview"
+      "releaseStatus": "released"
     },
     {
-      "name": "equinix.fabric.port_maintenance.state.cancelled",
-      "description": "Port maintenance is cancelled",
+      "name": "equinix.fabric.connection_maintenance.state.cancelled",
+      "description": "Connection maintenance is cancelled",
       "sloCategoryCode": "BLUE_EVENT_SLO",
-      "releaseStatus": "preview"
+      "releaseStatus": "released"
     }
   ],
   "metricNames": [],
