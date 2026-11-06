@@ -1,7 +1,88 @@
 {
     "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PortEventData.json",
     "name": "PortEventData",
-    "examples": [],
+    "examples": [
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "11111111-1111-1111-1111-111111111111",
+            "time": "2026-08-10T18:41:56.433Z",
+            "type": "equinix.fabric.port.status.down",
+            "subject": "/fabric/v4/ports/11111111-1111-1111-1111-111111111111",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PortEventData.json",
+            "datacontenttype": "application/json",
+            "severitynumber": "19",
+            "severitytext": "CRITICAL",
+            "equinixalert": "raise/AbCDeFGHi2bCYwtS5uZg",
+            "equinixproject": "11111111-1111-1111-1111-111111111111",
+            "data": {
+                "message": "Connection '11111-DA1-CX-PRI-01' status changed to DOWN",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/ports/11111111-1111-1111-1111-111111111111",
+                    "uuid": "11111111-1111-1111-1111-111111111111",
+                    "type": "XF_PORT",
+                    "name": "11111-DA1-CX-PRI-01",
+                    "state": "PROVISIONED",
+                    "operation": {
+                        "operationalStatus": "DOWN"
+                    }
+                }
+            }
+        },
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "11111111-1111-1111-1111-111111111111",
+            "time": "2026-08-10T18:41:56.433Z",
+            "type": "equinix.fabric.port.status.up",
+            "subject": "/fabric/v4/ports/11111111-1111-1111-1111-111111111111",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PortEventData.json",
+            "datacontenttype": "application/json",
+            "severitynumber": "19",
+            "severitytext": "CRITICAL",
+            "equinixalert": "clear/AbCDeFGHi2bCYwtS5uZg",
+            "equinixproject": "11111111-1111-1111-1111-111111111111",
+            "data": {
+                "message": "Connection '11111-DA1-CX-PRI-01' status changed to UP",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/ports/11111111-1111-1111-1111-111111111111",
+                    "uuid": "11111111-1111-1111-1111-111111111111",
+                    "type": "XF_PORT",
+                    "name": "11111-DA1-CX-PRI-01",
+                    "state": "PROVISIONED",
+                    "operation": {
+                        "operationalStatus": "UP"
+                    }
+                }
+            }
+        },
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "11111111-1111-1111-1111-111111111111",
+            "time": "2026-08-10T18:31:16Z",
+            "type": "equinix.fabric.port.state.provisioned",
+            "subject": "/fabric/v4/ports/11111111-1111-1111-1111-111111111111",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PortEventData.json",
+            "datacontenttype": "application/json",
+            "severitynumber": "9",
+            "severitytext": "INFO",
+            "equinixproject": "11111111-1111-1111-1111-111111111111",
+            "traceparent": "00-ba2274df90e74f3ab10a568d06aa77ee-47f06098d3034f59-01",
+            "tracestate": "47f06098d3034f59",
+            "data": {
+                "message": "Virtual port named 11111-DA1-CX-PRI-01 state changed to provisioned",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/ports/11111111-1111-1111-1111-111111111111",
+                    "uuid": "11111111-1111-1111-1111-111111111111",
+                    "type": "XF_PORT",
+                    "name": "11111-DA1-CX-PRI-01",
+                    "state": "PROVISIONED"
+                }
+            }
+        }
+
+    ],
     "package": "equinix.fabric.v2",
     "datatype": "equinix.fabric.v2.PortEventData",
     "domain": "Equinix Fabric Port EventData",

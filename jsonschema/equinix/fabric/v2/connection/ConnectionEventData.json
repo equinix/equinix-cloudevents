@@ -1,7 +1,93 @@
 {
     "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionEventData.json",
     "name": "ConnectionEventData",
-    "examples": [],
+    "examples": [
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "11111111-1111-1111-1111-111111111111",
+            "time": "2026-08-10T18:41:56.433Z",
+            "type": "equinix.fabric.connection.status.down",
+            "subject": "/fabric/v4/connections/11111111-1111-1111-1111-111111111111",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/ConnectionEventData.json",
+            "datacontenttype": "application/json",
+            "severitynumber": "19",
+            "severitytext": "CRITICAL",
+            "equinixalert": "raise/AbCDeFGHi2bCYwtS5uZg",
+            "equinixproject": "11111111-1111-1111-1111-111111111111",
+            "data": {
+                "message": "Connection 'connection-1' status changed to DOWN",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/connections/11111111-1111-1111-1111-111111111111",
+                    "uuid": "11111111-1111-1111-1111-111111111111",
+                    "type": "EPL_VC",
+                    "name": "connection-1",
+                    "state": "PROVISIONED",
+                    "operation": {
+                        "operationalStatus": "DOWN"
+                    }
+                }
+            }
+        },
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "11111111-1111-1111-1111-111111111111",
+            "time": "2026-08-10T18:41:56.433Z",
+            "type": "equinix.fabric.connection.status.up",
+            "subject": "/fabric/v4/connections/11111111-1111-1111-1111-111111111111",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/ConnectionEventData.json",
+            "datacontenttype": "application/json",
+            "severitynumber": "19",
+            "severitytext": "CRITICAL",
+            "equinixalert": "raise/AbCDeFGHi2bCYwtS5uZg",
+            "equinixproject": "11111111-1111-1111-1111-111111111111",
+            "data": {
+                "message": "Connection 'connection-1' status changed to UP",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/connections/11111111-1111-1111-1111-111111111111",
+                    "uuid": "11111111-1111-1111-1111-111111111111",
+                    "type": "EPL_VC",
+                    "name": "connection-1",
+                    "state": "PROVISIONED",
+                    "operation": {
+                        "operationalStatus": "UP"
+                    }
+                }
+            }
+        },
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "11111111-1111-1111-1111-111111111111",
+            "time": "2026-08-10T14:25:49Z",
+            "type": "equinix.fabric.connection.state.pending",
+            "subject": "/fabric/v4/connections/11111111-1111-1111-1111-111111111111",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/ConnectionEventData.json",
+            "datacontenttype": "application/json",
+            "severitynumber": "9",
+            "severitytext": "INFO",
+            "equinixproject": "11111111-1111-1111-1111-111111111111",
+            "authtype": "system",
+            "authid": "equinix",
+            "traceparent": "00-0fdea23c95e5499b9ef1694901f9e452-1e4e0a3ebca33b9d-01",
+            "tracestate": "1e4e0a3ebca33b9d",
+            "data": {
+                "message": "Connection named connection-1 state changed to pending",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/connections/11111111-1111-1111-1111-111111111111",
+                    "uuid": "11111111-1111-1111-1111-111111111111",
+                    "type": "IA_VC",
+                    "name": "connection-1",
+                    "state": "PENDING"
+                },
+                "auth": {
+                    "type": "system",
+                    "id": "equinix"
+                }
+            }
+        }
+    ],
     "package": "equinix.fabric.v2",
     "datatype": "equinix.fabric.v2.ConnectionEventData",
     "domain": "Equinix Fabric Connection EventData",
