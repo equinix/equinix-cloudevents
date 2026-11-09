@@ -1,0 +1,348 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/interconnect/InterconnectEventData.json",
+    "name": "InterconnectEventData",
+    "examples": [
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "11111111-1111-1111-1111-111111111111",
+            "time": "2026-11-09T17:31:00Z",
+            "type": "equinix.fabric.interconnect.state.provisioned",
+            "subject": "/fabric/v4/interconnects/11111111-1111-1111-1111-111111111111",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/interconnect/InterconnectEventData.json",
+            "datacontenttype": "application/json",
+            "severitynumber": "9",
+            "severitytext": "INFO",
+            "equinixproject": "11111111-1111-1111-1111-111111111111",
+            "authtype": "system",
+            "authid": "equinix",
+            "traceparent": "00-0fdea23c95e5499b9ef1694901f9e452-1e4e0a3ebca33b9d-01",
+            "tracestate": "1e4e0a3ebca33b9d",
+            "data": {
+                "message": "Fabric One named Test-Fabric-One state changed to provisioned",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/interconnects/11111111-1111-1111-1111-111111111111",
+                    "uuid": "11111111-1111-1111-1111-111111111111",
+                    "type": "XF_IC",
+                    "name": "Test-Fabric-One",
+                    "state": "PROVISIONED"
+                },
+                "auth": {
+                    "type": "system",
+                    "id": "equinix"
+                }
+            }
+        },
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "11111111-1111-1111-1111-111111111111",
+            "time": "2026-11-09T17:31:00Z",
+            "type": "equinix.fabric.interconnect.state.deprovisioned",
+            "subject": "/fabric/v4/interconnects/11111111-1111-1111-1111-111111111111",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/interconnect/InterconnectEventData.json",
+            "datacontenttype": "application/json",
+            "severitynumber": "9",
+            "severitytext": "INFO",
+            "equinixproject": "11111111-1111-1111-1111-111111111111",
+            "authtype": "system",
+            "authid": "equinix",
+            "traceparent": "00-0fdea23c95e5499b9ef1694901f9e452-1e4e0a3ebca33b9d-01",
+            "tracestate": "1e4e0a3ebca33b9d",
+            "data": {
+                "message": "Fabric One named Test-Fabric-One state changed to deprovisioned",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/interconnects/11111111-1111-1111-1111-111111111111",
+                    "uuid": "11111111-1111-1111-1111-111111111111",
+                    "type": "XF_IC",
+                    "name": "Test-Fabric-One",
+                    "state": "DEPROVISIONED"
+                },
+                "auth": {
+                    "type": "system",
+                    "id": "equinix"
+                }
+            }
+        },
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "11111111-1111-1111-1111-111111111111",
+            "time": "2026-11-09T17:31:00Z",
+            "type": "equinix.fabric.interconnect.state.failed",
+            "subject": "/fabric/v4/interconnects/11111111-1111-1111-1111-111111111111",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/interconnect/InterconnectEventData.json",
+            "datacontenttype": "application/json",
+            "severitynumber": "17",
+            "severitytext": "ERROR",
+            "equinixproject": "11111111-1111-1111-1111-111111111111",
+            "authtype": "system",
+            "authid": "equinix",
+            "traceparent": "00-0fdea23c95e5499b9ef1694901f9e452-1e4e0a3ebca33b9d-01",
+            "tracestate": "1e4e0a3ebca33b9d",
+            "data": {
+                "message": "Fabric One named Test-Fabric-One state changed to failed",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/interconnects/11111111-1111-1111-1111-111111111111",
+                    "uuid": "11111111-1111-1111-1111-111111111111",
+                    "type": "XF_IC",
+                    "name": "Test-Fabric-One",
+                    "state": "FAILED"
+                },
+                "auth": {
+                    "type": "system",
+                    "id": "equinix"
+                }
+            }
+        },
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "11111111-1111-1111-1111-111111111111",
+            "time": "2026-11-09T17:31:00Z",
+            "type": "equinix.fabric.interconnect.attribute.changed",
+            "subject": "/fabric/v4/interconnects/11111111-1111-1111-1111-111111111111",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/interconnect/InterconnectEventData.json",
+            "datacontenttype": "application/json",
+            "severitynumber": "9",
+            "severitytext": "INFO",
+            "equinixproject": "11111111-1111-1111-1111-111111111111",
+            "authtype": "user",
+            "authid": "123456",
+            "traceparent": "00-0fdea23c95e5499b9ef1694901f9e452-1e4e0a3ebca33b9d-01",
+            "tracestate": "1e4e0a3ebca33b9d",
+            "data": {
+                "message": "Fabric One named fabric-one attributes are changed",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/interconnects/11111111-1111-1111-1111-111111111111",
+                    "uuid": "11111111-1111-1111-1111-111111111111",
+                    "type": "XF_IC",
+                    "name": "fabric-one",
+                    "state": "PROVISIONED",
+                    "change": {
+                        "uuid": "11111111-1111-1111-1111-111111111111",
+                        "type": "INTERCONNECT_UPDATE",
+                        "status": "COMPLETED",
+                        "createdDateTime": "2026-11-09T17:30:54Z",
+                        "data": [
+                            {
+                                "op": "replace",
+                                "path": "/name",
+                                "value": "fabric-one",
+                                "previousValue": "Test-Fabric-One"
+                            }
+                        ]
+                    }
+                },
+                "auth": {
+                    "type": "user",
+                    "id": "123456"
+                }
+            }
+        }
+    ],
+    "package": "equinix.fabric.v2",
+    "datatype": "equinix.fabric.v2.InterconnectEventData",
+    "domain": "Equinix Fabric Interconnect EventData",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "The Fabric One (interconnect) resource that fired the event."
+                },
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                },
+                "auth": {
+                    "$ref": "#/definitions/Auth",
+                    "additionalProperties": true,
+                    "description": "The auth context within all ChangeEvent events."
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "InterconnectEventData Event Data",
+            "description": "The data within all InterconnectEventData events."
+        },
+        "Auth": {
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "The unique identifier of the entity generating the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "The type of the entity generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the entity generating the event"
+                },
+                "email": {
+                    "type": "string",
+                    "description": "Email of the user generating the event"
+                },
+                "sourceIp": {
+                    "type": "string",
+                    "description": "IP address of the user generating the event"
+                },
+                "agent": {
+                    "type": "string",
+                    "description": "The software that made the request"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Auth",
+            "description": "Auth information of the generated event"
+        },
+        "Resource": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the interconnect that has generated the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the interconnect generating the event (e.g. XF_IC)"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the interconnect generating the event"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the interconnect generating the event"
+                },
+                "state": {
+                    "type": "string",
+                    "description": "State of the interconnect generating the event"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the interconnect generating the event"
+                },
+                "change": {
+                    "$ref": "#/definitions/Change",
+                    "additionalProperties": true,
+                    "description": "Change information for the resource that fired the event"
+                },
+                "operation": {
+                    "$ref": "#/definitions/Operation",
+                    "additionalProperties": true,
+                    "description": "Operational status of resource that fired the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the interconnect that fired the event"
+        },
+        "Change": {
+            "properties": {
+                "uuid": {
+                    "type": "string",
+                    "description": "Uuid of the of change for the resource target of the event"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the change happening on the resource for the target of the event"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the change event on the resource target"
+                },
+                "createdDateTime": {
+                    "type": "string",
+                    "description": "The time that the resource that fired the event was created",
+                    "format": "date-time"
+                },
+                "updatedDateTime": {
+                    "type": "string",
+                    "description": "The time that the resource that fired the event was last updated",
+                    "format": "date-time"
+                },
+                "data": {
+                    "type": "array",
+                    "description": "Data of the change event",
+                    "items": {
+                        "$ref": "#/definitions/ChangeData"
+                    }
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Change",
+            "description": "Change attribute schema"
+        },
+        "ChangeData": {
+            "properties": {
+                "op": {
+                    "type": "string",
+                    "description": "The operation performed on the resource under change"
+                },
+                "path": {
+                    "type": "string",
+                    "description": "The attribute on the resource being changed"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "The current value of the attribute under change"
+                },
+                "previousValue": {
+                    "type": "string",
+                    "description": "The previous value of the attribute under change"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "ChangeData",
+            "description": "ChangeData attribute schema"
+        },
+        "Operation": {
+            "properties": {
+                "operationalStatus": {
+                    "type": "string",
+                    "description": "Operational status for the resource target of the event"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Operation",
+            "description": "Operation attribute schema"
+        }
+    },
+    "cloudeventTypes": [
+        {
+            "name": "equinix.fabric.interconnect.state.provisioned",
+            "description": "Fabric One named ${interconnect_name} state changed to provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.interconnect.state.deprovisioned",
+            "description": "Fabric One named ${interconnect_name} state changed to deprovisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.interconnect.state.failed",
+            "description": "Fabric One named ${interconnect_name} state changed to failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.interconnect.attribute.changed",
+            "description": "Fabric One named ${interconnect_name} attributes are changed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        }
+    ],
+    "metricNames": [],
+    "alertNames": []
+}
