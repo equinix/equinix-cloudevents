@@ -113,7 +113,7 @@ The following data payloads are the supported events and formats for Equinix Net
 ---
 ### Equinix Fabric
 <details>
-<summary><b>Schemas</b> (50)</summary>
+<summary><b>Schemas</b> (51)</summary>
 
 <table>
 	<tr>
@@ -220,6 +220,11 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>Connection Routing Protocol</td>
 		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionRoutingProtocolEventData.json'>JSON</a></td>
 		<td><code>equinix.fabric.v2.ConnectionRoutingProtocolEventData</code></td>
+	</tr>
+	<tr>
+		<td>Interconnect</td>
+		<td><a href='https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/interconnect/InterconnectEventData.json'>JSON</a></td>
+		<td><code>equinix.fabric.v2.InterconnectEventData</code></td>
 	</tr>
 	<tr>
 		<td>Internet Access</td>
@@ -376,7 +381,7 @@ The following data payloads are the supported events and formats for Equinix Net
 </details>
 
 <details>
-<summary><b>Events</b> (287)</summary>
+<summary><b>Events</b> (291)</summary>
 
 <table>
 	<tr>
@@ -1322,6 +1327,34 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>equinix.fabric.connection_routing_protocol.state.reprovisioning</td>
 		<td>Routing Protocol named ${routing_protocol_name} state changed to reprovisioning</td>
 		<td>released</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Interconnect</td>
+		<td>equinix.fabric.interconnect.attribute.changed</td>
+		<td>Fabric One named ${interconnect_name} attributes are changed</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Interconnect</td>
+		<td>equinix.fabric.interconnect.state.deprovisioned</td>
+		<td>Fabric One named ${interconnect_name} state changed to deprovisioned</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Interconnect</td>
+		<td>equinix.fabric.interconnect.state.failed</td>
+		<td>Fabric One named ${interconnect_name} state changed to failed</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Interconnect</td>
+		<td>equinix.fabric.interconnect.state.provisioned</td>
+		<td>Fabric One named ${interconnect_name} state changed to provisioned</td>
+		<td>preview</td>
 		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
