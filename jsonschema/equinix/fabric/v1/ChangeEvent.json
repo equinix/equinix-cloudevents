@@ -1259,6 +1259,30 @@
             "description": "Service Profile Connection ${connection_name} state changed to failed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.interconnect.state.provisioned",
+            "description": "Fabric One named ${interconnect_name} state changed to provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.interconnect.state.deprovisioned",
+            "description": "Fabric One named ${interconnect_name} state changed to deprovisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.interconnect.state.failed",
+            "description": "Fabric One named ${interconnect_name} state changed to failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.interconnect.attribute.changed",
+            "description": "Fabric One named ${interconnect_name} attributes are changed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
         }
     ],
     "metricNames": [],
