@@ -876,6 +876,30 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.interconnect.attribute.changed</td>
+		<td>Fabric One named ${interconnect_name} attributes are changed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.interconnect.state.deprovisioned</td>
+		<td>Fabric One named ${interconnect_name} state changed to deprovisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.interconnect.state.failed</td>
+		<td>Fabric One named ${interconnect_name} state changed to failed</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.interconnect.state.provisioned</td>
+		<td>Fabric One named ${interconnect_name} state changed to provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.internet_access.attribute.changed</td>
 		<td>Internet access service changed</td>
 		<td>released</td>
