@@ -29,7 +29,7 @@
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppConnectMetric.json",
             "domain": "Equinix Fabric Application Connect Metric",
             "name": "AppConnectMetric",
-            "description": "The data within all MetricEvent events.",
+            "description": "The data within all App Connect Metric.",
             "datatype": "equinix.fabric.v2.AppConnectMetric",
             "cloudeventTypes": [
                 {
@@ -887,7 +887,7 @@
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/connection/ConnectionMetric.json",
             "domain": "Equinix Fabric Connection Metric",
             "name": "ConnectionMetric",
-            "description": "The data within all ConnectionMetric events.",
+            "description": "The data within all Connection Metric.",
             "datatype": "equinix.fabric.v2.ConnectionMetric",
             "cloudeventTypes": [
                 {
@@ -2268,7 +2268,7 @@
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/metro/MetroMetric.json",
             "domain": "Equinix Fabric Metro Metric",
             "name": "MetroMetric",
-            "description": "The data within all MetroMetric events.",
+            "description": "The data within all Metro Metric.",
             "datatype": "equinix.fabric.v2.MetroMetric",
             "cloudeventTypes": [
                 {
@@ -4099,7 +4099,7 @@
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/port/PortMetric.json",
             "domain": "Equinix Fabric Port Metric",
             "name": "PortMetric",
-            "description": "The data within all PortMetric events.",
+            "description": "The data within all Port Metric.",
             "datatype": "equinix.fabric.v2.PortMetric",
             "cloudeventTypes": [
                 {
@@ -5228,7 +5228,7 @@
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/network_edge/v2/DeviceInterfaceMetric.json",
             "domain": "Equinix Network Edge Device Interface Metric",
             "name": "DeviceInterfaceMetric",
-            "description": "The data within all DeviceInterfaceMetric events.",
+            "description": "The data within all DeviceInterface Metric.",
             "datatype": "equinix.network_edge.v2.DeviceInterfaceMetric",
             "cloudeventTypes": [],
             "metricNames": [
