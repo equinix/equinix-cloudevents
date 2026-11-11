@@ -1118,6 +1118,36 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.interconnect.attribute.changed",
+                "description": "Fabric One named ${interconnect_name} attributes are changed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.interconnect.state.deprovisioned",
+                "description": "Fabric One named ${interconnect_name} state changed to deprovisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.interconnect.state.deprovisioning",
+                "description": "Fabric One named ${interconnect_name} state changed to deprovisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.interconnect.state.failed",
+                "description": "Fabric One named ${interconnect_name} state changed to failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.interconnect.state.provisioned",
+                "description": "Fabric One named ${interconnect_name} state changed to provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.interconnect.state.provisioning",
+                "description": "Fabric One named ${interconnect_name} state changed to provisioning",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.route_aggregation.attribute.changed",
                 "description": "Route Aggregation named ${route_aggregation_name} attribute changed",
                 "releaseStatus": "preview"
