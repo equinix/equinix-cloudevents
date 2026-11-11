@@ -51,63 +51,63 @@
       "type": "object",
       "title": "Resource",
       "description": "Schema of the resource that fired the event"
+    },
+    "User": {
+      "properties": {
+        "refId": {
+          "type": "string",
+          "description": "Equinix user id"
+        },
+        "userName": {
+          "type": "string",
+          "description": "Equinix user name"
+        },
+        "email": {
+          "type": "string",
+          "description": "Equinix user email"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "User",
+      "description": "User attribute schema"
+    },
+    "Role": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Equinix role uuid"
+        },
+        "name": {
+          "type": "string",
+          "description": "Equinix role name"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Role",
+      "description": "Role attribute schema"
+    },
+    "ResourceScope": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Equinix resource uuid"
+        },
+        "type": {
+          "type": "string",
+          "description": "Equinix resource type"
+        },
+        "name": {
+          "type": "string",
+          "description": "Equinix resource name"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "ResourceScope",
+      "description": "Resource attribute schema"
     }
-  },
-  "User": {
-    "properties": {
-      "refId": {
-        "type": "string",
-        "description": "Equinix user id"
-      },
-      "userName": {
-        "type": "string",
-        "description": "Equinix user name"
-      },
-      "email": {
-        "type": "string",
-        "description": "Equinix user email"
-      }
-    },
-    "additionalProperties": true,
-    "type": "object",
-    "title": "User",
-    "description": "User attribute schema"
-  },
-  "Role": {
-    "properties": {
-      "id": {
-        "type": "string",
-        "description": "Equinix role uuid"
-      },
-      "name": {
-        "type": "string",
-        "description": "Equinix role name"
-      }
-    },
-    "additionalProperties": true,
-    "type": "object",
-    "title": "Role",
-    "description": "Role attribute schema"
-  },
-  "ResourceScope": {
-    "properties": {
-      "id": {
-        "type": "string",
-        "description": "Equinix resource uuid"
-      },
-      "type": {
-        "type": "string",
-        "description": "Equinix resource type"
-      },
-      "name": {
-        "type": "string",
-        "description": "Equinix resource name"
-      }
-    },
-    "additionalProperties": true,
-    "type": "object",
-    "title": "ResourceScope",
-    "description": "Resource attribute schema"
   },
   "cloudeventTypes": [
     {

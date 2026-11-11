@@ -30,8 +30,8 @@
             },
             "additionalProperties": true,
             "type": "object",
-            "title": "ConnectionMetric Event Data",
-            "description": "The data within all ConnectionMetric events."
+            "title": "Connection Metric Data",
+            "description": "The data within all Connection Metric."
         },
         "Resource": {
             "properties": {

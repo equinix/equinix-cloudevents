@@ -30,8 +30,8 @@
             },
             "additionalProperties": true,
             "type": "object",
-            "title": "PortMetric Event Data",
-            "description": "The data within all PortMetric events."
+            "title": "Port Metric Data",
+            "description": "The data within all Port Metric."
         },
         "Resource": {
             "properties": {

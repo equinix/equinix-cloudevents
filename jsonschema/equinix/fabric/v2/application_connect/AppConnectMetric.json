@@ -30,44 +30,8 @@
       },
       "additionalProperties": true,
       "type": "object",
-      "title": "MetricEvent Event Data",
-      "description": "The data within all MetricEvent events."
-    },
-    "Resource": {
-      "properties": {
-        "href": {
-          "type": "string",
-          "description": "Link to the resource that has generated the event"
-        },
-        "type": {
-          "type": "string",
-          "description": "Type of the resource generating the event"
-        },
-        "uuid": {
-          "type": "string",
-          "description": "Equinix assigned unique identifier of the resource generating the event"
-        },
-        "name": {
-          "type": "string",
-          "description": "Name of the resource generating the event"
-        },
-        "state": {
-          "type": "string",
-          "description": "State of the resource generating the event"
-        },
-        "description": {
-          "type": "string",
-          "description": "Description of the resource generating the event"
-        },
-        "code": {
-          "type": "string",
-          "description": "Metro code of the source metro generating the event"
-        }
-      },
-      "additionalProperties": true,
-      "type": "object",
-      "title": "Resource",
-      "description": "Schema of the resource that fired the event"
+      "title": "App Connect Metric Data",
+      "description": "The data within all App Connect Metric."
     },
     "Resource": {
       "properties": {

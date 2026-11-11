@@ -77,8 +77,8 @@
             },
             "additionalProperties": true,
             "type": "object",
-            "title": "DeviceInterfaceMetric Event Data",
-            "description": "The data within all DeviceInterfaceMetric events."
+            "title": "DeviceInterface Metric Data",
+            "description": "The data within all DeviceInterface Metric."
         },
         "Resource": {
             "properties": {

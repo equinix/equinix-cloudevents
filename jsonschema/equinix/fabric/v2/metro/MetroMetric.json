@@ -30,8 +30,8 @@
             },
             "additionalProperties": true,
             "type": "object",
-            "title": "MetroMetric Event Data",
-            "description": "The data within all MetroMetric events."
+            "title": "Metro Metric Data",
+            "description": "The data within all Metro Metric."
         },
         "Resource": {
             "properties": {
