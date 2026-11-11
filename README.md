@@ -888,6 +888,12 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.interconnect.state.deprovisioning</td>
+		<td>Fabric One named ${interconnect_name} state changed to deprovisioning</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.interconnect.state.failed</td>
 		<td>Fabric One named ${interconnect_name} state changed to failed</td>
 		<td>preview</td>
@@ -896,6 +902,12 @@ The following data payloads are the supported events and formats for Equinix Net
 	<tr>
 		<td>equinix.fabric.interconnect.state.provisioned</td>
 		<td>Fabric One named ${interconnect_name} state changed to provisioned</td>
+		<td>preview</td>
+	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.interconnect.state.provisioning</td>
+		<td>Fabric One named ${interconnect_name} state changed to provisioning</td>
 		<td>preview</td>
 	<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
