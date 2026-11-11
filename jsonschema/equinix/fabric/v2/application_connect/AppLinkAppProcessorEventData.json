@@ -1,0 +1,165 @@
+{
+    "$id": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppProcessorEventData.json",
+    "name": "AppLinkAppProcessorEventData",
+    "examples": [
+        {
+            "specversion": "1.0",
+            "source": "https://api.equinix.com/fabric/v4/cloudevents",
+            "id": "11111111-1111-1111-1111-111111111111",
+            "type": "equinix.fabric.app_link_app_processor.state.attaching",
+            "subject": "/fabric/v4/appLinks/11111111-1111-1111-1111-111111111111/appProcessors/11111111-1111-1111-1111-111111111111",
+            "time": "2026-04-25T17:31:00Z",
+            "dataschema": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppLinkAppProcessorEventData.json",
+            "datacontenttype": "application/json",
+            "severitynumber": 9,
+            "severitytext": "INFO",
+            "equinixproject": "11111111-1111-1111-1111-111111111111",
+            "authtype": "user",
+            "authid": "<userId>",
+            "data": {
+                "message": "Application Processor 'My-App-Processor' to Application Link 'My-App-Link' attachment status changed to attaching",
+                "resource": {
+                    "href": "https://api.equinix.com/fabric/v4/appLinks/11111111-1111-1111-1111-111111111111/appProcessors/11111111-1111-1111-1111-111111111111",
+                    "uuid": "11111111-1111-1111-1111-111111111111",
+                    "type": "APP_PROCESSOR",
+                    "attachmentStatus": "ATTACHING",
+                    "config": "[REDACTED]",
+                    "endpoint": "123456.privateai.link"
+                },
+                "auth": {
+                    "type": "user",
+                    "id": "<userId>"
+                }
+            }
+        }
+    ],
+    "package": "equinix.fabric.v2",
+    "datatype": "equinix.fabric.v2.AppLinkAppProcessorEventData",
+    "domain": "Equinix Fabric App Link App Processor EventData",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Data",
+    "definitions": {
+        "Data": {
+            "properties": {
+                "message": {
+                    "type": "string",
+                    "description": "Supporting message describing the event"
+                },
+                "resource": {
+                    "$ref": "#/definitions/Resource",
+                    "additionalProperties": true,
+                    "description": "The Application Connect resource that fired the event"
+                },
+                "auth": {
+                    "$ref": "#/definitions/Auth",
+                    "additionalProperties": true,
+                    "description": "The auth context within all AppLinkAppProcessorEventData events."
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "AppLinkAppProcessorEventData Event Data",
+            "description": "The data within all AppLinkAppProcessorEventData events."
+        },
+        "Auth": {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "The type of the entity generating the event: user for user-initiated transitions, system for platform-confirmed transitions"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "The unique identifier of the user generating the event. Omitted when type is system"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Auth",
+            "description": "Auth information of the generated event"
+        },
+        "Resource": {
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Link to the resource that has generated the event"
+                },
+                "uuid": {
+                    "type": "string",
+                    "description": "Equinix assigned unique identifier of the resource generating the event. For attachment events, the UUID of the attached Application Domain, Service, or Processor"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the resource generating the event: APP_LINK, APP_DOMAIN, APP_SERVICE, APP_SUBSCRIPTION, or APP_PROCESSOR"
+                },
+                "attachmentStatus": {
+                    "type": "string",
+                    "description": "Attachment status of the Application Domain, Service, or Processor on the Application Link. Set only for attachment events"
+                },
+                "config": {
+                    "type": "string",
+                    "description": "Base64-encoded model configuration of the Application Processor attachment. Set only for Application Processor attachment events"
+                },
+                "endpoint": {
+                    "type": "string",
+                    "description": "Endpoint of the Application Processor attachment. Set only for Application Processor attachment events"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Resource",
+            "description": "Schema of the resource that fired the event"
+        }
+    },
+    "cloudeventTypes": [
+        {
+            "name": "equinix.fabric.app_link_app_processor.state.attached",
+            "description": "Application Processor to Application Link attachment status changed to attached",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_link_app_processor.state.attaching",
+            "description": "Application Processor to Application Link attachment status changed to attaching",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_link_app_processor.state.attaching_failed",
+            "description": "Application Processor to Application Link attachment status changed to attaching failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_link_app_processor.state.detached",
+            "description": "Application Processor to Application Link attachment status changed to detached",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_link_app_processor.state.detaching",
+            "description": "Application Processor to Application Link attachment status changed to detaching",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_link_app_processor.state.detaching_failed",
+            "description": "Application Processor to Application Link attachment status changed to detaching failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_link_app_processor.state.reattaching",
+            "description": "Application Processor to Application Link attachment status changed to reattaching",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.app_link_app_processor.state.reattaching_failed",
+            "description": "Application Processor to Application Link attachment status changed to reattaching failed",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "released"
+        }
+    ],
+    "metricNames": [],
+    "alertNames": []
+}
