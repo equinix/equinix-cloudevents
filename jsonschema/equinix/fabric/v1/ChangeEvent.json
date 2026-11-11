@@ -1261,8 +1261,20 @@
             "releaseStatus": "released"
         },
         {
+            "name": "equinix.fabric.interconnect.state.provisioning",
+            "description": "Fabric One named ${interconnect_name} state changed to provisioning",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
             "name": "equinix.fabric.interconnect.state.provisioned",
             "description": "Fabric One named ${interconnect_name} state changed to provisioned",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.interconnect.state.deprovisioning",
+            "description": "Fabric One named ${interconnect_name} state changed to deprovisioning",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "preview"
         },
