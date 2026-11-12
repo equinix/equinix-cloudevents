@@ -3493,6 +3493,24 @@ The following data payloads are the supported events and formats for Equinix Net
 	<td><a href='#brown_metric_slo'> <span style='color:brown'>BROWN_METRIC_SLO</span></a></td>
 	</tr>
 	<tr>
+		<td>equinix.fabric.physical_port.light_rx_lane{laneNumber}.power</td>
+		<td>Physical port per-lane received optical power in dBm</td>
+		<td>preview</td>
+	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.physical_port.light_tx_lane{laneNumber}.current</td>
+		<td>Physical port per-lane transmit bias current in mA</td>
+		<td>preview</td>
+	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>equinix.fabric.physical_port.light_tx_lane{laneNumber}.power</td>
+		<td>Physical port per-lane transmit optical power in dBm</td>
+		<td>preview</td>
+	<td><a href='#purple_metric_slo'> <span style='color:purple'>PURPLE_METRIC_SLO</span></a></td>
+	</tr>
+	<tr>
 		<td>equinix.fabric.port.bandwidth_rx.usage</td>
 		<td>Port inbound bandwidth usage in bit/sec</td>
 		<td>released</td>

@@ -2065,6 +2065,21 @@
                 "releaseStatus": "preview"
             },
             {
+                "name": "equinix.fabric.physical_port.light_rx_lane{laneNumber}.power",
+                "description": "Physical port per-lane received optical power in dBm",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.physical_port.light_tx_lane{laneNumber}.current",
+                "description": "Physical port per-lane transmit bias current in mA",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.physical_port.light_tx_lane{laneNumber}.power",
+                "description": "Physical port per-lane transmit optical power in dBm",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.port.bandwidth_rx.utilization",
                 "description": "Port inbound bandwidth utilization in %",
                 "releaseStatus": "preview"
