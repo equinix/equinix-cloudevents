@@ -15,6 +15,52 @@
         "metricNames": [],
         "alertNames": []
     },
+    "cross_connect": {
+        "cloudeventTypes": [
+            {
+                "name": "equinix.fabric.cross_connect.state.cancelled",
+                "description": "Cross Connect state changed to cancelled",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.cross_connect.state.deprovisioned",
+                "description": "Cross Connect state changed to deprovisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.cross_connect.state.deprovisioning",
+                "description": "Cross Connect state changed to deprovisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.cross_connect.state.failed",
+                "description": "Cross Connect state changed to failed",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.cross_connect.state.pending",
+                "description": "Cross Connect state changed to pending",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.cross_connect.state.pending_action",
+                "description": "Cross Connect state changed to pending action",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.cross_connect.state.provisioned",
+                "description": "Cross Connect state changed to provisioned",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.cross_connect.state.provisioning",
+                "description": "Cross Connect state changed to provisioning",
+                "releaseStatus": "preview"
+            }
+        ],
+        "metricNames": [],
+        "alertNames": []
+    },
     "fabric": {
         "cloudeventTypes": [
             {
