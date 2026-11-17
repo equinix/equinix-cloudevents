@@ -88,7 +88,7 @@ Each team will be adding data schemas in JSON format to their domain. The data s
 envelope to specify the format of the data being streamed to customers.
 
 The domains are added under `jsonschema/equinix` in the repository. Of the pattern
-`jsonschema/equinix/<domain>/<major_version>` with a full example being `jsonschema/equinix/fabric/v1`.
+`jsonschema/equinix/<domain>/<major_version>` with a full example being `jsonschema/equinix/fabric/v2`.
 
 Each data schema is created to support CloudEvent types, metrics, and alerts. Please ensure the
 [Gating](#data-schema-gating-through-equinix-event-manager) section is read and properly understood to abide by those
@@ -100,8 +100,8 @@ Each contributed data schema requires the following attributes:
 * "name" - The name of the Data Schema being registered. Should match the file name
 * "examples" - Provided examples of what the data schema could contain in a streamed event. Can be an empty list `[]` to
 start.
-* "package" - The name of the package containing the data schema. Example: `equinix.fabric.v1`
-* "datatype" - The full name of the datatype within the package. Example: `equinix.fabric.v1.ChangeEvent`
+* "package" - The name of the package containing the data schema. Example: `equinix.fabric.v2`
+* "datatype" - The full name of the datatype within the package. Example: `equinix.fabric.v2.ConnectionEventData`
 * "$schema" - The JSON Schema Specification used to draft the data schema. Use
 `"http://json-schema.org/draft-04/schema#"` for all
 * "$ref" - The reference to the definition provided for the data schema. Example: `#/definitions/Data`
@@ -152,13 +152,8 @@ Github Team is responsible for reviewing/approving PRs that modify the domain di
 Versioning for data schemas is only based on major versions; there are no minor or patch versions. The major versions
 are determined by the directory structure containing the data schema.
 
-If no breaking changes (only additions, no modifications or deletions) are made to the data_schema when it is updated it
-can stay under the same major version; i.e. v1.
-
-If a breaking change is made to the data_schema (deletion or modification) then it needs to be put into the next major
-version in a new version directory; i.e. v2.
-
-Not all data_schemas need to be moved to v2. Just the ones that have breaking changes.
+It is now migrated to the v2 directory. Any new change (addition, deletion or modification) and the data_schema
+needs to be put into the next major version in a new version directory; i.e. v2.
 
 ## Repository Versioning
 
