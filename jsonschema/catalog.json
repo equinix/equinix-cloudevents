@@ -26,6 +26,65 @@
             "alertNames": []
         },
         {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/cross_connect/v2/cross_connect/CrossConnectEventData.json",
+            "domain": "Equinix Cross Connect EventData",
+            "name": "CrossConnectEventData",
+            "description": "The data within all CrossConnectEventData events.",
+            "datatype": "equinix.cross_connect.v2.CrossConnectEventData",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.cross_connect.state.cancelled",
+                    "description": "Cross Connect state changed to cancelled",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.cross_connect.state.deprovisioned",
+                    "description": "Cross Connect state changed to deprovisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.cross_connect.state.deprovisioning",
+                    "description": "Cross Connect state changed to deprovisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.cross_connect.state.failed",
+                    "description": "Cross Connect state changed to failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.cross_connect.state.pending",
+                    "description": "Cross Connect state changed to pending",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.cross_connect.state.pending_action",
+                    "description": "Cross Connect state changed to pending action",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.cross_connect.state.provisioned",
+                    "description": "Cross Connect state changed to provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.cross_connect.state.provisioning",
+                    "description": "Cross Connect state changed to provisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
             "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/application_connect/AppConnectMetric.json",
             "domain": "Equinix Fabric Application Connect Metric",
             "name": "AppConnectMetric",
@@ -1156,6 +1215,53 @@
                     "description": "Routing Protocol named ${routing_protocol_name} state changed to reprovisioning",
                     "sloCategoryCode": "BLUE_EVENT_SLO",
                     "releaseStatus": "released"
+                }
+            ],
+            "metricNames": [],
+            "alertNames": []
+        },
+        {
+            "url": "https://equinix.github.io/equinix-cloudevents/jsonschema/equinix/fabric/v2/interconnect/InterconnectEventData.json",
+            "domain": "Equinix Fabric Interconnect EventData",
+            "name": "InterconnectEventData",
+            "description": "The data within all InterconnectEventData events.",
+            "datatype": "equinix.fabric.v2.InterconnectEventData",
+            "cloudeventTypes": [
+                {
+                    "name": "equinix.fabric.interconnect.attribute.changed",
+                    "description": "Fabric One named ${interconnect_name} attributes are changed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.interconnect.state.deprovisioned",
+                    "description": "Fabric One named ${interconnect_name} state changed to deprovisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.interconnect.state.deprovisioning",
+                    "description": "Fabric One named ${interconnect_name} state changed to deprovisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.interconnect.state.failed",
+                    "description": "Fabric One named ${interconnect_name} state changed to failed",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.interconnect.state.provisioned",
+                    "description": "Fabric One named ${interconnect_name} state changed to provisioned",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
+                },
+                {
+                    "name": "equinix.fabric.interconnect.state.provisioning",
+                    "description": "Fabric One named ${interconnect_name} state changed to provisioning",
+                    "sloCategoryCode": "BLUE_EVENT_SLO",
+                    "releaseStatus": "preview"
                 }
             ],
             "metricNames": [],
