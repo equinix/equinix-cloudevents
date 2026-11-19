@@ -6,5 +6,5 @@ fabric* @equinix/governor-digin-fabric
 resource_manager* @equinix/governor-qore-crh
 access_manager* @equinix/governor-qore-crh
 network_edge* @equinix/governor-ne-network-edge-engineering
-platform_identity* @equinix/governor-qore-identity
-iam* @equinix/governor-metal-equinix-watch
+identity* @equinix/governor-qore-identity
+iam* @equinix/governor-qore-identity
