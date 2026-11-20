@@ -1238,6 +1238,16 @@
                 "releaseStatus": "released"
             },
             {
+                "name": "equinix.fabric.connection_configuration.locked",
+                "description": "Connection named ${connection_name} configuration has been locked",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.connection_configuration.unlocked",
+                "description": "Connection named ${connection_name} configuration has been unlocked",
+                "releaseStatus": "preview"
+            },
+            {
                 "name": "equinix.fabric.cross_connect.state.cancelled",
                 "description": "Cross Connect state changed to cancelled",
                 "releaseStatus": "preview"
@@ -1390,6 +1400,16 @@
             {
                 "name": "equinix.fabric.optical_connect.state.reprovisioning",
                 "description": "Optical Connect is reprovisioning",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port_configuration.locked",
+                "description": "Port named ${port_name} configuration has been locked",
+                "releaseStatus": "preview"
+            },
+            {
+                "name": "equinix.fabric.port_configuration.unlocked",
+                "description": "Port named ${port_name} configuration has been unlocked",
                 "releaseStatus": "preview"
             },
             {
