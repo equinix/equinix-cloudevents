@@ -2542,7 +2542,7 @@ The following data payloads are the supported events and formats for Equinix Net
 </details>
 
 <details>
-<summary><b>Alerts</b> (216)</summary>
+<summary><b>Alerts</b> (231)</summary>
 
 <table>
 	<tr>
@@ -2551,6 +2551,111 @@ The following data payloads are the supported events and formats for Equinix Net
 		<th>Description</th>
 		<th>Release Status</th>
 		<th>SLO Category</th>
+	</tr>
+	<tr>
+		<td>App Connect</td>
+		<td>equinix.fabric.app_link.egress_bytes_rx.count</td>
+		<td>Application Link egress received bytes count is ${operator} ${operand}</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Connect</td>
+		<td>equinix.fabric.app_link.egress_bytes_tx.count</td>
+		<td>Application Link egress transmitted bytes count is ${operator} ${operand}</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Connect</td>
+		<td>equinix.fabric.app_link.egress_connections_erred.count</td>
+		<td>Application Link egress erred connections count is ${operator} ${operand}</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Connect</td>
+		<td>equinix.fabric.app_link.egress_connections_retried.count</td>
+		<td>Application Link egress retried connections count is ${operator} ${operand}</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Connect</td>
+		<td>equinix.fabric.app_link.egress_down.count</td>
+		<td>Application Link egress backend down count is ${operator} ${operand}</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Connect</td>
+		<td>equinix.fabric.app_link.egress_down.time</td>
+		<td>Application Link egress backend downtime is ${operator} ${operand} seconds</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Connect</td>
+		<td>equinix.fabric.app_link.egress_requests_queued.count</td>
+		<td>Application Link egress queued requests count is ${operator} ${operand}</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Connect</td>
+		<td>equinix.fabric.app_link.egress_requests_queued.time</td>
+		<td>Application Link egress average queued request time is ${operator} ${operand} seconds</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Connect</td>
+		<td>equinix.fabric.app_link.egress_requests_redispatched.count</td>
+		<td>Application Link egress redispatched requests count is ${operator} ${operand}</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Connect</td>
+		<td>equinix.fabric.app_link.egress_responses.latency</td>
+		<td>Application Link egress average response latency is ${operator} ${operand} seconds</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Connect</td>
+		<td>equinix.fabric.app_link.egress_responses_erred.count</td>
+		<td>Application Link egress erred responses count is ${operator} ${operand}</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Connect</td>
+		<td>equinix.fabric.app_link.ingress_bytes_rx.count</td>
+		<td>Application Link ingress received bytes count is ${operator} ${operand}</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Connect</td>
+		<td>equinix.fabric.app_link.ingress_bytes_tx.count</td>
+		<td>Application Link ingress transmitted bytes count is ${operator} ${operand}</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Connect</td>
+		<td>equinix.fabric.app_link.ingress_requests_erred.count</td>
+		<td>Application Link ingress erred requests count is ${operator} ${operand}</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>App Connect</td>
+		<td>equinix.fabric.app_link.ingress_sessions.rate</td>
+		<td>Application Link ingress sessions rate is ${operator} ${operand} sessions/sec</td>
+		<td>preview</td>
+		<td><a href='#blue_alert_slo'> <span style='color:blue'>BLUE_ALERT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Connection</td>
