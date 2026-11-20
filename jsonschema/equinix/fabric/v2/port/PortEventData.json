@@ -319,6 +319,18 @@
             "description": "Virtual port '${port_name}' status changed to UP",
             "sloCategoryCode": "PURPLE_EVENT_SLO",
             "releaseStatus": "released"
+        },
+        {
+            "name": "equinix.fabric.port_configuration.locked",
+            "description": "Port named ${port_name} configuration has been locked",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
+        },
+        {
+            "name": "equinix.fabric.port_configuration.unlocked",
+            "description": "Port named ${port_name} configuration has been unlocked",
+            "sloCategoryCode": "BLUE_EVENT_SLO",
+            "releaseStatus": "preview"
         }
     ],
     "metricNames": [],

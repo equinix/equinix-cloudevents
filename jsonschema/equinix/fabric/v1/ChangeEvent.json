@@ -1295,30 +1295,6 @@
             "description": "Fabric One named ${interconnect_name} attributes are changed",
             "sloCategoryCode": "BLUE_EVENT_SLO",
             "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.port_configuration.locked",
-            "description": "Port named ${port_name} configuration has been locked",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.port_configuration.unlocked",
-            "description": "Port named ${port_name} configuration has been unlocked",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.connection_configuration.locked",
-            "description": "Connection named ${connection_name} configuration has been locked",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
-        },
-        {
-            "name": "equinix.fabric.connection_configuration.unlocked",
-            "description": "Connection named ${connection_name} configuration has been unlocked",
-            "sloCategoryCode": "BLUE_EVENT_SLO",
-            "releaseStatus": "preview"
         }
     ],
     "metricNames": [],

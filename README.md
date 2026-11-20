@@ -476,7 +476,7 @@ The following data payloads are the supported events and formats for Equinix Net
 </details>
 
 <details>
-<summary><b>Events</b> (293)</summary>
+<summary><b>Events</b> (297)</summary>
 
 <table>
 	<tr>
@@ -1101,6 +1101,20 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>Connection '${connection_name}' status changed to UP</td>
 		<td>released</td>
 		<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Connection</td>
+		<td>equinix.fabric.connection_configuration.locked</td>
+		<td>Connection named ${connection_name} configuration has been locked</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Connection</td>
+		<td>equinix.fabric.connection_configuration.unlocked</td>
+		<td>Connection named ${connection_name} configuration has been unlocked</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Connection</td>
@@ -1857,6 +1871,20 @@ The following data payloads are the supported events and formats for Equinix Net
 		<td>Virtual port '${port_name}' status changed to UP</td>
 		<td>released</td>
 		<td><a href='#purple_event_slo'> <span style='color:purple'>PURPLE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Port</td>
+		<td>equinix.fabric.port_configuration.locked</td>
+		<td>Port named ${port_name} configuration has been locked</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
+	</tr>
+	<tr>
+		<td>Port</td>
+		<td>equinix.fabric.port_configuration.unlocked</td>
+		<td>Port named ${port_name} configuration has been unlocked</td>
+		<td>preview</td>
+		<td><a href='#blue_event_slo'> <span style='color:blue'>BLUE_EVENT_SLO</span></a></td>
 	</tr>
 	<tr>
 		<td>Port Maintenance</td>
